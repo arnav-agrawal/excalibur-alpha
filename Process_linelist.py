@@ -1,24 +1,52 @@
 import numpy as np
 import pandas as pd
 import os
-
+import shutil
 
 #chem_species = 'H2O'
 #species_id = '1H2-16O'
-linelist_type = 'EXOMOL'
+#linelist_type = 'EXOMOL'
 #linelist = 'BT2'
 #prefix = './' + species_id + '__'
 #prefix2 = './' + linelist +'/'
 
-def process_Exomol_file(prefix_in, prefix_out, file_type, broad_species, linelist, trans_1, trans_2):
+
+def process_file(database, input_dir, abundance = 0):
+    if database == 'exomol':
+       for file in os.listdir(input_dir):
+            process_Exomol_file(file, input_dir) # Two statements to process .broad and .pf files
     
-    if (file_type == '.broad'):
+    if database == 'hitran':
+        J_lower_all, gamma_air, n_air = (np.array([]) for _ in range(3))
+        gamma_air_avg, n_air_avg = (np.array([]) for _ in range(2))
+        
+        for file in os.listdir(input_dir):
+            if file.endswith('.data'):
+                J_i, gamma_air_i, n_air_i = process_HITRAN_file(file, input_dir, abundance)
+                J_lower_all = np.append(J_lower_all, J_i)
+                gamma_air = np.append(gamma_air, gamma_air_i)
+                n_air = np.append(n_air, n_air_i)
+        
+        create_air_broad(J_lower_all, gamma_air, n_air, gamma_air_avg, n_air_avg, input_dir)
+            
+    """
+    if file_host == 'HITRAN':
+        process_HITRAN_file()
+    
+    if file_host == 'VALD':
+        process_VALD_file()
+    """   
+
+def process_Exomol_file(file, input_dir):
+    
+    if file.endswith('.broad'):
         
         gamma_L_0 = []
         n_L = []
         J = []
-
-        f_in = open(prefix_in + broad_species + '.broad', 'r')
+        
+        in_file_path = input_dir + '/' + file
+        f_in = open(in_file_path, 'r')
 
         for line in f_in:
             
@@ -33,7 +61,8 @@ def process_Exomol_file(prefix_in, prefix_out, file_type, broad_species, linelis
       
         f_in.close()
     
-        f_out = open(prefix_out + broad_species + '.broad','w')
+        out_file = './' + file
+        f_out = open(out_file, 'w')
     
         f_out.write('J | gamma_L_0 | n_L \n')
     
@@ -42,14 +71,50 @@ def process_Exomol_file(prefix_in, prefix_out, file_type, broad_species, linelis
         
         f_out.close()
         
-    elif (file_type == '.states'):
+        os.remove(in_file_path)
+        shutil.move(out_file, input_dir)
+        
+    elif file.endswith('.pf'):
+        
+        T_pf = []
+        Q = []
+
+        in_file_path = input_dir + '/' + file
+        f_in = open(in_file_path, 'r')
+
+        for line in f_in:
+            
+            line = line.strip()
+            line = line.split()
+                
+            T_pf.append(float(line[0]))
+            Q.append(float(line[1]))
+      
+        f_in.close()
+    
+        out_file = './' + file
+        f_out = open(out_file, 'w')
+    
+        f_out.write('T | Q \n') 
+    
+        for i in range(len(T_pf)):
+            f_out.write('%.1f %.4f \n' %(T_pf[i], Q[i]))
+        
+        f_out.close()
+        
+        os.remove(in_file_path)
+        shutil.move(out_file, input_dir)
+        
+        """    
+    elif file.endswith('.states') == True:
         
         n = []
         E = []
         g = []
         J = []
-
-        f_in = open(prefix_in + linelist + '.states', 'r')
+        
+        in_file_path = input_dir + '/' + file
+        f_in = open(in_file_path, 'r')
 
         for line in f_in:
             
@@ -62,8 +127,9 @@ def process_Exomol_file(prefix_in, prefix_out, file_type, broad_species, linelis
             J.append(float(line[3]))
       
         f_in.close()
-    
-        f_out = open(prefix_out + linelist + '.states','w')
+        
+        out_file = './' + file
+        f_out = open(out_file, 'w')
     
         f_out.write('i | E (cm^-1) | g | J \n')
     
@@ -72,62 +138,14 @@ def process_Exomol_file(prefix_in, prefix_out, file_type, broad_species, linelis
         
         f_out.close()
         
-    elif (file_type == '.pf'):
-        
-        T_pf = []
-        Q = []
+        os.remove(in_file_path)
+        shutil.move(out_file, input_dir)
+""" 
 
-        f_in = open(prefix_in + linelist + '.pf', 'r')
-
-        for line in f_in:
-            
-            line = line.strip()
-            line = line.split()
-                
-            T_pf.append(float(line[0]))
-            Q.append(float(line[1]))
-      
-        f_in.close()
+       
+def process_HITRAN_file(file, input_dir, abundance):
     
-        f_out = open(prefix_out + linelist + '.pf','w')
-    
-        f_out.write('T | Q \n')
-    
-        for i in range(len(T_pf)):
-            f_out.write('%.1f %.4f \n' %(T_pf[i], Q[i]))
-        
-        f_out.close()
-        
-    elif (file_type == '.trans'):
-        
-        f_in = open(prefix_out + linelist + '__' + trans_1 + '-' + trans_2 + '.trans','r')
-        f_out = open(prefix_out + linelist + '__' + trans_1 + '-' + trans_2 + '.trans2','w')
-        
-        count = 0
-        
-        for line in f_in:
-            
-            if (count==0): 
-                f_out.write('i | f | A (s^-1) \n')
-            
-            else:
-                line = line.strip()
-                line = line.split()
-                
-                n_i = int(line[0])
-                n_f = int(line[1])
-                A_fi = float(line[2])
-                
-                f_out.write('%d %d %.4e \n' %(n_i, n_f, A_fi))
-                
-            count +=1
-      
-        f_in.close()
-        f_out.close()
-
-"""        
-def process_HITRAN_file(file_type, species, trans_file, file_number):
-    
+    """
     # For undoing HITRAN terrestrial intensity scalings
     X_iso = {'H2O':   0.997317, 'CO2':   0.984204, 'H2O':  0.997317, 'O3':     0.992901,
              'N2O':   0.990333, 'CO':    0.986544, 'CH4':  0.988274, 'O2':     0.995262,
@@ -241,44 +259,69 @@ def process_HITRAN_file(file_type, species, trans_file, file_number):
             f_out.write('%.1f %.4f %.3f \n' %(J_sorted[i], gamma_he_avg[i], n_he_avg[i]))
                 
         f_out.close()
+    """
     
-    elif (file_type == '.par'):
         
-        field_lengths = [3,12,10,10,5,5,10,4,8,2,2,2,2,2,2,2,1,3,2,2,2,2,2,2,2,2,1,3,12,1,3,1,25,6,1,6]
+    field_lengths = [3,12,10,10,5,5,10,4,8,2,2,2,2,2,2,2,1,3,2,2,2,2,2,2,2,2,1,3,12,1,3,1,25,6,1,6]
     
-        #trans_locations = re.findall(r'\d+', trans_file)
-        #trans_1 = trans_locations[0]
-        #trans_2 = trans_locations[1]
-        
-        trans_file = pd.read_fwf('./' + trans_file, widths=field_lengths, header=None)
-        
-        #iso = np.array(trans_file[1])
-        nu_0 = np.array(trans_file[1])
-        S_ref = np.array(trans_file[2])/X_iso[species]
-        A = np.array(trans_file[3])
-        gamma_L_0_air = np.array(trans_file[4])/1.01325   # Convert from cm^-1 / atm -> cm^-1 / bar
-        E_lower = np.array(trans_file[6])
-        n_L_air = np.array(trans_file[7])
-        J_lower = np.array(trans_file[30])
-        
-        del trans_file
-        
-        # Just select transitions of primary imsotope
-        #iso_condition = np.where(iso == 1)
-        
-        #nu_0 = nu_0[iso_condition]
-        #S_ref = S_ref[iso_condition]
-        #A = A[iso_condition]
-        #gamma_L_0_air = gamma_L_0_air[iso_condition]
-        #E_lower = E_lower[iso_condition]
-        #n_L_air = n_L_air[iso_condition]
-        #J_lower = J_lower[iso_condition]
-        
-        np.savetxt(prefix2 + linelist + '__' + file_number + '.trans',
-                   np.transpose([nu_0, S_ref, E_lower, J_lower]), fmt='%.6f, %.3e, %.4f, %.1f')
-          
-        return J_lower, gamma_L_0_air, n_L_air
+    #trans_locations = re.findall(r'\d+', trans_file)
+    #trans_1 = trans_locations[0]
+    #trans_2 = trans_locations[1]
+    in_file_path = input_dir + '/' + file
+    trans_file = pd.read_fwf(in_file_path, widths=field_lengths, header=None)
     
+    #iso = np.array(trans_file[1])
+    nu_0 = np.array(trans_file[1])
+    S_ref = np.array(trans_file[2]) / abundance
+    A = np.array(trans_file[3])
+    gamma_L_0_air = np.array(trans_file[4])/1.01325   # Convert from cm^-1 / atm -> cm^-1 / bar
+    E_lower = np.array(trans_file[6])
+    n_L_air = np.array(trans_file[7])
+    J_lower = np.array(trans_file[30])
+    
+    os.remove(in_file_path)
+    
+    # Just select transitions of primary imsotope
+    #iso_condition = np.where(iso == 1)
+    
+    #nu_0 = nu_0[iso_condition]
+    #S_ref = S_ref[iso_condition]
+    #A = A[iso_condition]
+    #gamma_L_0_air = gamma_L_0_air[iso_condition]
+    #E_lower = E_lower[iso_condition]
+    #n_L_air = n_L_air[iso_condition]
+    #J_lower = J_lower[iso_condition]
+    
+    np.savetxt(input_dir + '/' + os.path.splitext(file)[0] + '.trans', np.transpose([nu_0, S_ref, E_lower, J_lower]), fmt='%.6f, %.3e, %.4f, %.1f')
+    
+    return J_lower, gamma_L_0_air, n_L_air
+    
+    
+
+def create_air_broad(J_lower_all, gamma_air, n_air, gamma_air_avg, n_air_avg, input_dir):
+    J_max = max(J_lower_all)
+    J_sorted = np.arange(int(J_max))
+    
+    for i in range(int(J_max)):
+        
+        gamma_air_i = np.mean(gamma_air[np.where(J_lower_all == J_sorted[i])])
+        n_air_i = np.mean(n_air[np.where(J_lower_all == J_sorted[i])])
+        
+        gamma_air_avg = np.append(gamma_air_avg, gamma_air_i)
+        n_air_avg = np.append(n_air_avg, n_air_i)
+    
+    # Write air broadening file
+    out_file = input_dir + '/air.broad'
+    f_out = open(out_file,'w')
+    
+    f_out.write('J | gamma_L_0 | n_L \n')
+    
+    for i in range(len(J_sorted)):
+        f_out.write('%.1f %.4f %.3f \n' %(J_sorted[i], gamma_air_avg[i], n_air_avg[i]))
+        
+    f_out.close()
+
+"""    
 def process_VALD_file(species):
     
     trans_file = [filename for filename in os.listdir('.') if filename.endswith(".trans")]
@@ -444,8 +487,8 @@ if (linelist_type == 'VALD'):
     
     process_VALD_file(chem_species)
 
-
 """
+
 
 
 

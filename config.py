@@ -1,4 +1,4 @@
-# Contains configuraton settings used in Cthulu.py and subsidiary modules
+# Contains configuraton settings used in Cthulhu.py and subsidiary modules
 
 import os
 import numpy as np
@@ -12,15 +12,15 @@ calculation_type = 'molecule'    # Options: molecule / atom
 
 species = 'H2O'
 species_id = '1H2-16O'
-linelist = 'BT2'
-file_format = 'EXOMOL'        # Options: EXOMOL / HITRAN / VALD
+linelist = 'HITRAN'
+file_format = 'HITRAN'        # Options: EXOMOL / HITRAN / VALD
 
 #***** Input and output directories *****#
 
 
 if (calculation_type == 'molecule'):
-    input_directory = '../../Molecules/' + species + '/input/' + linelist + '/'    # Folder location containing linelist etc
-    output_directory = '../../Molecules/' + species + '/output/' + linelist + '/'  # Folder location containing output cross sections
+    input_directory = '../input/' + species + '-H2(16O)' + '/' + linelist + '/'    # Folder location containing linelist etc
+    output_directory = '../output/' # Folder location containing output cross sections
 
 if (calculation_type == 'atom'):
     input_directory = '../../Atoms/' + species + '/input/' + linelist + '/'    # Folder location containing linelist etc
@@ -66,7 +66,7 @@ S_cut = 1.0e-100   # Discard transitions with S < S_cut
 
 # Pressure broadening settings *****#
 
-broadening = 'H2-He'  # Options: H2-He / air / fixed
+broadening = 'air'  # Options: H2-He / air / fixed
 X_H2 = 0.85           # Mixing ratio of H2 (solar)
 X_He = 0.15           # Mixing ratio of He (solar)
 gamma_0 = 0.07        # If fixed broadening chosen, use this Lorentzian HWHM

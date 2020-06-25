@@ -4,19 +4,6 @@
 Created on Mon Jun  1 15:58:01 2020
 
 @author: arnav
-
-Functionality to add:
-    - Maybe: Have the program recognize up to which .trans file we have already read, so that 
-    if we have to stop the program and rerun, we don't have to start from the beginning again
-        - Will probably do this by adding a function "check_files" which finds 
-        the '.bz2' file that exists in a directory (if it does) and skips straight to 
-        re-reading that file 
-        - Adding this function might lead to other potential user-generated errors, so maybe not worth it
-        
-    - Will want to raise some sort of error or something if the molecule does not exist/ is not
-    supported (this is in the determine_ExoMol_parameters function)
-    
-@version: 7 ... Integrate all the code so that the user just has to run Cthulhu.py and everything works
 """
 
 from bs4 import BeautifulSoup
@@ -29,7 +16,6 @@ import numpy
 import pandas
 import h5py
 import time
-import Process_linelist as PLL
 
 
 def download_file(url, f, m_folder, l_folder):
@@ -239,106 +225,44 @@ def define_url(molecule, isotope, line_list):
     return ExoMol_URL
 
 
-def determine_ExoMol_parameters():
-    """
-    Determines the desired molecular line list from ExoMol from user input. Returns user-inputted values in a tuple.
+def get_default_iso(molecule):
+    most_abundant = {'H' : 1, 'He' : 4, 'Li' : 7, 'Be' : 9, 'B' : 11, 'C' : 12, 'N' : 14, 'O' : 16, 'F' : 19, 'Ne' : 20, 
+                     'Na' : 23, 'Mg' : 24, 'Al' : 27, 'Si' : 28, 'P' : 31, 'S' : 32, 'Cl' : 35, 'Ar' : 40, 'K' : 39, 'Ca' : 40,
+                     'Sc' : 45, 'Ti' : 48, 'V' : 51, 'Cr' : 52, 'Mn' : 55, 'Fe' : 56, 'Co' : 59, 'Ni' : 58, 'Cu' : 63, 
+                     'Zn' : 64, 'Ga' : 69, 'Ge' : 74, 'As' : 75, 'Se' : 80, 'Br' : 79, 'Kr' : 84, 'Rb' : 85, 'Sr' : 88,
+                     'Y' : 89, 'Zr' : 90, 'Nb' : 93, 'Mo' : 98, 'Ru' : 102, 'Rh' : 103, 'Pd' : 106, 'Ag' : 107, 'Cd' : 114,
+                     'In' : 115, 'Sn' : 120, 'Sb' : 121, 'Te' : 130, 'I' : 127, 'Xe' : 132, 'Cs' : 133, 'Ba' : 138, 'La' : 139,
+                     'Ce' : 140, 'Pr' : 141, 'Nd' : 142, 'Sm' : 152, 'Eu' : 153, 'Gd' : 158, 'Tb' : 159, 'Dy' : 164, 'Ho' : 165,
+                     'Er' : 166, 'Tm' : 169, 'Yb' : 174, 'Lu' : 175, 'Hf' : 180, 'Ta' : 181, 'W' : 184, 'Re' : 187, 'Os' : 192,
+                     'Ir' : 193, 'Pt' : 195, 'Au' : 197, 'Hg' : 202, 'Tl' : 206, 'Pb' : 208, 'Bi' : 209, 'Th' : 232, 'Pa' : 231,
+                     'Ur' : 238}
+    
+    
+    return
 
-    Returns
-    -------
-    molecule : String
-        DESCRIPTION.
-    isotopologue : String
-        DESCRIPTION.
-    linelist : String
-        DESCRIPTION.
-    website : String
-        DESCRIPTION.
 
-    """
-    
-    website = "http://exomol.com/data/molecules/"
-    
-    while True:
-        try:
-            molecule = input('What molecule would you like to download the line list for?\n')
-            response = requests.get(website + molecule + '/')
-            response.raise_for_status() #Raises HTTPError if a bad request is made (server or client error)
-            
-        except requests.HTTPError:
-            print("\n ----- This is not a valid molecule, please try again -----")
-            
-        else: 
-            website += molecule + '/'
-            break
-            
-    while True:
-        try:
-            isotopologue = input("What isotopologue of this molecule would you like to use (type 'default' to use the default isotopologue)?\n")
-            response = requests.get(website + isotopologue + '/')
-            response.raise_for_status()
-            
-        except requests.HTTPError:
-            print("\n ----- This is not a valid isotopologue, please try again -----")
-            
-        else: 
-            website += isotopologue + '/'
-            break
-        
-    while True:
-        try: 
-            linelist = input("Which line list of this isotopologue would you like to use (type 'default' to use the default line list)?\n")
-            response = requests.get(website + linelist + '/')
-            response.raise_for_status()
-        
-        except requests.HTTPError:
-            print("\n ----- This is not a valid line list, please try again -----")
-            
-        else:
-            website += linelist + '/'
-            return molecule, isotopologue, linelist, website
-            
+def get_default_linelist(molecule, isotopologue):
+    return
 
-def process_line_list(line_list_folder, linelist):
-    """ Calls PLL.process_Exomol_file() multiple times to process the line lists into a format used by the cross-section code.
-    
-    """
-    
-    prefix = line_list_folder + '/'
-    
-    contains_broad = False
-    for file in line_list_folder:
-        if file.endswith('.broad'):
-            contains_broad = True
-            
-    
-    if contains_broad:
-        PLL.process_Exomol_file(prefix, prefix, '.broad', 'H2', linelist, 'dummy', 'dummy')
-        PLL.process_Exomol_file(prefix, prefix, '.broad', 'He', linelist, 'dummy', 'dummy')
-        
-    PLL.process_Exomol_file(prefix, prefix, '.pf', 'dummy', linelist, 'dummy', 'dummy')
-    
 
-def summon():
+def summon_ExoMol(molecule, isotopologue, line_list, URL):
     """ Main function, called by the user to start the download process
     
     """
     
-    (mol, iso, lin, URL) = determine_ExoMol_parameters()
-    
-    (molecule_folder, line_list_folder) = create_directories(mol, iso, lin)
+    (molecule_folder, line_list_folder) = create_directories(molecule, isotopologue, line_list)
 
     host = "http://exomol.com" 
 
     tags = create_tag_array(URL)
     
     print("\n ***** Downloading requested data from ExoMol. You have chosen the following parameters: ***** ")
-    print("\nMolecule:", mol, "\nIsotopologue:", iso, "\nLine List:", lin)
+    print("\nMolecule:", molecule, "\nIsotopologue:", isotopologue, "\nLine List:", line_list)
     print("\nStarting by downloading the .broad, .pf, and .states files...")
     
-    iterate_tags(tags, host, molecule_folder, line_list_folder, lin)
-    process_line_list(line_list_folder, lin)
+    iterate_tags(tags, host, molecule_folder, line_list_folder, line_list)
+    
+    return line_list_folder
     
     
 ##### Begin Main Program #####   
-    
-summon()

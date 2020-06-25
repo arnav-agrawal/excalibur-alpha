@@ -644,7 +644,7 @@ def produce_total_cross_section_EXOMOL(linelist_files, input_directory,
         #                         skiprows=1, dtype={'up': np.int64, 'low': np.int64, 'A': np.float64}, chunksize=2000000)
         
         #trans_file_name = [filename for filename in os.listdir(input_directory) if filename.endswith('.trans.bz')]
-        trans_file = pd.read_fwf(input_directory + linelist_files[n], widths=[12,13,11], 
+        trans_file = pd.read_csv(input_directory + linelist_files[n], sep = '\s+', 
                                  header=None, chunksize=2000000)
     
         print('Computing transitions from ' + linelist_files[n] + ' | ' + str((100.0*n/len(linelist_files))) + '% complete')

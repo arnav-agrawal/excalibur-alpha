@@ -31,7 +31,7 @@ if (file_format == 'EXOMOL'):
     
     # Read in states file (EXOMOL only)
     states_file_name = [filename for filename in os.listdir(input_directory) if filename.endswith('.states')]
-    states_file = pd.read_fwf(input_directory + states_file_name[0], widths=[12,13,7,8], header=None)
+    states_file = pd.read_csv(input_directory + states_file_name[0], sep = '\s+', header=None)
     E = np.array(states_file[1])
     g = np.array(states_file[2])
     J = np.array(states_file[3]).astype(np.int64)
@@ -520,7 +520,7 @@ if(plot_results == True):
 
     legend = plt.legend(loc='upper left', shadow=False, frameon=False, prop={'size':6})
     
-    plt.savefig('../../plots/' + species + '_' + str(T) + 'K_' + str(P) + 'bar_nu.pdf')
+    plt.savefig('../output/' + species + '_' + str(T) + 'K_' + str(P) + 'bar_nu.pdf')
     
     plt.close()
     
@@ -550,7 +550,7 @@ if(plot_results == True):
     
     #plt.show()
 
-    plt.savefig('../../plots/' + species + '_' + str(T) + 'K_' + str(P) + 'bar.pdf')
+    plt.savefig('../output/' + species + '_' + str(T) + 'K_' + str(P) + 'bar.pdf')
     
 
 
