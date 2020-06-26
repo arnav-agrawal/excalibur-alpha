@@ -226,6 +226,21 @@ def define_url(molecule, isotope, line_list):
 
 
 def get_default_iso(molecule):
+    """
+    Returns the default (most abundant on Earth) isotopologue given a molecule
+
+    Parameters
+    ----------
+    molecule : String
+        DESCRIPTION.
+
+    Returns
+    -------
+    default_iso : String
+        DESCRIPTION.
+
+    """
+    
     most_abundant = {'H' : 1, 'He' : 4, 'Li' : 7, 'Be' : 9, 'B' : 11, 'C' : 12, 'N' : 14, 'O' : 16, 'F' : 19, 'Ne' : 20, 
                      'Na' : 23, 'Mg' : 24, 'Al' : 27, 'Si' : 28, 'P' : 31, 'S' : 32, 'Cl' : 35, 'Ar' : 40, 'K' : 39, 'Ca' : 40,
                      'Sc' : 45, 'Ti' : 48, 'V' : 51, 'Cr' : 52, 'Mn' : 55, 'Fe' : 56, 'Co' : 59, 'Ni' : 58, 'Cu' : 63, 
@@ -237,8 +252,22 @@ def get_default_iso(molecule):
                      'Ir' : 193, 'Pt' : 195, 'Au' : 197, 'Hg' : 202, 'Tl' : 206, 'Pb' : 208, 'Bi' : 209, 'Th' : 232, 'Pa' : 231,
                      'Ur' : 238}
     
-    
-    return
+    default_iso = ''
+    matches = re.findall('[A-Z][a-z]?[0-9]?', molecule)
+    num_matches = len(matches)
+    for match in matches:
+        num_matches -= 1
+        letters = re.findall('\D+', match) # alphabetic characters in the molecule
+        numbers = re.findall('\d', match) # numeric characters in the molecule
+        default_iso += str(most_abundant.get(letters[0])) + letters[0] 
+        
+        if numbers:
+            default_iso += numbers[0]
+            
+        if num_matches != 0:
+            default_iso += '-'
+        
+    return default_iso
 
 
 def get_default_linelist(molecule, isotopologue):
