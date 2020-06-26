@@ -126,77 +126,69 @@ def determine_parameters_VALD():
     return
             
             
-def type_parameters_ExoMol():
+def check_ExoMol(molecule, isotope = '', linelist = ''):
     """
-    Allows the user to manually type in the parameters they would like to use to download a line list from ExoMol
+    Checks if the parameters passed into the summon() function by the user are valid to use with the ExoMol database.
+
+    Parameters
+    ----------
+    molecule : TYPE
+        DESCRIPTION.
+    isotope : TYPE
+        DESCRIPTION.
+    linelist : TYPE
+        DESCRIPTION.
 
     Returns
     -------
-    molecule : TYPE
-        DESCRIPTION.
-    isotopologue : TYPE
-        DESCRIPTION.
-    line_list : TYPE
-        DESCRIPTION.
-    website : TYPE
-        DESCRIPTION.
+    None.
 
     """
     
-    molecule = 'Enter here'
-    isotopologue = 'Enter here'
-    line_list = 'Enter here'
-    
-    website = "http://exomol.com/data/molecules/" + molecule + '/' + isotopologue + '/' + line_list + '/'
+    website = "http://exomol.com/data/molecules/" + molecule + '/' + isotope + '/' + linelist + '/'
     
     try:
         requests.get(website)
     except requests.HTTPError:
-        print("\n ----- These are not valid parameters, please check to make sure they are all entered correctly -----")
+        print("\n ----- These are not valid ExoMol parameters. Please try again. -----")
         sys.exit(0)
-    else:
-        return molecule, isotopologue, line_list, website
         
 
-def type_parameters_HITRAN():
+def check_HITRAN(molecule, isotope):
     """
-    Allows the user to manually type in the HITRAN parameters they would like to use, instead of responding to terminal prompts
+    Checks if the parameters passed into the summon() function by the user are valid to use with the HITRAN database
+
+    Parameters
+    ----------
+    molecule : TYPE
+        DESCRIPTION.
+    isotope : TYPE
+        DESCRIPTION.
 
     Returns
     -------
-    molecule_ID : TYPE
-        DESCRIPTION.
-    isotopologue_ID : TYPE
-        DESCRIPTION.
+    None.
 
     """
     
-    molecule_ID = 'Enter Here'
-    isotopologue_ID ='Enter Here'
-    
     try:
-        partitionSum(molecule_ID, isotopologue_ID, [70, 80], step = 1.0)
+        partitionSum(molecule, isotope, [70, 80], step = 1.0)
     except KeyError:
-        print("\n ----- This molecule/isotopologue ID combination is not valid. Please check to make sure the combo you want exists on HITRAN. ----- ")
+        print("\n ----- This molecule/isotopologue ID combination is not valid in HITRAN. Please try again. ----- ")
         sys.exit(0)
-    else:
-        return molecule_ID, isotopologue_ID
 
 def type_parameters_VALD():
     return
     
 
-def summon():
-    
-    user_friendly = True
-    db = 'Enter Here'  # Change to reflect the database that is being used if 'user_friendly == False'
+def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'default', linelist = 'default'):
     
     if user_friendly:
         
         while True:
             database = input('What database are you downloading a line list from (ExoMol, HITRAN, or VALD)?\n')
             database = database.lower()
-            if database != 'exomol' and database != 'hitran' and database != 'vald':
+            if database != 'exomol' and database != 'hitran' and database != 'vald' and database != 'hitemp':
                 print("\n ----- This is not a supported database, please try again ----- ")
                 continue
             else:
@@ -215,20 +207,41 @@ def summon():
         if database == 'vald':
             return
         
+        if database == 'hitemp':
+            return
+        
     if not user_friendly:
-        db = db.lower()
+        db = data_base.lower()
+        mol = molecule
+        iso = isotope
+        lin = linelist
             
         if db == 'exomol':
-            mol, iso, lin, URL = type_parameters_ExoMol()
+            if isotope == 'default':
+                check_ExoMol(mol)
+                iso = Download_ExoMol.get_default_iso(mol)
+            if linelist == 'default':
+                check_ExoMol(mol, iso)
+                lin = Download_ExoMol.get_default_linelist(mol, iso)
+            check_ExoMol(molecule, isotope, linelist)
+            URL = "http://exomol.com/data/molecules/" + mol + '/' + iso + '/' + lin + '/'
             line_list_folder = Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
+            
         elif db == 'hitran':
-            mol, iso = type_parameters_HITRAN()
+            if isotope == 'default':
+                iso = 1
+            check_HITRAN(molecule, isotope)
             line_list_folder, abundance = Download_HITRAN.summon_HITRAN(mol, iso)
             Process_linelist.process_file(database, line_list_folder, abundance)
+            
         elif db == 'vald':
             return
+        
+        elif db == 'hitemp':
+            return
+        
         else:
-            print("\n ----- This is not a supported database, please try again ----- ")
+            print("\n ----- You have not passed in a valid database. Please try again. ----- ")
             sys.exit(0)
         
     
