@@ -3,6 +3,7 @@ import pandas as pd
 from numba.decorators import jit
 #from math import exp
 import time
+import h5py
 
 from config import kb, c, c2, m_e, pi, T_ref, nu_min, nu_max, S_cut, species
 from Voigt import Generate_Voigt_atoms
@@ -636,118 +637,111 @@ def produce_total_cross_section_EXOMOL(linelist_files, input_directory,
     R_21 = dnu_2/dnu_1
     R_32 = dnu_3/dnu_2
     
-    t_begin_calc = time.clock()
+    t_begin_calc = time.perf_counter()
     
     for n in range(len(linelist_files)):   # For each transition file
-        
-        #trans_file = pd.read_csv(input_directory + linelist_files[n], sep = ' ', header=None,
-        #                         skiprows=1, dtype={'up': np.int64, 'low': np.int64, 'A': np.float64}, chunksize=2000000)
-        
-        #trans_file_name = [filename for filename in os.listdir(input_directory) if filename.endswith('.trans.bz')]
-        trans_file = pd.read_csv(input_directory + linelist_files[n], sep = '\s+', 
-                                 header=None, chunksize=2000000)
+      
+        trans_file = h5py.File(input_directory + linelist_files[n], 'r')
     
         print('Computing transitions from ' + linelist_files[n] + ' | ' + str((100.0*n/len(linelist_files))) + '% complete')
-        t_test = time.clock()
-                
-        for chunk in trans_file:
+        t_test = time.perf_counter()
             
-            upper_state = np.array(chunk[0])
-            lower_state = np.array(chunk[1])
-            A = np.array(chunk[2]).astype(np.float64)
+        upper_state = np.array(trans_file['Upper State'])
+        lower_state = np.array(trans_file['Lower State'])
+        A = np.power(10.0, np.array(trans_file['Log Einstein A']))
         
-            del chunk   # No longer need to store this segment of transition file
-        
-            #***** Compute transition frequencies *****#
-            nu_0_in = compute_transition_frequencies(E_arr, upper_state, lower_state)
+        #***** Compute transition frequencies *****#
+        nu_0_in = compute_transition_frequencies(E_arr, upper_state, lower_state)
     
-            # Remove transitions outside computational grid
-            nu_0 = nu_0_in[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]   
-            upper_state = upper_state[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]
-            lower_state = lower_state[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]
-            A_arr = A[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]
+        # Remove transitions outside computational grid
+        nu_0 = nu_0_in[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]   
+        upper_state = upper_state[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]
+        lower_state = lower_state[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]
+        A_arr = A[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]
             
-            del nu_0_in, A   # No longer need to store these
+        del nu_0_in, A   # No longer need to store these
             
-            # If transitions are not in increasing wavenumber order, rearrange
-            order = np.argsort(nu_0)  # Indices of nu_0 in increasing order
-            nu_0 = nu_0[order]
-            upper_state = upper_state[order]
-            lower_state = lower_state[order]
-            A_arr = A_arr[order]
+        # If transitions are not in increasing wavenumber order, rearrange
+        order = np.argsort(nu_0)  # Indices of nu_0 in increasing order
+        nu_0 = nu_0[order]
+        upper_state = upper_state[order]
+        lower_state = lower_state[order]
+        A_arr = A_arr[order]
         
-            # Store lower state J values for identifying appropriate broadening parameters
-            J_lower = J_arr[lower_state-1]
+        # Store lower state J values for identifying appropriate broadening parameters
+        J_lower = J_arr[lower_state-1]
             
-            # If a given J'' does not have known broadening parameters, treat transition with parameters of maximum J''
-            J_lower[np.where(J_lower > J_max)] = J_max
+        # If a given J'' does not have known broadening parameters, treat transition with parameters of maximum J''
+        J_lower[np.where(J_lower > J_max)] = J_max
         
-            if (len(nu_0)>0): nu_0_tot += len(nu_0)
+        if (len(nu_0)>0): nu_0_tot += len(nu_0)
         
-            #***** Compute line broadening parameters *****#    
-            alpha = np.sqrt(2.0*kb*T*np.log(2)/m) * (nu_0/c)     # Doppler HWHM for each transition
-            log_alpha = np.log10(alpha)
+        #***** Compute line broadening parameters *****#    
+        alpha = np.sqrt(2.0*kb*T*np.log(2)/m) * (nu_0/c)     # Doppler HWHM for each transition
+        log_alpha = np.log10(alpha)
         
-            #***** Compute line intensities *****#        
-            S = compute_line_intensity_EXOMOL(A_arr, g_arr, E_arr, nu_0, T, Q_T, upper_state, lower_state)
+        #***** Compute line intensities *****#        
+        S = compute_line_intensity_EXOMOL(A_arr, g_arr, E_arr, nu_0, T, Q_T, upper_state, lower_state)
             
-            #nu_0 = nu_0[np.where(S>S_cut)]
-            #S = S[np.where(S>S_cut)]
+        #nu_0 = nu_0[np.where(S>S_cut)]
+        #S = S[np.where(S>S_cut)]
         
-            del A_arr, upper_state, lower_state   # No longer need to store these
+        del A_arr, upper_state, lower_state   # No longer need to store these
         
-            if (len(nu_0)>0): # If any transitions in chunk exceed intensity cutoff
+        if (len(nu_0)>0): # If any transitions in chunk exceed intensity cutoff
                 
-                # Read comment on RHS for an explanation of this ominous condition-->
-                if (((nu_0[0]-cutoffs[0]) > nu_min) and ((nu_0[-1]+cutoffs[0]) < nu_ref[1])): 
+            # Read comment on RHS for an explanation of this ominous condition-->
+            if (((nu_0[0]-cutoffs[0]) > nu_min) and ((nu_0[-1]+cutoffs[0]) < nu_ref[1])): 
                 
-                    compute_cross_section_single_grid(sigma_1, nu_fine_1_start, nu_fine_1_end,    # Check if the given range of nu0 +/- cutoffs lies entirely within one of the
-                                                      N_grid_1, nu_0, nu_ref, N_V_1, S,           # three pre-defined spectral ranges. If so, then can speed up cross section
-                                                      J_lower, alpha, alpha_sampled,              # computation by not checking whether line wings cross grid boundaries
-                                                      nu_sampled, log_nu_sampled,
-                                                      log_alpha, log_alpha_sampled,
-                                                      Voigt_arr, dV_da_arr, dV_dnu_arr)
+                compute_cross_section_single_grid(sigma_1, nu_fine_1_start, nu_fine_1_end,    # Check if the given range of nu0 +/- cutoffs lies entirely within one of the
+                                                  N_grid_1, nu_0, nu_ref, N_V_1, S,           # three pre-defined spectral ranges. If so, then can speed up cross section
+                                                  J_lower, alpha, alpha_sampled,              # computation by not checking whether line wings cross grid boundaries
+                                                  nu_sampled, log_nu_sampled,
+                                                  log_alpha, log_alpha_sampled,
+                                                  Voigt_arr, dV_da_arr, dV_dnu_arr)
                 
-                elif (((nu_0[0]-cutoffs[1]) > nu_ref[1]) and ((nu_0[-1]+cutoffs[1]) < nu_ref[2])): 
+            elif (((nu_0[0]-cutoffs[1]) > nu_ref[1]) and ((nu_0[-1]+cutoffs[1]) < nu_ref[2])): 
                 
-                    compute_cross_section_single_grid(sigma_2, nu_fine_2_start, nu_fine_2_end, 
-                                                      N_grid_2, nu_0, nu_ref, N_V_2, S,
-                                                      J_lower, alpha, alpha_sampled,
-                                                      nu_sampled, log_nu_sampled,
-                                                      log_alpha, log_alpha_sampled,
-                                                      Voigt_arr, dV_da_arr, dV_dnu_arr)
+                compute_cross_section_single_grid(sigma_2, nu_fine_2_start, nu_fine_2_end, 
+                                                  N_grid_2, nu_0, nu_ref, N_V_2, S,
+                                                  J_lower, alpha, alpha_sampled,
+                                                  nu_sampled, log_nu_sampled,
+                                                  log_alpha, log_alpha_sampled,
+                                                  Voigt_arr, dV_da_arr, dV_dnu_arr)
     
-                elif (((nu_0[0]-cutoffs[2]) > nu_ref[2]) and ((nu_0[-1]+cutoffs[2]) < nu_max)): 
+            elif (((nu_0[0]-cutoffs[2]) > nu_ref[2]) and ((nu_0[-1]+cutoffs[2]) < nu_max)): 
                 
-                    compute_cross_section_single_grid(sigma_3, nu_fine_3_start, nu_fine_3_end, 
-                                                      N_grid_3, nu_0, nu_ref, N_V_3, S,
-                                                      J_lower, alpha, alpha_sampled,
-                                                      nu_sampled, log_nu_sampled,
-                                                      log_alpha, log_alpha_sampled,
-                                                      Voigt_arr, dV_da_arr, dV_dnu_arr)
+                compute_cross_section_single_grid(sigma_3, nu_fine_3_start, nu_fine_3_end, 
+                                                  N_grid_3, nu_0, nu_ref, N_V_3, S,
+                                                  J_lower, alpha, alpha_sampled,
+                                                  nu_sampled, log_nu_sampled,
+                                                  log_alpha, log_alpha_sampled,
+                                                  Voigt_arr, dV_da_arr, dV_dnu_arr)
     
-                else: 
+            else: 
                 
-                    compute_cross_section_multiple_grids(sigma_1, sigma_2, sigma_3, 
-                                                         nu_fine_1_start, nu_fine_1_end,
-                                                         nu_fine_2_start, nu_fine_2_end,
-                                                         nu_fine_3_start, nu_fine_3_end,
-                                                         N_grid_1, N_grid_2, N_grid_3,
-                                                         nu_0, nu_ref, N_V_1, N_V_2, N_V_3,
-                                                         S, J_lower, alpha, alpha_sampled,
-                                                         log_alpha, log_alpha_sampled,
-                                                         nu_sampled, log_nu_sampled, R_21, R_32,
-                                                         dnu_1, dnu_2, dnu_3, cutoffs,
-                                                         Voigt_arr, dV_da_arr, dV_dnu_arr)
+                compute_cross_section_multiple_grids(sigma_1, sigma_2, sigma_3, 
+                                                     nu_fine_1_start, nu_fine_1_end,
+                                                     nu_fine_2_start, nu_fine_2_end,
+                                                     nu_fine_3_start, nu_fine_3_end,
+                                                     N_grid_1, N_grid_2, N_grid_3,
+                                                     nu_0, nu_ref, N_V_1, N_V_2, N_V_3,
+                                                     S, J_lower, alpha, alpha_sampled,
+                                                     log_alpha, log_alpha_sampled,
+                                                     nu_sampled, log_nu_sampled, R_21, R_32,
+                                                     dnu_1, dnu_2, dnu_3, cutoffs,
+                                                     Voigt_arr, dV_da_arr, dV_dnu_arr)
         
-        t_end_test = time.clock()
+        t_end_test = time.perf_counter()
         total_test = t_end_test-t_test
         
         print('Completed ' + str(nu_0_tot - nu_0_completed) + ' transitions in ' + str(total_test) + ' s')
         
         nu_0_completed = nu_0_tot
+        
+        trans_file.close()
     
-    t_end_calc = time.clock()
+    t_end_calc = time.perf_counter()
     total_calc = t_end_calc-t_begin_calc
 
     print('Calculation complete!')

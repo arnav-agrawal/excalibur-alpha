@@ -47,7 +47,7 @@ def download_file(url, f, m_folder, l_folder):
                         pbar.update(len(chunk))
                         output_file.write(decompressor.decompress(chunk))
                         
-                #convert_to_hdf(decompressed_file)
+                convert_to_hdf(decompressed_file)
                         
             else:
                 with open(compressed_file, 'wb') as file, open(decompressed_file, 'wb') as output_file:
