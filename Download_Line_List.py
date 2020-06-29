@@ -124,6 +124,9 @@ def determine_parameters_HITRAN():
 
 def determine_parameters_VALD():
     return
+
+def determine_parameters_HITEMP():
+    return
             
             
 def check_ExoMol(molecule, isotope = '', linelist = ''):
@@ -208,6 +211,8 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
             return
         
         if database == 'hitemp':
+            mol, iso = determine_parameters_HITEMP()
+            #line_list_folder, abundance = Download_HITEMP.summon_HITEMP(mol, iso)
             return
         
     if not user_friendly:
