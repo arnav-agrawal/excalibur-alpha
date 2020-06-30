@@ -15,6 +15,8 @@ import numpy
 import bz2
 import h5py
 from tqdm import tqdm
+import zipfile
+import re
 from hapi import moleculeName, isotopologueName, abundance
 
 def HITEMP_table():
@@ -143,6 +145,7 @@ def convert_to_hdf(file):
 
 
 def download_line_list(mol_ID, iso_ID, out_folder):
+    print(out_folder)
     table = HITEMP_table()
     row = table.loc[table['ID'] == mol_ID]
     
@@ -151,11 +154,11 @@ def download_line_list(mol_ID, iso_ID, out_folder):
     if download_link.endswith('.bz2'):
         
         # Create directory location to prepare for reading compressed file
-        compressed_file = out_folder + '/HITEMP.par.bz2'
+        compressed_file = out_folder + '/' + moleculeName(mol_ID) + '.par.bz2'
         
         # Create a decompresser object and a directory location for the decompressed file
         decompressor = bz2.BZ2Decompressor()
-        decompressed_file = out_folder + '/HITEMP.par' #Keep the file name but get rid of the .bz2 extension to make it .par
+        decompressed_file = out_folder + '/' + moleculeName(mol_ID) + '.par' #Keep the file name but get rid of the .bz2 extension to make it .par
     
         
         # Download file from the given URL in chunks and then decompress that chunk immediately
@@ -172,7 +175,48 @@ def download_line_list(mol_ID, iso_ID, out_folder):
         # Delete the compressed file
         os.remove(compressed_file)    
         
-
+    else:
+        new_url = download_link
+        web_content = requests.get(new_url).text
+    
+        soup = BeautifulSoup(web_content, "lxml")
+        
+        links = []
+        fnames = []
+        for a in soup.find_all('a'):
+            if a.get('href').endswith('.zip'):
+                links.append(new_url + a.get('href'))
+                fnames.append(a.get('href'))
+        
+        num_links = len(links)
+        counter = 0
+        
+        for link in links:
+            print("\nDownloading .zip file", counter + 1, "of", num_links)
+            
+            # Create directory location to prepare for reading compressed file
+            
+            fname = fnames[counter]
+            
+            compressed_file = out_folder + '/' + fname
+            
+            with requests.get(link, stream = True) as request:
+                with open(compressed_file, 'wb') as file, tqdm(total = int(request.headers.get('content-length', 0)), unit = 'iB', unit_scale = True) as pbar:
+                    for chunk in request.iter_content(chunk_size = 1024 * 1024):
+                        file.write(chunk)
+                        pbar.update(len(chunk))
+            
+            
+            with zipfile.ZipFile(compressed_file, 'r', allowZip64 = True) as file:
+                print("Decompressing this file...")
+                file.extractall(out_folder + '/')
+            
+            
+            counter += 1
+            
+            os.remove(compressed_file)
+                
+        
 
 def summon_HITEMP(molecule, isotopologue):
     output_folder = create_directories(molecule, isotopologue)
