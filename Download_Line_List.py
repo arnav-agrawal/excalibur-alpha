@@ -228,11 +228,11 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
         while True:
             database = input('What database are you downloading a line list from (ExoMol, HITRAN, HITEMP, or VALD)?\n')
             database = database.lower()
-            if database != 'exomol' and database != 'hitran' and database != 'vald' and database != 'hitemp':
-                print("\n ----- This is not a supported database, please try again ----- ")
-                continue
-            else:
+            if database == 'exomol' or database == 'hitran' or database == 'vald' or database == 'hitemp':
                 break
+            else:
+                print("\n ----- This is not a supported database, please try again ----- ")
+                
         
         if database == 'exomol': 
             mol, iso, lin, URL = determine_parameters_ExoMol()
@@ -249,8 +249,8 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
         
         if database == 'hitemp':
             mol, iso = determine_parameters_HITEMP()
-            #line_list_folder, abundance = Download_HITEMP.summon_HITEMP(mol, iso)
-            return
+            line_list_folder, abundance = Download_HITEMP.summon_HITEMP(mol, iso)
+            
         
     if not user_friendly:
         db = data_base.lower()

@@ -143,7 +143,7 @@ def create_directories(molecule, isotope, line_list):
     """
     
     input_folder = '../input'
-    molecule_folder = input_folder + '/' + molecule + '(' + isotope + ')'
+    molecule_folder = input_folder + '/' + molecule + '  |  (' + isotope + ')'
     line_list_folder = molecule_folder + '/' + line_list
     
     if os.path.exists(input_folder) == False:
@@ -293,5 +293,3 @@ def summon_ExoMol(molecule, isotopologue, line_list, URL):
     
     return line_list_folder
     
-    
-##### Begin Main Program #####   

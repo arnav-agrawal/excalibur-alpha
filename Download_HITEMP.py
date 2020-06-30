@@ -10,7 +10,12 @@ from bs4 import BeautifulSoup
 import requests
 import pandas
 import os
-from hapi import moleculeName, isotopologueName
+import time
+import numpy
+import bz2
+import h5py
+from tqdm import tqdm
+from hapi import moleculeName, isotopologueName, abundance
 
 def HITEMP_table():
     url = 'https://hitran.org/hitemp/'
@@ -93,7 +98,7 @@ def create_directories(mol_ID, iso_ID):
     """
     
     input_folder = '../input'
-    molecule_folder = input_folder + '/' + moleculeName(mol_ID) + '-' + isotopologueName(mol_ID, iso_ID)
+    molecule_folder = input_folder + '/' + moleculeName(mol_ID) + '  |  ' + isotopologueName(mol_ID, iso_ID)
     line_list_folder = molecule_folder + '/HITEMP'
     
     if os.path.exists(input_folder) == False:
@@ -108,19 +113,78 @@ def create_directories(mol_ID, iso_ID):
     return line_list_folder
 
 
-def download_line_list(mol_ID, iso_ID):
+def convert_to_hdf(file):
+    """ Convert a given file to HDF5 format. Used for the .trans files.
+    
+    :param file: The .trans file that will be converted to .hdf format
+    :type file: String
+    """
+    
+    print("Converting this .par file to HDF to save storage space...")
+    
+    start_time = time.time()
+    
+    trans_file = pandas.read_csv(file, delim_whitespace = True, header=None, usecols = [0,1,2])
+    
+    upper_state = numpy.array(trans_file[0])
+    lower_state = numpy.array(trans_file[1])
+    log_Einstein_A = numpy.log10(numpy.array(trans_file[2]))   
+    
+    hdf_file_path = os.path.splitext(file)[0] + '.h5'
+    
+    with h5py.File(hdf_file_path, 'w') as hdf:
+        hdf.create_dataset('Upper State', data = upper_state, dtype = 'u4') #store as 32-bit unsigned int
+        hdf.create_dataset('Lower State', data = lower_state, dtype = 'u4') #store as 32-bit unsigned int
+        hdf.create_dataset('Log Einstein A', data = log_Einstein_A, dtype = 'f4') #store as 32-bit float
+
+    os.remove(file)
+    
+    print("This .trans file took", round(time.time() - start_time, 1), "seconds to reformat to HDF.")
+
+
+def download_line_list(mol_ID, iso_ID, out_folder):
     table = HITEMP_table()
     row = table.loc[table['ID'] == mol_ID]
     
     download_link = row.loc[row.index.values[0], 'Download']
-    print(download_link)
+    
+    if download_link.endswith('.bz2'):
+        
+        # Create directory location to prepare for reading compressed file
+        compressed_file = out_folder + '/HITEMP.par.bz2'
+        
+        # Create a decompresser object and a directory location for the decompressed file
+        decompressor = bz2.BZ2Decompressor()
+        decompressed_file = out_folder + '/HITEMP.par' #Keep the file name but get rid of the .bz2 extension to make it .par
+    
+        
+        # Download file from the given URL in chunks and then decompress that chunk immediately
+        with requests.get(download_link, stream=True) as request:
+            with open(compressed_file, 'wb') as file, open(decompressed_file, 'wb') as output_file, tqdm(total = int(request.headers.get('content-length', 0)), unit = 'iB', unit_scale = True) as pbar:
+                for chunk in request.iter_content(chunk_size = 1024 * 1024):
+                    file.write(chunk)
+                    pbar.update(len(chunk))
+                    output_file.write(decompressor.decompress(chunk))
+                        
+            #convert_to_hdf(decompressed_file)
+                        
+
+        # Delete the compressed file
+        os.remove(compressed_file)    
+        
 
 
 def summon_HITEMP(molecule, isotopologue):
     output_folder = create_directories(molecule, isotopologue)
+    download_line_list(molecule, isotopologue, output_folder)
     
+    return output_folder, abundance(molecule, isotopologue)  #Used for processing the downloaded .par file later
 
+"""
 table = HITEMP_table()
-row = table[table['ID'] == 4]
-print(row.index.values[0])
-#print(row.loc[:, 'Iso Count'])
+link = table.loc[4, 'Download']
+print(link)
+
+request = requests.get(link)
+print(request.headers.get('content-length', 0))
+"""
