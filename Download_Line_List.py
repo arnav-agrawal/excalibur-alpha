@@ -14,6 +14,7 @@ import sys
 import requests
 import Download_ExoMol
 import Download_HITRAN
+import Download_HITEMP
 import Process_linelist
 from hapi import partitionSum
 
@@ -48,6 +49,7 @@ def determine_parameters_ExoMol():
         else: 
             website += molecule + '/'
             break
+        
         
     while True:
         try:
@@ -100,33 +102,68 @@ def determine_parameters_HITRAN():
     while True:
         try:
             molecule_ID = int(input("What molecule would you like to download the line list for? Please enter the molecule ID number (left-hand column) found here: https://hitran.org/lbl/# \n"))
+            partitionSum(molecule_ID, 1, [70, 80], step = 1.0)
         except ValueError:
             print("\n ----- Please enter an integer for the molecule ID number -----")
+        except KeyError:
+            print("\n ----- This molecule ID is not valid. Please check to make sure the molecule you want exists on HITRAN. ----- ")
         else:
             break
     
     while True:
         try:
             isotopologue_ID = int(input("What is the isotopologue ID of the isotopologue you would like to download?\n"))
+            partitionSum(molecule_ID, isotopologue_ID, [70, 80], step = 1.0)
         except ValueError:
             print("\n ----- Please enter an integer for the isotopologue ID number -----")
+        except KeyError:
+            print("\n ----- This molecule/isotopologue ID combination is not valid. Please check to make sure the combo you want exists on HITRAN. ----- ")
         else:
-            break
-        
-    try:
-        partitionSum(molecule_ID, isotopologue_ID, [70, 80], step = 1.0)
-    except KeyError:
-        print("\n ----- This molecule/isotopologue ID combination is not valid. Please check to make sure the combo you want exists on HITRAN. ----- ")
-        sys.exit(0)
-    else:
-        return molecule_ID, isotopologue_ID
+            return molecule_ID, isotopologue_ID
 
 
 def determine_parameters_VALD():
     return
 
+
 def determine_parameters_HITEMP():
-    return
+    """
+    Determines the molecule and isotopologue that would like to be accessed based on user input
+
+    Returns
+    -------
+    molecule_ID : int
+        DESCRIPTION.
+    isotopologue_ID : int
+        DESCRIPTION.
+
+    """
+    
+    table = Download_HITEMP.HITEMP_table()
+    
+    while True:
+        try:
+            molecule_ID = int(input("What molecule would you like to download the line list for? Please enter the molecule ID number (left-hand column) found here: https://hitran.org/lbl/# \n"))
+            if molecule_ID in table['ID'].values:
+                row = table.loc[table['ID'] == molecule_ID]   # Find the DataFrame row that contains the molecule_ID
+                break
+        except ValueError:
+            print("\n ----- Please enter an integer for the molecule ID number -----")
+        else:
+            print("\n ----- This molecule ID is not valid. Please check to make sure the molecule you want exists on HITEMP. -----")
+    
+    while True:
+        try:
+            isotopologue_ID = int(input("What is the isotopologue ID of the isotopologue you would like to download?\n"))
+            isotope_count = row.loc[row.index.values[0], 'Iso Count'] # Find the number of isotopologues of the given molecule ID
+            if isotopologue_ID <= isotope_count:
+                break
+        except ValueError:
+            print("\n ----- Please enter an integer for the isotopologue ID number -----")
+        else:
+            print("\n ----- This molecule/isotopologue ID combination is not valid. Please check to make sure the combo you want exists on HITEMP. ----- ")
+        
+    return molecule_ID, isotopologue_ID
             
             
 def check_ExoMol(molecule, isotope = '', linelist = ''):
@@ -189,7 +226,7 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
     if user_friendly:
         
         while True:
-            database = input('What database are you downloading a line list from (ExoMol, HITRAN, or VALD)?\n')
+            database = input('What database are you downloading a line list from (ExoMol, HITRAN, HITEMP, or VALD)?\n')
             database = database.lower()
             if database != 'exomol' and database != 'hitran' and database != 'vald' and database != 'hitemp':
                 print("\n ----- This is not a supported database, please try again ----- ")
