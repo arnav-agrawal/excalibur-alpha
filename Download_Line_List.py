@@ -249,7 +249,7 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
         
         if database == 'hitemp':
             mol, iso = determine_parameters_HITEMP()
-            line_list_folder, abundance = Download_HITEMP.summon_HITEMP(mol, iso)
+            Download_HITEMP.summon_HITEMP(mol, iso)
             
         
     if not user_friendly:

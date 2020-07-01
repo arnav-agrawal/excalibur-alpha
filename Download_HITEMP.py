@@ -17,6 +17,7 @@ import h5py
 from tqdm import tqdm
 import zipfile
 import re
+import pandas
 from hapi import moleculeName, isotopologueName, abundance
 
 def HITEMP_table():
@@ -115,7 +116,7 @@ def create_directories(mol_ID, iso_ID):
     return line_list_folder
 
 
-def convert_to_hdf(file):
+def convert_to_hdf(mol_ID, iso_ID, file):
     """ Convert a given file to HDF5 format. Used for the .trans files.
     
     :param file: The .trans file that will be converted to .hdf format
@@ -126,22 +127,57 @@ def convert_to_hdf(file):
     
     start_time = time.time()
     
-    trans_file = pandas.read_csv(file, delim_whitespace = True, header=None, usecols = [0,1,2])
+    field_lengths = [2,1,12,10,10,5,5,10,4,8,2,2,2,2,2,2,2,1,3,2,2,2,2,2,2,2,2,1,3,12,1,3,1,25,6,1,6]
     
-    upper_state = numpy.array(trans_file[0])
-    lower_state = numpy.array(trans_file[1])
-    log_Einstein_A = numpy.log10(numpy.array(trans_file[2]))   
+    trans_file = pandas.read_fwf(file, widths=field_lengths, header=None)
+    
+    # Get only the necessary columns from the .par file
+    nu_0 = numpy.array(trans_file[2])
+    S_ref = numpy.array(trans_file[3]) / abundance(mol_ID, iso_ID)
+    gamma_L_0_air = numpy.array(trans_file[5]) / 1.01325   # Convert from cm^-1 / atm -> cm^-1 / bar
+    E_lower = numpy.array(trans_file[7])
+    n_L_air = numpy.array(trans_file[8])
+    J_lower = numpy.array(trans_file[31]) 
     
     hdf_file_path = os.path.splitext(file)[0] + '.h5'
     
     with h5py.File(hdf_file_path, 'w') as hdf:
-        hdf.create_dataset('Upper State', data = upper_state, dtype = 'u4') #store as 32-bit unsigned int
-        hdf.create_dataset('Lower State', data = lower_state, dtype = 'u4') #store as 32-bit unsigned int
-        hdf.create_dataset('Log Einstein A', data = log_Einstein_A, dtype = 'f4') #store as 32-bit float
+        hdf.create_dataset('Transition Wavenumber', data = nu_0, dtype = 'u4') #store as 32-bit unsigned int
+        hdf.create_dataset('Line Intensity', data = S_ref, dtype = 'u4') #store as 32-bit unsigned int
+        hdf.create_dataset('Lower State E', data = E_lower, dtype = 'f4') #store as 32-bit float
+        hdf.create_dataset('Lower State J', data = J_lower, dtype = 'f4') #store as 32-bit float
 
     os.remove(file)
     
     print("This .trans file took", round(time.time() - start_time, 1), "seconds to reformat to HDF.")
+    
+    return J_lower, gamma_L_0_air, n_L_air
+
+
+
+def create_air_broad(J_lower_all, gamma_air, n_air, gamma_air_avg, n_air_avg, input_dir):
+    J_max = max(J_lower_all)
+    J_sorted = numpy.arange(int(J_max))
+    
+    for i in range(int(J_max)):
+        
+        gamma_air_i = numpy.mean(gamma_air[numpy.where(J_lower_all == J_sorted[i])])
+        n_air_i = numpy.mean(n_air[numpy.where(J_lower_all == J_sorted[i])])
+        
+        gamma_air_avg = numpy.append(gamma_air_avg, gamma_air_i)
+        n_air_avg = numpy.append(n_air_avg, n_air_i)
+    
+    # Write air broadening file
+    out_file = input_dir + '/air.broad'
+    f_out = open(out_file,'w')
+    
+    f_out.write('J | gamma_L_0 | n_L \n')
+    
+    for i in range(len(J_sorted)):
+        f_out.write('%.1f %.4f %.3f \n' %(J_sorted[i], gamma_air_avg[i], n_air_avg[i]))
+        
+    f_out.close()
+
 
 
 def download_line_list(mol_ID, iso_ID, out_folder):
@@ -168,9 +204,22 @@ def download_line_list(mol_ID, iso_ID, out_folder):
                     file.write(chunk)
                     pbar.update(len(chunk))
                     output_file.write(decompressor.decompress(chunk))
-                        
-            #convert_to_hdf(decompressed_file)
-                        
+                     
+                  
+        # Instantiate arrays which will be needed for creating air broadening file
+        J_lower_all, gamma_air, n_air = (numpy.array([]) for _ in range(3))
+        gamma_air_avg, n_air_avg = (numpy.array([]) for _ in range(2))
+        
+        # Convert line list to hdf5 file format
+        J_i, gamma_air_i, n_air_i = convert_to_hdf(mol_ID, iso_ID, decompressed_file)
+        
+        # Populate the arrays
+        J_lower_all = numpy.append(J_lower_all, J_i)
+        gamma_air = numpy.append(gamma_air, gamma_air_i)
+        n_air = numpy.append(n_air, n_air_i)
+        
+        # Create the air broadening file
+        create_air_broad(J_lower_all, gamma_air, n_air, gamma_air_avg, n_air_avg, out_folder)
 
         # Delete the compressed file
         os.remove(compressed_file)    
@@ -210,8 +259,22 @@ def download_line_list(mol_ID, iso_ID, out_folder):
             with zipfile.ZipFile(compressed_file, 'r', allowZip64 = True) as file:
                 print("Decompressing this file...")
                 file.extractall(out_folder + '/')
-            
-            
+                
+                # Instantiate arrays which will be needed for creating air broadening file
+                J_lower_all, gamma_air, n_air = (numpy.array([]) for _ in range(3))
+                gamma_air_avg, n_air_avg = (numpy.array([]) for _ in range(2))
+                
+                # Convert line list to hdf5 file format
+                J_i, gamma_air_i, n_air_i = convert_to_hdf(mol_ID, iso_ID, unzipped_file)
+                
+                # Populate the arrays
+                J_lower_all = numpy.append(J_lower_all, J_i)
+                gamma_air = numpy.append(gamma_air, gamma_air_i)
+                n_air = numpy.append(n_air, n_air_i)
+                
+                # Create the air broadening file
+                create_air_broad(J_lower_all, gamma_air, n_air, gamma_air_avg, n_air_avg, out_folder)
+                
             counter += 1
             
             os.remove(compressed_file)
@@ -222,7 +285,6 @@ def summon_HITEMP(molecule, isotopologue):
     output_folder = create_directories(molecule, isotopologue)
     download_line_list(molecule, isotopologue, output_folder)
     
-    return output_folder, abundance(molecule, isotopologue)  #Used for processing the downloaded .par file later
 
 """
 table = HITEMP_table()
