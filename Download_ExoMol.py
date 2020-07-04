@@ -16,6 +16,7 @@ import numpy
 import pandas
 import h5py
 import time
+import shutil
 
 
 def download_file(url, f, m_folder, l_folder):
@@ -271,7 +272,128 @@ def get_default_iso(molecule):
 
 
 def get_default_linelist(molecule, isotopologue):
-    return
+    """
+    Returns a default line list for a given ExoMol molecule and isotopologue
+    These are sometimes changed as ExoMol releases better and more up-to-date line lists
+
+    Parameters
+    ----------
+    molecule : str
+        DESCRIPTION.
+    isotopologue : str
+        DESCRIPTION.
+
+    Returns
+    -------
+    str
+        DESCRIPTION.
+
+    """
+    
+    #HCl(1H-35Cl): HITRAN2016    <-- data from HITRAN, but in ExoMol format
+    #MgH(24Mg-1H): MoLLIST / Yadin    <-- we need to check, each line list seems to cover a different wavelength range
+    #CaH (40Ca-1H): MoLLIST / Yadin    <-- we need to check, each line list seems to cover a different wavelength range 
+    
+    structure = molecule + '(' + isotopologue + ')'
+    
+    # Dictionary that defines the default 
+    default_list = {'H2(1H2)': 'RACPPK', 'N2(14N2)': 'WCCRMT', 'C2(12C2)': '8states', 'CO(12C-16O)': 'Li2015',
+                    'NO(14N-16O)': 'NOname', 'PO(31P-16O)': 'POPS', 'VO(51V-16O)': 'VOMYT', 'YO(89Y-16O)': 'SSYT',
+                    'CN(12C-14N)': 'MoLLIST', 'NH(14N-1H)': 'MoLLIST', 'CH(12C-1H)': 'MoLLIST', 'OH(16O-1H)': 'MoLLIST',
+                    'SH(32S-1H)': 'GYT', 'HF(1H-19F)': 'Coxon-Hajig', 'CS(12C-32S)': 'JnK', 'NS(14N-32S)': 'SNaSH',
+                    'PS(31P-32S)': 'POPS', 'PH(31P-1H)': 'LaTY', 'PN(31P-14N)': 'YYLT', 'CP(12C-31P)': 'MoLLIST',
+                    'H2_p(1H-2H_p)': 'ADJSAAM', 'H3_p(1H3_p)': 'MiZATeP', 'OH+(16O-1H_p)': 'MoLLIST', 
+                    'HeH+(4He-1H_p)': 'ADJSAAM', 'LiH_p(7Li-1H_p)': 'CLT', 'KCl(39K-35Cl)': 'Barton', 
+                    'NaCl(23Na-35Cl)': 'Barton', 'LiCl(7Li-35Cl)': 'MoLLIST', 'AlCl(27Al-35Cl)': 'MoLLIST', 
+                    'KF(39K-19F)': 'MoLLIST', 'AlF(27Al-19F)': 'MoLLIST', 'LiF(7Li-19F)': 'MoLLIST',
+                    'CaF(40Ca-19F)': 'MoLLIST', 'MgF(24Mg-19F)': 'MoLLIST', 'TiO(48Ti-16O)': 'Toto',
+                    'AlO(27Al-16O)': 'ATP', 'SiO(28Si-16O)': 'EBJT', 'CaO(40Ca-16O)': 'VBATHY', 'MgO(24Mg-16O)': 'LiTY',
+                    'NaH(23Na-1H)': 'Rivlin', 'AlH(27Al-1H)': 'AlHambra', 'CrH(52Cr-1H)': 'MoLLIST', 
+                    'BeH(9Be-1H)': 'Darby-Lewis', 'TiH(48Ti-1H)': 'MoLLIST', 'FeH(56Fe-1H)': 'MoLLIST', 
+                    'LiH(7Li-1H)': 'CLT', 'ScH(45Sc-1H)': 'LYT', 'NaH(23Na-19F)': 'MoLLIST', 'SiH(28Si-1H)': 'SiGHTLY',
+                    'SiS(28Si-32S)': 'UCTY', 'H2O(1H2-16O)': 'POKAZATEL', 'HCN(1H-12C-14N)': 'Harris', 
+                    'CH4(12C-1H4)': 'YT34to10', 'NH3(14N-1H3)': 'CoYuTe', 'H2S(1H2-32S)': 'AYT2', 
+                    'SO2(32S-16O2)': 'ExoAmes', 'SO3(32S-16O3)': 'UYT2', 'PH3(31P-1H3)': 'SAlTY', 'CH3(12C-1H3)': 'AYYJ',
+                    'AsH3(75As-1H3)': 'CYT18', 'SiH2(28Si-1H2)': 'CATS', 'SiH4(28Si-1H4)': 'OY2T', 
+                    'SiO2(28Si-16O2)': 'OYT3', 'HNO3(1H-14N-16O3)': 'AIJS', 'H2O2(1H2-16O2)': 'APTY', 
+                    'H2CO(1H2-12C-16O)': 'AYTY', 'C2H2(12C2-1H2)': 'aCeTY', 'C2H4(12C2-1H4)': 'MaYTY', 
+                    'P2H2(31P2-1H2)': 'Trans', 'HPPH(1H-31P2-1H)': 'Cis', 'CH3F(12C-1H3-19F)': 'OYKYT', 
+                    'CH3Cl(12C-1H3-35Cl)': 'OYT'}
+    
+    return default_list.get(structure)
+
+
+
+def process_files(input_dir):
+    
+    for file in os.listdir(input_dir):
+        if file.endswith('.broad'):
+            
+            gamma_L_0 = []
+            n_L = []
+            J = []
+        
+            in_file_path = input_dir + '/' + file
+            f_in = open(in_file_path, 'r')
+
+            for line in f_in:
+            
+                line = line.strip()
+                line = line.split()
+    
+                if (len(line) == 4):
+                
+                    gamma_L_0.append(float(line[1]))
+                    n_L.append(float(line[2]))
+                    J.append(float(line[3]))
+                    
+            f_in.close()
+    
+            out_file = './' + file
+            f_out = open(out_file, 'w')
+    
+            f_out.write('J | gamma_L_0 | n_L \n')
+    
+            for i in range(len(J)):
+                f_out.write('%.1f %.4f %.3f \n' %(J[i], gamma_L_0[i], n_L[i]))
+        
+            f_out.close()
+        
+            os.remove(in_file_path)
+            shutil.move(out_file, input_dir)
+            
+        
+        elif file.endswith('.pf'):
+        
+            T_pf = []
+            Q = []
+
+            in_file_path = input_dir + '/' + file
+            f_in = open(in_file_path, 'r')
+
+            for line in f_in:
+            
+                line = line.strip()
+                line = line.split()
+                
+                T_pf.append(float(line[0]))
+                Q.append(float(line[1]))
+      
+            f_in.close()
+    
+            out_file = './' + file
+            f_out = open(out_file, 'w')
+    
+            f_out.write('T | Q \n') 
+    
+            for i in range(len(T_pf)):
+                f_out.write('%.1f %.4f \n' %(T_pf[i], Q[i]))
+        
+            f_out.close()
+        
+            os.remove(in_file_path)
+            shutil.move(out_file, input_dir)
+            
 
 
 def summon_ExoMol(molecule, isotopologue, line_list, URL):
@@ -291,5 +413,5 @@ def summon_ExoMol(molecule, isotopologue, line_list, URL):
     
     iterate_tags(tags, host, molecule_folder, line_list_folder, line_list)
     
-    return line_list_folder
+    process_files(line_list_folder)
     

@@ -1568,7 +1568,7 @@ def storage2cache(TableName,cast=True,ext=None,nlines=None,pos=None):
         InfileData.close()
         LOCAL_TABLE_CACHE[TableName]['filehandler'] = None
     InfileHeader.close()
-    print('                     Lines parsed: %d' % line_count)
+    #print('                     Lines parsed: %d' % line_count)
     return flag_EOF    
     
 ## old version based on regular expressions    
@@ -1676,7 +1676,7 @@ def createHeader(TableName):
     fp.close()
 
 def loadCache():
-    print('Using '+VARIABLES['BACKEND_DATABASE_NAME']+'\n')
+    #print('Using '+VARIABLES['BACKEND_DATABASE_NAME']+'\n')
     LOCAL_TABLE_CACHE = {}
     table_names = getTableNamesFromStorage(VARIABLES['BACKEND_DATABASE_NAME'])
     parfiles_without_header = scanForNewParfiles(VARIABLES['BACKEND_DATABASE_NAME'])
@@ -1686,7 +1686,7 @@ def loadCache():
         createHeader(tab_name)
         table_names.append(tab_name)
     for TableName in table_names:
-        print(TableName)
+        #print(TableName)
         storage2cache(TableName)
 
 def saveCache():
@@ -3094,7 +3094,7 @@ def queryHITRAN(TableName,iso_id_list,numin,numax,pargroups=[],params=[],dotpar=
     # create URL
     iso_id_list_str = [str(iso_id) for iso_id in iso_id_list]
     iso_id_list_str = ','.join(iso_id_list_str)
-    print('\nData is fetched from %s\n'%VARIABLES['GLOBAL_HOST'])
+    #print('\nData is fetched from %s\n'%VARIABLES['GLOBAL_HOST'])
     if pargroups or params: # custom par search
         url = VARIABLES['GLOBAL_HOST'] + '/lbl/api?' + \
         'iso_ids_list=' + iso_id_list_str + '&' + \
@@ -3124,21 +3124,21 @@ def queryHITRAN(TableName,iso_id_list,numin,numax,pargroups=[],params=[],dotpar=
     except urllib2.URLError:
         raise Exception('Cannot connect to %s. Try again or edit GLOBAL_HOST variable.' % GLOBAL_HOST)
     CHUNK = 64 * 1024
-    print('BEGIN DOWNLOAD: '+TableName)
+    #print('BEGIN DOWNLOAD: '+TableName)
     with open_(DataFileName,'w') as fp:
        while True:
           chunk = req.read(CHUNK)
           if not chunk: break
           fp.write(chunk.decode('utf-8'))
-          print('  %d bytes written to %s' % (CHUNK,DataFileName))
+          #print('  %d bytes written to %s' % (CHUNK,DataFileName))
     with open(HeaderFileName,'w') as fp:       
        fp.write(json.dumps(TableHeader,indent=2))
-       print('Header written to %s' % HeaderFileName)
-    print('END DOWNLOAD')
+       #print('Header written to %s' % HeaderFileName)
+    #print('END DOWNLOAD')
     # Set comment
     # Get this table to LOCAL_TABLE_CACHE
     storage2cache(TableName)
-    print('PROCESSED')
+    #print('PROCESSED')
 
 def saveHeader(TableName):
     ParameterList = prepareParlist(dotpar=True)    

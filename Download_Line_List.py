@@ -39,7 +39,7 @@ def determine_parameters_ExoMol():
     
     while True:
         try:
-            molecule = input('What molecule would you like to download the line list for?\n')
+            molecule = input('What molecule would you like to download the line list for (This is case-sensitive)?\n')
             response = requests.get(website + molecule + '/')
             response.raise_for_status() #Raises HTTPError if a bad request is made (server or client error)
             
@@ -71,10 +71,13 @@ def determine_parameters_ExoMol():
     while True:
         try: 
             linelist = input("Which line list of this isotopologue would you like to use (type 'default' to use the default line list)?\n")
+            
             if linelist.lower() == 'default':
                 linelist = Download_ExoMol.get_default_linelist(molecule, isotopologue)
                 website += linelist + '/'
+                return molecule, isotopologue, linelist, website
                 break
+            
             response = requests.get(website + linelist + '/')
             response.raise_for_status()
     
@@ -236,13 +239,11 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
         
         if database == 'exomol': 
             mol, iso, lin, URL = determine_parameters_ExoMol()
-            line_list_folder = Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
-            Process_linelist.process_file(database, line_list_folder)
+            Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
             
         if database == 'hitran':
             mol, iso = determine_parameters_HITRAN()
-            line_list_folder, abundance = Download_HITRAN.summon_HITRAN(mol, iso)
-            Process_linelist.process_file(database, line_list_folder, abundance)
+            Download_HITRAN.summon_HITRAN(mol, iso)
             
         if database == 'vald':
             return
@@ -287,6 +288,7 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
             sys.exit(0)
         
     
+    print("\nDownload complete.")
     """
     1. will probably ask the user if they want to do the "advanced version" of download or the "easy version"
     2. Easy Version... ask the user for the molecule, isotopologue, etc.
