@@ -359,7 +359,7 @@ def get_default_linelist(molecule, isotopologue):
                     'SiO2(28Si-16O2)': 'OYT3', 'HNO3(1H-14N-16O3)': 'AIJS', 'H2O2(1H2-16O2)': 'APTY', 
                     'H2CO(1H2-12C-16O)': 'AYTY', 'C2H2(12C2-1H2)': 'aCeTY', 'C2H4(12C2-1H4)': 'MaYTY', 
                     'P2H2(31P2-1H2)': 'Trans', 'HPPH(1H-31P2-1H)': 'Cis', 'CH3F(12C-1H3-19F)': 'OYKYT', 
-                    'CH3Cl(12C-1H3-35Cl)': 'OYT'}
+                    'CH3Cl(12C-1H3-35Cl)': 'OYT', 'CO2(12C-16O2)': 'UCL-4000'}
     
     return default_list.get(structure)
 
