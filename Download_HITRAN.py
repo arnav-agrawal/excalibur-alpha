@@ -6,10 +6,7 @@ Created on Mon Jun 22 18:07:01 2020
 @author: arnav
 """
 
-#Can use ISO_ID later if needed which gives info about all the molecule/isotope combinations in HITRAN
-
 from hapi import partitionSum, db_begin, fetch, abundance, moleculeName, isotopologueName
-import sys
 import os
 import numpy
 import h5py
@@ -52,6 +49,30 @@ def create_directories(mol_ID, iso_ID):
 
 
 def create_pf(mol_ID, iso_ID, folder, T_min = 70, T_max = 3001, step = 1.0):
+    """
+    Create partition function file using the partitionSum() function already in HITRAN
+
+    Parameters
+    ----------
+    mol_ID : TYPE
+        DESCRIPTION.
+    iso_ID : TYPE
+        DESCRIPTION.
+    folder : TYPE
+        DESCRIPTION.
+    T_min : TYPE, optional
+        DESCRIPTION. The default is 70.
+    T_max : TYPE, optional
+        DESCRIPTION. The default is 3001.
+    step : TYPE, optional
+        DESCRIPTION. The default is 1.0.
+
+    Returns
+    -------
+    None.
+
+    """
+    
     T, Q = partitionSum(mol_ID, iso_ID, [T_min, T_max], step)
 
     out_file = folder + moleculeName(mol_ID) + '.pf'
@@ -62,8 +83,28 @@ def create_pf(mol_ID, iso_ID, folder, T_min = 70, T_max = 3001, step = 1.0):
         
 
 def download_trans_file(mol_ID, iso_ID, folder, nu_min = 200, nu_max = 25000):
+    """
+    Download line list using the fetch() function already in HITRAN
+
+    Parameters
+    ----------
+    mol_ID : TYPE
+        DESCRIPTION.
+    iso_ID : TYPE
+        DESCRIPTION.
+    folder : TYPE
+        DESCRIPTION.
+    nu_min : TYPE, optional
+        DESCRIPTION. The default is 200.
+    nu_max : TYPE, optional
+        DESCRIPTION. The default is 25000.
+
+    Returns
+    -------
+    None.
+
+    """
     db_begin(folder)
-    print("\nFetching data for", moleculeName(mol_ID), "...")
     fetch(moleculeName(mol_ID), mol_ID, iso_ID, nu_min, nu_max)
     
     
@@ -131,8 +172,6 @@ def convert_to_hdf(mol_ID, iso_ID, file):
         
     
     trans_file = pandas.read_fwf(file, widths=field_lengths, header=None)
-    trans_file = trans_file.query('@trans_file[1] == @iso_ID') # filter by the requested isotopologue ID
-    print(trans_file.head())
     
     # Get only the necessary columns from the .par file
     nu_0 = numpy.array(trans_file[2])
@@ -167,6 +206,19 @@ def convert_to_hdf(mol_ID, iso_ID, file):
     
 
 def create_air_broad(input_dir):
+    """
+    Create an air broadening file using the downloaded line list
+
+    Parameters
+    ----------
+    input_dir : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    """
     
     # Instantiate arrays which will be needed for creating air broadening file
     J_lower_all, gamma_air, n_air = (numpy.array([]) for _ in range(3))
@@ -206,6 +258,24 @@ def create_air_broad(input_dir):
     
 
 def summon_HITRAN(molecule, isotopologue):
+    """
+    Main function, uses calls to other functions to perform the download
+
+    Parameters
+    ----------
+    molecule : TYPE
+        DESCRIPTION.
+    isotopologue : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    """
+    
+    print("\nFetching data from HITRAN...\nMolecule:", moleculeName(molecule), "\nIsotopologue", isotopologueName(molecule, isotopologue), "\n")
+    
     output_folder = create_directories(molecule, isotopologue)
     create_pf(molecule, isotopologue, output_folder)
     download_trans_file(molecule, isotopologue, output_folder)

@@ -15,12 +15,11 @@ import requests
 import Download_ExoMol
 import Download_HITRAN
 import Download_HITEMP
-import Process_linelist
 from hapi import partitionSum
 
 def determine_parameters_ExoMol():
     """
-    Determines the desired molecular line list from ExoMol from user input. Returns user-inputted values in a tuple.
+    Determines the desired molecular line list from ExoMol from user input
 
     Returns
     -------
@@ -193,7 +192,7 @@ def check_ExoMol(molecule, isotope = '', linelist = ''):
     try:
         requests.get(website)
     except requests.HTTPError:
-        print("\n ----- These are not valid ExoMol parameters. Please try again. -----")
+        print("\n ----- These are not valid ExoMol parameters. Please try calling the summon() function again. -----")
         sys.exit(0)
         
 
@@ -217,16 +216,65 @@ def check_HITRAN(molecule, isotope):
     try:
         partitionSum(molecule, isotope, [70, 80], step = 1.0)
     except KeyError:
-        print("\n ----- This molecule/isotopologue ID combination is not valid in HITRAN. Please try again. ----- ")
+        print("\n ----- This molecule/isotopologue ID combination is not valid in HITRAN. Please try calling the summon() function again. ----- ")
         sys.exit(0)
 
-def type_parameters_VALD():
+
+def check_HITEMP(molecule, isotope):
+    """
+    Checks if the parameters passed into the summon() function by the user are valid to use with the HITEMP database
+
+    Parameters
+    ----------
+    molecule : TYPE
+        DESCRIPTION.
+    isotope : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    """
+    
+    table = Download_HITEMP.HITEMP_table()
+    if molecule in table['ID'].values:
+        row = table.loc[table['ID'] == molecule]
+        isotope_count = row.loc[row.index.values[0], 'Iso Count']
+        if isotope <= isotope_count:
+            return
+    else:
+        print("\n ----- This molecule/isotopologue ID combination is not valid in HITEMP. Please try calling the summon() function again. ----- ")
+        sys.exit(0)
+
+def check_VALD():
     return
     
 
 def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'default', linelist = 'default'):
+    """
+    Makes callls to other downloader files to retrieve the data from the desired database
+
+    Parameters
+    ----------
+    user_friendly : TYPE, optional
+        DESCRIPTION. The default is True.
+    data_base : TYPE, optional
+        DESCRIPTION. The default is ''.
+    molecule : TYPE, optional
+        DESCRIPTION. The default is ''.
+    isotope : TYPE, optional
+        DESCRIPTION. The default is 'default'.
+    linelist : TYPE, optional
+        DESCRIPTION. The default is 'default'.
+
+    Returns
+    -------
+    None.
+
+    """
     
-    if user_friendly:
+    if user_friendly: # If the user wants to be guided via terminal prompts
         
         while True:
             database = input('What database are you downloading a line list from (ExoMol, HITRAN, HITEMP, or VALD)?\n')
@@ -253,7 +301,7 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
             Download_HITEMP.summon_HITEMP(mol, iso)
             
         
-    if not user_friendly:
+    if not user_friendly: # If the user just wants to call the function with parameters directly passed in
         db = data_base.lower()
         mol = molecule
         iso = isotope
@@ -268,39 +316,26 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
                 lin = Download_ExoMol.get_default_linelist(mol, iso)
             check_ExoMol(molecule, isotope, linelist)
             URL = "http://exomol.com/data/molecules/" + mol + '/' + iso + '/' + lin + '/'
-            line_list_folder = Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
+            Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
             
         elif db == 'hitran':
             if isotope == 'default':
                 iso = 1
             check_HITRAN(molecule, isotope)
-            line_list_folder, abundance = Download_HITRAN.summon_HITRAN(mol, iso)
-            Process_linelist.process_file(database, line_list_folder, abundance)
+            Download_HITRAN.summon_HITRAN(mol, iso)
             
         elif db == 'vald':
             return
         
         elif db == 'hitemp':
-            return
+            if isotope == 'default':
+                iso = 1
+            check_HITEMP(molecule, isotope)
+            Download_HITEMP.summon_HITEMP(mol, iso)
         
         else:
-            print("\n ----- You have not passed in a valid database. Please try again. ----- ")
+            print("\n ----- You have not passed in a valid database. Please try calling the summon() function again. ----- ")
             sys.exit(0)
         
     
     print("\nDownload complete.")
-    """
-    1. will probably ask the user if they want to do the "advanced version" of download or the "easy version"
-    2. Easy Version... ask the user for the molecule, isotopologue, etc.
-    3. Hard version... user can manually set the parameters in
-    4. use one of the three downloader functions based on the file type that the user specifies
-    5. Process the downloaded files
-    6. Run Cthulhu
-    
-    
-
-    Returns
-    -------
-    None.
-
-    """

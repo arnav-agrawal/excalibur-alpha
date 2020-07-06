@@ -82,10 +82,18 @@ def download_file(url, f, m_folder, l_folder):
     
     
 def convert_to_hdf(file):
-    """ Convert a given file to HDF5 format. Used for the .trans files.
-    
-    :param file: The .trans file that will be converted to .hdf format
-    :type file: String
+    """
+    Convert a given file to HDF5 format
+
+    Parameters
+    ----------
+    file : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
     """
     
     print("Converting this .trans file to HDF to save storage space...")
@@ -137,10 +145,25 @@ def create_tag_array(url):
 
 
 def create_directories(molecule, isotope, line_list):
-    """ Create new folders to store the relevant data
-    
-    :return: The names of directories that have been created
-    :rtype: tuple
+    """
+    Create new folders to store the rdesired data
+
+    Parameters
+    ----------
+    molecule : TYPE
+        DESCRIPTION.
+    isotope : TYPE
+        DESCRIPTION.
+    line_list : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    molecule_folder : TYPE
+        DESCRIPTION.
+    line_list_folder : TYPE
+        DESCRIPTION.
+
     """
     
     input_folder = '../input'
@@ -185,8 +208,26 @@ def calc_num_trans(html_tags):
 
 
 def iterate_tags(tags, host, m_folder, l_folder, line_list):
-    """ Iterate through every html tag and download the file contained by the URL in the href
-    
+    """
+    Iterate through every html tag and download the file contained by the URL in the href
+
+    Parameters
+    ----------
+    tags : TYPE
+        DESCRIPTION.
+    host : TYPE
+        DESCRIPTION.
+    m_folder : TYPE
+        DESCRIPTION.
+    l_folder : TYPE
+        DESCRIPTION.
+    line_list : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
     """
     
     counter = 0
@@ -325,6 +366,19 @@ def get_default_linelist(molecule, isotopologue):
 
 
 def process_files(input_dir):
+    """
+    Processes the .broad and .pf files downloaded from ExoMol into a format that Cthulhu.py can read to create cross-sections
+
+    Parameters
+    ----------
+    input_dir : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    """
     
     for file in os.listdir(input_dir):
         if file.endswith('.broad'):
@@ -397,8 +451,24 @@ def process_files(input_dir):
 
 
 def summon_ExoMol(molecule, isotopologue, line_list, URL):
-    """ Main function, called by the user to start the download process
-    
+    """
+    Main function, uses calls to other functions to perform the download
+
+    Parameters
+    ----------
+    molecule : TYPE
+        DESCRIPTION.
+    isotopologue : TYPE
+        DESCRIPTION.
+    line_list : TYPE
+        DESCRIPTION.
+    URL : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
     """
     
     (molecule_folder, line_list_folder) = create_directories(molecule, isotopologue, line_list)

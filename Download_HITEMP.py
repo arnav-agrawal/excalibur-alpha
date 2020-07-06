@@ -16,11 +16,19 @@ import bz2
 import h5py
 from tqdm import tqdm
 import zipfile
-import re
-import pandas
 from hapi import moleculeName, isotopologueName, abundance
 
 def HITEMP_table():
+    """
+    Recreate the table found on the HITEMP main page in order to simplify later processes
+
+    Returns
+    -------
+    hitemp : TYPE
+        DESCRIPTION.
+
+    """
+    
     url = 'https://hitran.org/hitemp/'
 
     web_content = requests.get(url).text
@@ -32,10 +40,12 @@ def HITEMP_table():
     n_columns = 0
     column_names = []
 
+    # iterate through 'tr' (table row) tags
     for row in table.find_all('tr'):
-        td_tags = row.find_all('td')
+        
+        td_tags = row.find_all('td') # find all 'td' (table data) tags
+        
         if len(td_tags) > 0:
-            
             n_rows += 1
             
         if n_columns == 0: # Use the number of td tags in the first row to set the first column
@@ -44,15 +54,15 @@ def HITEMP_table():
             # Handle column names
             th_tags = row.find_all('th') 
             
-        if len(th_tags) > 0 and len(column_names) == 0:
+        if len(th_tags) > 0 and len(column_names) == 0: # This loop adds all column headers of the table to 'column_names'
             for th in th_tags:
                 column_names.append(th.get_text())
             
          
-    hitemp = pandas.DataFrame(columns = column_names, index= range(0,n_rows))
+    hitemp = pandas.DataFrame(columns = column_names, index= range(0,n_rows)) # Create a DataFrame to store the table
 
     row_marker = 0
-    for row in table.find_all('tr'):
+    for row in table.find_all('tr'): # This loop populates our DataFrame with the same data as the table online
         column_marker = 0
         columns = row.find_all('td')
         for column in columns:
@@ -63,10 +73,10 @@ def HITEMP_table():
             row_marker += 1
         
 
-    hitemp = hitemp[:-1]
-    hitemp.rename(columns = {'Iso counta':'Iso Count'}, inplace = True)
-    hitemp.loc[len(hitemp)] = ['4', 'N2O', 'Nitrous Oxide', '5', '3626425', '0', '12899', '2019', '']
-    hitemp.loc[:, 'ID'] = pandas.to_numeric(hitemp['ID'])
+    hitemp = hitemp[:-1] # Get rid of last row
+    hitemp.rename(columns = {'Iso counta':'Iso Count'}, inplace = True) # Rename a column header
+    hitemp.loc[len(hitemp)] = ['4', 'N2O', 'Nitrous Oxide', '5', '3626425', '0', '12899', '2019', ''] # Manually add N2O molecule to table
+    hitemp.loc[:, 'ID'] = pandas.to_numeric(hitemp['ID'])  # This line and the next convert all values in 'ID' and 'Iso Count' column to floats
     hitemp.loc[:, 'Iso Count'] = pandas.to_numeric(hitemp['Iso Count'])
 
 
@@ -75,7 +85,7 @@ def HITEMP_table():
 
 
     counter = 0
-    for tag in table.find_all('a'):
+    for tag in table.find_all('a'): # Populate the 'Download' columns with the url links to the line lists
         hitemp.loc[counter, 'Download'] = 'https://hitran.org' + tag.get('href')
         counter += 1
         
@@ -168,11 +178,11 @@ def convert_to_hdf(mol_ID, iso_ID, file):
         field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 1, 1, 3, 1, 3, 5, 1, 6, 12, 1, 7, 7]
         J_col = 17
         
-    if mol_ID in {8, 18}: #removed 13 for now
+    if mol_ID in {8, 18}:
         field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 3, 1, 5, 1, 5, 6, 12, 1, 7, 7]
         J_col = 15
         
-    if mol_ID in {13}:
+    if mol_ID in {13}: #Handle OH molecule since it has slightly different format
         field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 3, 1, 5, 1, 5, 6, 12, 1, 7, 7]
         J_col = 15
         
@@ -213,6 +223,19 @@ def convert_to_hdf(mol_ID, iso_ID, file):
     
 
 def create_air_broad(input_dir):
+    """
+    Create an air broadening file using the downloaded line list
+
+    Parameters
+    ----------
+    input_dir : str
+        Location of the transition files used to create the 'air.broad' file.
+
+    Returns
+    -------
+    None.
+
+    """
     
     # Instantiate arrays which will be needed for creating air broadening file
     J_lower_all, gamma_air, n_air = (numpy.array([]) for _ in range(3))
@@ -251,6 +274,23 @@ def create_air_broad(input_dir):
 
 
 def download_line_list(mol_ID, iso_ID, out_folder):
+    """
+    Download a line list(s) from the HITEMP database
+
+    Parameters
+    ----------
+    mol_ID : TYPE
+        DESCRIPTION.
+    iso_ID : TYPE
+        DESCRIPTION.
+    out_folder : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    """
     
     table = HITEMP_table()
     row = table.loc[table['ID'] == mol_ID]
@@ -284,6 +324,7 @@ def download_line_list(mol_ID, iso_ID, out_folder):
         os.remove(compressed_file)    
         
     else:
+        # 'download_link' will take us to another site containing one or more '.zip' files that need to be downlaoded
         new_url = download_link
         web_content = requests.get(new_url).text
     
@@ -291,7 +332,7 @@ def download_line_list(mol_ID, iso_ID, out_folder):
         
         links = []
         fnames = []
-        for a in soup.find_all('a'):
+        for a in soup.find_all('a'):  # Parse the webpage to find all 'href' tags that end with '.zip'
             if a.get('href').endswith('.zip'):
                 links.append(new_url + a.get('href'))
                 fnames.append(a.get('href'))
@@ -301,13 +342,11 @@ def download_line_list(mol_ID, iso_ID, out_folder):
         
         for link in links:
             print("\nDownloading .zip file", counter + 1, "of", num_links)
-            
-            # Create directory location to prepare for reading compressed file
-            
+    
             fname = fnames[counter]
-            
             compressed_file = out_folder + fname
             
+            # Download compressed version of file
             with requests.get(link, stream = True) as request:
                 with open(compressed_file, 'wb') as file, tqdm(total = int(request.headers.get('content-length', 0)), unit = 'iB', unit_scale = True) as pbar:
                     for chunk in request.iter_content(chunk_size = 1024 * 1024):
@@ -315,6 +354,7 @@ def download_line_list(mol_ID, iso_ID, out_folder):
                         pbar.update(len(chunk))
             
             
+            # Decompress the file
             with zipfile.ZipFile(compressed_file, 'r', allowZip64 = True) as file:
                 print("Decompressing this file...")
                 file.extractall(out_folder)
@@ -323,7 +363,7 @@ def download_line_list(mol_ID, iso_ID, out_folder):
             os.remove(compressed_file)
             
         counter = 0    
-        for file in os.listdir(out_folder):
+        for file in os.listdir(out_folder): # Convert all downloaded files to HDF5
             if file.endswith('.par'):
                 print("\nConverting .par file", counter + 1, "of", num_links, "to HDF to save storage space.")
                 convert_to_hdf(mol_ID, iso_ID, out_folder + file)
@@ -331,7 +371,24 @@ def download_line_list(mol_ID, iso_ID, out_folder):
         
 
 def summon_HITEMP(molecule, isotopologue):
+    """
+    Main function, uses calls to other functions to perform the download
+
+    Parameters
+    ----------
+    molecule : TYPE
+        DESCRIPTION.
+    isotopologue : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    """
+    print("\nFetching data from HITEMP...\nMolecule:", moleculeName(molecule), "\nIsotopologue", isotopologueName(molecule, isotopologue), "\n")
+    
     output_folder = create_directories(molecule, isotopologue)
     download_line_list(molecule, isotopologue, output_folder)
-    print("\n\nNow creating Air Broadening file ...")
+    print("\n\nNow creating air broadening file ...")
     create_air_broad(output_folder)
