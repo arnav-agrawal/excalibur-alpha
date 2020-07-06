@@ -12,5 +12,5 @@ File that the user of our package would use
 
 import Download_Line_List
 
-Download_Line_List.summon(False, 'hitemp', 10, 1)
+Download_Line_List.summon(False, 'hitemp', 8, 1)   # Download NO from hitemp
 

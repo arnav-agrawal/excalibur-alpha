@@ -233,16 +233,15 @@ def create_air_broad(input_dir):
                 gamma_air = numpy.append(gamma_air, numpy.array(hdf.get('Air Broadened Width')))
                 n_air = numpy.append(n_air, numpy.array(hdf.get('Temperature Dependence of Air Broadening')))
             
-    J_max = max(J_lower_all)
-    J_sorted = numpy.arange(int(J_max))
-    
-    for i in range(int(J_max)):
+    J_sorted = numpy.sort(numpy.unique(J_lower_all))
+        
+    for i in range(len(J_sorted)):
         
         gamma_air_i = numpy.mean(gamma_air[numpy.where(J_lower_all == J_sorted[i])])
         n_air_i = numpy.mean(n_air[numpy.where(J_lower_all == J_sorted[i])])
         gamma_air_avg = numpy.append(gamma_air_avg, gamma_air_i)
         n_air_avg = numpy.append(n_air_avg, n_air_i)
-                
+        
     # Write air broadening file
     out_file = input_dir + 'air.broad'
     f_out = open(out_file,'w')
@@ -250,7 +249,7 @@ def create_air_broad(input_dir):
     f_out.write('J | gamma_L_0 | n_L \n')
     
     for i in range(len(J_sorted)):
-        f_out.write('%.1f %.4f %.3f \n' %(J_sorted[i], gamma_air_avg[i], n_air_avg[i]))
+        f_out.write('%.1f %.4f %.4f \n' %(J_sorted[i], gamma_air_avg[i], n_air_avg[i]))
     
     f_out.close()
 

@@ -250,10 +250,9 @@ def create_air_broad(input_dir):
                 gamma_air = numpy.append(gamma_air, numpy.array(hdf.get('Air Broadened Width')))
                 n_air = numpy.append(n_air, numpy.array(hdf.get('Temperature Dependence of Air Broadening')))
             
-    J_max = max(J_lower_all)
-    J_sorted = numpy.arange(int(J_max))
-    
-    for i in range(int(J_max)):
+    J_sorted = numpy.sort(numpy.unique(J_lower_all))
+        
+    for i in range(len(J_sorted)):
         
         gamma_air_i = numpy.mean(gamma_air[numpy.where(J_lower_all == J_sorted[i])])
         n_air_i = numpy.mean(n_air[numpy.where(J_lower_all == J_sorted[i])])
