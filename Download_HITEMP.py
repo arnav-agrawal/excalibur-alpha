@@ -316,7 +316,7 @@ def download_line_list(mol_ID, iso_ID, out_folder):
                      
         
         # Convert line list to hdf5 file format
-        print("Converting this .par files to HDF to save storage space...")
+        print("Converting this .par file to HDF to save storage space...")
         convert_to_hdf(mol_ID, iso_ID, decompressed_file)
 
         # Delete the compressed file
