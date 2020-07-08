@@ -10,16 +10,16 @@ calculation_type = 'molecule'    # Options: molecule / atom
 
 #***** Specify species information *****#
 
-species = 'H2O'
-species_id = '1H2-16O'
-linelist = 'BT2'
+species = 'HCN'
+species_id = '1H-12C-14N'
+linelist = 'Harris'
 file_format = 'EXOMOL'        # Options: EXOMOL / HITRAN / VALD
 
 #***** Input and output directories *****#
 
 
 if (calculation_type == 'molecule'):
-    input_directory = '../input/' + species + '(' + species_id + ')' + '/' + linelist + '/'    # Folder location containing linelist etc
+    input_directory = '../input/' + species + '  |  (' + species_id + ')/' + linelist + '/'    # Folder location containing linelist etc
     output_directory = '../output/' # Folder location containing output cross sections
 
 if (calculation_type == 'atom'):
@@ -32,10 +32,10 @@ if (calculation_type == 'atom'):
 linelist_files = [filename for filename in os.listdir(input_directory) if filename.endswith('.h5')]
 
 #***** Program settings *****#
-compute_Voigt = True
-make_cross_section = True
-write_output = True
-plot_results = True
+compute_Voigt = True  # Don't need to pass in
+make_cross_section = True # Don't need to pass in
+write_output = True # Don't need to pass in
+plot_results = True # Don't need to pass in
 condor_run = False
 
 #***** Conditions for cross section calculation *****#
@@ -96,6 +96,7 @@ pi = sc.pi   # pi = 3.141592653589793
 
 #***** Identify mass of chosen molecule *****#
 
+# Will get the mass from either the .def file for ExoMol or the molecularMass() function for HITRAN/HITEMP
 masses = {'1H2-16O':       18.010565, '12C-1H4':     16.031300, '14N-1H3':   17.026549, '1H-12C-14N':   27.010899,
           '12C-16O':       27.994915, '12C-16O2':    43.989830, '32S-16O2':  63.961901, '32S-16O3':     79.956820,
           '31P-1H3':       33.997238, '16O2':        31.989830, '16O3':      47.984745, '14N2':         28.006148,

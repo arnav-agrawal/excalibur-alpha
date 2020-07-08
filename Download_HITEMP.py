@@ -391,3 +391,5 @@ def summon_HITEMP(molecule, isotopologue):
     download_line_list(molecule, isotopologue, output_folder)
     print("\n\nNow creating air broadening file ...")
     create_air_broad(output_folder)
+    
+    return output_folder

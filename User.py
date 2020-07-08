@@ -8,9 +8,6 @@ Created on Thu Jun 18 18:11:36 2020
 File that the user of our package would use
 """
 
-#testing change
-
 import Download_Line_List
 
-Download_Line_List.summon(False, 'hitemp', 8, 1)   # Download NO from hitemp
-
+input_dir = Download_Line_List.summon(False, 'exomol', 'HCN', 'default', 'Harris')   # Download NO from hitemp

@@ -287,18 +287,18 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
         
         if database == 'exomol': 
             mol, iso, lin, URL = determine_parameters_ExoMol()
-            Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
+            out = Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
             
         if database == 'hitran':
             mol, iso = determine_parameters_HITRAN()
-            Download_HITRAN.summon_HITRAN(mol, iso)
+            out = Download_HITRAN.summon_HITRAN(mol, iso)
             
         if database == 'vald':
             return
         
         if database == 'hitemp':
             mol, iso = determine_parameters_HITEMP()
-            Download_HITEMP.summon_HITEMP(mol, iso)
+            out = Download_HITEMP.summon_HITEMP(mol, iso)
             
         
     if not user_friendly: # If the user just wants to call the function with parameters directly passed in
@@ -316,13 +316,13 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
                 lin = Download_ExoMol.get_default_linelist(mol, iso)
             check_ExoMol(molecule, isotope, linelist)
             URL = "http://exomol.com/data/molecules/" + mol + '/' + iso + '/' + lin + '/'
-            Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
+            out = Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
             
         elif db == 'hitran':
             if isotope == 'default':
                 iso = 1
             check_HITRAN(molecule, isotope)
-            Download_HITRAN.summon_HITRAN(mol, iso)
+            out = Download_HITRAN.summon_HITRAN(mol, iso)
             
         elif db == 'vald':
             return
@@ -331,7 +331,7 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
             if isotope == 'default':
                 iso = 1
             check_HITEMP(molecule, isotope)
-            Download_HITEMP.summon_HITEMP(mol, iso)
+            out = Download_HITEMP.summon_HITEMP(mol, iso)
         
         else:
             print("\n ----- You have not passed in a valid database. Please try calling the summon() function again. ----- ")
@@ -339,3 +339,5 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
         
     
     print("\nDownload complete.")
+    
+    return out

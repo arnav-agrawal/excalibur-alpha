@@ -282,3 +282,5 @@ def summon_HITRAN(molecule, isotopologue):
         if file.endswith('.data'):
             convert_to_hdf(molecule, isotopologue, output_folder + file)
     create_air_broad(output_folder)
+
+    return output_folder
