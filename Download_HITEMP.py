@@ -8,10 +8,10 @@ Created on Sat Jun 27 14:08:06 2020
 
 from bs4 import BeautifulSoup
 import requests
-import pandas
+import pandas as pd
 import os
 import time
-import numpy
+import numpy as np
 import bz2
 import h5py
 from tqdm import tqdm
@@ -59,7 +59,7 @@ def HITEMP_table():
                 column_names.append(th.get_text())
             
          
-    hitemp = pandas.DataFrame(columns = column_names, index= range(0,n_rows)) # Create a DataFrame to store the table
+    hitemp = pd.DataFrame(columns = column_names, index= range(0,n_rows)) # Create a DataFrame to store the table
 
     row_marker = 0
     for row in table.find_all('tr'): # This loop populates our DataFrame with the same data as the table online
@@ -76,8 +76,8 @@ def HITEMP_table():
     hitemp = hitemp[:-1] # Get rid of last row
     hitemp.rename(columns = {'Iso counta':'Iso Count'}, inplace = True) # Rename a column header
     hitemp.loc[len(hitemp)] = ['4', 'N2O', 'Nitrous Oxide', '5', '3626425', '0', '12899', '2019', ''] # Manually add N2O molecule to table
-    hitemp.loc[:, 'ID'] = pandas.to_numeric(hitemp['ID'])  # This line and the next convert all values in 'ID' and 'Iso Count' column to floats
-    hitemp.loc[:, 'Iso Count'] = pandas.to_numeric(hitemp['Iso Count'])
+    hitemp.loc[:, 'ID'] = pd.to_numeric(hitemp['ID'])  # This line and the next convert all values in 'ID' and 'Iso Count' column to floats
+    hitemp.loc[:, 'Iso Count'] = pd.to_numeric(hitemp['Iso Count'])
 
 
     hitemp.sort_values(by = 'ID', inplace = True)
@@ -187,19 +187,19 @@ def convert_to_hdf(mol_ID, iso_ID, file):
         J_col = 15
         
     
-    trans_file = pandas.read_fwf(file, widths=field_lengths, header=None)
+    trans_file = pd.read_fwf(file, widths=field_lengths, header=None)
     trans_file = trans_file.query('@trans_file[1] == @iso_ID') # filter by the requested isotopologue ID
     
     # Get only the necessary columns from the .par file
-    nu_0 = numpy.array(trans_file[2])
-    log_S_ref = numpy.log10(numpy.array(trans_file[3]) / abundance(mol_ID, iso_ID))
-    gamma_L_0_air = numpy.array(trans_file[5]) / 1.01325   # Convert from cm^-1 / atm -> cm^-1 / bar
-    E_lower = numpy.array(trans_file[7])
-    n_L_air = numpy.array(trans_file[8])
-    J_lower = numpy.array(trans_file[J_col])
+    nu_0 = np.array(trans_file[2])
+    log_S_ref = np.log10(np.array(trans_file[3]) / abundance(mol_ID, iso_ID))
+    gamma_L_0_air = np.array(trans_file[5]) / 1.01325   # Convert from cm^-1 / atm -> cm^-1 / bar
+    E_lower = np.array(trans_file[7])
+    n_L_air = np.array(trans_file[8])
+    J_lower = np.array(trans_file[J_col])
     
     if mol_ID in {10, 33}:  # Handle creation of NO2 and HO2 J_lower columns, as the given value is N on HITRAN not J
-        Sym = numpy.array(trans_file[Sym_col])
+        Sym = np.array(trans_file[Sym_col])
         for i in range(len(J_lower)):
             if Sym[i] == '+':
                 J_lower[i] += 1/2
@@ -238,26 +238,26 @@ def create_air_broad(input_dir):
     """
     
     # Instantiate arrays which will be needed for creating air broadening file
-    J_lower_all, gamma_air, n_air = (numpy.array([]) for _ in range(3))
-    gamma_air_avg, n_air_avg = (numpy.array([]) for _ in range(2))
+    J_lower_all, gamma_air, n_air = (np.array([]) for _ in range(3))
+    gamma_air_avg, n_air_avg = (np.array([]) for _ in range(2))
     
     for file in os.listdir(input_dir):
         if file.endswith('.h5'):
             with h5py.File(input_dir + file, 'r') as hdf:
                 
                 # Populate the arrays by reading in each hdf5 file
-                J_lower_all = numpy.append(J_lower_all, numpy.array(hdf.get('Lower State J')))
-                gamma_air = numpy.append(gamma_air, numpy.array(hdf.get('Air Broadened Width')))
-                n_air = numpy.append(n_air, numpy.array(hdf.get('Temperature Dependence of Air Broadening')))
+                J_lower_all = np.append(J_lower_all, np.array(hdf.get('Lower State J')))
+                gamma_air = np.append(gamma_air, np.array(hdf.get('Air Broadened Width')))
+                n_air = np.append(n_air, np.array(hdf.get('Temperature Dependence of Air Broadening')))
             
-    J_sorted = numpy.sort(numpy.unique(J_lower_all))
+    J_sorted = np.sort(np.unique(J_lower_all))
         
     for i in range(len(J_sorted)):
         
-        gamma_air_i = numpy.mean(gamma_air[numpy.where(J_lower_all == J_sorted[i])])
-        n_air_i = numpy.mean(n_air[numpy.where(J_lower_all == J_sorted[i])])
-        gamma_air_avg = numpy.append(gamma_air_avg, gamma_air_i)
-        n_air_avg = numpy.append(n_air_avg, n_air_i)
+        gamma_air_i = np.mean(gamma_air[np.where(J_lower_all == J_sorted[i])])
+        n_air_i = np.mean(n_air[np.where(J_lower_all == J_sorted[i])])
+        gamma_air_avg = np.append(gamma_air_avg, gamma_air_i)
+        n_air_avg = np.append(n_air_avg, n_air_i)
                 
     # Write air broadening file
     out_file = input_dir + 'air.broad'

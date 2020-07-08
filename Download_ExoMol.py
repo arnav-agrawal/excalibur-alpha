@@ -12,8 +12,8 @@ import re
 import os
 import bz2
 from tqdm import tqdm
-import numpy
-import pandas
+import numpy as np
+import pandas as pd
 import h5py
 import time
 import shutil
@@ -100,11 +100,11 @@ def convert_to_hdf(file):
     
     start_time = time.time()
     
-    trans_file = pandas.read_csv(file, delim_whitespace = True, header=None, usecols = [0,1,2])
+    trans_file = pd.read_csv(file, delim_whitespace = True, header=None, usecols = [0,1,2])
     
-    upper_state = numpy.array(trans_file[0])
-    lower_state = numpy.array(trans_file[1])
-    log_Einstein_A = numpy.log10(numpy.array(trans_file[2]))   
+    upper_state = np.array(trans_file[0])
+    lower_state = np.array(trans_file[1])
+    log_Einstein_A = np.log10(np.array(trans_file[2]))   
     
     hdf_file_path = os.path.splitext(file)[0] + '.h5'
     
