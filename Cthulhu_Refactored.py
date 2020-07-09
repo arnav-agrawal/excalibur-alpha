@@ -10,7 +10,7 @@ import os
 import numpy as np
 import pandas as pd
 import re
-import scipy.constants as sc
+import time
 
 from hapi import molecularMass
 
@@ -20,10 +20,8 @@ from calculations import find_index, prior_index, bin_cross_section_atom, bin_cr
 from calculations import produce_total_cross_section_EXOMOL, produce_total_cross_section_HITRAN
 from calculations import produce_total_cross_section_VALD_atom, produce_total_cross_section_VALD_molecule
 
-from constants import nu_min, nu_max, nu_out_min, nu_out_max, nu_ref, dnu_out
-from constants import u, c, kb, log_P_arr, T_arr, cut_max
-from constants import species_id, masses, T_ref, P_ref, X_H2, X_He
-from constants import Voigt_sub_spacing, N_alpha_samples, Voigt_cutoff
+from constants import nu_ref, gamma_0, n_L, P_ref, T_ref
+from constants import c, kb, h, m_e, c2, u, pi
     
     
 def check_molecule(molecule):
@@ -185,7 +183,7 @@ def read_Burrows(input_directory):
     return J_max, gamma_0_Burrows
 
 
-def interpolate_pf():
+def interpolate_pf(T_pf_raw, Q_raw):
     
     #***** Interpolate (and extrapolate) partition function to a fine grid *****#
     pf_spline = Interp(T_pf_raw, Q_raw, k=5)
@@ -249,20 +247,22 @@ def compute_pressure_broadening_atom():
                 
         gamma_0_H2, n_L_H2 = gamma_L_VALD(gamma_vdw, (m/u), 'H2')
         gamma_0_He, n_L_He = gamma_L_VALD(gamma_vdw, (m/u), 'He')
+        
+    gamma += ((1.0/(4.0*np.pi*(100.0*c))) * gamma_nat)  # Add natural line widths
 
 
-def compute_H2_He_broadening():
+def compute_H2_He_broadening(gamma_0_H2, T_ref, T, n_L_H2, P, P_ref, X_H2, gamma_0_He, n_L_He, X_He):
     gamma = (gamma_0_H2 * np.power((T_ref/T), n_L_H2) * (P/P_ref) * X_H2 +   # H2+He Lorentzian HWHM for given T, P, and J (ang. mom.)
              gamma_0_He * np.power((T_ref/T), n_L_He) * (P/P_ref) * X_He)    # Note that these are only a function of J''
     
     return gamma
     
-def compute_air_broadening():
+def compute_air_broadening(gamma_0_air, T_ref, T, n_L_air, P, P_ref):
     gamma = (gamma_0_air * np.power((T_ref/T), n_L_air) * (P/P_ref))      # Air-broadened Lorentzian HWHM for given T, P, and J (ang. mom.)
 
     return gamma
     
-def compute_Burrows_broadening():
+def compute_Burrows_broadening(gamma_0_Burrows, P, P_ref):
     gamma = (gamma_0_Burrows * (P/P_ref))      # Equation (15) in Sharp & Burrows (2007)  
     
     return gamma
@@ -479,7 +479,16 @@ def write_output_file():
     f.close()
 
     
-def create_cross_section(input_directory, cluster_run, log_pressure, temperature, nu_min, nu_max, dnu, pressure_broadening = 'default', Voigt_cutoff, Voigt_sub_spacing, N_alpha_samples, S_cut):
+def create_cross_section(input_directory, cluster_run, log_pressure, temperature, 
+                         nu_out_min, nu_out_max, dnu_out, pressure_broadening = 'default', X_H2 = 0.85,
+                         X_He = 0.15, Voigt_cutoff = (1.0/6.0), Voigt_sub_spacing = 500, N_alpha_samples = 500, 
+                         S_cut = 1.0e-100, cut_max = 30.0):
+    
+    # Use the input directory to define these right at the start
+    database = ''
+    isotopologue = ''
+    molecule = ''
+    
     # Will need if-else for condor_run = True or False
     
     # For a single point in P-T space:
@@ -489,21 +498,23 @@ def create_cross_section(input_directory, cluster_run, log_pressure, temperature
         N_P = len(log_P_arr)
         N_T = len(T_arr)
     
-    T_pf_raw, Q_raw = load_pf(input_dir)
+    T_pf_raw, Q_raw = load_pf(input_directory)
+    
+    
     
     is_molecule = check_molecule(molecule)
     
     if is_molecule and pressure_broadening == 'default':
-        broadening = det_broad(input_dir)
+        broadening = det_broad(input_directory)
         if broadening == 'H2-He':
-            J_max, gamma_0_H2, n_L_H2, gamma_0_He, n_L_He = read_H2_He(input_dir)
-        if broadening == 'air':
-            J_max, gamma_0_air, n_L_air = read_air(input_dir)
-        if broadening == 'Burrows':
-            J_max, gamma_0_Burrows = read_Burrows(input_dir)
+            J_max, gamma_0_H2, n_L_H2, gamma_0_He, n_L_He = read_H2_He(input_directory)
+        elif broadening == 'air':
+            J_max, gamma_0_air, n_L_air = read_air(input_directory)
+        elif broadening == 'Burrows':
+            J_max, gamma_0_Burrows = read_Burrows(input_directory)
         
     if database == 'exomol':
-        E, g, J = load_ExoMol(input_dir)
+        E, g, J = load_ExoMol(input_directory)
     
     if database == 'hitran':
         return
@@ -521,29 +532,27 @@ def create_cross_section(input_directory, cluster_run, log_pressure, temperature
     #***** Load pressure and temperature for this calculation *****#
     P_arr = np.power(10.0, log_P_arr)   
 
-    # If running on Condor
-    if (condor_run == True):
-        
-        idx_PT = int(sys.argv[1])
-        log_P = log_P_arr[idx_PT//len(T_arr)]   # Log10 atmospheric pressure (bar)
-        P = P_arr[idx_PT//len(T_arr)]   # Atmospheric pressure (bar)
-        T = T_arr[idx_PT%len(T_arr)]   # Atmospheric temperature (K)
-    
-        N_P = 1
-        N_T = 1
-    
-    else:
-    
-        N_P = len(log_P_arr)
-        N_T = len(T_arr)
-
     for p in range(N_P):
-
         for t in range(N_T):
-    
-            if (condor_run == False):
+            if (cluster_run == False):
             
                 P = P_arr[p]   # Atmospheric pressure (bar)
                 T = T_arr[t]   # Atmospheric temperature (K)
+                
+            interpolate_pf(T_pf_raw, Q_raw)
+            
+            m = mass(molecule)
+            
+            if not is_molecule:
+                compute_pressure_broadening_atom()
+                
+            else:
+                if broadening == 'H2-He':
+                    gamma = compute_H2_He_broadening(gamma_0_H2, T_ref, T, n_L_H2, P, 
+                                                     P_ref, X_H2, gamma_0_He, n_L_He, X_He)
+                elif broadening == 'air':
+                    gamma = compute_air_broadening(gamma_0_air, T_ref, T, n_L_air, P, P_ref)
+                elif broadening == 'Burrows':
+                    gamma = compute_Burrows_broadening(gamma_0_Burrows, P, P_ref)
     
     return

@@ -10,22 +10,17 @@ import scipy.constants as sc
 
 #***** Frequency grid *****#
 
-nu_min = 1.0                     # Computational grid min wavenumber (cm^-1)
-nu_max = 30000.0                 # Computational grid max wavenumber (cm^-1)
+#nu_min = 1.0                     # Computational grid min wavenumber (cm^-1)
+#nu_max = 30000.0                 # Computational grid max wavenumber (cm^-1)
 nu_ref = [1.0e2, 1.0e3, 1.0e4]   # Wavenumbers for reference Voigt widths
 
 # Pressure broadening settings *****#
 
-X_H2 = 0.85           # Mixing ratio of H2 (solar)
-X_He = 0.15           # Mixing ratio of He (solar)
 gamma_0 = 0.07        # If fixed broadening chosen, use this Lorentzian HWHM
 n_L = 0.50            # If fixed broadening chosen, use this temperature exponent
 
 T_ref = 296.0   # Reference temperature for broadening parameters
 P_ref = 1.0     # Reference temperature for EXOMOL broadening parameters (bar) - HITRAN conversion from atm already pre-handled
-
-if (calculation_type == 'molecule'): cut_max = 30.0  # Absolute maximum wavenumber cutoff (cm^-1)
-if (calculation_type == 'atom'): cut_max = 1000.0    # Absolute maximum wavenumber cutoff (cm^-1)
 
 #***** Define physical constants *****#
 

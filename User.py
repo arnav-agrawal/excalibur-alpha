@@ -24,10 +24,13 @@ nu_out_min = 1
 nu_out_max = 30,000
 dnu_out = 0.01
 pressure_broadening = 'H2-He'
+X_H2 = 0.85
+X_He = 0.15
 Voigt_cutoff = (1.0/6.0)
 Voigt_sub_spacing = 500
 N_alpha_samples = 500
 S_cut = 1.0e-100
+cut_max = 30.0 # special case for atoms is 1000 which will be dealt with later
 
 
 import Download_Line_List
