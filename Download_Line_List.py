@@ -15,7 +15,7 @@ import requests
 import Download_ExoMol
 import Download_HITRAN
 import Download_HITEMP
-from hapi import partitionSum
+from hapi import partitionSum, moleculeName
 
 def determine_parameters_ExoMol():
     """
@@ -216,7 +216,8 @@ def check_HITRAN(molecule, isotope):
     try:
         partitionSum(molecule, isotope, [70, 80], step = 1.0)
     except KeyError:
-        print("\n ----- This molecule/isotopologue ID combination is not valid in HITRAN. Please try calling the summon() function again. ----- ")
+        print("\n ----- This molecule/isotopologue ID combination is not valid in HITRAN. Please try calling the summon() function again. Make sure you enter the ID number of the molecule you want. ----- ")
+        print("\n ----- A list of supported molecule IDs can be found here: https://hitran.org/lbl/ -----")
         sys.exit(0)
 
 
@@ -244,7 +245,8 @@ def check_HITEMP(molecule, isotope):
         if isotope <= isotope_count:
             return
     else:
-        print("\n ----- This molecule/isotopologue ID combination is not valid in HITEMP. Please try calling the summon() function again. ----- ")
+        print("\n ----- This molecule/isotopologue ID combination is not valid in HITEMP. Please try calling the summon() function again. Make sure you enter the ID number of the molecule you want. ----- ")
+        print("\n ----- A list of supported molecule IDs can be found here: https://hitran.org/hitemp/ -----")
         sys.exit(0)
 
 def check_VALD():
@@ -287,18 +289,18 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
         
         if database == 'exomol': 
             mol, iso, lin, URL = determine_parameters_ExoMol()
-            out = Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
+            Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
             
         if database == 'hitran':
             mol, iso = determine_parameters_HITRAN()
-            out = Download_HITRAN.summon_HITRAN(mol, iso)
+            Download_HITRAN.summon_HITRAN(mol, iso)
             
         if database == 'vald':
             return
         
         if database == 'hitemp':
             mol, iso = determine_parameters_HITEMP()
-            out = Download_HITEMP.summon_HITEMP(mol, iso)
+            Download_HITEMP.summon_HITEMP(mol, iso)
             
         
     if not user_friendly: # If the user just wants to call the function with parameters directly passed in
@@ -316,13 +318,13 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
                 lin = Download_ExoMol.get_default_linelist(mol, iso)
             check_ExoMol(molecule, isotope, linelist)
             URL = "http://exomol.com/data/molecules/" + mol + '/' + iso + '/' + lin + '/'
-            out = Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
+            Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
             
         elif db == 'hitran':
             if isotope == 'default':
                 iso = 1
             check_HITRAN(molecule, isotope)
-            out = Download_HITRAN.summon_HITRAN(mol, iso)
+            Download_HITRAN.summon_HITRAN(mol, iso)
             
         elif db == 'vald':
             return
@@ -331,7 +333,7 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
             if isotope == 'default':
                 iso = 1
             check_HITEMP(molecule, isotope)
-            out = Download_HITEMP.summon_HITEMP(mol, iso)
+            Download_HITEMP.summon_HITEMP(mol, iso)
         
         else:
             print("\n ----- You have not passed in a valid database. Please try calling the summon() function again. ----- ")
@@ -339,5 +341,3 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
         
     
     print("\nDownload complete.")
-    
-    return out

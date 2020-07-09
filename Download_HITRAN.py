@@ -4,6 +4,8 @@
 Created on Mon Jun 22 18:07:01 2020
 
 @author: arnav
+
+TO DO: Map molecular names to isotopologue numbers (in HITEMP also)
 """
 
 from hapi import partitionSum, db_begin, fetch, abundance, moleculeName, isotopologueName
@@ -162,13 +164,13 @@ def convert_to_hdf(mol_ID, iso_ID, file):
         field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 1, 1, 3, 1, 3, 5, 1, 6, 12, 1, 7, 7]
         J_col = 17
         
-    if mol_ID in {8, 18}: #removed 13 for now
+    if mol_ID in {8, 18}: 
         field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 3, 1, 5, 1, 5, 6, 12, 1, 7, 7]
         J_col = 15
         
-    if mol_ID in {13}:
-        field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 3, 1, 5, 1, 5, 6, 12, 1, 7, 7]
-        J_col = 15
+    if mol_ID in {13}: # OH has a special case for field widths
+        field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 3, 5, 2, 5, 6, 12, 1, 7, 7]
+        J_col = 14
         
     
     trans_file = pd.read_fwf(file, widths=field_lengths, header=None)
@@ -282,5 +284,3 @@ def summon_HITRAN(molecule, isotopologue):
         if file.endswith('.data'):
             convert_to_hdf(molecule, isotopologue, output_folder + file)
     create_air_broad(output_folder)
-
-    return output_folder

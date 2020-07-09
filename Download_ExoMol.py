@@ -485,5 +485,3 @@ def summon_ExoMol(molecule, isotopologue, line_list, URL):
     
     process_files(line_list_folder)
     
-    return line_list_folder
-    

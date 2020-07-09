@@ -8,6 +8,31 @@ Created on Thu Jun 18 18:11:36 2020
 File that the user of our package would use
 """
 
+# Parameters for summon() function
+user_friendly = False
+database = 'hitemp'
+molecule = 10
+isotopologue = 1
+linelist = ''
+
+# Parameters for cross_section() function
+input_directory = ''
+cluster_run = False
+log_pressure = 0.0
+temperature = 1000.0
+nu_out_min = 1
+nu_out_max = 30,000
+dnu_out = 0.01
+pressure_broadening = 'H2-He'
+Voigt_cutoff = (1.0/6.0)
+Voigt_sub_spacing = 500
+N_alpha_samples = 500
+S_cut = 1.0e-100
+
+
 import Download_Line_List
 
-input_dir = Download_Line_List.summon(False, 'exomol', 'HCN', 'default', 'Harris')   # Download NO from hitemp
+Download_Line_List.summon(user_friendly, database, molecule, isotopologue, linelist)   # Download NO from hitemp
+
+#cross_section(input_directory, cluster_run, log_pressure, temperature, nu_min, 
+#              nu_max, dnu, pressure_broadening, Voigt_cutoff, Voigt_sub_spacing, N_alpha_samples, S_cut)
