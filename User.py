@@ -9,11 +9,13 @@ File that the user of our package would use
 """
 
 # Parameters for summon() function
+"""
 user_friendly = False
 database = 'hitemp'
 molecule = 10
 isotopologue = 1
 linelist = ''
+"""
 
 # Parameters for cross_section() function
 input_directory = ''
@@ -23,7 +25,7 @@ temperature = 1000.0
 nu_out_min = 1
 nu_out_max = 30,000
 dnu_out = 0.01
-pressure_broadening = 'H2-He'
+pressure_broadening = 'default'
 X_H2 = 0.85
 X_He = 0.15
 Voigt_cutoff = (1.0/6.0)
@@ -35,7 +37,7 @@ cut_max = 30.0 # special case for atoms is 1000 which will be dealt with later
 
 import Download_Line_List
 
-Download_Line_List.summon(user_friendly, database, molecule, isotopologue, linelist)   # Download NO from hitemp
+Download_Line_List.summon(False, 'hitemp', 10, 1)   # Download NO from hitemp
 
 #cross_section(input_directory, cluster_run, log_pressure, temperature, nu_min, 
 #              nu_max, dnu, pressure_broadening, Voigt_cutoff, Voigt_sub_spacing, N_alpha_samples, S_cut)
