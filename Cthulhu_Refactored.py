@@ -21,9 +21,15 @@ from calculations import find_index, prior_index, bin_cross_section_atom, bin_cr
 from calculations import produce_total_cross_section_EXOMOL, produce_total_cross_section_HITRAN
 from calculations import produce_total_cross_section_VALD_atom, produce_total_cross_section_VALD_molecule
 
-from constants import nu_ref, gamma_0, n_L, P_ref, T_ref
+from constants import Nu_ref, gamma_0, n_L, P_ref, T_ref
 from constants import c, kb, h, m_e, c2, u, pi
-    
+
+
+
+def parse_directory(directory):
+    print(directory)
+    directory_name = os.path.abspath(directory)
+    print(directory_name)    
     
 def check_molecule(molecule):
     match = re.match('^[A-Z]{1}[a-z]?$', molecule)     # Matches a string containing only 1 capital letter followed by 0 or 1 lower case letters
@@ -412,67 +418,7 @@ def create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, dnu_
     return (sigma_fine, nu_sampled, nu_ref, N_points_fine_1, N_points_fine_2, N_points_fine_3, 
             dnu_fine, N_Voigt_points, cutoffs, alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr, 
             nu_out, sigma_out, nu_fine_1_start, nu_fine_1_end, nu_fine_2_start, nu_fine_2_end, 
-            nu_fine_3_start, nu_fine_3_end, N_points_out)
-
-
-def run_cross_section(database, molecule):
-            
-    print('Generating cross section for ' + molecule + ' at P = ' + str(P) + ' bar, T = ' + str(T) + ' K')
-        
-    if (database == 'EXOMOL'):
-                
-        produce_total_cross_section_EXOMOL(linelist_files, input_directory,sigma_fine,
-                                           nu_sampled, nu_ref, m, T, Q_T, N_points_fine_1,
-                                           N_points_fine_2, N_points_fine_3, dnu_fine,
-                                           N_Voigt_points, cutoffs, g, E, J, J_max, 
-                                           alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr)
-            
-    elif (database == 'HITRAN'):
-            
-        produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fine,
-                                           nu_sampled, nu_ref, m, T, Q_T, Q_T_ref,
-                                           N_points_fine_1, N_points_fine_2, N_points_fine_3,
-                                           dnu_fine, N_Voigt_points, cutoffs, J_max, 
-                                           alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr)
-                
-    elif (database == 'VALD'):
-        
-        if (calculation_type == 'molecule'):
-                    
-            produce_total_cross_section_VALD_molecule(sigma_fine, nu_sampled, nu_ref, nu_0, E_low, J_low,
-                                                      gf, m, T, Q_T, N_points_fine_1, N_points_fine_2,
-                                                      N_points_fine_3, dnu_fine, N_Voigt_points, cutoffs, 
-                                                      J_max, alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr)
-                
-        elif (calculation_type == 'atom'):
-                    
-            produce_total_cross_section_VALD_atom(sigma_fine, nu_0, nu_detune, E_low, gf, m, T, Q_T,
-                                                  N_points_fine, N_Voigt_points, alpha, gamma, cutoffs)
-                    
-
-
-        
-    # Now bin cross section to output grid    
-    print('Binning cross section to output grid...')
-        
-    if (calculation_type == 'atom'):
-                
-        bin_cross_section_atom(sigma_fine, sigma_out, nu_fine_start, 
-                               nu_fine_end, nu_out, N_points_fine, N_points_out, 0)
-            
-    if (calculation_type == 'molecule'):
-                
-        bin_cross_section_molecule(sigma_fine, sigma_out, N_points_fine_1, N_points_fine_2,
-                                   N_points_fine_3, nu_ref, nu_fine_1_start, nu_fine_1_end,
-                                   nu_fine_2_start, nu_fine_2_end, nu_fine_3_start, nu_fine_3_end,
-                                   nu_out, N_points_out, 0)
-            
-        #bin_cross_section(sigma_fine, sigma_out_log, nu_fine_1, nu_fine_2, nu_fine_3, nu_out, N_points_out, 1)
-        
-    t_final = time.perf_counter()
-    total_final = t_final-t_start
-        
-    print('Total runtime: ' + str(total_final) + ' s')
+            nu_fine_3_start, nu_fine_3_end, N_points_out, nu_min, nu_max)
         
         
 def write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out):
@@ -487,15 +433,15 @@ def write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_a
     f.close()
 
     
-def create_cross_section(input_directory, cluster_run = False, log_pressure = 0.0, temperature = 1000.0, 
+def create_cross_section(input_directory, output_directory = '../output/', cluster_run = False, log_pressure = 0.0, temperature = 1000.0, 
                          nu_out_min = 200, nu_out_max = 25000, dnu_out = 0.01, pressure_broadening = 'default', 
                          X_H2 = 0.85, X_He = 0.15, Voigt_cutoff = (1.0/6.0), Voigt_sub_spacing = 500, 
                          N_alpha_samples = 500, S_cut = 1.0e-100, cut_max = 30.0):
     
     # Use the input directory to define these right at the start
-    database = ''
-    isotopologue = ''
-    molecule = ''
+    database, isotopologue, molecule = parse_directory(input_directory)
+    
+    linelist_files = [filename for filename in os.listdir(input_directory) if filename.endswith('.h5')]
     
     if database == 'exomol':
         print("File format is EXOMOL")
@@ -568,7 +514,7 @@ def create_cross_section(input_directory, cluster_run = False, log_pressure = 0.
                 N_points_fine_3,  dnu_fine, N_Voigt_points, cutoffs, alpha_sampled, 
                 Voigt_arr, dV_da_arr, dV_dnu_arr, nu_out, sigma_out, nu_fine_1_start, 
                 nu_fine_1_end, nu_fine_2_start, nu_fine_2_end, nu_fine_3_start, 
-                nu_fine_3_end, N_points_out) = create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, 
+                nu_fine_3_end, N_points_out, nu_min, nu_max) = create_wavelength_grid_molecule(Nu_ref, m, T, gamma, Voigt_sub_spacing, 
                                                                               dnu_out, cut_max, Voigt_cutoff, nu_out_max, 
                                                                               nu_out_min, N_alpha_samples)
                 
@@ -587,15 +533,17 @@ def create_cross_section(input_directory, cluster_run = False, log_pressure = 0.
                                            nu_sampled, nu_ref, m, T, Q_T, N_points_fine_1,
                                            N_points_fine_2, N_points_fine_3, dnu_fine,
                                            N_Voigt_points, cutoffs, g, E, J, J_max, 
-                                           alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr)
+                                           alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                           nu_min, nu_max, S_cut)
                 
             elif database == 'hitran':
                 produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fine,
                                            nu_sampled, nu_ref, m, T, Q_T, Q_T_ref,
                                            N_points_fine_1, N_points_fine_2, N_points_fine_3,
                                            dnu_fine, N_Voigt_points, cutoffs, J_max, 
-                                           alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr)
-                
+                                           alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                           nu_min, nu_max, S_cut)
+            """    
             elif database == 'vald':
         
                 if is_molecule:
@@ -603,12 +551,16 @@ def create_cross_section(input_directory, cluster_run = False, log_pressure = 0.
                     produce_total_cross_section_VALD_molecule(sigma_fine, nu_sampled, nu_ref, nu_0, E_low, J_low,
                                                       gf, m, T, Q_T, N_points_fine_1, N_points_fine_2,
                                                       N_points_fine_3, dnu_fine, N_Voigt_points, cutoffs, 
-                                                      J_max, alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr)
+                                                      J_max, alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                                      nu_min, nu_max, S_cut, molecule)
                 
                 else:
                     
                     produce_total_cross_section_VALD_atom(sigma_fine, nu_0, nu_detune, E_low, gf, m, T, Q_T,
-                                                  N_points_fine, N_Voigt_points, alpha, gamma, cutoffs)
+                                                  N_points_fine, N_Voigt_points, alpha, gamma, cutoffs,
+                                                  nu_min, nu_max, S_cut, molecule)
+                    
+            """
             
             # Now bin cross section to output grid    
             print('Binning cross section to output grid...')
@@ -617,11 +569,13 @@ def create_cross_section(input_directory, cluster_run = False, log_pressure = 0.
                 bin_cross_section_molecule(sigma_fine, sigma_out, N_points_fine_1, N_points_fine_2,
                                    N_points_fine_3, nu_ref, nu_fine_1_start, nu_fine_1_end,
                                    nu_fine_2_start, nu_fine_2_end, nu_fine_3_start, nu_fine_3_end,
-                                   nu_out, N_points_out, 0)
-                
+                                   nu_out, N_points_out, 0, nu_min, nu_max)
+            
+            """
             else:
                 bin_cross_section_atom(sigma_fine, sigma_out, nu_fine_start, 
                                nu_fine_end, nu_out, N_points_fine, N_points_out, 0)
+            """
             
             #bin_cross_section(sigma_fine, sigma_out_log, nu_fine_1, nu_fine_2, nu_fine_3, nu_out, N_points_out, 1)
         
@@ -635,4 +589,5 @@ def create_cross_section(input_directory, cluster_run = False, log_pressure = 0.
     return
 
 
+parse_directory('../..')
 

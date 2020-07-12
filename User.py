@@ -10,6 +10,7 @@ File that the user of our package would use
 
 # Parameters for cross_section() function
 input_directory = ''
+output_directory = ''
 cluster_run = False
 log_pressure = 0.0
 temperature = 1000.0
@@ -30,5 +31,5 @@ import Download_Line_List
 
 Download_Line_List.summon(False, 'hitran', 6)   # Download NO from hitemp
 
-#cross_section(input_directory, cluster_run, log_pressure, temperature, nu_min, 
+#cross_section(input_directory, output_directory, cluster_run, log_pressure, temperature, nu_min, 
 #              nu_max, dnu, pressure_broadening, Voigt_cutoff, Voigt_sub_spacing, N_alpha_samples, S_cut)

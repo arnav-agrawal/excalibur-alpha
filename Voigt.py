@@ -5,7 +5,7 @@ from scipy.special import wofz as Faddeeva
 #import numba_special  # The import generates Numba overloads for special
 from scipy.integrate import trapz, simps, quad
 from numba.decorators import jit
-from config import c2
+from constants import c2
 
 #@jit(nopython=True)
 def Voigt_width(gamma, alpha):

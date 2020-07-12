@@ -5,7 +5,7 @@ from numba.decorators import jit
 import time
 import h5py
 
-from config import kb, c, c2, m_e, pi, T_ref, nu_min, nu_max, S_cut, species
+from constants import kb, c, c2, m_e, pi, T_ref
 from Voigt import Generate_Voigt_atoms
 
 @jit(nopython=True)
@@ -167,7 +167,7 @@ def compute_cross_section_single_grid(sigma, nu_grid_start, nu_grid_end,
 @jit
 def compute_cross_section_atom(sigma, N_grid, nu_0, nu_detune, nu_fine_start,
                                nu_fine_end, S, T, alpha, gamma, cutoffs, 
-                               N_Voigt_points, species_ID):
+                               N_Voigt_points, species_ID, nu_min, nu_max):
     
     for i in range(len(nu_0)):
     
@@ -238,7 +238,8 @@ def compute_cross_section_multiple_grids(sigma_1, sigma_2, sigma_3,
                                          log_alpha, log_alpha_sampled,
                                          nu_sampled, log_nu_sampled, R_21, R_32,
                                          dnu_1, dnu_2, dnu_3, cutoffs,
-                                         Voigt_arr, dV_da_arr, dV_dnu_arr):
+                                         Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                         nu_min, nu_max):
     
     N_alpha_samples = len(alpha_sampled)
     
@@ -603,7 +604,8 @@ def produce_total_cross_section_EXOMOL(linelist_files, input_directory,
                                        sigma_fine, nu_sampled, nu_ref, m, T, Q_T,
                                        N_grid_1, N_grid_2, N_grid_3, dnu_fine, 
                                        N_Voigt_points, cutoffs, g_arr, E_arr, J_arr, 
-                                       J_max, alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr):
+                                       J_max, alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                       nu_min, nu_max, S_cut):
     
     nu_fine_1_start = nu_min
     nu_fine_1_end = (nu_ref[1] - dnu_fine[0])
@@ -730,7 +732,8 @@ def produce_total_cross_section_EXOMOL(linelist_files, input_directory,
                                                      log_alpha, log_alpha_sampled,
                                                      nu_sampled, log_nu_sampled, R_21, R_32,
                                                      dnu_1, dnu_2, dnu_3, cutoffs,
-                                                     Voigt_arr, dV_da_arr, dV_dnu_arr)
+                                                     Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                                     nu_min, nu_max)
         
         t_end_test = time.perf_counter()
         total_test = t_end_test-t_test
@@ -752,7 +755,8 @@ def produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fi
                                        nu_sampled, nu_ref, m, T, Q_T, Q_ref,
                                        N_grid_1, N_grid_2, N_grid_3, dnu_fine, 
                                        N_Voigt_points, cutoffs, J_max, alpha_sampled,
-                                       Voigt_arr, dV_da_arr, dV_dnu_arr):
+                                       Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                       nu_min, nu_max, S_cut):
     
     nu_fine_1_start = nu_min
     nu_fine_1_end = (nu_ref[1] - dnu_fine[0])
@@ -883,7 +887,8 @@ def produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fi
                                                          log_alpha, log_alpha_sampled,
                                                          nu_sampled, log_nu_sampled, R_21, R_32,
                                                          dnu_1, dnu_2, dnu_3, cutoffs,
-                                                         Voigt_arr, dV_da_arr, dV_dnu_arr)
+                                                         Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                                         nu_min, nu_max)
         
         t_end_test = time.clock()
         total_test = t_end_test-t_test
@@ -902,7 +907,8 @@ def produce_total_cross_section_VALD_molecule(sigma_fine, nu_sampled, nu_ref, nu
                                               E_low_in, J_low_in, gf_in, m, T, Q_T,
                                               N_grid_1, N_grid_2, N_grid_3, dnu_fine, 
                                               N_Voigt_points, cutoffs, J_max, alpha_sampled,
-                                              Voigt_arr, dV_da_arr, dV_dnu_arr):
+                                              Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                              nu_min, nu_max, S_cut, species):
     
     nu_fine_1_start = nu_min
     nu_fine_1_end = (nu_ref[1] - dnu_fine[0])
@@ -1004,7 +1010,8 @@ def produce_total_cross_section_VALD_molecule(sigma_fine, nu_sampled, nu_ref, nu
                                                  log_alpha, log_alpha_sampled,
                                                  nu_sampled, log_nu_sampled, R_21, R_32,
                                                  dnu_1, dnu_2, dnu_3, cutoffs,
-                                                 Voigt_arr, dV_da_arr, dV_dnu_arr)
+                                                 Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                                 nu_min, nu_max)
     
     t_end_calc = time.clock()
     total_calc = t_end_calc-t_begin_calc
@@ -1015,7 +1022,8 @@ def produce_total_cross_section_VALD_molecule(sigma_fine, nu_sampled, nu_ref, nu
 
 def produce_total_cross_section_VALD_atom(sigma_fine, nu_0_in, nu_detune, 
                                           E_low, gf, m, T, Q_T, N_points_fine,
-                                          N_Voigt_points, alpha, gamma, cutoffs):
+                                          N_Voigt_points, alpha, gamma, cutoffs,
+                                          nu_min, nu_max, S_cut, species):
     
     if   (species == 'Na'): species_ID = 0  # Flag for sub-Lorentizan treatment
     elif (species == 'K'):  species_ID = 1  # Flag for sub-Lorentizan treatment
@@ -1047,7 +1055,8 @@ def produce_total_cross_section_VALD_atom(sigma_fine, nu_0_in, nu_detune,
         
         compute_cross_section_atom(sigma_fine, N_points_fine, nu_0, nu_detune, 
                                    nu_fine_start, nu_fine_end, S, T, alpha, 
-                                   gamma, cutoffs, N_Voigt_points, species_ID)
+                                   gamma, cutoffs, N_Voigt_points, species_ID,
+                                   nu_min, nu_max)
     
     t_end_calc = time.clock()
     total_calc = t_end_calc-t_begin_calc
@@ -1059,7 +1068,8 @@ def produce_total_cross_section_VALD_atom(sigma_fine, nu_0_in, nu_detune,
 @jit(nopython=True)
 def bin_cross_section_molecule(sigma_fine, sigma_out, N_grid_1, N_grid_2, N_grid_3, nu_ref,
                                nu_fine_1_start, nu_fine_1_end, nu_fine_2_start, nu_fine_2_end, 
-                               nu_fine_3_start, nu_fine_3_end, nu_out, N_out, option):
+                               nu_fine_3_start, nu_fine_3_end, nu_out, N_out, option,
+                               nu_min, nu_max):
     
     # To avoid logging null values
     #sigma_fine[np.where(sigma_fine <= 0.0)] = 1.0e-250 

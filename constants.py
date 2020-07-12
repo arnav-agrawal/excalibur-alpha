@@ -12,7 +12,7 @@ import scipy.constants as sc
 
 #nu_min = 1.0                     # Computational grid min wavenumber (cm^-1)
 #nu_max = 30000.0                 # Computational grid max wavenumber (cm^-1)
-nu_ref = [1.0e2, 1.0e3, 1.0e4]   # Wavenumbers for reference Voigt widths
+Nu_ref = [1.0e2, 1.0e3, 1.0e4]   # Wavenumbers for reference Voigt widths
 
 # Pressure broadening settings *****#
 
