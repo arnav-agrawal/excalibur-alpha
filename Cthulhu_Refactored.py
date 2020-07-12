@@ -564,11 +564,11 @@ def create_cross_section(input_directory, cluster_run = False, log_pressure = 0.
                 elif broadening == 'Burrows':
                     gamma = compute_Burrows_broadening(gamma_0_Burrows, P, P_ref)
                     
-                sigma_fine, nu_sampled, nu_ref, N_points_fine_1, N_points_fine_2, 
-                N_points_fine_3,  dnu_fine, N_Voigt_points, cutoffs, alpha_sampled,
-                Voigt_arr, dV_da_arr, dV_dnu_arr, nu_out, sigma_out, nu_fine_1_start,
-                nu_fine_1_end, nu_fine_2_start, nu_fine_2_end, nu_fine_3_start,
-                nu_fine_3_end, N_points_out = create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, 
+                (sigma_fine, nu_sampled, nu_ref, N_points_fine_1, N_points_fine_2, 
+                N_points_fine_3,  dnu_fine, N_Voigt_points, cutoffs, alpha_sampled, 
+                Voigt_arr, dV_da_arr, dV_dnu_arr, nu_out, sigma_out, nu_fine_1_start, 
+                nu_fine_1_end, nu_fine_2_start, nu_fine_2_end, nu_fine_3_start, 
+                nu_fine_3_end, N_points_out) = create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, 
                                                                               dnu_out, cut_max, Voigt_cutoff, nu_out_max, 
                                                                               nu_out_min, N_alpha_samples)
                 

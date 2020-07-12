@@ -8,15 +8,6 @@ Created on Thu Jun 18 18:11:36 2020
 File that the user of our package would use
 """
 
-# Parameters for summon() function
-"""
-user_friendly = False
-database = 'hitemp'
-molecule = 10
-isotopologue = 1
-linelist = ''
-"""
-
 # Parameters for cross_section() function
 input_directory = ''
 cluster_run = False
@@ -37,7 +28,7 @@ cut_max = 30.0 # special case for atoms is 1000 which will be dealt with later
 
 import Download_Line_List
 
-Download_Line_List.summon(False, 'hitemp', 10, 1)   # Download NO from hitemp
+Download_Line_List.summon(False, 'hitran', 6)   # Download NO from hitemp
 
 #cross_section(input_directory, cluster_run, log_pressure, temperature, nu_min, 
 #              nu_max, dnu, pressure_broadening, Voigt_cutoff, Voigt_sub_spacing, N_alpha_samples, S_cut)

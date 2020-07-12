@@ -14,6 +14,7 @@ import numpy as np
 import h5py
 import time
 import pandas as pd
+import re
 
 
 def create_directories(mol_ID, iso_ID):
@@ -35,7 +36,24 @@ def create_directories(mol_ID, iso_ID):
     """
     
     input_folder = '../input'
-    molecule_folder = input_folder + '/' + moleculeName(mol_ID) + '  |  ' + isotopologueName(mol_ID, iso_ID)
+    molecule_folder = input_folder + '/' + moleculeName(mol_ID) + '  |  '
+    
+    iso_name = isotopologueName(mol_ID, iso_ID) # Need to format the isotopologue name to match ExoMol formatting
+    
+    # 'H' not followed by lower case letter needs to become '(1H)'
+    iso_name = re.sub('H(?![a-z])', '(1H)', iso_name)
+    
+    # Number of that atom needs to be enclosed by parentheses ... so '(1H)2' becomes '(1H2)'
+    matches = re.findall('[)][0-9]{1}', iso_name)
+    for match in matches:
+        number = re.findall('[0-9]{1}', match)
+        iso_name = re.sub('[)][0-9]{1}', number[0] + ')', iso_name)
+    
+    # replace all ')(' with '-'
+    iso_name = iso_name.replace(')(', '-')
+    
+    molecule_folder += iso_name
+    
     line_list_folder = molecule_folder + '/HITRAN/'
     
     if os.path.exists(input_folder) == False:

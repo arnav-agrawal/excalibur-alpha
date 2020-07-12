@@ -323,7 +323,7 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
         elif db == 'hitran':
             if isotope == 'default':
                 iso = 1
-            check_HITRAN(molecule, isotope)
+            check_HITRAN(molecule, iso)
             Download_HITRAN.summon_HITRAN(mol, iso)
             
         elif db == 'vald':
@@ -332,7 +332,7 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
         elif db == 'hitemp':
             if isotope == 'default':
                 iso = 1
-            check_HITEMP(molecule, isotope)
+            check_HITEMP(molecule, iso)
             Download_HITEMP.summon_HITEMP(mol, iso)
         
         else:
