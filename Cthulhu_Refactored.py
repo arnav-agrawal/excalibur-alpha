@@ -27,9 +27,31 @@ from constants import c, kb, h, m_e, c2, u, pi
 
 
 def parse_directory(directory):
-    print(directory)
+    """
+    Determine which molecule and linelist this directory contains data for (assumes data was downloaded using our script)
+
+    Parameters
+    ----------
+    directory : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    molecule : TYPE
+        DESCRIPTION.
+    linelist : TYPE
+        DESCRIPTION.
+
+    """
+    
     directory_name = os.path.abspath(directory)
-    print(directory_name)    
+    linelist = os.path.basename(directory_name)
+    directory_name = os.path.dirname(directory_name)
+    molecule = os.path.basename(directory_name)
+    molecule = re.sub('[  |].+', '', molecule)  # Get rid of the isotopic information from the folder name
+    
+    return molecule, linelist
+    
     
 def check_molecule(molecule):
     match = re.match('^[A-Z]{1}[a-z]?$', molecule)     # Matches a string containing only 1 capital letter followed by 0 or 1 lower case letters
@@ -439,7 +461,7 @@ def create_cross_section(input_directory, output_directory = '../output/', clust
                          N_alpha_samples = 500, S_cut = 1.0e-100, cut_max = 30.0):
     
     # Use the input directory to define these right at the start
-    database, isotopologue, molecule = parse_directory(input_directory)
+    database, molecule = parse_directory(input_directory)
     
     linelist_files = [filename for filename in os.listdir(input_directory) if filename.endswith('.h5')]
     
@@ -588,6 +610,4 @@ def create_cross_section(input_directory, output_directory = '../output/', clust
     
     return
 
-
-parse_directory('../..')
 

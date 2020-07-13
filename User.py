@@ -9,7 +9,7 @@ File that the user of our package would use
 """
 
 # Parameters for cross_section() function
-input_directory = ''
+input_directory = '/Volumes/Seagate Backup/input/HNO3  |  (1H-14N-16O3)/AIJS'   # Folder containing all downloaded data... Ex:
 output_directory = ''
 cluster_run = False
 log_pressure = 0.0
