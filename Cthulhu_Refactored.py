@@ -455,7 +455,7 @@ def write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_a
     f.close()
 
     
-def create_cross_section(input_directory, output_directory = '../output/', cluster_run = False, log_pressure = 0.0, temperature = 1000.0, 
+def create_cross_section(input_directory, log_pressure, temperature, output_directory = '../output/', cluster_run = False, 
                          nu_out_min = 200, nu_out_max = 25000, dnu_out = 0.01, pressure_broadening = 'default', 
                          X_H2 = 0.85, X_He = 0.15, Voigt_cutoff = (1.0/6.0), Voigt_sub_spacing = 500, 
                          N_alpha_samples = 500, S_cut = 1.0e-100, cut_max = 30.0):
@@ -608,6 +608,8 @@ def create_cross_section(input_directory, output_directory = '../output/', clust
         
         write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out)
     
-    return
+    
+    
+create_cross_section('/Volumes/Seagate Backup/input/HCN  |  (1H-12C-14N)/Harris/', 0, 1000)
 
 

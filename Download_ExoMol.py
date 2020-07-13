@@ -119,7 +119,7 @@ def convert_to_hdf(file):
     
 
 
-def create_tag_array(url):
+def create_tag_array(url, broad_URL):
     """
     Create a list of html tags that contain the URLs from which we will later download files
     
@@ -129,12 +129,14 @@ def create_tag_array(url):
     
     # Get webpage content as text
     web_content = requests.get(url).text
+    broadening_content = requests.get(broad_URL).text
     
     # Create lxml parser
     soup = BeautifulSoup(web_content, "lxml")
+    soup2 = BeautifulSoup(broadening_content, "lxml")
 
     # Parse the webpage by file type (which is contained in the href of the html tag)
-    broad_tags = soup.find_all('a', href = re.compile("broad"))
+    broad_tags = soup2.find_all('a', href = re.compile("broad"))
     pf_tags = soup.find_all('a', href = re.compile("pf"))
     states_tags = soup.find_all('a', href = re.compile("states"))
     trans_tags = soup.find_all('a', href = re.compile("trans"))
@@ -261,8 +263,6 @@ def define_url(molecule, isotope, line_list):
     """
         
     ExoMol_URL = 'http://exomol.com/data/molecules/' + molecule + '/' + isotope + '/' + line_list + '/'
-    
-    #create_directories(molecule, isotope, line_list)
     
     return ExoMol_URL
 
@@ -474,8 +474,9 @@ def summon_ExoMol(molecule, isotopologue, line_list, URL):
     (molecule_folder, line_list_folder) = create_directories(molecule, isotopologue, line_list)
 
     host = "http://exomol.com" 
+    broad_URL = "http://exomol.com/data/molecules/" + molecule + '/' # URL where the broadening files are contained
 
-    tags = create_tag_array(URL)
+    tags = create_tag_array(URL, broad_URL)
     
     print("\n ***** Downloading requested data from ExoMol. You have chosen the following parameters: ***** ")
     print("\nMolecule:", molecule, "\nIsotopologue:", isotopologue, "\nLine List:", line_list)

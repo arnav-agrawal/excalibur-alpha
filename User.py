@@ -29,7 +29,7 @@ cut_max = 30.0 # special case for atoms is 1000 which will be dealt with later
 
 import Download_Line_List
 
-Download_Line_List.summon(False, 'hitran', 6)   # Download NO from hitemp
+Download_Line_List.summon(False, 'exomol', 'HCN')   # Download NO from hitemp
 
-#cross_section(input_directory, output_directory, cluster_run, log_pressure, temperature, nu_min, 
+#cross_section(input_directory, log_pressure, temperature, output_directory, cluster_run, nu_min, 
 #              nu_max, dnu, pressure_broadening, Voigt_cutoff, Voigt_sub_spacing, N_alpha_samples, S_cut)
