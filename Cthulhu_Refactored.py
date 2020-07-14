@@ -11,8 +11,9 @@ import numpy as np
 import pandas as pd
 import re
 import time
+import matplotlib.pyplot as plt
+from matplotlib.ticker import MultipleLocator, AutoLocator, FormatStrFormatter, FuncFormatter, ScalarFormatter
 from scipy.interpolate import UnivariateSpline as Interp
-
 from hapi import molecularMass
 
 
@@ -45,12 +46,14 @@ def parse_directory(directory):
     """
     
     directory_name = os.path.abspath(directory)
-    linelist = os.path.basename(directory_name)
+    database = os.path.basename(directory_name)
+    if database.lower() != 'hitran' and database.lower() != 'hitemp':
+        database = 'exomol'
     directory_name = os.path.dirname(directory_name)
     molecule = os.path.basename(directory_name)
     molecule = re.sub('[  |].+', '', molecule)  # Get rid of the isotopic information from the folder name
     
-    return molecule, linelist
+    return molecule, database
     
     
 def check_molecule(molecule):
@@ -283,7 +286,7 @@ def compute_pressure_broadening_atom():
 def compute_H2_He_broadening(gamma_0_H2, T_ref, T, n_L_H2, P, P_ref, X_H2, gamma_0_He, n_L_He, X_He):
     gamma = (gamma_0_H2 * np.power((T_ref/T), n_L_H2) * (P/P_ref) * X_H2 +   # H2+He Lorentzian HWHM for given T, P, and J (ang. mom.)
              gamma_0_He * np.power((T_ref/T), n_L_He) * (P/P_ref) * X_He)    # Note that these are only a function of J''
-    
+
     return gamma
     
 def compute_air_broadening(gamma_0_air, T_ref, T, n_L_air, P, P_ref):
@@ -354,9 +357,12 @@ def create_wavelength_grid_atom():
         sigma_out = np.zeros(N_points_out)      # Coarse (output) grid
 
 def create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, dnu_out, cut_max, Voigt_cutoff, nu_out_max, nu_out_min, N_alpha_samples):
-    nu_min = max(1.0, (nu_out_min - cut_max))
-    nu_max = nu_out_max + cut_max
+    #nu_min = max(1.0, (nu_out_min - cut_max))
+    #nu_max = nu_out_max + cut_max
     
+    nu_min = 100
+    nu_max = 30000
+
     # First, we need to find values of gamma_V for reference wavenumbers (100, 1000, 10000 cm^-1)
     nu_ref = np.array(nu_ref)   # The reference wavenumbers need to be a numpy array
     alpha_ref = np.sqrt(2.0*kb*T*np.log(2)/m) * (nu_ref/c)    # Doppler HWHM at reference wavenumbers 
@@ -366,7 +372,7 @@ def create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, dnu_
     # Now compute properties of computational (fine) and output (coarse) wavenumber grids
             
     # Wavenumber spacing of three regions of computational grid (smallest of gamma_V_ref/6 or 0.01cm^-1)
-    dnu_fine = np.minimum(gamma_V_ref*Voigt_sub_spacing, dnu_out*np.ones(3))   
+    dnu_fine = np.minimum(gamma_V_ref*Voigt_sub_spacing, dnu_out*np.ones(3))
     
     # Number of points on fine grid (three regions, rounded)
     N_points_fine_1 = int((nu_ref[1]-nu_min)/dnu_fine[0])
@@ -381,15 +387,14 @@ def create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, dnu_
     cutoffs = np.zeros(len(dnu_fine))   # Line wing cutoffs in three regions
     
     # Line cutoffs at @ min(500 gamma_V, 30cm^-1)
-    for i in range(len(dnu_fine)):
-                
+    for i in range(len(dnu_fine)):     
         # If grid spacing below maximum dnu (0.01), set to 3000 dnu (~ 500 gamma_V)
         if (dnu_fine[i] < dnu_out):
             cutoffs[i] = Voigt_cutoff*(1.0/Voigt_sub_spacing)*dnu_fine[i] 
             
         # If at maximum dnu (0.01), set to min(500 gamma_V, 30cm^-1)
         else:
-            cutoffs[i] = dnu_fine[i] * int(Voigt_cutoff*gamma_V_ref[i]/dnu_fine[i])   
+            cutoffs[i] = dnu_fine[i] * int(Voigt_cutoff*gamma_V_ref[i]/dnu_fine[i])
             if (cutoffs[i] >= cut_max): cutoffs[i] = cut_max
             
     # Define start and end points of each fine grid
@@ -457,11 +462,11 @@ def write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_a
     
 def create_cross_section(input_directory, log_pressure, temperature, output_directory = '../output/', cluster_run = False, 
                          nu_out_min = 200, nu_out_max = 25000, dnu_out = 0.01, pressure_broadening = 'default', 
-                         X_H2 = 0.85, X_He = 0.15, Voigt_cutoff = (1.0/6.0), Voigt_sub_spacing = 500, 
+                         X_H2 = 0.85, X_He = 0.15, Voigt_cutoff = 500, Voigt_sub_spacing = (1.0/6.0), 
                          N_alpha_samples = 500, S_cut = 1.0e-100, cut_max = 30.0):
     
     # Use the input directory to define these right at the start
-    database, molecule = parse_directory(input_directory)
+    molecule, database = parse_directory(input_directory)
     
     linelist_files = [filename for filename in os.listdir(input_directory) if filename.endswith('.h5')]
     
@@ -519,7 +524,7 @@ def create_cross_section(input_directory, log_pressure, temperature, output_dire
                 
             Q_T, Q_T_ref = interpolate_pf(T_pf_raw, Q_raw, T, T_ref)
             
-            m = mass(molecule)
+            m = 27.010899 * u
             
             if is_molecule:
                 
@@ -607,9 +612,57 @@ def create_cross_section(input_directory, log_pressure, temperature, output_dire
         print('Total runtime: ' + str(total_final) + ' s')
         
         write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out)
+        plot_results(nu_out, sigma_out, molecule, T, P)
+        
+
+def plot_results(nu_out, sigma_out, species, T, P):
+    wl_out = 1.0e4/nu_out
     
+    # Make wavenumber plot
+    plt.figure()
+    plt.clf()
+    ax = plt.gca()
     
+    plt.semilogy(nu_out, sigma_out, lw=0.3, alpha = 0.5, color = 'red', label = (species + r'Cross Section (out)'))   
     
-create_cross_section('/Volumes/Seagate Backup/input/HCN  |  (1H-12C-14N)/Harris/', 0, 1000)
+    plt.xlim([200.0, 25000.0])
+    plt.ylim([1.0e-30, 1.0e-12])
+
+    plt.ylabel(r'Cross Section (cm$^2$)')
+    plt.xlabel(r'$\tilde{\nu}$ (cm$^{-1}$)')
+
+    legend = plt.legend(loc='upper left', shadow=False, frameon=False, prop={'size':6})
+    
+    plt.savefig('../output/' + species + '_' + str(T) + 'K_' + str(P) + 'bar_nu.pdf')
+    
+    plt.close()
+    
+    # Make wavelength plot
+    plt.clf()
+    ax = plt.gca()
+    
+    xmajorLocator   = MultipleLocator(0.2)
+    xmajorFormatter = FormatStrFormatter('%.1f')
+    xminorLocator   = MultipleLocator(0.02)
+    
+    ax.xaxis.set_major_locator(xmajorLocator)
+    ax.xaxis.set_major_formatter(xmajorFormatter)
+    ax.xaxis.set_minor_locator(xminorLocator)
+    
+    plt.loglog(wl_out, sigma_out, lw=0.3, alpha = 0.5, color= 'red', label = (species + r'$\mathrm{\, \, Cross \, \, Section}$')) 
+    
+    plt.ylim([1.0e-30, 1.0e-14])
+    plt.xlim([0.4, 10.0])
+    
+    plt.ylabel(r'Cross Section (cm$^2$)')
+    plt.xlabel(r'Wavelength (μm)')
+    
+    ax.text(0.7, 5.0e-16, (r'T = ' + str(T) + r'K, P = ' + str(P) + r'bar'), fontsize = 10)
+    
+    legend = plt.legend(loc='upper right', shadow=False, frameon=False, prop={'size':7})
+    
+    #plt.show()
+
+    plt.savefig('../output/' + species + '_' + str(T) + 'K_' + str(P) + 'bar.pdf')
 
 
