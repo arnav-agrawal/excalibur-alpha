@@ -11,10 +11,13 @@ import numpy as np
 import pandas as pd
 import re
 import time
+import copy
+import requests
+from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator, AutoLocator, FormatStrFormatter, FuncFormatter, ScalarFormatter
 from scipy.interpolate import UnivariateSpline as Interp
-from hapi import molecularMass
+from hapi import molecularMass, moleculeName, isotopologueName
 
 
 from Voigt import Voigt_width, Generate_Voigt_grid_molecules, gamma_L_VALD, gamma_L_impact, analytic_alkali
@@ -47,13 +50,13 @@ def parse_directory(directory):
     
     directory_name = os.path.abspath(directory)
     database = os.path.basename(directory_name)
-    if database.lower() != 'hitran' and database.lower() != 'hitemp':
-        database = 'exomol'
     directory_name = os.path.dirname(directory_name)
     molecule = os.path.basename(directory_name)
-    molecule = re.sub('[  |].+', '', molecule)  # Get rid of the isotopic information from the folder name
+    same_molecule = copy.deepcopy(molecule)  # Make a copy of the string because we'll need it for the isotopologue
+    molecule = re.sub('[  |].+', '', molecule)  # Keep molecule part of the folder name
+    isotopologue = re.sub('.+[  |]', '', same_molecule) # Keep isotope part of the folder name
     
-    return molecule, database
+    return molecule, isotopologue, database
     
     
 def check_molecule(molecule):
@@ -63,11 +66,61 @@ def check_molecule(molecule):
     else: return True        # We did not get a match, therefore must have a molecule
 
 
-def mass():
-    # Will need to find the .def file from ExoMol if the line list is not HITRAN or HITEMP
-    # otherwise can just use the molecularMass() function in hapi
-    return
+def mass(molecule, isotopologue, linelist):
+    if linelist == 'hitran' or linelist == 'hitemp':
+        mol_ID = 1
+        while moleculeName(mol_ID) != molecule:
+            mol_ID += 1
+            
+        iso_ID = 1
+        while True:
+            iso_name = isotopologueName(mol_ID, iso_ID) # Need to format the isotopologue name to match ExoMol formatting
     
+            # 'H' not followed by lower case letter needs to become '(1H)'
+            iso_name = re.sub('H(?![a-z])', '(1H)', iso_name)
+    
+            # Number of that atom needs to be enclosed by parentheses ... so '(1H)2' becomes '(1H2)'
+            matches = re.findall('[)][0-9]{1}', iso_name)
+            for match in matches:
+                number = re.findall('[0-9]{1}', match)
+                iso_name = re.sub('[)][0-9]{1}', number[0] + ')', iso_name)
+    
+            # replace all ')(' with '-'
+            iso_name = iso_name.replace(')(', '-')
+            
+            if iso_name == isotopologue:
+                return molecularMass(mol_ID, iso_ID)
+            
+            else:
+                iso_ID += 1
+
+        
+    else:
+        isotopologue = isotopologue.replace('(', '')
+        isotopologue = isotopologue.replace(')', '')
+        url = 'http://exomol.com/data/molecules/' + molecule + '/' + isotopologue + '/' + linelist + '/'
+        
+        # Parse the webpage to find the .def file and read it
+        web_content = requests.get(url).text
+        soup = BeautifulSoup(web_content, "lxml")
+        def_tag = soup.find('a', href = re.compile("def"))
+        new_url = 'http://exomol.com' + def_tag.get('href')
+        
+        out_file = './def'
+        with requests.get(new_url, stream=True) as request:
+            with open(out_file, 'wb') as file:
+                for chunk in request.iter_content(chunk_size = 1024 * 1024):
+                    file.write(chunk)
+                    
+        data = pd.read_csv(out_file, delimiter = '#', names = ['Value', 'Key'])  # Store the .def file in a pandas DataFrame
+        data = data[data['Key'].str.contains('mass')]  # Only use the row that contains the isotopologue mass
+        data = data.reset_index(drop = True)  # Reset the index of the DataFrame
+        mass = data['Value'][0]
+        mass = re.findall('[0-9|.]+', mass)[0]
+        
+        os.remove(out_file)
+        return float(mass)
+        
     
 def load_ExoMol(input_directory):
     print("Loading ExoMol format")
@@ -466,7 +519,15 @@ def create_cross_section(input_directory, log_pressure, temperature, output_dire
                          N_alpha_samples = 500, S_cut = 1.0e-100, cut_max = 30.0):
     
     # Use the input directory to define these right at the start
-    molecule, database = parse_directory(input_directory)
+    molecule, isotopologue, database = parse_directory(input_directory)
+    if database.lower() != 'hitran' and database.lower() != 'hitemp':
+        linelist = database
+        database = 'exomol'
+    else:
+        database = database.lower()
+        print(database)
+        linelist = database
+        print(linelist)
     
     linelist_files = [filename for filename in os.listdir(input_directory) if filename.endswith('.h5')]
     
@@ -524,7 +585,7 @@ def create_cross_section(input_directory, log_pressure, temperature, output_dire
                 
             Q_T, Q_T_ref = interpolate_pf(T_pf_raw, Q_raw, T, T_ref)
             
-            m = 27.010899 * u
+            m = mass(molecule, isotopologue, linelist) * u
             
             if is_molecule:
                 
@@ -664,5 +725,3 @@ def plot_results(nu_out, sigma_out, species, T, P):
     #plt.show()
 
     plt.savefig('../output/' + species + '_' + str(T) + 'K_' + str(P) + 'bar.pdf')
-
-
