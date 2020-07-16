@@ -472,6 +472,14 @@ def create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, dnu_
     sigma_fine = np.zeros(N_points_fine)    # Computational (fine) grid
     sigma_out = np.zeros(N_points_out)      # Coarse (output) grid
     
+    return (sigma_fine, nu_ref, N_points_fine_1, N_points_fine_2, N_points_fine_3, dnu_fine, cutoffs,
+            nu_out, sigma_out, nu_fine_1_start, nu_fine_1_end, nu_fine_2_start, nu_fine_2_end, 
+            nu_fine_3_start, nu_fine_3_end, N_points_out, nu_min, nu_max, alpha_ref)
+    
+    
+def precompute_Voigt_profiles(nu_ref, nu_max, N_alpha_samples, T, m, cutoffs, dnu_fine, gamma,
+                              alpha_ref):
+    
     #***** Pre-compute Voigt function array for molecules *****#
     
     print('Pre-computing Voigt profiles...')
@@ -495,11 +503,8 @@ def create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, dnu_
     total1 = t2-t1
             
     print('Voigt profiles computed in ' + str(total1) + ' s')       
-    
-    return (sigma_fine, nu_sampled, nu_ref, N_points_fine_1, N_points_fine_2, N_points_fine_3, 
-            dnu_fine, N_Voigt_points, cutoffs, alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr, 
-            nu_out, sigma_out, nu_fine_1_start, nu_fine_1_end, nu_fine_2_start, nu_fine_2_end, 
-            nu_fine_3_start, nu_fine_3_end, N_points_out, nu_min, nu_max)
+
+    return nu_sampled, alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr, N_Voigt_points
         
         
 def write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out):
@@ -618,13 +623,16 @@ def create_cross_section(input_directory, log_pressure, temperature, output_dire
                 elif broadening == 'Burrows':
                     gamma = compute_Burrows_broadening(gamma_0_Burrows, P, P_ref)
                     
-                (sigma_fine, nu_sampled, nu_ref, N_points_fine_1, N_points_fine_2, 
-                N_points_fine_3,  dnu_fine, N_Voigt_points, cutoffs, alpha_sampled, 
-                Voigt_arr, dV_da_arr, dV_dnu_arr, nu_out, sigma_out, nu_fine_1_start, 
-                nu_fine_1_end, nu_fine_2_start, nu_fine_2_end, nu_fine_3_start, 
-                nu_fine_3_end, N_points_out, nu_min, nu_max) = create_wavelength_grid_molecule(Nu_ref, m, T, gamma, Voigt_sub_spacing, 
+                (sigma_fine, nu_ref, N_points_fine_1, N_points_fine_2, 
+                 N_points_fine_3, dnu_fine, cutoffs, nu_out, sigma_out, 
+                 nu_fine_1_start, nu_fine_1_end, nu_fine_2_start, 
+                 nu_fine_2_end, nu_fine_3_start, nu_fine_3_end, 
+                 N_points_out, nu_min, nu_max, alpha_ref) = create_wavelength_grid_molecule(Nu_ref, m, T, gamma, Voigt_sub_spacing, 
                                                                               dnu_out, cut_max, Voigt_cutoff, nu_out_max, 
                                                                               nu_out_min, N_alpha_samples)
+                                                                                               
+                (nu_sampled, alpha_sampled, Voigt_arr, 
+                 dV_da_arr, dV_dnu_arr, N_Voigt_points) = precompute_Voigt_profiles(nu_ref, nu_max, N_alpha_samples, T, m, cutoffs, dnu_fine, gamma, alpha_ref)                                                                            
                 
             else:
                 
