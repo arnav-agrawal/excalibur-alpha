@@ -253,7 +253,7 @@ def check_VALD():
     return
     
 
-def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'default', linelist = 'default'):
+def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'default', linelist = 'default', **kwargs):
     """
     Makes callls to other downloader files to retrieve the data from the desired database
 

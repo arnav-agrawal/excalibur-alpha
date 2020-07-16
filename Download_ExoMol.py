@@ -19,9 +19,9 @@ import time
 import shutil
 
 
-def download_file(url, f, m_folder, l_folder):
+def download_file(url, f, l_folder):
     """
-    Download a file from ExoMol - decompress if needed
+    Download a file from ExoMol and decompress it if needed. 
     
     Parameters:
         url (string): The URL of a given ExoMol file
@@ -30,12 +30,18 @@ def download_file(url, f, m_folder, l_folder):
     
     if f.endswith('bz2') == True: # If the file ends in .bz2 we need to read and decompress it
         
+        # Check if the file was already downloaded
+        if (os.path.splitext(os.path.splitext(f)[0])[0] + '.h5') in os.listdir(l_folder):
+            print("This file is already downloaded. Moving on.")
+            return
+        
         # Create directory location to prepare for reading compressed file
         compressed_file = l_folder + '/' + f
         
         # Create a decompresser object and a directory location for the decompressed file
         decompressor = bz2.BZ2Decompressor()
         decompressed_file = l_folder + '/' + os.path.splitext(f)[0] #Keep the file name but get rid of the .bz2 extension to make it .trans
+        
     
         
         # Download file from the given URL in chunks and then decompress that chunk immediately
@@ -63,22 +69,17 @@ def download_file(url, f, m_folder, l_folder):
                     
     else: # If the file is not compressed we just need to read it in
         
-        if f.endswith('broad') == True: # Include this condition because .broad files are placed in a separate directory location
+        if 'air' in f:
+            input_file = l_folder + '/air.broad'
+        elif 'self' in f:
+            input_file = l_folder + '/self.broad'
+        else:
             input_file = l_folder + '/' + f
-            #print("Reading this file from ExoMol:", input_file)
-            with requests.get(url, stream=True) as request:
-                with open(input_file, 'wb') as file:
-                    for chunk in request.iter_content(chunk_size = 1024 * 1024):
-                        file.write(chunk)
-                        
-        else: # the file must be .pf
-            input_file = l_folder + '/' + f
-            #print("Reading this file from ExoMol:", input_file)
-            with requests.get(url, stream=True) as request:
-                with open(input_file, 'wb') as file:
-                    for chunk in request.iter_content(chunk_size = 1024 * 1024):
-                        file.write(chunk)
-    
+        
+        with requests.get(url, stream=True) as request:
+            with open(input_file, 'wb') as file:
+                for chunk in request.iter_content(chunk_size = 1024 * 1024):
+                    file.write(chunk)    
     
     
 def convert_to_hdf(file):
@@ -181,7 +182,7 @@ def create_directories(molecule, isotope, line_list):
     if os.path.exists(line_list_folder) == False:
         os.mkdir(line_list_folder)
         
-    return molecule_folder, line_list_folder
+    return line_list_folder
 
         
 
@@ -209,7 +210,7 @@ def calc_num_trans(html_tags):
 
 
 
-def iterate_tags(tags, host, m_folder, l_folder, line_list):
+def iterate_tags(tags, host, l_folder, line_list):
     """
     Iterate through every html tag and download the file contained by the URL in the href
 
@@ -218,8 +219,6 @@ def iterate_tags(tags, host, m_folder, l_folder, line_list):
     tags : TYPE
         DESCRIPTION.
     host : TYPE
-        DESCRIPTION.
-    m_folder : TYPE
         DESCRIPTION.
     l_folder : TYPE
         DESCRIPTION.
@@ -253,7 +252,7 @@ def iterate_tags(tags, host, m_folder, l_folder, line_list):
             print("\nDownloading .trans file", counter, "of", num_trans)
         
         # Download each line list
-        download_file(url, filename, m_folder, l_folder)
+        download_file(url, filename, l_folder)
         
         
 
@@ -471,7 +470,7 @@ def summon_ExoMol(molecule, isotopologue, line_list, URL):
 
     """
     
-    (molecule_folder, line_list_folder) = create_directories(molecule, isotopologue, line_list)
+    line_list_folder = create_directories(molecule, isotopologue, line_list)
 
     host = "http://exomol.com" 
     broad_URL = "http://exomol.com/data/molecules/" + molecule + '/' # URL where the broadening files are contained
@@ -482,7 +481,8 @@ def summon_ExoMol(molecule, isotopologue, line_list, URL):
     print("\nMolecule:", molecule, "\nIsotopologue:", isotopologue, "\nLine List:", line_list)
     print("\nStarting by downloading the .broad, .pf, and .states files...")
     
-    iterate_tags(tags, host, molecule_folder, line_list_folder, line_list)
+    iterate_tags(tags, host, line_list_folder, line_list)
     
     process_files(line_list_folder)
+    
     

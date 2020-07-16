@@ -13,6 +13,7 @@ import re
 import time
 import copy
 import requests
+import sys
 from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator, AutoLocator, FormatStrFormatter, FuncFormatter, ScalarFormatter
@@ -245,7 +246,7 @@ def read_H2_He(input_directory):
 def read_air(input_directory):
     
     # Read in air broadening file
-    broad_file_air = pd.read_csv(input_directory + 'air.broad', sep = ' ', header=None, skiprows=1)
+    broad_file_air = pd.read_csv(input_directory + 'air.broad', sep = ' ', header=None, skiprows = 1)
     J_max = int(np.max(np.array(broad_file_air[0])))
     gamma_0_air = np.array(broad_file_air[1])
     n_L_air = np.array(broad_file_air[2])
@@ -413,7 +414,7 @@ def create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, dnu_
     #nu_min = max(1.0, (nu_out_min - cut_max))
     #nu_max = nu_out_max + cut_max
     
-    nu_min = 100
+    nu_min = 1
     nu_max = 30000
 
     # First, we need to find values of gamma_V for reference wavenumbers (100, 1000, 10000 cm^-1)
@@ -516,7 +517,7 @@ def write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_a
 def create_cross_section(input_directory, log_pressure, temperature, output_directory = '../output/', cluster_run = False, 
                          nu_out_min = 200, nu_out_max = 25000, dnu_out = 0.01, pressure_broadening = 'default', 
                          X_H2 = 0.85, X_He = 0.15, Voigt_cutoff = 500, Voigt_sub_spacing = (1.0/6.0), 
-                         N_alpha_samples = 500, S_cut = 1.0e-100, cut_max = 30.0):
+                         N_alpha_samples = 500, S_cut = 1.0e-100, cut_max = 30.0, **kwargs):
     
     # Use the input directory to define these right at the start
     molecule, isotopologue, database = parse_directory(input_directory)
@@ -525,9 +526,7 @@ def create_cross_section(input_directory, log_pressure, temperature, output_dire
         database = 'exomol'
     else:
         database = database.lower()
-        print(database)
         linelist = database
-        print(linelist)
     
     linelist_files = [filename for filename in os.listdir(input_directory) if filename.endswith('.h5')]
     
@@ -557,10 +556,31 @@ def create_cross_section(input_directory, log_pressure, temperature, output_dire
         broadening = det_broad(input_directory)
         if broadening == 'H2-He':
             J_max, gamma_0_H2, n_L_H2, gamma_0_He, n_L_He = read_H2_He(input_directory)
+            
         elif broadening == 'air':
             J_max, gamma_0_air, n_L_air = read_air(input_directory)
+            
         elif broadening == 'Burrows':
             J_max, gamma_0_Burrows = read_Burrows(input_directory)
+            
+    elif is_molecule and pressure_broadening != 'default':
+        broadening = pressure_broadening
+        if broadening == 'H2-He' and 'H2.broad' in os.listdir(input_directory) and 'He.broad' in os.listdir(input_directory):
+            J_max, gamma_0_H2, n_L_H2, gamma_0_He, n_L_He = read_H2_He(input_directory)
+        
+        elif broadening == 'air' and 'air.broad' in os.listdir(input_directory):
+            broadening = 'air'
+            J_max, gamma_0_air, n_L_air = read_air(input_directory)
+            
+        elif broadening == 'Burrows':
+            # To do: Create a Burrows broadening file and add it to directory
+            J_max, gamma_0_Burrows = read_Burrows(input_directory)
+            
+        else:
+            print("\nYou did not enter a valid type of pressure broadening. Please try again.")
+            sys.exit(0)
+            
+    # Will need an 'else' statement for atomic broadening
     
 
     # Start clock for timing program
