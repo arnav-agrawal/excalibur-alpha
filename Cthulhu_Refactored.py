@@ -15,8 +15,6 @@ import copy
 import requests
 import sys
 from bs4 import BeautifulSoup
-import matplotlib.pyplot as plt
-from matplotlib.ticker import MultipleLocator, AutoLocator, FormatStrFormatter, FuncFormatter, ScalarFormatter
 from scipy.interpolate import UnivariateSpline as Interp
 from hapi import molecularMass, moleculeName, isotopologueName
 
@@ -201,9 +199,25 @@ def det_broad(input_directory):
         
     else:
         broadening = 'Burrows'
+        create_Burrows(input_directory)
         # To do: Create a Burrows broadening file and add it to directory
         
     return broadening
+
+
+def create_Burrows(input_directory):
+    burrows_file = input_directory + 'Burrows.broad'
+    J = np.arange(31.0)
+    N_L = np.zeros(31)
+    
+    gamma_L_0 = np.array((0.1 - min(J, 30) * 0.002)) / (1.01325 * 2) # Convert from cm^-1 / atm -> cm^-1 / bar and take width at half-max
+
+    f_out = open(burrows_file, 'w')
+    f_out.write('J | gamma_L_0 | n_L \n')
+    for i in range(len(J)):
+        f_out.write('%.1f %.4f %.3f \n' %(J[i], gamma_L_0[i], N_L[i]))
+        
+    f_out.close()
 
 
 def read_H2_He(input_directory):
@@ -578,7 +592,7 @@ def create_cross_section(input_directory, log_pressure, temperature, output_dire
             J_max, gamma_0_air, n_L_air = read_air(input_directory)
             
         elif broadening == 'Burrows':
-            # To do: Create a Burrows broadening file and add it to directory
+            create_Burrows(input_directory)
             J_max, gamma_0_Burrows = read_Burrows(input_directory)
             
         else:
@@ -701,55 +715,3 @@ def create_cross_section(input_directory, log_pressure, temperature, output_dire
         print('Total runtime: ' + str(total_final) + ' s')
         
         write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out)
-        plot_results(nu_out, sigma_out, molecule, T, P)
-        
-
-def plot_results(nu_out, sigma_out, species, T, P):
-    wl_out = 1.0e4/nu_out
-    
-    # Make wavenumber plot
-    plt.figure()
-    plt.clf()
-    ax = plt.gca()
-    
-    plt.semilogy(nu_out, sigma_out, lw=0.3, alpha = 0.5, color = 'red', label = (species + r'Cross Section (out)'))   
-    
-    plt.xlim([200.0, 25000.0])
-    plt.ylim([1.0e-30, 1.0e-12])
-
-    plt.ylabel(r'Cross Section (cm$^2$)')
-    plt.xlabel(r'$\tilde{\nu}$ (cm$^{-1}$)')
-
-    legend = plt.legend(loc='upper left', shadow=False, frameon=False, prop={'size':6})
-    
-    plt.savefig('../output/' + species + '_' + str(T) + 'K_' + str(P) + 'bar_nu.pdf')
-    
-    plt.close()
-    
-    # Make wavelength plot
-    plt.clf()
-    ax = plt.gca()
-    
-    xmajorLocator   = MultipleLocator(0.2)
-    xmajorFormatter = FormatStrFormatter('%.1f')
-    xminorLocator   = MultipleLocator(0.02)
-    
-    ax.xaxis.set_major_locator(xmajorLocator)
-    ax.xaxis.set_major_formatter(xmajorFormatter)
-    ax.xaxis.set_minor_locator(xminorLocator)
-    
-    plt.loglog(wl_out, sigma_out, lw=0.3, alpha = 0.5, color= 'red', label = (species + r'$\mathrm{\, \, Cross \, \, Section}$')) 
-    
-    plt.ylim([1.0e-30, 1.0e-14])
-    plt.xlim([0.4, 10.0])
-    
-    plt.ylabel(r'Cross Section (cm$^2$)')
-    plt.xlabel(r'Wavelength (μm)')
-    
-    ax.text(0.7, 5.0e-16, (r'T = ' + str(T) + r'K, P = ' + str(P) + r'bar'), fontsize = 10)
-    
-    legend = plt.legend(loc='upper right', shadow=False, frameon=False, prop={'size':7})
-    
-    #plt.show()
-
-    plt.savefig('../output/' + species + '_' + str(T) + 'K_' + str(P) + 'bar.pdf')
