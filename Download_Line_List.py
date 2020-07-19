@@ -340,4 +340,4 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
             sys.exit(0)
         
     
-    print("\nDownload complete.")
+    print("\nDownload complete.\n")

@@ -4,7 +4,20 @@ from scipy.special import wofz as Faddeeva
 #import scipy.special as special
 #import numba_special  # The import generates Numba overloads for special
 from scipy.integrate import trapz, simps, quad
-from numba.decorators import jit
+import numba
+import re
+
+# Determine and import the correct version of numba based on its local version
+version = numba.__version__
+dots = re.finditer('[.]', version)
+positions = [match.start() for match in dots]
+version = version[:positions[1]]
+version = float(version)
+if version >= 0.49:
+    from numba.core.decorators import jit
+else:
+    from numba.decorators import jit
+
 from constants import c2
 
 #@jit(nopython=True)

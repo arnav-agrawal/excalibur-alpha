@@ -9,15 +9,15 @@ File that the user of our package would use
 """
 
 # Parameters for cross_section() function
-input_directory = '/Volumes/Seagate Backup/input/HCN  |  (1H-12C-14N)/Harris/'   # Folder containing all downloaded data... Ex: 
+input_directory = '/Volumes/Seagate Backup/input/HCN  ~  (1H-12C-14N)/Harris/'   # Folder containing all downloaded data... Ex: 
 
 
 import Download_Line_List
 import Cthulhu_Refactored
 #import plot
 
-#Download_Line_List.summon(user_friendly = False, data_base = 'exomol', molecule = 'AlO')   # Download H2O2 from hitemp
+Download_Line_List.summon(user_friendly = False, data_base = 'hitran', molecule = 1, isotope = 1)   # Download H2O2 from hitemp
 
-Cthulhu_Refactored.create_cross_section(input_directory, log_pressure = 0, temperature = 1000, pressure_broadening='Burrows')
+#Cthulhu_Refactored.create_cross_section(input_directory, log_pressure = 0, temperature = 1000, pressure_broadening='Burrows')
 
 #plot.plot_results(wl, sigma)

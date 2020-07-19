@@ -112,7 +112,7 @@ def create_directories(mol_ID, iso_ID):
     """
     
     input_folder = '../input'
-    molecule_folder = input_folder + '/' + moleculeName(mol_ID) + '  |  '
+    molecule_folder = input_folder + '/' + moleculeName(mol_ID) + '  ~  '
     
     iso_name = isotopologueName(mol_ID, iso_ID) # Need to format the isotopologue name to match ExoMol formatting
     

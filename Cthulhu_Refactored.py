@@ -52,8 +52,8 @@ def parse_directory(directory):
     directory_name = os.path.dirname(directory_name)
     molecule = os.path.basename(directory_name)
     same_molecule = copy.deepcopy(molecule)  # Make a copy of the string because we'll need it for the isotopologue
-    molecule = re.sub('[  |].+', '', molecule)  # Keep molecule part of the folder name
-    isotopologue = re.sub('.+[  |]', '', same_molecule) # Keep isotope part of the folder name
+    molecule = re.sub('[  ~].+', '', molecule)  # Keep molecule part of the folder name
+    isotopologue = re.sub('.+[  ~]', '', same_molecule) # Keep isotope part of the folder name
     
     return molecule, isotopologue, database
     
@@ -122,7 +122,6 @@ def mass(molecule, isotopologue, linelist):
         
     
 def load_ExoMol(input_directory):
-    print("Loading ExoMol format")
     
     # Read in states file (EXOMOL only)
     states_file_name = [filename for filename in os.listdir(input_directory) if filename.endswith('.states')]
@@ -540,6 +539,8 @@ def create_cross_section(input_directory, log_pressure, temperature, output_dire
                          X_H2 = 0.85, X_He = 0.15, Voigt_cutoff = 500, Voigt_sub_spacing = (1.0/6.0), 
                          N_alpha_samples = 500, S_cut = 1.0e-100, cut_max = 30.0, **kwargs):
     
+    print("Beginning cross-section computations...")
+    
     # Use the input directory to define these right at the start
     molecule, isotopologue, database = parse_directory(input_directory)
     if database.lower() != 'hitran' and database.lower() != 'hitemp':
@@ -552,20 +553,19 @@ def create_cross_section(input_directory, log_pressure, temperature, output_dire
     linelist_files = [filename for filename in os.listdir(input_directory) if filename.endswith('.h5')]
     
     if database == 'exomol':
-        print("File format is EXOMOL")
+        print("Loading ExoMol format")
         E, g, J = load_ExoMol(input_directory)
     
     if database == 'hitran':
-        print("File format is HITRAN")
+        print("Loading HITRAN format")
         # Nothing else required
     
     if database == 'hitemp':
-        print("File format is HITEMP")
+        print("Loading HITEMP format")
         # Nothing else required
         
-    
     if database == 'vald':
-        print("File format is VALD")
+        print("Loading VALD format")
         # load_VALD or something
     
     T_pf_raw, Q_raw = load_pf(input_directory)

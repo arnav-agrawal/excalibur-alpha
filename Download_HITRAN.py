@@ -15,6 +15,7 @@ import h5py
 import time
 import pandas as pd
 import re
+import shutil
 
 
 def create_directories(mol_ID, iso_ID):
@@ -36,7 +37,7 @@ def create_directories(mol_ID, iso_ID):
     """
     
     input_folder = '../input'
-    molecule_folder = input_folder + '/' + moleculeName(mol_ID) + '  |  '
+    molecule_folder = input_folder + '/' + moleculeName(mol_ID) + '  ~  '
     
     iso_name = isotopologueName(mol_ID, iso_ID) # Need to format the isotopologue name to match ExoMol formatting
     
@@ -61,9 +62,12 @@ def create_directories(mol_ID, iso_ID):
     
     if os.path.exists(molecule_folder) == False:
         os.mkdir(molecule_folder)
+        
+        
+    if os.path.exists(line_list_folder):   # If we don't remove an existing HITRAN folder, we encounter a Lonely Header exception from hapi.py
+        shutil.rmtree(line_list_folder)
 
-    if os.path.exists(line_list_folder) == False:
-        os.mkdir(line_list_folder)
+    os.mkdir(line_list_folder)
         
     return line_list_folder
 

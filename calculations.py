@@ -1,12 +1,27 @@
 import numpy as np
 import pandas as pd
-from numba.decorators import jit
+import numba
+import re
+
+# Determine and import the correct version of numba based on its local version
+version = numba.__version__
+dots = re.finditer('[.]', version)
+positions = [match.start() for match in dots]
+version = version[:positions[1]]
+version = float(version)
+if version >= 0.49:
+    from numba.core.decorators import jit
+else:
+    from numba.decorators import jit
+    
+    
 #from math import exp
 import time
 import h5py
 
 from constants import kb, c, c2, m_e, pi, T_ref
 from Voigt import Generate_Voigt_atoms
+   
 
 @jit(nopython=True)
 def find_index(val, grid_start, grid_end, N_grid):
