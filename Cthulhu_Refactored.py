@@ -208,9 +208,11 @@ def det_broad(input_directory):
 def create_Burrows(input_directory):
     burrows_file = input_directory + 'Burrows.broad'
     J = np.arange(31.0)
+    gamma_L_0 = np.zeros(31)
     N_L = np.zeros(31)
     
-    gamma_L_0 = np.array((0.1 - min(J, 30) * 0.002)) / (1.01325 * 2) # Convert from cm^-1 / atm -> cm^-1 / bar and take width at half-max
+    for i in range(len(J)):
+        gamma_L_0[i] = (0.1 - min(J[i], 30) * 0.002) / (1.01325 * 2) # Convert from cm^-1 / atm -> cm^-1 / bar and take width at half-max
 
     f_out = open(burrows_file, 'w')
     f_out.write('J | gamma_L_0 | n_L \n')
