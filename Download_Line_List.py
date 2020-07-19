@@ -213,12 +213,31 @@ def check_HITRAN(molecule, isotope):
 
     """
     
+    mol_ID = []
+    mol_name = []
+    for i in range(1, 50):
+        if i == 35: # Skip 35 since moleculeName(35) throws an error from hapi.py
+            continue
+        else:
+            mol_ID.append(i)
+            mol_name.append(moleculeName(i))
+        
+        mol_ID.append(35)
+        mol_name.append('ClONO2')
+
+    names_and_IDs = zip(mol_name, mol_ID)
+
+    molecule_dict = dict(names_and_IDs) 
+    
     try:
-        partitionSum(molecule, isotope, [70, 80], step = 1.0)
+        molecule_id_number = molecule_dict.get(molecule)
+        partitionSum(molecule_id_number, isotope, [70, 80], step = 1.0)
     except KeyError:
         print("\n ----- This molecule/isotopologue ID combination is not valid in HITRAN. Please try calling the summon() function again. Make sure you enter the ID number of the molecule you want. ----- ")
         print("\n ----- A list of supported molecule IDs can be found here: https://hitran.org/lbl/ -----")
         sys.exit(0)
+        
+    return molecule_id_number
 
 
 def check_HITEMP(molecule, isotope):
@@ -238,16 +257,40 @@ def check_HITEMP(molecule, isotope):
 
     """
     
+    mol_ID = []
+    mol_name = []
+    for i in range(1, 50):
+        if i == 35: # Skip 35 since moleculeName(35) throws an error from hapi.py
+            continue
+        else:
+            mol_ID.append(i)
+            mol_name.append(moleculeName(i))
+        
+        mol_ID.append(35)
+        mol_name.append('ClONO2')
+
+    names_and_IDs = zip(mol_name, mol_ID)
+
+    molecule_dict = dict(names_and_IDs) 
+    
+    molecule_ID = molecule_dict.get(molecule)
+    
+    if molecule_ID is None:
+        print("\n ----- This molecule/isotopologue ID combination is not valid in HITEMP. Please try calling the summon() function again. Make sure you enter the ID number of the molecule you want. ----- ")
+        print("\n ----- A list of supported molecule IDs can be found here: https://hitran.org/hitemp/ -----")
+        sys.exit(0)
+    
     table = Download_HITEMP.HITEMP_table()
-    if molecule in table['ID'].values:
-        row = table.loc[table['ID'] == molecule]
+    if molecule_ID in table['ID'].values:
+        row = table.loc[table['ID'] == molecule_ID]
         isotope_count = row.loc[row.index.values[0], 'Iso Count']
         if isotope <= isotope_count:
-            return
+            return molecule_ID
     else:
         print("\n ----- This molecule/isotopologue ID combination is not valid in HITEMP. Please try calling the summon() function again. Make sure you enter the ID number of the molecule you want. ----- ")
         print("\n ----- A list of supported molecule IDs can be found here: https://hitran.org/hitemp/ -----")
         sys.exit(0)
+        
 
 def check_VALD():
     return
@@ -323,7 +366,7 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
         elif db == 'hitran':
             if isotope == 'default':
                 iso = 1
-            check_HITRAN(molecule, iso)
+            mol = check_HITRAN(molecule, iso)
             Download_HITRAN.summon_HITRAN(mol, iso)
             
         elif db == 'vald':
@@ -332,7 +375,7 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
         elif db == 'hitemp':
             if isotope == 'default':
                 iso = 1
-            check_HITEMP(molecule, iso)
+            mol = check_HITEMP(molecule, iso)
             Download_HITEMP.summon_HITEMP(mol, iso)
         
         else:
