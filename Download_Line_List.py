@@ -286,7 +286,7 @@ def check_VALD():
     return
     
 
-def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'default', linelist = 'default', **kwargs):
+def summon(database = '', molecule = '', isotope = 'default', linelist = 'default', **kwargs):
     """
     Makes callls to other downloader files to retrieve the data from the desired database
 
@@ -308,6 +308,10 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
     None.
 
     """
+    
+    if database != '' and molecule != '': user_friendly = False
+    else: user_friendly = True
+        
     
     if user_friendly: # If the user wants to be guided via terminal prompts
         
@@ -337,7 +341,7 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
             
         
     if not user_friendly: # If the user just wants to call the function with parameters directly passed in
-        db = data_base.lower()
+        db = database.lower()
         mol = molecule
         iso = isotope
         lin = linelist

@@ -16,8 +16,8 @@ import Download_Line_List
 import Cthulhu_Refactored
 #import plot
 
-#Download_Line_List.summon()
+Download_Line_List.summon(database= 'exomol', molecule = 'SiH4', linelist = 'OY2T')
 
-Cthulhu_Refactored.create_cross_section(input_dir = '/Volumes/Seagate Backup/input/', isotope = '(15N-16O)', database = 'HITRAN', molecule = 'NO', log_pressure = 0, temperature = 1000)
+#Cthulhu_Refactored.create_cross_section(input_dir = '/Volumes/Seagate Backup/input/', database = 'exomol', molecule = 'HCN', log_pressure = 0, temperature = 1000)
 
 #plot.plot_results(wl, sigma)

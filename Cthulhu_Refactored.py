@@ -803,4 +803,9 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
         
         print('Total runtime: ' + str(total_final) + ' s')
         
+        output_directory = re.sub('/input/', '/output/', input_directory)
+        
+        if not os.path.exists(output_directory):
+            os.makedirs(output_directory)
+        
         write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out)
