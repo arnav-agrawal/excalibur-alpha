@@ -171,36 +171,37 @@ def convert_to_hdf(mol_ID, iso_ID, file):
     start_time = time.time()
     
     # Different HITRAN formats for different molecules leads us to read in .par files w/ different field widths
-    if mol_ID in {1, 3, 9, 12, 20, 21, 25, 29, 31, 32, 35, 37, 38}:
+    # Uses 
+    if mol_ID in {1, 3, 9, 12, 20, 21, 25, 29, 31, 32, 35, 37, 38}: # Group 1
         field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 3, 3, 3, 5, 1, 6, 12, 1, 7, 7]
         J_col = 13
         
-    if mol_ID in {10, 33}:  #Handle HO2 and NO2 J_cols since HITRAN provides N instead of J
+    if mol_ID in {10, 33}: # Group 1  - HO2 and NO2    Need Sym_col also since HITRAN provides N instead of J in J_col
         field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 3, 3, 3, 5, 1, 6, 12, 1, 7, 7]
         J_col = 13
         Sym_col = 17
     
-    if mol_ID in {2, 4, 5, 14, 15, 16, 17, 19, 22, 23, 26, 36}:
+    if mol_ID in {2, 4, 5, 14, 15, 16, 17, 19, 22, 23, 26, 36}: # Group 2
         field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 5, 1, 3, 1, 5, 6, 12, 1, 7, 7]
         J_col = 15
         
-    if mol_ID == 6 and iso_ID in {1, 2} or mol_ID == 30:
+    if mol_ID == 6 and iso_ID in {1, 2} or mol_ID == 30: # Group 3
         field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 2, 3, 2, 3, 5, 6, 12, 1, 7, 7]
         J_col = 14
         
-    if mol_ID in {11, 24, 27, 28, 39} or mol_ID == 6 and iso_ID in {3, 4}:
+    if mol_ID in {11, 24, 27, 28, 39} or mol_ID == 6 and iso_ID in {3, 4}: # Group 4
         field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 3, 3, 2, 2, 1, 4, 6, 12, 1, 7, 7]
         J_col = 13
         
-    if mol_ID == 7:
+    if mol_ID == 7:  # Group 5
         field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 1, 1, 3, 1, 3, 5, 1, 6, 12, 1, 7, 7]
         J_col = 17
         
-    if mol_ID in {8, 18}:
+    if mol_ID in {8, 18}: # Group 6 
         field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 3, 1, 5, 1, 5, 6, 12, 1, 7, 7]
         J_col = 15
         
-    if mol_ID in {13}: #Handle OH molecule since it has slightly different format
+    if mol_ID in {13}: # Group 6 - OH    Slightly different format to the rest of Group 6
         field_lengths = [2, 1, 12, 10, 10, 5, 5, 10, 4, 8, 15, 15, 15, 3, 1, 5, 1, 5, 6, 12, 1, 7, 7]
         J_col = 15
         

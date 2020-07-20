@@ -16,7 +16,7 @@ import Download_Line_List
 import Cthulhu_Refactored
 #import plot
 
-Download_Line_List.summon(user_friendly = False, data_base = 'hitran', molecule = 'NO', isotope = 2)
+Download_Line_List.summon()
 
 #Cthulhu_Refactored.create_cross_section(input_directory, log_pressure = 0, temperature = 1000, pressure_broadening='Burrows')
 

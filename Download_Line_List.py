@@ -17,6 +17,25 @@ import Download_HITRAN
 import Download_HITEMP
 from hapi import partitionSum, moleculeName
 
+def create_id_dict():
+    mol_ID = []
+    mol_name = []
+    for i in range(1, 50):
+        if i == 35: # Skip 35 since moleculeName(35) throws an error from hapi.py
+            continue
+        else:
+            mol_ID.append(i)
+            mol_name.append(moleculeName(i))
+        
+        mol_ID.append(35)
+        mol_name.append('ClONO2')
+
+    names_and_IDs = zip(mol_name, mol_ID)
+
+    molecule_dict = dict(names_and_IDs) 
+    
+    return molecule_dict
+
 def determine_parameters_ExoMol():
     """
     Determines the desired molecular line list from ExoMol from user input
@@ -101,27 +120,28 @@ def determine_parameters_HITRAN():
 
     """
     
+    molecule_dict = create_id_dict()
+    
     while True:
         try:
-            molecule_ID = int(input("What molecule would you like to download the line list for? Please enter the molecule ID number (left-hand column) found here: https://hitran.org/lbl/# \n"))
-            partitionSum(molecule_ID, 1, [70, 80], step = 1.0)
-        except ValueError:
-            print("\n ----- Please enter an integer for the molecule ID number -----")
+            molecule = input("What molecule would you like to download the line list for? \n")
+            molecule_id_number = molecule_dict.get(molecule)
+            partitionSum(molecule_id_number, 1, [70, 80], step = 1.0)
         except KeyError:
-            print("\n ----- This molecule ID is not valid. Please check to make sure the molecule you want exists on HITRAN. ----- ")
+            print("\n ----- This molecule is not valid. Please check to make sure the molecule you want exists on HITRAN. ----- ")
         else:
             break
     
     while True:
         try:
-            isotopologue_ID = int(input("What is the isotopologue ID of the isotopologue you would like to download?\n"))
-            partitionSum(molecule_ID, isotopologue_ID, [70, 80], step = 1.0)
+            isotopologue_ID = int(input("What is the isotopologue ID of the isotopologue you would like to download? Enter '1' for the most abundant isotopologue, '2' for next most abundant, etc. More info found here: https://hitran.org/lbl/# \n"))
+            partitionSum(molecule_id_number, isotopologue_ID, [70, 80], step = 1.0)
         except ValueError:
             print("\n ----- Please enter an integer for the isotopologue ID number -----")
         except KeyError:
             print("\n ----- This molecule/isotopologue ID combination is not valid. Please check to make sure the combo you want exists on HITRAN. ----- ")
         else:
-            return molecule_ID, isotopologue_ID
+            return molecule_id_number, isotopologue_ID
 
 
 def determine_parameters_VALD():
@@ -141,22 +161,21 @@ def determine_parameters_HITEMP():
 
     """
     
+    molecule_dict = create_id_dict()
     table = Download_HITEMP.HITEMP_table()
     
     while True:
-        try:
-            molecule_ID = int(input("What molecule would you like to download the line list for? Please enter the molecule ID number (left-hand column) found here: https://hitran.org/lbl/# \n"))
-            if molecule_ID in table['ID'].values:
-                row = table.loc[table['ID'] == molecule_ID]   # Find the DataFrame row that contains the molecule_ID
-                break
-        except ValueError:
-            print("\n ----- Please enter an integer for the molecule ID number -----")
+        molecule = input("What molecule would you like to download the line list for? \n")
+        molecule_id_number = molecule_dict.get(molecule)
+        if molecule_id_number in table['ID'].values:
+            row = table.loc[table['ID'] == molecule_id_number]   # Find the DataFrame row that contains the molecule_ID
+            break   
         else:
             print("\n ----- This molecule ID is not valid. Please check to make sure the molecule you want exists on HITEMP. -----")
     
     while True:
         try:
-            isotopologue_ID = int(input("What is the isotopologue ID of the isotopologue you would like to download?\n"))
+            isotopologue_ID = int(input("What is the isotopologue ID of the isotopologue you would like to download? Enter '1' for the most abundant isotopologue, '2' for next most abundant, etc. More info found here: https://hitran.org/lbl/# \n"))
             isotope_count = row.loc[row.index.values[0], 'Iso Count'] # Find the number of isotopologues of the given molecule ID
             if isotopologue_ID <= isotope_count:
                 break
@@ -165,7 +184,7 @@ def determine_parameters_HITEMP():
         else:
             print("\n ----- This molecule/isotopologue ID combination is not valid. Please check to make sure the combo you want exists on HITEMP. ----- ")
         
-    return molecule_ID, isotopologue_ID
+    return molecule_id_number, isotopologue_ID
             
             
 def check_ExoMol(molecule, isotope = '', linelist = ''):
@@ -212,25 +231,11 @@ def check_HITRAN(molecule, isotope):
     None.
 
     """
-    
-    mol_ID = []
-    mol_name = []
-    for i in range(1, 50):
-        if i == 35: # Skip 35 since moleculeName(35) throws an error from hapi.py
-            continue
-        else:
-            mol_ID.append(i)
-            mol_name.append(moleculeName(i))
-        
-        mol_ID.append(35)
-        mol_name.append('ClONO2')
 
-    names_and_IDs = zip(mol_name, mol_ID)
-
-    molecule_dict = dict(names_and_IDs) 
+    molecule_dict = create_id_dict()
+    molecule_id_number = molecule_dict.get(molecule)
     
     try:
-        molecule_id_number = molecule_dict.get(molecule)
         partitionSum(molecule_id_number, isotope, [70, 80], step = 1.0)
     except KeyError:
         print("\n ----- This molecule/isotopologue ID combination is not valid in HITRAN. Please try calling the summon() function again. Make sure you enter the ID number of the molecule you want. ----- ")
@@ -256,36 +261,21 @@ def check_HITEMP(molecule, isotope):
     None.
 
     """
-    
-    mol_ID = []
-    mol_name = []
-    for i in range(1, 50):
-        if i == 35: # Skip 35 since moleculeName(35) throws an error from hapi.py
-            continue
-        else:
-            mol_ID.append(i)
-            mol_name.append(moleculeName(i))
-        
-        mol_ID.append(35)
-        mol_name.append('ClONO2')
 
-    names_and_IDs = zip(mol_name, mol_ID)
-
-    molecule_dict = dict(names_and_IDs) 
+    molecule_dict = create_id_dict()
+    molecule_id_number = molecule_dict.get(molecule)
     
-    molecule_ID = molecule_dict.get(molecule)
-    
-    if molecule_ID is None:
+    if molecule_id_number is None:
         print("\n ----- This molecule/isotopologue ID combination is not valid in HITEMP. Please try calling the summon() function again. Make sure you enter the ID number of the molecule you want. ----- ")
         print("\n ----- A list of supported molecule IDs can be found here: https://hitran.org/hitemp/ -----")
         sys.exit(0)
     
     table = Download_HITEMP.HITEMP_table()
-    if molecule_ID in table['ID'].values:
-        row = table.loc[table['ID'] == molecule_ID]
+    if molecule_id_number in table['ID'].values:
+        row = table.loc[table['ID'] == molecule_id_number]
         isotope_count = row.loc[row.index.values[0], 'Iso Count']
         if isotope <= isotope_count:
-            return molecule_ID
+            return molecule_id_number
     else:
         print("\n ----- This molecule/isotopologue ID combination is not valid in HITEMP. Please try calling the summon() function again. Make sure you enter the ID number of the molecule you want. ----- ")
         print("\n ----- A list of supported molecule IDs can be found here: https://hitran.org/hitemp/ -----")
