@@ -27,7 +27,27 @@ from calculations import produce_total_cross_section_VALD_atom, produce_total_cr
 from constants import Nu_ref, gamma_0, n_L, P_ref, T_ref
 from constants import c, kb, h, m_e, c2, u, pi
 
+from Download_ExoMol import get_default_iso, get_default_linelist
 
+
+def create_id_dict():
+    mol_ID = []
+    mol_name = []
+    for i in range(1, 50):
+        if i == 35: # Skip 35 since moleculeName(35) throws an error from hapi.py
+            continue
+        else:
+            mol_ID.append(i)
+            mol_name.append(moleculeName(i))
+        
+        mol_ID.append(35)
+        mol_name.append('ClONO2')
+
+    names_and_IDs = zip(mol_name, mol_ID)
+
+    molecule_dict = dict(names_and_IDs) 
+    
+    return molecule_dict
 
 def parse_directory(directory):
     """
@@ -532,14 +552,81 @@ def write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_a
         f.write('%.8f %.8e \n' %(nu_out[i], sigma_out[i]))
                         
     f.close()
+    
+def replace_iso_name(iso_name):
+    # 'H' not followed by lower case letter needs to become '(1H)'
+    iso_name = re.sub('H(?![a-z])', '(1H)', iso_name)
+    
+    # Number of that atom needs to be enclosed by parentheses ... so '(1H)2' becomes '(1H2)'
+    matches = re.findall('[)][0-9]{1}', iso_name)
+    for match in matches:
+        number = re.findall('[0-9]{1}', match)
+        iso_name = re.sub('[)][0-9]{1}', number[0] + ')', iso_name)
+    
+    # replace all ')(' with '-'
+    iso_name = iso_name.replace(')(', '-')   
+    
+    return iso_name
+    
+    
+def find_input_dir(input_dir, database, molecule, isotope, linelist):
+    
+    if isotope == 'default':
+        if database == 'exomol':
+            isotope = '(' + get_default_iso(molecule) + ')'
+        if database == 'hitran' or database == 'hitemp':
+            molecule_dict = create_id_dict()
+            mol_id = molecule_dict.get(molecule)
+            isotope = isotopologueName(mol_id, 1)
+            isotope = replace_iso_name(isotope)
+    
+    if linelist == 'default':
+        if database == 'exomol':
+            temp_isotope = re.sub('[(]|[)]', '', isotope)
+            linelist = get_default_linelist(molecule, temp_isotope)
+        if database == 'hitran':
+            linelist = 'HITRAN'
+        if database == 'hitemp':
+            linelist = 'HITEMP'
+            
+    input_directory = input_dir + '/' + molecule + '  ~  ' + isotope + '/' + linelist + '/'
+    
+    if os.path.exists(input_directory):
+        return input_directory
+    
+    else:
+        print("You don't seem to have a local folder with the parameters you entered.\n") 
+        
+        if not os.path.exists(input_dir + '/'):
+            print("----- You entered an invalid input directory into the cross_section() function. Please try again. -----")
+            sys.exit(0)
+        
+        elif not os.path.exists(input_dir + '/' + molecule + '  ~  ' + isotope + '/'):
+            print("----- There was an error with the molecule + isotopologue you entered. Here are the available options: -----\n")
+            for folder in os.listdir(input_dir + '/'):
+                if not folder.startswith('.'):
+                    print(folder)
+            sys.exit(0)
+        
+        else:
+            print("There was an error with the line list. These are the linelists available: \n")
+            for folder in os.listdir(input_dir + '/' + molecule + '  ~  ' + isotope + '/'):
+                if not folder.startswith('.'):
+                    print(folder)
+            sys.exit(0)
 
     
-def create_cross_section(input_directory, log_pressure, temperature, output_directory = '../output/', cluster_run = False, 
-                         nu_out_min = 200, nu_out_max = 25000, dnu_out = 0.01, pressure_broadening = 'default', 
-                         X_H2 = 0.85, X_He = 0.15, Voigt_cutoff = 500, Voigt_sub_spacing = (1.0/6.0), 
-                         N_alpha_samples = 500, S_cut = 1.0e-100, cut_max = 30.0, **kwargs):
+def create_cross_section(input_dir, database, molecule, log_pressure, temperature, isotope = 'default', 
+                         linelist = 'default', cluster_run = False, nu_out_min = 200, nu_out_max = 25000, 
+                         dnu_out = 0.01, pressure_broadening = 'default', X_H2 = 0.85, X_He = 0.15, 
+                         Voigt_cutoff = 500, Voigt_sub_spacing = (1.0/6.0), N_alpha_samples = 500, 
+                         S_cut = 1.0e-100, cut_max = 30.0, **kwargs):
     
     print("Beginning cross-section computations...")
+    
+    database = database.lower()
+    
+    input_directory = find_input_dir(input_dir, database, molecule, isotope, linelist)
     
     # Use the input directory to define these right at the start
     molecule, isotopologue, database = parse_directory(input_directory)
