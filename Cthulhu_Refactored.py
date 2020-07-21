@@ -553,6 +553,8 @@ def write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_a
                         
     f.close()
     
+    return nu_out, sigma_out
+    
 def replace_iso_name(iso_name):
     # 'H' not followed by lower case letter needs to become '(1H)'
     iso_name = re.sub('H(?![a-z])', '(1H)', iso_name)
@@ -808,4 +810,6 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
         if not os.path.exists(output_directory):
             os.makedirs(output_directory)
         
-        write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out)
+        nu, sigma = write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out)
+        
+        return nu, sigma

@@ -14,11 +14,10 @@ input_directory = '/Volumes/Seagate Backup/input/HCN  ~  (1H-12C-14N)/Harris/'  
 
 import Download_Line_List
 import Cthulhu_Refactored
-import re
-#import plot
+import plot
 
-Download_Line_List.summon()
+#Download_Line_List.summon()
 
-#Cthulhu_Refactored.create_cross_section(input_dir = '/Volumes/Seagate Backup/input/', database = 'exomol', molecule = 'HCN', log_pressure = 0, temperature = 1000)
+nu, sigma = Cthulhu_Refactored.create_cross_section(input_dir = '/Volumes/Seagate Backup/input/', database = 'exomol', molecule = 'HCN', log_pressure = 0, temperature = 1000)
 
-#plot.plot_results(wl, sigma)
+plot.plot_results(nu_arr = nu, sigma_arr = sigma, molecule = 'HCN', temperature = 1000, log_pressure = 0,)

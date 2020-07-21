@@ -8,29 +8,43 @@ Created on Thu Jul 16 13:29:06 2020
 
 import pandas as pd
 import os
+import sys
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator, AutoLocator, FormatStrFormatter, FuncFormatter, ScalarFormatter
 
 
-def plot_results(file, **kwargs):
+def plot_results(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = [], file = '', **kwargs):
     
-    data = pd.read_fwf(file, widths = [13, 14], names = ['Nu Out', 'Sigma Out'], header = None)
-
+    if nu_arr == [] and sigma_arr == [] and file == '':
+        print("----- You have not specified enough arguments for this function. ----- ")
+        sys.exit(0)
+        
+    if file != '':
+        try:
+            data = pd.read_fwf(file, widths = [13, 14], names = ['Nu Out', 'Sigma Out'], header = None)
+            nu_out = data['Nu Out']
+            sigma_out = data['Sigma Out']
+    
+            wl_out = 1.0e4/nu_out
             
-    nu_out = data['Nu Out']
-    sigma_out = data['Sigma Out']
-    species = 'HCN'
-    T = 1000
-    P = 0
-    
-    wl_out = 1.0e4/nu_out
+        except TypeError:
+            print("----- You did not pass in a valid file. ----- ")
+            sys.exit(0)
+            
+    if nu_arr != [] and sigma_arr != []:
+        nu_out = nu_arr
+        sigma_out = sigma_arr
+        wl_out = 1.0e4/nu_out
+        
+    if not os.path.exists('../plots/'):
+        os.mkdir('../plots')
     
     # Make wavenumber plot
     plt.figure()
     plt.clf()
     ax = plt.gca()
     
-    plt.semilogy(nu_out, sigma_out, lw=0.3, alpha = 0.5, color = 'red', label = (species + r'Cross Section (out)'))   
+    plt.semilogy(nu_out, sigma_out, lw=0.3, alpha = 0.5, color = 'red', label = (molecule + r'Cross Section (out)'))   
     
     plt.xlim([200.0, 25000.0])
     plt.ylim([1.0e-30, 1.0e-12])
@@ -40,7 +54,7 @@ def plot_results(file, **kwargs):
 
     legend = plt.legend(loc='upper left', shadow=False, frameon=False, prop={'size':6})
     
-    plt.savefig('../output/' + species + '_' + str(T) + 'K_' + str(P) + 'bar_nu.pdf')
+    plt.savefig('../plots/' + molecule + '_' + str(temperature) + 'K_' + str(log_pressure) + 'bar_nu.pdf')
     
     plt.close()
     
@@ -56,7 +70,7 @@ def plot_results(file, **kwargs):
     ax.xaxis.set_major_formatter(xmajorFormatter)
     ax.xaxis.set_minor_locator(xminorLocator)
     
-    plt.loglog(wl_out, sigma_out, lw=0.3, alpha = 0.5, color= 'red', label = (species + r'$\mathrm{\, \, Cross \, \, Section}$')) 
+    plt.loglog(wl_out, sigma_out, lw=0.3, alpha = 0.5, color= 'red', label = (molecule + r'$\mathrm{\, \, Cross \, \, Section}$')) 
     
     plt.ylim([1.0e-30, 1.0e-14])
     plt.xlim([0.4, 10.0])
@@ -64,10 +78,10 @@ def plot_results(file, **kwargs):
     plt.ylabel(r'Cross Section (cm$^2$)')
     plt.xlabel(r'Wavelength (μm)')
     
-    ax.text(0.7, 5.0e-16, (r'T = ' + str(T) + r'K, P = ' + str(P) + r'bar'), fontsize = 10)
+    ax.text(0.7, 5.0e-16, (r'T = ' + str(temperature) + r'K, P = ' + str(log_pressure) + r'bar'), fontsize = 10)
     
     legend = plt.legend(loc='upper right', shadow=False, frameon=False, prop={'size':7})
     
     #plt.show()
 
-    plt.savefig('../output/' + species + '_' + str(T) + 'K_' + str(P) + 'bar.pdf')
+    plt.savefig('../plots/' + molecule + '_' + str(temperature) + 'K_' + str(log_pressure) + 'bar.pdf')
