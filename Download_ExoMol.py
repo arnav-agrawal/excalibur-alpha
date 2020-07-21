@@ -294,20 +294,24 @@ def get_default_iso(molecule):
                      'Ur' : 238}
     
     default_iso = ''
-    matches = re.findall('[A-Z][a-z]?[0-9]?', molecule)
+    matches = re.findall('[A-Z][a-z]?[0-9]?(?:_p)?', molecule)
     num_matches = len(matches)
     for match in matches:
         num_matches -= 1
-        letters = re.findall('\D+', match) # alphabetic characters in the molecule
+        letters = re.findall('[A-Za-z]+', match) # alphabetic characters in the molecule
         numbers = re.findall('\d', match) # numeric characters in the molecule
+        ion = re.findall('(_p)', match)  # match the '_p' part if ion
         default_iso += str(most_abundant.get(letters[0])) + letters[0] 
-        
+
         if numbers:
-            default_iso += numbers[0]
+            default_iso += numbers[0]   
+            
+        if ion:
+            default_iso += ion[0] 
             
         if num_matches != 0:
             default_iso += '-'
-        
+
     return default_iso
 
 
@@ -342,8 +346,8 @@ def get_default_linelist(molecule, isotopologue):
                     'CN(12C-14N)': 'MoLLIST', 'NH(14N-1H)': 'MoLLIST', 'CH(12C-1H)': 'MoLLIST', 'OH(16O-1H)': 'MoLLIST',
                     'SH(32S-1H)': 'GYT', 'HF(1H-19F)': 'Coxon-Hajig', 'CS(12C-32S)': 'JnK', 'NS(14N-32S)': 'SNaSH',
                     'PS(31P-32S)': 'POPS', 'PH(31P-1H)': 'LaTY', 'PN(31P-14N)': 'YYLT', 'CP(12C-31P)': 'MoLLIST',
-                    'H2_p(1H-2H_p)': 'ADJSAAM', 'H3_p(1H3_p)': 'MiZATeP', 'OH+(16O-1H_p)': 'MoLLIST', 
-                    'HeH+(4He-1H_p)': 'ADJSAAM', 'LiH_p(7Li-1H_p)': 'CLT', 'KCl(39K-35Cl)': 'Barton', 
+                    'H2_p(1H-2H_p)': 'ADJSAAM', 'H3_p(1H3_p)': 'MiZATeP', 'OH_p(16O-1H_p)': 'MoLLIST', 
+                    'HeH_p(4He-1H_p)': 'ADJSAAM', 'LiH_p(7Li-1H_p)': 'CLT', 'KCl(39K-35Cl)': 'Barton', 
                     'NaCl(23Na-35Cl)': 'Barton', 'LiCl(7Li-35Cl)': 'MoLLIST', 'AlCl(27Al-35Cl)': 'MoLLIST', 
                     'KF(39K-19F)': 'MoLLIST', 'AlF(27Al-19F)': 'MoLLIST', 'LiF(7Li-19F)': 'MoLLIST',
                     'CaF(40Ca-19F)': 'MoLLIST', 'MgF(24Mg-19F)': 'MoLLIST', 'TiO(48Ti-16O)': 'Toto',

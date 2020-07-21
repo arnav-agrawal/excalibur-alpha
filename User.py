@@ -14,9 +14,10 @@ input_directory = '/Volumes/Seagate Backup/input/HCN  ~  (1H-12C-14N)/Harris/'  
 
 import Download_Line_List
 import Cthulhu_Refactored
+import re
 #import plot
 
-Download_Line_List.summon(database= 'exomol', molecule = 'SiH4', linelist = 'OY2T')
+Download_Line_List.summon()
 
 #Cthulhu_Refactored.create_cross_section(input_dir = '/Volumes/Seagate Backup/input/', database = 'exomol', molecule = 'HCN', log_pressure = 0, temperature = 1000)
 

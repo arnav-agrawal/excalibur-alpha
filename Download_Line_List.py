@@ -12,6 +12,7 @@ Import download_Exomol, download_HITRAN, and download_VALD
 
 import sys
 import requests
+import re
 import Download_ExoMol
 import Download_HITRAN
 import Download_HITEMP
@@ -58,8 +59,9 @@ def determine_parameters_ExoMol():
     while True:
         try:
             molecule = input('What molecule would you like to download the line list for (This is case-sensitive)?\n')
+            molecule = re.sub('[+]', '_p', molecule)
             response = requests.get(website + molecule + '/')
-            response.raise_for_status() #Raises HTTPError if a bad request is made (server or client error)
+            response.raise_for_status() # Raises HTTPError if a bad request is made (server or client error)
             
         except requests.HTTPError:
             print("\n ----- This is not a valid molecule, please try again -----")
@@ -76,6 +78,7 @@ def determine_parameters_ExoMol():
                 isotopologue = Download_ExoMol.get_default_iso(molecule)
                 website += isotopologue + '/'
                 break
+            isotopologue = re.sub('[+]', '_p', isotopologue)
             response = requests.get(website + isotopologue + '/')
             response.raise_for_status()
         
@@ -209,7 +212,9 @@ def check_ExoMol(molecule, isotope = '', linelist = ''):
     website = "http://exomol.com/data/molecules/" + molecule + '/' + isotope + '/' + linelist + '/'
     
     try:
-        requests.get(website)
+        response = requests.get(website)
+        response.raise_for_status() # Raises HTTPError if a bad request is made (server or client error)
+        
     except requests.HTTPError:
         print("\n ----- These are not valid ExoMol parameters. Please try calling the summon() function again. -----")
         sys.exit(0)
@@ -345,6 +350,9 @@ def summon(database = '', molecule = '', isotope = 'default', linelist = 'defaul
         mol = molecule
         iso = isotope
         lin = linelist
+        
+        mol = re.sub('[+]', '_p', mol)  # Handle ions
+        iso = re.sub('[+]', '_p', iso)  # Handle ions
             
         if db == 'exomol':
             if isotope == 'default':
@@ -353,7 +361,8 @@ def summon(database = '', molecule = '', isotope = 'default', linelist = 'defaul
             if linelist == 'default':
                 check_ExoMol(mol, iso)
                 lin = Download_ExoMol.get_default_linelist(mol, iso)
-            check_ExoMol(molecule, isotope, linelist)
+
+            check_ExoMol(mol, iso, lin)
             URL = "http://exomol.com/data/molecules/" + mol + '/' + iso + '/' + lin + '/'
             Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
             
@@ -376,5 +385,4 @@ def summon(database = '', molecule = '', isotope = 'default', linelist = 'defaul
             print("\n ----- You have not passed in a valid database. Please try calling the summon() function again. ----- ")
             sys.exit(0)
         
-    
     print("\nDownload complete.\n")
