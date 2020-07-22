@@ -20,4 +20,4 @@ import plot
 
 nu, sigma = Cthulhu_Refactored.create_cross_section(input_dir = '/Volumes/Seagate Backup/input/', database = 'exomol', molecule = 'HCN', log_pressure = 0, temperature = 1000)
 
-plot.plot_results(nu_arr = nu, sigma_arr = sigma, molecule = 'HCN', temperature = 1000, log_pressure = 0,)
+plot.plot_results(nu_arr = nu, sigma_arr = sigma, molecule = 'HCN', temperature = 1000, log_pressure = 0)
