@@ -31,6 +31,16 @@ from Download_ExoMol import get_default_iso, get_default_linelist
 
 
 def create_id_dict():
+    """
+    Create a dictionary that maps molecules to their HITRAN molecule ID number found here: https://hitran.org/lbl/
+
+    Returns
+    -------
+    molecule_dict : dict
+        Dictionary mapping a given molecule to its HITRAN ID number.
+
+    """
+    
     mol_ID = []
     mol_name = []
     for i in range(1, 50):
@@ -55,15 +65,15 @@ def parse_directory(directory):
 
     Parameters
     ----------
-    directory : TYPE
-        DESCRIPTION.
+    directory : String
+        Local directory containing the line list file[s], broadening data, and partition function
 
     Returns
     -------
-    molecule : TYPE
-        DESCRIPTION.
-    linelist : TYPE
-        DESCRIPTION.
+    molecule : String
+        Molecule which the cross-section is being calculated for.
+    linelist : String
+        Line list which the cross-section is being calculated for.
 
     """
     
@@ -79,6 +89,19 @@ def parse_directory(directory):
     
     
 def check_molecule(molecule):
+    """
+    Check if the given string is a molecule
+
+    Parameters
+    ----------
+    molecule : String
+        Molecular formula.
+
+    Returns
+    -------
+    True if the given string is a molecule, false otherwise (if it is an atom).
+
+    """
     match = re.match('^[A-Z]{1}[a-z]?$', molecule)     # Matches a string containing only 1 capital letter followed by 0 or 1 lower case letters
     
     if match: return False   # If our 'molecule' matches the pattern, it is really an atom
@@ -86,6 +109,26 @@ def check_molecule(molecule):
 
 
 def mass(molecule, isotopologue, linelist):
+    """
+    Determine the mass of a given molecule-isotopologue combination
+
+    Parameters
+    ----------
+    molecule : String
+        Molecule we are calculating the mass for.
+    isotopologue : String
+        Isotopologue of this molecule we are calculating the mass for.
+    linelist : String
+        The line list this molecule's cross-section will later be calculated for. Used to 
+        identify between ExoMol, HITRAN/HITEMP, and VALD
+
+    Returns
+    -------
+    int
+        Mass of the given molecule-isotopologue combination.
+
+    """
+    
     if linelist == 'hitran' or linelist == 'hitemp':
         mol_ID = 1
         while moleculeName(mol_ID) != molecule:
@@ -138,10 +181,30 @@ def mass(molecule, isotopologue, linelist):
         mass = re.findall('[0-9|.]+', mass)[0]
         
         os.remove(out_file)
+        
         return float(mass)
         
     
 def load_ExoMol(input_directory):
+    """
+    Read in the '.states' file downloaded from ExoMol
+
+    Parameters
+    ----------
+    input_directory : String
+        Directory that contains all the ExoMol downloaded files for the desired molecule/
+        isotopologue/line list.
+
+    Returns
+    -------
+    E : TYPE
+        DESCRIPTION.
+    g : TYPE
+        DESCRIPTION.
+    J : TYPE
+        DESCRIPTION.
+
+    """
     
     # Read in states file (EXOMOL only)
     states_file_name = [filename for filename in os.listdir(input_directory) if filename.endswith('.states')]
@@ -198,6 +261,22 @@ def load_VALD():
 
 
 def load_pf(input_directory):
+    """
+    Read in the downloaded partition functions 
+
+    Parameters
+    ----------
+    input_directory : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    T_pf_raw : TYPE
+        DESCRIPTION.
+    Q_raw : TYPE
+        DESCRIPTION.
+
+    """
     print("Loading partition functions")
     pf_file_name = [filename for filename in os.listdir(input_directory) if filename.endswith('.pf')]
     pf_file = pd.read_csv(input_directory + pf_file_name[0], sep= ' ', header=None, skiprows=1)
@@ -210,6 +289,21 @@ def load_pf(input_directory):
 
 
 def det_broad(input_directory):
+    """
+    Determine the type of broadening that should be used in the case that the user specifies
+    'default' broadening. Order of preference is: 1) H2-He, 2) air, 3) Burrows
+
+    Parameters
+    ----------
+    input_directory : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    broadening : String
+        The type of broadening being used.
+
+    """
     if 'H2.broad' in os.listdir(input_directory) and 'He.broad' in os.listdir(input_directory):
         broadening = 'H2-He'
         
@@ -225,6 +319,20 @@ def det_broad(input_directory):
 
 
 def create_Burrows(input_directory):
+    """
+    Create Burrows broadening file (as specified in Eq. 15 of Sharp and Burrows (2007), and add 
+    it to the input_directory
+
+    Parameters
+    ----------
+    input_directory : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    """
     burrows_file = input_directory + 'Burrows.broad'
     J = np.arange(31.0)
     gamma_L_0 = np.zeros(31)
@@ -556,6 +664,21 @@ def write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_a
     return nu_out, sigma_out
     
 def replace_iso_name(iso_name):
+    """
+    Replace the isotopologue name generated by HITRAN/HITEMP to match the isotopologue name convention
+    used by ExoMol.
+
+    Parameters
+    ----------
+    iso_name : String
+        Name of the isotopologue that is to be replaced.
+
+    Returns
+    -------
+    iso_name : String
+        A differently formatted version of the isotopologue name passed in. Matches ExoMol format.
+
+    """
     # 'H' not followed by lower case letter needs to become '(1H)'
     iso_name = re.sub('H(?![a-z])', '(1H)', iso_name)
     
@@ -572,6 +695,30 @@ def replace_iso_name(iso_name):
     
     
 def find_input_dir(input_dir, database, molecule, isotope, linelist):
+    """
+    Find the directory on a user's machine that contains the data needed to create a cross-section
+
+    Parameters
+    ----------
+    input_dir : String
+        'Prefix' of the directory containing the line list files. If the files were downloaded
+        using our Download_Line_List.py script, input_dir will end in '/input'
+    database : String
+        Database the line list was downloaded from.
+    molecule : String
+        Molecule for which the cross-section is created.
+    isotope : String
+        Isotopologue of the molecule for which the cross-section was created.
+    linelist : String
+        Line list that is being used. HITRAN/HITEMP/VALD used as the line list name for these 
+        databases respectively. ExoMol has its own named line lists.
+
+    Returns
+    -------
+    input_directory : TYPE
+        DESCRIPTION.
+
+    """
     
     if isotope == 'default':
         if database == 'exomol':
@@ -628,6 +775,7 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
     
     database = database.lower()
     
+    # Locate the input_directory where the line list is stored
     input_directory = find_input_dir(input_dir, database, molecule, isotope, linelist)
     
     # Use the input directory to define these right at the start

@@ -14,11 +14,38 @@ from matplotlib.ticker import MultipleLocator, AutoLocator, FormatStrFormatter, 
 
 
 def plot_results(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = [], file = '', **kwargs):
+    """
+    Generate a plot of a cross_section file, in both wavelength and wavenumber
+
+    Parameters
+    ----------
+    molecule : TYPE
+        DESCRIPTION.
+    temperature : TYPE
+        DESCRIPTION.
+    log_pressure : TYPE
+        DESCRIPTION.
+    nu_arr : TYPE, optional
+        DESCRIPTION. The default is [].
+    sigma_arr : TYPE, optional
+        DESCRIPTION. The default is [].
+    file : TYPE, optional
+        DESCRIPTION. The default is ''.
+    **kwargs : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    """
     
+    # User did not specify a wl and sigma array and also did not specify a file
     if nu_arr == [] and sigma_arr == [] and file == '':
         print("----- You have not specified enough arguments for this function. ----- ")
         sys.exit(0)
-        
+     
+    # User specified a file    
     if file != '':
         try:
             data = pd.read_fwf(file, widths = [13, 14], names = ['Nu Out', 'Sigma Out'], header = None)
@@ -30,7 +57,8 @@ def plot_results(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = [
         except TypeError:
             print("----- You did not pass in a valid file. ----- ")
             sys.exit(0)
-            
+    
+    # User passed in wl and sigma arr        
     if nu_arr != [] and sigma_arr != []:
         nu_out = nu_arr
         sigma_out = sigma_arr
