@@ -9,6 +9,7 @@ Created on Thu Jul 16 13:29:06 2020
 import pandas as pd
 import os
 import sys
+import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator, AutoLocator, FormatStrFormatter, FuncFormatter, ScalarFormatter
 
@@ -67,6 +68,8 @@ def plot_results(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = [
     if not os.path.exists('../plots/'):
         os.mkdir('../plots')
     
+    print("\nPlotting the cross-section of", molecule, "at", temperature, "K and", np.power(10.0, log_pressure), "bar")
+    
     # Make wavenumber plot
     plt.figure()
     plt.clf()
@@ -113,3 +116,5 @@ def plot_results(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = [
     #plt.show()
 
     plt.savefig('../plots/' + molecule + '_' + str(temperature) + 'K_' + str(log_pressure) + 'bar.pdf')
+    
+    print("\nPlotting complete.")

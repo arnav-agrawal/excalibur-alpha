@@ -208,7 +208,7 @@ def load_ExoMol(input_directory):
     
     # Read in states file (EXOMOL only)
     states_file_name = [filename for filename in os.listdir(input_directory) if filename.endswith('.states')]
-    states_file = pd.read_csv(input_directory + states_file_name[0], sep = '\s+', header=None)
+    states_file = pd.read_csv(input_directory + states_file_name[0], sep = '\s+', header=None, usecols=[0,1,2,3])
     E = np.array(states_file[1])
     g = np.array(states_file[2])
     J = np.array(states_file[3]).astype(np.int64)

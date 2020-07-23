@@ -9,15 +9,14 @@ File that the user of our package would use
 """
 
 # Parameters for cross_section() function
-input_directory = '/Volumes/Seagate Backup/input/HCN  ~  (1H-12C-14N)/Harris/'   # Folder containing all downloaded data... Ex: 
 
 
 import Download_Line_List
 import Cthulhu_Refactored
 import plot
 
-#Download_Line_List.summon()
+Download_Line_List.summon(molecule = 'VO', database='exomol')
 
-nu, sigma = Cthulhu_Refactored.create_cross_section(input_dir = '/Volumes/Seagate Backup/input/', database = 'exomol', molecule = 'HCN', log_pressure = 0, temperature = 1000)
+nu, sigma = Cthulhu_Refactored.create_cross_section(input_dir = '/Volumes/Seagate Backup/input/', database = 'exomol', molecule = 'VO', log_pressure = 2.0, temperature = 3000)
 
-plot.plot_results(nu_arr = nu, sigma_arr = sigma, molecule = 'HCN', temperature = 1000, log_pressure = 0)
+plot.plot_results(nu_arr = nu, sigma_arr = sigma, molecule = 'VO', temperature = 3000, log_pressure = 2)
