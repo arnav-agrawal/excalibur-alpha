@@ -17,6 +17,7 @@ import pandas as pd
 import h5py
 import time
 import shutil
+import sys
 
 
 def download_file(url, f, l_folder):
@@ -137,10 +138,10 @@ def create_tag_array(url, broad_URL):
     soup2 = BeautifulSoup(broadening_content, "lxml")
 
     # Parse the webpage by file type (which is contained in the href of the html tag)
-    broad_tags = soup2.find_all('a', href = re.compile("broad"))
-    pf_tags = soup.find_all('a', href = re.compile("pf"))
-    states_tags = soup.find_all('a', href = re.compile("states"))
-    trans_tags = soup.find_all('a', href = re.compile("trans"))
+    broad_tags = soup2.find_all('a', href = re.compile("[.]broad"))
+    pf_tags = soup.find_all('a', href = re.compile("[.]pf"))
+    states_tags = soup.find_all('a', href = re.compile("[.]states"))
+    trans_tags = soup.find_all('a', href = re.compile("[.]trans"))
 
     combined_tags = broad_tags + pf_tags + states_tags + trans_tags
     
@@ -237,7 +238,6 @@ def iterate_tags(tags, host, l_folder, line_list):
     for tag in tags:
         # Create the appropriate URL by combining host name and href
         url = host + tag.get('href')
-         
         # Name the file in a way that it includes relevant info about what is stored in the file
         matches = re.finditer('__', url)
         matches_positions = [match.start() for match in matches]
@@ -364,7 +364,13 @@ def get_default_linelist(molecule, isotopologue):
                     'P2H2(31P2-1H2)': 'Trans', 'HPPH(1H-31P2-1H)': 'Cis', 'CH3F(12C-1H3-19F)': 'OYKYT', 
                     'CH3Cl(12C-1H3-35Cl)': 'OYT', 'CO2(12C-16O2)': 'UCL-4000'}
     
-    return default_list.get(structure)
+    linelist = default_list.get(structure)
+    
+    if linelist is None:
+        print("\nLooks like we haven't specified a default line list to use for this molecule. Try inputting the linelist you want to use as a parameter in the summon() function.")
+        sys.exit(0)
+    else:
+        return linelist
 
 
 

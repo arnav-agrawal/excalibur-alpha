@@ -312,8 +312,8 @@ def det_broad(input_directory):
         
     else:
         broadening = 'Burrows'
-        create_Burrows(input_directory)
-        # To do: Create a Burrows broadening file and add it to directory
+        if not 'Burrows.broad' in os.listdir(input_directory):
+            create_Burrows(input_directory)
         
     return broadening
 
@@ -558,7 +558,7 @@ def create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, dnu_
     #nu_max = nu_out_max + cut_max
     
     nu_min = 1
-    nu_max = 30000
+    nu_max = 35000
 
     # First, we need to find values of gamma_V for reference wavenumbers (100, 1000, 10000 cm^-1)
     nu_ref = np.array(nu_ref)   # The reference wavenumbers need to be a numpy array
