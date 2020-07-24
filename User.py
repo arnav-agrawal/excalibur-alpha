@@ -15,8 +15,8 @@ import Download_Line_List
 import Cthulhu_Refactored
 import plot
 
-Download_Line_List.summon(molecule = 'PO', database='exomol')
+Download_Line_List.summon(molecule = 'CO2', database='exomol')
 
-#nu, sigma = Cthulhu_Refactored.create_cross_section(input_dir = '/Volumes/Seagate Backup/input/', database = 'exomol', molecule = 'VO', log_pressure = 2.0, temperature = 3000)
+#nu, sigma = Cthulhu_Refactored.create_cross_section(input_dir = '/Volumes/Seagate Backup/input/', database = 'exomol', molecule = 'HCN', log_pressure = [0], temperature = [1000])
 
 #plot.plot_results(nu_arr = nu, sigma_arr = sigma, molecule = 'VO', temperature = 3000, log_pressure = 2)

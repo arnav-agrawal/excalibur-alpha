@@ -558,7 +558,7 @@ def create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, dnu_
     #nu_max = nu_out_max + cut_max
     
     nu_min = 1
-    nu_max = 35000
+    nu_max = nu_out_max + 1000
 
     # First, we need to find values of gamma_V for reference wavenumbers (100, 1000, 10000 cm^-1)
     nu_ref = np.array(nu_ref)   # The reference wavenumbers need to be a numpy array
@@ -844,15 +844,34 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
     # Start clock for timing program
     t_start = time.perf_counter()
     
-    # For a single point in P-T space:
-    if (cluster_run == False):
-        log_P_arr = np.array([log_pressure])        # log_10 (Pressure/bar)
-        T_arr = np.array([temperature])         # Temperature (K)
+    
+    #***** Load pressure and temperature for this calculation *****#
+    P_arr = np.power(10.0, log_pressure)   
+    
+    """
+    # If running on Condor
+    if (cluster_run == True):
+            
+        idx_PT = int(sys.argv[1])
+        log_P = log_P_arr[idx_PT//len(T_arr)]   # Log10 atmospheric pressure (bar)
+        P = P_arr[idx_PT//len(T_arr)]   # Atmospheric pressure (bar)
+        T = T_arr[idx_PT%len(T_arr)]   # Atmospheric temperature (K)
+        
+        N_P = 1
+        N_T = 1
+        
+    else:
+        
         N_P = len(log_P_arr)
         N_T = len(T_arr)
-
-    #***** Load pressure and temperature for this calculation *****#
-    P_arr = np.power(10.0, log_P_arr)   
+    """
+    
+    # For a single point in P-T space:
+    if (cluster_run == False):
+        log_P_arr = np.array(log_pressure)        # log_10 (Pressure/bar)
+        T_arr = np.array(temperature)         # Temperature (K)
+        N_P = len(log_P_arr)
+        N_T = len(T_arr)
 
     for p in range(N_P):
         for t in range(N_T):
@@ -860,7 +879,7 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
             
                 P = P_arr[p]   # Atmospheric pressure (bar)
                 T = T_arr[t]   # Atmospheric temperature (K)
-                
+            
             Q_T, Q_T_ref = interpolate_pf(T_pf_raw, Q_raw, T, T_ref)
             
             m = mass(molecule, isotopologue, linelist) * u

@@ -17,7 +17,7 @@ import h5py
 import re
 from tqdm import tqdm
 import zipfile
-from hapi import moleculeName, isotopologueName, abundance
+from hapi import moleculeName, isotopologueName, abundance, partitionSum
 
 def HITEMP_table():
     """
@@ -288,7 +288,40 @@ def create_air_broad(input_dir):
         f_out.write('%.1f %.4f %.3f \n' %(J_sorted[i], gamma_air_avg[i], n_air_avg[i]))
     
     f_out.close()
+    
 
+def create_pf(mol_ID, iso_ID, folder, T_min = 70, T_max = 3001, step = 1.0):
+    """
+    Create partition function file using the partitionSum() function already in HITRAN
+
+    Parameters
+    ----------
+    mol_ID : TYPE
+        DESCRIPTION.
+    iso_ID : TYPE
+        DESCRIPTION.
+    folder : TYPE
+        DESCRIPTION.
+    T_min : TYPE, optional
+        DESCRIPTION. The default is 70.
+    T_max : TYPE, optional
+        DESCRIPTION. The default is 3001.
+    step : TYPE, optional
+        DESCRIPTION. The default is 1.0.
+
+    Returns
+    -------
+    None.
+
+    """
+    
+    T, Q = partitionSum(mol_ID, iso_ID, [T_min, T_max], step)
+
+    out_file = folder + moleculeName(mol_ID) + '.pf'
+    f_out = open(out_file, 'w')
+    f_out.write('T | Q \n') 
+    for i in range(len(T)):
+        f_out.write('%.1f %.4f \n' %(T[i], Q[i]))
 
 
 def download_line_list(mol_ID, iso_ID, out_folder):
@@ -407,6 +440,8 @@ def summon_HITEMP(molecule, isotopologue):
     print("\nFetching data from HITEMP...\nMolecule:", moleculeName(molecule), "\nIsotopologue", isotopologueName(molecule, isotopologue), "\n")
     
     output_folder = create_directories(molecule, isotopologue)
+    print(molecule, isotopologue)
+    create_pf(molecule, isotopologue, output_folder)
     download_line_list(molecule, isotopologue, output_folder)
     print("\n\nNow creating air broadening file ...")
     create_air_broad(output_folder)
