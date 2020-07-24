@@ -440,7 +440,6 @@ def summon_HITEMP(molecule, isotopologue):
     print("\nFetching data from HITEMP...\nMolecule:", moleculeName(molecule), "\nIsotopologue", isotopologueName(molecule, isotopologue), "\n")
     
     output_folder = create_directories(molecule, isotopologue)
-    print(molecule, isotopologue)
     create_pf(molecule, isotopologue, output_folder)
     download_line_list(molecule, isotopologue, output_folder)
     print("\n\nNow creating air broadening file ...")
