@@ -11,7 +11,8 @@ import os
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.ticker import MultipleLocator, AutoLocator, FormatStrFormatter, FuncFormatter, ScalarFormatter
+from matplotlib.ticker import MultipleLocator, AutoLocator, FormatStrFormatter, \
+                              FuncFormatter, ScalarFormatter, NullFormatter
 
 
 def plot_results(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = [], file = '', **kwargs):
@@ -71,51 +72,52 @@ def plot_results(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = [
     pressure = np.power(10.0, log_pressure)
     
     print("\nPlotting the cross-section of", molecule, "at", temperature, "K and", pressure, "bar")
-    
-    # Make wavenumber plot
-    plt.figure()
-    plt.clf()
+        
+    #***** Make wavenumber plot *****#
+    fig = plt.figure()
     ax = plt.gca()
     
-    plt.semilogy(nu_out, sigma_out, lw=0.3, alpha = 0.5, color = 'red', label = (molecule + r'Cross Section (out)'))   
+    ax.set_yscale("log")
     
-    plt.xlim([200.0, 25000.0])
-    plt.ylim([1.0e-30, 1.0e-12])
+    ax.plot(nu_out, sigma_out, lw=0.3, alpha = 0.5, color = 'crimson', label = (molecule + r' Cross Section'))   
+    
+    ax.set_ylim([1.0e-30, 1.0e-14])
+    ax.set_xlim([200.0, 25000.0])
 
-    plt.ylabel(r'Cross Section (cm$^2$)')
-    plt.xlabel(r'$\tilde{\nu}$ (cm$^{-1}$)')
+    ax.set_ylabel(r'Cross Section (cm$^2$)', size = 14)
+    ax.set_xlabel(r'$\tilde{\nu}$ (cm$^{-1}$)', size = 14)
 
-    legend = plt.legend(loc='upper left', shadow=False, frameon=False, prop={'size':6})
+    legend = plt.legend(loc='upper left', shadow=False, frameon=False, prop={'size':10})
+    
+    plt.tight_layout()
     
     plt.savefig('../plots/' + molecule + '_' + str(temperature) + 'K_' + str(pressure) + 'bar_nu.pdf')
     
     plt.close()
     
-    # Make wavelength plot
-    plt.clf()
+    #***** Make wavelength plot *****#
+    fig = plt.figure()
     ax = plt.gca()
     
-    xmajorLocator   = MultipleLocator(0.2)
-    xmajorFormatter = FormatStrFormatter('%.1f')
-    xminorLocator   = MultipleLocator(0.02)
+    ax.set_yscale("log")
+    ax.set_xscale("log")
     
-    ax.xaxis.set_major_locator(xmajorLocator)
-    ax.xaxis.set_major_formatter(xmajorFormatter)
-    ax.xaxis.set_minor_locator(xminorLocator)
+    ax.plot(wl_out, sigma_out, lw=0.3, alpha = 0.5, color= 'crimson', label = (molecule + r' Cross Section')) 
     
-    plt.loglog(wl_out, sigma_out, lw=0.3, alpha = 0.5, color= 'red', label = (molecule + r'$\mathrm{\, \, Cross \, \, Section}$')) 
+    ax.set_xticks([0.4, 0.6, 0.8, 1.0, 2.0, 4.0, 6.0, 8.0, 10.0])
+    ax.set_xticklabels(['0.4', '0.6', '0.8', '1', '2', '4', '6', '8', '10'])
     
-    plt.ylim([1.0e-30, 1.0e-14])
-    plt.xlim([0.4, 10.0])
+    ax.set_ylim([1.0e-30, 1.0e-14])
+    ax.set_xlim([0.4, 10.0])
     
-    plt.ylabel(r'Cross Section (cm$^2$)')
-    plt.xlabel(r'Wavelength (μm)')
+    ax.set_ylabel(r'Cross Section (cm$^2$)', size = 14)
+    ax.set_xlabel(r'Wavelength (μm)', size = 14)
     
-    ax.text(0.7, 5.0e-16, (r'T = ' + str(temperature) + r'K, P = ' + str(pressure) + r'bar'), fontsize = 10)
+    ax.text(0.5, 5.0e-16, (r'T = ' + str(temperature) + r' K, P = ' + str(pressure) + r' bar'), fontsize = 10)
     
-    legend = plt.legend(loc='upper right', shadow=False, frameon=False, prop={'size':7})
+    legend = plt.legend(loc='upper right', shadow=False, frameon=False, prop={'size':10})
     
-    #plt.show()
+    plt.tight_layout()
 
     plt.savefig('../plots/' + molecule + '_' + str(temperature) + 'K_' + str(pressure) + 'bar.pdf')
     
