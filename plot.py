@@ -85,7 +85,7 @@ def plot_results(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = [
 
     legend = plt.legend(loc='upper left', shadow=False, frameon=False, prop={'size':6})
     
-    plt.savefig('../plots/' + molecule + '_' + str(temperature) + 'K_' + str(log_pressure) + 'bar_nu.pdf')
+    plt.savefig('../plots/' + molecule + '_' + str(temperature) + 'K_' + str(np.power(10.0, log_pressure)) + 'bar_nu.pdf')
     
     plt.close()
     
@@ -109,12 +109,12 @@ def plot_results(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = [
     plt.ylabel(r'Cross Section (cm$^2$)')
     plt.xlabel(r'Wavelength (μm)')
     
-    ax.text(0.7, 5.0e-16, (r'T = ' + str(temperature) + r'K, P = ' + str(log_pressure) + r'bar'), fontsize = 10)
+    ax.text(0.7, 5.0e-16, (r'T = ' + str(temperature) + r'K, P = ' + str(np.power(10.0, log_pressure)) + r'bar'), fontsize = 10)
     
     legend = plt.legend(loc='upper right', shadow=False, frameon=False, prop={'size':7})
     
     #plt.show()
 
-    plt.savefig('../plots/' + molecule + '_' + str(temperature) + 'K_' + str(log_pressure) + 'bar.pdf')
+    plt.savefig('../plots/' + molecule + '_' + str(temperature) + 'K_' + str(np.power(10.0, log_pressure)) + 'bar.pdf')
     
     print("\nPlotting complete.")

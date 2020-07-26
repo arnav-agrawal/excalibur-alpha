@@ -653,7 +653,7 @@ def precompute_Voigt_profiles(nu_ref, nu_max, N_alpha_samples, T, m, cutoffs, dn
 def write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out):
     #***** Now write output files *****#
             
-    if (cluster_run == False): f = open(output_directory + str(molecule) + '_T' + str(T_arr[t]) + 'K_log_P' + str(log_P_arr[p]) + '_sigma.txt','w')
+    if (cluster_run == False): f = open(output_directory + str(molecule) + '_T' + str(T_arr[t]) + 'K_log_P' + str(np.power(10, log_P_arr[p])) + '_sigma.txt','w')
     #elif (cluster_run == True): f = open(output_directory + str(molecule) + '_T' + str(T) + 'K_log_P' + str(log_P) + '_sigma.txt','w')
                     
     for i in range(len(nu_out)):
