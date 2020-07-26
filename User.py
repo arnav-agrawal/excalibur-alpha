@@ -9,14 +9,22 @@ File that the user of our package would use
 """
 
 # Parameters for cross_section() function
-
+molecule = 'O3'
+database = 'HITRAN'
 
 import Download_Line_List
 import Cthulhu_Refactored
 import plot
+import numpy as np
 
-Download_Line_List.summon(molecule = 'CO2', database='exomol')
+P = 1.0     # Bar
+T = 300.0   # K
 
-#nu, sigma = Cthulhu_Refactored.create_cross_section(input_dir = '/Volumes/Seagate Backup/input/', database = 'exomol', molecule = 'HCN', log_pressure = [0], temperature = [1000])
+# Download line list
+Download_Line_List.summon(database=database, molecule = molecule)
 
-#plot.plot_results(nu_arr = nu, sigma_arr = sigma, molecule = 'VO', temperature = 3000, log_pressure = 2)
+# Create cross section
+nu, sigma = Cthulhu_Refactored.create_cross_section(input_dir = '../input/', database = database, molecule = molecule, log_pressure = [np.log10(P)], temperature = [T])
+
+# Plot cross section
+plot.plot_results(nu_arr = nu, sigma_arr = sigma, molecule = molecule, temperature = T, log_pressure = np.log10(P))

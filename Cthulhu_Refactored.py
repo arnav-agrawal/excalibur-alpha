@@ -931,6 +931,15 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
                                            dnu_fine, N_Voigt_points, cutoffs, J_max, 
                                            alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
                                            nu_min, nu_max, S_cut)
+                
+            elif database == 'hitemp':
+                produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fine,
+                                           nu_sampled, nu_ref, m, T, Q_T, Q_T_ref,
+                                           N_points_fine_1, N_points_fine_2, N_points_fine_3,
+                                           dnu_fine, N_Voigt_points, cutoffs, J_max, 
+                                           alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                           nu_min, nu_max, S_cut)
+                
             """    
             elif database == 'vald':
         
