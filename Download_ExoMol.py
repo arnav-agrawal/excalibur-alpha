@@ -12,16 +12,17 @@ import re
 import os
 import bz2
 from tqdm import tqdm
-import numpy
-import pandas
+import numpy as np
+import pandas as pd
 import h5py
 import time
 import shutil
+import sys
 
 
-def download_file(url, f, m_folder, l_folder):
+def download_file(url, f, l_folder):
     """
-    Download a file from ExoMol - decompress if needed
+    Download a file from ExoMol and decompress it if needed. 
     
     Parameters:
         url (string): The URL of a given ExoMol file
@@ -30,12 +31,18 @@ def download_file(url, f, m_folder, l_folder):
     
     if f.endswith('bz2') == True: # If the file ends in .bz2 we need to read and decompress it
         
+        # Check if the file was already downloaded
+        if (os.path.splitext(os.path.splitext(f)[0])[0] + '.h5') in os.listdir(l_folder):
+            print("This file is already downloaded. Moving on.")
+            return
+        
         # Create directory location to prepare for reading compressed file
         compressed_file = l_folder + '/' + f
         
         # Create a decompresser object and a directory location for the decompressed file
         decompressor = bz2.BZ2Decompressor()
         decompressed_file = l_folder + '/' + os.path.splitext(f)[0] #Keep the file name but get rid of the .bz2 extension to make it .trans
+        
     
         
         # Download file from the given URL in chunks and then decompress that chunk immediately
@@ -63,22 +70,17 @@ def download_file(url, f, m_folder, l_folder):
                     
     else: # If the file is not compressed we just need to read it in
         
-        if f.endswith('broad') == True: # Include this condition because .broad files are placed in a separate directory location
+        if 'air' in f:
+            input_file = l_folder + '/air.broad'
+        elif 'self' in f:
+            input_file = l_folder + '/self.broad'
+        else:
             input_file = l_folder + '/' + f
-            #print("Reading this file from ExoMol:", input_file)
-            with requests.get(url, stream=True) as request:
-                with open(input_file, 'wb') as file:
-                    for chunk in request.iter_content(chunk_size = 1024 * 1024):
-                        file.write(chunk)
-                        
-        else: # the file must be .pf
-            input_file = l_folder + '/' + f
-            #print("Reading this file from ExoMol:", input_file)
-            with requests.get(url, stream=True) as request:
-                with open(input_file, 'wb') as file:
-                    for chunk in request.iter_content(chunk_size = 1024 * 1024):
-                        file.write(chunk)
-    
+        
+        with requests.get(url, stream=True) as request:
+            with open(input_file, 'wb') as file:
+                for chunk in request.iter_content(chunk_size = 1024 * 1024):
+                    file.write(chunk)    
     
     
 def convert_to_hdf(file):
@@ -100,11 +102,11 @@ def convert_to_hdf(file):
     
     start_time = time.time()
     
-    trans_file = pandas.read_csv(file, delim_whitespace = True, header=None, usecols = [0,1,2])
+    trans_file = pd.read_csv(file, delim_whitespace = True, header=None, usecols = [0,1,2])
     
-    upper_state = numpy.array(trans_file[0])
-    lower_state = numpy.array(trans_file[1])
-    log_Einstein_A = numpy.log10(numpy.array(trans_file[2]))   
+    upper_state = np.array(trans_file[0])
+    lower_state = np.array(trans_file[1])
+    log_Einstein_A = np.log10(np.array(trans_file[2]))   
     
     hdf_file_path = os.path.splitext(file)[0] + '.h5'
     
@@ -119,7 +121,7 @@ def convert_to_hdf(file):
     
 
 
-def create_tag_array(url):
+def create_tag_array(url, broad_URL):
     """
     Create a list of html tags that contain the URLs from which we will later download files
     
@@ -129,15 +131,17 @@ def create_tag_array(url):
     
     # Get webpage content as text
     web_content = requests.get(url).text
+    broadening_content = requests.get(broad_URL).text
     
     # Create lxml parser
     soup = BeautifulSoup(web_content, "lxml")
+    soup2 = BeautifulSoup(broadening_content, "lxml")
 
     # Parse the webpage by file type (which is contained in the href of the html tag)
-    broad_tags = soup.find_all('a', href = re.compile("broad"))
-    pf_tags = soup.find_all('a', href = re.compile("pf"))
-    states_tags = soup.find_all('a', href = re.compile("states"))
-    trans_tags = soup.find_all('a', href = re.compile("trans"))
+    broad_tags = soup2.find_all('a', href = re.compile("[.]broad"))
+    pf_tags = soup.find_all('a', href = re.compile("[.]pf"))
+    states_tags = soup.find_all('a', href = re.compile("[.]states"))
+    trans_tags = soup.find_all('a', href = re.compile("[.]trans"))
 
     combined_tags = broad_tags + pf_tags + states_tags + trans_tags
     
@@ -167,7 +171,7 @@ def create_directories(molecule, isotope, line_list):
     """
     
     input_folder = '../input'
-    molecule_folder = input_folder + '/' + molecule + '  |  (' + isotope + ')'
+    molecule_folder = input_folder + '/' + molecule + '  ~  (' + isotope + ')'
     line_list_folder = molecule_folder + '/' + line_list
     
     if os.path.exists(input_folder) == False:
@@ -179,7 +183,7 @@ def create_directories(molecule, isotope, line_list):
     if os.path.exists(line_list_folder) == False:
         os.mkdir(line_list_folder)
         
-    return molecule_folder, line_list_folder
+    return line_list_folder
 
         
 
@@ -207,7 +211,7 @@ def calc_num_trans(html_tags):
 
 
 
-def iterate_tags(tags, host, m_folder, l_folder, line_list):
+def iterate_tags(tags, host, l_folder, line_list):
     """
     Iterate through every html tag and download the file contained by the URL in the href
 
@@ -216,8 +220,6 @@ def iterate_tags(tags, host, m_folder, l_folder, line_list):
     tags : TYPE
         DESCRIPTION.
     host : TYPE
-        DESCRIPTION.
-    m_folder : TYPE
         DESCRIPTION.
     l_folder : TYPE
         DESCRIPTION.
@@ -236,7 +238,6 @@ def iterate_tags(tags, host, m_folder, l_folder, line_list):
     for tag in tags:
         # Create the appropriate URL by combining host name and href
         url = host + tag.get('href')
-         
         # Name the file in a way that it includes relevant info about what is stored in the file
         matches = re.finditer('__', url)
         matches_positions = [match.start() for match in matches]
@@ -251,7 +252,7 @@ def iterate_tags(tags, host, m_folder, l_folder, line_list):
             print("\nDownloading .trans file", counter, "of", num_trans)
         
         # Download each line list
-        download_file(url, filename, m_folder, l_folder)
+        download_file(url, filename, l_folder)
         
         
 
@@ -261,8 +262,6 @@ def define_url(molecule, isotope, line_list):
     """
         
     ExoMol_URL = 'http://exomol.com/data/molecules/' + molecule + '/' + isotope + '/' + line_list + '/'
-    
-    #create_directories(molecule, isotope, line_list)
     
     return ExoMol_URL
 
@@ -283,6 +282,10 @@ def get_default_iso(molecule):
 
     """
     
+    if molecule == 'H2_p':  # Handle H2+ on ExoMol
+        default_iso = '1H-2H_p'
+        return default_iso
+    
     most_abundant = {'H' : 1, 'He' : 4, 'Li' : 7, 'Be' : 9, 'B' : 11, 'C' : 12, 'N' : 14, 'O' : 16, 'F' : 19, 'Ne' : 20, 
                      'Na' : 23, 'Mg' : 24, 'Al' : 27, 'Si' : 28, 'P' : 31, 'S' : 32, 'Cl' : 35, 'Ar' : 40, 'K' : 39, 'Ca' : 40,
                      'Sc' : 45, 'Ti' : 48, 'V' : 51, 'Cr' : 52, 'Mn' : 55, 'Fe' : 56, 'Co' : 59, 'Ni' : 58, 'Cu' : 63, 
@@ -295,20 +298,24 @@ def get_default_iso(molecule):
                      'Ur' : 238}
     
     default_iso = ''
-    matches = re.findall('[A-Z][a-z]?[0-9]?', molecule)
+    matches = re.findall('[A-Z][a-z]?[0-9]?(?:_p)?', molecule)
     num_matches = len(matches)
     for match in matches:
         num_matches -= 1
-        letters = re.findall('\D+', match) # alphabetic characters in the molecule
+        letters = re.findall('[A-Za-z]+', match) # alphabetic characters in the molecule
         numbers = re.findall('\d', match) # numeric characters in the molecule
+        ion = re.findall('(_p)', match)  # match the '_p' part if ion
         default_iso += str(most_abundant.get(letters[0])) + letters[0] 
-        
+
         if numbers:
-            default_iso += numbers[0]
+            default_iso += numbers[0]   
+            
+        if ion:
+            default_iso += ion[0] 
             
         if num_matches != 0:
             default_iso += '-'
-        
+
     return default_iso
 
 
@@ -343,8 +350,8 @@ def get_default_linelist(molecule, isotopologue):
                     'CN(12C-14N)': 'MoLLIST', 'NH(14N-1H)': 'MoLLIST', 'CH(12C-1H)': 'MoLLIST', 'OH(16O-1H)': 'MoLLIST',
                     'SH(32S-1H)': 'GYT', 'HF(1H-19F)': 'Coxon-Hajig', 'CS(12C-32S)': 'JnK', 'NS(14N-32S)': 'SNaSH',
                     'PS(31P-32S)': 'POPS', 'PH(31P-1H)': 'LaTY', 'PN(31P-14N)': 'YYLT', 'CP(12C-31P)': 'MoLLIST',
-                    'H2_p(1H-2H_p)': 'ADJSAAM', 'H3_p(1H3_p)': 'MiZATeP', 'OH+(16O-1H_p)': 'MoLLIST', 
-                    'HeH+(4He-1H_p)': 'ADJSAAM', 'LiH_p(7Li-1H_p)': 'CLT', 'KCl(39K-35Cl)': 'Barton', 
+                    'H2_p(1H-2H_p)': 'ADJSAAM', 'H3_p(1H3_p)': 'MiZATeP', 'OH_p(16O-1H_p)': 'MoLLIST', 
+                    'HeH_p(4He-1H_p)': 'ADJSAAM', 'LiH_p(7Li-1H_p)': 'CLT', 'KCl(39K-35Cl)': 'Barton', 
                     'NaCl(23Na-35Cl)': 'Barton', 'LiCl(7Li-35Cl)': 'MoLLIST', 'AlCl(27Al-35Cl)': 'MoLLIST', 
                     'KF(39K-19F)': 'MoLLIST', 'AlF(27Al-19F)': 'MoLLIST', 'LiF(7Li-19F)': 'MoLLIST',
                     'CaF(40Ca-19F)': 'MoLLIST', 'MgF(24Mg-19F)': 'MoLLIST', 'TiO(48Ti-16O)': 'Toto',
@@ -361,7 +368,13 @@ def get_default_linelist(molecule, isotopologue):
                     'P2H2(31P2-1H2)': 'Trans', 'HPPH(1H-31P2-1H)': 'Cis', 'CH3F(12C-1H3-19F)': 'OYKYT', 
                     'CH3Cl(12C-1H3-35Cl)': 'OYT', 'CO2(12C-16O2)': 'UCL-4000'}
     
-    return default_list.get(structure)
+    linelist = default_list.get(structure)
+    
+    if linelist is None:
+        print("\nLooks like we haven't specified a default line list to use for this molecule. Try inputting the linelist you want to use as a parameter in the summon() function.")
+        sys.exit(0)
+    else:
+        return linelist
 
 
 
@@ -471,17 +484,19 @@ def summon_ExoMol(molecule, isotopologue, line_list, URL):
 
     """
     
-    (molecule_folder, line_list_folder) = create_directories(molecule, isotopologue, line_list)
+    line_list_folder = create_directories(molecule, isotopologue, line_list)
 
     host = "http://exomol.com" 
+    broad_URL = "http://exomol.com/data/molecules/" + molecule + '/' # URL where the broadening files are contained
 
-    tags = create_tag_array(URL)
+    tags = create_tag_array(URL, broad_URL)
     
     print("\n ***** Downloading requested data from ExoMol. You have chosen the following parameters: ***** ")
     print("\nMolecule:", molecule, "\nIsotopologue:", isotopologue, "\nLine List:", line_list)
     print("\nStarting by downloading the .broad, .pf, and .states files...")
     
-    iterate_tags(tags, host, molecule_folder, line_list_folder, line_list)
+    iterate_tags(tags, host, line_list_folder, line_list)
     
     process_files(line_list_folder)
+    
     

@@ -12,10 +12,30 @@ Import download_Exomol, download_HITRAN, and download_VALD
 
 import sys
 import requests
+import re
 import Download_ExoMol
 import Download_HITRAN
 import Download_HITEMP
-from hapi import partitionSum
+from hapi import partitionSum, moleculeName
+
+def create_id_dict():
+    mol_ID = []
+    mol_name = []
+    for i in range(1, 50):
+        if i == 35: # Skip 35 since moleculeName(35) throws an error from hapi.py
+            continue
+        else:
+            mol_ID.append(i)
+            mol_name.append(moleculeName(i))
+        
+        mol_ID.append(35)
+        mol_name.append('ClONO2')
+
+    names_and_IDs = zip(mol_name, mol_ID)
+
+    molecule_dict = dict(names_and_IDs) 
+    
+    return molecule_dict
 
 def determine_parameters_ExoMol():
     """
@@ -39,8 +59,9 @@ def determine_parameters_ExoMol():
     while True:
         try:
             molecule = input('What molecule would you like to download the line list for (This is case-sensitive)?\n')
+            molecule = re.sub('[+]', '_p', molecule)
             response = requests.get(website + molecule + '/')
-            response.raise_for_status() #Raises HTTPError if a bad request is made (server or client error)
+            response.raise_for_status() # Raises HTTPError if a bad request is made (server or client error)
             
         except requests.HTTPError:
             print("\n ----- This is not a valid molecule, please try again -----")
@@ -57,6 +78,7 @@ def determine_parameters_ExoMol():
                 isotopologue = Download_ExoMol.get_default_iso(molecule)
                 website += isotopologue + '/'
                 break
+            isotopologue = re.sub('[+]', '_p', isotopologue)
             response = requests.get(website + isotopologue + '/')
             response.raise_for_status()
         
@@ -101,27 +123,28 @@ def determine_parameters_HITRAN():
 
     """
     
+    molecule_dict = create_id_dict()
+    
     while True:
         try:
-            molecule_ID = int(input("What molecule would you like to download the line list for? Please enter the molecule ID number (left-hand column) found here: https://hitran.org/lbl/# \n"))
-            partitionSum(molecule_ID, 1, [70, 80], step = 1.0)
-        except ValueError:
-            print("\n ----- Please enter an integer for the molecule ID number -----")
+            molecule = input("What molecule would you like to download the line list for? \n")
+            molecule_id_number = molecule_dict.get(molecule)
+            partitionSum(molecule_id_number, 1, [70, 80], step = 1.0)
         except KeyError:
-            print("\n ----- This molecule ID is not valid. Please check to make sure the molecule you want exists on HITRAN. ----- ")
+            print("\n ----- This molecule is not valid. Please check to make sure the molecule you want exists on HITRAN. ----- ")
         else:
             break
     
     while True:
         try:
-            isotopologue_ID = int(input("What is the isotopologue ID of the isotopologue you would like to download?\n"))
-            partitionSum(molecule_ID, isotopologue_ID, [70, 80], step = 1.0)
+            isotopologue_ID = int(input("What is the isotopologue ID of the isotopologue you would like to download? Enter '1' for the most abundant isotopologue, '2' for next most abundant, etc. More info found here: https://hitran.org/lbl/# \n"))
+            partitionSum(molecule_id_number, isotopologue_ID, [70, 80], step = 1.0)
         except ValueError:
             print("\n ----- Please enter an integer for the isotopologue ID number -----")
         except KeyError:
             print("\n ----- This molecule/isotopologue ID combination is not valid. Please check to make sure the combo you want exists on HITRAN. ----- ")
         else:
-            return molecule_ID, isotopologue_ID
+            return molecule_id_number, isotopologue_ID
 
 
 def determine_parameters_VALD():
@@ -141,22 +164,21 @@ def determine_parameters_HITEMP():
 
     """
     
+    molecule_dict = create_id_dict()
     table = Download_HITEMP.HITEMP_table()
     
     while True:
-        try:
-            molecule_ID = int(input("What molecule would you like to download the line list for? Please enter the molecule ID number (left-hand column) found here: https://hitran.org/lbl/# \n"))
-            if molecule_ID in table['ID'].values:
-                row = table.loc[table['ID'] == molecule_ID]   # Find the DataFrame row that contains the molecule_ID
-                break
-        except ValueError:
-            print("\n ----- Please enter an integer for the molecule ID number -----")
+        molecule = input("What molecule would you like to download the line list for? \n")
+        molecule_id_number = molecule_dict.get(molecule)
+        if molecule_id_number in table['ID'].values:
+            row = table.loc[table['ID'] == molecule_id_number]   # Find the DataFrame row that contains the molecule_ID
+            break   
         else:
             print("\n ----- This molecule ID is not valid. Please check to make sure the molecule you want exists on HITEMP. -----")
     
     while True:
         try:
-            isotopologue_ID = int(input("What is the isotopologue ID of the isotopologue you would like to download?\n"))
+            isotopologue_ID = int(input("What is the isotopologue ID of the isotopologue you would like to download? Enter '1' for the most abundant isotopologue, '2' for next most abundant, etc. More info found here: https://hitran.org/lbl/# \n"))
             isotope_count = row.loc[row.index.values[0], 'Iso Count'] # Find the number of isotopologues of the given molecule ID
             if isotopologue_ID <= isotope_count:
                 break
@@ -165,7 +187,7 @@ def determine_parameters_HITEMP():
         else:
             print("\n ----- This molecule/isotopologue ID combination is not valid. Please check to make sure the combo you want exists on HITEMP. ----- ")
         
-    return molecule_ID, isotopologue_ID
+    return molecule_id_number, isotopologue_ID
             
             
 def check_ExoMol(molecule, isotope = '', linelist = ''):
@@ -190,7 +212,9 @@ def check_ExoMol(molecule, isotope = '', linelist = ''):
     website = "http://exomol.com/data/molecules/" + molecule + '/' + isotope + '/' + linelist + '/'
     
     try:
-        requests.get(website)
+        response = requests.get(website)
+        response.raise_for_status() # Raises HTTPError if a bad request is made (server or client error)
+        
     except requests.HTTPError:
         print("\n ----- These are not valid ExoMol parameters. Please try calling the summon() function again. -----")
         sys.exit(0)
@@ -212,12 +236,18 @@ def check_HITRAN(molecule, isotope):
     None.
 
     """
+
+    molecule_dict = create_id_dict()
+    molecule_id_number = molecule_dict.get(molecule)
     
     try:
-        partitionSum(molecule, isotope, [70, 80], step = 1.0)
+        partitionSum(molecule_id_number, isotope, [70, 80], step = 1.0)
     except KeyError:
-        print("\n ----- This molecule/isotopologue ID combination is not valid in HITRAN. Please try calling the summon() function again. ----- ")
+        print("\n ----- This molecule/isotopologue ID combination is not valid in HITRAN. Please try calling the summon() function again. Make sure you enter the ID number of the molecule you want. ----- ")
+        print("\n ----- A list of supported molecule IDs can be found here: https://hitran.org/lbl/ -----")
         sys.exit(0)
+        
+    return molecule_id_number
 
 
 def check_HITEMP(molecule, isotope):
@@ -236,22 +266,32 @@ def check_HITEMP(molecule, isotope):
     None.
 
     """
+
+    molecule_dict = create_id_dict()
+    molecule_id_number = molecule_dict.get(molecule)
+    
+    if molecule_id_number is None:
+        print("\n ----- This molecule/isotopologue ID combination is not valid in HITEMP. Please try calling the summon() function again. Make sure you enter the ID number of the molecule you want. ----- ")
+        print("\n ----- A list of supported molecule IDs can be found here: https://hitran.org/hitemp/ -----")
+        sys.exit(0)
     
     table = Download_HITEMP.HITEMP_table()
-    if molecule in table['ID'].values:
-        row = table.loc[table['ID'] == molecule]
+    if molecule_id_number in table['ID'].values:
+        row = table.loc[table['ID'] == molecule_id_number]
         isotope_count = row.loc[row.index.values[0], 'Iso Count']
         if isotope <= isotope_count:
-            return
+            return molecule_id_number
     else:
-        print("\n ----- This molecule/isotopologue ID combination is not valid in HITEMP. Please try calling the summon() function again. ----- ")
+        print("\n ----- This molecule/isotopologue ID combination is not valid in HITEMP. Please try calling the summon() function again. Make sure you enter the ID number of the molecule you want. ----- ")
+        print("\n ----- A list of supported molecule IDs can be found here: https://hitran.org/hitemp/ -----")
         sys.exit(0)
+        
 
 def check_VALD():
     return
     
 
-def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'default', linelist = 'default'):
+def summon(database = '', molecule = '', isotope = 'default', linelist = 'default', **kwargs):
     """
     Makes callls to other downloader files to retrieve the data from the desired database
 
@@ -273,6 +313,10 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
     None.
 
     """
+    
+    if database != '' and molecule != '': user_friendly = False
+    else: user_friendly = True
+        
     
     if user_friendly: # If the user wants to be guided via terminal prompts
         
@@ -302,10 +346,13 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
             
         
     if not user_friendly: # If the user just wants to call the function with parameters directly passed in
-        db = data_base.lower()
+        db = database.lower()
         mol = molecule
         iso = isotope
         lin = linelist
+        
+        mol = re.sub('[+]', '_p', mol)  # Handle ions
+        iso = re.sub('[+]', '_p', iso)  # Handle ions
             
         if db == 'exomol':
             if isotope == 'default':
@@ -314,14 +361,15 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
             if linelist == 'default':
                 check_ExoMol(mol, iso)
                 lin = Download_ExoMol.get_default_linelist(mol, iso)
-            check_ExoMol(molecule, isotope, linelist)
+
+            check_ExoMol(mol, iso, lin)
             URL = "http://exomol.com/data/molecules/" + mol + '/' + iso + '/' + lin + '/'
             Download_ExoMol.summon_ExoMol(mol, iso, lin, URL)
             
         elif db == 'hitran':
             if isotope == 'default':
                 iso = 1
-            check_HITRAN(molecule, isotope)
+            mol = check_HITRAN(molecule, iso)
             Download_HITRAN.summon_HITRAN(mol, iso)
             
         elif db == 'vald':
@@ -330,12 +378,11 @@ def summon(user_friendly = True, data_base = '', molecule = '', isotope = 'defau
         elif db == 'hitemp':
             if isotope == 'default':
                 iso = 1
-            check_HITEMP(molecule, isotope)
+            mol = check_HITEMP(molecule, iso)
             Download_HITEMP.summon_HITEMP(mol, iso)
         
         else:
             print("\n ----- You have not passed in a valid database. Please try calling the summon() function again. ----- ")
             sys.exit(0)
         
-    
-    print("\nDownload complete.")
+    print("\nDownload complete.\n")
