@@ -773,6 +773,17 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
     
     print("Beginning cross-section computations...")
     
+    
+    # Cast log_pressure and temperature to lists if they are not already
+    if not isinstance(log_pressure, list):  
+        log_pressure = [log_pressure]
+    
+    if not isinstance(temperature, list):
+        temperature = [temperature]
+    
+    print(type(log_pressure))
+    print(type(temperature))
+    
     database = database.lower()
     
     # Locate the input_directory where the line list is stored
