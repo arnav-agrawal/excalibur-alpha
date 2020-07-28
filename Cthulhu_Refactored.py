@@ -773,16 +773,19 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
     
     print("Beginning cross-section computations...")
     
-    
     # Cast log_pressure and temperature to lists if they are not already
-    if not isinstance(log_pressure, list):  
+    if not isinstance(log_pressure, list) and not isinstance(log_pressure, np.ndarray):  
         log_pressure = [log_pressure]
     
     if not isinstance(temperature, list):
         temperature = [temperature]
+        
+    # Cast all temperatures and pressures to floats
+    for i in range(len(log_pressure) - 1):
+        log_pressure[i] = float(log_pressure[i])
     
-    print(type(log_pressure))
-    print(type(temperature))
+    for i in range(len(temperature) - 1):
+        temperature[i] = float(temperature[i])
     
     database = database.lower()
     
@@ -857,14 +860,28 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
     
     
     #***** Load pressure and temperature for this calculation *****#
-    P_arr = np.power(10.0, log_pressure)   
+    P_arr = np.power(10.0, log_pressure) 
+    log_P_arr = np.array(log_pressure)        # log_10 (Pressure/bar)
+    T_arr = np.array(temperature)         # Temperature (K)
     
-    """
     # If running on Condor
     if (cluster_run == True):
             
-        idx_PT = int(sys.argv[1])
-        log_P = log_P_arr[idx_PT//len(T_arr)]   # Log10 atmospheric pressure (bar)
+        try:
+            idx_PT = int(sys.argv[1])
+        except IndexError:
+            print("\n----- You need to enter a command line argument if cluster_run is set to True. ----- ")
+            sys.exit(0)
+            
+        except ValueError:
+            print("\n----- The command line argument needs to be an int. -----")
+            sys.exit(0)
+            
+        if idx_PT >= len(log_P_arr) * len(T_arr):
+            print("\n----- You have provided a command line argument that is out of range for the specified pressure and temperature arrays. -----")
+            sys.exit(0)
+        
+        #log_P = log_P_arr[idx_PT//len(T_arr)]   # Log10 atmospheric pressure (bar)  # Pressure combinations mapped before temperature
         P = P_arr[idx_PT//len(T_arr)]   # Atmospheric pressure (bar)
         T = T_arr[idx_PT%len(T_arr)]   # Atmospheric temperature (K)
         
@@ -875,23 +892,19 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
         
         N_P = len(log_P_arr)
         N_T = len(T_arr)
-    """
     
-    # For a single point in P-T space:
-    if (cluster_run == False):
-        log_P_arr = np.array(log_pressure)        # log_10 (Pressure/bar)
-        T_arr = np.array(temperature)         # Temperature (K)
-        N_P = len(log_P_arr)
-        N_T = len(T_arr)
 
     for p in range(N_P):
         for t in range(N_T):
             if (cluster_run == False):
+                
             
                 P = P_arr[p]   # Atmospheric pressure (bar)
                 T = T_arr[t]   # Atmospheric temperature (K)
             
             Q_T, Q_T_ref = interpolate_pf(T_pf_raw, Q_raw, T, T_ref)
+            
+            print(P, T)
             
             m = mass(molecule, isotopologue, linelist) * u
             
