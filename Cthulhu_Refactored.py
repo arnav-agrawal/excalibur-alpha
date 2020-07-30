@@ -613,6 +613,9 @@ def create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, dnu_
         
     # Initialise cross section arrays on each grid
     sigma_fine = np.zeros(N_points_fine)    # Computational (fine) grid
+    
+    #sigma_out = np.zeros(shape=(N_P, N_T, N_points_out))
+    
     sigma_out = np.zeros(N_points_out)      # Coarse (output) grid
     
     return (sigma_fine, nu_ref, N_points_fine_1, N_points_fine_2, N_points_fine_3, dnu_fine, cutoffs,
@@ -848,6 +851,11 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
             create_Burrows(input_directory)
             J_max, gamma_0_Burrows = read_Burrows(input_directory)
             
+        elif broadening == 'custom' and 'custom.broad' in os.listdir(input_directory):
+            # Read in broadening file
+            return
+            
+            
         else:
             print("\nYou did not enter a valid type of pressure broadening. Please try again.")
             sys.exit(0)
@@ -869,6 +877,7 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
             
         try:
             idx_PT = int(sys.argv[1])
+            
         except IndexError:
             print("\n----- You need to enter a command line argument if cluster_run is set to True. ----- ")
             sys.exit(0)
@@ -1005,11 +1014,11 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
         
         print('Total runtime: ' + str(total_final) + ' s')
         
-        output_directory = re.sub('/input/', '/output/', input_directory)
+    output_directory = re.sub('/input/', '/output/', input_directory)
         
-        if not os.path.exists(output_directory):
-            os.makedirs(output_directory)
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
         
-        nu, sigma = write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out)
+    nu, sigma = write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out)
         
-        return nu, sigma
+    return nu, sigma
