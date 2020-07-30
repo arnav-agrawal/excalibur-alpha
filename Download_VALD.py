@@ -39,12 +39,12 @@ def process_VALD_file(species):
     J_low = []
     J_up = []
     log_gamma_vdw = []
+    
+    alkali = False
 
     f_in = open(directory + trans_file[0], 'r')
 
     count = 0
-    
-    debug = 0
 
     for line in f_in:
 
@@ -60,13 +60,6 @@ def process_VALD_file(species):
 
                 # If at beginning of file footnotes, do not read further
                 if (line[0] == '* oscillator strengths were scaled by the solar isotopic ratios.'): break
-            
-                if debug <= 5:
-                    print(line)
-                    print(line[3])
-                    print(line[4])
-                    print(line[5])
-                    debug+=1
                 
                 wl.append(float(line[1]))   # Convert wavelengths to um
                 log_gf.append(float(line[2]))
@@ -80,7 +73,7 @@ def process_VALD_file(species):
 
                 # Only need orbital angular momentum QNs for alkalis
                 if (species in ['Li', 'Na', 'K', 'Rb', 'Cs']):
-
+                    
                     line = line.strip()
                     line = line.split()
 
@@ -91,6 +84,8 @@ def process_VALD_file(species):
                     elif (line[2].endswith('f')): l_low.append(3)
                     elif (line[2].endswith('g')): l_low.append(4)
                     else: print ("Error: above g orbital!")
+                    
+                    alkali = True
 
             elif ((count-1)%4 == 0):
 
@@ -123,8 +118,6 @@ def process_VALD_file(species):
     J_low = np.array(J_low[::-1])
     J_up = np.array(J_up[::-1])
     log_gamma_vdw = np.array(log_gamma_vdw[::-1])
-    
-    print(len(wl), len(log_gf), len(E_low), len(E_up), len(J_low), len(J_up), len(l_low), len(l_up), len(log_gamma_vdw))
 
     # Compute transition wavenumbers
     nu = 1.0e4/np.array(wl)
@@ -133,22 +126,29 @@ def process_VALD_file(species):
     gf = np.power(10.0, log_gf)
 
     # Open output file
-    f_out = open(directory + 'K.trans','w')
-
-    f_out.write('nu_0 | gf | E_low | E_up | J_low | J_up | l_low | l_up | log_gamma_vdw \n')
+    f_out = open(directory + species + '.trans','w')
+    
+    if alkali:
+        f_out.write('nu_0 | gf | E_low | E_up | J_low | J_up | l_low | l_up | log_gamma_vdw \n')
+    
+    else:
+        f_out.write('nu_0 | gf | E_low | E_up | J_low | J_up | log_gamma_vdw \n')
 
     for i in range(len(nu)):
-        f_out.write('%.6f %.6e %.6f %.6f %.1f %.1f %d %d %.6f \n' %(nu[i], gf[i], E_low[i], E_up[i],
-                                                                    J_low[i], J_up[i], l_low[i], l_up[i],
-                                                                    log_gamma_vdw[i]))
+        
+        if alkali:
+            f_out.write('%.6f %.6e %.6f %.6f %.1f %.1f %d %d %.6f \n' %(nu[i], gf[i], E_low[i], E_up[i],
+                                                                        J_low[i], J_up[i], l_low[i], l_up[i],
+                                                                        log_gamma_vdw[i]))
+            
+        else:
+            f_out.write('%.6f %.6e %.6f %.6f %.1f %.1f %.6f \n' %(nu[i], gf[i], E_low[i], E_up[i],
+                                                                  J_low[i], J_up[i], log_gamma_vdw[i]))
     f_out.close()
     
-    convert_to_hdf(directory + 'K.trans')
-    
-    return
+    convert_to_hdf(directory + species + '.trans', alkali)
 
-
-def convert_to_hdf(file):
+def convert_to_hdf(file, alkali):
     
     trans_file = pd.read_csv(file, delim_whitespace = True, header=None, skiprows = 1)
     
@@ -160,9 +160,15 @@ def convert_to_hdf(file):
     E_up = np.array(trans_file[3])
     J_low = np.array(trans_file[4])
     J_up = np.array(trans_file[5])
-    l_low = np.array(trans_file[6])
-    l_up = np.array(trans_file[7])
-    log_gamma_vdw = np.array(trans_file[8])
+    
+    if alkali:
+        l_low = np.array(trans_file[6])
+        l_up = np.array(trans_file[7])
+        log_gamma_vdw = np.array(trans_file[8])
+        
+    else:
+        log_gamma_vdw = np.array(trans_file[6])
+        
     
     hdf_file_path = os.path.splitext(file)[0] + '.h5'
     
@@ -173,9 +179,11 @@ def convert_to_hdf(file):
         hdf.create_dataset('E upper', data = E_up, dtype = 'f8') #store as 32-bit unsigned int
         hdf.create_dataset('J lower', data = J_low, dtype = 'f8') #store as 32-bit unsigned int
         hdf.create_dataset('J upper', data = J_up, dtype = 'f8') #store as 32-bit float
-        hdf.create_dataset('L lower', data = l_low, dtype = 'f8') #store as 32-bit unsigned int
-        hdf.create_dataset('L upper', data = l_up, dtype = 'f8') #store as 32-bit float
         hdf.create_dataset('Log gamma vdw', data = log_gamma_vdw, dtype = 'f8') #store as 32-bit float
+        
+        if alkali:
+            hdf.create_dataset('L lower', data = l_low, dtype = 'f8') #store as 32-bit unsigned int
+            hdf.create_dataset('L upper', data = l_up, dtype = 'f8') #store as 32-bit float
 
     # os.remove(file)
 
