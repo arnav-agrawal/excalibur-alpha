@@ -780,7 +780,7 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
     if not isinstance(log_pressure, list) and not isinstance(log_pressure, np.ndarray):  
         log_pressure = [log_pressure]
     
-    if not isinstance(temperature, list):
+    if not isinstance(temperature, list) and not isinstance(temperature, np.ndarray):  
         temperature = [temperature]
         
     # Cast all temperatures and pressures to floats
