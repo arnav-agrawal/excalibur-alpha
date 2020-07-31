@@ -656,8 +656,11 @@ def precompute_Voigt_profiles(nu_ref, nu_max, N_alpha_samples, T, m, cutoffs, dn
 def write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out):
     #***** Now write output files *****#
             
-    if (cluster_run == False): f = open(output_directory + str(molecule) + '_T' + str(T_arr[t]) + 'K_log_P' + str(np.power(10, log_P_arr[p])) + '_sigma.txt','w')
-    #elif (cluster_run == True): f = open(output_directory + str(molecule) + '_T' + str(T) + 'K_log_P' + str(log_P) + '_sigma.txt','w')
+    if (cluster_run == False): 
+        f = open(output_directory + str(molecule) + '_T' + str(T_arr[t]) + 'K_log_P' + str(np.power(10, log_P_arr[p])) + '_sigma.txt','w')
+        
+    #elif (cluster_run == True): 
+        #f = open(output_directory + str(molecule) + '_T' + str(T) + 'K_log_P' + str(log_P) + '_sigma.txt','w')
                     
     for i in range(len(nu_out)):
         f.write('%.8f %.8e \n' %(nu_out[i], sigma_out[i]))
@@ -1014,11 +1017,11 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
         
         print('Total runtime: ' + str(total_final) + ' s')
         
-    output_directory = re.sub('/input/', '/output/', input_directory)
+        output_directory = re.sub('/input/', '/output/', input_directory)
         
-    if not os.path.exists(output_directory):
-        os.makedirs(output_directory)
+        if not os.path.exists(output_directory):
+            os.makedirs(output_directory)
         
-    nu, sigma = write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out)
+        nu, sigma = write_output_file(cluster_run, output_directory, molecule, T_arr, t, log_P_arr, p, nu_out, sigma_out)
         
-    return nu, sigma
+        #return nu, sigma
