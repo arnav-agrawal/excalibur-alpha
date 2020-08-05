@@ -10,8 +10,9 @@ import numpy as np
 import pandas as pd
 import os
 import h5py
+import shutil
 
-def process_VALD_file(species):
+def process_VALD_file(species, isotope):
     """
     Used on developers' end to get the necessary data from a VALD line list 
 
@@ -26,9 +27,11 @@ def process_VALD_file(species):
 
     """
     
+    isotope = str(isotope)
+    
     directory = '../VALD Line Lists/'
 
-    trans_file = [filename for filename in os.listdir(directory) if filename == (species + '_VALD.trans')]
+    trans_file = [filename for filename in os.listdir(directory) if filename == (species + '_' + isotope + '_VALD.trans')]
 
     wl = []
     log_gf = []
@@ -126,7 +129,7 @@ def process_VALD_file(species):
     gf = np.power(10.0, log_gf)
 
     # Open output file
-    f_out = open(directory + species + '.trans','w')
+    f_out = open(directory + species + isotope + '.trans','w')
     
     if alkali:
         f_out.write('nu_0 | gf | E_low | E_up | J_low | J_up | l_low | l_up | log_gamma_vdw \n')
@@ -146,13 +149,11 @@ def process_VALD_file(species):
                                                                   J_low[i], J_up[i], log_gamma_vdw[i]))
     f_out.close()
     
-    convert_to_hdf(directory + species + '.trans', alkali)
+    convert_to_hdf(directory + species + isotope + '.trans', alkali)
 
 def convert_to_hdf(file, alkali):
     
     trans_file = pd.read_csv(file, delim_whitespace = True, header=None, skiprows = 1)
-    
-    print(trans_file.head())
     
     nu_0 = np.array(trans_file[0])
     log_gf = np.array(trans_file[1])
@@ -169,7 +170,6 @@ def convert_to_hdf(file, alkali):
     else:
         log_gamma_vdw = np.array(trans_file[6])
         
-    
     hdf_file_path = os.path.splitext(file)[0] + '.h5'
     
     with h5py.File(hdf_file_path, 'w') as hdf:
@@ -188,5 +188,31 @@ def convert_to_hdf(file, alkali):
     # os.remove(file)
 
 # Create directory location and copy .h5 file to that location
+            
+            
+def create_directories(molecule, isotope):
+    input_folder = '../input'
+    molecule_folder = input_folder + '/' + molecule + '  ~  (' + str(isotope) + ')'
+    line_list_folder = molecule_folder + '/VALD'
+    
+    if os.path.exists(input_folder) == False:
+        os.mkdir(input_folder)
+    
+    if os.path.exists(molecule_folder) == False:
+        os.mkdir(molecule_folder)
 
-process_VALD_file('Fe')
+    if os.path.exists(line_list_folder) == False:
+        os.mkdir(line_list_folder)
+        
+    fname = molecule + str(isotope) + '.h5'
+    
+    shutil.move('../VALD Line Lists/' + fname, line_list_folder + '/' + fname)
+
+    return line_list_folder
+            
+def summon_VALD(molecule, isotope):
+    create_directories(molecule, isotope) # In this I will want to move the .h5 file to the right directory
+    return
+
+process_VALD_file('C', 2)
+

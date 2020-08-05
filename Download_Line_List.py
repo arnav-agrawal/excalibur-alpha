@@ -11,11 +11,13 @@ Import download_Exomol, download_HITRAN, and download_VALD
 """
 
 import sys
+import os
 import requests
 import re
 import Download_ExoMol
 import Download_HITRAN
 import Download_HITEMP
+import Download_VALD
 from hapi import partitionSum, moleculeName
 
 def create_id_dict():
@@ -287,8 +289,12 @@ def check_HITEMP(molecule, isotope):
         sys.exit(0)
         
 
-def check_VALD():
-    return
+def check_VALD(mol, iso):
+    fname = mol + str(iso) + '.h5'
+    if fname not in os.listdir('../VALD Line Lists'): 
+        print("\n ----- The VALD line list for this atom/isotope combination does not exist. Please try again. -----")
+        sys.exit(0)
+        
     
 
 def summon(database = '', molecule = '', isotope = 'default', linelist = 'default', **kwargs):
@@ -373,7 +379,10 @@ def summon(database = '', molecule = '', isotope = 'default', linelist = 'defaul
             Download_HITRAN.summon_HITRAN(mol, iso)
             
         elif db == 'vald':
-            return
+            if isotope == 'default':
+                iso = 1
+            check_VALD(mol, iso)
+            Download_VALD.summon_VALD(mol, iso)
         
         elif db == 'hitemp':
             if isotope == 'default':

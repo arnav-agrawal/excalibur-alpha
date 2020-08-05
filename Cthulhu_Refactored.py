@@ -219,6 +219,7 @@ def load_ExoMol(input_directory):
 
 def load_VALD():
     # Needs work
+    
     nu_0, gf, E_low, E_up, J_low, l_low, l_up, gamma_nat, gamma_vdw = (np.array([]) for _ in range(9))
     
     for i in range(len(linelist_files)):
@@ -425,7 +426,7 @@ def interpolate_pf(T_pf_raw, Q_raw, T, T_ref):
     
     return Q_T, Q_T_ref
 
-def compute_pressure_broadening_atom():
+def compute_pressure_broadening_atom(species):
     
     if (species in ['Li', 'Na','K', 'Rb', 'Cs']):  # Special treatments for alkali van der waals widths
                 
@@ -859,7 +860,9 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
             print("\nYou did not enter a valid type of pressure broadening. Please try again.")
             sys.exit(0)
             
-    # Will need an 'else' statement for atomic broadening
+    else: # Work on this
+        broadening = 'H2-He'
+        compute_pressure_broadening_atom()
     
 
     # Start clock for timing program
