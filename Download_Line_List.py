@@ -357,8 +357,9 @@ def summon(database = '', molecule = '', isotope = 'default', linelist = 'defaul
         iso = isotope
         lin = linelist
         
-        mol = re.sub('[+]', '_p', mol)  # Handle ions
-        iso = re.sub('[+]', '_p', iso)  # Handle ions
+        if db == 'exomol':
+            mol = re.sub('[+]', '_p', mol)  # Handle ions
+            iso = re.sub('[+]', '_p', iso)  # Handle ions
             
         if db == 'exomol':
             if isotope == 'default':

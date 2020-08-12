@@ -271,6 +271,8 @@ def filter_pf(molecule, isotope, line_list_folder):
     f_out.write('T | Q \n') 
 
     for i in range(len(T_pf)):
+        if T_pf[i] < 10.0:
+            continue
         f_out.write('%.1f %.4f \n' %(T_pf[i], Q[i]))
 
     f_out.close()

@@ -852,8 +852,6 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
     
     linelist_files = [filename for filename in os.listdir(input_directory) if filename.endswith('.h5')]
     
-    print(molecule, isotopologue, database)
-    
     if database == 'exomol':
         print("Loading ExoMol format")
         E, g, J = load_ExoMol(input_directory)
@@ -869,17 +867,12 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
     if database == 'vald':
         print("Loading VALD format")
         nu_0, gf, E_low, E_up, J_low, l_low, l_up, gamma_nat, gamma_vdw, alkali = load_VALD(input_directory, molecule)
-        load_pf_VALD(input_directory)
         
     T_pf_raw, Q_raw = load_pf(input_directory)
     
-    print("T_pf_raw", T_pf_raw)
-    print("Q_raw", Q_raw)
-    
     # Find mass of the molecule
     m = mass(molecule, isotopologue, linelist) * u
-    
-    print("M", m)
+
 
     is_molecule = check_molecule(molecule)
     
@@ -1004,12 +997,14 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
                 
                 gamma = compute_H2_He_broadening(gamma_0_H2, T_ref, T, n_L_H2, P, P_ref, X_H2, gamma_0_He, n_L_He, X_He)
                 gamma += ((1.0/(4.0*np.pi*(100.0*c))) * gamma_nat)  # Add natural line widths
+            
                 
                 (sigma_fine, nu_detune, N_points_fine, N_Voigt_points, 
                  alpha, cutoffs, nu_min, nu_max, nu_fine_start, 
                  nu_fine_end, nu_out, sigma_out) = create_wavelength_grid_atom(T, m, gamma, nu_0, Voigt_sub_spacing, 
                                                                                dnu_out, nu_out_min, nu_out_max, 
                                                                                Voigt_cutoff, cut_max, molecule)
+                                                                                                                                        
                 
             print("Pre-computation complete")
                 
