@@ -33,6 +33,7 @@ def process_VALD_file(species, isotope):
 
     trans_file = [filename for filename in os.listdir(directory) if filename == (species + '_' + isotope + '_VALD.trans')]
 
+
     wl = []
     log_gf = []
     E_low = []
@@ -41,6 +42,7 @@ def process_VALD_file(species, isotope):
     l_up = []
     J_low = []
     J_up = []
+    log_gamma_nat = []
     log_gamma_vdw = []
     
     alkali = False
@@ -53,7 +55,6 @@ def process_VALD_file(species, isotope):
 
         count += 1
         
-
         if (count >= 3):
 
             if ((count+1)%4 == 0):
@@ -63,6 +64,8 @@ def process_VALD_file(species, isotope):
 
                 # If at beginning of file footnotes, do not read further
                 if (line[0] == '* oscillator strengths were scaled by the solar isotopic ratios.'): break
+                if ('BIBTEX ERROR' in line[0]): break
+
                 
                 wl.append(float(line[1]))   # Convert wavelengths to um
                 log_gf.append(float(line[2]))
@@ -70,6 +73,7 @@ def process_VALD_file(species, isotope):
                 J_low.append(float(line[4]))
                 E_up.append(float(line[5]))
                 J_up.append(float(line[6]))
+                log_gamma_nat.append(float(line[10]))
                 log_gamma_vdw.append(float(line[12]))
 
             elif ((count)%4 == 0):
@@ -79,14 +83,17 @@ def process_VALD_file(species, isotope):
                     
                     line = line.strip()
                     line = line.split()
-
+                    
+                    lowercase_letters = [c for c in line[2] if c.islower()]
+                    last_lower = lowercase_letters[len(lowercase_letters) - 1]
+                    
                     # Orbital angular momentum quntum numbers
-                    if   (line[2].endswith('s')): l_low.append(0)
-                    elif (line[2].endswith('p')): l_low.append(1)
-                    elif (line[2].endswith('d')): l_low.append(2)
-                    elif (line[2].endswith('f')): l_low.append(3)
-                    elif (line[2].endswith('g')): l_low.append(4)
-                    else: print ("Error: above g orbital!")
+                    if last_lower == 's': l_low.append(0)
+                    elif last_lower == 'p': l_low.append(1)
+                    elif last_lower == 'd': l_low.append(2)
+                    elif last_lower == 'f': l_low.append(3)
+                    elif last_lower == 'g': l_low.append(4)
+                    else: print ("Error: above g orbital!")                
                     
                     alkali = True
 
@@ -97,19 +104,19 @@ def process_VALD_file(species, isotope):
 
                     line = line.strip()
                     line = line.split()
+                    
+                    lowercase_letters = [c for c in line[2] if c.islower()]
+                    last_lower = lowercase_letters[len(lowercase_letters) - 1]
 
                     # Orbital angular momentum quntum numbers
-                    if   (line[2].endswith('s')): l_up.append(0)
-                    elif (line[2].endswith('p')): l_up.append(1)
-                    elif (line[2].endswith('d')): l_up.append(2)
-                    elif (line[2].endswith('f')): l_up.append(3)
-                    elif (line[2].endswith('g')): l_up.append(4)
+                    if last_lower == 's': l_up.append(0)
+                    elif last_lower == 'p': l_up.append(1)
+                    elif last_lower == 'd': l_up.append(2)
+                    elif last_lower == 'f': l_up.append(3)
+                    elif last_lower == 'g': l_up.append(4)
                     else: print ("Error: above g orbital!")
 
     f_in.close()
-
-    nu = 1.0e4/np.array(wl)
-    nu = nu[::-1]
 
     # Reverse array directions for increasing wavenumber
     wl = np.array(wl[::-1]) * 1.0e-3       # Convert nm to um
@@ -120,36 +127,63 @@ def process_VALD_file(species, isotope):
     l_up = np.array(l_up[::-1])
     J_low = np.array(J_low[::-1])
     J_up = np.array(J_up[::-1])
+    log_gamma_nat = np.array(log_gamma_nat[::-1])
     log_gamma_vdw = np.array(log_gamma_vdw[::-1])
 
     # Compute transition wavenumbers
     nu = 1.0e4/np.array(wl)
 
-    # Compute gf factor
-    gf = np.power(10.0, log_gf)
-
     # Open output file
     f_out = open(directory + species + isotope + '.trans','w')
     
     if alkali:
-        f_out.write('nu_0 | gf | E_low | E_up | J_low | J_up | l_low | l_up | log_gamma_vdw \n')
+        f_out.write('nu_0 | gf | E_low | E_up | J_low | J_up | l_low | l_up | log_gamma_nat | log_gamma_vdw \n')
     
     else:
-        f_out.write('nu_0 | gf | E_low | E_up | J_low | J_up | log_gamma_vdw \n')
+        f_out.write('nu_0 | gf | E_low | E_up | J_low | J_up | log_gamma_nat | log_gamma_vdw \n')
 
     for i in range(len(nu)):
         
         if alkali:
-            f_out.write('%.6f %.6e %.6f %.6f %.1f %.1f %d %d %.6f \n' %(nu[i], gf[i], E_low[i], E_up[i],
+            f_out.write('%.6f %.6f %.6f %.6f %.1f %.1f %d %d %.6f %.6f \n' %(nu[i], log_gf[i], E_low[i], E_up[i],
                                                                         J_low[i], J_up[i], l_low[i], l_up[i],
-                                                                        log_gamma_vdw[i]))
+                                                                        log_gamma_nat[i], log_gamma_vdw[i]))
             
         else:
-            f_out.write('%.6f %.6e %.6f %.6f %.1f %.1f %.6f \n' %(nu[i], gf[i], E_low[i], E_up[i],
-                                                                  J_low[i], J_up[i], log_gamma_vdw[i]))
+            f_out.write('%.6f %.6f %.6f %.6f %.1f %.1f %.6f %.6f \n' %(nu[i], log_gf[i], E_low[i], E_up[i],
+                                                                  J_low[i], J_up[i], log_gamma_nat[i], 
+                                                                  log_gamma_vdw[i]))
     f_out.close()
     
     convert_to_hdf(directory + species + isotope + '.trans', alkali)
+    
+    
+def create_pf_VALD():
+    """
+    Used on developers' end to create the partition function file which is included in the GitHub package
+    
+
+    Returns
+    -------
+    None.
+
+    """
+    
+    fname = './Atom_partition_functions.txt'
+    
+    temperature = [1.00000e-05, 1.00000e-04, 1.00000e-03, 1.00000e-02, 1.00000e-01, 
+                   1.50000e-01, 2.00000e-01, 3.00000e-01, 5.00000e-01, 7.00000e-01, 
+                   1.00000e+00, 1.30000e+00, 1.70000e+00, 2.00000e+00, 3.00000e+00, 
+                   5.00000e+00, 7.00000e+00, 1.00000e+01, 1.50000e+01, 2.00000e+01, 
+                   3.00000e+01, 5.00000e+01, 7.00000e+01, 1.00000e+02, 1.30000e+02, 
+                   1.70000e+02, 2.00000e+02, 2.50000e+02, 3.00000e+02, 5.00000e+02, 
+                   7.00000e+02, 1.00000e+03, 1.50000e+03, 2.00000e+03, 3.00000e+03, 
+                   4.00000e+03, 5.00000e+03, 6.00000e+03, 7.00000e+03, 8.00000e+03, 
+                   9.00000e+03, 1.00000e+04]
+    
+    pf = pd.read_csv(fname, sep = '|', header = 7, skiprows = [0-6, 8, 293], names = temperature)
+    
+    pf.to_csv('./Atomic_partition_functions.pf')
 
 def convert_to_hdf(file, alkali):
     
@@ -162,33 +196,34 @@ def convert_to_hdf(file, alkali):
     J_low = np.array(trans_file[4])
     J_up = np.array(trans_file[5])
     
-    if alkali:
+    if alkali:  # Account for the differences in columns depending on if the species is an alkali metal
         l_low = np.array(trans_file[6])
         l_up = np.array(trans_file[7])
-        log_gamma_vdw = np.array(trans_file[8])
+        log_gamma_nat = np.array(trans_file[8])
+        log_gamma_vdw = np.array(trans_file[9])
         
     else:
-        log_gamma_vdw = np.array(trans_file[6])
+        log_gamma_nat = np.array(trans_file[6])
+        log_gamma_vdw = np.array(trans_file[7])
+        
         
     hdf_file_path = os.path.splitext(file)[0] + '.h5'
     
     with h5py.File(hdf_file_path, 'w') as hdf:
-        hdf.create_dataset('Nu', data = nu_0, dtype = 'f8') #store as 32-bit unsigned int
+        hdf.create_dataset('nu', data = nu_0, dtype = 'f8') #store as 32-bit unsigned int
         hdf.create_dataset('Log gf', data = log_gf, dtype = 'f8') #store as 32-bit unsigned int
         hdf.create_dataset('E lower', data = E_low, dtype = 'f8') #store as 32-bit float
         hdf.create_dataset('E upper', data = E_up, dtype = 'f8') #store as 32-bit unsigned int
         hdf.create_dataset('J lower', data = J_low, dtype = 'f8') #store as 32-bit unsigned int
         hdf.create_dataset('J upper', data = J_up, dtype = 'f8') #store as 32-bit float
+        hdf.create_dataset('Log gamma nat', data = log_gamma_nat, dtype = 'f8') #store as 32-bit float
         hdf.create_dataset('Log gamma vdw', data = log_gamma_vdw, dtype = 'f8') #store as 32-bit float
         
         if alkali:
-            hdf.create_dataset('L lower', data = l_low, dtype = 'f8') #store as 32-bit unsigned int
-            hdf.create_dataset('L upper', data = l_up, dtype = 'f8') #store as 32-bit float
+            hdf.create_dataset('l lower', data = l_low, dtype = 'f8') #store as 32-bit unsigned int
+            hdf.create_dataset('l upper', data = l_up, dtype = 'f8') #store as 32-bit float
 
-    # os.remove(file)
-
-# Create directory location and copy .h5 file to that location
-            
+    # os.remove(file)       
             
 def create_directories(molecule, isotope):
     input_folder = '../input'
@@ -206,13 +241,44 @@ def create_directories(molecule, isotope):
         
     fname = molecule + str(isotope) + '.h5'
     
-    shutil.move('../VALD Line Lists/' + fname, line_list_folder + '/' + fname)
-
+    shutil.copy('../VALD Line Lists/' + fname, line_list_folder + '/') # Copy the line list file to the newly created folder
+    
     return line_list_folder
-            
-def summon_VALD(molecule, isotope):
-    create_directories(molecule, isotope) # In this I will want to move the .h5 file to the right directory
-    return
 
-process_VALD_file('C', 2)
+  
+def filter_pf(molecule, isotope, line_list_folder):
+    ionization_state = ''
+    
+    for i in range(int(isotope)):
+        ionization_state += 'I'
+        
+    all_pf = pd.read_csv('../VALD Line Lists/Atomic_partition_functions.pf', index_col = 0, )
+    all_pf = all_pf.rename(lambda x: x.strip())  # Remove the extra white space in the index names, eg: '  H_I' becomes 'H_I'
+    
+    pf = all_pf.loc[molecule + '_' + ionization_state]  # Filter the partition functions by the specified atom and ionization state
+    pf = pf.reset_index()
+    pf.columns = ['T', 'Q'] # Rename the columns
+    
+    fname = molecule + str(isotope) + '.pf'
+    
+    T_pf = pf['T'].to_numpy()
+    T_pf = T_pf.astype(float)
+    Q = pf['Q'].to_numpy()
+    
+    out_file = line_list_folder + '/' + fname
+    f_out = open(out_file, 'w')
+
+    f_out.write('T | Q \n') 
+
+    for i in range(len(T_pf)):
+        f_out.write('%.1f %.4f \n' %(T_pf[i], Q[i]))
+
+    f_out.close()
+    
+          
+def summon_VALD(molecule, isotope):
+    print("\n ***** Downloading requested data from VALD. You have chosen the following parameters: ***** ")
+    print("\nAtom:", molecule, "\nIonization State:", isotope)
+    line_list_folder = create_directories(molecule, isotope) # In this I will want to move the .h5 file to the right directory
+    filter_pf(molecule, isotope, line_list_folder)
 

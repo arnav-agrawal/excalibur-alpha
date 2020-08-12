@@ -14,6 +14,7 @@ import time
 import copy
 import requests
 import sys
+import h5py
 from bs4 import BeautifulSoup
 from scipy.interpolate import UnivariateSpline as Interp
 from hapi import molecularMass, moleculeName, isotopologueName
@@ -24,7 +25,7 @@ from calculations import find_index, prior_index, bin_cross_section_atom, bin_cr
 from calculations import produce_total_cross_section_EXOMOL, produce_total_cross_section_HITRAN
 from calculations import produce_total_cross_section_VALD_atom, produce_total_cross_section_VALD_molecule
 
-from constants import Nu_ref, gamma_0, n_L, P_ref, T_ref
+from constants import nu_refer, gamma_0, n_L, P_ref, T_ref
 from constants import c, kb, h, m_e, c2, u, pi
 
 from Download_ExoMol import get_default_iso, get_default_linelist
@@ -155,6 +156,34 @@ def mass(molecule, isotopologue, linelist):
             
             else:
                 iso_ID += 1
+               
+    elif linelist == 'vald':
+        
+        
+        # Atomic masses - Weighted average based on isotopic natural abundances found here: 
+        # https://www.chem.ualberta.ca/~massspec/atomic_mass_abund.pdf
+        mass_dict = {'H': 1.00794072, 'He': 4.00260165, 'Li': 6.94003706, 'Be': 9.012182, 'B': 10.81102777,
+                     'C': 12.0107359, 'N': 14.00674309, 'O': 15.9994053, 'F': 18.998403, 'Ne': 20.1800463,
+                     'Na': 22.989770, 'Mg': 24.30505187, 'Al': 26.981538, 'Si': 28.0853852, 'P': 30.973762,
+                     'S': 32.06608499, 'Cl': 35.45653261, 'Ar': 39.94767659, 'K': 39.09830144, 
+                     'Ca': 40.07802266, 'Sc': 44.955910, 'Ti': 47.86674971, 'Va': 50.941472, 'Cr': 51.99613764,
+                     'Mn': 54.938050, 'Fe': 55.84515013, 'Co': 58.933200, 'Ni': 58.69335646, 'Cu': 63.5456439, 
+                     'Zn': 65.3955669, 'Ga': 69.72307155, 'Ge': 72.61275896, 'As': 74.921596, 'Se': 78.95938897,
+                     'Br': 79.90352862, 'Kr': 83.79932508, 'Rb': 85.46766375, 'Sr': 87.61664598, 
+                     'Y': 88.905848, 'Zr': 91.22364739, 'Nb': 92.906378, 'Mo': 95.93129084, 'Ru': 101.06494511,
+                     'Rh': 102.905504, 'Pd': 106.41532721, 'Ag': 107.8681507, 'Cd': 112.41155267, 
+                     'In': 114.81808585, 'Sn': 118.71011064, 'Sb': 121.7597883, 'Te': 127.60312538, 
+                     'I': 126.904468, 'Xe': 131.29248065, 'Cs': 132.905447, 'Ba': 137.32688569, 
+                     'La': 138.90544868, 'Ce': 140.11572155, 'Pr': 140.907648, 'Nd': 144.23612698, 
+                     'Sm': 149.46629229, 'Eu': 151.96436622, 'Gd': 157.25211925, 'Tb': 158.925343, 
+                     'Dy': 162.49703004, 'Ho': 164.930319, 'Er': 167.25630107, 'Tm': 168.934211, 
+                     'Yb': 173.0376918, 'Lu': 174.96671757, 'Hf': 178.48497094, 'Ta': 180.94787594, 
+                     'W': 183.84177868, 'Re': 186.20670567, 'Os': 190.22755215, 'Ir': 192.21605379, 
+                     'Pt': 194.73875746, 'Au': 196.966552, 'Hg': 200.59914936, 'Tl': 204.38490867, 
+                     'Pb': 207.21689158, 'Bi': 208.980383, 'Th': 232.038050, 'Pa': 231.035879, 'U': 238.02891307
+                     }
+        
+        return mass_dict.get(molecule)
 
         
     else:
@@ -217,51 +246,50 @@ def load_ExoMol(input_directory):
     
     return E, g, J
 
-def load_VALD():
-    # Needs work
+def load_VALD(input_directory, molecule):
     
-    nu_0, gf, E_low, E_up, J_low, l_low, l_up, gamma_nat, gamma_vdw = (np.array([]) for _ in range(9))
+    fname = [file for file in os.listdir(input_directory) if file.endswith('.h5')][0]  # The directory should only have one .h5 file containing the line list
     
-    for i in range(len(linelist_files)):
+    with h5py.File(input_directory + fname, 'r') as hdf:
+        nu_0 = np.array(hdf.get('nu'))
+        gf = np.power(10.0, np.array(hdf.get('Log gf')))
+        E_low = np.array(hdf.get('E lower'))
+        E_up = np.array(hdf.get('E upper'))
+        J_low = np.array(hdf.get('J lower'))
+        gamma_nat = np.power(10.0, np.array(hdf.get('Log gamma nat')))
+        gamma_vdw = np.power(10.0, np.array(hdf.get('Log gamma vdw')))
         
-        # Read in VALD transitions files (also contains broadening parameters)
-        trans_file = pd.read_csv(input_directory + linelist_files[i], sep = ' ', header=None, skiprows=1,
-                                 dtype={'nu_0': np.float64, 'gf': np.float64, 
-                                        'E_low': np.float64, 'E_up': np.float64,
-                                        'J_low': np.float64, 'J_up': np.float64,
-                                        'l_low': np.int64, 'l_up': np.int64, 
-                                        'gamma_nat': np.float64, 
-                                        'gamma_vdw': np.float64})
-    
-        # Merge linelists
-        nu_0 = np.append(nu_0, np.array(trans_file[0]))
-        gf = np.append(gf, np.array(trans_file[1]))
-        E_low = np.append(E_low, np.array(trans_file[2]))
-        E_up = np.append(E_up, np.array(trans_file[3]))
-        J_low = np.append(J_low, np.array(trans_file[4])).astype(np.int64)
-        l_low = np.append(l_low, np.array(trans_file[6]))
-        l_up = np.append(l_up, np.array(trans_file[7]))
-        gamma_nat = np.append(gamma_nat, np.array(trans_file[8]))
-        gamma_vdw = np.append(gamma_vdw, np.array(trans_file[9]))
+        if molecule in ['Li', 'Na', 'K', 'Rb', 'Cs']:
+            alkali = True
+            l_low = np.array(hdf.get('l lower'))
+            l_up = np.array(hdf.get('l upper'))
+            
+        else:
+            alkali = False
+            l_low = []
+            l_up = []
         
-        # If transitions are not in increasing wavenumber order, rearrange
-        order = np.argsort(nu_0)  # Indices of nu_0 in increasing order
-        nu_0 = nu_0[order]
-        gf = gf[order]
-        E_low = E_low[order]
-        E_up = E_up[order]
-        J_low = J_low[order]
+    # If transitions are not in increasing wavenumber order, rearrange
+    order = np.argsort(nu_0)  # Indices of nu_0 in increasing order
+    nu_0 = nu_0[order]
+    gf = gf[order]
+    E_low = E_low[order]
+    E_up = E_up[order]
+    J_low = J_low[order]
+    gamma_nat = gamma_nat[order]
+    gamma_vdw = gamma_vdw[order]
+    
+    if alkali:
         l_low = l_low[order]
         l_up = l_up[order]
-        gamma_nat = gamma_nat[order]
-        gamma_vdw = gamma_vdw[order]
-        
-        del trans_file  # Delete file to free up memory
+    
+    return nu_0, gf, E_low, E_up, J_low, l_low, l_up, gamma_nat, gamma_vdw, alkali
         
     return
 
 
 def load_pf(input_directory):
+
     """
     Read in the downloaded partition functions 
 
@@ -426,9 +454,9 @@ def interpolate_pf(T_pf_raw, Q_raw, T, T_ref):
     
     return Q_T, Q_T_ref
 
-def compute_pressure_broadening_atom(species):
+def read_pressure_broadening_atom(species, nu_0, gf, E_low, E_up, J_low, l_low, l_up, gamma_nat, gamma_vdw, alkali, m):
     
-    if (species in ['Li', 'Na','K', 'Rb', 'Cs']):  # Special treatments for alkali van der waals widths
+    if alkali:  # Special treatments for alkali van der waals widths
                 
         gamma_0_H2 = np.zeros(len(nu_0))
         gamma_0_He = np.zeros(len(nu_0))
@@ -478,7 +506,7 @@ def compute_pressure_broadening_atom(species):
         gamma_0_H2, n_L_H2 = gamma_L_VALD(gamma_vdw, (m/u), 'H2')
         gamma_0_He, n_L_He = gamma_L_VALD(gamma_vdw, (m/u), 'He')
         
-    gamma += ((1.0/(4.0*np.pi*(100.0*c))) * gamma_nat)  # Add natural line widths
+    return gamma_0_H2, n_L_H2, gamma_0_He, n_L_He
 
 
 def compute_H2_He_broadening(gamma_0_H2, T_ref, T, n_L_H2, P, P_ref, X_H2, gamma_0_He, n_L_He, X_He):
@@ -497,9 +525,16 @@ def compute_Burrows_broadening(gamma_0_Burrows, P, P_ref):
     
     return gamma
 
-def create_wavelength_grid_atom():
+def create_wavelength_grid_atom(T, m, gamma, nu_0, Voigt_sub_spacing, dnu_out, nu_out_min, nu_out_max, 
+                                Voigt_cutoff, cut_max, molecule):
+    
+    #Define nu_out and nu_min based on the output grid
+    nu_min = 1
+    nu_max = nu_out_max + 1000
+    
+    
     # First, we need to find values of gamma_V for reference wavenumber (1000 cm^-1)
-    alpha_ref = np.sqrt(2.0*kb*T*np.log(2)/m) * (np.array(nu_ref[2])/c) # Doppler HWHM at reference wavenumber
+    alpha_ref = np.sqrt(2.0*kb*T*np.log(2)/m) * (np.array(nu_refer[2])/c) # Doppler HWHM at reference wavenumber
     gamma_ref = np.min(gamma)                                           # Find minimum value of Lorentzian HWHM
     gamma_V_ref = Voigt_width(gamma_ref, alpha_ref)                     # Reference Voigt width
     
@@ -527,32 +562,35 @@ def create_wavelength_grid_atom():
         if (cutoffs[i] >= cut_max): cutoffs[i] = cut_max
                 
         # Special cases for alkali resonant lines
-        if   ((species == 'Na') and (int(nu_0[i]) in [16978, 16960])): cutoffs[i] = 9000.0   # Cutoff @ +/- 9000 cm^-1
-        elif ((species == 'K') and  (int(nu_0[i]) in [13046, 12988])): cutoffs[i] = 9000.0   # Cutoff @ +/- 9000 cm^-1
+        if   ((molecule == 'Na') and (int(nu_0[i]) in [16978, 16960])): cutoffs[i] = 9000.0   # Cutoff @ +/- 9000 cm^-1
+        elif ((molecule == 'K') and  (int(nu_0[i]) in [13046, 12988])): cutoffs[i] = 9000.0   # Cutoff @ +/- 9000 cm^-1
         #elif ((species == 'Li') and (int(nu_0[i]) in [14908, 14907])): cutoffs[i] = 9000.0   # Cutoff @ +/- 9000 cm^-1
         #elif ((species == 'Rb') and (int(nu_0[i]) in [12820, 12582])): cutoffs[i] = 9000.0   # Cutoff @ +/- 9000 cm^-1
         #elif ((species == 'Cs') and (int(nu_0[i]) in [11735, 9975])):  cutoffs[i] = 9000.0   # Cutoff @ +/- 9000 cm^-1
             
-        # Calculate detuning frequencies for Na and K resonance lines
-        if (species == 'Na'): nu_detune = 30.0 * np.power((T/500.0), 0.6)
-        elif (species == 'K'): nu_detune = 20.0 * np.power((T/500.0), 0.6)
-        else: nu_detune = cut_max
-        
-        # Evaluate number of frequency points for each Voigt function up to cutoff (one tail)
-        N_Voigt_points = ((cutoffs/dnu_fine).astype(np.int64)) + 1  
-        
-        # Define start and end points of fine grid
-        #nu_fine = np.linspace(nu_min, nu_max, N_points_fine)
-        nu_fine_start = nu_min
-        nu_fine_end = nu_max
-        
-        # Initialise output grid
-        N_points_out = int((nu_out_max-nu_out_min)/dnu_out + 1)     # Number of points on coarse grid (uniform)
-        nu_out = np.linspace(nu_out_min, nu_out_max, N_points_out)  # Create coarse (output) grid
-        
-        # Initialise cross section arrays on each grid
-        sigma_fine = np.zeros(N_points_fine)    # Computational (fine) grid
-        sigma_out = np.zeros(N_points_out)      # Coarse (output) grid
+    # Calculate detuning frequencies for Na and K resonance lines
+    if (molecule == 'Na'): nu_detune = 30.0 * np.power((T/500.0), 0.6)
+    elif (molecule == 'K'): nu_detune = 20.0 * np.power((T/500.0), 0.6)
+    else: nu_detune = cut_max
+    
+    # Evaluate number of frequency points for each Voigt function up to cutoff (one tail)
+    N_Voigt_points = ((cutoffs/dnu_fine).astype(np.int64)) + 1  
+    
+    # Define start and end points of fine grid
+    #nu_fine = np.linspace(nu_min, nu_max, N_points_fine)
+    nu_fine_start = nu_min
+    nu_fine_end = nu_max
+    
+    # Initialise output grid
+    N_points_out = int((nu_out_max-nu_out_min)/dnu_out + 1)     # Number of points on coarse grid (uniform)
+    nu_out = np.linspace(nu_out_min, nu_out_max, N_points_out)  # Create coarse (output) grid
+    
+    # Initialise cross section arrays on each grid
+    sigma_fine = np.zeros(N_points_fine)    # Computational (fine) grid
+    sigma_out = np.zeros(N_points_out)      # Coarse (output) grid
+    
+    return (sigma_fine, nu_detune, N_points_fine, N_Voigt_points, alpha, cutoffs, nu_min, nu_max, 
+            nu_fine_start, nu_fine_end, nu_out, sigma_out)
 
 def create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, dnu_out, cut_max, Voigt_cutoff, nu_out_max, nu_out_min, N_alpha_samples):
     #nu_min = max(1.0, (nu_out_min - cut_max))
@@ -731,6 +769,12 @@ def find_input_dir(input_dir, database, molecule, isotope, linelist):
             mol_id = molecule_dict.get(molecule)
             isotope = isotopologueName(mol_id, 1)
             isotope = replace_iso_name(isotope)
+        if database == 'vald':
+            isotope = '(1)'
+    
+    else:
+        if database == 'exomol' or database == 'vald':
+            isotope = '(' + isotope + ')'
     
     if linelist == 'default':
         if database == 'exomol':
@@ -740,6 +784,8 @@ def find_input_dir(input_dir, database, molecule, isotope, linelist):
             linelist = 'HITRAN'
         if database == 'hitemp':
             linelist = 'HITEMP'
+        if database == 'vald':
+            linelist = 'VALD'
             
     input_directory = input_dir + '/' + molecule + '  ~  ' + isotope + '/' + linelist + '/'
     
@@ -754,7 +800,7 @@ def find_input_dir(input_dir, database, molecule, isotope, linelist):
             sys.exit(0)
         
         elif not os.path.exists(input_dir + '/' + molecule + '  ~  ' + isotope + '/'):
-            print("----- There was an error with the molecule + isotopologue you entered. Here are the available options: -----\n")
+            print("----- There was an error with the molecule + isotope you entered. Here are the available options: -----\n")
             for folder in os.listdir(input_dir + '/'):
                 if not folder.startswith('.'):
                     print(folder)
@@ -797,7 +843,7 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
     
     # Use the input directory to define these right at the start
     molecule, isotopologue, database = parse_directory(input_directory)
-    if database.lower() != 'hitran' and database.lower() != 'hitemp':
+    if database.lower() != 'hitran' and database.lower() != 'hitemp' and database.lower() != 'vald':
         linelist = database
         database = 'exomol'
     else:
@@ -805,6 +851,8 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
         linelist = database
     
     linelist_files = [filename for filename in os.listdir(input_directory) if filename.endswith('.h5')]
+    
+    print(molecule, isotopologue, database)
     
     if database == 'exomol':
         print("Loading ExoMol format")
@@ -820,10 +868,18 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
         
     if database == 'vald':
         print("Loading VALD format")
-        # load_VALD or something
-    
+        nu_0, gf, E_low, E_up, J_low, l_low, l_up, gamma_nat, gamma_vdw, alkali = load_VALD(input_directory, molecule)
+        load_pf_VALD(input_directory)
+        
     T_pf_raw, Q_raw = load_pf(input_directory)
     
+    print("T_pf_raw", T_pf_raw)
+    print("Q_raw", Q_raw)
+    
+    # Find mass of the molecule
+    m = mass(molecule, isotopologue, linelist) * u
+    
+    print("M", m)
 
     is_molecule = check_molecule(molecule)
     
@@ -852,7 +908,10 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
             J_max, gamma_0_Burrows = read_Burrows(input_directory)
             
         elif broadening == 'custom' and 'custom.broad' in os.listdir(input_directory):
-            # Read in broadening file
+            # TODO: Read in broadening file
+            return
+        
+        elif broadening == 'fixed':
             return
             
             
@@ -860,14 +919,18 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
             print("\nYou did not enter a valid type of pressure broadening. Please try again.")
             sys.exit(0)
             
-    else: # Work on this
+    else:
+        if pressure_broadening != 'default' and pressure_broadening != 'H2-He':
+            print("\nYou did not specify a valid choice of pressure broadening. For atoms, the only option is 'H2-He', so we will continue by using that." )
         broadening = 'H2-He'
-        compute_pressure_broadening_atom()
+        gamma_0_H2, gamma_0_He, n_L_H2, n_L_He = read_pressure_broadening_atom(molecule, nu_0, gf, E_low, E_up, 
+                                                                               J_low, l_low, l_up, gamma_nat, 
+                                                                               gamma_vdw, alkali, m)
+        
     
 
     # Start clock for timing program
     t_start = time.perf_counter()
-    
     
     #***** Load pressure and temperature for this calculation *****#
     P_arr = np.power(10.0, log_pressure) 
@@ -915,11 +978,7 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
             
             Q_T, Q_T_ref = interpolate_pf(T_pf_raw, Q_raw, T, T_ref)
             
-            print(P, T)
-            
-            m = mass(molecule, isotopologue, linelist) * u
-            
-            if is_molecule:
+            if is_molecule: # Molecules
                 
                 if broadening == 'H2-He':
                     gamma = compute_H2_He_broadening(gamma_0_H2, T_ref, T, n_L_H2, P, P_ref, X_H2, gamma_0_He, n_L_He, X_He)
@@ -934,17 +993,23 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
                  N_points_fine_3, dnu_fine, cutoffs, nu_out, sigma_out, 
                  nu_fine_1_start, nu_fine_1_end, nu_fine_2_start, 
                  nu_fine_2_end, nu_fine_3_start, nu_fine_3_end, 
-                 N_points_out, nu_min, nu_max, alpha_ref) = create_wavelength_grid_molecule(Nu_ref, m, T, gamma, Voigt_sub_spacing, 
+                 N_points_out, nu_min, nu_max, alpha_ref) = create_wavelength_grid_molecule(nu_refer, m, T, gamma, Voigt_sub_spacing, 
                                                                               dnu_out, cut_max, Voigt_cutoff, nu_out_max, 
                                                                               nu_out_min, N_alpha_samples)
                                                                                                
                 (nu_sampled, alpha_sampled, Voigt_arr, 
                  dV_da_arr, dV_dnu_arr, N_Voigt_points) = precompute_Voigt_profiles(nu_ref, nu_max, N_alpha_samples, T, m, cutoffs, dnu_fine, gamma, alpha_ref)                                                                            
                 
-            else:
+            else:  # Atoms
                 
-                compute_pressure_broadening_atom()
-                create_wavelength_grid_atom()
+                gamma = compute_H2_He_broadening(gamma_0_H2, T_ref, T, n_L_H2, P, P_ref, X_H2, gamma_0_He, n_L_He, X_He)
+                gamma += ((1.0/(4.0*np.pi*(100.0*c))) * gamma_nat)  # Add natural line widths
+                
+                (sigma_fine, nu_detune, N_points_fine, N_Voigt_points, 
+                 alpha, cutoffs, nu_min, nu_max, nu_fine_start, 
+                 nu_fine_end, nu_out, sigma_out) = create_wavelength_grid_atom(T, m, gamma, nu_0, Voigt_sub_spacing, 
+                                                                               dnu_out, nu_out_min, nu_out_max, 
+                                                                               Voigt_cutoff, cut_max, molecule)
                 
             print("Pre-computation complete")
                 
@@ -975,24 +1040,14 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
                                            alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
                                            nu_min, nu_max, S_cut)
                 
-            """    
+                
             elif database == 'vald':
         
-                if is_molecule:
-                    
-                    produce_total_cross_section_VALD_molecule(sigma_fine, nu_sampled, nu_ref, nu_0, E_low, J_low,
-                                                      gf, m, T, Q_T, N_points_fine_1, N_points_fine_2,
-                                                      N_points_fine_3, dnu_fine, N_Voigt_points, cutoffs, 
-                                                      J_max, alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
-                                                      nu_min, nu_max, S_cut, molecule)
-                
-                else:
-                    
-                    produce_total_cross_section_VALD_atom(sigma_fine, nu_0, nu_detune, E_low, gf, m, T, Q_T,
+                produce_total_cross_section_VALD_atom(sigma_fine, nu_0, nu_detune, E_low, gf, m, T, Q_T,
                                                   N_points_fine, N_Voigt_points, alpha, gamma, cutoffs,
                                                   nu_min, nu_max, S_cut, molecule)
                     
-            """
+            
             
             # Now bin cross section to output grid    
             print('Binning cross section to output grid...')
@@ -1003,11 +1058,11 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
                                    nu_fine_2_start, nu_fine_2_end, nu_fine_3_start, nu_fine_3_end,
                                    nu_out, N_points_out, 0, nu_min, nu_max)
             
-            """
+            
             else:
                 bin_cross_section_atom(sigma_fine, sigma_out, nu_fine_start, 
                                nu_fine_end, nu_out, N_points_fine, N_points_out, 0)
-            """
+            
             
             #bin_cross_section(sigma_fine, sigma_out_log, nu_fine_1, nu_fine_2, nu_fine_3, nu_out, N_points_out, 1)
             
