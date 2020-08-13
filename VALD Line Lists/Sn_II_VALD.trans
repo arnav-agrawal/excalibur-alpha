@@ -1,0 +1,29 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Sn 2',      6453.41100,   0.310,  7.0530,  0.5,  8.9736,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               5s2.(1S).6s                          2S'
+'  LS                                                  5s2.(1S).6p                      2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:MIGa   1 gf:MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa            Sn+'
+'Sn 2',      6761.33400,  -0.275,  8.8642,  0.5, 10.6974,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              5s2.(1S).6p                          2P*'
+'  LS                                                   5s2.(1S).7s                      2S'
+'_          Cu 1 - Ba 2 Bell   1 wl:MIGa   1 gf:MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa            Sn+'
+'Sn 2',      6843.48800,  -0.008,  7.0530,  0.5,  8.8642,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               5s2.(1S).6s                          2S'
+'  LS                                                  5s2.(1S).6p                      2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:MIGa   1 gf:MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa            Sn+'
+'Sn 2',      7190.76200,   0.063,  8.9736,  1.5, 10.6974,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              5s2.(1S).6p                          2P*'
+'  LS                                                   5s2.(1S).7s                      2S'
+'_          Cu 1 - Ba 2 Bell   1 wl:MIGa   1 gf:MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa            Sn+'
+'Sn 2',      7741.46400,   0.000,  7.3725,  2.5,  8.9736,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               5s.5p2                               2D'
+'  LS                                                  5s2.(1S).6p                      2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES            Sn+'
+'Sn 2',      7902.65200,  -0.300,  7.2957,  1.5,  8.8642,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               5s.5p2                               2D'
+'  LS                                                  5s2.(1S).6p                      2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES            Sn+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Cu 1 - Ba 2 Bell

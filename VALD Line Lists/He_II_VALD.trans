@@ -1,0 +1,637 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'He 2',      4025.60800,  -0.852, 51.0168,  3.5, 54.0958,  4.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=4'
+'                                                                                      n=13'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      4100.04800,  -0.725, 51.0168,  3.5, 54.0399,  4.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=4'
+'                                                                                      n=12'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      4199.83900,  -0.582, 51.0168,  3.5, 53.9680,  4.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=4'
+'                                                                                      n=11'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      4338.67300,  -0.417, 51.0168,  3.5, 53.8736,  4.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=4'
+'                                                                                      n=10'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      4541.59300,  -0.223, 51.0168,  3.5, 53.7460,  4.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=4'
+'                                                                                      n= 9'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      4685.69800,   1.181, 48.3715,  2.5, 51.0168,  3.5, 99.000, 99.000, 99.000, 9.980, 0.000, 0.000,
+'                                                                                       n=3'
+'                                                                                      n= 4'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      4859.32000,   0.014, 51.0168,  3.5, 53.5675,  4.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=4'
+'                                                                                      n= 8'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5411.51600,   0.321, 51.0168,  3.5, 53.3072,  4.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=4'
+'                                                                                      n= 7'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5716.90000,  -3.048, 52.2411,  4.5, 54.4093,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=80'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5717.47200,  -3.032, 52.2411,  4.5, 54.4090,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=79'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5718.06500,  -3.015, 52.2411,  4.5, 54.4088,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=78'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5718.68800,  -2.998, 52.2411,  4.5, 54.4086,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=77'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5719.33200,  -2.981, 52.2411,  4.5, 54.4083,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=76'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5719.99700,  -2.963, 52.2411,  4.5, 54.4081,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=75'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5720.69200,  -2.946, 52.2411,  4.5, 54.4078,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=74'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5721.40900,  -2.928, 52.2411,  4.5, 54.4076,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=73'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5722.16600,  -2.910, 52.2411,  4.5, 54.4073,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=72'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5722.95400,  -2.891, 52.2411,  4.5, 54.4070,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=71'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5723.77300,  -2.873, 52.2411,  4.5, 54.4067,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=70'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5724.63400,  -2.854, 52.2411,  4.5, 54.4063,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=69'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5725.52500,  -2.835, 52.2411,  4.5, 54.4060,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=68'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5726.46800,  -2.815, 52.2411,  4.5, 54.4056,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=67'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5727.44200,  -2.795, 52.2411,  4.5, 54.4053,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=66'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5728.46800,  -2.775, 52.2411,  4.5, 54.4049,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=65'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5729.54500,  -2.755, 52.2411,  4.5, 54.4045,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=64'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5730.67400,  -2.734, 52.2411,  4.5, 54.4040,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=63'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5731.85500,  -2.713, 52.2411,  4.5, 54.4036,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=62'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5733.08700,  -2.691, 52.2411,  4.5, 54.4031,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=61'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5734.39200,  -2.669, 52.2411,  4.5, 54.4026,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=60'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5735.77000,  -2.647, 52.2411,  4.5, 54.4021,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=59'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5737.21000,  -2.625, 52.2411,  4.5, 54.4016,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=58'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5738.73300,  -2.602, 52.2411,  4.5, 54.4010,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=57'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5740.32900,  -2.578, 52.2411,  4.5, 54.4004,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=56'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5742.03000,  -2.554, 52.2411,  4.5, 54.3998,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=55'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5743.81300,  -2.530, 52.2411,  4.5, 54.3991,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=54'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5745.71100,  -2.505, 52.2411,  4.5, 54.3984,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=53'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5747.71400,  -2.480, 52.2411,  4.5, 54.3976,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=52'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5749.84200,  -2.454, 52.2411,  4.5, 54.3968,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=51'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5752.09600,  -2.428, 52.2411,  4.5, 54.3960,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=50'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5754.48600,  -2.401, 52.2411,  4.5, 54.3951,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=49'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5757.04400,  -2.374, 52.2411,  4.5, 54.3941,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=48'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5759.76000,  -2.346, 52.2411,  4.5, 54.3931,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=47'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5762.65400,  -2.317, 52.2411,  4.5, 54.3920,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=46'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5765.76000,  -2.288, 52.2411,  4.5, 54.3909,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=45'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5769.06600,  -2.258, 52.2411,  4.5, 54.3897,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=44'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5772.62600,  -2.227, 52.2411,  4.5, 54.3883,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=43'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5776.44100,  -2.195, 52.2411,  4.5, 54.3869,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=42'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5780.54300,  -2.163, 52.2411,  4.5, 54.3854,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=41'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5784.96500,  -2.130, 52.2411,  4.5, 54.3838,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=40'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5789.73900,  -2.096, 52.2411,  4.5, 54.3820,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=39'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5794.89900,  -2.061, 52.2411,  4.5, 54.3801,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=38'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5800.49900,  -2.025, 52.2411,  4.5, 54.3780,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=37'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5806.58500,  -1.988, 52.2411,  4.5, 54.3758,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=36'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5813.21100,  -1.949, 52.2411,  4.5, 54.3733,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=35'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5820.44600,  -1.910, 52.2411,  4.5, 54.3707,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=34'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5828.37700,  -1.869, 52.2411,  4.5, 54.3678,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=33'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5837.07700,  -1.827, 52.2411,  4.5, 54.3646,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=32'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5846.66700,  -1.784, 52.2411,  4.5, 54.3611,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=31'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5857.27500,  -1.739, 52.2411,  4.5, 54.3573,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=30'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5869.04200,  -1.692, 52.2411,  4.5, 54.3531,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=29'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5882.14300,  -1.643, 52.2411,  4.5, 54.3484,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=28'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5896.79100,  -1.593, 52.2411,  4.5, 54.3431,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=27'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5913.26000,  -1.540, 52.2411,  4.5, 54.3373,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=26'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5931.84500,  -1.485, 52.2411,  4.5, 54.3307,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=25'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5952.95000,  -1.427, 52.2411,  4.5, 54.3233,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=24'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      5977.04100,  -1.366, 52.2411,  4.5, 54.3149,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=23'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      6004.73000,  -1.302, 52.2411,  4.5, 54.3053,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=22'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      6036.79700,  -1.235, 52.2411,  4.5, 54.2944,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=21'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      6074.21000,  -1.163, 52.2411,  4.5, 54.2817,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=20'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      6118.27300,  -1.087, 52.2411,  4.5, 54.2670,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=19'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      6170.70700,  -1.005, 52.2411,  4.5, 54.2498,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=18'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      6233.83500,  -0.918, 52.2411,  4.5, 54.2295,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=17'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      6310.86700,  -0.823, 52.2411,  4.5, 54.2052,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=16'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      6406.39700,  -0.719, 52.2411,  4.5, 54.1759,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=15'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      6527.10700,  -0.606, 52.2411,  4.5, 54.1401,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=14'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      6560.08800,   0.759, 51.0168,  3.5, 52.9062,  4.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=4'
+'                                                                                       n=6'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      6683.20900,  -0.479, 52.2411,  4.5, 54.0958,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=13'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      6890.91200,  -0.337, 52.2411,  4.5, 54.0399,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=12'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      7177.53400,  -0.173, 52.2411,  4.5, 53.9680,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=11'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      7592.75000,   0.022, 52.2411,  4.5, 53.8736,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n=10'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8236.78300,   0.261, 52.2411,  4.5, 53.7460,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                      n= 9'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8246.60600,  -2.806, 52.9062,  5.5, 54.4093,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=80'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8247.79600,  -2.789, 52.9062,  5.5, 54.4090,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=79'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8249.03000,  -2.772, 52.9062,  5.5, 54.4088,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=78'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8250.32800,  -2.755, 52.9062,  5.5, 54.4086,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=77'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8251.66800,  -2.738, 52.9062,  5.5, 54.4083,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=76'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8253.05200,  -2.721, 52.9062,  5.5, 54.4081,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=75'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8254.50000,  -2.703, 52.9062,  5.5, 54.4078,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=74'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8255.99100,  -2.685, 52.9062,  5.5, 54.4076,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=73'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8257.56800,  -2.667, 52.9062,  5.5, 54.4073,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=72'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8259.21000,  -2.648, 52.9062,  5.5, 54.4070,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=71'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8260.91600,  -2.629, 52.9062,  5.5, 54.4067,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=70'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8262.70800,  -2.610, 52.9062,  5.5, 54.4063,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=69'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8264.56500,  -2.591, 52.9062,  5.5, 54.4060,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=68'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8266.53000,  -2.571, 52.9062,  5.5, 54.4056,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=67'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8268.56000,  -2.552, 52.9062,  5.5, 54.4053,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=66'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8270.69700,  -2.531, 52.9062,  5.5, 54.4049,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=65'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8272.94300,  -2.511, 52.9062,  5.5, 54.4045,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=64'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8275.29700,  -2.490, 52.9062,  5.5, 54.4040,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=63'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8277.76000,  -2.469, 52.9062,  5.5, 54.4036,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=62'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8280.33100,  -2.447, 52.9062,  5.5, 54.4031,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=61'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8283.05300,  -2.425, 52.9062,  5.5, 54.4026,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=60'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8285.92800,  -2.403, 52.9062,  5.5, 54.4021,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=59'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8288.93400,  -2.380, 52.9062,  5.5, 54.4016,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=58'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8292.11400,  -2.357, 52.9062,  5.5, 54.4010,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=57'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8295.44600,  -2.333, 52.9062,  5.5, 54.4004,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=56'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8298.99700,  -2.309, 52.9062,  5.5, 54.3998,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=55'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8302.72300,  -2.285, 52.9062,  5.5, 54.3991,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=54'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8306.69000,  -2.260, 52.9062,  5.5, 54.3984,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=53'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8310.87700,  -2.234, 52.9062,  5.5, 54.3976,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=52'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8315.32700,  -2.208, 52.9062,  5.5, 54.3968,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=51'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8320.04100,  -2.182, 52.9062,  5.5, 54.3960,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=50'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8325.04300,  -2.155, 52.9062,  5.5, 54.3951,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=49'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8330.39700,  -2.127, 52.9062,  5.5, 54.3941,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=48'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8336.08400,  -2.099, 52.9062,  5.5, 54.3931,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=47'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8342.14900,  -2.070, 52.9062,  5.5, 54.3920,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=46'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8348.65800,  -2.040, 52.9062,  5.5, 54.3909,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=45'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8355.59300,  -2.010, 52.9062,  5.5, 54.3897,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=44'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8363.06300,  -1.978, 52.9062,  5.5, 54.3883,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=43'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8371.07200,  -1.947, 52.9062,  5.5, 54.3869,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=42'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8379.69000,  -1.914, 52.9062,  5.5, 54.3854,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=41'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8388.98500,  -1.880, 52.9062,  5.5, 54.3838,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=40'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8399.02800,  -1.846, 52.9062,  5.5, 54.3820,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=39'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8409.89100,  -1.810, 52.9062,  5.5, 54.3801,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=38'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8421.69100,  -1.774, 52.9062,  5.5, 54.3780,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=37'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8434.52500,  -1.736, 52.9062,  5.5, 54.3758,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=36'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8448.51400,  -1.697, 52.9062,  5.5, 54.3733,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=35'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8463.80200,  -1.657, 52.9062,  5.5, 54.3707,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=34'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8480.58500,  -1.615, 52.9062,  5.5, 54.3678,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=33'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8499.01500,  -1.573, 52.9062,  5.5, 54.3646,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=32'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8519.36200,  -1.528, 52.9062,  5.5, 54.3611,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=31'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8541.90500,  -1.482, 52.9062,  5.5, 54.3573,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=30'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8566.95300,  -1.434, 52.9062,  5.5, 54.3531,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=29'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8594.89500,  -1.384, 52.9062,  5.5, 54.3484,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=28'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8626.20500,  -1.332, 52.9062,  5.5, 54.3431,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=27'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8661.49500,  -1.277, 52.9062,  5.5, 54.3373,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=26'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8701.42700,  -1.220, 52.9062,  5.5, 54.3307,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=25'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8746.91600,  -1.160, 52.9062,  5.5, 54.3233,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=24'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8799.02500,  -1.097, 52.9062,  5.5, 54.3149,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=23'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8859.16300,  -1.030, 52.9062,  5.5, 54.3053,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=22'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      8929.14000,  -0.959, 52.9062,  5.5, 54.2944,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=21'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      9011.23500,  -0.884, 52.9062,  5.5, 54.2817,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=20'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      9108.55200,  -0.803, 52.9062,  5.5, 54.2670,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=19'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      9225.25300,  -0.716, 52.9062,  5.5, 54.2498,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=18'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      9344.92900,   0.571, 52.2411,  4.5, 53.5675,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                       n=8'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      9367.06400,  -0.622, 52.9062,  5.5, 54.2295,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=17'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      9542.07700,  -0.519, 52.9062,  5.5, 54.2052,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=16'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      9762.17900,  -0.406, 52.9062,  5.5, 54.1759,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=15'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      10045.2630,  -0.280, 52.9062,  5.5, 54.1401,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=14'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      10123.5920,   1.521, 51.0168,  3.5, 52.2411,  4.5, 99.000, 99.000, 99.000, 9.990, 0.000, 0.000,
+'                                                                                       n=4'
+'                                                                                       n=5'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      10419.8230,  -0.137, 52.9062,  5.5, 54.0958,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=13'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      10933.6320,   0.027, 52.9062,  5.5, 54.0399,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=12'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      11626.3940,   1.015, 52.2411,  4.5, 53.3072,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                       n=7'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      11673.2590,   0.223, 52.9062,  5.5, 53.9680,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=11'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      12812.8080,   0.463, 52.9062,  5.5, 53.8736,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                      n=10'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      14760.3690,   0.777, 52.9062,  5.5, 53.7460,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                       n=9'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      18636.7480,   1.789, 52.2411,  4.5, 52.9062,  5.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=5'
+'                                                                                       n=6'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+'He 2',      18743.3220,   1.227, 52.9062,  5.5, 53.5675,  6.5, 99.000, 99.000, 99.000,10.000, 0.000, 0.000,
+'                                                                                       n=6'
+'                                                                                       n=8'
+'_          He Kurucz NLTE     1 wl:CDRO   1 gf:CDRO   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18   1 CDROM18            He+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. NLTE lines: He

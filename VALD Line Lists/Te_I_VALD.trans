@@ -1,0 +1,33 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Te 1',      9722.74200,   0.000,  5.4867,  2.0,  6.7615,  3.0,  1.980, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              5p3.(4S*).6s                         5S*'
+'  LS                                                   5p3.(4S*).6p                     5P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Te'
+'Te 1',      10051.4140,   0.000,  5.4867,  2.0,  6.7198,  2.0,  1.980, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              5p3.(4S*).6s                         5S*'
+'  LS                                                   5p3.(4S*).6p                     5P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Te'
+'Te 1',      10091.0110,   0.000,  5.4867,  2.0,  6.7150,  1.0,  1.980, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              5p3.(4S*).6s                         5S*'
+'  LS                                                   5p3.(4S*).6p                     5P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Te'
+'Te 1',      10918.3390,   0.000,  5.7842,  1.0,  6.9195,  0.0,  1.900, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              5p3.(4S*).6s                         3S*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Te'
+'Te 1',      11089.5620,   0.000,  5.7842,  1.0,  6.9019,  2.0,  1.900, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              5p3.(4S*).6s                         3S*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Te'
+'Te 1',      11487.2330,   0.000,  5.7842,  1.0,  6.8632,  1.0,  1.900, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              5p3.(4S*).6s                         3S*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Te'
+'Te 1',      13247.7570,   0.000,  5.7842,  1.0,  6.7198,  2.0,  1.900, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              5p3.(4S*).6s                         3S*'
+'  LS                                                   5p3.(4S*).6p                     5P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Te'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Cu 1 - Ba 2 Bell

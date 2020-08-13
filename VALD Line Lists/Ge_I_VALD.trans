@@ -1,0 +1,97 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Ge 1',      4226.56300,  -0.770,  2.0293,  0.0,  4.9619,  1.0, 99.000,  1.070, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2                              1S'
+'  LS                                                  4s2.4p.5s                        1P*'
+'_          Cu 1 - Ba 2 Bell   1  wl:LCG   1  gf:LCG   1     LCG   1     LCG   1     LCG   1     LCG   1     LCG   1     LCG   1     LCG             Ge'
+'Ge 1',      4685.82900,  -2.010,  2.0293,  0.0,  4.6745,  1.0, 99.000,  1.430, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2                              1S'
+'  LS                                                  4s2.4p.5s                        3P*'
+'_          Cu 1 - Ba 2 Bell   1  wl:LCG   1  gf:LCG   1     LCG   1     LCG   1     LCG   1     LCG   1     LCG   1     LCG   1     LCG             Ge'
+'Ge 1',      8600.37300,  -1.000,  4.6434,  0.0,  6.0846,  1.0, 99.000,  1.860, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3S'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      8789.88300,  -0.130,  4.6745,  1.0,  6.0846,  1.0,  1.430,  1.860,  1.650, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3S'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ge'
+'Ge 1',      9068.78000,  -0.800,  4.6745,  1.0,  6.0413,  2.0,  1.430,  1.430,  1.420, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      9095.95400,  -0.500,  4.9619,  1.0,  6.3246,  0.0,  1.070, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            1P*'
+'  LS                                                   4s2.4p.5p                        1S'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      9398.86300,  -0.400,  4.6434,  0.0,  5.9622,  1.0, 99.000,  1.360, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      9625.65800,  -0.300,  4.6745,  1.0,  5.9622,  1.0,  1.430,  1.360,  1.400, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      9946.58900,  -2.000,  4.6434,  0.0,  5.8896,  0.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      10039.4290,  -1.000,  4.8500,  2.0,  6.0846,  1.0,  1.500,  1.860,  1.320, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3S'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      10382.4200,  -0.500,  4.9619,  1.0,  6.1558,  1.0,  1.070,  1.060,  1.070, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            1P*'
+'  LS                                                   4s2.4p.5p                        1D'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      10404.9060,  -0.500,  4.8500,  2.0,  6.0413,  2.0,  1.500,  1.430,  1.460, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      10734.0530,  -0.500,  4.6434,  0.0,  5.7982,  1.0, 99.000,  0.980, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        1P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      10947.4110,  -0.500,  4.6745,  1.0,  5.8067,  2.0,  1.430,  1.180,  1.060, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3D'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      11030.8800,  -1.200,  4.6745,  1.0,  5.7982,  1.0,  1.430,  0.980,  1.210, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        1P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      11125.1250,  -0.500,  4.8500,  2.0,  5.9641,  3.0,  1.500,  1.330,  1.160, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3D'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      11144.6560,  -1.000,  4.8500,  2.0,  5.9622,  1.0,  1.500,  1.360,  1.570, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      11714.7470,   0.300,  4.6434,  0.0,  5.7015,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3D'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      12069.1850,   0.600,  4.6745,  1.0,  5.7015,  1.0,  1.430, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3D'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      12391.5680,   0.600,  4.9619,  1.0,  5.9622,  1.0,  1.070,  1.360,  1.210, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            1P*'
+'  LS                                                   4s2.4p.5p                        3P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      12955.7300,  -0.300,  4.8500,  2.0,  5.8067,  2.0,  1.500,  1.180,  1.340, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            3P*'
+'  LS                                                   4s2.4p.5p                        3D'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      14822.3550,   0.150,  4.9619,  1.0,  5.7982,  1.0,  1.070,  0.980,  1.020, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            1P*'
+'  LS                                                   4s2.4p.5p                        1P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+'Ge 1',      16759.7630,  -0.300,  4.9619,  1.0,  5.7015,  1.0,  1.070, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p.5s                            1P*'
+'  LS                                                   4s2.4p.5p                        3D'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Ge'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Cu 1 - Ba 2 Bell

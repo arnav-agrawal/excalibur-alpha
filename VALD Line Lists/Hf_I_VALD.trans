@@ -1,0 +1,805 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Hf 1',      4032.26400,  -1.620,  0.2922,  3.0,  3.3661,  2.0,  1.080,  0.990,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           y3F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4044.37300,  -0.440,  2.0040,  2.0,  5.0687,  3.0,  1.170,  1.230,  1.290, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4062.83400,  -0.740,  1.3029,  2.0,  4.3537,  2.0,  0.810,  1.110,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3F*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4066.21000,  -0.470,  1.8029,  3.0,  4.8512,  3.0,  1.090,  1.310,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3F*'
+'  LS                                                         5d.6s.6p2                 c3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4083.35400,  -0.850,  1.3029,  2.0,  4.3384,  1.0,  0.810,  0.500,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3F*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4087.94300,  -0.890,  2.0040,  2.0,  5.0361,  1.0,  1.170,  1.510,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d4                       a5D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4104.23400,  -1.500,  0.6991,  2.0,  3.7191,  3.0,  1.160,  1.230,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d2.6s.(a4F).6p           y3D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4106.54700,  -0.980,  1.3059,  4.0,  4.3242,  3.0,  1.010,  0.960,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1G'
+'  LS                                                        5d2.(3F).6s.(2F).6p       y1F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4115.87500,  -0.630,  2.2790,  3.0,  5.2905,  4.0,  1.290,  1.240,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d.6s.6p2                 c5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4118.58300,  -1.070,  1.3059,  4.0,  4.3154,  4.0,  1.010,  1.000,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1G'
+'  LS                                                        5d2.6s.6p                 z3H*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4118.88300,  -0.860,  1.7380,  1.0,  4.7473,  2.0,  0.540,  1.090,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d3.6s                    c1D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4145.75800,  -1.550,  0.6991,  2.0,  3.6889,  2.0,  1.160,  1.500,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d2.6s.(a4P).6p           y5D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4162.70900,  -1.520,  0.5663,  4.0,  3.5439,  3.0,  1.240,  0.940,  1.690, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z3G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4174.34600,  -0.910,  0.2922,  3.0,  3.2615,  3.0,  1.080,  1.400,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4190.94100,  -0.580,  1.7897,  2.0,  4.7473,  2.0,  0.900,  1.090,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 1D*'
+'  LS                                                         5d3.6s                    c1D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4209.74300,  -0.380,  1.8029,  3.0,  4.7473,  2.0,  1.090,  1.090,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3F*'
+'  LS                                                         5d3.6s                    c1D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4228.08000,  -1.760,  0.0000,  2.0,  2.9316,  3.0,  0.700,  1.070,  1.450, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d.6s2.6p                  1F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4245.16500,  -1.460,  1.1138,  2.0,  4.0336,  3.0,  1.300,  0.950,  0.600, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.(3F).6s.(2F).6p       y3G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4260.98300,  -0.950,  1.3059,  4.0,  4.2148,  4.0,  1.010,  1.040,  1.020, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1G'
+'  LS                                                        5d2.6s.6p                 y3G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4263.44700,  -1.560,  0.0000,  2.0,  2.9073,  3.0,  0.700,  1.200,  1.710, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      4294.78200,  -1.310,  0.2922,  3.0,  3.1782,  2.0,  1.080,  1.420,  0.740, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4296.45200,  -1.680,  0.6846,  0.0,  3.5695,  1.0,  0.000,  0.960,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(a4F).6p           y3D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4318.13600,  -1.480,  0.6991,  2.0,  3.5695,  1.0,  1.160,  0.960,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d2.6s.(a4F).6p           y3D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4330.28300,  -1.420,  0.5663,  4.0,  3.4287,  3.0,  1.240,  1.160,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           y3F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4349.74200,   0.060,  3.0730,  4.0,  5.9226,  5.0,  1.330, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d.6s.6p2                 b3G'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4352.56400,  -1.500,  1.1138,  2.0,  3.9616,  1.0,  1.300,  2.080,  0.910, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(a4P).6p           z5P*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4353.36300,  -0.690,  2.0040,  2.0,  4.8512,  3.0,  1.170,  1.310,  1.450, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d.6s.6p2                 c3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4356.30900,  -1.060,  0.5663,  4.0,  3.4116,  4.0,  1.240,  1.480,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4357.00800,  -1.770,  0.6991,  2.0,  3.5439,  3.0,  1.160,  0.940,  0.720, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d2.6s.(a4F).6p           z3G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4365.37900,  -0.900,  1.7897,  2.0,  4.6291,  1.0,  0.900,  0.490,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 1D*'
+'  LS                                                         5d.6s.6p2                 c3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4417.90900,  -1.520,  0.6991,  2.0,  3.5047,  2.0,  1.160,  1.140,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d2.6s.(a4F).6p           y3D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4418.24600,  -1.590,  1.1138,  2.0,  3.9192,  2.0,  1.300,  1.000,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(b2D).6p           y1D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4422.24900,  -1.700,  1.3059,  4.0,  4.1087,  3.0,  1.010,  1.140,  0.800, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1G'
+'  LS                                                        5d2.6s.6p                 z5P*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4438.04100,  -1.250,  0.6846,  0.0,  3.4775,  1.0,  0.000,  1.940,  1.940, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(a2P).6p           z3S*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4443.08300,  -0.520,  2.2790,  3.0,  5.0687,  3.0,  1.290,  1.230,  1.260, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4452.98600,  -1.880,  0.0000,  2.0,  2.7835,  2.0,  0.700,  1.000,  0.850, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4457.35000,  -1.190,  0.2922,  3.0,  3.0730,  4.0,  1.080,  1.330,  1.700, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4461.18100,  -1.420,  0.6991,  2.0,  3.4775,  1.0,  1.160,  1.940,  0.780, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d2.6s.(a2P).6p           z3S*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4499.65400,  -1.770,  0.8149,  1.0,  3.5695,  1.0,  1.500,  0.960,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(a4F).6p           y3D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4518.29400,  -0.920,  2.0040,  2.0,  4.7473,  2.0,  1.170,  1.090,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d3.6s                    c1D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4540.93600,  -1.430,  0.6991,  2.0,  3.4287,  3.0,  1.160,  1.160,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d2.6s.(a4F).6p           y3F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4544.02200,  -1.370,  1.3059,  4.0,  4.0336,  3.0,  1.010,  0.950,  1.090, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1G'
+'  LS                                                        5d2.(3F).6s.(2F).6p       y3G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4565.94600,  -1.480,  0.6991,  2.0,  3.4137,  1.0,  1.160,  1.270,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d2.6s.(a2P).6p           y5D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4598.80300,  -1.490,  0.0000,  2.0,  2.6953,  1.0,  0.700,  0.040,  1.020, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4608.09600,  -1.710,  0.8149,  1.0,  3.5047,  2.0,  1.500,  1.140,  0.970, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(a4F).6p           y3D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4620.86900,  -1.670,  0.5663,  4.0,  3.2487,  5.0,  1.240,  1.360,  1.600, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4630.60600,  -0.570,  2.3920,  3.0,  5.0687,  3.0,  0.950,  1.230,  1.090, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5G*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4655.19400,  -1.240,  0.8149,  1.0,  3.4775,  1.0,  1.500,  1.940,  1.720, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(a2P).6p           z3S*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4669.24200,  -1.950,  1.3059,  4.0,  3.9605,  4.0,  1.010,  1.410,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1G'
+'  LS                                                        5d2.6s.(a4P).6p           y5D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4699.00700,  -0.390,  2.2331,  2.0,  4.8709,  1.0,  0.400,  0.220,  0.490, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5G*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4708.85200,  -0.200,  2.8394,  5.0,  5.4717,  5.0,  1.250,  1.400,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5G*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4738.57700,  -1.370,  1.7380,  1.0,  4.3537,  2.0,  0.540,  1.110,  1.390, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4757.61000,  -1.830,  1.1138,  2.0,  3.7191,  3.0,  1.300,  1.230,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(a4F).6p           y3D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4766.51400,  -1.010,  1.7380,  1.0,  4.3384,  1.0,  0.540,  0.500,  0.520, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4773.72200,  -1.820,  0.6846,  0.0,  3.2811,  1.0,  0.000,  1.000,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d.6s2.6p                  1P*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4774.90500,  -0.470,  2.8394,  5.0,  5.4353,  4.0,  1.250,  1.300,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5G*'
+'  LS                                                         5d.6s.6p2                 b5D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4782.74100,  -0.260,  2.2596,  4.0,  4.8512,  3.0,  1.250,  1.310,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3F*'
+'  LS                                                         5d.6s.6p2                 c3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4800.50500,  -1.210,  0.6991,  2.0,  3.2811,  1.0,  1.160,  1.000,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d.6s2.6p                  1P*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4818.82700,  -0.630,  2.2790,  3.0,  4.8512,  3.0,  1.290,  1.310,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d.6s.6p2                 c3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4834.19900,  -1.340,  1.7897,  2.0,  4.3537,  2.0,  0.900,  1.110,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 1D*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4837.24000,  -1.940,  0.6991,  2.0,  3.2615,  3.0,  1.160,  1.400,  1.640, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d2.6s.(a4F).6p           z5D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4850.58300,  -2.100,  1.3029,  2.0,  3.8583,  2.0,  0.810,  0.890,  0.850, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3F*'
+'  LS                                                         5d3.6s                    c3F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4858.41400,  -2.100,  0.8149,  1.0,  3.3661,  2.0,  1.500,  0.990,  0.740, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(a4F).6p           y3F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4859.23400,  -0.810,  1.8029,  3.0,  4.3537,  2.0,  1.090,  1.110,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3F*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4863.27800,  -1.050,  1.7897,  2.0,  4.3384,  1.0,  0.900,  0.500,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 1D*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4872.94500,  -0.830,  2.5987,  4.0,  5.1423,  3.0,  1.160,  1.270,  0.990, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5G*'
+'  LS                                                         5d.6s.6p2                 c5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4877.58600,  -0.460,  2.3920,  3.0,  4.9332,  2.0,  0.950,  1.020,  0.880, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5G*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4915.30500,  -1.040,  2.4538,  2.0,  4.9755,  2.0,  1.410,  1.210,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3P*'
+'  LS                                                         5d.6s.6p2                 d1D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4948.94700,  -1.690,  1.3059,  4.0,  3.8104,  4.0,  1.010,  1.280,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1G'
+'  LS                                                        5d2.6s.(a4F).6p           y3F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      4962.38000,  -1.190,  2.2495,  1.0,  4.7473,  2.0,  1.430,  1.090,  0.920, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3P*'
+'  LS                                                         5d3.6s                    c1D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      4975.25600,  -1.530,  0.2922,  3.0,  2.7835,  2.0,  1.080,  1.000,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      5018.18200,  -0.290,  2.5987,  4.0,  5.0687,  3.0,  1.160,  1.230,  1.050, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5G*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5021.73300,  -1.380,  2.2790,  3.0,  4.7473,  2.0,  1.290,  1.090,  1.480, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d3.6s                    c1D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5047.44000,  -1.540,  1.1138,  2.0,  3.5695,  1.0,  1.300,  0.960,  1.470, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(a4F).6p           y3D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      5112.13000,  -2.360,  0.6991,  2.0,  3.1237,  1.0,  1.160,  1.450,  1.020, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d2.6s.(a4F).6p           z5D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      5157.94200,  -0.560,  2.8394,  5.0,  5.2425,  4.0,  1.250,  1.340,  1.070, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5G*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5167.37900,  -0.080,  3.0730,  4.0,  5.4717,  5.0,  1.330,  1.400,  1.540, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5170.16700,  -0.540,  2.4538,  2.0,  4.8512,  3.0,  1.410,  1.310,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3P*'
+'  LS                                                         5d.6s.6p2                 c3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5181.87000,  -1.890,  0.0000,  2.0,  2.3920,  3.0,  0.700,  0.950,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5G*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      5186.82200,  -0.560,  2.8394,  5.0,  5.2291,  4.0,  1.250,  1.280,  1.190, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5G*'
+'  LS                                                         5d4                       a5D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5243.98200,  -1.440,  1.1138,  2.0,  3.4775,  1.0,  1.300,  1.940,  0.980, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(a2P).6p           z3S*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      5275.03700,  -1.160,  2.0040,  2.0,  4.3537,  2.0,  1.170,  1.110,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5286.09900,  -0.670,  2.9073,  3.0,  5.2521,  3.0,  1.200,  1.150,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d.6s.6p2                 e3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5294.86800,  -1.630,  0.5663,  4.0,  2.9073,  3.0,  1.240,  1.200,  1.290, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      5307.80500,  -0.520,  2.9073,  3.0,  5.2425,  4.0,  1.200,  1.340,  1.550, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5309.68000,  -1.240,  2.0040,  2.0,  4.3384,  1.0,  1.170,  0.500,  1.510, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5354.71700,   0.260,  3.1569,  6.0,  5.4717,  5.0, 99.000,  1.400, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5G*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5373.86100,  -2.050,  0.2922,  3.0,  2.5987,  4.0,  1.080,  1.160,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      5389.33700,  -2.210,  1.1138,  2.0,  3.4137,  1.0,  1.300,  1.270,  1.320, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(a2P).6p           y5D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5404.45800,  -1.210,  2.4538,  2.0,  4.7473,  2.0,  1.410,  1.090,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3P*'
+'  LS                                                         5d3.6s                    c1D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5423.97500,  -0.710,  2.7835,  2.0,  5.0687,  3.0,  1.000,  1.230,  1.460, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5438.74100,  -2.720,  0.0000,  2.0,  2.2790,  3.0,  0.700,  1.290,  1.880, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d.6s2.6p                  3D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      5452.91500,  -1.860,  0.5663,  4.0,  2.8394,  5.0,  1.240,  1.250,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5G*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      5497.33200,  -0.090,  3.6889,  2.0,  5.9436,  3.0,  1.500, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                y5D*'
+'  LS                                                         5d2.6s.7s                 c5P'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5510.11800,  -3.130,  0.0000,  2.0,  2.2495,  1.0,  0.700,  1.430,  0.330, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d.6s2.6p                  3P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      5510.43700,  -1.480,  2.2790,  3.0,  4.5284,  3.0,  1.290,  1.260,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5538.01700,  -0.590,  2.6953,  1.0,  4.9334,  1.0,  0.040,  0.580,  0.310, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d.6s.6p2                 c5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5538.27800,  -1.900,  1.3059,  4.0,  3.5439,  3.0,  1.010,  0.940,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1G'
+'  LS                                                        5d2.6s.(a4F).6p           z3G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      5550.60900,  -1.900,  0.0000,  2.0,  2.2331,  2.0,  0.700,  0.390,  0.540, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      5552.12200,  -1.410,  0.6991,  2.0,  2.9316,  3.0,  1.160,  1.070,  0.980, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d.6s2.6p                  1F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      5575.85500,   0.020,  3.2487,  5.0,  5.4717,  5.0,  1.360,  1.400,  1.380, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5600.76100,  -0.920,  2.9073,  3.0,  5.1203,  2.0,  1.200,  0.830,  1.570, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d2.6s.7s                 d3F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5613.26800,  -1.680,  0.6991,  2.0,  2.9073,  3.0,  1.160,  1.200,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d2.6s.(a4F).6p           z5F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      5614.00900,  -0.880,  2.6953,  1.0,  4.9031,  1.0,  0.040,  0.810,  0.430, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d.6s2.7s                 d3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5628.30100,  -1.180,  2.9073,  3.0,  5.1095,  2.0,  1.200,  1.440,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d4                       a5D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5650.81300,  -2.380,  1.3029,  2.0,  3.4964,  2.0,  0.810,  1.390,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3F*'
+'  LS                                                         5d3.6s                    b3P'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5713.25600,  -0.520,  3.0730,  4.0,  5.2425,  4.0,  1.330,  1.340,  1.340, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5719.17500,  -1.360,  1.1138,  2.0,  3.2811,  1.0,  1.300,  1.000,  1.450, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d.6s2.6p                  1P*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      5748.71100,  -0.830,  3.0730,  4.0,  5.2291,  4.0,  1.330,  1.280,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d4                       a5D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5817.46600,  -1.930,  1.7897,  2.0,  3.9204,  2.0,  0.900,  1.010,  0.950, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 1D*'
+'  LS                                                         5d3.6s                    b1D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5845.85700,  -1.860,  1.7380,  1.0,  3.8583,  2.0,  0.540,  0.890,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d3.6s                    c3F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5847.76900,  -0.950,  2.7835,  2.0,  4.9031,  1.0,  1.000,  0.810,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d.6s2.7s                 d3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5883.65100,  -0.740,  2.9316,  3.0,  5.0383,  2.0,  1.070,  1.070,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 1F*'
+'  LS                                                         5d.6s.6p2                 c5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5926.46500,  -0.890,  2.9316,  3.0,  5.0230,  2.0,  1.070,  1.110,  1.040, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 1F*'
+'  LS                                                         5d.6s2.7s                 d3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5933.69000,  -0.970,  2.2495,  1.0,  4.3384,  1.0,  1.430,  0.500,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3P*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5974.27800,  -0.840,  2.2790,  3.0,  4.3537,  2.0,  1.290,  1.110,  1.460, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5974.72000,  -1.170,  2.4538,  2.0,  4.5284,  3.0,  1.410,  1.260,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3P*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      5978.66100,  -0.960,  2.2652,  0.0,  4.3384,  1.0,  0.000,  0.500,  0.500, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3P*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6016.76700,   0.050,  3.4116,  4.0,  5.4717,  5.0,  1.480,  1.400,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5D*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6054.16600,  -1.820,  1.8029,  3.0,  3.8503,  3.0,  1.090,  1.090,  1.090, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3F*'
+'  LS                                                         5d3.6s                    c3F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6098.67700,  -1.950,  0.5663,  4.0,  2.5987,  4.0,  1.240,  1.160,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      6185.12500,  -2.480,  0.0000,  2.0,  2.0040,  2.0,  0.700,  1.170,  0.930, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d.6s2.6p                  3D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      6210.68100,  -0.240,  3.0730,  4.0,  5.0687,  3.0,  1.330,  1.230,  1.480, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6216.79500,  -0.360,  3.2487,  5.0,  5.2425,  4.0,  1.360,  1.340,  1.400, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6238.59400,  -2.460,  0.2922,  3.0,  2.2790,  3.0,  1.080,  1.290,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d.6s2.6p                  3D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      6299.51900,  -0.460,  3.2615,  3.0,  5.2291,  4.0,  1.400,  1.280,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.(3F).6s.(4F).6p       5D*'
+'  LS                                                         5d4                       a5D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6311.84400,  -0.880,  2.7835,  2.0,  4.7473,  2.0,  1.000,  1.090,  1.050, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d3.6s                    c1D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6318.32300,  -1.390,  2.3920,  3.0,  4.3537,  2.0,  0.950,  1.110,  0.790, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5G*'
+'  LS                                                         5d3.6s                    b3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6338.10300,  -2.060,  1.3059,  4.0,  3.2615,  3.0,  1.010,  1.400,  0.420, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1G'
+'  LS                                                        5d2.6s.(a4F).6p           z5D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      6380.19100,  -1.790,  1.9432,  3.0,  3.8860,  3.0,  1.250,  1.390,  1.320, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4P).6p           y5D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      6386.23100,  -2.290,  0.2922,  3.0,  2.2331,  2.0,  1.080,  0.390,  1.770, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      6409.51200,  -1.100,  2.6953,  1.0,  4.6291,  1.0,  0.040,  0.490,  0.260, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d.6s.6p2                 c3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6556.47800,  -0.720,  3.1782,  2.0,  5.0687,  3.0,  1.420,  1.230,  1.040, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5D*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6587.22400,  -1.550,  2.0788,  4.0,  3.9605,  4.0,  1.340,  1.410,  1.380, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4P).6p           y5D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6659.41900,  -2.010,  1.8276,  2.0,  3.6889,  2.0,  1.010,  1.500,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4P).6p           y5D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      6713.48200,  -1.410,  2.0040,  2.0,  3.8503,  3.0,  1.170,  1.090,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d3.6s                    c3F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6716.02100,  -1.340,  2.7835,  2.0,  4.6291,  1.0,  1.000,  0.490,  1.260, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d.6s.6p2                 c3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6769.92300,  -0.500,  3.4116,  4.0,  5.2425,  4.0,  1.480,  1.340,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5D*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6789.27900,  -1.810,  0.5663,  4.0,  2.3920,  3.0,  1.240,  0.950,  1.670, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d2.6s.(a4F).6p           z5G*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      6818.93500,  -1.140,  1.1138,  2.0,  2.9316,  3.0,  1.300,  1.070,  0.850, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d.6s2.6p                  1F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      6826.54800,  -0.830,  2.9316,  3.0,  4.7473,  2.0,  1.070,  1.090,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 1F*'
+'  LS                                                         5d3.6s                    c1D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6850.04400,  -0.710,  3.1237,  1.0,  4.9332,  2.0,  1.450,  1.020,  0.800, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5D*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6858.74700,  -1.230,  2.0788,  4.0,  3.8860,  3.0,  1.340,  1.390,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4P).6p           y5D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      6911.39900,  -1.580,  1.1138,  2.0,  2.9073,  3.0,  1.300,  1.200,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(a4F).6p           z5F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      6926.20500,  -2.200,  1.7472,  1.0,  3.5368,  0.0,  0.010,  0.000,  0.010, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a2P).6p           y3P*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      6979.60900,  -1.550,  1.9432,  3.0,  3.7191,  3.0,  1.250,  1.230,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           y3D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      7019.23500,  -0.400,  3.6261,  4.0,  5.3920,  3.0,  1.070, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z3G*'
+'  LS                                                         5d2.6s.7s                 d3F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7035.16000,  -1.900,  2.0788,  4.0,  3.8407,  5.0,  1.340,  1.210,  0.950, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           z3G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      7061.95100,  -0.610,  3.1782,  2.0,  4.9334,  1.0,  1.420,  0.580,  1.840, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5D*'
+'  LS                                                         5d.6s.6p2                 c5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7062.84400,  -0.500,  3.1782,  2.0,  4.9332,  2.0,  1.420,  1.020,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5D*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7063.85200,  -1.300,  0.6991,  2.0,  2.4538,  2.0,  1.160,  1.410,  1.290, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d.6s2.6p                  3P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      7094.42000,  -0.660,  3.1237,  1.0,  4.8709,  1.0,  1.450,  0.220,  0.840, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5D*'
+'  LS                                                         5d2.6s.7s                 b5F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7100.55200,  -1.670,  1.9432,  3.0,  3.6889,  2.0,  1.250,  1.500,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4P).6p           y5D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      7119.51500,  -0.860,  2.2195,  5.0,  3.9605,  4.0,  1.380,  1.410,  1.340, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4P).6p           y5D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7131.81600,  -1.690,  0.0000,  2.0,  1.7380,  1.0,  0.700,  0.540,  0.770, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d.6s2.6p                  3D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      7237.11200,  -0.840,  0.5663,  4.0,  2.2790,  3.0,  1.240,  1.290,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d.6s2.6p                  3D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      7240.88100,  -1.360,  0.2922,  3.0,  2.0040,  2.0,  1.080,  1.170,  0.990, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d.6s2.6p                  3D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      7262.57900,  -2.290,  1.7897,  2.0,  3.4964,  2.0,  0.900,  1.390,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 1D*'
+'  LS                                                         5d3.6s                    b3P'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7320.05900,  -1.790,  0.5663,  4.0,  2.2596,  4.0,  1.240,  1.250,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d.6s2.6p                  3F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      7321.80600,  -2.320,  0.6991,  2.0,  2.3920,  3.0,  1.160,  0.950,  0.740, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d2.6s.(a4F).6p           z5G*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      7356.19500,  -1.190,  2.9073,  3.0,  4.5922,  2.0,  1.200,  1.150,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z5F*'
+'  LS                                                         5d.6s.6p2                 c3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7365.36000,  -2.010,  1.9432,  3.0,  3.6261,  4.0,  1.250,  1.070,  0.810, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           z3G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      7390.73400,  -1.600,  1.8276,  2.0,  3.5047,  2.0,  1.010,  1.140,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           y3D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      7423.62400,  -2.070,  1.1138,  2.0,  2.7835,  2.0,  1.300,  1.000,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d2.6s.(a4F).6p           z5F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      7437.60800,  -1.710,  1.7472,  1.0,  3.4137,  1.0,  0.010,  1.270,  0.640, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a2P).6p           y5D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7463.91800,  -0.810,  2.9316,  3.0,  4.5922,  2.0,  1.070,  1.150,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 1F*'
+'  LS                                                         5d.6s.6p2                 c3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7484.59400,  -1.210,  2.8368,  3.0,  4.4929,  3.0,  0.800,  1.040,  0.920, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             b3F'
+'  LS                                                        5d2.6s.6p                 x1F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7556.37300,  -1.450,  2.0788,  4.0,  3.7191,  3.0,  1.340,  1.230,  1.510, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           y3D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      7562.93000,  -1.560,  0.8149,  1.0,  2.4538,  2.0,  1.500,  1.410,  1.370, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d.6s2.6p                  3P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      7564.33200,   0.580,  4.3154,  4.0,  5.9540,  4.0,  1.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z3H*'
+'  LS                                                         5d4                       b3H'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7577.01300,  -1.520,  2.2790,  3.0,  3.9149,  4.0,  1.290,  1.150,  0.940, 0.000, 0.000, 0.000,
+'  LS                                                         5d.6s2.6p                 3D*'
+'  LS                                                         5d3.6s                    c3F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7592.97100,  -0.930,  2.8830,  4.0,  4.5154,  5.0,  1.030, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             b3F'
+'  LS                                                        5d2.6s.6p                 z3H*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7608.26100,   0.200,  3.9605,  4.0,  5.5896,  3.0,  1.410, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                y5D*'
+'  LS                                                         5d.6s.6p2                 b1F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7624.39200,  -0.530,  1.3059,  4.0,  2.9316,  3.0,  1.010,  1.070,  0.910, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1G'
+'  LS                                                        5d.6s2.6p                  1F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      7645.65800,  -1.350,  2.2195,  5.0,  3.8407,  5.0,  1.380,  1.210,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           z3G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      7740.17500,  -0.890,  1.3059,  4.0,  2.9073,  3.0,  1.010,  1.200,  0.710, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1G'
+'  LS                                                        5d2.6s.(a4F).6p           z5F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      7743.58000,  -1.720,  1.9432,  3.0,  3.5439,  3.0,  1.250,  0.940,  1.090, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           z3G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      7790.90400,  -0.950,  2.2195,  5.0,  3.8104,  4.0,  1.380,  1.280,  1.600, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           y3F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      7796.81000,  -1.120,  2.8830,  4.0,  4.4727,  4.0,  1.030,  1.070,  1.050, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             b3F'
+'  LS                                                        5d2.6s.6p                 x3F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7814.58200,  -1.520,  1.8276,  2.0,  3.4137,  1.0,  1.010,  1.270,  0.880, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a2P).6p           y5D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7845.35500,  -1.060,  0.6991,  2.0,  2.2790,  3.0,  1.160,  1.290,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d.6s2.6p                  3D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      7846.56800,  -1.130,  2.8830,  4.0,  4.4627,  5.0,  1.030, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             b3F'
+'  LS                                                        5d2.6s.6p                 y3G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      7920.73400,  -1.450,  0.6846,  0.0,  2.2495,  1.0,  0.000,  1.430,  1.430, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d.6s2.6p                  3P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      7938.05500,  -1.360,  1.9432,  3.0,  3.5047,  2.0,  1.250,  1.140,  1.350, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           y3D*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      7994.74300,  -1.170,  0.6991,  2.0,  2.2495,  1.0,  1.160,  1.430,  1.030, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d.6s2.6p                  3P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      8010.58500,  -1.850,  2.0788,  4.0,  3.6261,  4.0,  1.340,  1.070,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           z3G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      8056.47100,  -1.440,  1.8276,  2.0,  3.3661,  2.0,  1.010,  0.990,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           y3F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      8080.26500,  -2.110,  0.6991,  2.0,  2.2331,  2.0,  1.160,  0.390,  0.780, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a1D'
+'  LS                                                        5d2.6s.(a4F).6p           z5G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      8173.90000,  -1.080,  2.5923,  2.0,  4.1087,  3.0,  1.730,  1.140,  0.550, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4P).6s             a5P'
+'  LS                                                        5d2.6s.6p                 z5P*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      8204.57000,  -2.020,  0.2922,  3.0,  1.8029,  3.0,  1.080,  1.090,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d.6s2.6p                  3F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      8248.84300,   0.380,  4.4929,  3.0,  5.9955,  4.0,  1.040, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a4P).6p          x1F*'
+'  LS                                                         5d4                       c3G'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      8276.94000,  -2.390,  0.2922,  3.0,  1.7897,  2.0,  1.080,  0.900,  1.260, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3F'
+'  LS                                                        5d.6s2.6p                  3F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      8344.24800,  -1.240,  1.9432,  3.0,  3.4287,  3.0,  1.250,  1.160,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           y3F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      8380.03900,  -0.660,  3.5439,  3.0,  5.0230,  2.0,  0.950,  1.110,  0.790, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.6p                z3G*'
+'  LS                                                         5d.6s2.7s                 d3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      8382.97600,  -1.360,  2.8368,  3.0,  4.3154,  4.0,  0.800,  1.000,  1.290, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             b3F'
+'  LS                                                        5d2.6s.6p                 z3H*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hf'
+'Hf 1',      8459.99600,  -1.000,  2.0788,  4.0,  3.5439,  3.0,  1.340,  0.940,  1.940, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           z3G*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      8546.42900,  -1.290,  0.8149,  1.0,  2.2652,  0.0,  1.500,  0.000,  1.500, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d.6s2.6p                  3P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      8640.03400,  -1.240,  0.8149,  1.0,  2.2495,  1.0,  1.500,  1.430,  1.460, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.6s2                  a3P'
+'  LS                                                        5d.6s2.6p                  3P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+'Hf 1',      8711.20200,  -1.120,  1.9432,  3.0,  3.3661,  2.0,  1.250,  0.990,  1.500, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           y3F*'
+'_          Hf 1 - U 2 Bell    1 wl:DSLb   1 gf:DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb   1    DSLb             Hf'
+'Hf 1',      9004.73600,  -0.720,  1.7472,  1.0,  3.1237,  1.0,  0.010,  1.450,  0.730, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(b4F).6s             a5F'
+'  LS                                                        5d2.6s.(a4F).6p           z5D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Hf'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Hf 1 - U 2 Bell

@@ -1,0 +1,66 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Ga 1',      4032.98400,  -0.627,  0.0000,  0.5,  3.0734,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                       3d10.4s2.4p 2P*'
+'  LS                                                                       4s2.5s       2S'
+'_          Ga 1-2-3 (NIST)    1 wl:SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS             Ga'
+'Ga 1',      4172.04200,  -0.308,  0.1024,  1.5,  3.0734,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                       3d10.4s2.4p 2P*'
+'  LS                                                                       4s2.5s       2S'
+'_          Ga 1-2-3 (NIST)    1 wl:SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS             Ga'
+'Ga 1',      6396.57700,   0.000,  3.0734,  0.5,  5.0111,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               3d10.4s2.5s                          2S'
+'  LS                                                  3d10.4s2.6p                      2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES             Ga'
+'Ga 1',      6413.46800,  -0.300,  3.0734,  0.5,  5.0060,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               3d10.4s2.5s                          2S'
+'  LS                                                  3d10.4s2.6p                      2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES             Ga'
+'Ga 1',      8311.69100,  -0.500,  4.0969,  0.5,  5.5882,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              3d10.4s2.5p                          2P*'
+'  LS                                                   3d10.4s2.7d                      2D'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES             Ga'
+'Ga 1',      8386.20400,  -0.200,  4.1107,  1.5,  5.5887,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              3d10.4s2.5p                          2P*'
+'  LS                                                   3d10.4s2.7d                      2D'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES             Ga'
+'Ga 1',      8389.08900,  -1.500,  4.1107,  1.5,  5.5882,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              3d10.4s2.5p                          2P*'
+'  LS                                                   3d10.4s2.7d                      2D'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES             Ga'
+'Ga 1',      9492.88200,  -0.200,  4.0969,  0.5,  5.4026,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              3d10.4s2.5p                          2P*'
+'  LS                                                   3d10.4s2.6d                      2D'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES             Ga'
+'Ga 1',      9589.18100,   0.000,  4.1107,  1.5,  5.4033,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              3d10.4s2.5p                          2P*'
+'  LS                                                   3d10.4s2.6d                      2D'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES             Ga'
+'Ga 1',      9593.97500,  -1.200,  4.1107,  1.5,  5.4026,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              3d10.4s2.5p                          2P*'
+'  LS                                                   3d10.4s2.6d                      2D'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES             Ga'
+'Ga 1',      11949.2300,   0.000,  3.0734,  0.5,  4.1107,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               3d10.4s2.5s                          2S'
+'  LS                                                  3d10.4s2.5p                      2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES             Ga'
+'Ga 1',      12109.8520,  -0.300,  3.0734,  0.5,  4.0969,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               3d10.4s2.5s                          2S'
+'  LS                                                  3d10.4s2.5p                      2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES             Ga'
+'Ga 1',      12885.2990,   0.200,  4.0969,  0.5,  5.0589,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              3d10.4s2.5p                          2P*'
+'  LS                                                   3d10.4s2.5d                      2D'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES             Ga'
+'Ga 1',      13057.7890,   0.500,  4.1107,  1.5,  5.0600,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              3d10.4s2.5p                          2P*'
+'  LS                                                   3d10.4s2.5d                      2D'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES             Ga'
+'Ga 1',      13072.2680,  -1.000,  4.1107,  1.5,  5.0589,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              3d10.4s2.5p                          2P*'
+'  LS                                                   3d10.4s2.5d                      2D'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES             Ga'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Ga 1-2-3 NIST data
+  2. Cu 1 - Ba 2 Bell

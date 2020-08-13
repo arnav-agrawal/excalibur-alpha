@@ -1,0 +1,33 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Pt 2',      4023.81530,  -2.610,  3.5993,  3.5,  6.6797,  4.5, 99.000,  1.180, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                5d8.6s              2G'
+'  LS                                                                    d8.6p.(3F)     2G*'
+'_          Pt 1, Pt 2 (VALD   1  wl:DSJ   1  gf:DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ            Pt+'
+'Pt 2',      4034.14000,  -2.090,  3.9969,  1.5,  7.0693,  2.5, 99.000,  1.180, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                5d8.6s              2D'
+'                                                                                    d8.6p*'
+'_          Pt 1, Pt 2 (VALD   1  wl:DSJ   1  gf:DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ            Pt+'
+'Pt 2',      4046.44980,  -1.190,  4.5234,  2.5,  7.5866,  2.5, 99.000,  1.140, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                5d7.6s2             4F'
+'  LS                                                                    d8.6p.(3F)     4D*'
+'_          Pt 1, Pt 2 (VALD   1  wl:DSJ   1  gf:DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ            Pt+'
+'Pt 2',      4061.65970,  -1.890,  3.6280,  4.5,  6.6797,  4.5, 99.000,  1.180, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                5d8.6s              2G'
+'  LS                                                                    d8.6p.(3F)     2G*'
+'_          Pt 1, Pt 2 (VALD   1  wl:DSJ   1  gf:DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ            Pt+'
+'Pt 2',      4148.28200,  -2.300,  4.0814,  2.5,  7.0693,  2.5, 99.000,  1.180, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                5d8.6s              2D'
+'                                                                                    d8.6p*'
+'_          Pt 1, Pt 2 (VALD   1  wl:DSJ   1  gf:DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ            Pt+'
+'Pt 2',      4288.38660,  -1.570,  4.6962,  1.5,  7.5866,  2.5, 99.000,  1.140, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                5d7.6s2             4F'
+'  LS                                                                    d8.6p.(3F)     4D*'
+'_          Pt 1, Pt 2 (VALD   1  wl:DSJ   1  gf:DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ            Pt+'
+'Pt 2',      4514.17000,  -1.480,  3.6280,  4.5,  6.3738,  3.5, 99.000,  1.350, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                5d8.6s              2G'
+'  LS                                                                    d8.6p.(3F)     4D*'
+'_          Pt 1, Pt 2 (VALD   1  wl:DSJ   1  gf:DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ   1     DSJ            Pt+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. VALD2: Pt

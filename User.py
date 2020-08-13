@@ -23,7 +23,7 @@ P = 1    # Bar
 T = 300   # K
 
 # Download line list
-Download_Line_List.summon()
+Download_Line_List.summon(database=database, molecule=molecule)
 
 # Create cross section
 #nu, sigma = Cthulhu_Refactored.create_cross_section(input_dir = '../input/', database = database, molecule = molecule, log_pressure = np.log10(P), temperature = T)

@@ -1,0 +1,693 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Rh 1',      4023.13900,  -0.540,  1.7832,  1.5,  4.8641,  1.5,  1.030,  1.260,  1.150, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1D).5s                         b2D'
+'  LS                                                  4d8.(1D).5p                     y2P*'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      4048.40700,  -0.900,  1.7326,  0.5,  4.7943,  1.5,  0.680,  1.290,  1.440, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a2P'
+'                                                                                         *'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      4049.03500,  -1.350,  1.6764,  2.5,  4.7376,  1.5,  1.230,  1.210,  1.250, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1D).5s                         b2D'
+'  LS                                                  4d8.(3P).5p                     z2P*'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      4053.43800,  -1.860,  1.3646,  0.5,  4.4225,  0.5,  2.660,  2.060,  2.360, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3P).5p                     z4P*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4056.33700,  -2.030,  1.1433,  2.5,  4.1990,  1.5,  1.480,  0.910,  1.900, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4077.58000,  -1.190,  1.6764,  2.5,  4.7161,  1.5,  1.230,  1.130,  1.310, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1D).5s                         b2D'
+'  LS                                                  4d8.(3P).5p                     y4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Rh'
+'Rh 1',      4082.78000,  -0.850,  0.9660,  2.5,  4.0019,  1.5,  0.950,  0.560,  1.240, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3F).5s                         a2F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4084.27700,  -2.420,  0.3221,  2.5,  3.3569,  3.5,  1.110,  1.410,  1.790, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3F).5s                         a4F'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      4087.78400,  -0.750,  1.9987,  3.5,  5.0309,  2.5,  0.900,  1.070,  0.690, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1G).5s                         a2G'
+'  LS                                                  4d8.(1D).5p                     y2F*'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      4088.47600,  -1.870,  0.9660,  2.5,  3.9977,  2.5,  0.950,  0.940,  0.940, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3F).5s                         a2F'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1 wl:KZBa   1 gf:KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa             Rh'
+'Rh 1',      4097.50800,  -1.150,  1.3646,  0.5,  4.3896,  1.5,  2.660,  1.450,  1.150, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3P).5p                     z4P*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4107.49200,  -1.300,  1.8335,  3.5,  4.8511,  2.5,  1.230,  1.320,  1.110, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'                                                                                         *'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      4116.32900,  -0.800,  1.7832,  1.5,  4.7943,  1.5,  1.030,  1.290,  1.160, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1D).5s                         b2D'
+'                                                                                         *'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      4119.67900,  -0.380,  1.9860,  4.5,  4.9947,  3.5,  1.110,  1.200,  0.960, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1G).5s                         a2G'
+'  LS                                                  4d8.(1D).5p                     y2F*'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      4121.68300,  -0.820,  0.9660,  2.5,  3.9732,  2.5,  0.950,  1.000,  0.970, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3F).5s                         a2F'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4128.88600,  -0.450,  0.9660,  2.5,  3.9680,  3.5,  0.950,  1.120,  1.340, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3F).5s                         a2F'
+'  LS                                                  4d8.(3F).5p                     z2F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4135.27500,  -0.680,  0.7056,  3.5,  3.7030,  3.5,  1.140,  1.150,  1.150, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3F).5s                         a2F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4154.34300,  -0.750,  1.5775,  4.5,  4.5611,  3.5,  1.320,  1.350,  1.270, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3P).5p                     y4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      4196.49600,  -1.090,  1.1433,  2.5,  4.0969,  3.5,  1.480,  0.990,  0.380, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z2G*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4206.61300,  -2.620,  0.4104,  2.5,  3.3569,  3.5,  1.120,  1.410,  1.780, 0.000, 0.000, 0.000,
+'  LS                                               4d9                                 a2D'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4211.13300,  -0.360,  0.7056,  3.5,  3.6490,  4.5,  1.140,  1.260,  1.470, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3F).5s                         a2F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4230.19300,  -1.880,  1.2787,  1.5,  4.2088,  2.5,  1.580,  1.010,  0.590, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z2F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      4244.43500,  -2.150,  1.2787,  1.5,  4.1990,  1.5,  1.580,  0.910,  1.240, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4273.41800,  -0.990,  1.7326,  0.5,  4.6331,  0.5,  0.680,  1.340,  1.010, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a2P'
+'  LS                                                  4d8.(3P).5p                     z2P*'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      4278.58800,  -1.820,  1.4839,  1.5,  4.3808,  2.5,  1.230,  1.470,  1.650, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a2P'
+'  LS                                                  4d8.(3P).5p                     z4P*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4288.70200,  -0.870,  0.9660,  2.5,  3.8561,  3.5,  0.950,  1.020,  1.120, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3F).5s                         a2F'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4296.76300,  -1.230,  1.6764,  2.5,  4.5611,  3.5,  1.230,  1.350,  1.490, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1D).5s                         b2D'
+'  LS                                                  4d8.(3P).5p                     y4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      4342.43200,  -2.190,  1.1433,  2.5,  3.9977,  2.5,  1.480,  0.940,  1.210, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1 wl:KZBa   1 gf:KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa             Rh'
+'Rh 1',      4373.03500,  -1.700,  1.3646,  0.5,  4.1990,  1.5,  2.660,  0.910,  0.480, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4374.80900,  -0.330,  0.7056,  3.5,  3.5388,  4.5,  1.140,  1.180,  1.250, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3F).5s                         a2F'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4379.91100,  -1.370,  1.1433,  2.5,  3.9732,  2.5,  1.480,  1.000,  1.240, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4433.31800,  -1.180,  1.9985,  2.5,  4.7943,  1.5,  1.020,  1.290,  0.810, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'                                                                                         *'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      4492.45900,  -2.090,  1.1433,  2.5,  3.9023,  2.5,  1.480,  0.830,  1.160, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4503.77300,  -1.570,  1.8335,  3.5,  4.5856,  2.5,  1.230,  1.150,  1.330, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3P).5p                     y4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Rh'
+'Rh 1',      4528.71900,  -1.480,  0.9660,  2.5,  3.7030,  3.5,  0.950,  1.150,  1.400, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3F).5s                         a2F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4544.26100,  -1.790,  1.8335,  3.5,  4.5611,  3.5,  1.230,  1.350,  1.290, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3P).5p                     y4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      4548.70700,  -1.990,  1.4839,  1.5,  4.2088,  2.5,  1.230,  1.010,  0.850, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a2P'
+'  LS                                                  4d8.(3F).5p                     z2F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4551.62500,  -1.300,  1.2787,  1.5,  4.0019,  1.5,  1.580,  0.560,  1.070, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4560.88400,  -1.620,  1.9985,  2.5,  4.7161,  1.5,  1.020,  1.130,  0.930, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3P).5p                     y4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Rh'
+'Rh 1',      4565.17900,  -1.870,  1.4839,  1.5,  4.1990,  1.5,  1.230,  0.910,  1.070, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a2P'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4568.99300,  -1.590,  1.1433,  2.5,  3.8561,  3.5,  1.480,  1.020,  0.450, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4608.11500,  -1.880,  1.7326,  0.5,  4.4225,  0.5,  0.680,  2.060,  1.370, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a2P'
+'  LS                                                  4d8.(3P).5p                     z4P*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4643.18100,  -1.140,  2.1007,  1.5,  4.7702,  0.5,  0.420, -0.160,  0.560, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3P).5p                     y4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      4675.02200,  -1.780,  0.7056,  3.5,  3.3569,  3.5,  1.140,  1.410,  1.280, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3F).5s                         a2F'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4720.99500,  -2.340,  1.1433,  2.5,  3.7688,  1.5,  1.480,  1.160,  1.710, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4745.11600,  -1.980,  0.9660,  2.5,  3.5781,  2.5,  0.950,  1.330,  1.140, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3F).5s                         a2F'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4755.58000,  -2.090,  1.7832,  1.5,  4.3896,  1.5,  1.030,  1.450,  1.240, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1D).5s                         b2D'
+'  LS                                                  4d8.(3P).5p                     z4P*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4810.48200,   0.040,  3.3569,  3.5,  5.9336,  4.5,  1.410,  1.250,  0.970, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4D*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      4842.40700,  -2.340,  1.1433,  2.5,  3.7030,  3.5,  1.480,  1.150,  0.740, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4843.99100,   0.340,  3.3569,  3.5,  5.9157,  3.5,  1.410,  1.380,  1.390, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4D*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      4865.77300,  -2.050,  1.8335,  3.5,  4.3808,  2.5,  1.230,  1.470,  0.930, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3P).5p                     z4P*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4913.51500,  -2.360,  1.6764,  2.5,  4.1990,  1.5,  1.230,  0.910,  1.470, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1D).5s                         b2D'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4919.68300,  -2.210,  1.5775,  4.5,  4.0969,  3.5,  1.320,  0.990,  1.890, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z2G*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4922.50300,  -2.330,  1.4839,  1.5,  4.0019,  1.5,  1.230,  0.560,  0.890, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a2P'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4963.70300,  -1.650,  1.3646,  0.5,  3.8617,  0.5,  2.660,  0.040,  1.350, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4977.73400,  -1.840,  1.2787,  1.5,  3.7688,  1.5,  1.580,  1.160,  1.370, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      4979.16400,  -1.650,  1.4839,  1.5,  3.9732,  2.5,  1.230,  1.000,  0.830, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a2P'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5090.64000,  -1.930,  1.1433,  2.5,  3.5781,  2.5,  1.480,  1.330,  1.400, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5120.67900,  -2.010,  1.6764,  2.5,  4.0969,  3.5,  1.230,  0.990,  0.690, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1D).5s                         b2D'
+'  LS                                                  4d8.(3F).5p                     z2G*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5130.76300,  -2.160,  1.7832,  1.5,  4.1990,  1.5,  1.030,  0.910,  0.970, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1D).5s                         b2D'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5155.53700,  -1.810,  1.3646,  0.5,  3.7688,  1.5,  2.660,  1.160,  0.790, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5157.09000,  -0.080,  3.5388,  4.5,  5.9423,  4.5,  1.180,  1.150,  1.170, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5158.68100,   0.410,  3.5781,  2.5,  5.9809,  2.5,  1.330,  1.200,  1.270, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4D*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5175.96200,   0.530,  3.5388,  4.5,  5.9336,  4.5,  1.180,  1.250,  1.220, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5177.24900,   0.120,  3.9732,  2.5,  6.3674,  3.5,  1.000,  0.740,  0.420, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2D*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5184.19400,  -2.280,  0.9660,  2.5,  3.3569,  3.5,  0.950,  1.410,  1.990, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3F).5s                         a2F'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5185.02500,  -2.440,  1.5775,  4.5,  3.9680,  3.5,  1.320,  1.120,  1.660, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z2F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5193.13000,   0.740,  3.5388,  4.5,  5.9256,  5.5,  1.180,  1.120,  0.980, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5203.32500,  -2.390,  1.9987,  3.5,  4.3808,  2.5,  0.900,  1.470,  0.190, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1G).5s                         a2G'
+'  LS                                                  4d8.(3P).5p                     z4P*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5211.50600,   0.200,  3.8561,  3.5,  6.2345,  3.5,  1.020,  0.970,  1.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5212.73400,  -2.310,  1.4839,  1.5,  3.8617,  0.5,  1.230,  0.040,  1.530, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a2P'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5214.77600,  -0.020,  3.5388,  4.5,  5.9157,  3.5,  1.180,  1.380,  0.830, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5222.65500,   0.340,  4.0019,  1.5,  6.3752,  1.5,  0.560, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5230.61200,   0.340,  3.9977,  2.5,  6.3674,  3.5,  0.940,  0.740,  0.490, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5237.14700,   0.660,  3.8561,  3.5,  6.2229,  3.5,  1.020,  1.000,  1.010, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5269.26200,  -0.060,  3.5781,  2.5,  5.9305,  2.5,  1.330,  1.330,  1.330, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4D*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5280.11600,   0.040,  3.9023,  2.5,  6.2498,  2.5,  0.830,  1.020,  0.930, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5292.13500,  -1.810,  1.5775,  4.5,  3.9196,  4.5,  1.320,  1.160,  1.240, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z2G*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5314.78000,   0.160,  3.9023,  2.5,  6.2345,  3.5,  0.830,  0.970,  1.140, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5329.73800,   0.420,  3.6085,  5.5,  5.9341,  5.5,  1.270, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5331.08800,  -0.050,  3.6085,  5.5,  5.9336,  4.5,  1.270,  1.250,  1.320, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5349.30200,  -0.220,  3.6085,  5.5,  5.9256,  5.5,  1.270,  1.120,  1.200, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5354.42800,   1.130,  3.9196,  4.5,  6.2345,  3.5,  1.160,  0.970,  1.480, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5356.46500,   0.390,  3.9196,  4.5,  6.2336,  4.5,  1.160,  1.150,  1.150, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5379.07200,   0.690,  3.9196,  4.5,  6.2239,  5.5,  1.160,  1.120,  1.040, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5390.43300,  -1.600,  1.2787,  1.5,  3.5781,  2.5,  1.580,  1.330,  1.150, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5404.71800,   0.200,  3.6490,  4.5,  5.9423,  4.5,  1.260,  1.150,  1.210, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5424.05100,   0.600,  3.6490,  4.5,  5.9341,  5.5,  1.260, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5424.71100,  -2.050,  1.4839,  1.5,  3.7688,  1.5,  1.230,  1.160,  1.200, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a2P'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5425.45000,   0.100,  3.6490,  4.5,  5.9336,  4.5,  1.260,  1.250,  1.260, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5439.57500,  -2.250,  1.5775,  4.5,  3.8561,  3.5,  1.320,  1.020,  1.830, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1 wl:KZBa   1 gf:KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa             Rh'
+'Rh 1',      5441.34600,  -0.060,  3.7030,  3.5,  5.9809,  2.5,  1.150,  1.200,  1.080, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5444.31500,  -0.200,  3.6490,  4.5,  5.9256,  5.5,  1.260,  1.120,  0.800, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5468.11100,   0.190,  3.6490,  4.5,  5.9157,  3.5,  1.260,  1.380,  1.050, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5470.85200,   0.600,  3.9680,  3.5,  6.2336,  3.5,  1.120,  1.150,  1.130, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5476.11800,  -2.010,  1.8335,  3.5,  4.0969,  3.5,  1.230,  0.990,  1.110, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z2G*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      5481.41400,   0.120,  3.9732,  2.5,  6.2345,  3.5,  1.000,  0.970,  0.930, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2D*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5484.22900,   0.260,  3.9680,  3.5,  6.2281,  3.5,  1.120,  1.120,  1.120, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5504.65100,   0.020,  3.9732,  2.5,  6.2250,  2.5,  1.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2D*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5535.03100,   0.330,  3.7030,  3.5,  5.9423,  4.5,  1.150,  1.150,  1.150, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5544.59300,   0.180,  3.7030,  3.5,  5.9385,  3.5,  1.150, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5599.41900,  -1.330,  1.1433,  2.5,  3.3569,  3.5,  1.480,  1.410,  1.320, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a4P'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5608.34600,  -1.770,  1.9987,  3.5,  4.2088,  2.5,  0.900,  1.010,  0.760, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1G).5s                         a2G'
+'  LS                                                  4d8.(3F).5p                     z2F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      5632.76300,  -2.330,  1.9985,  2.5,  4.1990,  1.5,  1.020,  0.910,  1.100, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      5659.62000,  -2.270,  1.7832,  1.5,  3.9732,  2.5,  1.030,  1.000,  0.970, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1D).5s                         b2D'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      5686.36100,  -1.710,  1.6764,  2.5,  3.8561,  3.5,  1.230,  1.020,  0.760, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1D).5s                         b2D'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5702.45900,   0.160,  4.2088,  2.5,  6.3824,  2.5,  1.010, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2F*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5727.28100,  -2.430,  1.8335,  3.5,  3.9977,  2.5,  1.230,  0.940,  1.600, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1 wl:KZBa   1 gf:KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa             Rh'
+'Rh 1',      5792.65700,  -1.740,  1.8335,  3.5,  3.9732,  2.5,  1.230,  1.000,  1.520, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      5806.89300,  -1.340,  1.8335,  3.5,  3.9680,  3.5,  1.230,  1.120,  1.170, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z2F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5821.83600,  -2.570,  1.7326,  0.5,  3.8617,  0.5,  0.680,  0.040,  0.360, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a2P'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      5831.57600,  -1.820,  1.5775,  4.5,  3.7030,  3.5,  1.320,  1.150,  1.610, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5907.41400,  -2.140,  1.9987,  3.5,  4.0969,  3.5,  0.900,  0.990,  0.950, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1G).5s                         a2G'
+'  LS                                                  4d8.(3F).5p                     z2G*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      5918.52900,  -2.500,  1.4839,  1.5,  3.5781,  2.5,  1.230,  1.330,  1.400, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(3P).5s                         a2P'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5941.42400,  -0.200,  3.8561,  3.5,  5.9423,  4.5,  1.020,  1.150,  1.370, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      5983.57500,  -0.950,  1.5775,  4.5,  3.6490,  4.5,  1.320,  1.260,  1.290, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      5991.16200,  -2.230,  1.8335,  3.5,  3.9023,  2.5,  1.230,  0.830,  1.730, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      6102.70600,  -1.170,  1.5775,  4.5,  3.6085,  5.5,  1.320,  1.270,  1.170, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1 wl:KZBa   1 gf:KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa             Rh'
+'Rh 1',      6116.14300,  -2.430,  1.6764,  2.5,  3.7030,  3.5,  1.230,  1.150,  1.040, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1D).5s                         b2D'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      6128.05300,  -2.250,  1.8335,  3.5,  3.8561,  3.5,  1.230,  1.020,  1.130, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1 wl:KZBa   1 gf:KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa             Rh'
+'Rh 1',      6186.88900,  -2.220,  1.9985,  2.5,  4.0019,  1.5,  1.020,  0.560,  1.360, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      6199.97700,  -1.950,  1.9985,  2.5,  3.9977,  2.5,  1.020,  0.940,  0.980, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1 wl:KZBa   1 gf:KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa             Rh'
+'Rh 1',      6253.71600,  -1.820,  1.9860,  4.5,  3.9680,  3.5,  1.110,  1.120,  1.100, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1G).5s                         a2G'
+'  LS                                                  4d8.(3F).5p                     z2F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      6276.66200,  -2.440,  1.9985,  2.5,  3.9732,  2.5,  1.020,  1.000,  1.010, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      6277.46200,  -2.190,  1.9987,  3.5,  3.9732,  2.5,  0.900,  1.000,  0.780, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1G).5s                         a2G'
+'  LS                                                  4d8.(3F).5p                     z2D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      6293.38000,  -2.260,  1.9985,  2.5,  3.9680,  3.5,  1.020,  1.120,  1.250, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z2F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      6319.51700,  -1.620,  1.5775,  4.5,  3.5388,  4.5,  1.320,  1.180,  1.250, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      6414.70200,  -0.290,  3.5781,  2.5,  5.5104,  3.5,  1.330,  1.220,  1.080, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4D*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      6510.39400,  -1.870,  1.9985,  2.5,  3.9023,  2.5,  1.020,  0.830,  0.930, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      6519.68400,  -1.800,  2.1007,  1.5,  4.0019,  1.5,  0.420,  0.560,  0.490, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      6627.79400,  -2.090,  1.9860,  4.5,  3.8561,  3.5,  1.110,  1.020,  1.270, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1G).5s                         a2G'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1 wl:KZBa   1 gf:KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa   1    KZBa             Rh'
+'Rh 1',      6630.14200,  -1.820,  1.8335,  3.5,  3.7030,  3.5,  1.230,  1.150,  1.190, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      6752.33700,   0.160,  3.3569,  3.5,  5.1926,  4.5,  1.410,  1.310,  1.130, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4D*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      6796.67400,   0.460,  4.3808,  2.5,  6.2045,  2.5,  1.470, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3P).5p                         z4P*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      6827.32200,  -1.720,  1.8335,  3.5,  3.6490,  4.5,  1.230,  1.260,  1.320, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      6857.67500,  -0.060,  3.7030,  3.5,  5.5104,  3.5,  1.150,  1.220,  1.180, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      6879.94100,  -1.550,  2.1007,  1.5,  3.9023,  2.5,  0.420,  0.830,  1.150, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      6965.65600,  -1.660,  1.5775,  4.5,  3.3569,  3.5,  1.320,  1.410,  1.150, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      6972.93000,  -0.010,  3.9023,  2.5,  5.6799,  1.5,  0.830, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7001.56700,  -1.780,  1.9985,  2.5,  3.7688,  1.5,  1.020,  1.160,  0.910, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      7038.73600,  -1.760,  2.1007,  1.5,  3.8617,  0.5,  0.420,  0.040,  0.510, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      7101.62200,   0.320,  3.7688,  1.5,  5.5142,  2.5,  1.160, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4D*'
+'  LS                                                   4d8.(3F).6s                     e2F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7104.46800,  -1.610,  1.8335,  3.5,  3.5781,  2.5,  1.230,  1.330,  1.100, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      7142.55200,  -0.020,  3.9023,  2.5,  5.6377,  2.5,  0.830, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7219.06100,  -1.710,  1.9860,  4.5,  3.7030,  3.5,  1.110,  1.150,  1.050, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1G).5s                         a2G'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      7268.17600,  -1.500,  1.8335,  3.5,  3.5388,  4.5,  1.230,  1.180,  1.100, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4G*'
+'_          Cu 1 - Ba 2 Bell   1  wl:DLb   1  gf:DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb   1     DLb             Rh'
+'Rh 1',      7270.81900,   0.390,  3.5388,  4.5,  5.2436,  3.5,  1.180, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'  LS                                                   4d8.(3F).6s                     e2F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7271.96700,  -1.600,  1.9985,  2.5,  3.7030,  3.5,  1.020,  1.150,  1.310, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      7273.04100,  -2.000,  1.9987,  3.5,  3.7030,  3.5,  0.900,  1.150,  1.020, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1G).5s                         a2G'
+'  LS                                                  4d8.(3F).5p                     z4F*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      7375.55400,  -1.650,  1.6764,  2.5,  3.3569,  3.5,  1.230,  1.410,  1.630, 0.000, 0.000, 0.000,
+'  LS                                               4d8.(1D).5s                         b2D'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      7386.60600,  -0.040,  4.0019,  1.5,  5.6799,  1.5,  0.560, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7430.81400,  -1.800,  2.1007,  1.5,  3.7688,  1.5,  0.420,  1.160,  0.790, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      7442.37600,   0.120,  3.5781,  2.5,  5.2436,  3.5,  1.330, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4D*'
+'  LS                                                   4d8.(3F).6s                     e2F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7446.78300,   0.110,  3.9732,  2.5,  5.6377,  2.5,  1.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2D*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7475.73400,   0.210,  3.8561,  3.5,  5.5142,  2.5,  1.020, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'  LS                                                   4d8.(3F).6s                     e2F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7495.21600,  -0.100,  3.5388,  4.5,  5.1926,  4.5,  1.180,  1.310,  1.250, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7542.02400,   0.660,  4.5611,  3.5,  6.2045,  2.5,  1.350, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3P).5p                         y4D*'
+'                                                                                          '
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7557.68700,   0.300,  3.9977,  2.5,  5.6377,  2.5,  0.940, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7577.22600,   0.200,  4.0019,  1.5,  5.6377,  2.5,  0.560, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7690.08500,   0.200,  3.9023,  2.5,  5.5142,  2.5,  0.830, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'  LS                                                   4d8.(3F).6s                     e2F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7772.91300,   0.170,  3.6490,  4.5,  5.2436,  3.5,  1.260, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'  LS                                                   4d8.(3F).6s                     e2F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7791.63900,   0.660,  3.9196,  4.5,  5.5104,  3.5,  1.160,  1.220,  1.040, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2G*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7824.93100,   0.610,  3.6085,  5.5,  5.1926,  4.5,  1.270,  1.310,  1.190, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      7846.54900,  -1.480,  1.9985,  2.5,  3.5781,  2.5,  1.020,  1.330,  1.170, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      8029.92000,   0.230,  3.6490,  4.5,  5.1926,  4.5,  1.260,  1.310,  1.290, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      8036.04600,   0.260,  3.9680,  3.5,  5.5104,  3.5,  1.120,  1.220,  1.170, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2F*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      8045.31900,   0.440,  3.7030,  3.5,  5.2436,  3.5,  1.150, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4F*'
+'  LS                                                   4d8.(3F).6s                     e2F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      8063.47000,   0.090,  3.9732,  2.5,  5.5104,  3.5,  1.000,  1.220,  1.500, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2D*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      8136.18800,  -1.330,  1.8335,  3.5,  3.3569,  3.5,  1.230,  1.410,  1.320, 0.000, 0.000, 0.000,
+'  LS                                               4d7.5s2                             b4F'
+'  LS                                                  4d8.(3F).5p                     z4D*'
+'_          Cu 1 - Ba 2 Bell   1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Rh'
+'Rh 1',      8193.66300,   0.110,  3.9977,  2.5,  5.5104,  3.5,  0.940,  1.220,  1.570, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z4G*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      8369.62800,   0.130,  4.1990,  1.5,  5.6799,  1.5,  0.910, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2D*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+'Rh 1',      8425.56500,   0.380,  4.2088,  2.5,  5.6799,  1.5,  1.010, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d8.(3F).5p                         z2F*'
+'  LS                                                   4d8.(3F).6s                     e4F'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Rh'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Cu 1 - Ba 2 Bell

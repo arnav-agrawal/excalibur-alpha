@@ -1,0 +1,29 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Na 2',      4087.59300,  -2.470, 33.3224,  1.0, 36.3547,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                            2s2.2p5.3s             1P*'
+'  LS                                                              2s2.2p5.3p            3S'
+'_          Li 1 - K 5 Bell    1   wl:KP   1   gf:KP   1      KP   1      KP   1      KP   1      KP   1      KP   1      KP   1      KP            Na+'
+'Na 2',      4113.70300,  -0.960, 38.2939,  0.0, 41.3069,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                             2s2.2p5.3p             1S'
+'  JK                                                         2s2.2p5.(2P*<1/2>).3d 2[3/2]*'
+'_          Li 1 - K 5 Bell    1   wl:KP   1   gf:KP   1      KP   1      KP   1      KP   1      KP   1      KP   1      KP   1      KP            Na+'
+'Na 2',      4123.06900,  -1.160, 38.2939,  0.0, 41.3001,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                             2s2.2p5.3p             1S'
+'  JK                                                         2s2.2p5.(2P*<1/2>).4s 2[1/2]*'
+'_          Li 1 - K 5 Bell    1   wl:KP   1   gf:KP   1      KP   1      KP   1      KP   1      KP   1      KP   1      KP   1      KP            Na+'
+'Na 2',      4344.12400,  -1.590, 38.2939,  0.0, 41.1471,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                             2s2.2p5.3p             1S'
+'  JK                                                         2s2.2p5.(2P*<3/2>).4s 2[3/2]*'
+'_          Li 1 - K 5 Bell    1   wl:KP   1   gf:KP   1      KP   1      KP   1      KP   1      KP   1      KP   1      KP   1      KP            Na+'
+'Na 2',      4368.58800,  -0.280, 38.2939,  0.0, 41.1311,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                             2s2.2p5.3p             1S'
+'  JK                                                         2s2.2p5.(2P*<3/2>).3d 2[3/2]*'
+'_          Li 1 - K 5 Bell    1   wl:KP   1   gf:KP   1      KP   1      KP   1      KP   1      KP   1      KP   1      KP   1      KP            Na+'
+'Na 2',      4590.93600,  -2.040, 38.2939,  0.0, 40.9937,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                             2s2.2p5.3p             1S'
+'  JK                                                         2s2.2p5.(2P*<3/2>).3d 2[1/2]*'
+'_          Li 1 - K 5 Bell    1   wl:KP   1   gf:KP   1      KP   1      KP   1      KP   1      KP   1      KP   1      KP   1      KP            Na+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Li 1 - K 5 Bell

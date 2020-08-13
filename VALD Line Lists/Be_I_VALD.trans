@@ -1,0 +1,90 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Be 1',      4407.93700,  -1.580,  5.2774,  1.0,  8.0894,  0.0, 99.000, 99.000, 99.000, 8.840,-4.450, 0.000,
+'  LS                                                            1s2.2s.2p              1P*'
+'  LS                                                              1s2.2s.4s             1S'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG             Be'
+'Be 1',      4548.53900,  -8.595,  0.0000,  0.0,  2.7250,  1.0, 99.000, 99.000, 99.000,-0.560, 0.000, 0.000,
+'  LS                                                             1s2.2s2                1S'
+'  LS                                                             1s2.2s.2p             3P*'
+'_          Li 1 - K 5 Bell    1   wl:LV   1   gf:LV   1      LV   1      LV   1      LV   1      LV   1      LV   1      LV   1      LV             Be'
+'Be 1',      4572.66500,   0.591,  5.2774,  1.0,  7.9881,  2.0, 99.000, 99.000, 99.000, 8.970,-4.850,-7.094,
+'  LS                                                            1s2.2s.2p              1P*'
+'  LS                                                              1s2.2s.3d             1D'
+'_          Li 1 - K 5 Bell    1  wl:PST   1  gf:PST   1     PST   1     PST   1     PST   1     PST   1     PST   2     BPM   1     PST             Be'
+'Be 1',      6982.73900,  -1.620,  5.2774,  1.0,  7.0525,  2.0, 99.000, 99.000, 99.000, 8.840, 0.000, 0.000,
+'  LS                                                            1s2.2s.2p              1P*'
+'  LS                                                              1s2.2p2               1D'
+'_          Li 1 - K 5 Bell    1  wl:LCV   1  gf:LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV             Be'
+'Be 1',      8238.62000,  -8.187,  6.7791,  0.0,  8.2836,  1.0, 99.000, 99.000, 99.000, 7.640, 0.000, 0.000,
+'  LS                                                             1s2.2s.3s              1S'
+'  LS                                                             1s2.2s.4p             3P*'
+'_          Li 1 - K 5 Bell    1   wl:LV   1   gf:LV   1      LV   1      LV   1      LV   1      LV   1      LV   1      LV   1      LV             Be'
+'Be 1',      8254.06700,  -0.353,  5.2774,  1.0,  6.7791,  0.0, 99.000, 99.000, 99.000, 8.860,-5.190,-7.260,
+'  LS                                                            1s2.2s.2p              1P*'
+'  LS                                                              1s2.2s.3s             1S'
+'_          Li 1 - K 5 Bell    1  wl:LCV   1  gf:LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   2     BPM   1     LCV             Be'
+'Be 1',      8837.93800,  -2.222,  7.4623,  1.0,  8.8648,  0.0, 99.000, 99.000, 99.000, 8.500, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              1P*'
+'  LS                                                              1s2.2p2               1S'
+'_          Li 1 - K 5 Bell    1  wl:LCV   1  gf:LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV             Be'
+'Be 1',      14643.9560,   0.259,  6.4572,  1.0,  7.3036,  2.0, 99.000, 99.000, 99.000, 8.140, 0.000, 0.000,
+'  LS                                                             1s2.2s.3s              3S'
+'  LS                                                             1s2.2s.3p             3P*'
+'_          Li 1 - K 5 Bell    1  wl:PST   1  gf:PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST             Be'
+'Be 1',      14644.7710,   0.039,  6.4572,  1.0,  7.3036,  1.0, 99.000, 99.000, 99.000, 8.140, 0.000, 0.000,
+'  LS                                                             1s2.2s.3s              3S'
+'  LS                                                             1s2.2s.3p             3P*'
+'_          Li 1 - K 5 Bell    1  wl:PST   1  gf:PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST             Be'
+'Be 1',      14644.7710,  -0.431,  6.4572,  1.0,  7.3036,  0.0, 99.000, 99.000, 99.000, 8.140, 0.000, 0.000,
+'  LS                                                             1s2.2s.3s              3S'
+'  LS                                                             1s2.2s.3p             3P*'
+'_          Li 1 - K 5 Bell    1  wl:PST   1  gf:PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST             Be'
+'Be 1',      18143.6020,  -0.026,  6.7791,  0.0,  7.4623,  1.0, 99.000, 99.000, 99.000, 8.120, 0.000, 0.000,
+'  LS                                                             1s2.2s.3s              1S'
+'  LS                                                             1s2.2s.3p             1P*'
+'_          Li 1 - K 5 Bell    1  wl:LCV   1  gf:LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV             Be'
+'Be 1',      23573.0790,  -1.523,  7.4623,  1.0,  7.9881,  2.0, 99.000, 99.000, 99.000, 8.530, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              1P*'
+'  LS                                                              1s2.2s.3d             1D'
+'_          Li 1 - K 5 Bell    1  wl:PST   1  gf:PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST             Be'
+'Be 1',      23633.1510,  -8.199,  6.7791,  0.0,  7.3036,  1.0, 99.000, 99.000, 99.000, 7.740, 0.000, 0.000,
+'  LS                                                             1s2.2s.3s              1S'
+'  LS                                                             1s2.2s.3p             3P*'
+'_          Li 1 - K 5 Bell    1   wl:LV   1   gf:LV   1      LV   1      LV   1      LV   1      LV   1      LV   1      LV   1      LV             Be'
+'Be 1',      30249.7590,  -0.387,  7.0525,  2.0,  7.4623,  1.0, 99.000, 99.000, 99.000, 7.950, 0.000, 0.000,
+'  LS                                                             1s2.2p2                1D'
+'  LS                                                             1s2.2s.3p             1P*'
+'_          Li 1 - K 5 Bell    1  wl:LCV   1  gf:LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV             Be'
+'Be 1',      31775.0010,   0.167,  7.3036,  1.0,  7.6937,  2.0, 99.000, 99.000, 99.000, 8.170, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              3P*'
+'  LS                                                              1s2.2s.3d             3D'
+'_          Li 1 - K 5 Bell    1  wl:PST   1  gf:PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST             Be'
+'Be 1',      31775.0010,  -0.183,  7.3036,  0.0,  7.6937,  1.0, 99.000, 99.000, 99.000, 8.180, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              3P*'
+'  LS                                                              1s2.2s.3d             3D'
+'_          Li 1 - K 5 Bell    1  wl:PST   1  gf:PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST             Be'
+'Be 1',      31775.0010,  -0.313,  7.3036,  1.0,  7.6937,  1.0, 99.000, 99.000, 99.000, 8.170, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              3P*'
+'  LS                                                              1s2.2s.3d             3D'
+'_          Li 1 - K 5 Bell    1  wl:PST   1  gf:PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST             Be'
+'Be 1',      31778.8390,   0.437,  7.3036,  2.0,  7.6937,  3.0, 99.000, 99.000, 99.000, 8.170, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              3P*'
+'  LS                                                              1s2.2s.3d             3D'
+'_          Li 1 - K 5 Bell    1  wl:PST   1  gf:PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST             Be'
+'Be 1',      31778.8390,  -0.313,  7.3036,  2.0,  7.6937,  2.0, 99.000, 99.000, 99.000, 8.170, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              3P*'
+'  LS                                                              1s2.2s.3d             3D'
+'_          Li 1 - K 5 Bell    1  wl:PST   1  gf:PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST             Be'
+'Be 1',      31778.8390,  -1.483,  7.3036,  2.0,  7.6937,  1.0, 99.000, 99.000, 99.000, 8.170, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              3P*'
+'  LS                                                              1s2.2s.3d             3D'
+'_          Li 1 - K 5 Bell    1  wl:PST   1  gf:PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST   1     PST             Be'
+'Be 1',      63817.1420,  -6.282,  8.0894,  0.0,  8.2836,  1.0, 99.000, 99.000, 99.000, 6.960, 0.000, 0.000,
+'  LS                                                             1s2.2s.4s              1S'
+'  LS                                                             1s2.2s.4p             3P*'
+'_          Li 1 - K 5 Bell    1   wl:LV   1   gf:LV   1      LV   1      LV   1      LV   1      LV   1      LV   1      LV   1      LV             Be'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Li 1 - K 5 Bell
+  2. Van der Waals data

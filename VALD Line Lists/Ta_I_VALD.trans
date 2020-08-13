@@ -1,0 +1,1421 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Ta 1',      4003.68800,  -1.890,  0.6969,  4.5,  3.7928,  3.5,  1.270,  1.040,  1.670, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(3F).6p             4G*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4006.82500,  -1.690,  0.2492,  2.5,  3.3427,  3.5,  1.030,  1.220,  1.460, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(3P).6p            4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4007.23000,  -1.050,  1.9718,  1.5,  5.0650,  2.5,  1.200,  1.260,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4013.18200,  -1.200,  1.5169,  3.5,  4.6055,  2.5,  1.580,  1.500,  1.670, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.(4P).6s.6p             6S*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4026.93600,  -1.410,  0.7524,  1.5,  3.8305,  1.5,  1.530,  1.810,  1.670, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5P).6p           z4S*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4033.08200,  -1.150,  1.4620,  0.5,  4.5353,  1.5,  1.120,  0.720,  0.620, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a4F).6p           a4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4033.61400,  -2.700,  0.2492,  2.5,  3.3221,  2.5,  1.030,  1.420,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4035.87400,  -1.370,  1.3577,  1.5,  4.4288,  1.5,  1.410,  1.010,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.(4F).6s.6p             2D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4040.86600,  -1.540,  0.6969,  4.5,  3.7643,  5.5,  1.270,  1.330,  1.470, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4041.05400,  -2.230,  0.0000,  1.5,  3.0672,  1.5,  0.450,  1.620,  1.030, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4058.47500,  -1.340,  1.3940,  2.5,  4.4481,  2.5,  1.640,  1.490,  1.570, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4061.37700,  -1.130,  0.7500,  0.5,  3.8019,  1.5,  2.450,  1.810,  1.650, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4064.59500,  -1.430,  0.7524,  1.5,  3.8019,  1.5,  1.530,  1.810,  1.670, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4067.21100,  -1.930,  0.2492,  2.5,  3.2967,  1.5,  1.030,  1.580,  0.620, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4067.89000,  -1.490,  0.2492,  2.5,  3.2962,  3.5,  1.030,  1.360,  1.760, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4072.98000,  -1.080,  1.9082,  4.5,  4.9514,  3.5,  1.010,  1.290,  0.520, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2H'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4085.78900,  -0.860,  2.1356,  2.5,  5.1692,  1.5,  0.880,  1.180,  0.660, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d2.(3P).6s2.6p            2P*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4091.26300,  -1.020,  1.9718,  1.5,  5.0014,  1.5,  1.200,  0.960,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4097.17700,  -1.980,  0.6969,  4.5,  3.7222,  4.5,  1.270,  1.190,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s,(5P).6p             6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4105.01200,  -1.840,  0.2492,  2.5,  3.2687,  1.5,  1.030,  1.390,  0.760, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4114.78000,  -2.090,  1.2033,  3.5,  4.2156,  2.5,  0.910,  1.140,  0.630, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.(4F).6s.(5F).6p        4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4127.88000,  -1.850,  0.4915,  3.5,  3.4942,  3.5,  1.220,  1.120,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.(4F).6s.6p             6D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4129.44200,  -1.600,  0.2492,  2.5,  3.2508,  2.5,  1.030,  1.340,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4136.20100,  -1.510,  0.4915,  3.5,  3.4882,  2.5,  1.220,  1.390,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4147.87900,  -1.500,  0.6969,  4.5,  3.6852,  3.5,  1.270,  1.220,  1.370, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4175.17900,  -1.050,  1.1473,  2.5,  4.1160,  3.5,  1.580,  1.570,  1.550, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4177.87500,  -1.120,  1.4620,  0.5,  4.4288,  1.5,  1.120,  1.010,  0.980, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.(4F).6s.6p             2D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4181.15300,  -1.280,  1.2033,  3.5,  4.1678,  4.5,  0.910,  1.070,  1.340, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4193.09700,  -1.500,  1.3577,  1.5,  4.3137,  2.5,  1.410,  1.480,  1.540, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.(4P).6s.(5P).6p        4P*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4205.88500,  -1.350,  0.4915,  3.5,  3.4385,  4.5,  1.220,  1.390,  1.690, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4228.62200,  -1.130,  1.5169,  3.5,  4.4481,  2.5,  1.580,  1.490,  1.690, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4243.99400,  -1.780,  1.3940,  2.5,  4.3146,  3.5,  1.640,  1.210,  0.670, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s,(3F).6p             4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4245.34400,  -1.110,  1.3940,  2.5,  4.3137,  2.5,  1.640,  1.480,  1.560, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.(4P).6s.(5P).6p        4P*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4268.23200,  -0.610,  1.9082,  4.5,  4.8122,  4.5,  1.010,  1.090,  1.050, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2H'
+'  LS                                                        5d3.6s.(a3H).6p           z4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4271.51000,  -1.490,  1.3254,  4.5,  4.2272,  3.5,  1.060,  1.510,  0.270, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4279.05200,  -2.310,  0.0000,  1.5,  2.8967,  2.5,  0.450,  1.080,  1.550, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4286.38100,  -0.460,  2.3778,  2.5,  5.2695,  2.5,  0.850,  1.250,  1.050, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6G*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4294.38000,  -1.240,  1.6554,  4.5,  4.5417,  4.5,  1.530,  1.210,  1.370, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(3F).6p             4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4302.95300,  -1.120,  1.1473,  2.5,  4.0278,  2.5,  1.580,  1.690,  1.630, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4314.52200,  -2.010,  0.2492,  2.5,  3.1221,  2.5,  1.030,  1.240,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4318.81300,  -1.240,  1.5952,  2.5,  4.4652,  2.5,  1.210,  0.990,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.6s.(a3H).6p           z4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4329.55700,  -0.760,  1.9718,  1.5,  4.8347,  1.5,  1.200,  1.030,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.(4F).6s.(3F).6p        4D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4336.19500,  -0.190,  2.9665,  3.5,  5.8250,  2.5,  1.330, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a3F).6p          z4D*'
+'                                                                                          '
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4355.10200,   0.180,  2.8122,  4.5,  5.6582,  4.5,  1.230,  1.410,  1.320, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6G*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4360.79200,  -1.670,  1.3254,  4.5,  4.1678,  4.5,  1.060,  1.070,  1.070, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4369.36100,  -1.330,  1.5952,  2.5,  4.4320,  3.5,  1.210,  1.100,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4374.17500,  -1.630,  1.5952,  2.5,  4.4288,  1.5,  1.210,  1.010,  1.370, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.(4F).6s.6p             2D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4375.14200,  -1.030,  1.9718,  1.5,  4.8049,  2.5,  1.200,  0.950,  0.770, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.(4F).6s.(3F).6p        4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4377.95300,  -0.160,  3.0974,  3.5,  5.9286,  3.5,  1.240, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z4F*'
+'  LS                                                         5d3.6s.(a5F).7s           e4F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4378.81000,  -1.810,  0.4915,  3.5,  3.3221,  2.5,  1.220,  1.420,  0.970, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4381.88500,  -0.690,  2.6244,  2.5,  5.4531,  3.5,  1.120,  1.430,  1.820, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a3F).6p          z4D*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4386.06000,  -1.500,  0.7524,  1.5,  3.5784,  2.5,  1.530,  1.250,  1.040, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(3F).6p             4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4398.44400,  -1.990,  0.2492,  2.5,  3.0672,  1.5,  1.030,  1.620,  0.590, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4402.50000,  -1.130,  1.1473,  2.5,  3.9627,  2.5,  1.580,  1.680,  1.630, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4415.74300,  -1.550,  0.7500,  0.5,  3.5570,  1.5,  2.450,  1.360,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(3F).6p             4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4419.54700,  -1.990,  0.7524,  1.5,  3.5570,  1.5,  1.530,  1.360,  1.440, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(3F).6p             4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4424.97000,  -0.630,  2.5598,  3.5,  5.3610,  2.5,  0.820,  0.970,  0.620, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3H).6s             a4H'
+'  LS                                                        5d3.(2H).6s.6p             4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4430.40800,  -1.360,  1.5169,  3.5,  4.3146,  3.5,  1.580,  1.210,  1.390, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s,(3F).6p             4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4431.07300,  -2.170,  0.6969,  4.5,  3.4942,  3.5,  1.270,  1.120,  1.550, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.(4F).6s.6p             6D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4432.98500,  -1.210,  1.9082,  4.5,  4.7043,  4.5,  1.010,  0.880,  0.950, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2H'
+'  LS                                                        5d3.6s.(a3H).6p           z4I*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4441.03800,  -1.530,  1.2368,  1.5,  4.0278,  2.5,  1.540,  1.690,  1.800, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4441.73000,  -1.410,  1.3254,  4.5,  4.1160,  3.5,  1.060,  1.570,  0.180, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4450.71000,  -1.170,  1.6554,  4.5,  4.4403,  5.5,  1.530,  1.200,  0.450, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.(4F).6s.(5F).6p        4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4451.90900,  -2.110,  1.2100,  0.5,  3.9941,  1.5,  3.020,  0.730,  0.150, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(3F).6p             4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4459.77200,  -0.360,  2.3778,  2.5,  5.1571,  1.5,  0.850,  1.000,  0.740, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6G*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4473.51400,  -1.400,  1.1473,  2.5,  3.9180,  3.5,  1.580,  1.090,  0.480, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d2.6s2.(1D).6p            2F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4480.88900,   0.050,  3.1007,  5.5,  5.8669,  5.5,  1.300,  1.430,  1.370, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6G*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4496.49200,  -2.470,  0.2492,  2.5,  3.0058,  1.5,  1.030,  1.130,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4510.97100,  -1.170,  0.6969,  4.5,  3.4447,  5.5,  1.270,  1.350,  1.530, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(3F).6p            4G*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4511.45600,  -1.730,  0.6969,  4.5,  3.4444,  3.5,  1.270,  1.370,  1.090, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4521.08400,  -1.980,  0.6969,  4.5,  3.4385,  4.5,  1.270,  1.390,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4530.80000,  -1.470,  0.7524,  1.5,  3.4882,  2.5,  1.530,  1.390,  1.290, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4547.15500,  -1.890,  1.2368,  1.5,  3.9627,  2.5,  1.540,  1.680,  1.790, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4551.95600,  -1.710,  0.4915,  3.5,  3.2145,  4.5,  1.220,  1.290,  1.420, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4553.67700,  -1.580,  1.3940,  2.5,  4.1160,  3.5,  1.640,  1.570,  1.480, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4556.33000,  -1.310,  1.3940,  2.5,  4.1144,  2.5,  1.640,  1.270,  1.460, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(3F).6p             4G*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4559.46500,  -1.470,  1.5952,  2.5,  4.3137,  2.5,  1.210,  1.480,  1.350, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.(4P).6s.(5P).6p        4P*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4561.47700,  -2.840,  0.2492,  2.5,  2.9665,  3.5,  1.030,  1.330,  1.690, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4565.85400,  -1.120,  1.2033,  3.5,  3.9180,  3.5,  0.910,  1.090,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d2.6s2.(1D).6p            2F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4566.84500,  -0.100,  3.2145,  4.5,  5.9286,  3.5,  1.290, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z4F*'
+'  LS                                                         5d3.6s.(a5F).7s           e4F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4573.30500,  -1.550,  1.5169,  3.5,  4.2272,  3.5,  1.580,  1.510,  1.550, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4574.31500,  -1.790,  0.0000,  1.5,  2.7097,  1.5,  0.450,  0.670,  0.560, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4580.69300,  -2.150,  1.2033,  3.5,  3.9092,  4.5,  0.910,  1.090,  1.390, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(3F).6p             4G*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4583.15700,  -2.170,  1.1473,  2.5,  3.8517,  1.5,  1.580,  2.110,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4601.42300,  -1.200,  1.9718,  1.5,  4.6655,  2.5,  1.200,  1.210,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4602.19600,  -1.770,  1.2033,  3.5,  3.8966,  2.5,  0.910, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4604.29900,  -0.750,  2.7808,  5.5,  5.4728,  5.5,  1.160,  1.120,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3H).6s             a4H'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4604.85000,  -0.280,  2.9665,  3.5,  5.6582,  4.5,  1.330,  1.410,  1.560, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a3F).6p          z4D*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4619.51300,  -1.090,  1.1473,  2.5,  3.8305,  1.5,  1.580,  1.810,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5P).6p           z4S*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4633.03500,  -1.640,  1.2368,  1.5,  3.9122,  1.5,  1.540,  0.890,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(1D).6p            2D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4661.07800,  -1.230,  1.6554,  4.5,  4.3146,  3.5,  1.530,  1.210,  2.100, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s,(3F).6p             4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4669.13900,  -1.510,  1.1473,  2.5,  3.8019,  1.5,  1.580,  1.810,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4681.87400,  -1.570,  0.2492,  2.5,  2.8967,  2.5,  1.030,  1.080,  1.050, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4684.85200,  -2.190,  0.6969,  4.5,  3.3427,  3.5,  1.270,  1.220,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(3P).6p            4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4685.26900,  -1.990,  1.1473,  2.5,  3.7928,  3.5,  1.580,  1.040,  0.370, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(3F).6p             4G*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4688.84900,  -1.410,  2.1356,  2.5,  4.7791,  1.5,  0.880,  1.360,  0.520, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4691.89900,  -1.370,  1.2100,  0.5,  3.8517,  1.5,  3.020,  2.110,  1.880, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4693.36400,  -0.100,  2.8122,  4.5,  5.4531,  3.5,  1.230,  1.430,  0.880, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6G*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4701.30900,  -1.560,  1.3577,  1.5,  3.9941,  1.5,  1.410,  0.730,  1.070, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(3F).6p             4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4706.09000,  -1.460,  1.3940,  2.5,  4.0278,  2.5,  1.640,  1.690,  1.660, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4722.87800,  -2.600,  0.0000,  1.5,  2.6244,  2.5,  0.450,  1.120,  1.620, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4730.12200,  -1.310,  1.5952,  2.5,  4.2156,  2.5,  1.210,  1.140,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.(4F).6s.(5F).6p        4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4740.13900,  -1.280,  1.2368,  1.5,  3.8517,  1.5,  1.540,  2.110,  1.830, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4745.91300,  -1.120,  2.1552,  3.5,  4.7669,  2.5,  1.120,  1.040,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.6s.(a3G).6p           y4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4756.51200,  -1.610,  0.4915,  3.5,  3.0974,  3.5,  1.220,  1.240,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4758.03600,  -1.700,  1.3577,  1.5,  3.9627,  2.5,  1.410,  1.680,  1.890, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4768.97800,  -1.180,  1.5169,  3.5,  4.1160,  3.5,  1.580,  1.570,  1.570, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4780.92000,  -1.410,  1.3254,  4.5,  3.9180,  3.5,  1.060,  1.090,  1.020, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d2.6s2.(1D).6p            2F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4786.65700,  -2.210,  1.2033,  3.5,  3.7928,  3.5,  0.910,  1.040,  0.980, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(3F).6p             4G*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4812.75400,  -1.860,  0.0000,  1.5,  2.5754,  1.5,  0.450,  0.810,  0.630, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(a3P).6p          z2D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4819.50800,  -1.280,  1.6554,  4.5,  4.2272,  3.5,  1.530,  1.510,  1.560, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4825.42100,  -1.390,  1.3940,  2.5,  3.9627,  2.5,  1.640,  1.680,  1.660, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4832.17100,  -1.850,  1.2368,  1.5,  3.8019,  1.5,  1.540,  1.810,  1.680, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4846.42600,   0.020,  3.1007,  5.5,  5.6582,  4.5,  1.300,  1.410,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6G*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4852.14900,  -1.700,  1.3577,  1.5,  3.9122,  1.5,  1.410,  0.890,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d2.6s2.(1D).6p            2D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4871.66800,  -2.480,  0.7524,  1.5,  3.2967,  1.5,  1.530,  1.580,  1.550, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4879.14500,  -0.820,  2.9648,  4.5,  5.5052,  4.5,  1.180,  1.150,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3G).6s             a4G'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4881.96600,  -2.390,  1.3577,  1.5,  3.8966,  2.5,  1.410, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4883.94800,  -1.820,  1.1473,  2.5,  3.6852,  3.5,  1.580,  1.220,  0.760, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4907.70600,  -2.710,  0.2492,  2.5,  2.7748,  3.5,  1.030,  1.060,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(3F).6p            4G*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4914.95400,  -2.790,  0.0000,  1.5,  2.5219,  0.5,  0.450,  1.960,  0.070, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(a3P).6p          z2S*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4920.12800,  -1.210,  1.5952,  2.5,  4.1144,  2.5,  1.210,  1.270,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.6s.(3F).6p             4G*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4921.27400,  -1.820,  0.7500,  0.5,  3.2687,  1.5,  2.450,  1.390,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4923.44800,  -2.550,  0.6969,  4.5,  3.2145,  4.5,  1.270,  1.290,  1.280, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      4924.95900,  -1.430,  2.1356,  2.5,  4.6523,  1.5,  0.880,  0.970,  0.810, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4926.00000,  -1.760,  0.7524,  1.5,  3.2687,  1.5,  1.530,  1.390,  1.460, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4936.40800,  -1.090,  1.5169,  3.5,  4.0278,  2.5,  1.580,  1.690,  1.440, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4937.63200,  -1.110,  2.1552,  3.5,  4.6655,  2.5,  1.120,  1.210,  1.020, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4968.53100,  -0.810,  2.7748,  3.5,  5.2695,  2.5,  1.060,  1.250,  0.820, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z4G*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      4969.75100,  -1.830,  1.3577,  1.5,  3.8517,  1.5,  1.410,  2.110,  1.760, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      4976.20500,  -2.160,  1.1473,  2.5,  3.6381,  2.5,  1.580,  0.810,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(3F).6p             4G*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5012.52800,  -1.650,  1.3577,  1.5,  3.8305,  1.5,  1.410,  1.810,  1.610, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a5P).6p           z4S*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5037.31800,  -0.950,  1.6554,  4.5,  4.1160,  3.5,  1.530,  1.570,  1.470, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5037.65500,  -2.380,  0.2492,  2.5,  2.7097,  1.5,  1.030,  0.670,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5043.31300,  -1.510,  1.3940,  2.5,  3.8517,  1.5,  1.640,  2.110,  1.290, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5058.68300,  -1.440,  2.1552,  3.5,  4.6055,  2.5,  1.120,  1.500,  0.650, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.(4P).6s.6p             6S*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5067.86900,  -1.320,  1.5169,  3.5,  3.9627,  2.5,  1.580,  1.680,  1.450, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5076.37900,  -1.200,  2.1552,  3.5,  4.5969,  4.5,  1.120,  1.050,  0.910, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.6s.(a3H).6p           z4H*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5082.23500,  -1.960,  1.3254,  4.5,  3.7643,  5.5,  1.060,  1.330,  1.940, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5087.37100,  -1.710,  1.3940,  2.5,  3.8305,  1.5,  1.640,  1.810,  1.520, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           z4S*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5090.72900,  -1.580,  1.2033,  3.5,  3.6381,  2.5,  0.910,  0.810,  1.030, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(3F).6p             4G*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5095.21700,  -1.660,  1.5952,  2.5,  4.0278,  2.5,  1.210,  1.690,  1.450, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5109.78300,  -2.590,  0.6969,  4.5,  3.1227,  4.5,  1.270, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(3F).6p            4G*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5117.18000,   0.000,  3.4447,  5.5,  5.8669,  5.5,  1.350,  1.430,  1.390, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s2.(3F).6p           4G*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5136.46800,  -2.270,  0.7500,  0.5,  3.1632,  0.5,  2.450,  0.030,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5141.61600,  -1.760,  0.7524,  1.5,  3.1632,  0.5,  1.530,  0.030,  1.900, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5143.69000,  -1.590,  1.1473,  2.5,  3.5570,  1.5,  1.580,  1.360,  1.750, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(3F).6p             4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5147.62300,  -1.680,  1.3940,  2.5,  3.8019,  1.5,  1.640,  1.810,  1.510, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5148.75500,  -1.460,  2.1552,  3.5,  4.5626,  3.5,  1.120,  1.130,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.6s.(a3H).6p           z4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5150.89400,  -1.700,  1.9082,  4.5,  4.3146,  3.5,  1.010,  1.210,  0.670, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2H'
+'  LS                                                        5d3.6s,(3F).6p             4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5153.42400,  -2.290,  0.4915,  3.5,  2.8967,  2.5,  1.220,  1.080,  1.390, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5156.44900,  -1.390,  0.6969,  4.5,  3.1007,  5.5,  1.270,  1.300,  1.370, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6G*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5161.81100,  -1.630,  1.2368,  1.5,  3.6381,  2.5,  1.540,  0.810,  0.270, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(3F).6p             4G*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5163.63500,  -2.110,  0.6969,  4.5,  3.0974,  3.5,  1.270,  1.240,  1.340, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5166.79500,  -1.920,  1.5952,  2.5,  3.9941,  1.5,  1.210,  0.730,  1.580, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.6s.(3F).6p             4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5171.63000,  -2.070,  1.3254,  4.5,  3.7222,  4.5,  1.060,  1.190,  1.120, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s,(5P).6p             6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5180.92700,  -0.740,  2.7097,  1.5,  5.1021,  0.5,  0.670, -0.660,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z4F*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5188.93600,  -2.020,  1.5952,  2.5,  3.9839,  3.5,  1.210,  0.850,  0.390, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5193.89100,  -1.570,  2.1552,  3.5,  4.5417,  4.5,  1.120,  1.210,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.6s.(3F).6p             4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5212.73400,  -2.250,  0.0000,  1.5,  2.3778,  2.5,  0.450,  0.850,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6G*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5218.43200,  -2.110,  0.2492,  2.5,  2.6244,  2.5,  1.030,  1.120,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5230.80100,  -2.290,  0.7524,  1.5,  3.1221,  2.5,  1.530,  1.240,  1.020, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5235.39200,  -1.780,  1.5952,  2.5,  3.9627,  2.5,  1.210,  1.680,  1.450, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.6s.(a5P).6p           z6P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5244.78000,  -2.060,  1.2033,  3.5,  3.5666,  4.5,  0.910,  1.340,  2.080, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5281.05600,  -2.320,  1.2100,  0.5,  3.5570,  1.5,  3.020,  1.360,  0.940, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(3F).6p             4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5295.01100,  -1.720,  1.1473,  2.5,  3.4882,  2.5,  1.580,  1.390,  1.490, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5318.64800,  -0.360,  3.1227,  4.5,  5.4531,  3.5, 99.000,  1.430, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s2.(3F).6p           4G*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5328.37700,  -2.250,  0.2492,  2.5,  2.5754,  1.5,  1.030,  0.810,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(a3P).6p          z2D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5336.12500,  -1.770,  1.5952,  2.5,  3.9180,  3.5,  1.210,  1.090,  0.930, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d2.6s2.(1D).6p            2F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5341.02500,  -2.000,  0.4915,  3.5,  2.8122,  4.5,  1.220,  1.230,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d3.6s.(a5F).6p           z6G*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5342.25000,  -2.150,  1.2368,  1.5,  3.5570,  1.5,  1.540,  1.360,  1.450, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(3F).6p             4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5349.07900,  -2.220,  0.7500,  0.5,  3.0672,  1.5,  2.450,  1.620,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5349.56200,  -1.450,  1.5952,  2.5,  3.9122,  1.5,  1.210,  0.890,  1.460, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d2.6s2.(1D).6p            2D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5354.66300,  -2.120,  0.7524,  1.5,  3.0672,  1.5,  1.530,  1.620,  1.570, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5365.94900,  -1.720,  2.1552,  3.5,  4.4652,  2.5,  1.120,  0.990,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.6s.(a3H).6p           z4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5388.48900,  -0.110,  3.5666,  4.5,  5.8669,  5.5,  1.340,  1.430,  1.650, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6D*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5395.97200,  -1.930,  1.1473,  2.5,  3.4444,  3.5,  1.580,  1.370,  1.120, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5397.56900,  -1.530,  2.1356,  2.5,  4.4320,  3.5,  0.880,  1.100,  1.370, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5402.52500,  -2.040,  0.0000,  1.5,  2.2943,  0.5,  0.450,  0.170,  0.520, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5403.50900,  -2.090,  1.8739,  5.5,  4.1678,  4.5,  1.020,  1.070,  0.920, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2H'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5404.91700,  -1.290,  2.1356,  2.5,  4.4288,  1.5,  0.880,  1.010,  0.790, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.(4F).6s.6p             2D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5405.84600,  -1.810,  2.1552,  3.5,  4.4481,  2.5,  1.120,  1.490,  0.670, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5410.56500,  -2.310,  1.2033,  3.5,  3.4942,  3.5,  0.910,  1.120,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.(4F).6s.6p             6D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5413.48100,  -2.500,  0.7500,  0.5,  3.0397,  0.5,  2.450,  2.890,  2.670, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5419.20000,  -1.800,  0.7524,  1.5,  3.0397,  0.5,  1.530,  2.890,  1.190, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5435.26900,  -1.640,  1.3577,  1.5,  3.6381,  2.5,  1.410,  0.810,  0.370, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(3F).6p             4G*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5461.28000,  -2.020,  0.6969,  4.5,  2.9665,  3.5,  1.270,  1.330,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5475.57200,  -0.580,  2.7808,  5.5,  5.0445,  4.5,  1.160,  1.210,  1.050, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3H).6s             a4H'
+'  LS                                                        5d3.6s.(a3G).6p           y4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5481.10800,  -1.010,  2.8957,  0.5,  5.1571,  1.5, -0.320,  1.000,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6F*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5483.41600,  -0.890,  2.8967,  2.5,  5.1571,  1.5,  1.080,  1.000,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z4F*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5494.79100,  -2.610,  0.7500,  0.5,  3.0058,  1.5,  2.450,  1.130,  0.790, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5499.45500,  -1.790,  1.6554,  4.5,  3.9092,  4.5,  1.530,  1.090,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(3F).6p             4G*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5500.68300,  -2.670,  0.7524,  1.5,  3.0058,  1.5,  1.530,  1.130,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5505.66400,  -2.310,  1.2368,  1.5,  3.4882,  2.5,  1.540,  1.390,  1.280, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5518.89700,  -0.980,  2.1552,  3.5,  4.4011,  4.5,  1.120,  0.940,  0.620, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5521.12800,  -1.590,  2.5598,  3.5,  4.8049,  2.5,  0.820,  0.950,  0.650, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3H).6s             a4H'
+'  LS                                                        5d3.(4F).6s.(3F).6p        4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5528.35800,  -3.080,  0.4915,  3.5,  2.7335,  2.5,  1.220,  1.180,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(a3P).6p          z2D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5545.17200,  -2.390,  1.5952,  2.5,  3.8305,  1.5,  1.210,  1.810,  0.770, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.6s.(a5P).6p           z4S*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5548.32000,  -1.650,  2.1356,  2.5,  4.3696,  1.5,  0.880,  1.530,  0.390, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.(4P).6s.(5P).6p        4P*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5583.98100,  -0.170,  3.4385,  4.5,  5.6582,  4.5,  1.390,  1.410,  1.400, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6F*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5598.73800,  -0.490,  3.4444,  3.5,  5.6582,  4.5,  1.370,  1.410,  1.480, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6D*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5599.48500,  -0.170,  3.4447,  5.5,  5.6582,  4.5,  1.350,  1.410,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s2.(3F).6p           4G*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5605.45300,  -2.000,  2.1552,  3.5,  4.3665,  4.5,  1.120,  1.580,  2.380, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.(4P).6s.6p             6D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5617.72800,  -1.270,  2.8957,  0.5,  5.1021,  0.5, -0.320, -0.660, -0.490, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6F*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5620.70000,  -1.690,  1.5169,  3.5,  3.7222,  4.5,  1.580,  1.190,  0.500, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s,(5P).6p             6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5635.70300,  -2.170,  1.3577,  1.5,  3.5570,  1.5,  1.410,  1.360,  1.380, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(3F).6p             4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5640.19000,  -1.820,  1.5952,  2.5,  3.7928,  3.5,  1.210,  1.040,  0.830, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.6s.(3F).6p             4G*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5645.90700,  -1.470,  1.1473,  2.5,  3.3427,  3.5,  1.580,  1.220,  0.780, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d2.6s2.(3P).6p            4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5664.89500,  -2.040,  0.2492,  2.5,  2.4373,  1.5,  1.030,  1.020,  1.040, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5688.24400,  -1.480,  2.1356,  2.5,  4.3146,  3.5,  0.880,  1.210,  1.620, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.6s,(3F).6p             4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5699.24100,  -2.030,  1.1473,  2.5,  3.3221,  2.5,  1.580,  1.420,  1.500, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5704.31700,  -1.320,  2.6227,  4.5,  4.7956,  3.5,  1.090,  1.050,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3H).6s             a4H'
+'  LS                                                        5d3.6s.(a3G).6p           y4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5706.26400,  -0.630,  3.0974,  3.5,  5.2695,  2.5,  1.240,  1.250,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z4F*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5715.22200,  -1.980,  1.3254,  4.5,  3.4942,  3.5,  1.060,  1.120,  0.970, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.(4F).6s.6p             6D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5716.55900,  -2.680,  1.5169,  3.5,  3.6852,  3.5,  1.580,  1.220,  1.400, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5746.68900,  -0.480,  3.2962,  3.5,  5.4531,  3.5,  1.360,  1.430,  1.390, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6F*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5761.62200,  -0.950,  3.0058,  1.5,  5.1571,  1.5,  1.130,  1.000,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6F*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5766.54400,  -2.210,  1.1473,  2.5,  3.2967,  1.5,  1.580,  1.580,  1.580, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5767.90900,  -2.160,  1.1473,  2.5,  3.2962,  3.5,  1.580,  1.360,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5771.91500,  -1.010,  3.1221,  2.5,  5.2695,  2.5,  1.240,  1.250,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6F*'
+'  LS                                                        5d3.6s.(a5F).7s           e6F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5776.74400,  -1.920,  0.7500,  0.5,  2.8957,  0.5,  2.450, -0.320,  1.070, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                         5d3.6s.(a5F).6p           z6F'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5779.98000,  -1.170,  2.5598,  3.5,  4.7043,  4.5,  0.820,  0.880,  0.980, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3H).6s             a4H'
+'  LS                                                        5d3.6s.(a3H).6p           z4I*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5780.68900,  -2.070,  0.7524,  1.5,  2.8967,  2.5,  1.530,  1.080,  0.740, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5811.09500,  -1.930,  0.4915,  3.5,  2.6244,  2.5,  1.220,  1.120,  1.340, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4F'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5816.51200,  -0.420,  3.3221,  2.5,  5.4531,  3.5,  1.420,  1.430,  1.450, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6D*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5843.91300,  -1.970,  1.2100,  0.5,  3.3310,  0.5,  3.020,  2.650,  2.840, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5849.65100,  -2.300,  1.3254,  4.5,  3.4444,  3.5,  1.060,  1.370,  0.520, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5877.34500,  -0.890,  1.6554,  4.5,  3.7643,  5.5,  1.530,  1.330,  0.890, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5882.27300,  -0.130,  2.9155,  6.5,  5.0226,  5.5,  1.220,  1.260,  1.090, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3H).6s             a4H'
+'  LS                                                        5d3.6s.(a3H).6p           z4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5901.91100,  -1.490,  1.3940,  2.5,  3.4942,  3.5,  1.640,  1.120,  0.460, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.(4F).6s.6p             6D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5916.50800,  -1.920,  1.4620,  0.5,  3.5570,  1.5,  1.120,  1.360,  1.420, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(3F).6p             4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5918.93900,  -1.650,  1.2368,  1.5,  3.3310,  0.5,  1.540,  2.650,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      5925.97400,  -1.830,  2.1356,  2.5,  4.2272,  3.5,  0.880,  1.510,  2.310, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.6s.(a5P).6p           y6D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5930.61700,  -2.330,  1.5952,  2.5,  3.6852,  3.5,  1.210,  1.220,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5931.03300,  -0.730,  3.0672,  1.5,  5.1571,  1.5,  1.620,  1.000,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6D*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5931.68400,  -1.710,  2.1356,  2.5,  4.2252,  1.5,  0.880,  1.090,  0.730, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.(4F).6s.6p             2D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5935.53700,  -0.940,  2.9648,  4.5,  5.0531,  3.5,  1.180,  1.130,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3G).6s             a4G'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5939.75100,  -1.490,  1.2100,  0.5,  3.2967,  1.5,  3.020,  1.580,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5944.02800,  -1.180,  1.2368,  1.5,  3.3221,  2.5,  1.540,  1.420,  1.320, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      5960.12300,  -0.950,  2.9648,  4.5,  5.0445,  4.5,  1.180,  1.210,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3G).6s             a4G'
+'  LS                                                        5d3.6s.(a3G).6p           y4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      5997.22900,  -0.910,  1.6554,  4.5,  3.7222,  4.5,  1.530,  1.190,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s,(5P).6p             6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6009.91300,  -0.730,  3.0397,  0.5,  5.1021,  0.5,  2.890, -0.660,  1.120, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6D*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6015.89100,  -1.600,  2.1552,  3.5,  4.2156,  2.5,  1.120,  1.140,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.(4F).6s.(5F).6p        4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6020.71700,  -1.550,  1.2100,  0.5,  3.2687,  1.5,  3.020,  1.390,  0.990, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6045.37600,  -0.960,  1.3940,  2.5,  3.4444,  3.5,  1.640,  1.370,  1.040, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6047.24100,  -1.120,  1.5169,  3.5,  3.5666,  4.5,  1.580,  1.340,  0.920, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6053.70400,  -2.150,  1.2033,  3.5,  3.2508,  2.5,  0.910,  1.340,  0.380, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6090.78200,  -0.560,  3.1221,  2.5,  5.1571,  1.5,  1.240,  1.000,  1.420, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6F*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6101.54300,  -0.390,  2.7808,  5.5,  4.8122,  4.5,  1.160,  1.090,  1.320, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3H).6s             a4H'
+'  LS                                                        5d3.6s.(a3H).6p           z4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6140.06400,  -0.530,  3.2508,  2.5,  5.2695,  2.5,  1.340,  1.250,  1.290, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a3P).6p          z4P*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6144.52800,  -1.740,  1.3254,  4.5,  3.3427,  3.5,  1.060,  1.220,  0.780, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d2.6s2.(3P).6p            4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6152.52200,  -0.250,  3.4385,  4.5,  5.4531,  3.5,  1.390,  1.430,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6F*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6154.48800,  -1.420,  1.2368,  1.5,  3.2508,  2.5,  1.540,  1.340,  1.190, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6158.82500,  -1.440,  2.1552,  3.5,  4.1678,  4.5,  1.120,  1.070,  0.970, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6170.44200,  -0.570,  3.4444,  3.5,  5.4531,  3.5,  1.370,  1.430,  1.400, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6D*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6208.42900,  -0.630,  3.1589,  1.5,  5.1554,  2.5,  0.770,  1.370,  1.810, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.6s                    2D'
+'  LS                                                        5d4.(a5D).6p              y6F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6249.81800,  -1.760,  1.5952,  2.5,  3.5784,  2.5,  1.210,  1.250,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d3.6s.(3F).6p             4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6256.66300,  -1.840,  0.7524,  1.5,  2.7335,  2.5,  1.530,  1.180,  0.920, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d2.6s2.(a3P).6p          z2D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6268.70800,  -1.180,  1.5169,  3.5,  3.4942,  3.5,  1.580,  1.120,  1.350, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.(4F).6s.6p             6D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6281.31600,  -1.720,  1.3577,  1.5,  3.3310,  0.5,  1.410,  2.650,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6287.91700,  -1.870,  1.5169,  3.5,  3.4882,  2.5,  1.580,  1.390,  1.810, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6289.30600,  -1.960,  1.3254,  4.5,  3.2962,  3.5,  1.060,  1.360,  0.550, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6309.57800,  -1.290,  1.3577,  1.5,  3.3221,  2.5,  1.410,  1.420,  1.420, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6325.10200,  -2.150,  0.7500,  0.5,  2.7097,  1.5,  2.450,  0.670,  0.220, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6332.91200,  -2.320,  0.7524,  1.5,  2.7097,  1.5,  1.530,  0.670,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6345.97700,  -1.990,  1.2100,  0.5,  3.1632,  0.5,  3.020,  0.030,  1.520, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6356.16000,  -1.760,  1.1473,  2.5,  3.0974,  3.5,  1.580,  1.240,  0.800, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6360.84800,  -1.690,  1.3940,  2.5,  3.3427,  3.5,  1.640,  1.220,  0.700, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(3P).6p            4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6373.03300,  -0.800,  2.8220,  3.5,  4.7669,  2.5,  1.010,  1.040,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3G).6s             a4G'
+'  LS                                                        5d3.6s.(a3G).6p           y4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6389.41900,  -0.630,  2.6227,  4.5,  4.5626,  3.5,  1.090,  1.130,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3H).6s             a4H'
+'  LS                                                        5d3.6s.(a3H).6p           z4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6392.17300,  -2.120,  1.3577,  1.5,  3.2967,  1.5,  1.410,  1.580,  1.490, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6428.62400,  -1.650,  1.3940,  2.5,  3.3221,  2.5,  1.640,  1.420,  1.530, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6430.80300,  -0.880,  1.5169,  3.5,  3.4444,  3.5,  1.580,  1.370,  1.480, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6450.38400,  -1.090,  1.5169,  3.5,  3.4385,  4.5,  1.580,  1.390,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6455.82800,  -2.370,  1.1473,  2.5,  3.0672,  1.5,  1.580,  1.620,  1.550, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6459.94100,  -2.090,  1.2033,  3.5,  3.1221,  2.5,  0.910,  1.240,  0.500, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6485.31200,  -0.460,  1.6554,  4.5,  3.5666,  4.5,  1.530,  1.340,  1.430, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6514.38600,  -1.450,  1.3940,  2.5,  3.2967,  1.5,  1.640,  1.580,  1.690, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6516.12700,  -1.490,  1.3940,  2.5,  3.2962,  3.5,  1.640,  1.360,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6561.58100,  -2.080,  1.3254,  4.5,  3.2145,  4.5,  1.060,  1.290,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6574.83400,  -1.560,  1.2368,  1.5,  3.1221,  2.5,  1.540,  1.240,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6585.08900,  -1.400,  2.8220,  3.5,  4.7043,  4.5,  1.010,  0.880,  0.650, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3G).6s             a4G'
+'  LS                                                        5d3.6s.(a3H).6p           z4I*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6611.90400,  -1.380,  1.3940,  2.5,  3.2687,  1.5,  1.640,  1.390,  1.830, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6621.25800,  -1.980,  0.7524,  1.5,  2.6244,  2.5,  1.530,  1.120,  0.810, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6673.69800,  -1.630,  1.2100,  0.5,  3.0672,  1.5,  3.020,  1.620,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6675.51200,  -1.170,  1.3940,  2.5,  3.2508,  2.5,  1.640,  1.340,  1.490, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6706.37900,  -1.860,  1.8739,  5.5,  3.7222,  4.5,  1.020,  1.190,  0.650, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2H'
+'  LS                                                        5d3.6s,(5P).6p             6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6709.36300,  -0.870,  2.9648,  4.5,  4.8122,  4.5,  1.180,  1.090,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3G).6s             a4G'
+'  LS                                                        5d3.6s.(a3H).6p           z4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6740.70500,  -1.390,  1.6554,  4.5,  3.4942,  3.5,  1.530,  1.120,  2.260, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.(4F).6s.6p             6D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6754.86000,  -0.340,  3.3221,  2.5,  5.1571,  1.5,  1.420,  1.000,  1.730, 0.000, 0.000, 0.000,
+'  LS                                                         5d2.6s.(a5F).6p          z6D*'
+'  LS                                                         5d3.6s.(a5F).7s           e6F'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6755.85100,  -2.310,  1.4620,  0.5,  3.2967,  1.5,  1.120,  1.580,  1.690, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6770.37300,  -1.170,  2.9648,  4.5,  4.7956,  3.5,  1.180,  1.050,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3G).6s             a4G'
+'  LS                                                        5d3.6s.(a3G).6p           y4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6771.72100,  -1.730,  1.2368,  1.5,  3.0672,  1.5,  1.540,  1.620,  1.580, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6774.24500,  -2.030,  1.2100,  0.5,  3.0397,  0.5,  3.020,  2.890,  2.950, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6788.97500,  -1.830,  1.5169,  3.5,  3.3427,  3.5,  1.580,  1.220,  1.400, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(3P).6p            4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6799.26700,  -2.710,  0.7524,  1.5,  2.5754,  1.5,  1.530,  0.810,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d2.6s2.(a3P).6p          z2D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6813.24300,  -1.460,  1.1473,  2.5,  2.9665,  3.5,  1.580,  1.330,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6865.10100,  -2.210,  1.3577,  1.5,  3.1632,  0.5,  1.410,  0.030,  1.750, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6866.23700,  -1.030,  1.5169,  3.5,  3.3221,  2.5,  1.580,  1.420,  1.780, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6875.26600,  -1.340,  1.2368,  1.5,  3.0397,  0.5,  1.540,  2.890,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6896.75700,  -2.320,  1.3254,  4.5,  3.1227,  4.5,  1.060, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d2.6s2.(3F).6p            4G*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6900.53200,  -0.450,  3.2264,  5.5,  5.0226,  5.5,  1.260,  1.260,  1.260, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3G).6s             a4G'
+'  LS                                                        5d3.6s.(a3H).6p           z4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6902.05100,  -1.440,  1.2100,  0.5,  3.0058,  1.5,  3.020,  1.130,  0.650, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      6927.35200,  -1.150,  1.6554,  4.5,  3.4447,  5.5,  1.530,  1.350,  0.940, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(3F).6p            4G*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6928.49400,  -1.040,  1.6554,  4.5,  3.4444,  3.5,  1.530,  1.370,  1.810, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6951.22800,  -1.500,  1.6554,  4.5,  3.4385,  4.5,  1.530,  1.390,  1.460, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6953.88700,  -1.280,  2.1356,  2.5,  3.9180,  3.5,  0.880,  1.090,  1.350, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d2.6s2.(1D).6p            2F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6966.15200,  -1.160,  1.5169,  3.5,  3.2962,  3.5,  1.580,  1.360,  1.470, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      6971.33500,  -1.340,  2.9648,  4.5,  4.7428,  3.5,  1.180,  1.110,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3G).6s             a4G'
+'                                                                                         *'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6983.50900,  -1.070,  2.8220,  3.5,  4.5969,  4.5,  1.010,  1.050,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3G).6s             a4G'
+'  LS                                                        5d3.6s.(a3H).6p           z4H*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      6995.22200,  -1.460,  1.3254,  4.5,  3.0974,  3.5,  1.060,  1.240,  0.760, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7005.05000,  -2.250,  0.7524,  1.5,  2.5219,  0.5,  1.530,  1.960,  1.420, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d2.6s2.(a3P).6p          z2S*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7006.95000,  -1.720,  1.2368,  1.5,  3.0058,  1.5,  1.540,  1.130,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7025.02500,  -1.780,  1.3577,  1.5,  3.1221,  2.5,  1.410,  1.240,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7031.48300,  -1.810,  2.1552,  3.5,  3.9180,  3.5,  1.120,  1.090,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d2.6s2.(1D).6p            2F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      7039.02800,  -0.900,  2.7808,  5.5,  4.5417,  4.5,  1.160,  1.210,  1.040, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3H).6s             a4H'
+'  LS                                                        5d3.6s.(3F).6p             4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      7085.38900,  -2.450,  1.1473,  2.5,  2.8967,  2.5,  1.580,  1.080,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      7093.01600,  -1.990,  1.5952,  2.5,  3.3427,  3.5,  1.210,  1.220,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2D'
+'  LS                                                        5d2.6s2.(3P).6p            4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      7108.00900,  -1.560,  2.8220,  3.5,  4.5658,  2.5,  1.010,  0.820,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3G).6s             a4G'
+'  LS                                                        5d3.6s.(a3G).6p           y4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      7121.21900,  -1.130,  2.8220,  3.5,  4.5626,  3.5,  1.010,  1.130,  1.070, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(b3G).6s             a4G'
+'  LS                                                        5d3.6s.(a3H).6p           z4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      7148.61900,  -1.150,  1.5169,  3.5,  3.2508,  2.5,  1.580,  1.340,  1.880, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(a3P).6p          z4P*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7172.91600,  -1.400,  1.3940,  2.5,  3.1221,  2.5,  1.640,  1.240,  1.440, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7250.25900,  -2.020,  1.3577,  1.5,  3.0672,  1.5,  1.410,  1.620,  1.510, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      7276.95800,  -1.960,  1.3940,  2.5,  3.0974,  3.5,  1.640,  1.240,  0.730, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7286.35600,  -2.370,  1.4620,  0.5,  3.1632,  0.5,  1.120,  0.030,  0.570, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      7319.85500,  -2.400,  1.2033,  3.5,  2.8967,  2.5,  0.910,  1.080,  0.700, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      7322.64300,  -1.820,  1.8739,  5.5,  3.5666,  4.5,  1.020,  1.340,  0.310, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2H'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      7346.40000,  -1.480,  0.7500,  0.5,  2.4373,  1.5,  2.450,  1.020,  0.660, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7352.84100,  -1.560,  1.2100,  0.5,  2.8957,  0.5,  3.020, -0.320,  1.350, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7356.93700,  -1.790,  0.7524,  1.5,  2.4373,  1.5,  1.530,  1.020,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7369.08400,  -1.550,  1.3577,  1.5,  3.0397,  0.5,  1.410,  2.890,  1.040, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7407.89200,  -1.280,  1.3940,  2.5,  3.0672,  1.5,  1.640,  1.620,  1.660, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      7467.72100,  -2.180,  1.2368,  1.5,  2.8967,  2.5,  1.540,  1.080,  0.730, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      7520.57200,  -2.010,  1.3577,  1.5,  3.0058,  1.5,  1.410,  1.130,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7569.18200,  -2.210,  2.1552,  3.5,  3.7928,  3.5,  1.120,  1.040,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.6s.(3F).6p             4G*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      7722.05400,  -2.300,  1.5169,  3.5,  3.1221,  2.5,  1.580,  1.240,  2.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7842.77000,  -2.060,  1.5169,  3.5,  3.0974,  3.5,  1.580,  1.240,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7882.37000,  -1.480,  1.3940,  2.5,  2.9665,  3.5,  1.640,  1.330,  0.930, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7950.16900,  -1.730,  1.6554,  4.5,  3.2145,  4.5,  1.530,  1.290,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      7998.77300,  -2.320,  2.1356,  2.5,  3.6852,  3.5,  0.880,  1.220,  1.640, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2F'
+'  LS                                                        5d3.6s.(a5F).6p           y4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      8026.50300,  -1.950,  0.7500,  0.5,  2.2943,  0.5,  2.450,  0.170,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      8029.08800,  -2.720,  1.4620,  0.5,  3.0058,  1.5,  1.120,  1.130,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a5F).6p           z6F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      8039.08300,  -2.640,  0.7524,  1.5,  2.2943,  0.5,  1.530,  0.170,  1.870, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a4P'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      8053.94000,  -2.710,  1.3577,  1.5,  2.8967,  2.5,  1.410,  1.080,  0.830, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2P'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      8069.06000,  -1.800,  1.9082,  4.5,  3.4444,  3.5,  1.010,  1.370,  0.380, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2H'
+'  LS                                                        5d3.6s.(a5F).6p           z6D*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      8100.14100,  -2.980,  1.2033,  3.5,  2.7335,  2.5,  0.910,  1.180,  0.580, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.6s2                  a2G'
+'  LS                                                        5d2.6s2.(a3P).6p          z2D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      8248.92500,  -2.450,  1.3940,  2.5,  2.8967,  2.5,  1.640,  1.080,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      8264.85600,  -2.370,  1.2100,  0.5,  2.7097,  1.5,  3.020,  0.670,  0.080, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      8281.60200,  -1.770,  1.2368,  1.5,  2.7335,  2.5,  1.540,  1.180,  0.910, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(a3P).6p          z2D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      8415.72000,  -2.950,  1.2368,  1.5,  2.7097,  1.5,  1.540,  0.670,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1  wl:SDL   1  gf:SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL   1     SDL             Ta'
+'Ta 1',      8447.59300,  -2.240,  1.6554,  4.5,  3.1227,  4.5,  1.530, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(3F).6p            4G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Ta'
+'Ta 1',      8550.56600,  -2.320,  1.5169,  3.5,  2.9665,  3.5,  1.580,  1.330,  1.450, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d2.6s2.(a3F).6p          z4D*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      8575.90100,  -2.060,  1.6554,  4.5,  3.1007,  5.5,  1.530,  1.300,  0.780, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z6G*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+'Ta 1',      8595.79500,  -2.240,  1.6554,  4.5,  3.0974,  3.5,  1.530,  1.240,  2.050, 0.000, 0.000, 0.000,
+'  LS                                                          5d4.(a5D).6s             a6D'
+'  LS                                                        5d3.6s.(a5F).6p           z4F*'
+'_          Hf 1 - U 2 Bell    1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Ta'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Hf 1 - U 2 Bell

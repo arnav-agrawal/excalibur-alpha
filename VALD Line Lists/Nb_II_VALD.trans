@@ -1,0 +1,122 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Nb 2',      4000.60300,  -1.030,  1.8338,  4.0,  4.9321,  3.0,  1.080,  1.090,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                   4d4                             1G2'
+'  LS                                                   4d3.(4F).5p                     3F*'
+'_0.06      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4026.30140,  -1.530,  2.3333,  1.0,  5.4118,  1.0,  0.680,  0.980,  0.830, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(2D2.)5s                    3D'
+'  LS                                                   4d3.(2P).5p                     3D*'
+'_0.09      Lund exp.          1 wl:NHEL   1 gf:NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL            Nb+'
+'Nb 2',      4059.67400,  -1.180,  1.6943,  4.0,  4.7475,  4.0,  1.150,  1.470,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                    4d4                             3F'
+'  LS                                                   4d3.(4F).5p                     5D*'
+'_0.14      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4061.97110,  -1.020,  1.9775,  4.0,  5.0289,  4.0,  1.030,  1.260,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(2G).5s 																				3G'
+'  LS                                                   4d3.(4F).5p                     3F*'
+'_0.04      Lund exp.          1 wl:NHEL   1 gf:NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL            Nb+'
+'Nb 2',      4072.05500,  -1.000,  1.6943,  4.0,  4.7382,  3.0,  1.150,  1.470,  0.680, 0.000, 0.000, 0.000,
+'  LS                                               4d4                                 b3F'
+'  LS                                                  4d3.(a4F).5p                    z5D*'
+'_          Cu 1 - Ba 2 Bell   2  wl:HLB   2  gf:HLB   2     HLB   2     HLB   2     HLB   2     HLB   2     HLB   2     HLB   2     HLB            Nb+'
+'Nb 2',      4073.08000,  -1.360,  1.8338,  4.0,  4.8770,  4.0,  1.080,  1.070,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                   4d4                             1G2'
+'  LS                                                   4d3.(4F).5p                     3G*'
+'_0.12      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4085.34680,  -1.280,  2.3333,  1.0,  5.3673,  2.0,  0.680,  1.230,  1.500, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(2D2).5s                    3D'
+'  LS                                                   4d3.(4P).5p                     5D*'
+'_0.07      Lund exp.          1 wl:NHEL   1 gf:NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL            Nb+'
+'Nb 2',      4104.16000,  -1.240,  1.6943,  4.0,  4.7144,  5.0,  1.150,  1.360,  1.770, 0.000, 0.000, 0.000,
+'  LS                                                    4d4                             3F'
+'  LS                                                   4d3.(4F).5p                     5F*'
+'_0.13      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4110.30900,  -1.610,  1.6186,  3.0,  4.6341,  3.0,  1.250,  1.270,  1.260, 0.000, 0.000, 0.000,
+'  LS                                                    4d4                             3D'
+'  LS                                                   4d3.(4F).5p                     5F*'
+'_0.18      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4114.53200,  -1.440,  2.3993,  2.0,  5.4118,  1.0,  1.170,  0.980,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(2D2.)5s                    3D'
+'  LS                                                   4d3.(2P).5p                     3D*'
+'_0.08      Lund exp.          1 wl:NHEL   1 gf:NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL            Nb+'
+'Nb 2',      4119.28700,  -0.040,  2.6127,  5.0,  5.6217,  5.0,  0.990,  1.020,  1.000, 0.000, 0.000, 0.000,
+'  LS                                               4d3.(2H).5s                         a1H'
+'  LS                                                  4d3.(2G).5p                     z1H*'
+'_          Cu 1 - Ba 2 Bell   2 wl:CBco   2 gf:CBco   2   CBcor   2   CBcor   2   CBcor   2   CBcor   2   CBcor   2   CBcor   2   CBcor            Nb+'
+'Nb 2',      4126.17800,  -1.490,  1.9281,  3.0,  4.9321,  3.0,  0.770,  1.090,  0.930, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(2G).5s                     3G'
+'  LS                                                   4d3.(4F).5p                     3F*'
+'_0.12      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4138.45200,  -1.650,  1.5877,  2.0,  4.5828,  2.0,  0.850,  1.020,  0.940, 0.000, 0.000, 0.000,
+'  LS                                                    4d4                             3D'
+'  LS                                                   4d3.(4F).5p                     5F*'
+'_0.18      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4156.67100,  -1.120,  1.9903,  5.0,  4.9722,  5.0,  1.190,  1.230,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(2G).5s                     3G'
+'  LS                                                   4d3.(4F).5p                     3G*'
+'_0.12      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4185.53350,  -1.070,  2.6086,  1.0,  5.5699,  2.0,  1.220,  1.250,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(2P).5s 																				1P'
+'  LS                                                   4d3.(2P).5p                     3D*'
+'_0.12      Lund exp.          1 wl:NHEL   1 gf:NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL            Nb+'
+'Nb 2',      4216.22600,  -1.450,  1.6943,  4.0,  4.6341,  3.0,  1.150,  1.270,  0.980, 0.000, 0.000, 0.000,
+'  LS                                                    4d4                             3F'
+'  LS                                                   4d3.(4F).5p                     5F*'
+'_0.11      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4254.38500,  -1.230,  1.6186,  3.0,  4.5320,  3.0,  1.250,  1.310,  1.280, 0.000, 0.000, 0.000,
+'  LS                                                    4d4                             3D'
+'  LS                                                   4d3.(4F).5p                     3G*'
+'_0.18      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4321.48100,  -1.200,  1.9281,  3.0,  4.7963,  3.0,  0.770,  0.760,  0.770, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(2G).5s                     3G'
+'  LS                                                   4d3.(4F).5p                     3G*'
+'_0.15      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4367.37890,  -1.190,  2.3333,  1.0,  5.1714,  2.0,  0.680,  1.310,  1.630, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(2D2).5s                    3D'
+'  LS                                                   4d3.(4P).5p                     3P*'
+'_0.06      Lund exp.          1 wl:NHEL   1 gf:NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL            Nb+'
+'Nb 2',      4367.96000,  -1.030,  1.6943,  4.0,  4.5320,  3.0,  1.150,  1.310,  0.910, 0.000, 0.000, 0.000,
+'  LS                                                    4d4                             3F'
+'  LS                                                   4d3.(4F).5p                     3G*'
+'_0.08      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4421.64580,  -1.310,  2.6086,  1.0,  5.4118,  1.0,  1.220,  0.980,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(2P).5s                     1P'
+'  LS                                                   4d3.(2P).5p                     3D*'
+'_0.11      Lund exp.          1 wl:NHEL   1 gf:NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL            Nb+'
+'Nb 2',      4467.88490,  -1.260,  2.6671,  2.0,  5.4413,  3.0,  1.470,  1.450,  1.430, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(4P).5s 																				3P'
+'  LS                                                   4d3.(4P).5p                     5D*'
+'_0.09      Lund exp.          1 wl:NHEL   1 gf:NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL            Nb+'
+'Nb 2',      4492.95630,  -0.870,  2.6086,  1.0,  5.3673,  2.0,  1.220,  1.230,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(2P).5s 																				1P'
+'  LS                                                   4d3.(4P).5p                     5D*'
+'_0.06      Lund exp.          1 wl:NHEL   1 gf:NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL            Nb+'
+'Nb 2',      4522.19310,  -1.200,  2.6671,  2.0,  5.4080,  2.0,  1.470,  1.350,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(4P).5s 																				3P'
+'  LS                                                   4d3.(2P).5p                     1D*'
+'_0.08      Lund exp.          1 wl:NHEL   1 gf:NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL            Nb+'
+'Nb 2',      4527.63600,  -1.290,  1.5877,  2.0,  4.3254,  1.0,  0.850,  0.420,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                    4d4                             3D'
+'  LS                                                   4d3.(4F).5p                     3D*'
+'_0.05      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4579.44400,  -1.020,  1.6974,  3.0,  4.4040,  2.0,  1.150,  1.140,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                    4d4                             3F'
+'  LS                                                   4d3.(4F).5p                     3G*'
+'_0.15      Lund exp.          1   wl:NI   1   gf:NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI   1      NI            Nb+'
+'Nb 2',      4588.99700,  -1.460,  2.5228,  0.0,  5.2238,  1.0,  0.000,  1.380,  1.380, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(4P).5s 																				3P'
+'  LS                                                   4d3.(4P).5p                     3P*'
+'_0.09      Lund exp.          1 wl:NHEL   1 gf:NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL            Nb+'
+'Nb 2',      4699.58120,  -1.040,  2.5339,  1.0,  5.1714,  2.0,  1.120,  1.310,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                    4d3.(4P).5s 																				3P'
+'  LS                                                   4d3.(4P).5p                     3P*'
+'_0.08      Lund exp.          1 wl:NHEL   1 gf:NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL   1    NHEL            Nb+'
+'Nb 2',      4789.89300,  -0.140,  2.4412,  3.0,  5.0289,  4.0,  1.310,  1.260,  1.180, 0.000, 0.000, 0.000,
+'  LS                                               4d3.(2D).5s                         b3D'
+'  LS                                                  4d3.(a4F).5p                    z3F*'
+'_          Cu 1 - Ba 2 Bell   2  wl:HLB   2  gf:HLB   2     HLB   2     HLB   2     HLB   2     HLB   2     HLB   2     HLB   2     HLB            Nb+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Lund: exp. data
+  2. Cu 1 - Ba 2 Bell

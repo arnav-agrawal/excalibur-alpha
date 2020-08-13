@@ -1,0 +1,555 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Hf 2',      4008.46100,  -1.233,  2.2107,  1.5,  5.3029,  1.5,  1.120,  1.220,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                    5d2.(a3P).6s                   a2P'
+'  LS                                                   5d.6s.(a1D).6p                 y2P*'
+'E0.086     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4020.25000,  -2.080,  1.7803,  1.5,  4.8635,  1.5,  1.030,  1.620,  1.320, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d.6s.(a3D).6p                 z4P*'
+'E 0.03     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4029.16000,  -1.710,  1.4965,  2.5,  4.5728,  3.5,  0.960,  1.380,  1.900, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.03     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4033.86000,  -1.314,  2.3430,  1.5,  5.4157,  2.5,  0.450,  0.970,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4F'
+'  LS                                                   5d2.(a3F).6p                   y4F*'
+'E0.090     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4047.95900,   0.790,  3.8363,  5.5,  6.8983,  4.5,  1.100,  1.060,  1.190, 0.000, 0.000, 0.000,
+'  LS                                                          5d3                      a2H'
+'  LS                                                        5d2.(a1G).6p              y2G*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      4049.44600,  -1.112,  2.2107,  1.5,  5.2716,  1.5,  1.120,  0.560,  0.840, 0.000, 0.000, 0.000,
+'  LS                                                    5d2.(a3P).6s                   a2P'
+'  LS                                                   5d2.(a3F).6p                   y4F*'
+'E0.076     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4080.43700,  -1.550,  0.6081,  2.5,  3.6458,  2.5,  1.050,  1.080,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a4F'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.03     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4093.15000,  -1.150,  0.4519,  1.5,  3.4801,  1.5,  0.430,  0.510,  0.470, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a4F'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.02     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4113.56000,  -1.410,  1.4965,  2.5,  4.5097,  1.5,  0.960,  1.320,  0.690, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a3D).6p                 z2P*'
+'E 0.03     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4125.06900,  -0.953,  3.4846,  4.5,  6.4893,  3.5,  1.000,  1.160,  0.710, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b2G'
+'  LS                                                   5d2.(a3F).6p                   x2F*'
+'E0.072     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4127.78900,  -0.660,  1.7803,  1.5,  4.7831,  2.5,  1.030,  0.860,  0.730, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.(b1D).6s             a2D'
+'  LS                                                        5d.6s.(a3D).6p            z2F*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      4140.19800,  -2.113,  2.3430,  1.5,  5.3368,  0.5,  0.450,  0.570,  0.420, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4F'
+'  LS                                                   5d.6s.(a1D).6p                 y2P*'
+'E0.086     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4158.90900,  -0.580,  2.1535,  2.5,  5.1338,  3.5,  1.270,  1.110,  0.900, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.(b1D).6s             a2D'
+'  LS                                                        5d.6s.(a3D).6p            z2F*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      4162.40500,  -0.310,  2.1560,  4.5,  5.1338,  3.5,  1.140,  1.110,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.(a1G).6s             a2G'
+'  LS                                                        5d.6s.(a3D).6p            z2F*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      4186.09500,  -1.512,  3.5285,  3.5,  6.4893,  3.5,  0.900,  1.160,  1.030, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b2G'
+'  LS                                                   5d2.(a3F).6p                   x2F*'
+'E0.068     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4187.66300,  -1.322,  2.3430,  1.5,  5.3029,  1.5,  0.450,  1.220,  0.830, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4F'
+'  LS                                                   5d.6s.(a1D).6p                 y2P*'
+'E0.076     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4201.71800,  -1.595,  3.5394,  2.5,  6.4893,  3.5,  1.570,  1.160,  0.650, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4P'
+'  LS                                                   5d2.(a3F).6p                   x2F*'
+'E0.061     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4206.57400,   0.050,  2.4964,  2.5,  5.4430,  2.5,  1.030,  1.000,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                          5d3                      b4F'
+'  LS                                                        5d.6s.(a1D).6p            y2F*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      4232.38600,  -0.631,  2.3430,  1.5,  5.2716,  1.5,  0.450,  0.560,  0.500, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4F'
+'  LS                                                   5d2.(a3F).6p                   y4F*'
+'E0.076     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4245.84500,  -1.154,  2.4964,  2.5,  5.4157,  2.5,  1.030,  0.970,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4F'
+'  LS                                                   5d2.(a3F).6p                   y4F*'
+'E0.068     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4249.33000,  -1.450,  1.7803,  1.5,  4.6973,  1.5,  1.030,  0.780,  0.910, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d.6s.(a3D).6p                 y2D*'
+'E 0.05     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4262.74000,  -1.860,  1.6020,  1.5,  4.5097,  1.5,  1.660,  1.320,  1.490, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z2P*'
+'E 0.04     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4269.69500,  -1.390,  1.8702,  3.5,  4.7732,  3.5,  1.100,  1.040,  1.070, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.05     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4272.86000,  -1.040,  1.6720,  2.5,  4.5728,  3.5,  1.410,  1.380,  1.340, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.03     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4319.51000,  -2.110,  1.8913,  0.5,  4.7608,  0.5,  0.740,  2.600,  1.670, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d.6s.(a3D).6p                 z4P*'
+'E 0.03     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4320.68200,  -0.640,  2.1535,  2.5,  5.0222,  2.5,  1.270,  1.420,  1.350, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.(b1D).6s             a2D'
+'  LS                                                        5d.6s.(a3D).6p            z4P*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      4327.52000,  -2.380,  1.8702,  3.5,  4.7344,  4.5,  1.100,  1.330,  1.730, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.08     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4334.64000,  -0.590,  2.8697,  4.5,  5.7292,  5.5,  1.310,  1.270,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.08     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4335.15000,  -2.750,  0.7866,  3.5,  3.6458,  2.5,  1.240,  1.080,  1.440, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a4F'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.04     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4336.65800,   0.240,  2.6828,  3.5,  5.5409,  3.5,  1.220,  1.140,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                          5d3                      b4F'
+'  LS                                                        5d.6s.(a1D).6p            y2F*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      4350.51600,   0.340,  2.8697,  4.5,  5.7188,  4.5,  1.310,  1.220,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                          5d3                      b4F'
+'  LS                                                        5d2.(a3F).6p              y4F*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      4367.90000,  -1.490,  1.6720,  2.5,  4.5097,  1.5,  1.410,  1.320,  1.480, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z2P*'
+'E 0.04     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4370.94500,  -1.220,  1.4965,  2.5,  4.3323,  2.5,  0.960,  0.980,  0.970, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.05     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4416.57500,  -2.257,  2.4964,  2.5,  5.3029,  1.5,  1.030,  1.220,  0.890, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4F'
+'  LS                                                   5d.6s.(a1D).6p                 y2P*'
+'E0.072     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4417.36000,  -1.000,  1.8913,  0.5,  4.6973,  1.5,  0.740,  0.780,  0.790, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d.6s.(a3D).6p                 y2D*'
+'E 0.05     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4466.38900,  -1.024,  2.4964,  2.5,  5.2716,  1.5,  1.030,  0.560,  1.380, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4F'
+'  LS                                                   5d2.(a3F).6p                   y4F*'
+'E0.076     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4486.13000,  -1.630,  1.4965,  2.5,  4.2595,  2.5,  0.960,  1.320,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.04     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4508.87100,  -3.478,  1.4818,  0.5,  4.2308,  1.5,  2.600,  0.800,  0.350, 0.000, 0.000, 0.000,
+'  LS                                                    5d2.(a3P).6s                   a4P'
+'  LS                                                   5d.6s.(a1D).6p                 z2D*'
+'E0.068     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4533.16000,  -1.700,  1.4965,  2.5,  4.2308,  1.5,  0.960,  0.800,  1.090, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a1D).6p                 z2D*'
+'E 0.05     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4535.36300,  -1.133,  2.6828,  3.5,  5.4157,  2.5,  1.220,  0.970,  1.540, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4F'
+'  LS                                                   5d2.(a3F).6p                   y4F*'
+'E0.061     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4539.75700,  -2.564,  1.6020,  1.5,  4.3323,  2.5,  1.660,  0.980,  0.470, 0.000, 0.000, 0.000,
+'  LS                                                    5d2.(a3P).6s                   a4P'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E0.068     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4541.29000,  -1.650,  1.7803,  1.5,  4.5097,  1.5,  1.030,  1.320,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d.6s.(a3D).6p                 z2P*'
+'E 0.05     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4573.79000,  -1.590,  2.1535,  2.5,  4.8635,  1.5,  1.270,  1.620,  1.020, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d.6s.(a3D).6p                 z4P*'
+'E 0.03     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4586.24000,  -1.980,  1.8702,  3.5,  4.5728,  3.5,  1.100,  1.380,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.04     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4599.43900,  -0.504,  3.4846,  4.5,  6.1794,  4.5,  1.000,  1.150,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b2G'
+'  LS                                                   5d2.(a3F).6p                   z2G*'
+'E0.064     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4605.77400,  -1.890,  1.4965,  2.5,  4.1877,  3.5,  0.960,  1.250,  1.620, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.03     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4622.70500,  -0.460,  2.4964,  2.5,  5.1777,  2.5,  1.030,  1.080,  1.050, 0.000, 0.000, 0.000,
+'  LS                                                          5d3                      b4F'
+'  LS                                                        5d.6s.(a3D).6p            y2D*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      4659.20400,  -2.380,  1.6720,  2.5,  4.3323,  2.5,  1.410,  0.980,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.06     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4664.12700,  -1.150,  1.6020,  1.5,  4.2595,  2.5,  1.660,  1.320,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.03     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4672.44000,  -2.840,  2.2107,  1.5,  4.8635,  1.5,  1.120,  1.620,  1.370, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d.6s.(a3D).6p                 z4P*'
+'E 0.05     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4675.44300,  -1.048,  3.5284,  3.5,  6.1794,  4.5,  0.900,  1.150,  1.600, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b2G'
+'  LS                                                   5d2.(a3F).6p                   z2G*'
+'E0.068     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4699.71800,  -0.780,  2.4964,  2.5,  5.1338,  3.5,  1.030,  1.110,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                          5d3                      b4F'
+'  LS                                                        5d.6s.(a3D).6p            z2F*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      4714.98700,  -2.640,  1.6020,  1.5,  4.2308,  1.5,  1.660,  0.800,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a1D).6p                 z2D*'
+'E 0.06     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4719.11000,  -1.650,  1.4818,  0.5,  4.1084,  0.5,  2.600,  0.220,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z2P*'
+'E 0.05     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4731.36000,  -1.290,  2.1535,  2.5,  4.7732,  3.5,  1.270,  1.040,  0.760, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.06     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4733.72000,  -2.560,  1.8913,  0.5,  4.5097,  1.5,  0.740,  1.320,  1.470, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d.6s.(a3D).6p                 z2P*'
+'E 0.06     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4735.66000,  -2.300,  1.4965,  2.5,  4.1139,  2.5,  0.960,  1.040,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a1D).6p                 z2D*'
+'E 0.06     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4790.70800,  -1.110,  2.1958,  3.5,  4.7831,  2.5,  0.940,  0.860,  1.040, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.(a1G).6s             a2G'
+'  LS                                                        5d.6s.(a3D).6p            z2F*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      4807.13000,  -1.660,  2.1560,  4.5,  4.7344,  4.5,  1.140,  1.330,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a1G).6s                     a2G'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.05     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4809.17000,  -2.010,  2.1958,  3.5,  4.7732,  3.5,  0.940,  1.040,  0.990, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a1G).6s                     a2G'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4817.21000,  -1.000,  2.6828,  3.5,  5.2558,  4.5,  1.220,  1.170,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.06     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4843.98100,  -2.110,  1.6720,  2.5,  4.2308,  1.5,  1.410,  0.800,  1.870, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a1D).6p                 z2D*'
+'E 0.06     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4848.44900,  -0.981,  3.3829,  1.5,  5.9394,  2.5,  1.640,  1.310,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4P'
+'  LS                                                   5d2.(a3F).6p                   y4D*'
+'E0.068     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4857.02900,  -3.511,  1.7803,  1.5,  4.3323,  2.5,  1.030,  0.980,  0.940, 0.000, 0.000, 0.000,
+'  LS                                                    5d2.(b1D).6s                   a2D'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E0.057     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4860.51000,  -2.460,  2.2107,  1.5,  4.7608,  0.5,  1.120,  2.600,  0.750, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d.6s.(a3D).6p                 z4P*'
+'E 0.04     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4882.65000,  -2.680,  2.1958,  3.5,  4.7344,  4.5,  0.940,  1.330,  2.010, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a1G).6s                     a2G'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4885.69800,  -1.202,  3.9524,  4.5,  6.4893,  3.5,  1.050,  1.160,  0.850, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            a2H'
+'  LS                                                   5d2.(a3F).6p                   x2F*'
+'E0.064     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      4926.98100,  -2.230,  1.6720,  2.5,  4.1877,  3.5,  1.410,  1.250,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.05     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4934.44900,  -1.590,  1.6020,  1.5,  4.1139,  2.5,  1.660,  1.040,  0.560, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a1D).6p                 z2D*'
+'E 0.06     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4945.38000,  -2.300,  1.6020,  1.5,  4.1084,  0.5,  1.660,  0.220,  2.030, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z2P*'
+'E 0.05     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4984.76000,  -2.220,  2.2107,  1.5,  4.6973,  1.5,  1.120,  0.780,  0.950, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d.6s.(a3D).6p                 y2D*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      4999.67600,  -1.850,  1.7803,  1.5,  4.2595,  2.5,  1.030,  1.320,  1.530, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.05     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5034.31700,  -2.230,  1.8702,  3.5,  4.3323,  2.5,  1.100,  0.980,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.06     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5040.81200,  -1.420,  1.4818,  0.5,  3.9407,  1.5,  2.600,  1.220,  0.870, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.04     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5058.16000,  -2.290,  1.7803,  1.5,  4.2308,  1.5,  1.030,  0.800,  0.920, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d.6s.(a1D).6p                 z2D*'
+'E 0.06     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5071.20000,  -2.665,  1.4966,  2.5,  3.9407,  1.5,  0.960,  1.220,  0.770, 0.000, 0.000, 0.000,
+'  LS                                                    5d2.(a3F).6s                   a2F'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E0.146     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      5075.91000,  -2.100,  1.6720,  2.5,  4.1139,  2.5,  1.410,  1.040,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a1D).6p                 z2D*'
+'E 0.06     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5079.62900,  -1.210,  2.3430,  1.5,  4.7831,  2.5,  0.450,  0.860,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                          5d3                      b4F'
+'  LS                                                        5d.6s.(a3D).6p            z2F*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      5080.41100,  -1.393,  3.3471,  0.5,  5.7869,  1.5,  2.580,  1.190,  0.850, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4P'
+'  LS                                                   5d2.(a3F).6p                   y4D*'
+'E0.064     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      5110.55100,  -0.908,  4.0640,  2.5,  6.4893,  3.5,  1.210,  1.160,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            c2D'
+'  LS                                                   5d2.(a3F).6p                   x2F*'
+'E0.068     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      5126.81200,  -1.437,  3.3471,  0.5,  5.7647,  0.5,  2.580,  1.680,  2.130, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4P'
+'  LS                                                   5d2.(a3P).6p                   z2S*'
+'E0.199     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      5128.51000,  -1.590,  2.1560,  4.5,  4.5728,  3.5,  1.140,  1.380,  0.720, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a1G).6s                     a2G'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.05     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5156.04900,  -1.583,  3.3829,  1.5,  5.7869,  1.5,  1.640,  1.190,  1.420, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4P'
+'  LS                                                   5d2.(a3F).6p                   y4D*'
+'E0.064     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      5164.53600,  -1.266,  3.5394,  2.5,  5.9394,  2.5,  1.570,  1.310,  1.440, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4P'
+'  LS                                                   5d2.(a3F).6p                   y4D*'
+'E0.061     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      5187.73000,  -1.750,  1.8702,  3.5,  4.2595,  2.5,  1.100,  1.320,  0.820, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.04     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5194.57000,  -1.850,  2.8697,  4.5,  5.2558,  4.5,  1.310,  1.170,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.08     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5204.08000,  -2.195,  3.3829,  1.5,  5.7647,  0.5,  1.640,  1.680,  1.630, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4P'
+'  LS                                                   5d2.(a3P).6p                   z2S*'
+'E0.049     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      5214.55000,  -2.690,  2.1958,  3.5,  4.5728,  3.5,  0.940,  1.380,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a1G).6s                     a2G'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.06     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5247.12800,   0.130,  3.4846,  4.5,  5.8468,  3.5,  1.000,  1.030,  0.940, 0.000, 0.000, 0.000,
+'  LS                                                          5d3                      b2G'
+'  LS                                                        5d2.(a3F).6p              z2G*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      5260.43000,  -1.540,  2.1535,  2.5,  4.5097,  1.5,  1.270,  1.320,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d.6s.(a3D).6p                 z2P*'
+'E 0.06     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5264.95000,  -1.150,  2.3430,  1.5,  4.6973,  1.5,  0.450,  0.780,  0.610, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d.6s.(a3D).6p                 y2D*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5298.04000,  -1.260,  1.8913,  0.5,  4.2308,  1.5,  0.740,  0.800,  0.820, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d.6s.(a1D).6p                 z2D*'
+'E 0.06     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5299.83100,  -2.310,  1.6020,  1.5,  3.9407,  1.5,  1.660,  1.220,  1.440, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.04     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5311.59000,  -1.220,  1.7803,  1.5,  4.1139,  2.5,  1.030,  1.040,  1.040, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d.6s.(a1D).6p                 z2D*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5324.25000,  -1.960,  1.7803,  1.5,  4.1084,  0.5,  1.030,  0.220,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d.6s.(a3D).6p                 z2P*'
+'E 0.06     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5346.27500,  -0.610,  3.5284,  3.5,  5.8468,  3.5,  0.900,  1.030,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                          5d3                      b2G'
+'  LS                                                        5d2.(a3F).6p              z2G*'
+'_          Hf 1 - U 2 Bell    3   wl:CB   3   gf:CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB   3      CB            Hf+'
+'Hf 2',      5348.39000,  -2.210,  1.8702,  3.5,  4.1877,  3.5,  1.100,  1.250,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.05     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5361.35000,  -1.608,  3.3471,  0.5,  5.6590,  0.5,  2.580,  0.470,  1.520, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4P'
+'  LS                                                   5d2.(a3F).6p                   y4D*'
+'E0.068     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      5391.35000,  -1.970,  2.2107,  1.5,  4.5097,  1.5,  1.120,  1.320,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d.6s.(a3D).6p                 z2P*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5444.04000,  -1.360,  2.4964,  2.5,  4.7732,  3.5,  1.030,  1.040,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.08     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5463.38000,  -2.110,  1.6720,  2.5,  3.9407,  1.5,  1.410,  1.220,  1.560, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.05     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5514.98800,  -1.313,  3.5394,  2.5,  5.7869,  1.5,  1.570,  1.190,  1.860, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4P'
+'  LS                                                   5d2.(a3F).6p                   y4D*'
+'E0.072     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      5524.34300,  -1.730,  1.8702,  3.5,  4.1139,  2.5,  1.100,  1.040,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a1D).6p                 z2D*'
+'E 0.07     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5565.55000,  -1.448,  3.9524,  4.5,  6.1794,  4.5,  1.050,  1.150,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            a2H'
+'  LS                                                   5d2.(a3F).6p                   z2G*'
+'E0.072     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      5590.69000,  -2.880,  1.8913,  0.5,  4.1084,  0.5,  0.740,  0.220,  0.480, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d.6s.(a3D).6p                 z2P*'
+'E 0.06     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5767.19000,  -2.330,  1.4965,  2.5,  3.6458,  2.5,  0.960,  1.080,  1.020, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5801.67000,  -2.230,  2.1958,  3.5,  4.3323,  2.5,  0.940,  0.980,  0.890, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a1G).6s                     a2G'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.08     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5809.53000,  -2.370,  1.4818,  0.5,  3.6154,  0.5,  2.600,  0.490,  1.540, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.05     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5842.22000,  -1.550,  2.2107,  1.5,  4.3323,  2.5,  1.120,  0.980,  0.880, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.07     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      5929.36000,  -2.300,  2.6828,  3.5,  4.7732,  3.5,  1.220,  1.040,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.08     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6041.46000,  -2.160,  2.6828,  3.5,  4.7344,  4.5,  1.220,  1.330,  1.520, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6047.98000,  -2.660,  1.8913,  0.5,  3.9407,  1.5,  0.740,  1.220,  1.340, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.06     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6093.12200,  -2.890,  2.1535,  2.5,  4.1877,  3.5,  1.270,  1.250,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.06     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6135.68000,  -2.860,  2.2107,  1.5,  4.2308,  1.5,  1.120,  0.800,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d.6s.(a1D).6p                 z2D*'
+'E 0.08     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6156.27000,  -2.900,  1.6020,  1.5,  3.6154,  0.5,  1.660,  0.490,  1.960, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.09     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6202.88000,  -3.320,  1.4818,  0.5,  3.4801,  1.5,  2.600,  0.510, -0.010, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.06     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6222.79000,  -2.340,  2.1958,  3.5,  4.1877,  3.5,  0.940,  1.250,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a1G).6s                     a2G'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6229.62900,  -1.705,  3.3471,  0.5,  5.3368,  0.5,  2.580,  0.570,  1.570, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b4P'
+'  LS                                                   5d.6s.(a1D).6p                 y2P*'
+'E0.090     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      6230.83400,  -1.930,  2.3430,  1.5,  4.3323,  2.5,  0.450,  0.980,  1.380, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d2.(a3F).6p                   z4G*'
+'E 0.07     Lund exp.          1 wl:LNWL   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6248.92000,  -1.930,  1.4965,  2.5,  3.4801,  1.5,  0.960,  0.510,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6279.84000,  -2.360,  1.6720,  2.5,  3.6458,  2.5,  1.410,  1.080,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6531.64000,  -2.650,  2.2107,  1.5,  4.1084,  0.5,  1.120,  0.220,  1.350, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d.6s.(a3D).6p                 z2P*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6557.92000,  -1.690,  2.6828,  3.5,  4.5728,  3.5,  1.220,  1.380,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6567.39300,  -1.274,  3.5284,  3.5,  5.4157,  2.5,  0.900,  0.970,  0.810, 0.000, 0.000, 0.000,
+'  LS                                                    5d3                            b2G'
+'  LS                                                   5d2.(a3F).6p                   y4F*'
+'E0.064     Lund exp.          1 wl:LNWL   1 gf:LNWL   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX   1   LNWLX            Hf+'
+'Hf 2',      6644.58000,  -1.700,  1.7803,  1.5,  3.6458,  2.5,  1.030,  1.080,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.06     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6647.06000,  -1.320,  2.8697,  4.5,  4.7344,  4.5,  1.310,  1.330,  1.320, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6754.61000,  -2.060,  1.7803,  1.5,  3.6154,  0.5,  1.030,  0.490,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.05     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6855.30000,  -2.770,  1.6720,  2.5,  3.4801,  1.5,  1.410,  0.510,  2.080, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a4P'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6935.17000,  -2.550,  2.1535,  2.5,  3.9407,  1.5,  1.270,  1.220,  1.320, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(b1D).6s                     a2D'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.08     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      6980.90000,  -1.730,  1.8702,  3.5,  3.6458,  2.5,  1.100,  1.080,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3F).6s                     a2F'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.07     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      7030.31600,  -1.700,  2.4964,  2.5,  4.2595,  2.5,  1.030,  1.320,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                          5d3                      b4F'
+'  LS                                                        5d.6s.(a3D).6p            z4D*'
+'_          Hf 1 - U 2 Bell    3  wl:APH   3  gf:APH   3     APH   3     APH   3     APH   3     APH   3     APH   3     APH   3     APH            Hf+'
+'Hf 2',      7663.09000,  -2.230,  2.4964,  2.5,  4.1139,  2.5,  1.030,  1.040,  1.030, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d.6s.(a1D).6p                 z2D*'
+'E 0.10     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      7757.91000,  -1.910,  2.3430,  1.5,  3.9407,  1.5,  0.450,  1.220,  0.830, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.09     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      7801.51000,  -2.700,  1.8913,  0.5,  3.4801,  1.5,  0.740,  0.510,  0.460, 0.000, 0.000, 0.000,
+'  LS                                                  5d2.(a3P).6s                     a2P'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.08     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      7861.23000,  -2.030,  2.6828,  3.5,  4.2595,  2.5,  1.220,  1.320,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d.6s.(a3D).6p                 z4D*'
+'E 0.09     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+'Hf 2',      8305.95300,  -1.540,  2.1535,  2.5,  3.6458,  2.5,  1.270,  1.080,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                          5d2.(b1D).6s             a2D'
+'  LS                                                        5d.6s.(a3D).6p            z4F*'
+'_          Hf 1 - U 2 Bell    3  wl:APH   3  gf:APH   3     APH   3     APH   3     APH   3     APH   3     APH   3     APH   3     APH            Hf+'
+'Hf 2',      10900.7700,  -2.240,  2.3430,  1.5,  3.4801,  1.5,  0.450,  0.510,  0.480, 0.000, 0.000, 0.000,
+'  LS                                                  5d3                              b4F'
+'  LS                                                   5d.6s.(a3D).6p                 z4F*'
+'E 0.09     Wisconsin REE ex   2 wl:LDLS   2 gf:LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS   2    LDLS            Hf+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Lund: exp. data
+  2. Wisconsin exp. data with IS
+  3. Hf 1 - U 2 Bell

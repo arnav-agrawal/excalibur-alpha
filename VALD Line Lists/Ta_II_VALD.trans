@@ -1,0 +1,25 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Ta 2',      4095.53600,  -0.920,  1.4589,  3.0,  4.4854,  2.0,  0.920,  0.950,  0.880, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(2G).6s              a3G'
+'  LS                                                        5d2.6s.(a4F).6p            5F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB            Ta+'
+'Ta 2',      4176.86100,   0.000,  1.8078,  3.0,  4.7753,  2.0,  0.850,  0.980,  0.720, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(4F).6s              b3F'
+'  LS                                                        5d3.(a4F).6p               5F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB            Ta+'
+'Ta 2',      4235.94600,   1.080,  3.0834,  3.0,  6.0096,  4.0,  1.000,  1.280,  1.700, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(2F).6s              a1F'
+'  LS                                                        5d3.(a2G).6p               3H*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB            Ta+'
+'Ta 2',      5109.37800,  -1.480,  1.2015,  2.0,  3.6274,  2.0,  1.060,  0.520,  0.790, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(4F).6s              b3F'
+'  LS                                                        5d2.6s.(a4F).6p            5G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB            Ta+'
+'Ta 2',      5237.53700,  -0.800,  1.8136,  1.0,  4.1802,  2.0,  0.850,  0.820,  0.810, 0.000, 0.000, 0.000,
+'  LS                                                          5d3.(2D).6s              a3D'
+'  LS                                                        5d2.6s.(a4F).6p            5G*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB            Ta+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Hf 1 - U 2 Bell

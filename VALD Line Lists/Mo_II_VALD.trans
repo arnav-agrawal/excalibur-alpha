@@ -1,0 +1,62 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Mo 2',      4081.06000,  -1.513,  3.1136,  2.5,  6.1507,  2.5,  1.270,  1.720,  1.490, 0.000, 0.000, 0.000,
+'  LS                                                    4d4.(5D).5s                    b4D'
+'  LS                                                   4d4.(5D).5p                    z6D*'
+'E0.090     Lund exp.          1  wl:SPN   1  gf:SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN            Mo+'
+'Mo 2',      4119.62800,  -1.126,  3.1420,  3.5,  6.1507,  2.5,  1.390,  1.720,  0.970, 0.000, 0.000, 0.000,
+'  LS                                                    4d4.(5D).5s                    b4D'
+'  LS                                                   4d4.(5D).5p                    z6D*'
+'E0.090     Lund exp.          1  wl:SPN   1  gf:SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN            Mo+'
+'Mo 2',      4122.34900,  -1.000,  4.5553,  3.5,  7.5621,  2.5,  1.070,  1.210,  0.890, 0.000, 0.000, 0.000,
+'  LS                                               4d4.(a3F).5s                        c2F'
+'  LS                                                  4d4.(a3F).5p                    z2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES            Mo+'
+'Mo 2',      4209.64800,  -1.415,  3.1136,  2.5,  6.0580,  2.5,  1.270,  1.740,  1.510, 0.000, 0.000, 0.000,
+'  LS                                                    4d4.(5D).5s                    b4D'
+'  LS                                                   4d4.(5D).5p                    z6P*'
+'E0.079     Lund exp.          1  wl:SPN   1  gf:SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN            Mo+'
+'Mo 2',      4244.74700,  -1.000,  4.4992,  2.5,  7.4193,  1.5,  0.910,  0.860,  0.950, 0.000, 0.000, 0.000,
+'  LS                                               4d4.(a3F).5s                        c2F'
+'  LS                                                  4d4.(a3F).5p                    z2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES            Mo+'
+'Mo 2',      4250.69700,  -1.074,  3.1420,  3.5,  6.0580,  2.5,  1.390,  1.740,  0.940, 0.000, 0.000, 0.000,
+'  LS                                                    4d4.(5D).5s                    b4D'
+'  LS                                                   4d4.(5D).5p                    z6P*'
+'E0.079     Lund exp.          1  wl:SPN   1  gf:SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN            Mo+'
+'Mo 2',      4279.01000,  -1.045,  3.0574,  1.5,  5.9541,  1.5,  1.190,  1.820,  1.510, 0.000, 0.000, 0.000,
+'  LS                                                    4d4.(5D).5s                    b4D'
+'  LS                                                   4d4.(5D).5p                    z4P*'
+'E0.064     Lund exp.          1  wl:SPN   1  gf:SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN            Mo+'
+'Mo 2',      4311.07700,  -1.000,  4.4992,  2.5,  7.3744,  3.5,  0.910,  0.920,  0.940, 0.000, 0.000, 0.000,
+'  LS                                               4d4.(a3F).5s                        c2F'
+'  LS                                                  4d4.(a3F).5p                    z4G*'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES            Mo+'
+'Mo 2',      4311.64300,  -1.554,  3.0793,  2.5,  5.9541,  1.5,  1.050,  1.820,  0.480, 0.000, 0.000, 0.000,
+'  LS                                                    4d5                            a2F'
+'  LS                                                   4d4.(5D).5p                    z4P*'
+'E0.064     Lund exp.          1  wl:SPN   1  gf:SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN            Mo+'
+'Mo 2',      4358.26800,  -1.000,  4.5553,  3.5,  7.3993,  4.5,  1.070,  1.030,  0.960, 0.000, 0.000, 0.000,
+'  LS                                               4d4.(a3F).5s                        c2F'
+'  LS                                                  4d4.(3H).5p                     z4I*'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES            Mo+'
+'Mo 2',      4363.63200,  -1.112,  3.1136,  2.5,  5.9541,  1.5,  1.270,  1.820,  0.860, 0.000, 0.000, 0.000,
+'  LS                                                    4d4.(5D).5s                    b4D'
+'  LS                                                   4d4.(5D).5p                    z4P*'
+'E0.064     Lund exp.          1  wl:SPN   1  gf:SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN   1     SPN            Mo+'
+'Mo 2',      4377.77500,  -1.000,  3.0218,  0.5,  5.8531,  0.5,  0.060,  2.780,  1.420, 0.000, 0.000, 0.000,
+'  LS                                               4d4.(5D).5s                         b4D'
+'  LS                                                  4d4.(5D).5p                     z4P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES            Mo+'
+'Mo 2',      4433.51000,  -1.000,  3.0574,  1.5,  5.8531,  0.5,  1.190,  2.780,  0.800, 0.000, 0.000, 0.000,
+'  LS                                               4d4.(5D).5s                         b4D'
+'  LS                                                  4d4.(5D).5p                     z4P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES            Mo+'
+'Mo 2',      4832.80000,  -1.080,  3.7219,  3.5,  6.2867,  4.5,  1.060,  1.500,  2.280, 0.000, 0.000, 0.000,
+'  LS                                               4d4.(3G).5s                         b4G'
+'  LS                                                  4d4.(5D).5p                     z6D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:SDco   2 gf:SDco   2   SDcor   2   SDcor   2   SDcor   2   SDcor   2   SDcor   2   SDcor   2   SDcor            Mo+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Lund: exp. data
+  2. Cu 1 - Ba 2 Bell

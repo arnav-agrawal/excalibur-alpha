@@ -1,0 +1,470 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Zr 2',      4018.37700,  -1.270,  0.9591,  1.5,  4.0437,  2.5,  1.720,  1.340,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3P).5s                   a4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4024.43500,  -1.130,  0.9991,  2.5,  4.0790,  3.5,  1.590,  1.410,  1.190, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3P).5s                   a4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4029.67500,  -0.780,  0.7133,  2.5,  3.7892,  3.5,  0.880,  1.130,  1.440, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3F).5s                   a2F'
+'  LS                                                   4d2.(a3F).5p                   z2F*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4031.35300,  -1.600,  0.7133,  2.5,  3.7879,  2.5,  0.880,  1.050,  0.960, 0.000, 0.000, 0.000,
+'  LS                                               4d2.(a3F).5s                        a2F'
+'  LS                                                  4d2.(a3F).5p                    z4F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4034.08300,  -1.510,  0.8019,  3.5,  3.8744,  3.5,  1.140,  1.240,  1.190, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3F).5s                   a2F'
+'  LS                                                   4d2.(a3F).5p                   z4F*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4040.24000,  -1.650,  0.9315,  0.5,  3.9993,  1.5,  2.660,  1.170,  0.790, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3P).5s                   a4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4045.61300,  -0.860,  0.7097,  0.5,  3.7735,  1.5,  0.690,  0.590,  0.560, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3P).5s                   a2P'
+'  LS                                                   4d2.(a3F).5p                   z2D*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4048.66600,  -0.530,  0.8019,  3.5,  3.8634,  2.5,  1.140,  1.120,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3F).5s                   a2F'
+'  LS                                                   4d2.(a3F).5p                   z2D*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4050.32000,  -1.060,  0.7133,  2.5,  3.7735,  1.5,  0.880,  0.590,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3F).5s                   a2F'
+'  LS                                                   4d2.(a3F).5p                   z2D*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4071.08900,  -1.660,  0.9991,  2.5,  4.0437,  2.5,  1.590,  1.340,  1.460, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3P).5s                   a4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4077.04600,  -1.690,  0.9591,  1.5,  3.9993,  1.5,  1.720,  1.170,  1.440, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3P).5s                   a4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4085.71900,  -1.840,  0.9315,  0.5,  3.9652,  0.5,  2.660,  0.020,  1.340, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3P).5s                   a4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.17      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4090.53500,  -1.009,  0.7578,  1.5,  3.7879,  2.5,  1.300,  1.050,  0.850, 0.000, 0.000, 0.000,
+'  LS                                               4d2.(a3P).5s                        a2P'
+'  LS                                                  4d2.(a3F).5p                    z4F*'
+'_          Cu 1 - Ba 2 Bell   2   wl:CC   2   gf:CC   2      CC   2      CC   2      CC   2      CC   2      CC   2      CC   2      CC            Zr+'
+'Zr 2',      4096.62800,  -1.730,  0.5586,  2.5,  3.5843,  3.5,  1.170,  1.000,  0.780, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a1D).5s                   a2D'
+'  LS                                                   4d2.(a3F).5p                   z4G*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4110.06000,  -1.400,  0.7578,  1.5,  3.7735,  1.5,  1.300,  0.590,  0.950, 0.000, 0.000, 0.000,
+'  LS                                               4d2.(a3P).5s                        a2P'
+'  LS                                                  4d2.(a3F).5p                    z2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4149.19800,  -0.040,  0.8019,  3.5,  3.7892,  3.5,  1.140,  1.130,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3F).5s                   a2F'
+'  LS                                                   4d2.(a3F).5p                   z2F*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4150.98600,  -0.992,  0.8019,  3.5,  3.7879,  2.5,  1.140,  1.050,  1.270, 0.000, 0.000, 0.000,
+'  LS                                               4d2.(a3F).5s                        a2F'
+'  LS                                                  4d2.(a3F).5p                    z4F*'
+'_          Cu 1 - Ba 2 Bell   2   wl:CC   2   gf:CC   2      CC   2      CC   2      CC   2      CC   2      CC   2      CC   2      CC            Zr+'
+'Zr 2',      4156.23200,  -0.780,  0.7097,  0.5,  3.6920,  1.5,  0.690,  0.700,  0.700, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3P).5s                   a2P'
+'  LS                                                   4d2.(a3F).5p                   z4F*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4156.27600,  -0.776,  0.7097,  0.5,  3.6920,  1.5,  0.690,  0.700,  0.700, 0.000, 0.000, 0.000,
+'  LS                                               4d2.(a3P).5s                        a2P'
+'  LS                                                  4d2.(a3F).5p                    z4F*'
+'_          Cu 1 - Ba 2 Bell   2   wl:CC   2   gf:CC   2      CC   2      CC   2      CC   2      CC   2      CC   2      CC   2      CC            Zr+'
+'Zr 2',      4161.20000,  -0.590,  0.7133,  2.5,  3.6920,  1.5,  0.880,  0.700,  1.020, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3F).5s                   a2F'
+'  LS                                                   4d2.(a3F).5p                   z4F*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4179.80800,  -0.680,  1.6649,  1.5,  4.6304,  2.5,  0.800,  0.980,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b2D'
+'  LS                                                   4d2.(1G).5p                    y2F*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4186.68200,  -0.740,  1.7560,  2.5,  4.7165,  3.5,  1.210,  1.310,  1.430, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b2D'
+'  LS                                                   4d2.(a3P).5p                   y4D*'
+'E0.05      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4191.49300,  -1.070,  1.7594,  4.5,  4.7165,  3.5,  1.100,  1.310,  0.750, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(1G).5s                    b2G'
+'  LS                                                   4d2.(a3P).5p                   y4D*'
+'E0.05      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4205.93900,  -1.500,  2.4094,  3.5,  5.3564,  2.5,  1.150,  1.560,  0.640, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2F'
+'  LS                                                  4d2.(a3P).5p                    y4P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4208.98000,  -0.510,  0.7133,  2.5,  3.6582,  2.5,  0.880,  0.840,  0.860, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3F).5s                   a2F'
+'  LS                                                   4d2.(a3F).5p                   z2F*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4210.60900,  -1.190,  1.6649,  1.5,  4.6086,  2.5,  0.800,  1.140,  1.390, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b2D'
+'  LS                                                   4d2.(a3P).5p                   y4D*'
+'E0.04      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4211.87700,  -1.040,  0.5267,  1.5,  3.4696,  2.5,  0.810,  0.660,  0.550, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a1D).5s                   a2D'
+'  LS                                                   4d2.(a3F).5p                   z4G*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4222.38100,  -0.900,  1.2080,  1.5,  4.1435,  2.5,  1.720,  1.200,  0.800, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b4P'
+'  LS                                                  4d2.(a3P).5p                    y2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4224.26400,  -1.880,  0.7578,  1.5,  3.6920,  1.5,  1.300,  0.700,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3P).5s                   a2P'
+'  LS                                                   4d2.(a3F).5p                   z4F*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4231.62900,  -0.790,  1.7560,  2.5,  4.6851,  3.5,  1.210,  1.210,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b2D'
+'  LS                                                   4d2.(1G).5p                    y2F*'
+'E0.04      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4236.60900,  -1.500,  1.7594,  4.5,  4.6851,  3.5,  1.100,  1.210,  0.910, 0.000, 0.000, 0.000,
+'  LS                                               4d2.(1G).5s                         b2G'
+'  LS                                                  4d2.(1G).5p                     y2F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4258.04100,  -1.200,  0.5586,  2.5,  3.4696,  2.5,  1.170,  0.660,  0.920, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a1D).5s                   a2D'
+'  LS                                                   4d2.(a3F).5p                   z4G*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4264.90800,  -1.630,  1.6649,  1.5,  4.5712,  2.5,  0.800,  1.090,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b2D'
+'  LS                                                   4d.5s.(a3D).5p                 y4F*'
+'E0.06      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4267.29100,  -1.000,  2.4094,  2.5,  5.3141,  2.5,  1.150,  0.890,  1.020, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2F'
+'  LS                                                  4d2.(a1D).5p                    x2F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4272.25100,  -0.950,  1.8267,  2.5,  4.7280,  1.5,  1.190,  1.730,  0.780, 0.000, 0.000, 0.000,
+'  LS                                                    4d.5s2                         c2D'
+'  LS                                                   4d.5s.(a3D).5p                 z4P*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4273.51300,  -1.480,  0.7578,  1.5,  3.6582,  2.5,  1.300,  0.840,  0.490, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3P).5s                   a2P'
+'  LS                                                   4d2.(a3F).5p                   z2F*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4277.37300,  -1.400,  0.8019,  3.5,  3.6997,  4.5,  1.140,  1.160,  1.200, 0.000, 0.000, 0.000,
+'  LS                                               4d2.(a3F).5s                        a2F'
+'  LS                                                  4d2.(a3F).5p                    z4G*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4286.50300,  -1.610,  0.9718,  3.5,  3.8634,  2.5,  0.890,  1.120,  0.600, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            a2G'
+'  LS                                                   4d2.(a3F).5p                   z2D*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4289.15200,  -1.680,  1.8267,  2.5,  4.7165,  3.5,  1.190,  1.310,  1.450, 0.000, 0.000, 0.000,
+'  LS                                                    4d.5s2                         c2D'
+'  LS                                                   4d2.(a3P).5p                   y4D*'
+'E0.06      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4293.12500,  -1.010,  1.7432,  3.5,  4.6304,  2.5,  0.890,  0.980,  0.780, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(1G).5s                    b2G'
+'  LS                                                   4d2.(1G).5p                    y2F*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4296.73300,  -1.010,  1.7560,  2.5,  4.6407,  3.5,  1.210,  1.270,  1.340, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b2D'
+'  LS                                                   4d.5s.(a3D).5p                 y4F*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4301.80100,  -1.200,  1.7594,  4.5,  4.6407,  3.5,  1.100,  1.270,  0.820, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(1G).5s                    b2G'
+'  LS                                                   4d.5s.(a3D).5p                 y4F*'
+'E0.04      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4308.91400,  -0.800,  1.4859,  4.5,  4.3625,  4.5,  0.910,  1.110,  1.010, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 a2H'
+'  LS                                                  4d2.(a3F).5p                    z2G*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4312.22500,  -1.590,  1.7560,  2.5,  4.6304,  2.5,  1.210,  0.980,  1.090, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b2D'
+'  LS                                                   4d2.(1G).5p                    y2F*'
+'E0.04      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4317.30900,  -1.450,  0.7133,  2.5,  3.5843,  3.5,  0.880,  1.000,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3F).5s                   a2F'
+'  LS                                                   4d2.(a3F).5p                   z4G*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4323.64100,  -1.500,  2.4896,  1.5,  5.3564,  2.5,  1.330,  1.560,  1.740, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2P'
+'  LS                                                  4d2.(a3P).5p                    y4P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4325.64100,  -1.200,  1.7432,  3.5,  4.6086,  2.5,  0.890,  1.140,  0.580, 0.000, 0.000, 0.000,
+'  LS                                               4d2.(1G).5s                         b2G'
+'  LS                                                  4d2.(a3P).5p                    y4D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4333.25200,  -0.600,  2.4094,  3.5,  5.2698,  3.5,  1.150,  1.130,  1.140, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2F'
+'  LS                                                  4d2.(a1D).5p                    x2F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:CCou   2 gf:CCou   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout            Zr+'
+'Zr 2',      4336.33800,  -1.750,  1.8267,  2.5,  4.6851,  3.5,  1.190,  1.210,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                    4d.5s2                         c2D'
+'  LS                                                   4d2.(1G).5p                    y2F*'
+'E0.05      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4337.61900,  -1.220,  1.7728,  1.5,  4.6304,  2.5,  0.810,  0.980,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                    4d.5s2                         c2D'
+'  LS                                                   4d2.(1G).5p                    y2F*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4339.54900,  -1.990,  0.8019,  3.5,  3.6582,  2.5,  1.140,  0.840,  1.520, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3F).5s                   a2F'
+'  LS                                                   4d2.(a3F).5p                   z2F*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4359.73000,  -0.510,  1.2360,  2.5,  4.0790,  3.5,  1.590,  1.410,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4370.94800,  -0.770,  1.2080,  1.5,  4.0437,  2.5,  1.720,  1.340,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4379.74200,  -0.356,  1.5324,  5.5,  4.3625,  4.5,  1.090,  1.110,  1.050, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 a2H'
+'  LS                                                  4d2.(a3F).5p                    z2G*'
+'_          Cu 1 - Ba 2 Bell   2   wl:CC   2   gf:CC   2      CC   2      CC   2      CC   2      CC   2      CC   2      CC   2      CC            Zr+'
+'Zr 2',      4388.50200,  -1.500,  2.4896,  1.5,  5.3141,  2.5,  1.330,  0.890,  0.560, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2P'
+'  LS                                                  4d2.(a1D).5p                    x2F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4399.39600,  -1.900,  0.9718,  3.5,  3.7892,  3.5,  0.890,  1.130,  1.010, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 a2G'
+'  LS                                                  4d2.(a3F).5p                    z2F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4401.38500,  -1.900,  0.9718,  3.5,  3.7879,  2.5,  0.890,  1.050,  0.690, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 a2G'
+'  LS                                                  4d2.(a3F).5p                    z4F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4403.33800,  -1.180,  1.1844,  0.5,  3.9993,  1.5,  2.650,  1.170,  0.800, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4404.73000,  -1.680,  1.8267,  2.5,  4.6407,  3.5,  1.190,  1.270,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                    4d.5s2                         c2D'
+'  LS                                                   4d.5s.(a3D).5p                 y4F*'
+'E0.05      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4414.53500,  -1.080,  1.2360,  2.5,  4.0437,  2.5,  1.590,  1.340,  1.470, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4429.34600,  -1.400,  1.7728,  1.5,  4.5712,  2.5,  0.810,  1.090,  1.300, 0.000, 0.000, 0.000,
+'  LS                                               4d.5s2                              c2D'
+'  LS                                                  4d.5s.(a3D).5p                  y4F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4440.45300,  -1.040,  1.2080,  1.5,  3.9993,  1.5,  1.720,  1.170,  1.440, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4442.50000,  -1.940,  0.9991,  2.5,  3.7892,  3.5,  1.590,  1.130,  0.570, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3P).5s                   a4P'
+'  LS                                                   4d2.(a3F).5p                   z2F*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4442.99200,  -0.420,  1.4859,  4.5,  4.2756,  3.5,  0.910,  0.890,  0.950, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            a2H'
+'  LS                                                   4d2.(a3F).5p                   z2G*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4445.90200,  -1.350,  1.6649,  1.5,  4.4529,  1.5,  0.800,  1.340,  1.070, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2D'
+'  LS                                                  4d2.(a1D).5p                    z2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:BGHL   2 gf:BGHL   2    BGHL   2    BGHL   2    BGHL   2    BGHL   2    BGHL   2    BGHL   2    BGHL            Zr+'
+'Zr 2',      4454.79500,  -1.180,  0.8019,  3.5,  3.5843,  3.5,  1.140,  1.000,  1.070, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3F).5s                   a2F'
+'  LS                                                   4d2.(a3F).5p                   z4G*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4457.41300,  -1.220,  1.1844,  0.5,  3.9652,  0.5,  2.650,  0.020,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4461.21700,  -1.130,  1.0108,  4.5,  3.7892,  3.5,  1.110,  1.130,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            a2G'
+'  LS                                                   4d2.(a3F).5p                   z2F*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4482.04800,  -1.200,  2.4094,  3.5,  5.1749,  4.5,  1.150,  0.950,  0.610, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2F'
+'  LS                                                  4d2.(1G).5p                     z2H*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4485.44400,  -2.010,  1.2360,  2.5,  3.9993,  1.5,  1.590,  1.170,  1.910, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.04      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4494.41800,  -0.480,  2.4094,  3.5,  5.1673,  2.5,  1.150,  1.180,  1.110, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2F'
+'  LS                                                  4d2.(a1D).5p                    x2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:CCou   2 gf:CCou   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout            Zr+'
+'Zr 2',      4495.44900,  -1.830,  1.2080,  1.5,  3.9652,  0.5,  1.720,  0.020,  2.150, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b4P'
+'  LS                                                   4d2.(a3F).5p                   z4D*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4496.96200,  -0.890,  0.7133,  2.5,  3.4696,  2.5,  0.880,  0.660,  0.770, 0.000, 0.000, 0.000,
+'  LS                                                    4d2.(a3F).5s                   a2F'
+'  LS                                                   4d2.(a3F).5p                   z4G*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4553.93400,  -0.570,  2.4195,  2.5,  5.1413,  1.5,  0.860,  0.820,  0.880, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2F'
+'  LS                                                  4d2.(a1D).5p                    x2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:CCou   2 gf:CCou   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout            Zr+'
+'Zr 2',      4565.36200,  -1.200,  1.7728,  1.5,  4.4878,  0.5,  0.810,  0.610,  0.860, 0.000, 0.000, 0.000,
+'  LS                                               4d.5s2                              c2D'
+'  LS                                                  4d2.(a1D).5p                    z2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4574.50200,  -0.950,  2.4318,  0.5,  5.1413,  1.5,  0.510,  0.820,  0.900, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2P'
+'  LS                                                  4d2.(a1D).5p                    x2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:CCou   2 gf:CCou   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout            Zr+'
+'Zr 2',      4601.95300,  -1.300,  2.4318,  0.5,  5.1252,  1.5,  0.510,  1.330,  1.530, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2P'
+'  LS                                                  4d2.(a3P).5p                    y2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4613.94600,  -1.540,  0.9718,  3.5,  3.6582,  2.5,  0.890,  0.840,  0.940, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            a2G'
+'  LS                                                   4d2.(a3F).5p                   z2F*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4629.07900,  -0.590,  2.4896,  1.5,  5.1673,  2.5,  1.330,  1.180,  1.080, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2P'
+'  LS                                                  4d2.(a1D).5p                    x2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:CCou   2 gf:CCou   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout            Zr+'
+'Zr 2',      4661.78400,  -0.800,  2.4094,  3.5,  5.0683,  4.5,  1.150,  1.080,  0.960, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2F'
+'  LS                                                  4d2.(1G).5p                     y2G*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4685.18600,  -0.900,  2.4195,  2.5,  5.0651,  3.5,  0.860,  0.920,  0.990, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2F'
+'  LS                                                  4d2.(1G).5p                     y2G*'
+'_          Cu 1 - Ba 2 Bell   2 wl:CCou   2 gf:CCou   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout            Zr+'
+'Zr 2',      4703.00300,  -0.800,  2.4896,  1.5,  5.1252,  1.5,  1.330,  1.330,  1.330, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2P'
+'  LS                                                  4d2.(a3P).5p                    y2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4816.50000,  -2.000,  1.0108,  4.5,  3.5843,  3.5,  1.110,  1.000,  1.300, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 a2G'
+'  LS                                                  4d2.(a3F).5p                    z4G*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4831.32700,  -1.720,  1.2080,  1.5,  3.7735,  1.5,  1.720,  0.590,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b4P'
+'  LS                                                   4d2.(a3F).5p                   z2D*'
+'E0.03      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      4841.97500,  -2.100,  2.4896,  1.5,  5.0495,  0.5,  1.330,  0.680,  1.490, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2P'
+'  LS                                                  4d2.(a3P).5p                    y2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      4962.31000,  -2.000,  0.9718,  3.5,  3.4696,  2.5,  0.890,  0.660,  1.170, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 a2G'
+'  LS                                                  4d2.(a3F).5p                    z4G*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      5000.86900,  -1.400,  1.6649,  1.5,  4.1435,  2.5,  0.800,  1.200,  1.490, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2D'
+'  LS                                                  4d2.(a3P).5p                    y2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      5112.27000,  -0.850,  1.6649,  1.5,  4.0895,  1.5,  0.800,  0.810,  0.810, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b2D'
+'  LS                                                   4d2.(a3P).5p                   y2D*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      5124.98200,  -1.500,  1.5324,  5.5,  3.9509,  4.5,  1.090,  1.320,  0.570, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 a2H'
+'  LS                                                  4d2.(a3F).5p                    z4F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      5191.59200,  -0.712,  1.7560,  2.5,  4.1435,  2.5,  1.210,  1.200,  1.200, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2D'
+'  LS                                                  4d2.(a3P).5p                    y2D*'
+'_          Cu 1 - Ba 2 Bell   2   wl:CC   2   gf:CC   2      CC   2      CC   2      CC   2      CC   2      CC   2      CC   2      CC            Zr+'
+'Zr 2',      5311.78400,  -1.500,  1.7560,  2.5,  4.0895,  1.5,  1.210,  0.810,  1.510, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2D'
+'  LS                                                  4d2.(a3P).5p                    y2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      5350.08900,  -1.240,  1.8267,  2.5,  4.1435,  2.5,  1.190,  1.200,  1.190, 0.000, 0.000, 0.000,
+'  LS                                               4d.5s2                              c2D'
+'  LS                                                  4d2.(a3P).5p                    y2D*'
+'_          Cu 1 - Ba 2 Bell   2   wl:CC   2   gf:CC   2      CC   2      CC   2      CC   2      CC   2      CC   2      CC   2      CC            Zr+'
+'Zr 2',      5350.35000,  -1.160,  1.7728,  1.5,  4.0895,  1.5,  0.810,  0.810,  0.810, 0.000, 0.000, 0.000,
+'  LS                                                    4d.5s2                         c2D'
+'  LS                                                   4d2.(a3P).5p                   y2D*'
+'E0.02      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      5372.46600,  -0.810,  2.4094,  3.5,  4.7165,  3.5,  1.150,  1.310,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                    4d3                            b2F'
+'  LS                                                   4d2.(a3P).5p                   y4D*'
+'E0.05      Lund exp.          1 wl:LNAJ   1 gf:LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ   1    LNAJ            Zr+'
+'Zr 2',      5418.01600,  -1.600,  1.7560,  2.5,  4.0437,  2.5,  1.210,  1.340,  1.280, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2D'
+'  LS                                                  4d2.(a3F).5p                    z4D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      5477.82200,  -1.400,  1.8267,  2.5,  4.0895,  1.5,  1.190,  0.810,  1.470, 0.000, 0.000, 0.000,
+'  LS                                               4d.5s2                              c2D'
+'  LS                                                  4d2.(a3P).5p                    y2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      5479.71900,  -2.000,  3.4344,  1.5,  5.6963,  0.5, 99.000,  0.720, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                  2D'
+'  LS                                                  4d2.(1S).5p                     x2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      5576.44000,  -1.900,  3.4270,  2.5,  5.6497,  1.5, 99.000,  1.140, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                  2D'
+'  LS                                                  4d2.(1S).5p                     x2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      6028.59200,  -1.400,  2.4318,  0.5,  4.4878,  0.5,  0.510,  0.610,  0.560, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2P'
+'  LS                                                  4d2.(a1D).5p                    z2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      6100.12100,  -1.500,  1.7560,  2.5,  3.7879,  2.5,  1.210,  1.050,  1.130, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2D'
+'  LS                                                  4d2.(a3F).5p                    z4F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      6106.48900,  -1.500,  2.4896,  1.5,  4.5194,  1.5,  1.330,  0.580,  0.950, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2P'
+'  LS                                                  4d.5s.(a3D).5p                  y4F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      6106.56000,  -1.500,  1.7594,  4.5,  3.7892,  3.5,  1.100,  1.130,  1.050, 0.000, 0.000, 0.000,
+'  LS                                               4d2.(1G).5s                         b2G'
+'  LS                                                  4d2.(a3F).5p                    z2F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      6114.85200,  -1.400,  1.6649,  1.5,  3.6920,  1.5,  0.800,  0.700,  0.750, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2D'
+'  LS                                                  4d2.(a3F).5p                    z4F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      6313.57400,  -1.400,  2.4896,  1.5,  4.4529,  1.5,  1.330,  1.340,  1.330, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2P'
+'  LS                                                  4d2.(a1D).5p                    z2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      6346.48400,  -1.300,  2.4094,  3.5,  4.3625,  4.5,  1.150,  1.110,  1.030, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2F'
+'  LS                                                  4d2.(a3F).5p                    z2G*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      6578.65000,  -1.500,  2.4318,  0.5,  4.3159,  0.5,  0.510,  1.960,  1.240, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2P'
+'  LS                                                  4d2.(a3P).5p                    z2S*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      6677.92400,  -1.360,  2.4195,  2.5,  4.2756,  3.5,  0.860,  0.890,  0.930, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2F'
+'  LS                                                  4d2.(a3F).5p                    z2G*'
+'_          Cu 1 - Ba 2 Bell   2 wl:CCou   2 gf:CCou   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout            Zr+'
+'Zr 2',      6726.02900,  -1.800,  3.4270,  2.5,  5.2698,  3.5, 99.000,  1.130, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                  2D'
+'  LS                                                  4d2.(a1D).5p                    x2F*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      6787.11700,  -1.170,  2.4896,  1.5,  4.3159,  0.5,  1.330,  1.960,  1.170, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2P'
+'  LS                                                  4d2.(a3P).5p                    z2S*'
+'_          Cu 1 - Ba 2 Bell   2 wl:CCou   2 gf:CCou   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout   2   CCout            Zr+'
+'Zr 2',      7122.46200,  -2.400,  3.4270,  2.5,  5.1673,  2.5, 99.000,  1.180, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                  2D'
+'  LS                                                  4d2.(a1D).5p                    x2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      7147.92900,  -2.000,  2.4094,  3.5,  4.1435,  2.5,  1.150,  1.200,  1.100, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2F'
+'  LS                                                  4d2.(a3P).5p                    y2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      7179.82900,  -1.500,  1.7432,  3.5,  3.4696,  2.5,  0.890,  0.660,  1.170, 0.000, 0.000, 0.000,
+'  LS                                               4d2.(1G).5s                         b2G'
+'  LS                                                  4d2.(a3F).5p                    z4G*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      7261.34500,  -2.100,  3.4344,  1.5,  5.1413,  1.5, 99.000,  0.820, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                  2D'
+'  LS                                                  4d2.(a1D).5p                    x2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      7298.98600,  -2.000,  3.4270,  2.5,  5.1252,  1.5, 99.000,  1.330, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                  2D'
+'  LS                                                  4d2.(a3P).5p                    y2P*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      8525.13300,  -1.000,  2.4094,  3.5,  3.8634,  2.5,  1.150,  1.120,  1.200, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2F'
+'  LS                                                  4d2.(a3F).5p                    z2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+'Zr 2',      9154.54400,  -2.400,  2.4195,  2.5,  3.7735,  1.5,  0.860,  0.590,  1.050, 0.000, 0.000, 0.000,
+'  LS                                               4d3                                 b2F'
+'  LS                                                  4d2.(a3F).5p                    z2D*'
+'_          Cu 1 - Ba 2 Bell   2 wl:MULT   2 gf:MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT   2    MULT            Zr+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Lund: exp. data
+  2. Cu 1 - Ba 2 Bell

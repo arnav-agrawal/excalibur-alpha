@@ -1,0 +1,33 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Au 2',      4016.06720,  -1.880,  6.0146,  2.0,  9.1009,  1.0,  1.020,  1.040,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                            5d8.6s2                 3P'
+'  JJ                                                           5d9.(2D<5/2>).6p (5/2,3/2)*'
+'_          Au 2, Au 3 (VALD   1   wl:RW   1   gf:RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW            Au+'
+'Au 2',      4052.78960,  -1.680,  6.0146,  2.0,  9.0730,  2.0,  1.020,  1.120,  1.070, 0.000, 0.000, 0.000,
+'  LS                                                            5d8.6s2                 3P'
+'  JJ                                                           5d9.(2D<5/2>).6p (5/2,3/2)*'
+'_          Au 2, Au 3 (VALD   1   wl:RW   1   gf:RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW            Au+'
+'Au 2',      4361.04040,  -1.170, 10.6264,  1.0, 13.4686,  2.0,  1.110,  0.950,  0.870, 0.000, 0.000, 0.000,
+'  JJ                                                           5d9.(2D<3/2>).6p (3/2,3/2)*'
+'  JJ                                                            5d9.(2D<5/2>).7s (5/2,1/2)'
+'_          Au 2, Au 3 (VALD   1   wl:RW   1   gf:RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW            Au+'
+'Au 2',      4875.27100,  -2.010, 12.4377,  1.0, 14.9801,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                           5d8.(3P).6s.6p          5P*'
+'  JJ                                                            5d9.(2D<3/2>).7s (3/2,1/2)'
+'_          Au 2, Au 3 (VALD   1   wl:RW   1   gf:RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW            Au+'
+'Au 2',      4902.22650,  -1.490,  8.0970,  4.0, 10.6255,  3.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                            5d8.6s2                 1G'
+'  JJ                                                           5d9.(2D<3/2>).6p (3/2,3/2)*'
+'_          Au 2, Au 3 (VALD   1   wl:RW   1   gf:RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW            Au+'
+'Au 2',      6714.08490,   0.070, 13.4117,  3.0, 15.2579,  4.0,  1.200, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                            5d9.(2D<5/2>).7s (5/2,1/2)'
+'  LS                                                             5d8.(1G).6s.6p        3G*'
+'_          Au 2, Au 3 (VALD   1   wl:RW   1   gf:RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW            Au+'
+'Au 2',      6902.63070,   0.600, 13.4117,  3.0, 15.2074,  4.0,  1.200, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                            5d9.(2D<5/2>).7s (5/2,1/2)'
+'  JJ                                                           5d9.(2D<5/2>).7p (5/2,3/2)*'
+'_          Au 2, Au 3 (VALD   1   wl:RW   1   gf:RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW   1      RW            Au+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. VALD2: Au

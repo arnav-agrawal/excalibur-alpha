@@ -1,0 +1,133 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Ga 2',      4251.15400,   0.410, 14.1114,  1.0, 17.0270,  2.0,  0.500,  0.670,  0.750, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.4d           3D'
+'  LS                                                                    4s.4f          3F*'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      4254.07300,   0.030, 14.1146,  2.0, 17.0283,  3.0,  1.170,  1.020,  0.880, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.4d           3D'
+'  LS                                                                    4s.4f          1F*'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      4255.72000,   0.430, 14.1146,  2.0, 17.0272,  3.0,  1.170,  1.060,  0.950, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.4d           3D'
+'  LS                                                                    4s.4f          3F*'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      4255.93700,  -0.330, 14.1146,  2.0, 17.0270,  2.0,  1.170,  0.670,  0.920, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.4d           3D'
+'  LS                                                                    4s.4f          3F*'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      4261.47800,  -0.880, 14.1197,  3.0, 17.0283,  3.0,  1.330,  1.020,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.4d           3D'
+'  LS                                                                    4s.4f          1F*'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      4262.01400,   0.740, 14.1197,  3.0, 17.0279,  4.0,  1.330,  1.250,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.4d           3D'
+'  LS                                                                    4s.4f          3F*'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      4263.13600,  -0.470, 14.1197,  3.0, 17.0272,  3.0,  1.330,  1.060,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.4d           3D'
+'  LS                                                                    4s.4f          3F*'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      5219.65700,  -1.880, 14.9463,  1.0, 17.3210,  2.0,  1.000,  1.000,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           1P*'
+'  LS                                                                     4s.5d          1D'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      5338.23990,  -0.251, 14.6834,  0.0, 17.0054,  1.0, 99.000,  0.500, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.5d          3D'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (69)Ga+'
+'Ga 2',      5338.24050,  -0.429, 14.6834,  0.0, 17.0054,  1.0, 99.000,  0.500, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.5d          3D'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (71)Ga+'
+'Ga 2',      5360.40160,  -0.079, 14.6944,  1.0, 17.0067,  2.0,  1.500,  1.170,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.5d          3D'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (71)Ga+'
+'Ga 2',      5360.40270,   0.099, 14.6944,  1.0, 17.0067,  2.0,  1.500,  1.170,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.5d          3D'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (69)Ga+'
+'Ga 2',      5363.58520,  -0.371, 14.6944,  1.0, 17.0054,  1.0,  1.500,  0.500,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.5d          3D'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (69)Ga+'
+'Ga 2',      5363.58550,  -0.549, 14.6944,  1.0, 17.0054,  1.0,  1.500,  0.500,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.5d          3D'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (71)Ga+'
+'Ga 2',      5416.31710,   0.201, 14.7204,  2.0, 17.0088,  3.0,  1.500,  1.330,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.5d          3D'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (71)Ga+'
+'Ga 2',      5416.31880,   0.379, 14.7204,  2.0, 17.0088,  3.0,  1.500,  1.330,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.5d          3D'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (69)Ga+'
+'Ga 2',      5421.27390,  -0.549, 14.7204,  2.0, 17.0067,  2.0,  1.500,  1.170,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.5d          3D'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (71)Ga+'
+'Ga 2',      5421.27540,  -0.371, 14.7204,  2.0, 17.0067,  2.0,  1.500,  1.170,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.5d          3D'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (69)Ga+'
+'Ga 2',      5424.54000,  -1.320, 14.7204,  2.0, 17.0054,  1.0,  1.500,  0.500,  2.000, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.5d          3D'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      6334.06720,  -0.039, 12.7635,  1.0, 14.7204,  2.0,  2.000,  1.500,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.5s           3S'
+'  LS                                                                    4s.5p          3P*'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (71)Ga+'
+'Ga 2',      6334.07040,   0.139, 12.7635,  1.0, 14.7204,  2.0,  2.000,  1.500,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.5s           3S'
+'  LS                                                                    4s.5p          3P*'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (69)Ga+'
+'Ga 2',      6419.23770,  -0.269, 12.7635,  1.0, 14.6944,  1.0,  2.000,  1.500,  1.750, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.5s           3S'
+'  LS                                                                    4s.5p          3P*'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (71)Ga+'
+'Ga 2',      6419.24060,  -0.091, 12.7635,  1.0, 14.6944,  1.0,  2.000,  1.500,  1.750, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.5s           3S'
+'  LS                                                                    4s.5p          3P*'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (69)Ga+'
+'Ga 2',      6455.92190,  -0.749, 12.7635,  1.0, 14.6834,  0.0,  2.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.5s           3S'
+'  LS                                                                    4s.5p          3P*'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (71)Ga+'
+'Ga 2',      6455.92440,  -0.571, 12.7635,  1.0, 14.6834,  0.0,  2.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.5s           3S'
+'  LS                                                                    4s.5p          3P*'
+'_          Ga 2 theor.        1 wl:SRKS   1 gf:JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB   1    JASB        (69)Ga+'
+'Ga 2',      6856.71000,  -0.550, 14.6834,  0.0, 16.4912,  1.0, 99.000,  2.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.6s          3S'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      6898.56000,  -0.070, 14.6944,  1.0, 16.4912,  1.0,  1.500,  2.000,  1.750, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.6s          3S'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      6999.66800,   0.160, 14.7204,  2.0, 16.4912,  1.0,  1.500,  2.000,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                                   4s.5p           3P*'
+'  LS                                                                     4s.6s          3S'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      7198.45000,   0.080, 13.2244,  0.0, 14.9463,  1.0, 99.000,  1.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.5s           1S'
+'  LS                                                                    4s.5p          1P*'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      7792.26000,  -0.150, 13.3557,  2.0, 14.9463,  1.0,  1.000,  1.000,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                                    4p2             1D'
+'  LS                                                                    4s.5p          1P*'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      8962.15000,   0.350, 15.6453,  2.0, 17.0283,  3.0,  1.000,  1.020,  1.050, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.4d           1D'
+'  LS                                                                    4s.4f          1F*'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+'Ga 2',      8969.49000,  -0.060, 15.6453,  2.0, 17.0272,  3.0,  1.000,  1.060,  1.120, 0.000, 0.000, 0.000,
+'  LS                                                                    4s.4d           1D'
+'  LS                                                                    4s.4f          3F*'
+'_          Ga 2 theor.        1    SRKS   1 gf:SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS   1    SRKS            Ga+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Ga2 theor

@@ -1,0 +1,45 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Hg 1',      4046.55900,  -0.863,  4.6674,  0.0,  7.7305,  1.0, 99.000,  2.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.6s.(2S).6p           3P*'
+'  LS                                                         5d10.6s.(2S).7s            3S'
+'_          Hf 1 - U 2 Bell    1   wl:AS   1   gf:AS   1      AS   1      AS   1      AS   1      AS   1      AS   1      AS   1      AS             Hg'
+'Hg 1',      4077.82700,  -1.470,  4.8865,  1.0,  7.9261,  0.0,  1.470, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.6s.(2S).6p           3P*'
+'  LS                                                         5d10.6s.(2S).7s            1S'
+'_          Hf 1 - U 2 Bell    1   wl:Wa   1   gf:Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa             Hg'
+'Hg 1',      4108.04600,  -2.060,  6.7037,  1.0,  9.7209,  0.0,  1.020, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.6s.(2S).6p           1P*'
+'  LS                                                         5d10.6s.(2S).9s            1S'
+'_          Hf 1 - U 2 Bell    1   wl:Wa   1   gf:Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa             Hg'
+'Hg 1',      4358.32300,  -0.383,  4.8865,  1.0,  7.7305,  1.0,  1.470,  2.000,  1.740, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.6s.(2S).6p           3P*'
+'  LS                                                         5d10.6s.(2S).7s            3S'
+'_          Hf 1 - U 2 Bell    1   wl:AS   1   gf:AS   1      AS   1      AS   1      AS   1      AS   1      AS   1      AS   1      AS             Hg'
+'Hg 1',      4916.06200,  -1.506,  6.7037,  1.0,  9.2250,  0.0,  1.020, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.6s.(2S).6p           1P*'
+'  LS                                                         5d10.6s.(2S).8s            1S'
+'_          Hf 1 - U 2 Bell    1   wl:Wa   1   gf:Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa             Hg'
+'Hg 1',      5460.73100,  -0.137,  5.4606,  2.0,  7.7305,  1.0,  1.500,  2.000,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.6s.(2S).6p           3P*'
+'  LS                                                         5d10.6s.(2S).7s            3S'
+'_          Hf 1 - U 2 Bell    1   wl:AS   1   gf:AS   1      AS   1      AS   1      AS   1      AS   1      AS   1      AS   1      AS             Hg'
+'Hg 1',      5769.59300,   0.630,  6.7037,  1.0,  8.8520,  2.0,  1.020,  1.110,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.6s.(2S).6p           1P*'
+'  LS                                                         5d10.6s.(2S).6d            3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hg'
+'Hg 1',      5790.66000,   0.710,  6.7037,  1.0,  8.8442,  2.0,  1.020, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.6s.(2S).6p           1P*'
+'  LS                                                         5d10.6s.(2S).6d            1D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Hg'
+'Hg 1',      10139.7620,  -0.272,  6.7037,  1.0,  7.9261,  0.0,  1.020, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.6s.(2S).6p           1P*'
+'  LS                                                         5d10.6s.(2S).7s            1S'
+'_          Hf 1 - U 2 Bell    1   wl:Wa   1   gf:Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa             Hg'
+'Hg 1',      12071.5480,  -2.440,  6.7037,  1.0,  7.7305,  1.0,  1.020,  2.000,  1.510, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.6s.(2S).6p           1P*'
+'  LS                                                         5d10.6s.(2S).7s            3S'
+'_          Hf 1 - U 2 Bell    1   wl:Wa   1   gf:Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa             Hg'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Hf 1 - U 2 Bell

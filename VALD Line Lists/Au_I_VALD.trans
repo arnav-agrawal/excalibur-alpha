@@ -1,0 +1,77 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Au 1',      4040.93000,  -1.210,  2.6576,  1.5,  5.7250,  2.5,  0.800,  1.010,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                          5d9.6s2                   2D'
+'  LS                                                        5d9.6s.6p                  4F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Au'
+'Au 1',      4065.06700,  -0.082,  4.6319,  0.5,  7.6811,  1.5,  0.660,  0.790,  0.820, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.(1S).6p              2P*'
+'  LS                                                         5d10.(1S).6d               2D'
+'_          Hf 1 - U 2 Bell    1  wl:JMG   1  gf:JMG   1     JMG   1     JMG   1     JMG   1     JMG   1     JMG   1     JMG   1     JMG             Au'
+'Au 1',      4241.79600,  -1.243,  5.1050,  1.5,  8.0271,  0.5,  1.330,  2.010,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.(1S).6p              2P*'
+'  LS                                                         5d10.(1S).8s               2S'
+'_          Hf 1 - U 2 Bell    1  wl:JMG   1  gf:JMG   1     JMG   1     JMG   1     JMG   1     JMG   1     JMG   1     JMG   1     JMG             Au'
+'Au 1',      4315.11200,  -0.450,  5.6459,  3.5,  8.5183,  2.5,  1.260,  1.270,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                         5d9.6s.6p                 4F*'
+'  LS                                                         5d9.6s.(3D3).7S            4D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Au'
+'Au 1',      4437.26700,  -0.640,  5.7250,  2.5,  8.5183,  2.5,  1.010,  1.270,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                         5d9.6s.6p                 4F*'
+'  LS                                                         5d9.6s.(3D3).7S            4D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Au'
+'Au 1',      4488.25300,  -0.310,  5.6459,  3.5,  8.4075,  3.5,  1.260,  1.420,  1.340, 0.000, 0.000, 0.000,
+'  LS                                                         5d9.6s.6p                 4F*'
+'  LS                                                         5d9.6s.(3D3).7S            4D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Au'
+'Au 1',      4607.51100,   0.290,  5.8282,  1.5,  8.5183,  2.5,  1.420,  1.270,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                         5d9.6s.6p                 4P*'
+'  LS                                                         5d9.6s.(3D3).7S            4D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Au'
+'Au 1',      4792.58200,   0.265,  5.1050,  1.5,  7.6913,  2.5,  1.330,  1.190,  1.090, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.(1S).6p              2P*'
+'  LS                                                         5d10.(1S).6d               2D'
+'_          Hf 1 - U 2 Bell    1  wl:JMG   1  gf:JMG   1     JMG   1     JMG   1     JMG   1     JMG   1     JMG   1     JMG   1     JMG             Au'
+'Au 1',      4811.60600,  -0.679,  5.1050,  1.5,  7.6811,  1.5,  1.330,  0.790,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.(1S).6p              2P*'
+'  LS                                                         5d10.(1S).6d               2D'
+'_          Hf 1 - U 2 Bell    1  wl:JMG   1  gf:JMG   1     JMG   1     JMG   1     JMG   1     JMG   1     JMG   1     JMG   1     JMG             Au'
+'Au 1',      5837.37400,  -0.569,  4.6319,  0.5,  6.7553,  0.5,  0.660,  2.000,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.(1S).6p              2P*'
+'  LS                                                         5d10.(1S).7s               2S'
+'_          Hf 1 - U 2 Bell    1 wl:MIGb   1 gf:MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb             Au'
+'Au 1',      6278.17200,  -1.400,  2.6576,  1.5,  4.6319,  0.5,  0.800,  0.660,  0.840, 0.000, 0.000, 0.000,
+'  LS                                                          5d9.6s2                   2D'
+'  LS                                                        5d10.(1S).6p               2P*'
+'_          Hf 1 - U 2 Bell    1  wl:HLL   1  gf:HLL   1     HLL   1     HLL   1     HLL   1     HLL   1     HLL   1     HLL   1     HLL             Au'
+'Au 1',      7510.72900,  -0.178,  5.1050,  1.5,  6.7553,  0.5,  1.330,  2.000,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.(1S).6p              2P*'
+'  LS                                                         5d10.(1S).7s               2S'
+'_          Hf 1 - U 2 Bell    1 wl:MIGb   1 gf:MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb             Au'
+'Au 1',      11560.4990,  -1.306,  7.4431,  0.5,  8.5153,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.(1S).7p              2P*'
+'  LS                                                         5d10.(1S).9s               2S'
+'_          Hf 1 - U 2 Bell    1 wl:MIGb   1 gf:MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb             Au'
+'Au 1',      12571.7950,  -1.032,  7.5294,  1.5,  8.5153,  0.5,  1.330, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.(1S).7p              2P*'
+'  LS                                                         5d10.(1S).9s               2S'
+'_          Hf 1 - U 2 Bell    1 wl:MIGb   1 gf:MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb             Au'
+'Au 1',      16012.9110,   0.260,  6.7553,  0.5,  7.5294,  1.5,  2.000,  1.330,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                          5d10.(1S).7s              2S'
+'  LS                                                        5d10.(1S).7p               2P*'
+'_          Hf 1 - U 2 Bell    1 wl:MIGb   1 gf:MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb             Au'
+'Au 1',      18020.8430,  -0.068,  6.7553,  0.5,  7.4431,  0.5,  2.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d10.(1S).7s              2S'
+'  LS                                                        5d10.(1S).7p               2P*'
+'_          Hf 1 - U 2 Bell    1 wl:MIGb   1 gf:MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb             Au'
+'Au 1',      21225.4220,  -0.332,  7.4431,  0.5,  8.0271,  0.5, 99.000,  2.010, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.(1S).7p              2P*'
+'  LS                                                         5d10.(1S).8s               2S'
+'_          Hf 1 - U 2 Bell    1 wl:MIGb   1 gf:MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb             Au'
+'Au 1',      24903.4900,   0.040,  7.5294,  1.5,  8.0271,  0.5,  1.330,  2.010,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                         5d10.(1S).7p              2P*'
+'  LS                                                         5d10.(1S).8s               2S'
+'_          Hf 1 - U 2 Bell    1 wl:MIGb   1 gf:MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb   1    MIGb             Au'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Hf 1 - U 2 Bell
