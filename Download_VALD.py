@@ -11,8 +11,9 @@ import pandas as pd
 import os
 import h5py
 import shutil
+import re
 
-def process_VALD_file(species, isotope):
+def process_VALD_file(species, ionization_state):
     """
     Used on developers' end to get the necessary data from a VALD line list 
 
@@ -26,13 +27,15 @@ def process_VALD_file(species, isotope):
     None.
 
     """
+    roman_ion = ''
     
-    isotope = str(isotope)
+    for i in range(ionization_state):
+        roman_ion += 'I'
+        
     
     directory = '../VALD Line Lists/'
 
-    trans_file = [filename for filename in os.listdir(directory) if filename == (species + '_' + isotope + '_VALD.trans')]
-
+    trans_file = [filename for filename in os.listdir(directory) if filename == (species + '_' + roman_ion + '_VALD.trans')]
 
     wl = []
     log_gf = []
@@ -134,7 +137,7 @@ def process_VALD_file(species, isotope):
     nu = 1.0e4/np.array(wl)
 
     # Open output file
-    f_out = open(directory + species + isotope + '.trans','w')
+    f_out = open(directory + species + '_' + roman_ion + '.trans','w')
     
     if alkali:
         f_out.write('nu_0 | gf | E_low | E_up | J_low | J_up | l_low | l_up | log_gamma_nat | log_gamma_vdw \n')
@@ -155,7 +158,7 @@ def process_VALD_file(species, isotope):
                                                                   log_gamma_vdw[i]))
     f_out.close()
     
-    convert_to_hdf(directory + species + isotope + '.trans', alkali)
+    convert_to_hdf(directory + species + '_' + roman_ion + '.trans', alkali)
     
     
 def create_pf_VALD():
@@ -225,9 +228,15 @@ def convert_to_hdf(file, alkali):
 
     # os.remove(file)       
             
-def create_directories(molecule, isotope):
+def create_directories(molecule, ionization_state):
+    roman_num = ''
+    for i in range(ionization_state):
+        roman_num += 'I'
+        
+    fname = molecule + '_' + roman_num + '.h5'
+    
     input_folder = '../input'
-    molecule_folder = input_folder + '/' + molecule + '  ~  (' + str(isotope) + ')'
+    molecule_folder = input_folder + '/' + molecule + '  ~  (' + roman_num + ')'
     line_list_folder = molecule_folder + '/VALD'
     
     if os.path.exists(input_folder) == False:
@@ -238,28 +247,26 @@ def create_directories(molecule, isotope):
 
     if os.path.exists(line_list_folder) == False:
         os.mkdir(line_list_folder)
-        
-    fname = molecule + str(isotope) + '.h5'
     
     shutil.copy('../VALD Line Lists/' + fname, line_list_folder + '/') # Copy the line list file to the newly created folder
     
     return line_list_folder
 
   
-def filter_pf(molecule, isotope, line_list_folder):
-    ionization_state = ''
+def filter_pf(molecule, ionization_state, line_list_folder):
+    ionization_state_roman = ''
     
-    for i in range(int(isotope)):
-        ionization_state += 'I'
+    for i in range(ionization_state):
+        ionization_state_roman += 'I'
         
     all_pf = pd.read_csv('../VALD Line Lists/Atomic_partition_functions.pf', index_col = 0, )
     all_pf = all_pf.rename(lambda x: x.strip())  # Remove the extra white space in the index names, eg: '  H_I' becomes 'H_I'
     
-    pf = all_pf.loc[molecule + '_' + ionization_state]  # Filter the partition functions by the specified atom and ionization state
+    pf = all_pf.loc[molecule + '_' + ionization_state_roman]  # Filter the partition functions by the specified atom and ionization state
     pf = pf.reset_index()
     pf.columns = ['T', 'Q'] # Rename the columns
     
-    fname = molecule + str(isotope) + '.pf'
+    fname = molecule + '_' + ionization_state_roman + '.pf'
     
     T_pf = pf['T'].to_numpy()
     T_pf = T_pf.astype(float)
@@ -278,9 +285,8 @@ def filter_pf(molecule, isotope, line_list_folder):
     f_out.close()
     
           
-def summon_VALD(molecule, isotope):
-    print("\n ***** Downloading requested data from VALD. You have chosen the following parameters: ***** ")
-    print("\nAtom:", molecule, "\nIonization State:", isotope)
-    line_list_folder = create_directories(molecule, isotope) # In this I will want to move the .h5 file to the right directory
-    filter_pf(molecule, isotope, line_list_folder)
-
+def summon_VALD(molecule, ionization_state):
+    print("\n ***** Processing requested data from VALD. You have chosen the following parameters: ***** ")
+    print("\nAtom:", molecule, "\nIonization State:", ionization_state)
+    line_list_folder = create_directories(molecule, ionization_state) # In this I will want to move the .h5 file to the right directory
+    filter_pf(molecule, ionization_state, line_list_folder)

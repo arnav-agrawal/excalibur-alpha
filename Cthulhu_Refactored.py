@@ -735,7 +735,7 @@ def replace_iso_name(iso_name):
     return iso_name
     
     
-def find_input_dir(input_dir, database, molecule, isotope, linelist):
+def find_input_dir(input_dir, database, molecule, isotope, ionization_state, linelist):
     """
     Find the directory on a user's machine that contains the data needed to create a cross-section
 
@@ -769,9 +769,13 @@ def find_input_dir(input_dir, database, molecule, isotope, linelist):
             mol_id = molecule_dict.get(molecule)
             isotope = isotopologueName(mol_id, 1)
             isotope = replace_iso_name(isotope)
-        if database == 'vald':
-            isotope = '(1)'
     
+    if database == 'vald':
+        isotope = ''
+        for i in range(ionization_state):  # Make it easier to code later in the function by just assigning ionization state to isotope even though they're not the same thing
+            isotope += 'I'
+        isotope = '(' + isotope + ')'
+            
     else:
         if database == 'exomol' or database == 'vald':
             isotope = '(' + isotope + ')'
@@ -815,9 +819,9 @@ def find_input_dir(input_dir, database, molecule, isotope, linelist):
 
     
 def create_cross_section(input_dir, database, molecule, log_pressure, temperature, isotope = 'default', 
-                         linelist = 'default', cluster_run = False, nu_out_min = 200, nu_out_max = 25000, 
-                         dnu_out = 0.01, pressure_broadening = 'default', X_H2 = 0.85, X_He = 0.15, 
-                         Voigt_cutoff = 500, Voigt_sub_spacing = (1.0/6.0), N_alpha_samples = 500, 
+                         ionization_state = 1, linelist = 'default', cluster_run = False, nu_out_min = 200, 
+                         nu_out_max = 25000, dnu_out = 0.01, pressure_broadening = 'default', X_H2 = 0.85, 
+                         X_He = 0.15, Voigt_cutoff = 500, Voigt_sub_spacing = (1.0/6.0), N_alpha_samples = 500, 
                          S_cut = 1.0e-100, cut_max = 30.0, **kwargs):
     
     print("Beginning cross-section computations...")
@@ -839,7 +843,7 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
     database = database.lower()
     
     # Locate the input_directory where the line list is stored
-    input_directory = find_input_dir(input_dir, database, molecule, isotope, linelist)
+    input_directory = find_input_dir(input_dir, database, molecule, isotope, ionization_state, linelist)
     
     # Use the input directory to define these right at the start
     molecule, isotopologue, database = parse_directory(input_directory)
