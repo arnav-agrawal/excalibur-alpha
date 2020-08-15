@@ -10,9 +10,8 @@ import scipy.constants as sc
 
 #***** Frequency grid *****#
 
-#nu_min = 1.0                     # Computational grid min wavenumber (cm^-1)
-#nu_max = 30000.0                 # Computational grid max wavenumber (cm^-1)
 nu_refer = [1.0e2, 1.0e3, 1.0e4]   # Wavenumbers for reference Voigt widths
+
 
 # Pressure broadening settings *****#
 
@@ -21,6 +20,7 @@ n_L = 0.50            # If fixed broadening chosen, use this temperature exponen
 
 T_ref = 296.0   # Reference temperature for broadening parameters
 P_ref = 1.0     # Reference temperature for EXOMOL broadening parameters (bar) - HITRAN conversion from atm already pre-handled
+
 
 #***** Define physical constants *****#
 

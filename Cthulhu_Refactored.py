@@ -426,6 +426,17 @@ def read_air(input_directory):
     del broad_file_air   # Delete file to free up memory  
     
     return J_max, gamma_0_air, n_L_air
+
+def read_custom(input_directory):
+    # Read in custom broadening file
+    broad_file_custom = pd.read_csv(input_directory + 'custom.broad', sep = ' ', header=None, skiprows = 1)
+    J_max = int(np.max(np.array(broad_file_custom[0])))
+    gamma_0_air = np.array(broad_file_custom[1])
+    n_L_air = np.array(broad_file_custom[2])
+    
+    del broad_file_custom   # Delete file to free up memory  
+    
+    return J_max, gamma_0_air, n_L_air
     
 
 def read_Burrows(input_directory):
@@ -775,10 +786,6 @@ def find_input_dir(input_dir, database, molecule, isotope, ionization_state, lin
         for i in range(ionization_state):  # Make it easier to code later in the function by just assigning ionization state to isotope even though they're not the same thing
             isotope += 'I'
         isotope = '(' + isotope + ')'
-            
-    else:
-        if database == 'exomol' or database == 'vald':
-            isotope = '(' + isotope + ')'
     
     if linelist == 'default':
         if database == 'exomol':
@@ -845,6 +852,7 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
     # Locate the input_directory where the line list is stored
     input_directory = find_input_dir(input_dir, database, molecule, isotope, ionization_state, linelist)
     
+    
     # Use the input directory to define these right at the start
     molecule, isotopologue, database = parse_directory(input_directory)
     if database.lower() != 'hitran' and database.lower() != 'hitemp' and database.lower() != 'vald':
@@ -905,13 +913,11 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
             J_max, gamma_0_Burrows = read_Burrows(input_directory)
             
         elif broadening == 'custom' and 'custom.broad' in os.listdir(input_directory):
-            # TODO: Read in broadening file
-            return
+            J_max, gamma_0_air, n_L_air = read_custom(input_directory)
         
         elif broadening == 'fixed':
-            return
-            
-            
+            pass
+        
         else:
             print("\nYou did not enter a valid type of pressure broadening. Please try again.")
             sys.exit(0)
@@ -985,6 +991,12 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
                     
                 elif broadening == 'Burrows':
                     gamma = compute_Burrows_broadening(gamma_0_Burrows, P, P_ref)
+                    
+                elif broadening == 'custom':  # Computation step is the same as for air broadening
+                    gamma = compute_air_broadening(gamma_0_air, T_ref, T, n_L_air, P, P_ref)
+                    
+                elif broadening == 'fixed':
+                    gamma = np.array([(gamma_0 * np.power((T_ref/T), n_L) * (P/P_ref))])  # Fixed Lorentizian HWHM (1 element array)
                     
                 (sigma_fine, nu_ref, N_points_fine_1, N_points_fine_2, 
                  N_points_fine_3, dnu_fine, cutoffs, nu_out, sigma_out, 
