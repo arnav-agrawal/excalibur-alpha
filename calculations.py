@@ -179,7 +179,7 @@ def compute_cross_section_single_grid(sigma, nu_grid_start, nu_grid_end,
             sigma[idx-j] += opac_val    # Backward direction
 
 #@jit(nopython=True)     
-@jit
+#@jit
 def compute_cross_section_atom(sigma, N_grid, nu_0, nu_detune, nu_fine_start,
                                nu_fine_end, S, T, alpha, gamma, cutoffs, 
                                N_Voigt_points, species_ID, nu_min, nu_max):
@@ -204,13 +204,13 @@ def compute_cross_section_atom(sigma, N_grid, nu_0, nu_detune, nu_fine_start,
                 
             for k in range(1, N_V):
                     
-                # 1st order Taylor expansion in alpha
+                # Voigt profile wings
                 opac_val = (S_i * Voigt[k])
                     
-                sigma[idx+k] += opac_val    # Forward direction
+                sigma[idx+k] += opac_val       # Forward direction
                 
                 if ((idx-k)>=0):
-                    sigma[idx-k] += opac_val    # Backward direction 
+                    sigma[idx-k] += opac_val   # Backward direction 
                     
         # If transition goes off left grid edge
         elif ((nu_0_i+cutoffs[i]) > nu_max):
@@ -220,13 +220,13 @@ def compute_cross_section_atom(sigma, N_grid, nu_0, nu_detune, nu_fine_start,
                 
             for k in range(1, N_V):
                     
-                # 1st order Taylor expansion in alpha
+                # Voigt profile wings
                 opac_val = (S_i * Voigt[k])
                     
-                sigma[idx-k] += opac_val    # Backward direction
+                sigma[idx-k] += opac_val       # Backward direction
                 
                 if ((idx+k)<N_grid):
-                    sigma[idx+k] += opac_val    # Forward direction 
+                    sigma[idx+k] += opac_val   # Forward direction 
                     
         else:
                 
@@ -235,7 +235,7 @@ def compute_cross_section_atom(sigma, N_grid, nu_0, nu_detune, nu_fine_start,
                 
             for k in range(1, N_V):
                     
-                # 1st order Taylor expansion in alpha
+                # Voigt profile wings
                 opac_val = (S_i * Voigt[k])
                     
                 sigma[idx+k] += opac_val    # Forward direction

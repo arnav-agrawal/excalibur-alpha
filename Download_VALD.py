@@ -122,7 +122,7 @@ def process_VALD_file(species, ionization_state):
     f_in.close()
 
     # Reverse array directions for increasing wavenumber
-    wl = np.array(wl[::-1]) * 1.0e-3       # Convert nm to um
+    wl = np.array(wl[::-1]) * 1.0e-4       # Convert angstrom to um
     log_gf = np.array(log_gf[::-1])
     E_low = np.array(E_low[::-1]) * 8065.547574991239  # Convert eV to cm^-1
     E_up = np.array(E_up[::-1]) * 8065.547574991239
@@ -288,5 +288,6 @@ def filter_pf(molecule, ionization_state, line_list_folder):
 def summon_VALD(molecule, ionization_state):
     print("\n ***** Processing requested data from VALD. You have chosen the following parameters: ***** ")
     print("\nAtom:", molecule, "\nIonization State:", ionization_state)
+ #   process_VALD_file(molecule, ionization_state)
     line_list_folder = create_directories(molecule, ionization_state) # In this I will want to move the .h5 file to the right directory
     filter_pf(molecule, ionization_state, line_list_folder)

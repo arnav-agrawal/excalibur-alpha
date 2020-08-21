@@ -108,13 +108,13 @@ def plot_results(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = [
     ax.set_xticks([0.4, 0.6, 0.8, 1.0, 2.0, 4.0, 6.0, 8.0, 10.0])
     ax.set_xticklabels(['0.4', '0.6', '0.8', '1', '2', '4', '6', '8', '10'])
     
-    ax.set_ylim([1.0e-30, 1.0e-14])
+    ax.set_ylim([1.0e-26, 1.0e-10])
     ax.set_xlim([0.4, 10.0])
     
     ax.set_ylabel(r'Cross Section (cm$^2$)', size = 14)
     ax.set_xlabel(r'Wavelength (μm)', size = 14)
     
-    ax.text(0.5, 5.0e-16, (r'T = ' + str(temperature) + r' K, P = ' + str(pressure) + r' bar'), fontsize = 10)
+    ax.text(0.5, 5.0e-12, (r'T = ' + str(temperature) + r' K, P = ' + str(pressure) + r' bar'), fontsize = 10)
     
     legend = plt.legend(loc='upper right', shadow=False, frameon=False, prop={'size':10})
     

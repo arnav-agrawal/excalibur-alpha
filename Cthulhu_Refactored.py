@@ -601,7 +601,7 @@ def create_wavelength_grid_atom(T, m, gamma, nu_0, Voigt_sub_spacing, dnu_out, n
     sigma_out = np.zeros(N_points_out)      # Coarse (output) grid
     
     return (sigma_fine, nu_detune, N_points_fine, N_Voigt_points, alpha, cutoffs, nu_min, nu_max, 
-            nu_fine_start, nu_fine_end, nu_out, sigma_out)
+            nu_fine_start, nu_fine_end, nu_out, sigma_out, N_points_out)
 
 def create_wavelength_grid_molecule(nu_ref, m, T, gamma, Voigt_sub_spacing, dnu_out, cut_max, Voigt_cutoff, nu_out_max, nu_out_min, N_alpha_samples):
     #nu_min = max(1.0, (nu_out_min - cut_max))
@@ -930,7 +930,6 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
                                                                                J_low, l_low, l_up, gamma_nat, 
                                                                                gamma_vdw, alkali, m)
         
-    
 
     # Start clock for timing program
     t_start = time.perf_counter()
@@ -975,7 +974,6 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
         for t in range(N_T):
             if (cluster_run == False):
                 
-            
                 P = P_arr[p]   # Atmospheric pressure (bar)
                 T = T_arr[t]   # Atmospheric temperature (K)
             
@@ -1003,8 +1001,8 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
                  nu_fine_1_start, nu_fine_1_end, nu_fine_2_start, 
                  nu_fine_2_end, nu_fine_3_start, nu_fine_3_end, 
                  N_points_out, nu_min, nu_max, alpha_ref) = create_wavelength_grid_molecule(nu_refer, m, T, gamma, Voigt_sub_spacing, 
-                                                                              dnu_out, cut_max, Voigt_cutoff, nu_out_max, 
-                                                                              nu_out_min, N_alpha_samples)
+                                                                                            dnu_out, cut_max, Voigt_cutoff, nu_out_max, 
+                                                                                            nu_out_min, N_alpha_samples)
                                                                                                
                 (nu_sampled, alpha_sampled, Voigt_arr, 
                  dV_da_arr, dV_dnu_arr, N_Voigt_points) = precompute_Voigt_profiles(nu_ref, nu_max, N_alpha_samples, T, m, cutoffs, dnu_fine, gamma, alpha_ref)                                                                            
@@ -1017,9 +1015,9 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
                 
                 (sigma_fine, nu_detune, N_points_fine, N_Voigt_points, 
                  alpha, cutoffs, nu_min, nu_max, nu_fine_start, 
-                 nu_fine_end, nu_out, sigma_out) = create_wavelength_grid_atom(T, m, gamma, nu_0, Voigt_sub_spacing, 
-                                                                               dnu_out, nu_out_min, nu_out_max, 
-                                                                               Voigt_cutoff, cut_max, molecule)
+                 nu_fine_end, nu_out, sigma_out, N_points_out) = create_wavelength_grid_atom(T, m, gamma, nu_0, Voigt_sub_spacing, 
+                                                                                             dnu_out, nu_out_min, nu_out_max, 
+                                                                                             Voigt_cutoff, cut_max, molecule)
                                                                                                                                         
                 
             print("Pre-computation complete")
@@ -1029,50 +1027,49 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
             
             if database == 'exomol':                
                 produce_total_cross_section_EXOMOL(linelist_files, input_directory, sigma_fine,
-                                           nu_sampled, nu_ref, m, T, Q_T, N_points_fine_1,
-                                           N_points_fine_2, N_points_fine_3, dnu_fine,
-                                           N_Voigt_points, cutoffs, g, E, J, J_max, 
-                                           alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
-                                           nu_min, nu_max, S_cut)
+                                                   nu_sampled, nu_ref, m, T, Q_T, N_points_fine_1,
+                                                   N_points_fine_2, N_points_fine_3, dnu_fine,
+                                                   N_Voigt_points, cutoffs, g, E, J, J_max, 
+                                                   alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                                   nu_min, nu_max, S_cut)
                 
             elif database == 'hitran':
                 produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fine,
-                                           nu_sampled, nu_ref, m, T, Q_T, Q_T_ref,
-                                           N_points_fine_1, N_points_fine_2, N_points_fine_3,
-                                           dnu_fine, N_Voigt_points, cutoffs, J_max, 
-                                           alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
-                                           nu_min, nu_max, S_cut)
+                                                   nu_sampled, nu_ref, m, T, Q_T, Q_T_ref,
+                                                   N_points_fine_1, N_points_fine_2, N_points_fine_3,
+                                                   dnu_fine, N_Voigt_points, cutoffs, J_max, 
+                                                   alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                                   nu_min, nu_max, S_cut)
                 
             elif database == 'hitemp':
                 produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fine,
-                                           nu_sampled, nu_ref, m, T, Q_T, Q_T_ref,
-                                           N_points_fine_1, N_points_fine_2, N_points_fine_3,
-                                           dnu_fine, N_Voigt_points, cutoffs, J_max, 
-                                           alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
-                                           nu_min, nu_max, S_cut)
+                                                   nu_sampled, nu_ref, m, T, Q_T, Q_T_ref,
+                                                   N_points_fine_1, N_points_fine_2, N_points_fine_3,
+                                                   dnu_fine, N_Voigt_points, cutoffs, J_max, 
+                                                   alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
+                                                   nu_min, nu_max, S_cut)
                 
+        #        nu_0, gf, E_low, E_up, J_low, l_low, l_up, gamma_nat, gamma_vdw, alkali 
                 
             elif database == 'vald':
-        
                 produce_total_cross_section_VALD_atom(sigma_fine, nu_0, nu_detune, E_low, gf, m, T, Q_T,
-                                                  N_points_fine, N_Voigt_points, alpha, gamma, cutoffs,
-                                                  nu_min, nu_max, S_cut, molecule)
+                                                      N_points_fine, N_Voigt_points, alpha, gamma, cutoffs,
+                                                      nu_min, nu_max, S_cut, molecule)
                     
-            
             
             # Now bin cross section to output grid    
             print('Binning cross section to output grid...')
         
             if is_molecule:
                 bin_cross_section_molecule(sigma_fine, sigma_out, N_points_fine_1, N_points_fine_2,
-                                   N_points_fine_3, nu_ref, nu_fine_1_start, nu_fine_1_end,
-                                   nu_fine_2_start, nu_fine_2_end, nu_fine_3_start, nu_fine_3_end,
-                                   nu_out, N_points_out, 0, nu_min, nu_max)
+                                           N_points_fine_3, nu_ref, nu_fine_1_start, nu_fine_1_end,
+                                           nu_fine_2_start, nu_fine_2_end, nu_fine_3_start, nu_fine_3_end,
+                                           nu_out, N_points_out, 0, nu_min, nu_max)
             
             
             else:
                 bin_cross_section_atom(sigma_fine, sigma_out, nu_fine_start, 
-                               nu_fine_end, nu_out, N_points_fine, N_points_out, 0)
+                                       nu_fine_end, nu_out, N_points_fine, N_points_out, 0)
             
             
             #bin_cross_section(sigma_fine, sigma_out_log, nu_fine_1, nu_fine_2, nu_fine_3, nu_out, N_points_out, 1)
