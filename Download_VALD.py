@@ -122,7 +122,7 @@ def process_VALD_file(species, ionization_state):
     f_in.close()
 
     # Reverse array directions for increasing wavenumber
-    wl = np.array(wl[::-1]) * 1.0e-3       # Convert nm to um
+    wl = np.array(wl[::-1]) * 1.0e-4       # Convert nm to um
     log_gf = np.array(log_gf[::-1])
     E_low = np.array(E_low[::-1]) * 8065.547574991239  # Convert eV to cm^-1
     E_up = np.array(E_up[::-1]) * 8065.547574991239
