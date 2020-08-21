@@ -9,8 +9,9 @@ File that the user of our package would use
 """
 
 # Parameters
-molecule = 'C2H4'
-database = 'HITRAN'
+molecule = 'Na'
+database = 'vald'
+ionization = 1
 
 import Download_Line_List
 import Cthulhu_Refactored
@@ -26,8 +27,10 @@ T = 2000   # K
 Download_Line_List.summon(database=database, molecule=molecule)
 
 # Create cross section
-#nu, sigma = Cthulhu_Refactored.create_cross_section(input_dir = '../input/', database = database, molecule = molecule, log_pressure = np.log10(P), temperature = T, pressure_broadening='Burrows')
+
+nu, sigma = Cthulhu_Refactored.create_cross_section(input_dir = '../input/', database = database, 
+                                                    molecule = molecule, ionization_state = ionization, log_pressure = np.log10(P), temperature = T)
 
 # Plot cross section
-#plot.plot_results(nu_arr = nu, sigma_arr = sigma, molecule = molecule, temperature = T, log_pressure = np.log10(P))
+plot.plot_results(nu_arr = nu, sigma_arr = sigma, molecule = molecule, temperature = T, log_pressure = np.log10(P))
     
