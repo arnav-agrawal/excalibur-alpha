@@ -288,6 +288,7 @@ def filter_pf(molecule, ionization_state, line_list_folder):
 def summon_VALD(molecule, ionization_state):
     print("\n ***** Processing requested data from VALD. You have chosen the following parameters: ***** ")
     print("\nAtom:", molecule, "\nIonization State:", ionization_state)
- #   process_VALD_file(molecule, ionization_state)
     line_list_folder = create_directories(molecule, ionization_state) # In this I will want to move the .h5 file to the right directory
     filter_pf(molecule, ionization_state, line_list_folder)
+  
+    

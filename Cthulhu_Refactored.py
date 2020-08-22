@@ -916,7 +916,7 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
             J_max, gamma_0_air, n_L_air = read_custom(input_directory)
         
         elif broadening == 'fixed':
-            pass
+            J_max = 0
         
         else:
             print("\nYou did not enter a valid type of pressure broadening. Please try again.")

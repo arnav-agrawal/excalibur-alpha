@@ -338,6 +338,8 @@ def get_default_linelist(molecule, isotopologue):
 
     """
     
+    # Print mesage for MgH and CaH
+    
     #HCl(1H-35Cl): HITRAN2016    <-- data from HITRAN, but in ExoMol format
     #MgH(24Mg-1H): MoLLIST / Yadin    <-- we need to check, each line list seems to cover a different wavelength range
     #CaH (40Ca-1H): MoLLIST / Yadin    <-- we need to check, each line list seems to cover a different wavelength range 
