@@ -29,7 +29,8 @@ Download_Line_List.summon(database=database, molecule=molecule)
 # Create cross section
 
 nu, sigma = Cthulhu_Refactored.create_cross_section(input_dir = '../input/', database = database, 
-                                                    molecule = molecule, ionization_state = ionization, log_pressure = np.log10(P), temperature = T)
+                                                    molecule = molecule, ionization_state = ionization, 
+                                                    log_pressure = np.log10(P), temperature = T)
 
 # Plot cross section
 plot.plot_results(nu_arr = nu, sigma_arr = sigma, molecule = molecule, temperature = T, log_pressure = np.log10(P))
