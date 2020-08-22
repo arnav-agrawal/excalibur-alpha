@@ -91,7 +91,6 @@ def plot_results(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = [
     
     plt.tight_layout()
     
-
     plt.savefig('../plots/' + molecule + '_' + str(temperature) + 'K_' + str(pressure) + 'bar_nu.pdf')
     
     plt.close()
