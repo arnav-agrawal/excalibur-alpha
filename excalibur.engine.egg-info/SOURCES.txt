@@ -13,8 +13,8 @@ excalibur/calculations.py
 excalibur/constants.py
 excalibur/hapi.py
 excalibur/plot.py
-excalibur_engine.egg-info/PKG-INFO
-excalibur_engine.egg-info/SOURCES.txt
-excalibur_engine.egg-info/dependency_links.txt
-excalibur_engine.egg-info/requires.txt
-excalibur_engine.egg-info/top_level.txt
+excalibur.engine.egg-info/PKG-INFO
+excalibur.engine.egg-info/SOURCES.txt
+excalibur.engine.egg-info/dependency_links.txt
+excalibur.engine.egg-info/requires.txt
+excalibur.engine.egg-info/top_level.txt

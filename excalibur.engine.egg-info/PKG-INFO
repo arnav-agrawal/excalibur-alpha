@@ -1,5 +1,5 @@
 Metadata-Version: 2.1
-Name: excalibur-engine
+Name: excalibur.engine
 Version: 0.0.1
 Summary: A package to calculate atomic and molecular cross sections.
 Home-page: https://github.com/arnav-agrawal/Cthulhu
