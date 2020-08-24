@@ -259,6 +259,10 @@ def load_VALD(input_directory, molecule):
         gamma_nat = np.power(10.0, np.array(hdf.get('Log gamma nat')))
         gamma_vdw = np.power(10.0, np.array(hdf.get('Log gamma vdw')))
         
+        # VALD stores log_gamma = 0.0 where there is no data. Since 10^(0.0) = 1.0, zero these entries
+        Gamma_nat[Gamma_nat == 1.0] = 0.0
+        Gamma_vdw[Gamma_vdw == 1.0] = 0.0
+        
         if molecule in ['Li', 'Na', 'K', 'Rb', 'Cs']:
             alkali = True
             l_low = np.array(hdf.get('l lower'))
