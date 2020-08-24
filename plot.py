@@ -124,31 +124,6 @@ def plot_results(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = [
     print("\nPlotting complete.")
 
 def compare_cross_sections(molecule, label_1, label_2, nu_arr_1 = [], nu_arr_2 = [], sigma_arr_1 = [], sigma_arr_2 = [], **kwargs):
-    """
-    Generate a plot of a cross_section file, in both wavelength and wavenumber
-
-    Parameters
-    ----------
-    molecule : TYPE
-        DESCRIPTION.
-    temperature : TYPE
-        DESCRIPTION.
-    log_pressure : TYPE
-        DESCRIPTION.
-    nu_arr : TYPE, optional
-        DESCRIPTION. The default is [].
-    sigma_arr : TYPE, optional
-        DESCRIPTION. The default is [].
-    file : TYPE, optional
-        DESCRIPTION. The default is ''.
-    **kwargs : TYPE
-        DESCRIPTION.
-
-    Returns
-    -------
-    None.
-
-    """
 
     wl_1 = 1.0e4/nu_arr_1
     wl_2 = 1.0e4/nu_arr_2

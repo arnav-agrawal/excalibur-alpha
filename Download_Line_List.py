@@ -383,6 +383,11 @@ def summon(database = '', molecule = '', isotope = 'default', linelist = 'defaul
     if not user_friendly: # If the user just wants to call the function with parameters directly passed in
         db = database.lower()
         mol = molecule
+        if isinstance(isotope, str):
+            try:
+                isotope = int(isotope)
+            except ValueError:
+                pass
         iso = isotope
         lin = linelist
         ion = ionization_state
