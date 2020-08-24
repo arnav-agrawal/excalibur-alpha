@@ -19,7 +19,7 @@ setuptools.setup(
     description="A package to calculate atomic and molecular cross sections.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="TBD",
+    url="https://github.com/arnav-agrawal/Cthulhu",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

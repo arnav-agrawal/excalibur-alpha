@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+numba
+requests
+bs4
+tqdm

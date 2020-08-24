@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: excalibur-engine
+Version: 0.0.1
+Summary: A package to calculate atomic and molecular cross sections.
+Home-page: TBD
+Author: Arnav Agrawal
+Author-email: aa687@cornell.edu
+License: UNKNOWN
+Description: # Cthluhu
+        An open-source project for calculating molecular cross-sections
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7.6
+Description-Content-Type: text/markdown
