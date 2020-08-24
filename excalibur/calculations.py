@@ -20,7 +20,7 @@ import time
 import h5py
 
 from constants import kb, c, c2, m_e, pi, T_ref
-from Voigt import Generate_Voigt_atoms
+from excalibur.Voigt import Generate_Voigt_atoms
    
 
 @jit(nopython=True)
