@@ -14,10 +14,10 @@ import sys
 import os
 import requests
 import re
-from excalibur import Download_ExoMol
-from excalibur import Download_HITRAN
-from excalibur import Download_HITEMP
-from excalibur import Download_VALD
+from . import Download_ExoMol
+from . import Download_HITRAN
+from . import Download_HITEMP
+from . import Download_VALD
 from hapi import partitionSum, moleculeName
 
 def create_id_dict():
