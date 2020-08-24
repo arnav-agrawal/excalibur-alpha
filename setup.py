@@ -13,7 +13,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="excalibur.engine", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="Arnav Agrawal",
     author_email="aa687@cornell.edu",
     description="A package to calculate atomic and molecular cross sections.",
