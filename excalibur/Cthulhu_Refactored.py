@@ -1084,7 +1084,7 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
             if not os.path.exists(output_directory):
                 os.makedirs(output_directory)
     
-            nu, sigma = write_output_file(cluster_run, output_directory, molecule, T, log_P_arr[p], nu_out, sigma_out)
+            nu, sigma = write_output_file(cluster_run, output_directory, molecule, T, np.log10(P), nu_out, sigma_out)
     
     t_final = time.perf_counter()
     total_final = t_final-t_start
