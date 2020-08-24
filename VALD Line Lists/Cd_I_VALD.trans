@@ -1,0 +1,21 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Cd 1',      4678.14900,  -0.970,  3.7337,  0.0,  6.3832,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d10.5s.(2S).5p                      3P*'
+'  LS                                                   4d10.5s.(2S).6s                  3S'
+'_          Cu 1 - Ba 2 Bell   1   wl:AS   1   gf:AS   1      AS   1      AS   1      AS   1      AS   1      AS   1      AS   1      AS             Cd'
+'Cd 1',      4799.91400,  -0.400,  3.8009,  1.0,  6.3832,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d10.5s.(2S).5p                      3P*'
+'  LS                                                   4d10.5s.(2S).6s                  3S'
+'_          Cu 1 - Ba 2 Bell   1   wl:AS   1   gf:AS   1      AS   1      AS   1      AS   1      AS   1      AS   1      AS   1      AS             Cd'
+'Cd 1',      5085.82400,  -0.230,  3.9460,  2.0,  6.3832,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d10.5s.(2S).5p                      3P*'
+'  LS                                                   4d10.5s.(2S).6s                  3S'
+'_          Cu 1 - Ba 2 Bell   1   wl:AS   1   gf:AS   1      AS   1      AS   1      AS   1      AS   1      AS   1      AS   1      AS             Cd'
+'Cd 1',      6438.47000,  -0.010,  5.4172,  1.0,  7.3423,  2.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4d10.5s.(2S).5p                      1P*'
+'  LS                                                   4d10.5s.(2S).5d                  1D'
+'_          Cu 1 - Ba 2 Bell   1 wl:CBco   1 gf:CBco   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor   1   CBcor             Cd'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Cu 1 - Ba 2 Bell

@@ -1,0 +1,250 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Lu 1',      4054.45000,  -1.000,  0.5128,  0.5,  3.5699,  0.5,  0.660,  0.980,  0.820, 0.000, 0.000, 0.000,
+'  LS                                                 6s2.(1S).6p                       2P*'
+'  LS                                                    5d2.(3P?).6s                    2P'
+'E 0.02     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      4112.70000,  -2.360,  0.0000,  1.5,  3.0138,  1.5,  0.800,  1.670,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   4P*'
+'E 0.06     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      4124.72000,   0.140,  0.9270,  1.5,  3.9320,  2.5,  1.330,  1.230,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                 6s2.(1S).6p                       2P*'
+'  LS                                                    6s2.(1S).6d                     2D'
+'E 0.04     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      4154.09000,  -0.760,  0.9270,  1.5,  3.9107,  1.5,  1.330,  0.800,  1.070, 0.000, 0.000, 0.000,
+'  LS                                                 6s2.(1S).6p                       2P*'
+'  LS                                                    6s2.(1S).6d                     2D'
+'E 0.03     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      4296.00200,  -0.650,  0.9270,  1.5,  3.8122,  0.5,  1.330,  2.200,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                                  6s2.6p           2P*'
+'  LS                                                                   5d2.(1S).6s      2S'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      4309.57000,  -1.960,  0.2472,  2.5,  3.1234,  2.5,  1.200,  1.530,  1.370, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   4P*'
+'E 0.03     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      4420.96400,   0.330,  2.6610,  2.5,  5.4647,  2.5,  1.230, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    2D*'
+'  LS                                                                   5d.6s.(3D).7s?   2D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      4450.81100,  -0.940,  0.9270,  1.5,  3.7118,  1.5,  1.330, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                  6s2.6p           2P*'
+'  LS                                                                  5d2.(3P?).6s     2P?'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      4480.20000,  -2.970,  0.2472,  2.5,  3.0138,  1.5,  1.200,  1.670,  0.850, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   4P*'
+'E 0.06     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      4498.85000,  -2.630,  0.0000,  1.5,  2.7551,  2.5,  0.800,  1.390,  1.830, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   4D*'
+'E 0.03     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      4518.56000,  -0.560,  0.0000,  1.5,  2.7431,  1.5,  0.800,  0.870,  0.840, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   2D*'
+'E 0.02     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      4605.38900,   0.010,  2.3373,  1.5,  5.0287,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                   5d2.(3F).6s      4F'
+'  LS                                                                  5d2.6p?          4G*'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      4658.01000,  -1.210,  0.0000,  1.5,  2.6610,  2.5,  0.800,  1.230,  1.550, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   2D*'
+'E 0.02     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      4689.77000,  -2.060,  0.9270,  1.5,  3.5699,  0.5,  1.330,  0.980,  1.420, 0.000, 0.000, 0.000,
+'  LS                                                 6s2.(1S).6p                       2P*'
+'  LS                                                    5d2.(3P?).6s                    2P'
+'E 0.04     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      4716.69000,  -2.820,  0.0000,  1.5,  2.6279,  1.5,  0.800,  1.190,  0.990, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   4D*'
+'E 0.04     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      4815.04000,  -2.200,  0.0000,  1.5,  2.5742,  0.5,  0.800,  0.000,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   4D*'
+'E 0.03     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      4904.87900,  -1.170,  0.5128,  0.5,  3.0399,  1.5,  0.660, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                  6s2.6p           2P*'
+'  LS                                                                   5d2.(1D?).6s     2D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      4942.32000,  -1.670,  0.2472,  2.5,  2.7551,  2.5,  1.200,  1.390,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   4D*'
+'E 0.03     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      4966.12000,  -3.310,  0.2472,  2.5,  2.7431,  1.5,  1.200,  0.870,  1.440, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   2D*'
+'E 0.06     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      5001.14000,  -0.620,  0.5128,  0.5,  2.9912,  0.5,  0.660,  2.050,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                 6s2.(1S).6p                       2P*'
+'  LS                                                    6s2.(1S).7s                     2S'
+'E 0.02     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      5057.60300,  -0.480,  2.1607,  1.5,  4.6115,  1.5,  0.500,  1.270,  0.880, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4F*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      5134.03300,  -0.120,  2.1607,  1.5,  4.5750,  0.5,  0.500,  0.000,  0.620, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4F*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      5135.08000,  -0.670,  0.2472,  2.5,  2.6610,  2.5,  1.200,  1.230,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   2D*'
+'E 0.02     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      5196.60400,   0.100,  2.2943,  2.5,  4.6795,  2.5,  1.070,  1.290,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4F*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      5206.49000,  -2.380,  0.2472,  2.5,  2.6279,  1.5,  1.200,  1.190,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   4D*'
+'E 0.04     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      5304.42200,  -0.320,  2.5333,  3.5,  4.8700,  3.5,  1.220,  1.390,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4F*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      5349.13900,  -0.260,  2.2943,  2.5,  4.6115,  1.5,  1.070,  1.270,  0.920, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4F*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      5402.57000,  -1.500,  0.0000,  1.5,  2.2943,  2.5,  0.800,  1.070,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   4F*'
+'E 0.02     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      5421.89500,  -1.870,  0.2472,  2.5,  2.5333,  3.5,  1.200,  1.220,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                                   5d.(2D).6s2      2D'
+'  LS                                                                  5d.6s.(3D).6p    4F*'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      5453.59600,  -2.300,  0.5128,  0.5,  2.7856,  1.5,  0.660,  1.730,  2.000, 0.000, 0.000, 0.000,
+'  LS                                                                  6s2.6p           2P*'
+'  LS                                                                   5d2.(3P).6s      4P'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      5736.54000,  -1.470,  0.0000,  1.5,  2.1607,  1.5,  0.800,  0.500,  0.650, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   4F*'
+'E 0.02     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      5775.39600,  -0.240,  2.5333,  3.5,  4.6795,  2.5,  1.220,  1.290,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4F*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      5860.79600,  -0.190,  2.7551,  2.5,  4.8700,  3.5,  1.390,  1.390,  1.390, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4D*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      5866.26100,  -2.640,  0.9270,  1.5,  3.0399,  1.5,  1.330, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                  6s2.6p           2P*'
+'  LS                                                                   5d2.(1D?).6s     2D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      5997.13200,   0.370,  2.8032,  4.5,  4.8700,  3.5,  1.300,  1.390,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4F*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      6004.49000,  -0.270,  0.9270,  1.5,  2.9912,  0.5,  1.330,  2.050,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                 6s2.(1S).6p                       2P*'
+'  LS                                                    6s2.(1S).7s                     2S'
+'E 0.02     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      6041.64900,  -0.410,  2.6279,  1.5,  4.6795,  2.5,  1.190,  1.290,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4D*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      6055.02000,  -1.520,  0.2472,  2.5,  2.2943,  2.5,  1.200,  1.070,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   4F*'
+'E 0.02     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      6140.73900,  -0.860,  2.6610,  2.5,  4.6795,  2.5,  1.230,  1.290,  1.260, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    2D*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      6248.81400,  -0.760,  2.6279,  1.5,  4.6115,  1.5,  1.190,  1.270,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4D*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      6345.34000,   0.150,  2.9166,  3.5,  4.8700,  3.5,  1.410,  1.390,  1.400, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4D*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      6354.87500,  -0.680,  2.6610,  2.5,  4.6115,  1.5,  1.230,  1.270,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    2D*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      6365.90200,  -1.010,  2.6279,  1.5,  4.5750,  0.5,  1.190,  0.000,  1.490, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4D*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      6441.15300,  -0.520,  2.7551,  2.5,  4.6795,  2.5,  1.390,  1.290,  1.340, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4D*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      6477.68000,  -2.740,  0.2472,  2.5,  2.1607,  1.5,  1.200,  0.500,  1.730, 0.000, 0.000, 0.000,
+'  LS                                                  5d.(2D).6s2                       2D'
+'  LS                                                   5d.6s.(3D).6p                   4F*'
+'E 0.03     Wisconsin REE ex   1 wl:FDLP   1 gf:FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP   1    FDLP             Lu'
+'Lu 1',      6677.15700,  -0.340,  2.7551,  2.5,  4.6115,  1.5,  1.390,  1.270,  1.480, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4D*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      6735.79100,  -0.960,  2.5333,  3.5,  4.3735,  2.5,  1.220,  1.510,  0.860, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4F*'
+'  LS                                                                   6s.6p2           4P'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      6793.82800,  -2.240,  0.5128,  0.5,  2.3373,  1.5,  0.660, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                  6s2.6p           2P*'
+'  LS                                                                   5d2.(3F).6s      4F'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      7031.24100,  -0.080,  2.9166,  3.5,  4.6795,  2.5,  1.410,  1.290,  1.560, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4D*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      7096.32300,  -0.090,  3.1234,  2.5,  4.8700,  3.5,  1.530,  1.390,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4P*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      7238.02400,  -0.550,  2.6610,  2.5,  4.3735,  2.5,  1.230,  1.510,  1.370, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    2D*'
+'  LS                                                                   6s.6p2           4P'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      7441.48900,  -0.310,  3.0138,  1.5,  4.6795,  2.5,  1.670,  1.290,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4P*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      7640.08400,  -0.560,  2.9891,  0.5,  4.6115,  1.5, 99.000,  1.270, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4P*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      7758.29100,  -0.540,  3.0138,  1.5,  4.6115,  1.5,  1.670,  1.270,  1.470, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4P*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      7815.84600,  -0.570,  2.9891,  0.5,  4.5750,  0.5, 99.000,  0.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4P*'
+'  LS                                                                   5d.6s.(3D).7s    4D'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      8382.10500,  -2.030,  0.9270,  1.5,  2.4057,  2.5,  1.330,  1.040,  0.820, 0.000, 0.000, 0.000,
+'  LS                                                                  6s2.6p           2P*'
+'  LS                                                                   5d2.(3F).6s      4F'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      8508.11200,  -0.040,  2.9166,  3.5,  4.3735,  2.5,  1.410,  1.510,  1.280, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4D*'
+'  LS                                                                   6s.6p2           4P'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      8611.06200,  -0.120,  2.7551,  2.5,  4.1946,  1.5,  1.390,  1.750,  1.120, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s.(3D).6p    4D*'
+'  LS                                                                   6s.6p2           4P'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      13371.7820,  -1.000,  0.0000,  1.5,  0.9270,  1.5,  0.800,  1.330,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                                   5d.(2D).6s2      2D'
+'  LS                                                                  6s2.6p           2P*'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      18234.9740,  -1.000,  0.2472,  2.5,  0.9270,  1.5,  1.200,  1.330,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                                   5d.(2D).6s2      2D'
+'  LS                                                                  6s2.6p           2P*'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+'Lu 1',      24170.5940,  -1.000,  0.0000,  1.5,  0.5128,  0.5,  0.800,  0.660,  0.830, 0.000, 0.000, 0.000,
+'  LS                                                                   5d.(2D).6s2      2D'
+'  LS                                                                  6s2.6p           2P*'
+'_          La1 to Lu 2 Bell   2   wl:WV   2   gf:WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV   2      WV             Lu'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Wisconsin exp. data with IS
+  2. La 1 - Lu 2 Bell

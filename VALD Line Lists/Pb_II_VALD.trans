@@ -1,0 +1,86 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Pb 2',      4152.82100,  -0.940,  9.5806,  1.5, 12.5653,  0.5,  1.330,  1.960,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                               6s2.(1S).7p         2P*'
+'  LS                                                                     s2.(1S).9s     2S'
+'E0.05      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      4242.10000,  -0.800,  8.5505,  2.5, 11.4723,  2.5,  1.290,  0.840,  1.060, 0.000, 0.000, 0.000,
+'  LS                                                                6s2.(1S).6d         2D'
+'  LS                                                                    s2.(1S).5f     2F*'
+'E0.04      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      4245.10000,   0.400,  8.5505,  2.5, 11.4704,  3.5,  1.290,  1.110,  0.890, 0.000, 0.000, 0.000,
+'  LS                                                                6s2.(1S).6d         2D'
+'  LS                                                                    s2.(1S).5f     2F*'
+'E0.04      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      4386.50000,   0.430,  8.6466,  1.5, 11.4723,  2.5,  0.810,  0.840,  0.860, 0.000, 0.000, 0.000,
+'  LS                                                                6s2.(1S).6d         2D'
+'  LS                                                                    s2.(1S).5f     2F*'
+'E0.04      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      5042.60000,   0.140,  9.2317,  0.5, 11.6898,  1.5,  0.600,  0.800,  0.850, 0.000, 0.000, 0.000,
+'  LS                                                               6s2.(1S).7p         2P*'
+'  LS                                                                     s2.(1S).7d     2D'
+'E0.04      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      5163.30000,  -1.750,  7.1800,  0.5,  9.5806,  1.5, 99.000,  1.330, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                6s.6p2              4P'
+'  LS                                                                    s2.(1S).7p     2P*'
+'E0.07      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      5367.60000,  -1.100,  9.1631,  2.5, 11.4723,  2.5,  1.520,  0.840,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                                6s.6p2              4P'
+'  LS                                                                    s2.(1S).5f     2F*'
+'E0.04      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      5372.30000,   0.330,  9.1631,  2.5, 11.4704,  3.5,  1.520,  1.110,  0.600, 0.000, 0.000, 0.000,
+'  LS                                                                6s.6p2              4P'
+'  LS                                                                    s2.(1S).5f     2F*'
+'E0.04      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      5544.30000,   0.450,  9.5806,  1.5, 11.8162,  2.5,  1.330, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                               6s2.(1S).7p         2P*'
+'  LS                                                                     s2.(1S).7d     2D'
+'E0.04      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      5608.85300,   0.200,  7.3707,  0.5,  9.5806,  1.5, 99.000,  1.330, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                6s2.(1S).7s         2S'
+'  LS                                                                    s2.(1S).7p     2P*'
+'E0.04      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      5876.60000,  -0.540,  9.5806,  1.5, 11.6898,  1.5,  1.330,  0.800,  1.070, 0.000, 0.000, 0.000,
+'  LS                                                               6s2.(1S).7p         2P*'
+'  LS                                                                     s2.(1S).7d     2D'
+'E0.03      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      6041.40000,  -2.230,  7.1800,  0.5,  9.2317,  0.5, 99.000,  0.600, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                6s.6p2              4P'
+'  LS                                                                    s2.(1S).7p     2P*'
+'E0.05      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      6660.19500,  -0.120,  7.3707,  0.5,  9.2317,  0.5, 99.000,  0.600, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                6s2.(1S).7s         2S'
+'  LS                                                                    s2.(1S).7p     2P*'
+'E0.04      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      6791.05500,  -0.210,  9.2317,  0.5, 11.0569,  0.5,  0.600, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                               6s2.(1S).7p         2P*'
+'  LS                                                                     s2.(1S).8s     2S'
+'E0.04      Pb 2 (VALD2)       1  wl:AMb   1  gf:AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb   1     AMb            Pb+'
+'Pb 2',      8395.68400,   0.122,  9.5806,  1.5, 11.0569,  0.5,  1.330, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         6s2.(1S).7p               2P*'
+'  LS                                                         6s2.(1S).8s                2S'
+'_          Hf 1 - U 2 Bell    2 wl:MIGa   2 gf:MIGa   2    MIGa   2    MIGa   2    MIGa   2    MIGa   2    MIGa   2    MIGa   2    MIGa            Pb+'
+'Pb 2',      8544.96000,   0.000,  9.5806,  1.5, 11.0311,  2.5,  1.330, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         6s2.(1S).7p               2P*'
+'  LS                                                         6s.6p2                     2D'
+'_          Hf 1 - U 2 Bell    2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES            Pb+'
+'Pb 2',      11592.3600,  -0.300,  9.2317,  0.5, 10.3010,  1.5,  0.600, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         6s2.(1S).7p               2P*'
+'  LS                                                         6s.6p2                     2D'
+'_          Hf 1 - U 2 Bell    2 wl:GUES   2 gf:GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES   2    GUES            Pb+'
+'Pb 2',      12036.6000,  -0.950,  8.5505,  2.5,  9.5806,  1.5,  1.290,  1.330,  1.260, 0.000, 0.000, 0.000,
+'  LS                                                                6s2.(1S).6d         2D'
+'  LS                                                                    s2.(1S).7p     2P*'
+'_          Pb 2 (VALD2)       1  wl:AMa   1  gf:AMa   1     AMa   1     AMa   1     AMa   1     AMa   1     AMa   1     AMa   1     AMa            Pb+'
+'Pb 2',      13276.7000,  -0.940,  8.6466,  1.5,  9.5806,  1.5,  0.810,  1.330,  1.070, 0.000, 0.000, 0.000,
+'  LS                                                                6s2.(1S).6d         2D'
+'  LS                                                                    s2.(1S).7p     2P*'
+'_          Pb 2 (VALD2)       1  wl:AMa   1  gf:AMa   1     AMa   1     AMa   1     AMa   1     AMa   1     AMa   1     AMa   1     AMa            Pb+'
+'Pb 2',      21190.9000,  -0.440,  8.6466,  1.5,  9.2317,  0.5,  0.810,  0.600,  0.860, 0.000, 0.000, 0.000,
+'  LS                                                                6s2.(1S).6d         2D'
+'  LS                                                                    s2.(1S).7p     2P*'
+'_          Pb 2 (VALD2)       1  wl:AMa   1  gf:AMa   1     AMa   1     AMa   1     AMa   1     AMa   1     AMa   1     AMa   1     AMa            Pb+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. VALD2: Pb 2
+  2. Hf 1 - U 2 Bell

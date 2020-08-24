@@ -1,0 +1,29 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'In 2',      6304.87400,  -1.186, 11.6445,  1.0, 13.6104,  0.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               5s.(2S).6s                           3S'
+'  LS                                                  5s.(2S).6p                       1P*'
+'_          Cu 1 - Ba 2 Bell   1   wl:Wa   1   gf:Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa            In+'
+'In 2',      6891.56500,   0.384, 11.6445,  1.0, 13.4431,  2.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               5s.(2S).6s                           3S'
+'  LS                                                  5s.(2S).6p                       3P*'
+'_          Cu 1 - Ba 2 Bell   1   wl:Wa   1   gf:Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa            In+'
+'In 2',      7182.88800,   0.143, 11.6445,  1.0, 13.3701,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               5s.(2S).6s                           3S'
+'  LS                                                  5s.(2S).6p                       3P*'
+'_          Cu 1 - Ba 2 Bell   1   wl:Wa   1   gf:Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa            In+'
+'In 2',      7276.63000,  -0.316, 11.6445,  1.0, 13.3479,  0.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               5s.(2S).6s                           3S'
+'  LS                                                  5s.(2S).6p                       3P*'
+'_          Cu 1 - Ba 2 Bell   1   wl:Wa   1   gf:Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa            In+'
+'In 2',      7840.96100,  -0.146, 12.0296,  0.0, 13.6104,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               5s.(2S).6s                           1S'
+'  LS                                                  5s.(2S).6p                       1P*'
+'_          Cu 1 - Ba 2 Bell   1   wl:Wa   1   gf:Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa            In+'
+'In 2',      9246.60800,  -1.310, 12.0296,  0.0, 13.3701,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               5s.(2S).6s                           1S'
+'  LS                                                  5s.(2S).6p                       3P*'
+'_          Cu 1 - Ba 2 Bell   1   wl:Wa   1   gf:Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa   1      Wa            In+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Cu 1 - Ba 2 Bell

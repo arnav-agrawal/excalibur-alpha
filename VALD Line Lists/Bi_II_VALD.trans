@@ -1,0 +1,61 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Bi 2',      4079.07190,   0.200,  9.9903,  1.0, 13.0289,  2.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                    p.6d                    (1/2,3/2)*'
+'  JJ                                                    6p.7p                    (3/2,1/2)'
+'_          Lund theor.        1  wl:DLW   1  gf:DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW            Bi+'
+'Bi 2',      4259.41260,   0.650, 10.1986,  3.0, 13.1086,  4.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                    p.6d                    (1/2,5/2)*'
+'  JJ                                                    6p.5f                    (1/2,7/2)'
+'_          Lund theor.        1  wl:DLW   1  gf:DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW            Bi+'
+'Bi 2',      4272.04400,  -0.400, 10.1729,  2.0, 13.0743,  3.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                    p.6d                    (1/2,5/2)*'
+'  JJ                                                    6p.5f                    (1/2,5/2)'
+'_          Lund theor.        1  wl:DLW   1  gf:DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW            Bi+'
+'Bi 2',      4301.69740,   0.300, 10.1729,  2.0, 13.0543,  3.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                    p.6d                    (1/2,5/2)*'
+'  JJ                                                    6p.5f                    (1/2,7/2)'
+'_          Lund theor.        1  wl:DLW   1  gf:DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW            Bi+'
+'Bi 2',      4705.28540,   0.200, 10.4494,  1.0, 13.0837,  2.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                     p.7p                    (1/2,1/2)'
+'  JJ                                                   6p.7d                    (1/2,3/2)*'
+'_          Lund theor.        1  wl:DLW   1  gf:DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW            Bi+'
+'Bi 2',      4730.26720,   0.300, 11.0063,  2.0, 13.6266,  2.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                    p.7s                    (3/2,1/2)*'
+'  JJ                                                    6p.7p                    (3/2,3/2)'
+'_          Lund theor.        1  wl:DLW   1  gf:DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW            Bi+'
+'Bi 2',      4993.53380,   0.300, 11.1444,  1.0, 13.6266,  2.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                    p.7s                    (3/2,1/2)*'
+'  JJ                                                    6p.7p                    (3/2,3/2)'
+'_          Lund theor.        1  wl:DLW   1  gf:DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW            Bi+'
+'Bi 2',      5124.35610,   0.400, 11.0063,  2.0, 13.4251,  3.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                    p.7s                    (3/2,1/2)*'
+'  JJ                                                    6p.7p                    (3/2,3/2)'
+'_          Lund theor.        1  wl:DLW   1  gf:DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW   1     DLW            Bi+'
+'Bi 2',      5144.49210,   0.010,  8.5715,  0.0, 10.9809,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                    p.7s                    (1/2,1/2)*'
+'  JJ                                                    6p.7p                    (1/2,3/2)'
+'_          Lund theor.        1  wl:PQB   1  gf:PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB            Bi+'
+'Bi 2',      5209.32460,   0.380,  8.6291,  1.0, 11.0085,  2.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                    p.7s                    (1/2,1/2)*'
+'  JJ                                                    6p.7p                    (1/2,3/2)'
+'_          Lund theor.        1  wl:PQB   1  gf:PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB            Bi+'
+'Bi 2',      5270.51200,  -0.310,  8.6291,  1.0, 10.9809,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                    p.7s                    (1/2,1/2)*'
+'  JJ                                                    6p.7p                    (1/2,3/2)'
+'_          Lund theor.        1  wl:PQB   1  gf:PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB            Bi+'
+'Bi 2',      5719.13840,  -0.410,  8.6291,  1.0, 10.7964,  0.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                    p.7s                    (1/2,1/2)*'
+'  JJ                                                    6p.7p                    (1/2,1/2)'
+'_          Lund theor.        1  wl:PQB   1  gf:PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB            Bi+'
+'Bi 2',      6600.33880,  -0.400,  8.5715,  0.0, 10.4494,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                    p.7s                    (1/2,1/2)*'
+'  JJ                                                    6p.7p                    (1/2,1/2)'
+'_          Lund theor.        1  wl:PQB   1  gf:PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB            Bi+'
+'Bi 2',      6809.19550,  -0.050,  8.6291,  1.0, 10.4494,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                    p.7s                    (1/2,1/2)*'
+'  JJ                                                    6p.7p                    (1/2,1/2)'
+'_          Lund theor.        1  wl:PQB   1  gf:PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB   1     PQB            Bi+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Lund: theor. data

@@ -1,0 +1,17 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Ho 2',      4045.45000,  -0.050,  0.0000,  8.0,  3.0639,  7.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f11.6s                           5I*'
+'  JJ                                                   4f11.(4I<15/2>).6p<1/2>  (15/2,1/2)'
+'E 0.02     Wisconsin REE ex   1  wl:LSC   1  gf:LSC   1     LSC   1     LSC   1     LSC   1     LSC   1     LSC   1     LSC   1     LSC            Ho+'
+'Ho 2',      4152.62000,  -0.930,  0.0791,  7.0,  3.0639,  7.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f11.6s                           3I*'
+'  JJ                                                   4f11.(4I<15/2>).6p<1/2>  (15/2,1/2)'
+'E 0.02     Wisconsin REE ex   1  wl:LSC   1  gf:LSC   1     LSC   1     LSC   1     LSC   1     LSC   1     LSC   1     LSC   1     LSC            Ho+'
+'Ho 2',      4211.29000,  -1.700,  0.7253,  6.0,  3.6686,  6.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f11.6s                           5I*'
+'  JJ                                                   4f11.(4I<15/2>).6p<3/2>  (15/2,3/2)'
+'E 0.04     Wisconsin REE ex   1  wl:LSC   1  gf:LSC   1     LSC   1     LSC   1     LSC   1     LSC   1     LSC   1     LSC   1     LSC            Ho+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Wisconsin exp. data with IS

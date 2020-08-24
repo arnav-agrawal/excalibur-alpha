@@ -1,0 +1,17 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Se 1',      8918.80300,   1.290,  5.9738,  2.0,  7.3636,  3.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p3.(4S*).5s                     5S*'
+'  LS                                                   4s2.4p3.(4S*).5p                 5P'
+'_          Cu 1 - Ba 2 Bell   1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Se'
+'Se 1',      9001.89800,   0.000,  5.9738,  2.0,  7.3508,  2.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p3.(4S*).5s                     5S*'
+'  LS                                                   4s2.4p3.(4S*).5p                 5P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Se'
+'Se 1',      9038.54600,   0.000,  5.9738,  2.0,  7.3452,  1.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                              4s2.4p3.(4S*).5s                     5S*'
+'  LS                                                   4s2.4p3.(4S*).5p                 5P'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             Se'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Cu 1 - Ba 2 Bell

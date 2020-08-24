@@ -1,0 +1,158 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Pt 1',      4118.67550,  -1.290,  1.6733,  2.0,  4.6828,  3.0,  1.170,  1.170,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                  5d9.(2D<3/2>).6s                 a1D'
+'  LS                                                   5d9.6p                          3D*'
+'E 0.06     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      4164.54910,  -1.950,  1.2543,  3.0,  4.2306,  3.0, 99.000,  1.210, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  5d8.6s2                          a3F'
+'  LS                                                   5d9.6p                          3F*'
+'E 0.05     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      4192.42400,  -2.020,  1.6733,  2.0,  4.6298,  2.0,  1.170,  1.150,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                  5d9.(2D<3/2>).6s                 a1D'
+'  LS                                                   5d9.6p                          3P*'
+'E 0.06     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      4288.05020,  -2.520,  1.9220,  2.0,  4.8126,  2.0,  0.920,  0.880,  0.900, 0.000, 0.000, 0.000,
+'  LS                                                  5d8.6s2                          a3F'
+'  LS                                                   5d8.6s.(2D).6p                  3F*'
+'E 0.07     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      4302.42200,  -2.360,  2.3020,  1.0,  5.1829,  1.0, 99.000,  0.920, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  5d8.6s2                          a3P'
+'  LS                                                   5d8.6s.(2D).6p                  3D*'
+'E 0.08     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      4327.05300,   0.190,  4.1758,  5.0,  7.0404,  4.0,  1.320,  1.270,  1.420, 0.000, 0.000, 0.000,
+'  LS                                                         5d8.6s.(4F).6p            5F*'
+'  LS                                                         5d8.6s.(4F).7s            e5F'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      4391.82130,  -1.470,  2.7236,  4.0,  5.5459,  3.0, 99.000,  1.190, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  5d8.6s2                          a1G'
+'  LS                                                   5d8.6s.(2F).6p                  3D*'
+'E 0.09     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      4442.54770,  -1.880,  1.2543,  3.0,  4.0444,  2.0, 99.000,  1.390, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  5d8.6s2                          a3F'
+'  LS                                                   5d9.6p                          3P*'
+'E 0.05     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      4445.54220,  -2.870,  1.2562,  1.0,  4.0444,  2.0, 99.000,  1.390, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  5d9.(2D<3/2>).6s                 a3D'
+'  LS                                                   5d9.6p                          3P*'
+'E 0.05     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      4498.67800,   0.170,  3.7390,  4.0,  6.4942,  3.0,  1.460,  1.320,  1.670, 0.000, 0.000, 0.000,
+'  LS                                                         5d8.6s.(4F).6p           z5D*'
+'  LS                                                         5d9.(2D).7s                3D'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      4498.92490,  -3.120,  2.3020,  1.0,  5.0570,  2.0, 99.000,  1.200, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  5d8.6s2                          a3P'
+'  LS                                                   5d8.6s.(4P).6p                  5P*'
+'E 0.09     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      4520.88800,   0.160,  4.6828,  3.0,  7.4245,  4.0,  1.170,  1.170,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                         5d9.6p                    3D*'
+'                                                                                          '
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      4552.41200,   0.500,  4.1758,  5.0,  6.8986,  5.0,  1.320,  1.410,  1.370, 0.000, 0.000, 0.000,
+'  LS                                                         5d8.6s.(4F).6p            5F*'
+'  LS                                                         5d8.6s.(4F).7s            e5F'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      4554.59730,  -2.780,  2.3020,  1.0,  5.0234,  2.0, 99.000,  1.380, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  5d8.6s2                          a3P'
+'  LS                                                   5d8.6s.(4F).6p                  5D*'
+'E 0.08     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      4684.09560,  -3.000,  1.9220,  2.0,  4.5682,  1.0,  0.920,  1.090,  0.830, 0.000, 0.000, 0.000,
+'  LS                                                  5d8.6s2                          a3F'
+'  LS                                                   5d9.6p                          3P*'
+'E 0.05     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      4831.21450,  -2.940,  2.7236,  4.0,  5.2892,  3.0, 99.000,  1.190, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  5d8.6s2                          a1G'
+'  LS                                                   5d8.6s.(4F).6p                  5D*'
+'E 0.09     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      4879.54000,   0.170,  4.5002,  4.0,  7.0404,  4.0, 99.000,  1.270, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         5d8.6s.(4F).6p            5G*'
+'  LS                                                         5d8.6s.(4F).7s            e5F'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      5033.53420,  -2.740,  2.1057,  0.0,  4.5682,  1.0, 99.000,  1.090, 99.000, 0.000, 0.000, 0.000,
+'                                                                                          '
+'  LS                                                   5d9.6p                          3P*'
+'E 0.07     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      5044.05100,  -2.600,  1.9220,  2.0,  4.3793,  3.0,  0.920,  1.330,  1.740, 0.000, 0.000, 0.000,
+'  LS                                                  5d8.6s2                          a3F'
+'  LS                                                   5d8.6s.(4F).6p                  5D*'
+'E 0.07     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      5059.48300,   0.400,  4.0444,  2.0,  6.4942,  3.0,  1.390,  1.320,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                         5d9.6p                    3P*'
+'  LS                                                         5d9.(2D).7s                3D'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      5227.64540,  -2.070,  1.6733,  2.0,  4.0444,  2.0,  1.170,  1.390,  1.280, 0.000, 0.000, 0.000,
+'  LS                                                  5d9.(2D<3/2>).6s                 a1D'
+'  LS                                                   5d9.6p                          3P*'
+'E 0.07     Wisconsin REE ex   1  wl:DHL   1  gf:DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL   1     DHL             Pt'
+'Pt 1',      5301.01300,   0.750,  4.5603,  6.0,  6.8986,  5.0,  1.330,  1.410,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                         5d8.6s.(4F).6p            5G*'
+'  LS                                                         5d8.6s.(4F).7s            e5F'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      5368.98400,  -1.830,  1.9220,  2.0,  4.2306,  3.0,  0.920,  1.210,  1.500, 0.000, 0.000, 0.000,
+'  LS                                                          5d8.6s2                  a3F'
+'  LS                                                        5d9.6p                     3F*'
+'_          Hf 1 - U 2 Bell    2  wl:LGb   2  gf:LGb   2     LGb   2     LGb   2     LGb   2     LGb   2     LGb   2     LGb   2     LGb             Pt'
+'Pt 1',      5390.77600,   0.110,  4.2306,  3.0,  6.5299,  2.0,  1.210,  1.040,  1.380, 0.000, 0.000, 0.000,
+'  LS                                                         5d9.6p                    3F*'
+'  LS                                                         5d9.(2D).7s                3D'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      5475.76700,   0.180,  4.2306,  3.0,  6.4942,  3.0,  1.210,  1.320,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                         5d9.6p                    3F*'
+'  LS                                                         5d9.(2D).7s                3D'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      5478.48100,   0.380,  4.7779,  5.0,  7.0404,  4.0,  1.300,  1.270,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                         5d8.6s.(4F).6p            5F*'
+'  LS                                                         5d8.6s.(4F).7s            e5F'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      5763.56600,  -0.110,  4.3793,  3.0,  6.5299,  2.0,  1.330,  1.040,  1.620, 0.000, 0.000, 0.000,
+'  LS                                                         5d8.6s.(4F).6p            5D*'
+'  LS                                                         5d9.(2D).7s                3D'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      5840.12600,  -1.760,  1.9220,  2.0,  4.0444,  2.0,  0.920,  1.390,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                          5d8.6s2                  a3F'
+'  LS                                                        5d9.6p                     3P*'
+'_          Hf 1 - U 2 Bell    2  wl:LGb   2  gf:LGb   2     LGb   2     LGb   2     LGb   2     LGb   2     LGb   2     LGb   2     LGb             Pt'
+'Pt 1',      5844.80700,   0.180,  4.7779,  5.0,  6.8986,  5.0,  1.300,  1.410,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                         5d8.6s.(4F).6p            5F*'
+'  LS                                                         5d8.6s.(4F).7s            e5F'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      6026.02400,   0.140,  4.9834,  4.0,  7.0404,  4.0,  1.210,  1.270,  1.240, 0.000, 0.000, 0.000,
+'                                                                                5d8.6s.6p*'
+'  LS                                                         5d8.6s.(4F).7s            e5F'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      6318.36500,   0.080,  4.5682,  1.0,  6.5299,  2.0,  1.090,  1.040,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                         5d9.6p                    3P*'
+'  LS                                                         5d9.(2D).7s                3D'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      6326.57900,  -1.700,  2.7236,  4.0,  4.6828,  3.0, 99.000,  1.170, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d8.6s2                  a1G'
+'  LS                                                        5d9.6p                     3D*'
+'_          Hf 1 - U 2 Bell    2 wl:GHLa   2 gf:GHLa   2    GHLa   2    GHLa   2    GHLa   2    GHLa   2    GHLa   2    GHLa   2    GHLa             Pt'
+'Pt 1',      6523.43500,   0.230,  4.6298,  2.0,  6.5299,  2.0,  1.150,  1.040,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                         5d9.6p                    3P*'
+'  LS                                                         5d9.(2D).7s                3D'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      6710.39500,   0.310,  4.6828,  3.0,  6.5299,  2.0,  1.170,  1.040,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                         5d9.6p                    3D*'
+'  LS                                                         5d9.(2D).7s                3D'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      6760.00500,   0.610,  4.6606,  4.0,  6.4942,  3.0,  1.250,  1.320,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                         5d9.6p                    3F*'
+'  LS                                                         5d9.(2D).7s                3D'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      6842.59700,   1.100,  4.6828,  3.0,  6.4942,  3.0,  1.170,  1.320,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                         5d9.6p                    3D*'
+'  LS                                                         5d9.(2D).7s                3D'
+'_          Hf 1 - U 2 Bell    2   wl:CB   2   gf:CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB   2      CB             Pt'
+'Pt 1',      7113.72400,  -1.390,  2.3020,  1.0,  4.0444,  2.0, 99.000,  1.390, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d8.6s2                  a3P'
+'  LS                                                        5d9.6p                     3P*'
+'_          Hf 1 - U 2 Bell    2  wl:LGb   2  gf:LGb   2     LGb   2     LGb   2     LGb   2     LGb   2     LGb   2     LGb   2     LGb             Pt'
+'Pt 1',      8224.76900,  -1.550,  2.7236,  4.0,  4.2306,  3.0, 99.000,  1.210, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                          5d8.6s2                  a1G'
+'  LS                                                        5d9.6p                     3F*'
+'_          Hf 1 - U 2 Bell    2 wl:GHLa   2 gf:GHLa   2    GHLa   2    GHLa   2    GHLa   2    GHLa   2    GHLa   2    GHLa   2    GHLa             Pt'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Wisconsin exp. data with IS
+  2. Hf 1 - U 2 Bell

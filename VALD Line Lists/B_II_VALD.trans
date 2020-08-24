@@ -1,0 +1,77 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'B 2',       4121.93300,   0.374, 18.6782,  1.0, 21.6852,  2.0, 99.000, 99.000, 99.000, 9.430,-4.760, 0.000,
+'  LS                                                             1s2.2s.3d              3D'
+'  LS                                                             1s2.2s.4f             3F*'
+'_          Li 1 - K 5 Bell    1  wl:BRO   1  gf:BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO             B+'
+'B 2',       4121.93300,   0.544, 18.6782,  2.0, 21.6852,  3.0, 99.000, 99.000, 99.000, 9.430,-4.760, 0.000,
+'  LS                                                             1s2.2s.3d              3D'
+'  LS                                                             1s2.2s.4f             3F*'
+'_          Li 1 - K 5 Bell    1  wl:BRO   1  gf:BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO             B+'
+'B 2',       4121.93300,   0.704, 18.6782,  3.0, 21.6852,  4.0, 99.000, 99.000, 99.000, 9.430,-4.760, 0.000,
+'  LS                                                             1s2.2s.3d              3D'
+'  LS                                                             1s2.2s.4f             3F*'
+'_          Li 1 - K 5 Bell    1  wl:BRO   1  gf:BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO             B+'
+'B 2',       4121.93300,  -0.346, 18.6782,  2.0, 21.6852,  2.0, 99.000, 99.000, 99.000, 9.430,-4.760, 0.000,
+'  LS                                                             1s2.2s.3d              3D'
+'  LS                                                             1s2.2s.4f             3F*'
+'_          Li 1 - K 5 Bell    1  wl:BRO   1  gf:BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO             B+'
+'B 2',       4121.93300,  -0.346, 18.6782,  3.0, 21.6852,  3.0, 99.000, 99.000, 99.000, 9.430,-4.760, 0.000,
+'  LS                                                             1s2.2s.3d              3D'
+'  LS                                                             1s2.2s.4f             3F*'
+'_          Li 1 - K 5 Bell    1  wl:BRO   1  gf:BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO             B+'
+'B 2',       4121.93300,  -1.976, 18.6782,  3.0, 21.6852,  2.0, 99.000, 99.000, 99.000, 9.430,-4.760, 0.000,
+'  LS                                                             1s2.2s.3d              3D'
+'  LS                                                             1s2.2s.4f             3F*'
+'_          Li 1 - K 5 Bell    1  wl:BRO   1  gf:BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO   1     BRO             B+'
+'B 2',       6080.45700,  -0.440, 15.8280,  0.0, 17.8665,  1.0, 99.000, 99.000, 99.000, 9.120, 0.000, 0.000,
+'  LS                                                             1s2.2p2                1S'
+'  LS                                                             1s2.2s.3p             1P*'
+'_          Li 1 - K 5 Bell    1  wl:LCV   1  gf:LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV             B+'
+'B 2',       7030.19800,   0.173, 16.0899,  1.0, 17.8530,  2.0, 99.000, 99.000, 99.000, 9.380, 0.000, 0.000,
+'  LS                                                             1s2.2s.3s              3S'
+'  LS                                                             1s2.2s.3p             3P*'
+'_          Li 1 - K 5 Bell    1  wl:LCV   1  gf:LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV             B+'
+'B 2',       7031.89900,  -0.047, 16.0899,  1.0, 17.8525,  1.0, 99.000, 99.000, 99.000, 9.380, 0.000, 0.000,
+'  LS                                                             1s2.2s.3s              3S'
+'  LS                                                             1s2.2s.3p             3P*'
+'_          Li 1 - K 5 Bell    1  wl:LCV   1  gf:LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV             B+'
+'B 2',       7032.54200,  -0.517, 16.0899,  1.0, 17.8524,  0.0, 99.000, 99.000, 99.000, 9.380, 0.000, 0.000,
+'  LS                                                             1s2.2s.3s              3S'
+'  LS                                                             1s2.2s.3p             3P*'
+'_          Li 1 - K 5 Bell    1  wl:LCV   1  gf:LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV             B+'
+'B 2',       9446.39100,   0.173, 17.8665,  1.0, 19.1787,  2.0, 99.000, 99.000, 99.000, 9.250, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              1P*'
+'  LS                                                              1s2.2s.3d             1D'
+'_          Li 1 - K 5 Bell    1  wl:LCV   1  gf:LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV             B+'
+'B 2',       11750.0540,  -0.491, 16.8116,  0.0, 17.8665,  1.0, 99.000, 99.000, 99.000, 8.870, 0.000, 0.000,
+'  LS                                                             1s2.2s.3s              1S'
+'  LS                                                             1s2.2s.3p             1P*'
+'_          Li 1 - K 5 Bell    1  wl:LCV   1  gf:LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV   1     LCV             B+'
+'B 2',       15010.2370,  -0.556, 17.8524,  0.0, 18.6782,  1.0, 99.000, 99.000, 99.000, 9.400, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              3P*'
+'  LS                                                              1s2.2s.3d             3D'
+'_          Li 1 - K 5 Bell    1 wl:HIBa   1 gf:HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa             B+'
+'B 2',       15013.1670,  -0.206, 17.8525,  1.0, 18.6782,  2.0, 99.000, 99.000, 99.000, 9.400, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              3P*'
+'  LS                                                              1s2.2s.3d             3D'
+'_          Li 1 - K 5 Bell    1 wl:HIBa   1 gf:HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa             B+'
+'B 2',       15013.1670,  -0.686, 17.8525,  1.0, 18.6782,  1.0, 99.000, 99.000, 99.000, 9.400, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              3P*'
+'  LS                                                              1s2.2s.3d             3D'
+'_          Li 1 - K 5 Bell    1 wl:HIBa   1 gf:HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa             B+'
+'B 2',       15020.9270,   0.064, 17.8530,  2.0, 18.6782,  3.0, 99.000, 99.000, 99.000, 9.400, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              3P*'
+'  LS                                                              1s2.2s.3d             3D'
+'_          Li 1 - K 5 Bell    1 wl:HIBa   1 gf:HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa             B+'
+'B 2',       15020.9270,  -0.686, 17.8530,  2.0, 18.6782,  2.0, 99.000, 99.000, 99.000, 9.400, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              3P*'
+'  LS                                                              1s2.2s.3d             3D'
+'_          Li 1 - K 5 Bell    1 wl:HIBa   1 gf:HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa             B+'
+'B 2',       15020.9270,  -1.856, 17.8530,  2.0, 18.6782,  1.0, 99.000, 99.000, 99.000, 9.400, 0.000, 0.000,
+'  LS                                                            1s2.2s.3p              3P*'
+'  LS                                                              1s2.2s.3d             3D'
+'_          Li 1 - K 5 Bell    1 wl:HIBa   1 gf:HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa   1    HIBa             B+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Li 1 - K 5 Bell

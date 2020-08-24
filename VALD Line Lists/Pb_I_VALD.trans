@@ -1,0 +1,37 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Pb 1',      4019.63200,  -0.220,  2.6604,  2.0,  5.7440,  3.0,  1.230,  1.120,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                          6s2.6p2                   1D'
+'  LS                                                        6s2.6p.6d                  3F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Pb'
+'Pb 1',      4057.80700,  -0.170,  1.3205,  2.0,  4.3751,  1.0,  1.270,  1.350,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                          6s2.6p2                   3P'
+'  LS                                                        6s2.6p.7s                  3P*'
+'_          Hf 1 - U 2 Bell    1   wl:NG   1   gf:NG   1      NG   1      NG   1      NG   1      NG   1      NG   1      NG   1      NG             Pb'
+'Pb 1',      4062.13600,  -0.100,  2.6604,  2.0,  5.7118,  1.0,  1.230,  0.860,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                          6s2.6p2                   1D'
+'  LS                                                        6s2.6p.6d                  3D*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Pb'
+'Pb 1',      4168.03300,  -0.780,  2.6604,  2.0,  5.6342,  2.0,  1.230,  0.800,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                          6s2.6p2                   1D'
+'  LS                                                        6s2.6p.6d                  3F*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Pb'
+'Pb 1',      5005.41700,  -0.280,  3.6534,  0.0,  6.1297,  1.0,  0.000,  1.130,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                          6s2.6p2                   1S'
+'  LS                                                        6s2.6p.7s                  1P*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Pb'
+'Pb 1',      5201.43700,  -0.700,  3.6534,  0.0,  6.0364,  1.0,  0.000,  1.300,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                          6s2.6p2                   1S'
+'  LS                                                        6s2.6p.8s                  3P*'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Pb'
+'Pb 1',      6001.86800,  -0.910,  4.3751,  1.0,  6.4402,  2.0,  1.350, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         6s2.6p.7s                 3P*'
+'  LS                                                         6s2.6p.8p                  3D'
+'_          Hf 1 - U 2 Bell    1   wl:CB   1   gf:CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB   1      CB             Pb'
+'Pb 1',      7228.96600,  -0.820,  2.6604,  2.0,  4.3751,  1.0,  1.230,  1.350,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                          6s2.6p2                   1D'
+'  LS                                                        6s2.6p.7s                  3P*'
+'_          Hf 1 - U 2 Bell    1   wl:NG   1   gf:NG   1      NG   1      NG   1      NG   1      NG   1      NG   1      NG   1      NG             Pb'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Hf 1 - U 2 Bell

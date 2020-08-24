@@ -1,0 +1,242 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Lu 2',      4184.25559,  -0.440,  2.1490,  2.0,  5.1112,  2.0,  1.090,  0.710,  0.900, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s             1D'
+'  LS                                                                 5d.6p             3F*'
+'C 0.469    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4223.09825,  -1.790,  3.6460,  2.0,  6.5810,  3.0,  0.660,  1.020,  1.380, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             1F*'
+'C-0.250    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4259.50493,  -2.990,  4.4203,  0.0,  7.3302,  1.0, 99.000,  1.370, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3P'
+'  LS                                                                 5d.6p             1P*'
+'C 0.008    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4262.01639,  -1.360,  5.6453,  1.0,  8.5535,  0.0,  0.430, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                 5d.6p             3D*'
+'  LS                                                                  6s.7s             1S'
+'C 0.394    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4342.03172,  -0.600,  4.4756,  2.0,  7.3302,  1.0,  1.370,  1.370,  1.370, 0.000, 0.000, 0.000,
+'                                                                                       5d2'
+'  LS                                                                 5d.6p             1P*'
+'C-0.278    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4430.32919,  -2.780,  4.5325,  1.0,  7.3302,  1.0,  1.410,  1.370,  1.390, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3P'
+'  LS                                                                 5d.6p             1P*'
+'C-0.096    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4433.47477,  -2.660,  5.1112,  2.0,  7.9070,  1.0,  0.710,  2.050,  0.040, 0.000, 0.000, 0.000,
+'  LS                                                                 5d.6p             3F*'
+'  LS                                                                  6s.7s             3S'
+'C 0.875    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4505.22198,  -1.660,  3.8298,  3.0,  6.5810,  3.0,  1.050,  1.020,  1.030, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             1F*'
+'C 0.940    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4586.93139,  -1.720,  3.6460,  2.0,  6.3482,  2.0,  0.660,  1.370,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3P*'
+'C 0.347    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4785.43301,  -1.910,  2.1490,  2.0,  4.7391,  1.0,  1.090,  0.990,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s             1D'
+'  LS                                                                 6s.6p             1P*'
+'C-0.008    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4839.61706,  -2.180,  1.4625,  1.0,  4.0237,  2.0,  0.520,  1.660,  2.230, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s             3D'
+'  LS                                                                 6s.6p             3P*'
+'C 0.473    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4843.02131,  -1.560,  3.6460,  2.0,  6.2053,  1.0,  0.660,  1.430,  0.280, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3P*'
+'C-0.443    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4858.74227,  -1.410,  4.0299,  4.0,  6.5810,  3.0,  1.270,  1.020,  1.640, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             1F*'
+'C-0.073    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4865.42248,  -0.590,  4.7827,  2.0,  7.3302,  1.0,  1.490,  1.370,  1.550, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3P'
+'  LS                                                                 5d.6p             1P*'
+'C-0.401    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4921.68592,  -1.200,  3.8298,  3.0,  6.3482,  2.0,  1.050,  1.370,  0.730, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3P*'
+'C-0.812    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      4994.12573,  -1.140,  1.5418,  2.0,  4.0237,  2.0,  1.140,  1.660,  1.400, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s             3D'
+'  LS                                                                 6s.6p             3P*'
+'C-0.401    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      5172.80447,  -2.720,  3.6460,  2.0,  6.0421,  3.0,  0.660,  1.300,  1.940, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3D*'
+'C 0.045    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      5278.47358,  -2.000,  6.2053,  1.0,  8.5535,  0.0,  1.430, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                 5d.6p             3P*'
+'  LS                                                                  6s.7s             1S'
+'C-0.232    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      5458.26792,  -1.740,  5.6361,  2.0,  7.9070,  1.0,  0.940,  2.050,  0.390, 0.000, 0.000, 0.000,
+'  LS                                                                 5d.6p             1D*'
+'  LS                                                                  6s.7s             3S'
+'C 0.906    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      5476.67546,  -0.420,  1.7605,  3.0,  4.0237,  2.0,  1.410,  1.660,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s             3D'
+'  LS                                                                 6s.6p             3P*'
+'C 0.432    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      5480.34123,  -2.970,  5.6453,  1.0,  7.9070,  1.0,  0.430,  2.050,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                                 5d.6p             3D*'
+'  LS                                                                  6s.7s             3S'
+'C 0.511    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      5602.53774,  -1.820,  3.8298,  3.0,  6.0421,  3.0,  1.050,  1.300,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3D*'
+'C 0.068    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      5664.87578,  -1.400,  3.8298,  3.0,  6.0178,  4.0,  1.050,  1.250,  1.550, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3F*'
+'C 0.974    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      5713.45821,  -1.520,  3.6460,  2.0,  5.8154,  2.0,  0.660,  1.130,  0.890, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3D*'
+'C 0.118    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      5887.25100,  -1.480,  4.4756,  2.0,  6.5810,  3.0,  1.370,  1.020,  0.670, 0.000, 0.000, 0.000,
+'                                                                                       5d2'
+'  LS                                                                 5d.6p             1F*'
+'C-0.047    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      5926.06831,  -2.380,  5.8154,  2.0,  7.9070,  1.0,  1.130,  2.050,  0.670, 0.000, 0.000, 0.000,
+'  LS                                                                 5d.6p             3D*'
+'  LS                                                                  6s.7s             3S'
+'C 0.700    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      5983.88600,  -1.160,  1.4625,  1.0,  3.5339,  1.0,  0.520,  1.510,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                  5d.6s                             3D'
+'  LS                                                 6s.6p                             3P*'
+'E 0.06     Wisconsin REE ex   2 wl:DCWL   2 gf:DCWL   2    DCWL   2    DCWL   2    DCWL   2    DCWL   2    DCWL   2    DCWL   2    DCWL            Lu+'
+'Lu 2',      6159.88793,   0.070,  4.0299,  4.0,  6.0421,  3.0,  1.270,  1.300,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3D*'
+'C-0.949    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      6199.59268,  -0.330,  3.6460,  2.0,  5.6453,  1.0,  0.660,  0.430,  0.780, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3D*'
+'C-0.865    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      6221.89000,  -0.760,  1.5418,  2.0,  3.5339,  1.0,  1.140,  1.510,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                  5d.6s                             3D'
+'  LS                                                 6s.6p                             3P*'
+'E 0.04     Wisconsin REE ex   2 wl:DCWL   2 gf:DCWL   2    DCWL   2    DCWL   2    DCWL   2    DCWL   2    DCWL   2    DCWL   2    DCWL            Lu+'
+'Lu 2',      6228.08457,  -1.060,  3.6460,  2.0,  5.6361,  2.0,  0.660,  0.940,  0.800, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             1D*'
+'C 0.352    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      6235.32920,  -0.280,  4.0299,  4.0,  6.0178,  4.0,  1.270,  1.250,  1.260, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3F*'
+'C-0.974    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      6242.30616,  -0.120,  3.8298,  3.0,  5.8154,  2.0,  1.050,  1.130,  0.970, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3D*'
+'C-0.950    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      6444.84900,  -1.530,  3.6460,  2.0,  5.5692,  3.0,  0.660,  1.080,  1.500, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3F*'
+'C 0.599    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      6463.10686,  -1.050,  1.4625,  1.0,  3.3804,  0.0,  0.520, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s             3D'
+'  LS                                                                 6s.6p             3P*'
+'C 0.538    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      6611.63307,  -2.120,  2.1490,  2.0,  4.0237,  2.0,  1.090,  1.660,  1.380, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s             1D'
+'  LS                                                                 6s.6p             3P*'
+'C-0.498    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      6619.16252,  -0.990,  4.4756,  2.0,  6.3482,  2.0,  1.370,  1.370,  1.370, 0.000, 0.000, 0.000,
+'                                                                                       5d2'
+'  LS                                                                 5d.6p             3P*'
+'C 0.145    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      6826.56694,  -1.150,  4.5325,  1.0,  6.3482,  2.0,  1.410,  1.370,  1.350, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3P'
+'  LS                                                                 5d.6p             3P*'
+'C 0.229    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      6861.77425,  -2.080,  3.8298,  3.0,  5.6361,  2.0,  1.050,  0.940,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             1D*'
+'C-0.118    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      6892.56267,  -1.070,  4.7827,  2.0,  6.5810,  3.0,  1.490,  1.020,  0.550, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3P'
+'  LS                                                                 5d.6p             1F*'
+'C-0.171    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      6943.92773,  -1.140,  4.4203,  0.0,  6.2053,  1.0, 99.000,  1.430, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3P'
+'  LS                                                                 5d.6p             3P*'
+'C 0.299    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      7125.82752,  -0.410,  3.8298,  3.0,  5.5692,  3.0,  1.050,  1.080,  1.070, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3F*'
+'C-0.971    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      7165.95933,  -1.050,  4.4756,  2.0,  6.2053,  1.0,  1.370,  1.430,  1.340, 0.000, 0.000, 0.000,
+'                                                                                       5d2'
+'  LS                                                                 5d.6p             3P*'
+'C 0.446    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      7238.75715,  -1.780,  6.1947,  0.0,  7.9070,  1.0, 99.000,  2.050, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                 5d.6p             3P*'
+'  LS                                                                  6s.7s             3S'
+'C-0.925    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      7283.91428,  -1.340,  6.2053,  1.0,  7.9070,  1.0,  1.430,  2.050,  1.740, 0.000, 0.000, 0.000,
+'  LS                                                                 5d.6p             3P*'
+'  LS                                                                  6s.7s             3S'
+'C-0.952    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      7409.67614,  -1.090,  4.5325,  1.0,  6.2053,  1.0,  1.410,  1.430,  1.420, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3P'
+'  LS                                                                 5d.6p             3P*'
+'C-0.511    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      7456.99786,  -1.020,  4.5325,  1.0,  6.1947,  0.0,  1.410, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3P'
+'  LS                                                                 5d.6p             3P*'
+'C-0.566    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      7912.34017,  -1.210,  4.4756,  2.0,  6.0421,  3.0,  1.370,  1.300,  1.230, 0.000, 0.000, 0.000,
+'                                                                                       5d2'
+'  LS                                                                 5d.6p             3D*'
+'C 0.181    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      7917.53500,  -0.620,  4.7827,  2.0,  6.3482,  2.0,  1.490,  1.370,  1.430, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3P'
+'  LS                                                                 5d.6p             3P*'
+'C-0.381    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      7951.59169,  -1.170,  6.3482,  2.0,  7.9070,  1.0,  1.370,  2.050,  1.030, 0.000, 0.000, 0.000,
+'  LS                                                                 5d.6p             3P*'
+'  LS                                                                  6s.7s             3S'
+'C-0.902    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      8052.51895,  -2.160,  4.0299,  4.0,  5.5692,  3.0,  1.270,  1.080,  1.550, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3F*'
+'C 0.042    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      8459.15800,  -0.730,  3.6460,  2.0,  5.1112,  2.0,  0.660,  0.710,  0.690, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3F*'
+'C-0.670    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      8712.76589,  -1.460,  4.7827,  2.0,  6.2053,  1.0,  1.490,  1.430,  1.520, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3P'
+'  LS                                                                 5d.6p             3P*'
+'C-0.202    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      8949.62946,  -2.540,  2.1490,  2.0,  3.5339,  1.0,  1.090,  1.510,  0.880, 0.000, 0.000, 0.000,
+'  LS                                                                  5d.6s             1D'
+'  LS                                                                 6s.6p             3P*'
+'C 0.028    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      9251.40793,  -3.280,  4.4756,  2.0,  5.8154,  2.0,  1.370,  1.130,  1.250, 0.000, 0.000, 0.000,
+'                                                                                       5d2'
+'  LS                                                                 5d.6p             3D*'
+'C 0.003    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      9661.67886,  -1.290,  4.5325,  1.0,  5.8154,  2.0,  1.410,  1.130,  0.990, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3P'
+'  LS                                                                 5d.6p             3D*'
+'C-0.280    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      9672.39138,  -2.970,  3.8298,  3.0,  5.1112,  2.0,  1.050,  0.710,  1.390, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3F'
+'  LS                                                                 5d.6p             3F*'
+'C-0.020    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      9841.51656,  -1.960,  4.7827,  2.0,  6.0421,  3.0,  1.490,  1.300,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                                  5d2               3P'
+'  LS                                                                 5d.6p             3D*'
+'C-0.040    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+'Lu 2',      9926.00993,  -2.920,  3.5339,  1.0,  4.7827,  2.0,  1.510,  1.490,  1.480, 0.000, 0.000, 0.000,
+'  LS                                                                 6s.6p             3P*'
+'  LS                                                                  5d2               3P'
+'C-0.031    Lu 2: DREAM data   1 wl:QPBM   1 gf:QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM   1    QPBM            Lu+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Lu 2: DREAM data
+  2. Wisconsin exp. data with IS

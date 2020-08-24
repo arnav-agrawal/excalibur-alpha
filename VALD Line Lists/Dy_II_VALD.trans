@@ -1,0 +1,1210 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Dy 2',      4000.45000,   0.040,  0.1027,  7.5,  3.2011,  8.5,  1.200,  1.270,  1.520, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f10.(5I).6p                     4K*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4007.75900,  -1.897,  0.1027,  7.5,  3.1954,  6.5,  1.200,  1.370,  0.660, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'                                                                4f9.(6H*).5d.\ (7G*).6s  *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4010.06100,   0.478,  2.4266,  9.5,  5.5175,  9.5,  1.270,  1.320,  1.290, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7K*).6s  6K*'
+'                                                                   4f9.(6H*).5d.\ (7I*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4011.29000,  -1.730,  0.9254,  5.5,  4.0154,  5.5,  1.010,  1.220,  1.120, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'                                                                             4f10.(5I).6p*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4014.70000,  -0.700,  0.9280,  6.5,  4.0154,  5.5,  1.130,  1.220,  0.900, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).6s'
+'                                                                             4f10.(5I).6p*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4015.17300,  -0.234,  1.4631,  4.5,  4.5502,  3.5,  0.760,  1.110,  0.140, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<4>).6s.<1/2>   (4,1/2)'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4016.89000,  -1.530,  1.3581,  3.5,  4.4438,  4.5,  0.470,  1.040,  2.040, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4024.43000,  -0.690,  1.2238,  5.5,  4.3038,  4.5,  1.000,  1.080,  0.820, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4027.78000,  -0.175,  1.2238,  5.5,  4.3012,  5.5,  1.000,  1.150,  1.070, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<5>).6s.<1/2>   (5,1/2)'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4028.32200,   1.267,  2.5893,  8.5,  5.6663,  9.5,  1.350,  1.290,  1.030, 0.000, 0.000, 0.000,
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'                                                                   4f9.(6H*).5d.\ (7I*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4032.47000,   0.050,  1.6875,  7.5,  4.7613,  8.5,  1.330,  1.330,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d.(7H).6s               6H*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4033.65500,  -0.231,  1.1694,  4.5,  4.2423,  5.5,  0.820,  1.130,  1.820, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<5>).6s.<1/2>   (5,1/2)'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4036.33000,  -1.170,  0.5382,  7.5,  3.6091,  7.5,  1.230,  1.230,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d2.(3F)                8L*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4038.51000,  -0.950,  0.9254,  5.5,  3.9946,  6.5,  1.010,  1.160,  1.550, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4041.98000,  -0.900,  0.9280,  6.5,  3.9946,  6.5,  1.130,  1.160,  1.150, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).6s'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4050.57000,  -0.470,  0.5896,  6.5,  3.6497,  7.5,  1.130,  1.220,  1.520, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'  LS                                                  4f10.(5I).6p                     4I*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4055.14000,  -0.430,  1.2238,  5.5,  4.2804,  5.5,  1.000,  1.100,  1.050, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4057.44200,   0.964,  2.9393,  9.5,  5.9942,  9.5,  1.300,  1.230,  1.260, 0.000, 0.000, 0.000,
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'                                                                   4f9.(6H*).5d.\ (5K*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4060.57000,  -0.740,  1.6537,  5.5,  4.7062,  4.5,  1.410,  1.160,  1.970, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5F).6s                      6F'
+'                                                                                  4f9.5d2*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4072.61000,   0.061,  2.1123,  8.5,  5.1557,  8.5,  1.290,  1.330,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7I*).6s  6I*'
+'                                                                   4f9.(7H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4073.12000,  -0.320,  0.5382,  7.5,  3.5813,  7.5,  1.230,  1.250,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4073.99000,  -0.990,  1.4631,  4.5,  4.5056,  4.5,  0.760,  1.150,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4077.97000,  -0.040,  0.1027,  7.5,  3.1422,  8.5,  1.200,  1.250,  1.450, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d2.(3P)                8I*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4087.20000,  -0.660,  1.4631,  4.5,  4.4958,  4.5,  0.760,  0.950,  0.850, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4091.52000,  -0.413,  1.3581,  3.5,  4.3875,  3.5,  0.470,  0.790,  0.630, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<4>).6s.<1/2>   (4,1/2)'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4091.75700,  -0.224,  1.7515,  4.5,  4.7808,  5.5,  1.320,  1.260,  1.120, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5F<5>).6s.<1/2>   (5,1/2)'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4101.93300,  -0.225,  1.9617,  6.5,  4.9834,  5.5,  1.270,  1.340,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                           4f9.6s2                 6H*'
+'                                                                   4f9.(7H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4103.31000,  -0.380,  0.1027,  7.5,  3.1234,  7.5,  1.200,  1.290,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f10.(5I).6p                     6H*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4105.04000,  -1.460,  0.5896,  6.5,  3.6091,  7.5,  1.130,  1.230,  1.560, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'  LS                                                  4f9.(6H).5d2.(3F)                8L*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4106.37800,  -0.956,  1.2238,  5.5,  4.2423,  5.5,  1.000,  1.130,  1.060, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<5>).6s.<1/2>   (5,1/2)'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4107.17000,  -1.330,  1.3581,  3.5,  4.3760,  4.5,  0.470,  0.980,  1.860, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4111.34000,  -0.890,  0.0000,  8.5,  3.0148,  8.5,  1.290,  1.230,  1.260, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'                                                                      4f9.(6H).5d.(5K).6s*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4119.31000,  -0.080,  1.1694,  4.5,  4.1784,  4.5,  0.820,  1.080,  0.950, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4122.34000,  -2.170,  0.9254,  5.5,  3.9322,  6.5,  1.010,  0.940,  0.730, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4124.63000,  -0.660,  0.9254,  5.5,  3.9305,  5.5,  1.010,  1.080,  1.050, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4128.24000,  -0.790,  0.9280,  6.5,  3.9305,  5.5,  1.130,  1.080,  1.300, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).6s'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4129.42000,  -0.610,  0.5382,  7.5,  3.5398,  6.5,  1.230,  1.250,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6F).5d.(5H).6s              6H*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4131.03000,  -0.760,  1.4631,  4.5,  4.4636,  4.5,  0.760,  0.960,  0.860, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4132.84000,  -0.810,  1.6537,  5.5,  4.6529,  4.5,  1.410,  1.160,  1.970, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5F).6s                      6F'
+'                                                                                  4f9.5d2*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4133.35300,  -0.309,  1.5295,  7.5,  4.5283,  8.5,  1.330,  1.370,  1.520, 0.000, 0.000, 0.000,
+'  LS                                                           4f9.6s2                 6H*'
+'  LS                                                            4f9.(7H*).6s.6p.(3P*)   8H'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4141.50600,  -1.281,  0.1027,  7.5,  3.0956,  6.5,  1.200,  1.280,  0.940, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4143.10000,  -0.480,  0.5896,  6.5,  3.5813,  7.5,  1.130,  1.250,  1.660, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4145.62000,  -1.860,  0.5382,  7.5,  3.5281,  6.5,  1.230,  1.250,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6F).5d.(7H).6s              6H*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4152.47800,  -0.727,  1.1694,  4.5,  4.1544,  5.5,  0.820,  1.120,  1.780, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<5>).6s.<1/2>   (5,1/2)'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4164.54000,  -1.300,  1.7881,  6.5,  4.7644,  7.5,  1.440,  1.320,  0.920, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d.(7F).6s               8F*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4169.25200,  -2.089,  0.1027,  7.5,  3.0756,  7.5,  1.200,  1.280,  1.240, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'                                                                 4f9.5d2                 *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4187.36000,  -1.490,  1.1694,  4.5,  4.1295,  5.5,  0.820,  1.290,  2.340, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'                                                                             4f10.(5I).6p*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4195.18000,  -0.330,  1.2238,  5.5,  4.1784,  4.5,  1.000,  1.080,  0.820, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4201.37000,  -1.340,  0.5896,  6.5,  3.5398,  6.5,  1.130,  1.250,  1.190, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'  LS                                                  4f9.(6F).5d.(5H).6s              6H*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4206.54000,  -1.380,  0.0000,  8.5,  2.9466,  8.5,  1.290,  1.270,  1.280, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d2.(3F)                8H*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4218.58000,  -1.580,  0.9280,  6.5,  3.8662,  6.5,  1.130,  1.160,  1.150, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).6s'
+'  LS                                                  4f9.(6H).5d2.(1G)                6I*'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4222.03400,  -1.679,  0.5382,  7.5,  3.4740,  6.5,  1.230,  1.250,  1.140, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<7>).6s.<1/2>   (7,1/2)'
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4247.34400,  -0.396,  1.5715,  6.5,  4.4897,  7.5,  1.350,  1.400,  1.580, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7H*).6s  8H*'
+'  LS                                                            4f9.(7H*).6s.6p.(3P*)   8G'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4248.28000,  -1.520,  1.8468,  8.5,  4.7644,  7.5,  1.320,  1.320,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d.(7I).6s               8I*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4248.45600,  -0.463,  1.7788,  5.5,  4.6963,  6.5,  1.300,  1.300,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7H*).6s  8H*'
+'                                                                     4f9.(7H*).6s.6p.(3P*)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4252.79000,  -1.110,  1.8468,  8.5,  4.7613,  8.5,  1.320,  1.330,  1.320, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d.(7I).6s               8I*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4256.33000,  -1.410,  0.1027,  7.5,  3.0148,  8.5,  1.200,  1.230,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'                                                                      4f9.(6H).5d.(5K).6s*'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4262.94000,  -2.710,  0.5382,  7.5,  3.4458,  6.5,  1.230,  1.180,  1.370, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'                                                                        4f9.(6H).5d2.(3P)*'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4265.79000,  -1.650,  1.2238,  5.5,  4.1295,  5.5,  1.000,  1.290,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'                                                                             4f10.(5I).6p*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4294.93000,   0.040,  2.0930, 10.5,  4.9790,  9.5,  1.330,  1.360,  1.190, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d.(7K).6s               8K*'
+'  LS                                                   4f9.(7H).6s.6p.(3P)              8I'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4302.71400,  -1.658,  0.5896,  6.5,  3.4704,  5.5,  1.130,  1.290,  0.690, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<7>).6s.<1/2>   (7,1/2)'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4308.63000,  -0.910,  0.0000,  8.5,  2.8768,  7.5,  1.290,  1.190,  1.680, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d.(5K).6s              4K*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4322.53000,  -0.820,  1.6537,  5.5,  4.5212,  4.5,  1.410,  1.080,  2.160, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5F).6s                      6F'
+'                                                                                  4f9.5d2*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4323.77000,  -0.940,  2.1123,  8.5,  4.9790,  9.5,  1.290,  1.360,  1.660, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d.(7I).6s               6I*'
+'  LS                                                   4f9.(7H).6s.6p.(3P)              8I'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4325.11400,  -0.335,  1.6625,  9.5,  4.5283,  8.5,  1.360,  1.370,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7I*).6s  8I*'
+'  LS                                                            4f9.(7H*).6s.6p.(3P*)   8H'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4328.91000,  -1.600,  0.5382,  7.5,  3.4015,  7.5,  1.230,  1.310,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d2.(3P)                8I*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4339.66000,  -1.870,  0.5896,  6.5,  3.4458,  6.5,  1.130,  1.180,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'                                                                        4f9.(6H).5d2.(3P)*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4346.27000,  -1.220,  1.6537,  5.5,  4.5056,  4.5,  1.410,  1.150,  1.990, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5F).6s                      6F'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4346.37400,   0.195,  2.5780,  8.5,  5.4298,  7.5,  1.230,  1.300,  0.950, 0.000, 0.000, 0.000,
+'                                                                4f9.(6H*).5d.\ (5K*).6s  *'
+'                                                                     4f9.(6H*).6s.6p.(3P*)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4355.23000,  -1.930,  1.1694,  4.5,  4.0154,  5.5,  0.820,  1.220,  2.110, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'                                                                             4f10.(5I).6p*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4358.45000,  -1.650,  0.1027,  7.5,  2.9466,  8.5,  1.200,  1.270,  1.520, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d2.(3F)                8H*'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4361.34800,  -0.533,  1.8468,  8.5,  4.6887,  7.5,  1.320,  1.330,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7I*).6s  8I*'
+'                                                                   4f9.(7H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4362.92000,  -1.900,  0.9280,  6.5,  3.7690,  7.5,  1.130,  1.200,  1.420, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).6s'
+'  LS                                                  4f9.(6H).5d2.(3F)                6H*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4364.20700,   0.261,  2.4266,  9.5,  5.2667,  9.5,  1.270,  1.310,  1.290, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7K*).6s  6K*'
+'                                                                   4f9.(7H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4366.11000,  -0.910,  1.9255,  6.5,  4.7644,  7.5,  1.360,  1.320,  1.180, 0.000, 0.000, 0.000,
+'                                                                      4f9.(6H).5d.(7H).6s*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4367.19000,  -2.340,  0.5382,  7.5,  3.3764,  8.5,  1.230,  1.240,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d2.(3F)                6I*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4374.24000,  -1.500,  0.0000,  8.5,  2.8336,  7.5,  1.290,  1.280,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d.(5I).6s              6I*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4374.76000,  -1.200,  0.5382,  7.5,  3.3715,  6.5,  1.230,  1.290,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6F).5d.(5H).6s              4H*'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4375.31400,   0.095,  2.1829,  9.5,  5.0159,  8.5,  1.280,  1.330,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7K*).6s  8K*'
+'                                                                     4f9.(7H*).6s.6p.(3P*)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4380.22000,  -1.710,  0.9254,  5.5,  3.7552,  6.5,  1.010,  1.220,  1.770, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f10.(5I).6p                     6H*'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4384.30000,  -1.740,  0.9280,  6.5,  3.7552,  6.5,  1.130,  1.220,  1.170, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).6s'
+'  LS                                                  4f10.(5I).6p                     6H*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4394.90000,  -2.200,  0.5896,  6.5,  3.4099,  6.5,  1.130,  1.200,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'                                                                        4f9.(6H).5d2.(3P)*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4394.98000,  -1.900,  0.1027,  7.5,  2.9229,  6.5,  1.200,  1.330,  0.790, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'                                                                4f9.(6F*).5d.\ (7H*).6s  *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4399.58000,  -2.010,  1.4631,  4.5,  4.2804,  5.5,  0.760,  1.100,  1.880, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'                                                                        4f9.(6H).5d2.(1G)*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4408.04000,  -2.010,  0.5896,  6.5,  3.4015,  7.5,  1.130,  1.310,  1.890, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'  LS                                                  4f9.(6H).5d2.(3P)                8I*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4409.38000,  -1.240,  0.0000,  8.5,  2.8110,  7.5,  1.290,  1.360,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d.(5I).6s              6I*'
+'E 0.09     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4418.10000,  -1.930,  0.9280,  6.5,  3.7335,  7.5,  1.130,  1.210,  1.450, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).6s'
+'  LS                                                  4f9.(6H).5d2.(1G)                6I*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4430.99700,  -0.109,  2.2998,  8.5,  5.0971,  7.5,  1.220,  1.320,  0.840, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7K*).6s  8K*'
+'                                                                     4f9.(7H*).6s.6p.(3P*)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4449.70000,  -1.030,  0.0000,  8.5,  2.7856,  7.5,  1.290,  1.310,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6F).5d.(7H).6s              8H*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4455.60000,  -1.960,  0.5896,  6.5,  3.3715,  6.5,  1.130,  1.290,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'  LS                                                  4f9.(6F).5d.(5H).6s              4H*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4468.14000,  -1.670,  0.1027,  7.5,  2.8768,  7.5,  1.200,  1.190,  1.190, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d.(5K).6s              4K*'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4486.22000,  -2.040,  0.9280,  6.5,  3.6909,  6.5,  1.130,  1.250,  1.190, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).6s'
+'  LS                                                  4f9.(6H).5d2.(3F)                6G*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4503.23100,  -1.488,  0.9280,  6.5,  3.6805,  5.5,  1.130,  1.260,  0.790, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<6>).6s.<1/2>   (6,1/2)'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4515.04000,  -1.180,  2.0160,  7.5,  4.7613,  8.5,  1.370,  1.330,  1.180, 0.000, 0.000, 0.000,
+'                                                                      4f9.(6H).5d.(7G).6s*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4518.50700,   0.290,  2.7316, 10.5,  5.4748, 10.5,  1.320,  1.320,  1.320, 0.000, 0.000, 0.000,
+'  LS                                                           4f9.(6H*).5d2.(3F)      8K*'
+'  LS                                                           4f9.(6H*).5d.\ (7I*).6p  8K'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4527.76900,  -2.089,  0.1027,  7.5,  2.8402,  8.5,  1.200,  1.240,  1.380, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'                                                                4f9.(6H*).5d.\ (7K*).6s  *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4538.74000,  -2.180,  0.1027,  7.5,  2.8336,  7.5,  1.200,  1.280,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d.(5I).6s              6I*'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4541.67200,   0.203,  2.4266,  9.5,  5.1557,  8.5,  1.270,  1.330,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7K*).6s  6K*'
+'                                                                   4f9.(7H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4558.15000,  -0.970,  2.1086,  5.5,  4.8279,  6.5,  1.320,  1.380,  1.560, 0.000, 0.000, 0.000,
+'                                                                      4f9.(6H).5d.(7H).6s*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8G'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4573.85500,   0.132,  2.5893,  8.5,  5.2993,  8.5,  1.350,  1.320,  1.340, 0.000, 0.000, 0.000,
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'                                                                   4f9.(7H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4576.59000,  -2.470,  0.1027,  7.5,  2.8110,  7.5,  1.200,  1.360,  1.280, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d.(5I).6s              6I*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4587.90800,  -0.567,  1.7881,  6.5,  4.4897,  7.5,  1.440,  1.400,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7F*).6s  8F*'
+'  LS                                                            4f9.(7H*).6s.6p.(3P*)   8G'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4591.78100,   0.082,  2.5438,  5.5,  5.2432,  6.5,  1.460,  1.350,  1.030, 0.000, 0.000, 0.000,
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'                                                                   4f9.(7H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4617.26900,  -1.857,  0.5896,  6.5,  3.2741,  5.5,  1.130,  1.110,  1.180, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<7>).6s.<1/2>   (7,1/2)'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4620.04000,  -1.930,  0.1027,  7.5,  2.7856,  7.5,  1.200,  1.310,  1.260, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6F).5d.(7H).6s              8H*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4651.53000,  -2.210,  0.5382,  7.5,  3.2029,  7.5,  1.230,  1.220,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6F).5d.(7H).6s              6H*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4654.77000,  -2.400,  0.5382,  7.5,  3.2011,  8.5,  1.230,  1.270,  1.440, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f10.(5I).6p                     4K*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4664.66700,  -1.658,  0.5382,  7.5,  3.1954,  6.5,  1.230,  1.370,  0.750, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<7>).6s.<1/2>   (7,1/2)'
+'                                                                4f9.(6H*).5d.\ (7G*).6s  *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4673.60000,  -0.690,  2.1123,  8.5,  4.7644,  7.5,  1.290,  1.320,  1.190, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d.(7I).6s               6I*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4679.06000,  -1.100,  2.1123,  8.5,  4.7613,  8.5,  1.290,  1.330,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d.(7I).6s               6I*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4682.02600,  -0.178,  2.3869,  8.5,  5.0343,  7.5,  1.280,  1.290,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (5I*).6s  6I*'
+'                                                                     4f9.(7H*).6s.6p.(3P*)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4689.75100,  -0.714,  1.8468,  8.5,  4.4897,  7.5,  1.320,  1.400,  0.980, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7I*).6s  8I*'
+'  LS                                                            4f9.(7H*).6s.6p.(3P*)   8G'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4698.68900,  -0.229,  2.0584,  5.5,  4.6963,  6.5,  1.410,  1.300,  1.010, 0.000, 0.000, 0.000,
+'                                                                4f9.(6H*).5d.\ (7F*).6s  *'
+'                                                                     4f9.(7H*).6s.6p.(3P*)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4731.84900,  -1.488,  0.5382,  7.5,  3.1577,  6.5,  1.230,  1.150,  1.470, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<7>).6s.<1/2>   (7,1/2)'
+'                                                                4f9.(6H*).5d.\ (5I*).6s  *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4743.02000,  -2.320,  0.5896,  6.5,  3.2029,  7.5,  1.130,  1.220,  1.510, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      4I'
+'  LS                                                  4f9.(6F).5d.(7H).6s              6H*'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4745.74200,  -1.734,  0.9280,  6.5,  3.5398,  6.5,  1.130,  1.250,  1.190, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<6>).6s.<1/2>   (6,1/2)'
+'                                                                4f9.(6F*).5d.\ (5H*).6s  *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4754.99200,  -0.090,  2.4167,  6.5,  5.0234,  7.5,  1.440,  1.350,  1.070, 0.000, 0.000, 0.000,
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'                                                                     4f9.(7H*).6s.6p.(3P*)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4760.05000,  -2.100,  0.5382,  7.5,  3.1422,  8.5,  1.230,  1.250,  1.370, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d2.(3P)                8I*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4781.93000,  -1.210,  2.3869,  8.5,  4.9790,  9.5,  1.280,  1.360,  1.700, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d.(5I).6s               6I*'
+'  LS                                                   4f9.(7H).6s.6p.(3P)              8I'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4786.92000,  -2.389,  0.0000,  8.5,  2.5893,  8.5,  1.290,  1.350,  1.320, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4829.69000,  -0.018,  2.5893,  8.5,  5.1557,  8.5,  1.350,  1.330,  1.340, 0.000, 0.000, 0.000,
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'                                                                   4f9.(7H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4833.75300,  -0.830,  1.9255,  6.5,  4.4897,  7.5,  1.360,  1.400,  1.560, 0.000, 0.000, 0.000,
+'                                                                4f9.(6H*).5d.\ (7H*).6s  *'
+'  LS                                                            4f9.(7H*).6s.6p.(3P*)   8G'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4856.25000,  -0.530,  2.4266,  9.5,  4.9790,  9.5,  1.270,  1.360,  1.310, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d.(7K).6s               6K*'
+'  LS                                                   4f9.(7H).6s.6p.(3P)              8I'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4868.05200,  -0.175,  2.5377,  7.5,  5.0839,  6.5,  1.200,  1.260,  1.020, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7K*).6s  8K*'
+'                                                                     4f9.(7H*).6s.6p.(3P*)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4889.78000,  -1.010,  2.2930,  5.5,  4.8279,  6.5,  1.400,  1.380,  1.330, 0.000, 0.000, 0.000,
+'                                                                      4f9.(6H).5d.(7F).6s*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8G'
+'E 0.02     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      4890.10300,  -2.314,  0.1027,  7.5,  2.6374,  7.5,  1.200,  1.210,  1.210, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'                                                                4f9.(6H*).5d.\ (7I*).6s  *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4923.16700,  -2.384,  0.1027,  7.5,  2.6204,  6.5,  1.200,  1.240,  1.080, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'                                                                4f9.(6H*).5d.\ (7I*).6s  *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      4957.35000,  -1.090,  0.0000,  8.5,  2.5003,  7.5,  1.290,  1.310,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d.(5H).6s              6H*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5004.28600,  -1.660,  0.9280,  6.5,  3.4049,  5.5,  1.130,  1.180,  1.010, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<6>).6s.<1/2>   (6,1/2)'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5017.98000,  -0.382,  2.5893,  8.5,  5.0594,  9.5,  1.350,  1.330,  1.260, 0.000, 0.000, 0.000,
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'                                                                   4f9.(7H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5029.23000,  -1.110,  2.2998,  8.5,  4.7644,  7.5,  1.220,  1.320,  0.860, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d.(7K).6s               8K*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5090.38600,  -2.332,  0.1027,  7.5,  2.5377,  7.5,  1.200,  1.200,  1.200, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'  LS                                                          4f9.(6H*).5d.\ (7K*).6s  8K*'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5129.84000,  -0.780,  2.4117,  7.5,  4.8279,  6.5,  1.390,  1.380,  1.420, 0.000, 0.000, 0.000,
+'                                                                      4f9.(6H).5d.(5H).6s*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8G'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5139.59900,  -2.069,  0.0000,  8.5,  2.4117,  7.5,  1.290,  1.390,  0.910, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'                                                                4f9.(6H*).5d.\ (5H*).6s  *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5164.11500,   0.154,  2.9393,  9.5,  5.3395,  8.5,  1.300,  1.340,  1.120, 0.000, 0.000, 0.000,
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'                                                                   4f9.(6H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5169.69000,  -1.950,  0.1027,  7.5,  2.5003,  7.5,  1.200,  1.310,  1.260, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d.(5H).6s              6H*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5186.99000,  -1.040,  2.5893,  8.5,  4.9790,  9.5,  1.350,  1.360,  1.400, 0.000, 0.000, 0.000,
+'                                                                        4f9.(6H).5d2.(3F)*'
+'  LS                                                   4f9.(7H).6s.6p.(3P)              8I'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5188.46700,  -0.483,  2.2998,  8.5,  4.6887,  7.5,  1.220,  1.330,  0.800, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7K*).6s  8K*'
+'                                                                   4f9.(7H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5192.87100,  -1.896,  0.0000,  8.5,  2.3869,  8.5,  1.290,  1.280,  1.280, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'  LS                                                          4f9.(6H*).5d.\ (5I*).6s  6I*'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5197.66600,  -1.850,  0.5382,  7.5,  2.9229,  6.5,  1.230,  1.330,  0.880, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<7>).6s.<1/2>   (7,1/2)'
+'                                                                4f9.(6F*).5d.\ (7H*).6s  *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5214.37000,  -1.050,  2.6019,  9.5,  4.9790,  9.5,  1.290,  1.360,  1.330, 0.000, 0.000, 0.000,
+'                                                                      4f9.(6H).5d.(7K).6s*'
+'  LS                                                   4f9.(7H).6s.6p.(3P)              8I'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5220.32000,  -0.880,  2.3869,  8.5,  4.7613,  8.5,  1.280,  1.330,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d.(5I).6s               6I*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5258.35900,  -0.726,  2.4707,  5.5,  4.8279,  6.5,  1.450,  1.380,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                           4f9.6s2                 6F*'
+'                                                                   4f9.(7H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5272.24900,  -2.143,  0.5382,  7.5,  2.8892,  6.5,  1.230,  1.310,  0.950, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<7>).6s.<1/2>   (7,1/2)'
+'                                                                4f9.(6H*).5d.\ (5H*).6s  *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5275.28000,  -0.440,  2.4117,  7.5,  4.7613,  8.5,  1.390,  1.330,  1.090, 0.000, 0.000, 0.000,
+'                                                                      4f9.(6H).5d.(5H).6s*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5279.70000,  -0.490,  2.4167,  6.5,  4.7644,  7.5,  1.440,  1.320,  0.930, 0.000, 0.000, 0.000,
+'                                                                        4f9.(6H).5d2.(3F)*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5284.98900,  -0.772,  2.1829,  9.5,  4.5283,  8.5,  1.280,  1.370,  0.880, 0.000, 0.000, 0.000,
+'  LS                                                          4f9.(6H*).5d.\ (7K*).6s  8K*'
+'  LS                                                            4f9.(7H*).6s.6p.(3P*)   8H'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5300.30000,  -2.470,  0.5382,  7.5,  2.8768,  7.5,  1.230,  1.190,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d.(5K).6s              4K*'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5309.01000,  -0.370,  2.4266,  9.5,  4.7613,  8.5,  1.270,  1.330,  1.020, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d.(7K).6s               6K*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5337.42700,  -1.187,  1.8407,  8.5,  4.1629,  7.5,  1.250,  1.250,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6I'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5368.20000,  -2.814,  0.1027,  7.5,  2.4117,  7.5,  1.200,  1.390,  1.300, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'                                                                4f9.(6H*).5d.\ (5H*).6s  *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5369.23000,  -1.670,  1.8407,  8.5,  4.1492,  7.5,  1.250,  1.270,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6I'
+'                                                                             4f10.(5I).6p*'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5385.63000,  -2.177,  0.9280,  6.5,  3.2295,  5.5,  1.130,  1.150,  1.090, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<6>).6s.<1/2>   (6,1/2)'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5389.58100,  -2.467,  0.0000,  8.5,  2.2998,  8.5,  1.290,  1.220,  1.250, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'  LS                                                          4f9.(6H*).5d.\ (7K*).6s  8K*'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5399.94000,  -2.420,  0.5382,  7.5,  2.8336,  7.5,  1.230,  1.280,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d.(5I).6s              6I*'
+'E 0.03     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5426.70000,  -0.160,  2.5438,  5.5,  4.8279,  6.5,  1.460,  1.380,  1.160, 0.000, 0.000, 0.000,
+'                                                                        4f9.(6H).5d2.(3F)*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8G'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5443.34300,  -0.545,  2.4117,  7.5,  4.6887,  7.5,  1.390,  1.330,  1.360, 0.000, 0.000, 0.000,
+'                                                                4f9.(6H*).5d.\ (5H*).6s  *'
+'                                                                   4f9.(7H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5453.59000,  -3.140,  0.5382,  7.5,  2.8110,  7.5,  1.230,  1.360,  1.290, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d.(5I).6s              6I*'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5455.46200,  -0.542,  2.4167,  6.5,  4.6887,  7.5,  1.440,  1.330,  1.000, 0.000, 0.000, 0.000,
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'                                                                   4f9.(7H*).5d.\ (7H*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5469.09800,  -1.055,  1.9983,  9.5,  4.2647,  8.5,  1.240,  1.280,  1.070, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6K'
+'                                                                 4f9.(6H*).5d2.(1G)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5471.90900,  -1.027,  2.2055,  9.5,  4.4707,  8.5,  1.170,  1.160,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            4L'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5515.41000,  -2.380,  0.5382,  7.5,  2.7856,  7.5,  1.230,  1.310,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6F).5d.(7H).6s              8H*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5516.46000,  -0.890,  2.5810,  5.5,  4.8279,  6.5,  1.440,  1.380,  1.220, 0.000, 0.000, 0.000,
+'                                                                      4f9.(6H).5d.(7G).6s*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8G'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5600.64500,  -2.728,  0.1027,  7.5,  2.3158,  7.5,  1.200,  1.270,  1.240, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'                                                                4f9.(6H*).5d.\ (5I*).6s  *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5641.50400,  -3.132,  0.1027,  7.5,  2.2998,  8.5,  1.200,  1.220,  1.280, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'  LS                                                          4f9.(6H*).5d.\ (7K*).6s  8K*'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5698.72000,  -0.630,  2.5893,  8.5,  4.7644,  7.5,  1.350,  1.320,  1.470, 0.000, 0.000, 0.000,
+'                                                                        4f9.(6H).5d2.(3F)*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.04     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5868.10700,  -2.730,  0.0000,  8.5,  2.1123,  8.5,  1.290,  1.290,  1.290, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'  LS                                                          4f9.(6H*).5d.\ (7I*).6s  6I*'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      5902.45000,  -0.770,  2.6613,  9.5,  4.7613,  8.5,  1.320,  1.330,  1.270, 0.000, 0.000, 0.000,
+'                                                                        4f9.(6H).5d2.(3F)*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5909.17000,  -1.460,  1.9983,  9.5,  4.0959,  9.5,  1.240,  1.230,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6K'
+'                                                                             4f10.(5I).6p*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      5924.56000,  -1.730,  1.8538,  7.5,  3.9460,  7.5,  1.300,  1.330,  1.320, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6H'
+'  LS                                                  4f9.(6H).5d2.(1D)                6H*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6184.71000,  -1.930,  1.9983,  9.5,  4.0024,  8.5,  1.240,  1.200,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6K'
+'                                                                             4f10.(5I).6p*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6196.24000,  -1.490,  1.9456,  6.5,  3.9460,  7.5,  1.340,  1.330,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6G'
+'  LS                                                  4f9.(6H).5d2.(1D)                6H*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6317.23000,  -2.960,  0.5382,  7.5,  2.5003,  7.5,  1.230,  1.310,  1.270, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).6s                      6I'
+'  LS                                                  4f9.(6H).5d.(5H).6s              6H*'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6468.58500,   0.589,  4.1755,  5.5,  6.0917,  6.5,  1.140,  1.230,  1.490, 0.000, 0.000, 0.000,
+'                                                                                         *'
+'                                                                   4f9.(6F*).5d.\ (7F*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      6471.98000,  -1.720,  1.8538,  7.5,  3.7690,  7.5,  1.300,  1.200,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6H'
+'  LS                                                  4f9.(6H).5d2.(3F)                6H*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6483.59000,  -1.060,  1.9983,  9.5,  3.9101,  9.5,  1.240,  1.260,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6K'
+'  LS                                                  4f9.(6H).5d2.(1G)                6K*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6519.14000,  -1.640,  1.8538,  7.5,  3.7552,  6.5,  1.300,  1.220,  1.570, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6H'
+'  LS                                                  4f10.(5I).6p                     6H*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6548.26000,  -1.550,  1.8407,  8.5,  3.7335,  7.5,  1.250,  1.210,  1.410, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6I'
+'  LS                                                  4f9.(6H).5d2.(1G)                6I*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6594.15000,  -1.530,  1.8538,  7.5,  3.7335,  7.5,  1.300,  1.210,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6H'
+'  LS                                                  4f9.(6H).5d2.(1G)                6I*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6611.73400,  -1.617,  2.1808,  8.5,  4.0555,  7.5,  1.200,  1.200,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            4K'
+'  LS                                                           4f10.(5I).6p            6I*'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      6654.22800,  -1.553,  2.1808,  8.5,  4.0435,  8.5,  1.200,  1.190,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            4K'
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      6700.64000,  -1.620,  1.8407,  8.5,  3.6905,  8.5,  1.250,  1.190,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6I'
+'                                                                        4f9.(6H).5d2.(3F)*'
+'E 0.05     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6803.06000,  -0.750,  2.9393,  9.5,  4.7613,  8.5,  1.300,  1.330,  1.190, 0.000, 0.000, 0.000,
+'                                                                        4f9.(6H).5d2.(3F)*'
+'  LS                                                   4f9.(7H).5d.(7H).6p              8H'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6828.35300,  -1.653,  2.3391,  5.5,  4.1544,  5.5,  1.260,  1.120,  1.190, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6G'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      6897.97000,  -1.110,  2.2055,  9.5,  4.0024,  8.5,  1.170,  1.200,  1.040, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4L'
+'                                                                             4f10.(5I).6p*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6899.34000,  -0.510,  1.8407,  8.5,  3.6372,  8.5,  1.250,  1.270,  1.260, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6I'
+'  LS                                                  4f10.(5I).6p                     6I*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6906.54800,  -0.996,  2.2608,  7.5,  4.0555,  7.5,  1.240,  1.200,  1.220, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                           4f10.(5I).6p            6I*'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      6912.21000,  -1.590,  1.9983,  9.5,  3.7915,  8.5,  1.240,  1.330,  0.860, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6K'
+'                                                                        4f9.(6H).5d2.(3F)*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6932.45000,  -1.570,  1.9456,  6.5,  3.7335,  7.5,  1.340,  1.210,  0.780, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6G'
+'  LS                                                  4f9.(6H).5d2.(1G)                6I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6950.29000,  -1.010,  1.8538,  7.5,  3.6372,  8.5,  1.300,  1.270,  1.150, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6H'
+'  LS                                                  4f10.(5I).6p                     6I*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      6952.93000,  -1.563,  2.2608,  7.5,  4.0435,  8.5,  1.240,  1.190,  1.000, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7014.63400,  -1.430,  2.7037,  9.5,  4.4707,  8.5,  1.170,  1.160,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6L'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7055.95000,  -1.050,  1.8407,  8.5,  3.5973,  8.5,  1.250,  1.260,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6I'
+'  LS                                                  4f9.(6H).5d2.(3F)                8K*'
+'E 0.09     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      7075.14000,  -0.830,  2.1581,  0.5,  3.9101,  9.5,  1.240,  1.260,  1.740, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6L'
+'  LS                                                  4f9.(6H).5d2.(1G)                6K*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      7100.54700,  -1.458,  2.6815,  8.5,  4.4271,  7.5,  1.120,  1.250,  0.630, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7101.67200,  -1.963,  1.9456,  6.5,  3.6909,  6.5,  1.340,  1.250,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6G'
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7109.26000,  -1.220,  1.8538,  7.5,  3.5973,  8.5,  1.300,  1.260,  1.090, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6H'
+'  LS                                                  4f9.(6H).5d2.(3F)                8K*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      7120.82000,  -1.480,  1.8407,  8.5,  3.5813,  7.5,  1.250,  1.250,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6I'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      7141.52100,  -1.878,  2.2590,  6.5,  3.9946,  6.5,  1.240,  1.160,  1.200, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                 4f10.(5I).6p            *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7149.29900,  -1.654,  2.2608,  7.5,  3.9946,  6.5,  1.240,  1.160,  1.510, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                 4f10.(5I).6p            *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7175.11000,  -1.340,  1.8538,  7.5,  3.5813,  7.5,  1.300,  1.250,  1.280, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6H'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      7234.68200,  -1.454,  2.5665,  8.5,  4.2798,  8.5,  1.160,  1.220,  1.190, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7273.57500,  -1.769,  1.9456,  6.5,  3.6497,  7.5,  1.340,  1.220,  0.840, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6G'
+'                                                                 4f10.(5I).6p            *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7288.24200,  -1.486,  2.1808,  8.5,  3.8815,  7.5,  1.200,  1.220,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            4K'
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7314.73500,   0.062,  4.4096,  7.5,  6.1041,  7.5,  1.170,  1.230,  1.200, 0.000, 0.000, 0.000,
+'                                                                                         *'
+'                                                                   4f9.(6H*).5d.\ (7K*).6p'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7345.13200,  -3.590,  0.0000,  8.5,  1.6875,  7.5,  1.290,  1.330,  1.140, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'  LS                                                          4f9.(6H*).5d.\ (7H*).6s  6H*'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7354.39900,  -4.112,  0.1027,  7.5,  1.7881,  6.5,  1.200,  1.440,  0.440, 0.000, 0.000, 0.000,
+'  JJ                                                       4f10.(5I<8>).6s.<1/2>   (8,1/2)'
+'  LS                                                          4f9.(6H*).5d.\ (7F*).6s  8F*'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7361.58000,  -1.250,  2.6815,  8.5,  4.3652,  7.5,  1.120,  1.130,  1.080, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7370.24000,  -1.490,  1.9983,  9.5,  3.6801,  9.5,  1.240,  1.210,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6K'
+'  LS                                                  4f9.(6H).5d2.(3F)                4L*'
+'E 0.12     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      7426.87000,  -0.790,  1.8407,  8.5,  3.5096,  9.5,  1.250,  1.260,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6I'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      7451.12000,  -1.500,  1.9456,  6.5,  3.6091,  7.5,  1.340,  1.230,  0.870, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6G'
+'  LS                                                  4f9.(6H).5d2.(3F)                8L*'
+'E 0.09     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      7457.05000,  -1.220,  1.8407,  8.5,  3.5028,  8.5,  1.250,  1.240,  1.240, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6I'
+'  LS                                                  4f9.(6H).5d2.(1G)                6I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      7516.61400,  -1.543,  1.8538,  7.5,  3.5028,  8.5,  1.300,  1.240,  0.990, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6H'
+'                                                                 4f9.(6H*).5d2.(1G)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7562.98000,  -0.770,  1.9983,  9.5,  3.6372,  8.5,  1.240,  1.270,  1.120, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6K'
+'  LS                                                  4f10.(5I).6p                     6I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      7577.47000,  -1.120,  1.9456,  6.5,  3.5813,  7.5,  1.340,  1.250,  0.970, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6G'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.11     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      7648.11400,  -1.775,  2.2608,  7.5,  3.8815,  7.5,  1.240,  1.220,  1.230, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7666.78000,  -1.360,  1.8407,  8.5,  3.4574,  7.5,  1.250,  1.250,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6I'
+'  LS                                                  4f9.(6H).5d2.(3F)                6I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      7711.91500,  -1.603,  2.2590,  6.5,  3.8662,  6.5,  1.240,  1.160,  1.200, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                 4f9.(6H*).5d2.(1G)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7720.99800,  -0.581,  3.3736,  9.5,  4.9790,  9.5,  1.220,  1.360,  1.290, 0.000, 0.000, 0.000,
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'  LS                                                            4f9.(7H*).6s.6p.(3P*)   8I'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7729.76000,  -0.810,  1.8538,  7.5,  3.4574,  7.5,  1.300,  1.250,  1.280, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6H'
+'  LS                                                  4f9.(6H).5d2.(3F)                6I*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      7739.38400,  -1.301,  2.6456,  7.5,  4.2472,  6.5,  1.180,  1.270,  0.880, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            4I'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7751.59000,  -1.339,  1.9983,  9.5,  3.5973,  8.5,  1.240,  1.260,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6K'
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7835.53500,  -1.231,  2.5725,  6.5,  4.1544,  5.5,  1.170,  1.120,  1.310, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7864.31400,  -1.044,  2.7037,  9.5,  4.2798,  8.5,  1.170,  1.220,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6L'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      7982.86000,  -1.270,  2.1808,  8.5,  3.7335,  7.5,  1.200,  1.210,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4K'
+'  LS                                                  4f9.(6H).5d2.(1G)                6I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8004.47300,  -1.084,  2.9727,  3.5,  4.5212,  4.5,  0.840,  1.080,  1.510, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6H'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8008.70500,  -1.888,  1.8538,  7.5,  3.4015,  7.5,  1.300,  1.310,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6H'
+'                                                                 4f9.(6H*).5d2.(3P)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8070.90000,  -1.470,  1.8407,  8.5,  3.3764,  8.5,  1.250,  1.240,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6I'
+'  LS                                                  4f9.(6H).5d2.(3F)                6I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8116.89900,  -1.412,  2.3391,  5.5,  3.8662,  6.5,  1.260,  1.160,  0.880, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6G'
+'                                                                 4f9.(6H*).5d2.(1G)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8140.71900,  -2.318,  1.8538,  7.5,  3.3764,  8.5,  1.300,  1.240,  1.020, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6H'
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8169.04400,  -1.411,  2.6456,  7.5,  4.1629,  7.5,  1.180,  1.250,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            4I'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8198.76000,  -1.020,  1.9456,  6.5,  3.4574,  7.5,  1.340,  1.250,  0.960, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6G'
+'  LS                                                  4f9.(6H).5d2.(3F)                6I*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8201.57000,  -0.310,  1.9983,  9.5,  3.5096,  9.5,  1.240,  1.260,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6K'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8208.34200,  -1.919,  2.2590,  6.5,  3.7690,  7.5,  1.240,  1.200,  1.070, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8217.05200,  -1.184,  2.5725,  6.5,  4.0809,  6.5,  1.170,  1.210,  1.190, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                 4f10.(5I).6p            *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8218.62000,  -1.060,  2.2608,  7.5,  3.7690,  7.5,  1.240,  1.200,  1.220, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                  4f9.(6H).5d2.(3F)                6H*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8233.55800,  -1.619,  2.2590,  6.5,  3.7644,  6.5,  1.240,  1.190,  1.220, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                           4f10.(5I).6p            4H*'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8243.89800,  -1.793,  2.2608,  7.5,  3.7644,  6.5,  1.240,  1.190,  1.390, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                           4f10.(5I).6p            4H*'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8392.01000,  -0.360,  2.5665,  8.5,  4.0435,  8.5,  1.160,  1.190,  1.170, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                  4f9.(6H).5d2.(3F)                4L*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8405.85600,  -1.321,  2.2590,  6.5,  3.7335,  7.5,  1.240,  1.210,  1.100, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                 4f9.(6H*).5d2.(1G)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8416.63000,  -0.940,  2.2608,  7.5,  3.7335,  7.5,  1.240,  1.210,  1.220, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                  4f9.(6H).5d2.(1G)                6I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8438.58000,  -0.900,  2.1808,  8.5,  3.6497,  7.5,  1.200,  1.220,  1.120, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4K'
+'  LS                                                  4f10.(5I).6p                     4I*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8444.46000,  -1.097,  2.6131,  7.5,  4.0809,  6.5,  1.130,  1.210,  0.870, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6K'
+'                                                                 4f10.(5I).6p            *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8472.57900,  -1.056,  2.9130,  4.5,  4.3760,  4.5,  1.000,  0.980,  0.990, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6I'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8480.66400,  -2.213,  1.8407,  8.5,  3.3022,  7.5,  1.250,  1.290,  1.100, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6I'
+'                                                                 4f9.(6H*).5d2.(3P)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8510.80700,  -1.525,  2.1808,  8.5,  3.6372,  8.5,  1.200,  1.270,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            4K'
+'  LS                                                           4f10.(5I).6p            6I*'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8517.68100,  -1.438,  2.6257,  5.5,  4.0809,  6.5,  1.150,  1.210,  1.380, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                 4f10.(5I).6p            *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8525.73700,  -1.195,  2.6257,  5.5,  4.0796,  5.5,  1.150,  1.100,  1.120, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8528.31900,  -1.361,  2.7037,  9.5,  4.1571,  8.5,  1.170,  1.300,  0.620, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6L'
+'                                                                 4f9.(6H*).5d2.(1G)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8548.92100,  -1.059,  2.7045,  4.5,  4.1544,  5.5,  1.100,  1.120,  1.160, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8557.78300,  -1.849,  1.8538,  7.5,  3.3022,  7.5,  1.300,  1.290,  1.290, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6H'
+'                                                                 4f9.(6H*).5d2.(3P)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8575.59200,  -1.500,  2.2590,  6.5,  3.7043,  6.5,  1.240,  1.410,  1.320, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8635.78000,  -1.068,  2.6456,  7.5,  4.0809,  6.5,  1.180,  1.210,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            4I'
+'                                                                 4f10.(5I).6p            *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8655.95000,  -0.780,  2.2590,  6.5,  3.6909,  6.5,  1.240,  1.250,  1.250, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                  4f9.(6H).5d2.(3F)                6G*'
+'E 0.09     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8657.70000,  -1.020,  2.2055,  9.5,  3.6372,  8.5,  1.170,  1.270,  0.750, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4L'
+'  LS                                                  4f10.(5I).6p                     6I*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8667.37000,  -1.340,  2.2608,  7.5,  3.6909,  6.5,  1.240,  1.250,  1.210, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                  4f9.(6H).5d2.(3F)                6G*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8678.49600,  -1.251,  2.1808,  8.5,  3.6091,  7.5,  1.200,  1.230,  1.090, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            4K'
+'                                                                 4f9.(6H*).5d2.(3F)      *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8696.83000,  -1.220,  2.3391,  5.5,  3.7644,  6.5,  1.260,  1.190,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6G'
+'  LS                                                  4f10.(5I).6p                     4H*'
+'E 0.09     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8715.96400,  -1.054,  2.5725,  6.5,  3.9946,  6.5,  1.170,  1.160,  1.160, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                 4f10.(5I).6p            *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8750.40000,  -1.200,  2.1808,  8.5,  3.5973,  8.5,  1.200,  1.260,  1.230, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4K'
+'  LS                                                  4f9.(6H).5d2.(3F)                8K*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8791.41000,  -0.440,  2.6456,  7.5,  4.0555,  7.5,  1.180,  1.200,  1.190, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4I'
+'  LS                                                  4f10.(5I).6p                     6I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8832.80800,  -0.769,  3.0606,  7.5,  4.4639,  6.5,  1.100,  1.030,  1.330, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8833.07300,  -0.587,  2.9727,  3.5,  4.3760,  4.5,  0.840,  0.980,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                            4f10.(5I).5d            6H'
+'                                                                                         *'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Dy+'
+'Dy 2',      8850.38000,  -1.060,  2.1808,  8.5,  3.5813,  7.5,  1.200,  1.250,  1.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4K'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      8905.76000,  -1.000,  2.2055,  9.5,  3.5973,  8.5,  1.170,  1.260,  0.800, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4L'
+'  LS                                                  4f9.(6H).5d2.(3F)                8K*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9014.10000,  -0.870,  2.7045,  4.5,  4.0796,  5.5,  1.100,  1.100,  1.100, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'                                                                             4f10.(5I).6p*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9020.81000,  -0.150,  2.6815,  8.5,  4.0555,  7.5,  1.120,  1.200,  0.820, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                  4f10.(5I).6p                     6I*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9079.33000,  -1.210,  2.3391,  5.5,  3.7043,  6.5,  1.260,  1.410,  1.810, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6G'
+'  LS                                                  4f9.(6H).5d2.(3F)                8F*'
+'E 0.09     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9111.18000,  -0.680,  1.8407,  8.5,  3.2011,  8.5,  1.250,  1.270,  1.260, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6I'
+'  LS                                                  4f10.(5I).6p                     4K*'
+'E 0.10     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9136.41000,  -1.400,  1.9456,  6.5,  3.3022,  7.5,  1.340,  1.290,  1.130, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6G'
+'  LS                                                  4f9.(6H).5d2.(3P)                8G*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9171.59000,   0.050,  2.1581,  0.5,  3.5096,  9.5,  1.240,  1.260,  1.740, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6L'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9180.75000,  -1.400,  2.2590,  6.5,  3.6091,  7.5,  1.240,  1.230,  1.200, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                  4f9.(6H).5d2.(3F)                8L*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9193.61000,  -1.350,  2.2608,  7.5,  3.6091,  7.5,  1.240,  1.230,  1.240, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                  4f9.(6H).5d2.(3F)                8L*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9200.25000,  -0.990,  1.8538,  7.5,  3.2011,  8.5,  1.300,  1.270,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6H'
+'  LS                                                  4f10.(5I).6p                     4K*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9251.16000,  -0.090,  2.7037,  9.5,  4.0435,  8.5,  1.170,  1.190,  1.080, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6L'
+'  LS                                                  4f9.(6H).5d2.(3F)                4L*'
+'E 0.10     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9375.81000,  -0.540,  2.1808,  8.5,  3.5028,  8.5,  1.200,  1.240,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4K'
+'  LS                                                  4f9.(6H).5d2.(1G)                6I*'
+'E 0.09     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9386.73000,  -0.780,  2.2608,  7.5,  3.5813,  7.5,  1.240,  1.250,  1.250, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9504.89000,  -1.340,  2.2055,  9.5,  3.5096,  9.5,  1.170,  1.260,  1.210, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4L'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9523.46000,  -0.700,  1.8407,  8.5,  3.1422,  8.5,  1.250,  1.250,  1.250, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6I'
+'  LS                                                  4f9.(6H).5d2.(3P)                8I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9543.99000,  -1.090,  2.7037,  9.5,  4.0024,  8.5,  1.170,  1.200,  1.040, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6L'
+'                                                                             4f10.(5I).6p*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9554.39000,  -0.130,  2.2055,  9.5,  3.5028,  8.5,  1.170,  1.240,  0.890, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4L'
+'  LS                                                  4f9.(6H).5d2.(1G)                6I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9620.81000,  -0.850,  1.8538,  7.5,  3.1422,  8.5,  1.300,  1.250,  1.090, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6H'
+'  LS                                                  4f9.(6H).5d2.(3P)                8I*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9662.81000,  -0.860,  1.8407,  8.5,  3.1234,  7.5,  1.250,  1.290,  1.090, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6I'
+'  LS                                                  4f10.(5I).6p                     6H*'
+'E 0.09     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9709.77000,  -1.140,  2.1808,  8.5,  3.4574,  7.5,  1.200,  1.250,  1.010, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4K'
+'  LS                                                  4f9.(6H).5d2.(3F)                6I*'
+'E 0.06     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9763.05000,  -0.640,  1.8538,  7.5,  3.1234,  7.5,  1.300,  1.290,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6H'
+'  LS                                                  4f10.(5I).6p                     6H*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9857.88000,  -1.800,  1.9456,  6.5,  3.2029,  7.5,  1.340,  1.220,  0.830, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6G'
+'  LS                                                  4f9.(6F).5d.(7H).6s              6H*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9925.06000,  -0.690,  2.7037,  9.5,  3.9526,  8.5,  1.170,  1.170,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6L'
+'  LS                                                  4f10.(5I).6p                     6K*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      9979.90000,  -1.190,  2.2608,  7.5,  3.5028,  8.5,  1.240,  1.240,  1.220, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                  4f9.(6H).5d2.(1G)                6I*'
+'E 0.09     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      10029.2300,  -1.430,  2.6456,  7.5,  3.8815,  7.5,  1.180,  1.220,  1.200, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4I'
+'  LS                                                  4f9.(6H).5d2.(3F)                4I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      10154.0400,  -1.100,  2.1808,  8.5,  3.4015,  7.5,  1.200,  1.310,  0.800, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4K'
+'  LS                                                  4f9.(6H).5d2.(3P)                8I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      10197.8300,  -1.400,  2.1581,  0.5,  3.3736,  9.5,  1.240,  1.220,  0.740, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6L'
+'  LS                                                  4f9.(6H).5d2.(3F)                8L*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      10305.3600,  -0.700,  1.9983,  9.5,  3.2011,  8.5,  1.240,  1.270,  1.110, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6K'
+'  LS                                                  4f10.(5I).6p                     4K*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      10308.0400,  -0.560,  2.5665,  8.5,  3.7690,  7.5,  1.160,  1.200,  1.010, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                  4f9.(6H).5d2.(3F)                6H*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      10367.1900,  -1.340,  2.1808,  8.5,  3.3764,  8.5,  1.200,  1.240,  1.220, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4K'
+'  LS                                                  4f9.(6H).5d2.(3F)                6I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      10384.1600,  -1.550,  2.1808,  8.5,  3.3745,  7.5,  1.200,  1.300,  0.830, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4K'
+'  LS                                                  4f9.(6F).5d.(5H).6s              6H*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      10399.3300,  -1.380,  2.5725,  6.5,  3.7644,  6.5,  1.170,  1.190,  1.180, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                  4f10.(5I).6p                     4H*'
+'E 0.09     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      10480.4800,  -1.050,  2.5725,  6.5,  3.7552,  6.5,  1.170,  1.220,  1.190, 0.000, 0.000, 0.000,
+'                                                                              4f10.(5I).5d'
+'  LS                                                  4f10.(5I).6p                     6H*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      10523.3900,  -0.450,  1.9456,  6.5,  3.1234,  7.5,  1.340,  1.290,  1.140, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6G'
+'  LS                                                  4f10.(5I).6p                     6H*'
+'E 0.08     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      10585.9800,  -1.270,  2.2055,  9.5,  3.3764,  8.5,  1.170,  1.240,  0.870, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      4L'
+'  LS                                                  4f9.(6H).5d2.(3F)                6I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      10723.1900,  -0.820,  2.6131,  7.5,  3.7690,  7.5,  1.130,  1.200,  1.170, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6K'
+'  LS                                                  4f9.(6H).5d2.(3F)                6H*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+'Dy 2',      10835.9400,  -0.770,  1.9983,  9.5,  3.1422,  8.5,  1.240,  1.250,  1.180, 0.000, 0.000, 0.000,
+'  LS                                                  4f10.(5I).5d                      6K'
+'  LS                                                  4f9.(6H).5d2.(3P)                8I*'
+'E 0.07     Wisconsin REE ex   1  wl:WLN   1  gf:WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN   1     WLN            Dy+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Wisconsin exp. data with IS
+  2. La 1 - Lu 2 Bell

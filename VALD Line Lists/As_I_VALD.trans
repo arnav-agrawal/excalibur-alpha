@@ -1,0 +1,185 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'As 1',      4910.11900,  -0.200,  6.2852,  0.5,  8.8096,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).6p                  4P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      4952.51400,  -0.300,  6.3988,  1.5,  8.9016,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(1D).5p                  2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      4987.03400,  -0.200,  6.5585,  2.5,  9.0440,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).6p                  2D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      4995.77600,  -0.400,  6.3988,  1.5,  8.8799,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).6p                  2D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5043.24200,   0.200,  6.2852,  0.5,  8.7429,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(1D).5p                  2D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5068.97500,   0.500,  6.5585,  2.5,  9.0038,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).6p                  4S*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5083.68400,   0.000,  6.5880,  0.5,  9.0261,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(3P).6p                  2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5099.47100,   0.500,  6.5585,  2.5,  8.9891,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).6p                  4P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5103.44400,  -0.200,  6.3988,  1.5,  8.8276,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).6p                  4P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5121.22200,   0.500,  6.3988,  1.5,  8.8191,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).6p                  4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5130.68600,   0.500,  6.5585,  2.5,  8.9743,  3.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).6p                  4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5141.56200,   0.400,  6.3988,  1.5,  8.8096,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).6p                  4P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5196.15200,   0.200,  6.2852,  0.5,  8.6706,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).6p                  4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5210.13600,  -0.200,  6.2852,  0.5,  8.6642,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).6p                  4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5212.10600,  -0.200,  6.3988,  1.5,  8.7769,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).6p                  2S*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5363.37500,   0.200,  6.7702,  1.5,  9.0812,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(3P).6p                  2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5408.00400,   0.400,  6.5880,  0.5,  8.8799,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(3P).6p                  2D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      5451.35300,   0.400,  6.7702,  1.5,  9.0440,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(3P).6p                  2D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      6338.89200,   0.000,  6.7702,  1.5,  8.7256,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(1D).5p                  2D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      8821.70400,   0.000,  6.2852,  0.5,  7.6903,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  4P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      8869.63100,   0.000,  6.5585,  2.5,  7.9560,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  2D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      8935.50100,  -0.200,  6.5880,  0.5,  7.9751,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(3P).5p                  2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      9134.75400,  -0.200,  6.3988,  1.5,  7.7558,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  2D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      9267.21900,   0.200,  6.3988,  1.5,  7.7364,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  4P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      9300.57100,   0.600,  6.5585,  2.5,  7.8912,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  4S*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      9597.91600,   0.400,  6.3988,  1.5,  7.6903,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  4P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      9626.65400,   0.500,  6.5585,  2.5,  7.8461,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  4P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      9833.77400,   0.500,  6.2852,  0.5,  7.5457,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      9886.03800,   0.200,  7.5401,  2.5,  8.7939,  3.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(1D).5s                      2D'
+'  LS                                                  4s2.4p2.(1D).5p                  2F*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      9900.57500,   0.000,  6.2852,  0.5,  7.5372,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      9915.64900,   0.200,  6.7702,  1.5,  8.0202,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(3P).5p                  2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      9923.02700,   0.600,  6.3988,  1.5,  7.6480,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      10010.6350,   0.000,  7.5426,  1.5,  8.7807,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(1D).5s                      2D'
+'  LS                                                  4s2.4p2.(1D).5p                  2F*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      10024.0070,   0.500,  6.5585,  2.5,  7.7950,  3.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      10286.8320,  -0.200,  6.7702,  1.5,  7.9751,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(3P).5p                  2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      10453.1260,   0.300,  6.7702,  1.5,  7.9560,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(3P).5p                  2D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      10455.7020,   0.000,  7.5401,  2.5,  8.7256,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(1D).5s                      2D'
+'  LS                                                  4s2.4p2.(1D).5p                  2D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      10575.0860,   0.200,  6.2852,  0.5,  7.4573,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  2S*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      10614.1080,   0.400,  6.5880,  0.5,  7.7558,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(3P).5p                  2D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      10808.1400,  -0.200,  6.3988,  1.5,  7.5457,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      10888.8880,  -0.200,  6.3988,  1.5,  7.5372,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      4P'
+'  LS                                                  4s2.4p2.(3P).5p                  4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      11244.6110,  -0.300,  6.5880,  0.5,  7.6903,  1.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(3P).5p                  4P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      11520.8470,  -0.100,  6.7702,  1.5,  7.8461,  2.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(3P).5p                  4P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      13058.4170,  -0.300,  6.5880,  0.5,  7.5372,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(3P).5p                  4D*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+'As 1',      14257.8870,  -0.200,  6.5880,  0.5,  7.4573,  0.5, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                               4s2.4p2.(3P).5s                      2P'
+'  LS                                                  4s2.4p2.(3P).5p                  2S*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES             As'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Cu 1 - Ba 2 Bell

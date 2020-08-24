@@ -1,0 +1,298 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Tb 2',      4000.00000,  -0.440,  0.7901,  6.0,  3.8889,  7.0,  1.400, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6F).6s                       7F*'
+'  JJ                                                   4f9.(6H<13/2>).6p<3/2>   (13/2,3/2)'
+'E 0.06     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4002.57000,   0.100,  0.6412,  6.0,  3.7380,  5.0, 99.000,  1.270, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       5H*'
+'  JJ                                                   4f9.(6H<11/2>).6p<1/2>   (11/2,1/2)'
+'E 0.02     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4003.74000,  -0.400,  1.1039,  7.0,  4.1997,  7.0,  1.500, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d2                      9G'
+'                                                                                4f8.5d.6p*'
+'E 0.04     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4005.47000,  -0.020,  0.1260,  7.0,  3.2205,  8.0, 99.000,  1.300, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       5H*'
+'  JJ                                                   4f9.(6H<15/2>).6p<1/2>   (15/2,1/2)'
+'E 0.03     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4009.52000,  -0.490,  0.9820,  5.0,  4.0733,  6.0, 99.000,  1.310, 99.000, 0.000, 0.000, 0.000,
+'                                                                                         *'
+'  JJ                                                   4f9.(6H<13/2>).6p<3/2>   (13/2,3/2)'
+'E 0.03     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4012.72000,  -0.120,  0.6491,  5.0,  3.7380,  5.0, 99.000,  1.270, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       7H*'
+'  JJ                                                   4f9.(6H<11/2>).6p<1/2>   (11/2,1/2)'
+'E 0.02     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4020.47000,  -0.130,  0.7313,  6.0,  3.8143,  6.0,  1.460, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.6s2                           7F'
+'                                                                                4f8.5d.6p*'
+'E 0.02     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4025.71200,  -0.308,  0.6491,  5.0,  3.7280,  6.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                 4f9.(6H*<11/2>).6s.<1/2>  (11/2,1/2)*'
+'                                                                                          '
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      4028.21000,  -0.710,  0.8934,  5.0,  3.9704,  5.0, 99.000,  1.270, 99.000, 0.000, 0.000, 0.000,
+'                                                                                         *'
+'  JJ                                                   4f9.(6H<13/2>).6p<3/2>   (13/2,3/2)'
+'E 0.06     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4028.30000,  -0.430,  1.1497,  8.0,  4.2267,  7.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d2                      9G'
+'                                                                                4f8.5d.6p*'
+'E 0.06     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4031.62000,  -0.340,  0.4392,  6.0,  3.5136,  6.0, 99.000,  1.320, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       7H*'
+'  JJ                                                   4f9.(6H<15/2>).6p<3/2>   (15/2,3/2)'
+'E 0.03     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4033.02000,  -0.010,  0.1260,  7.0,  3.1994,  7.0, 99.000,  1.370, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       5H*'
+'  JJ                                                   4f9.(6H<15/2>).6p<1/2>   (15/2,1/2)'
+'E 0.02     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4051.81000,  -0.180,  0.8934,  5.0,  3.9525,  6.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'                                                                                         *'
+'  JJ                                                   4f9.(6H<13/2>).6p<3/2>   (13/2,3/2)'
+'E 0.02     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4052.84000,  -0.860,  0.4392,  6.0,  3.4975,  7.0, 99.000,  1.350, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       7H*'
+'  JJ                                                   4f9.(6H<15/2>).6p<3/2>   (15/2,3/2)'
+'E 0.03     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4066.17000,  -0.180,  0.7716,  7.0,  3.8199,  8.0,  1.430, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d.(8G).6s               7G'
+'                                                                                4f8.5d.6p*'
+'E 0.04     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4073.72000,  -0.830,  0.7716,  7.0,  3.8143,  6.0,  1.430, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d.(8G).6s               7G'
+'                                                                                4f8.5d.6p*'
+'E 0.04     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4102.51000,  -0.430,  1.0263,  5.0,  4.0476,  6.0,  1.460, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.6s2                           7F'
+'                                                                                4f8.5d.6p*'
+'E 0.04     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4103.91000,  -0.910,  0.1260,  7.0,  3.1463,  7.0, 99.000,  1.290, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       5H*'
+'                                                                            4f8.(7F).5d.6s'
+'E 0.02     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4134.29000,  -1.040,  0.8162,  5.0,  3.8143,  6.0,  1.530, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d.(8G).6s               7F'
+'                                                                                4f8.5d.6p*'
+'E 0.06     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4144.41000,  -0.270,  0.1260,  7.0,  3.1168,  8.0, 99.000,  1.340, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       5H*'
+'                                                                            4f8.(7F).5d.6s'
+'E 0.03     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4172.59000,  -0.260,  0.9820,  5.0,  3.9525,  6.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'                                                                                         *'
+'  JJ                                                   4f9.(6H<13/2>).6p<3/2>   (13/2,3/2)'
+'E 0.03     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4213.42000,  -0.610,  0.8570,  5.0,  3.7988,  6.0,  1.100,  1.200,  1.450, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       5H*'
+'  JJ                                                   4f9.(6H<11/2>).6p<1/2>   (11/2,1/2)'
+'E 0.03     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4214.40000,  -0.710,  0.3732,  7.0,  3.3143,  6.0,  1.290,  1.400,  0.940, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       7H*'
+'  JJ                                                   4f9.(6H<15/2>).6p<1/2>   (15/2,1/2)'
+'E 0.03     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4220.09000,  -0.870,  0.7716,  7.0,  3.7087,  6.0,  1.430, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d.(8G).6s               7G'
+'                                                                                4f8.5d.6p*'
+'E 0.05     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4226.49000,  -0.660,  0.0000,  8.0,  2.9327,  7.0,  1.370,  1.380,  1.340, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       7H*'
+'                                                                            4f8.(7F).5d.6s'
+'E 0.02     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4232.19000,  -0.400,  0.8912,  7.0,  3.8199,  8.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d.(8F).6s               9F'
+'                                                                                4f8.5d.6p*'
+'E 0.04     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4258.22200,   0.042,  0.6412,  6.0,  3.5520,  7.0, 99.000,  1.260, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                 4f9.(6H*<11/2>).6s.<1/2>  (11/2,1/2)*'
+'  JJ                                                  4f9.(6H*<13/2>).6p.<1/2>  (13/2,1/2)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      4276.74700,  -0.870,  0.3732,  7.0,  3.2714,  7.0,  1.290,  1.360,  1.320, 0.000, 0.000, 0.000,
+'  JJ                                                 4f9.(6H*<13/2>).6s.<1/2>  (13/2,1/2)*'
+'                                                                                          '
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      4285.12000,  -0.390,  0.8162,  5.0,  3.7087,  6.0,  1.530, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d.(8G).6s               7F'
+'                                                                                4f8.5d.6p*'
+'E 0.03     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4286.88000,  -0.130,  1.3837,  8.0,  4.2751,  8.0,  1.380,  1.440,  1.410, 0.000, 0.000, 0.000,
+'                                                                              4f8.(7F).5d2'
+'                                                                                4f8.5d.6p*'
+'E 0.05     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4308.68000,  -0.570,  0.7313,  6.0,  3.6080,  7.0,  1.460,  1.580,  1.940, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.6s2                           7F'
+'                                                                                4f8.6s.6p*'
+'E 0.06     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4353.20000,  -0.630,  0.3732,  7.0,  3.2205,  8.0,  1.290,  1.300,  1.350, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       7H*'
+'  JJ                                                   4f9.(6H<15/2>).6p<1/2>   (15/2,1/2)'
+'E 0.03     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4367.30000,  -0.140,  1.1039,  7.0,  3.9420,  7.0,  1.500, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d2                      9G'
+'                                                                                4f8.5d.6p*'
+'E 0.04     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4367.32700,  -0.122,  0.8570,  5.0,  3.6951,  6.0,  1.100, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                  4f9.(6H*<9/2>).6s.<1/2>   (9/2,1/2)*'
+'                                                                                          '
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      4376.42000,  -1.141,  0.4392,  6.0,  3.2714,  7.0, 99.000,  1.360, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                 4f9.(6H*<13/2>).6s.<1/2>  (13/2,1/2)*'
+'                                                                                          '
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      4384.06000,  -0.870,  1.1148,  6.0,  3.9420,  7.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d2                      9G'
+'                                                                                4f8.5d.6p*'
+'E 0.05     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4401.53000,  -0.310,  1.3837,  8.0,  4.1997,  7.0,  1.380, 99.000, 99.000, 0.000, 0.000, 0.000,
+'                                                                              4f8.(7F).5d2'
+'                                                                                4f8.5d.6p*'
+'E 0.05     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4409.48000,  -0.690,  0.7971,  6.0,  3.6080,  7.0,  1.460,  1.580,  1.950, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d.(8G).6s               7G'
+'                                                                                4f8.6s.6p*'
+'E 0.04     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4416.25000,  -1.090,  0.1260,  7.0,  2.9327,  7.0, 99.000,  1.380, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       5H*'
+'                                                                            4f8.(7F).5d.6s'
+'E 0.03     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4438.94000,  -0.560,  1.1497,  8.0,  3.9420,  7.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d2                      9G'
+'                                                                                4f8.5d.6p*'
+'E 0.06     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4469.72000,  -1.540,  0.3732,  7.0,  3.1463,  7.0,  1.290,  1.290,  1.290, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       7H*'
+'                                                                            4f8.(7F).5d.6s'
+'E 0.08     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4562.24000,  -0.910,  0.8912,  7.0,  3.6080,  7.0, 99.000,  1.580, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d.(8F).6s               9F'
+'                                                                                4f8.6s.6p*'
+'E 0.05     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4563.68000,  -0.490,  1.1039,  7.0,  3.8199,  8.0,  1.500, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d2                      9G'
+'                                                                                4f8.5d.6p*'
+'E 0.04     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4578.71000,  -0.690,  0.4392,  6.0,  3.1463,  7.0, 99.000,  1.290, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       7H*'
+'                                                                            4f8.(7F).5d.6s'
+'E 0.03     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4591.57000,  -0.690,  1.1148,  6.0,  3.8143,  6.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d2                      9G'
+'                                                                                4f8.5d.6p*'
+'E 0.08     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4636.97600,  -1.286,  0.6412,  6.0,  3.3143,  6.0, 99.000,  1.400, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                 4f9.(6H*<11/2>).6s.<1/2>  (11/2,1/2)*'
+'                                                                                          '
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      4645.31000,  -0.900,  0.0000,  8.0,  2.6683,  7.0,  1.370, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       7H*'
+'                                                                            4f8.(7F).5d.6s'
+'E 0.02     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4688.62000,  -0.650,  1.1039,  7.0,  3.7475,  7.0,  1.500, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d2                      9G'
+'                                                                                4f8.5d.6p*'
+'E 0.05     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4707.94000,  -0.400,  1.1148,  6.0,  3.7475,  7.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d2                      9G'
+'                                                                                4f8.5d.6p*'
+'E 0.04     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4752.53000,  -0.550,  0.0000,  8.0,  2.6081,  8.0,  1.370, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       7H*'
+'                                                                            4f8.(7F).5d.6s'
+'E 0.02     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4758.47000,  -0.800,  1.1039,  7.0,  3.7087,  6.0,  1.500, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                  4f8.(7F).5d2                      9G'
+'                                                                                4f8.5d.6p*'
+'E 0.07     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4762.35100,  -1.830,  0.1260,  7.0,  2.7287,  7.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                 4f9.(6H*<15/2>).6s.<1/2>  (15/2,1/2)*'
+'                                                                                          '
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      4789.92900,  -1.056,  0.7901,  6.0,  3.3779,  7.0,  1.400, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                 4f9.(6F*<11/2>).6s.<1/2>  (11/2,1/2)*'
+'                                                                                          '
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      4842.76000,  -1.490,  0.3732,  7.0,  2.9327,  7.0,  1.290,  1.380,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       7H*'
+'                                                                            4f8.(7F).5d.6s'
+'E 0.04     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4875.57000,  -1.210,  0.1260,  7.0,  2.6683,  7.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       5H*'
+'                                                                            4f8.(7F).5d.6s'
+'E 0.03     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4970.95000,  -1.340,  0.4392,  6.0,  2.9327,  7.0, 99.000,  1.380, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       7H*'
+'                                                                            4f8.(7F).5d.6s'
+'E 0.04     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      4993.82000,  -1.180,  0.1260,  7.0,  2.6081,  8.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).6s                       5H*'
+'                                                                            4f8.(7F).5d.6s'
+'E 0.02     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      5262.10600,  -1.302,  0.3732,  7.0,  2.7287,  7.0,  1.290, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                 4f9.(6H*<13/2>).6s.<1/2>  (13/2,1/2)*'
+'                                                                                          '
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      5347.85700,  -2.057,  0.1260,  7.0,  2.4438,  8.0, 99.000,  1.300, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                 4f9.(6H*<15/2>).6s.<1/2>  (15/2,1/2)*'
+'                                                                                          '
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      5402.04300,  -1.476,  0.6412,  6.0,  2.9357,  6.0, 99.000, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  JJ                                                 4f9.(6H*<11/2>).6s.<1/2>  (11/2,1/2)*'
+'                                                                                          '
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      5785.19500,  -1.472,  0.7901,  6.0,  2.9327,  7.0,  1.400,  1.380,  1.320, 0.000, 0.000, 0.000,
+'  JJ                                                 4f9.(6F*<11/2>).6s.<1/2>  (11/2,1/2)*'
+'                                                                                          '
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      5803.14100,  -0.381,  1.3963,  8.0,  3.5322,  9.0,  1.370,  1.330,  1.160, 0.000, 0.000, 0.000,
+'  LS                                                         4f9.(6H*).5d              7H*'
+'  JJ                                                  4f9.(6H*<15/2>).6p.<3/2>  (15/2,3/2)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      5967.30600,  -0.402,  1.3963,  8.0,  3.4734,  8.0,  1.370,  1.290,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                         4f9.(6H*).5d              7H*'
+'  JJ                                                  4f9.(6H*<15/2>).6p.<3/2>  (15/2,3/2)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      6077.81400,  -1.000,  1.5127,  7.0,  3.5520,  7.0,  1.340,  1.260,  1.300, 0.000, 0.000, 0.000,
+'  LS                                                         4f9.(6H*).5d              7H*'
+'  JJ                                                  4f9.(6H*<13/2>).6p.<1/2>  (13/2,1/2)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      6171.84000,  -0.973,  1.6868,  6.0,  3.6951,  6.0,  1.330, 99.000, 99.000, 0.000, 0.000, 0.000,
+'  LS                                                         4f9.(6H*).5d              7H*'
+'                                                                                          '
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      6194.48800,  -1.147,  1.5127,  7.0,  3.5136,  6.0,  1.340,  1.320,  1.400, 0.000, 0.000, 0.000,
+'  LS                                                         4f9.(6H*).5d              7H*'
+'  JJ                                                  4f9.(6H*<15/2>).6p.<3/2>  (15/2,3/2)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      6321.56300,  -0.923,  1.5127,  7.0,  3.4734,  8.0,  1.340,  1.290,  1.120, 0.000, 0.000, 0.000,
+'  LS                                                         4f9.(6H*).5d              7H*'
+'  JJ                                                  4f9.(6H*<15/2>).6p.<3/2>  (15/2,3/2)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      6645.37300,  -0.804,  1.6868,  6.0,  3.5520,  7.0,  1.330,  1.260,  1.050, 0.000, 0.000, 0.000,
+'  LS                                                         4f9.(6H*).5d              7H*'
+'  JJ                                                  4f9.(6H*<13/2>).6p.<1/2>  (13/2,1/2)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      6677.92000,  -0.110,  1.6760,  9.0,  3.5322,  9.0,  1.320,  1.330,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                 4f9.(6H).5d                       7I*'
+'  JJ                                                   4f9.(6H<15/2>).6p<3/2>   (15/2,3/2)'
+'E 0.07     Wisconsin REE ex   1 wl:LWCS   1 gf:LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS   1    LWCS            Tb+'
+'Tb 2',      6785.10400,  -0.593,  1.6868,  6.0,  3.5136,  6.0,  1.330,  1.320,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                         4f9.(6H*).5d              7H*'
+'  JJ                                                  4f9.(6H*<15/2>).6p.<3/2>  (15/2,3/2)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      6794.54000,  -0.244,  1.3963,  8.0,  3.2205,  8.0,  1.370,  1.300,  1.330, 0.000, 0.000, 0.000,
+'  LS                                                         4f9.(6H*).5d              7H*'
+'  JJ                                                  4f9.(6H*<15/2>).6p.<1/2>  (15/2,1/2)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      6874.20700,  -0.762,  1.3963,  8.0,  3.1994,  7.0,  1.370,  1.370,  1.360, 0.000, 0.000, 0.000,
+'  LS                                                         4f9.(6H*).5d              7H*'
+'  JJ                                                  4f9.(6H*<15/2>).6p.<1/2>  (15/2,1/2)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+'Tb 2',      8194.83100,  -0.322,  1.6868,  6.0,  3.1994,  7.0,  1.330,  1.370,  1.490, 0.000, 0.000, 0.000,
+'  LS                                                         4f9.(6H*).5d              7H*'
+'  JJ                                                  4f9.(6H*<15/2>).6p.<1/2>  (15/2,1/2)'
+'_          La1 to Lu 2 Bell   2   wl:MC   2   gf:MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC   2      MC            Tb+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Wisconsin exp. data with IS
+  2. La 1 - Lu 2 Bell

@@ -276,8 +276,6 @@ def create_air_broad(input_dir):
         f_out.write('%.1f %.4f %.4f \n' %(J_sorted[i], gamma_air_avg[i], n_air_avg[i]))
     
     f_out.close()
-
-
     
 
 def summon_HITRAN(molecule, isotopologue):

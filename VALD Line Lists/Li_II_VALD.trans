@@ -1,0 +1,169 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Li 2',      4156.44700,  -0.564, 69.2796,  0.0, 72.2617,  1.0, 99.000, 99.000, 99.000, 8.580,-4.190, 0.000,
+'  LS                                                             1s.3s                  1S'
+'  LS                                                             1s.4p                 1P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4325.25200,   0.069, 69.3692,  1.0, 72.2349,  2.0, 99.000, 99.000, 99.000, 8.610, 0.000, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.4d                 3D'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4325.25200,  -0.411, 69.3692,  1.0, 72.2349,  1.0, 99.000, 99.000, 99.000, 8.610, 0.000, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.4d                 3D'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4325.41300,   0.339, 69.3693,  2.0, 72.2349,  3.0, 99.000, 99.000, 99.000, 8.610, 0.000, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.4d                 3D'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4325.41300,  -0.411, 69.3693,  2.0, 72.2349,  2.0, 99.000, 99.000, 99.000, 8.610, 0.000, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.4d                 3D'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4325.41300,  -1.581, 69.3693,  2.0, 72.2349,  1.0, 99.000, 99.000, 99.000, 8.610, 0.000, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.4d                 3D'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4325.58700,  -0.281, 69.3694,  0.0, 72.2349,  1.0, 99.000, 99.000, 99.000, 8.610, 0.000, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.4d                 3D'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4637.67500,  -1.342, 69.5891,  2.0, 72.2617,  1.0, 99.000, 99.000, 99.000, 9.080, 0.000, 0.000,
+'  LS                                                             1s.3d                  1D'
+'  LS                                                             1s.4p                 1P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4671.88000,   0.482, 69.5854,  1.0, 72.2385,  2.0, 99.000, 99.000, 99.000, 9.130, 0.000, 0.000,
+'  LS                                                             1s.3d                  3D'
+'  LS                                                             1s.4f                 3F*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4671.88000,   0.652, 69.5854,  2.0, 72.2385,  3.0, 99.000, 99.000, 99.000, 9.130, 0.000, 0.000,
+'  LS                                                             1s.3d                  3D'
+'  LS                                                             1s.4f                 3F*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4671.88000,   0.812, 69.5854,  3.0, 72.2385,  4.0, 99.000, 99.000, 99.000, 9.130, 0.000, 0.000,
+'  LS                                                             1s.3d                  3D'
+'  LS                                                             1s.4f                 3F*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4671.88000,  -0.238, 69.5854,  2.0, 72.2385,  2.0, 99.000, 99.000, 99.000, 9.130, 0.000, 0.000,
+'  LS                                                             1s.3d                  3D'
+'  LS                                                             1s.4f                 3F*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4671.88000,  -0.238, 69.5854,  3.0, 72.2385,  3.0, 99.000, 99.000, 99.000, 9.130, 0.000, 0.000,
+'  LS                                                             1s.3d                  3D'
+'  LS                                                             1s.4f                 3F*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4671.88000,  -1.868, 69.5854,  3.0, 72.2385,  2.0, 99.000, 99.000, 99.000, 9.130, 0.000, 0.000,
+'  LS                                                             1s.3d                  3D'
+'  LS                                                             1s.4f                 3F*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4678.05600,   0.706, 69.5891,  2.0, 72.2387,  3.0, 99.000, 99.000, 99.000, 9.090, 0.000, 0.000,
+'  LS                                                             1s.3d                  1D'
+'  LS                                                             1s.4f                 1F*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4788.36200,   0.303, 69.6485,  1.0, 72.2370,  2.0, 99.000, 99.000, 99.000, 9.930, 0.000, 0.000,
+'  LS                                                            1s.3p                  1P*'
+'  LS                                                              1s.4d                 1D'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4843.04500,  -0.878, 69.5854,  3.0, 72.1448,  2.0, 99.000, 99.000, 99.000, 9.110,-4.410, 0.000,
+'  LS                                                             1s.3d                  3D'
+'  LS                                                             1s.4p                 3P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4843.04500,  -1.148, 69.5854,  2.0, 72.1448,  1.0, 99.000, 99.000, 99.000, 9.110,-4.410, 0.000,
+'  LS                                                             1s.3d                  3D'
+'  LS                                                             1s.4p                 3P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4843.04500,  -1.498, 69.5854,  1.0, 72.1448,  0.0, 99.000, 99.000, 99.000, 9.120,-4.410, 0.000,
+'  LS                                                             1s.3d                  3D'
+'  LS                                                             1s.4p                 3P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4843.04500,  -1.628, 69.5854,  1.0, 72.1448,  1.0, 99.000, 99.000, 99.000, 9.120,-4.410, 0.000,
+'  LS                                                             1s.3d                  3D'
+'  LS                                                             1s.4p                 3P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4843.04500,  -1.628, 69.5854,  2.0, 72.1448,  2.0, 99.000, 99.000, 99.000, 9.110,-4.410, 0.000,
+'  LS                                                             1s.3d                  3D'
+'  LS                                                             1s.4p                 3P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4843.04500,  -2.798, 69.5854,  1.0, 72.1448,  2.0, 99.000, 99.000, 99.000, 9.120,-4.410, 0.000,
+'  LS                                                             1s.3d                  3D'
+'  LS                                                             1s.4p                 3P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4881.20100,  -0.582, 69.3692,  1.0, 71.9085,  1.0, 99.000, 99.000, 99.000, 8.670,-4.600, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.4s                 3S'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4881.40600,  -0.362, 69.3693,  2.0, 71.9085,  1.0, 99.000, 99.000, 99.000, 8.670,-4.600, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.4s                 3S'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      4881.62800,  -1.052, 69.3694,  0.0, 71.9085,  1.0, 99.000, 99.000, 99.000, 8.680,-4.600, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.4s                 3S'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      5037.91400,  -0.686, 69.6485,  1.0, 72.1088,  0.0, 99.000, 99.000, 99.000, 9.910,-4.340, 0.000,
+'  LS                                                            1s.3p                  1P*'
+'  LS                                                              1s.4s                 1S'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      5483.53700,  -0.984, 59.0208,  1.0, 61.2812,  0.0, 99.000, 99.000, 99.000, 7.360,-5.680, 0.000,
+'  LS                                                             1s.2s                  3S'
+'  LS                                                             1s.2p                 3P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      5484.46600,  -0.294, 59.0208,  1.0, 61.2809,  2.0, 99.000, 99.000, 99.000, 7.350,-5.680, 0.000,
+'  LS                                                             1s.2s                  3S'
+'  LS                                                             1s.2p                 3P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      5485.11600,  -0.514, 59.0208,  1.0, 61.2806,  1.0, 99.000, 99.000, 99.000, 7.350,-5.680, 0.000,
+'  LS                                                             1s.2s                  3S'
+'  LS                                                             1s.2p                 3P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      8517.36900,  -0.672, 60.7611,  0.0, 62.2163,  1.0, 99.000, 99.000, 99.000,10.410,-5.570, 0.000,
+'  LS                                                             1s.2s                  1S'
+'  LS                                                             1s.2p                 1P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      21057.3930,  -0.766, 68.7808,  1.0, 69.3694,  0.0, 99.000, 99.000, 99.000, 8.770,-4.870, 0.000,
+'  LS                                                             1s.3s                  3S'
+'  LS                                                             1s.3p                 3P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      21061.5190,  -0.076, 68.7808,  1.0, 69.3693,  2.0, 99.000, 99.000, 99.000, 8.760,-4.870, 0.000,
+'  LS                                                             1s.3s                  3S'
+'  LS                                                             1s.3p                 3P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      21065.3360,  -0.296, 68.7808,  1.0, 69.3692,  1.0, 99.000, 99.000, 99.000, 8.770,-4.870, 0.000,
+'  LS                                                             1s.3s                  3S'
+'  LS                                                             1s.3p                 3P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      33604.9580,  -0.442, 69.2796,  0.0, 69.6485,  1.0, 99.000, 99.000, 99.000, 9.920, 0.000, 0.000,
+'  LS                                                             1s.3s                  1S'
+'  LS                                                             1s.3p                 1P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      57331.3810,  -0.690, 69.3692,  1.0, 69.5854,  2.0, 99.000, 99.000, 99.000, 9.150, 0.000, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.3d                 3D'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      57331.3810,  -1.170, 69.3692,  1.0, 69.5854,  1.0, 99.000, 99.000, 99.000, 9.150, 0.000, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.3d                 3D'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      57359.6700,  -0.420, 69.3693,  2.0, 69.5854,  3.0, 99.000, 99.000, 99.000, 9.150, 0.000, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.3d                 3D'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      57359.6700,  -1.170, 69.3693,  2.0, 69.5854,  2.0, 99.000, 99.000, 99.000, 9.150, 0.000, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.3d                 3D'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      57359.6700,  -2.340, 69.3693,  2.0, 69.5854,  1.0, 99.000, 99.000, 99.000, 9.150, 0.000, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.3d                 3D'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      57390.2930,  -1.040, 69.3694,  0.0, 69.5854,  1.0, 99.000, 99.000, 99.000, 9.150, 0.000, 0.000,
+'  LS                                                            1s.3p                  3P*'
+'  LS                                                              1s.3d                 3D'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+'Li 2',      208624.260,  -1.097, 69.5891,  2.0, 69.6485,  1.0, 99.000, 99.000, 99.000, 9.960, 0.000, 0.000,
+'  LS                                                             1s.3d                  1D'
+'  LS                                                             1s.3p                 1P*'
+'_          Li 1 - K 5 Bell    1  wl:WSG   1  gf:WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG   1     WSG            Li+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Li 1 - K 5 Bell

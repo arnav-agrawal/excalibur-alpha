@@ -11,11 +11,13 @@ Import download_Exomol, download_HITRAN, and download_VALD
 """
 
 import sys
+import os
 import requests
 import re
 import Download_ExoMol
 import Download_HITRAN
 import Download_HITEMP
+import Download_VALD
 from hapi import partitionSum, moleculeName
 
 def create_id_dict():
@@ -148,7 +150,32 @@ def determine_parameters_HITRAN():
 
 
 def determine_parameters_VALD():
-    return
+    
+    while True:
+        molecule = input("What atom would you like to download the line list for? \n")
+        fname = molecule + '_I.h5'  # Check if at least the neutral version of this atom is supported (i.e. that we even provide the line list for this atom)
+        if fname in os.listdir('./VALD Line Lists'): 
+            break
+        else:
+            print("\n ----- The VALD line list for this atom does not exist. Please try again. -----")
+    
+    while True:
+        try:
+            ionization_state = int(input("What ionization state of this atom would you like to download the line list for? ('1' is the neutral state) \n"))
+        
+        except ValueError:
+             print("\n ----- Please enter an integer for the ionization state -----")
+        
+        else:
+            roman_num = ''
+            for i in range(ionization_state):
+                roman_num += 'I'
+        
+            fname = molecule + '_' + roman_num + '.h5'  # Check if at least the neutral version of this atom is supported (i.e. that we even provide the line list for this atom)
+            if fname in os.listdir('./VALD Line Lists'): 
+                return molecule, ionization_state
+            else:
+                print("\n ----- The VALD line list for this atom/ionization state combination does not exist. Please try again. -----")
 
 
 def determine_parameters_HITEMP():
@@ -287,13 +314,20 @@ def check_HITEMP(molecule, isotope):
         sys.exit(0)
         
 
-def check_VALD():
-    return
+def check_VALD(mol, ion):
+    roman_num = ''
+    for i in range(ion):
+            roman_num += 'I'
+    fname = mol + '_' + roman_num + '.h5'
+    if fname not in os.listdir('./VALD Line Lists'): 
+        print("\n ----- The VALD line list for this atom/isotope combination does not exist. Please try again. -----")
+        sys.exit(0)
+        
     
 
-def summon(database = '', molecule = '', isotope = 'default', linelist = 'default', **kwargs):
+def summon(database = '', molecule = '', isotope = 'default', linelist = 'default', ionization_state = 1, **kwargs):
     """
-    Makes callls to other downloader files to retrieve the data from the desired database
+    Makes calls to other downloader files to retrieve the data from the desired database
 
     Parameters
     ----------
@@ -338,7 +372,8 @@ def summon(database = '', molecule = '', isotope = 'default', linelist = 'defaul
             Download_HITRAN.summon_HITRAN(mol, iso)
             
         if database == 'vald':
-            return
+            mol, ion = determine_parameters_VALD()
+            Download_VALD.summon_VALD(mol, ion)
         
         if database == 'hitemp':
             mol, iso = determine_parameters_HITEMP()
@@ -348,11 +383,18 @@ def summon(database = '', molecule = '', isotope = 'default', linelist = 'defaul
     if not user_friendly: # If the user just wants to call the function with parameters directly passed in
         db = database.lower()
         mol = molecule
+        if isinstance(isotope, str):
+            try:
+                isotope = int(isotope)
+            except ValueError:
+                pass
         iso = isotope
         lin = linelist
+        ion = ionization_state
         
-        mol = re.sub('[+]', '_p', mol)  # Handle ions
-        iso = re.sub('[+]', '_p', iso)  # Handle ions
+        if db == 'exomol':
+            mol = re.sub('[+]', '_p', mol)  # Handle ions
+            iso = re.sub('[+]', '_p', iso)  # Handle ions
             
         if db == 'exomol':
             if isotope == 'default':
@@ -373,7 +415,8 @@ def summon(database = '', molecule = '', isotope = 'default', linelist = 'defaul
             Download_HITRAN.summon_HITRAN(mol, iso)
             
         elif db == 'vald':
-            return
+            check_VALD(mol, ion)
+            Download_VALD.summon_VALD(mol, ion)
         
         elif db == 'hitemp':
             if isotope == 'default':
@@ -385,4 +428,4 @@ def summon(database = '', molecule = '', isotope = 'default', linelist = 'defaul
             print("\n ----- You have not passed in a valid database. Please try calling the summon() function again. ----- ")
             sys.exit(0)
         
-    print("\nDownload complete.\n")
+    print("\nLine list ready.\n")

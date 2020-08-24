@@ -1,0 +1,29 @@
+                                                                     Lande factors        Damping parameters
+Elm Ion       WL_air(A)  log gf* E_low(eV) J lo  E_up(eV) J up   lower   upper    mean   Rad.  Stark    Waals
+'Ge 2',      5893.03700,   0.280,  7.7370,  0.5,  9.8402,  1.5,  2.000,  1.330,  1.160, 0.000, 0.000, 0.000,
+'  LS                                               4s2.5s                               2S'
+'  LS                                                  4s2.5p                           2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:MIGa   1 gf:MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa            Ge+'
+'Ge 2',      6020.67500,  -0.027,  7.7370,  0.5,  9.7956,  0.5,  2.000,  0.670,  1.340, 0.000, 0.000, 0.000,
+'  LS                                               4s2.5s                               2S'
+'  LS                                                  4s2.5p                           2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:MIGa   1 gf:MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa            Ge+'
+'Ge 2',      6336.37000,  -0.287,  9.7956,  0.5, 11.7518,  0.5,  0.670,  2.000,  1.330, 0.000, 0.000, 0.000,
+'  LS                                              4s2.5p                               2P*'
+'  LS                                                   4s2.6s                           2S'
+'_          Cu 1 - Ba 2 Bell   1 wl:MIGa   1 gf:MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa            Ge+'
+'Ge 2',      6484.17500,   0.027,  9.8402,  1.5, 11.7518,  0.5,  1.330,  2.000,  1.160, 0.000, 0.000, 0.000,
+'  LS                                              4s2.5p                               2P*'
+'  LS                                                   4s2.6s                           2S'
+'_          Cu 1 - Ba 2 Bell   1 wl:MIGa   1 gf:MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa   1    MIGa            Ge+'
+'Ge 2',      7049.36200,   0.000,  8.0819,  2.5,  9.8402,  1.5,  1.200,  1.330,  1.100, 0.000, 0.000, 0.000,
+'  LS                                               4s.4p2                               2D'
+'  LS                                                  4s2.5p                           2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES            Ge+'
+'Ge 2',      7145.38100,  -0.300,  8.0609,  1.5,  9.7956,  0.5,  0.800,  0.670,  0.840, 0.000, 0.000, 0.000,
+'  LS                                               4s.4p2                               2D'
+'  LS                                                  4s2.5p                           2P*'
+'_          Cu 1 - Ba 2 Bell   1 wl:GUES   1 gf:GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES   1    GUES            Ge+'
+* oscillator strengths were scaled by the solar isotopic ratios.
+ References:
+  1. Cu 1 - Ba 2 Bell
