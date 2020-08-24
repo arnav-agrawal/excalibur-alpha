@@ -20,15 +20,15 @@ from scipy.interpolate import UnivariateSpline as Interp
 from hapi import molecularMass, moleculeName, isotopologueName
 
 
-from Voigt import Voigt_width, Generate_Voigt_grid_molecules, gamma_L_VALD, gamma_L_impact, analytic_alkali
-from calculations import find_index, prior_index, bin_cross_section_atom, bin_cross_section_molecule
-from calculations import produce_total_cross_section_EXOMOL, produce_total_cross_section_HITRAN
-from calculations import produce_total_cross_section_VALD_atom, produce_total_cross_section_VALD_molecule
+from excalibur.Voigt import Voigt_width, Generate_Voigt_grid_molecules, gamma_L_VALD, gamma_L_impact, analytic_alkali
+from excalibur.calculations import find_index, prior_index, bin_cross_section_atom, bin_cross_section_molecule
+from excalibur.calculations import produce_total_cross_section_EXOMOL, produce_total_cross_section_HITRAN
+from excalibur.calculations import produce_total_cross_section_VALD_atom, produce_total_cross_section_VALD_molecule
 
-from constants import nu_refer, gamma_0, n_L, P_ref, T_ref
-from constants import c, kb, h, m_e, c2, u, pi
+from excalibur.constants import nu_refer, gamma_0, n_L, P_ref, T_ref
+from excalibur.constants import c, kb, h, m_e, c2, u, pi
 
-from Download_ExoMol import get_default_iso, get_default_linelist
+from excalibur.Download_ExoMol import get_default_iso, get_default_linelist
 
 
 def create_id_dict():
