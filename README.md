@@ -1,5 +1,4 @@
-![EXCALIBUR logo]
-(https://i.ibb.co/jfjS5Dg/Excalibur-logo.png)
+![EXCALIBUR logo](Excalibur-logo.png)
 
 # EXCALIBUR
 
