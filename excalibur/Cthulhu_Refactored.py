@@ -17,7 +17,7 @@ import sys
 import h5py
 from bs4 import BeautifulSoup
 from scipy.interpolate import UnivariateSpline as Interp
-from hapi import molecularMass, moleculeName, isotopologueName
+from .hapi import molecularMass, moleculeName, isotopologueName
 
 
 from .Voigt import Voigt_width, Generate_Voigt_grid_molecules, gamma_L_VALD, gamma_L_impact, analytic_alkali
