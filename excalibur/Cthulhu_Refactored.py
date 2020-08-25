@@ -256,8 +256,8 @@ def load_VALD(input_directory, molecule):
         E_low = np.array(hdf.get('E lower'))
         E_up = np.array(hdf.get('E upper'))
         J_low = np.array(hdf.get('J lower'))
-        gamma_nat = np.power(10.0, np.array(hdf.get('Log gamma nat')))
-        gamma_vdw = np.power(10.0, np.array(hdf.get('Log gamma vdw')))
+        Gamma_nat = np.power(10.0, np.array(hdf.get('Log gamma nat')))
+        Gamma_vdw = np.power(10.0, np.array(hdf.get('Log gamma vdw')))
         
         # VALD stores log_gamma = 0.0 where there is no data. Since 10^(0.0) = 1.0, zero these entries
         Gamma_nat[Gamma_nat == 1.0] = 0.0
@@ -280,14 +280,14 @@ def load_VALD(input_directory, molecule):
     E_low = E_low[order]
     E_up = E_up[order]
     J_low = J_low[order]
-    gamma_nat = gamma_nat[order]
-    gamma_vdw = gamma_vdw[order]
+    Gamma_nat = Gamma_nat[order]
+    Gamma_vdw = Gamma_vdw[order]
     
     if alkali:
         l_low = l_low[order]
         l_up = l_up[order]
     
-    return nu_0, gf, E_low, E_up, J_low, l_low, l_up, gamma_nat, gamma_vdw, alkali
+    return nu_0, gf, E_low, E_up, J_low, l_low, l_up, Gamma_nat, Gamma_vdw, alkali
         
     return
 
