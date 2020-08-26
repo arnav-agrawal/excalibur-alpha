@@ -33,7 +33,7 @@ def process_VALD_file(species, ionization_state):
         roman_ion += 'I'
         
     
-    directory = './VALD Line Lists/'
+    directory = '../VALD Line Lists/'
 
     trans_file = [filename for filename in os.listdir(directory) if filename == (species + '_' + roman_ion + '_VALD.trans')]
 
@@ -248,7 +248,7 @@ def create_directories(molecule, ionization_state):
     if os.path.exists(line_list_folder) == False:
         os.mkdir(line_list_folder)
     
-    shutil.copy('./VALD Line Lists/' + fname, line_list_folder + '/') # Copy the line list file to the newly created folder
+    shutil.copy('../VALD Line Lists/' + fname, line_list_folder + '/') # Copy the line list file to the newly created folder
     
     return line_list_folder
 
@@ -259,7 +259,7 @@ def filter_pf(molecule, ionization_state, line_list_folder):
     for i in range(ionization_state):
         ionization_state_roman += 'I'
         
-    all_pf = pd.read_csv('./VALD Line Lists/Atomic_partition_functions.pf', index_col = 0, )
+    all_pf = pd.read_csv('../VALD Line Lists/Atomic_partition_functions.pf', index_col = 0, )
     all_pf = all_pf.rename(lambda x: x.strip())  # Remove the extra white space in the index names, eg: '  H_I' becomes 'H_I'
     
     pf = all_pf.loc[molecule + '_' + ionization_state_roman]  # Filter the partition functions by the specified atom and ionization state

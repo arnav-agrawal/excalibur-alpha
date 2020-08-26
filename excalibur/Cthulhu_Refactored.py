@@ -17,18 +17,18 @@ import sys
 import h5py
 from bs4 import BeautifulSoup
 from scipy.interpolate import UnivariateSpline as Interp
-from hapi import molecularMass, moleculeName, isotopologueName
+from .hapi import molecularMass, moleculeName, isotopologueName
 
 
-from Voigt import Voigt_width, Generate_Voigt_grid_molecules, gamma_L_VALD, gamma_L_impact, analytic_alkali
-from calculations import find_index, prior_index, bin_cross_section_atom, bin_cross_section_molecule
-from calculations import produce_total_cross_section_EXOMOL, produce_total_cross_section_HITRAN
-from calculations import produce_total_cross_section_VALD_atom, produce_total_cross_section_VALD_molecule
+from .Voigt import Voigt_width, Generate_Voigt_grid_molecules, gamma_L_VALD, gamma_L_impact, analytic_alkali
+from .calculations import find_index, prior_index, bin_cross_section_atom, bin_cross_section_molecule
+from .calculations import produce_total_cross_section_EXOMOL, produce_total_cross_section_HITRAN
+from .calculations import produce_total_cross_section_VALD_atom, produce_total_cross_section_VALD_molecule
 
-from constants import nu_refer, gamma_0, n_L, P_ref, T_ref
-from constants import c, kb, h, m_e, c2, u, pi
+from .constants import nu_refer, gamma_0, n_L, P_ref, T_ref
+from .constants import c, kb, h, m_e, c2, u, pi
 
-from Download_ExoMol import get_default_iso, get_default_linelist
+from .Download_ExoMol import get_default_iso, get_default_linelist
 
 
 def create_id_dict():
@@ -256,8 +256,12 @@ def load_VALD(input_directory, molecule):
         E_low = np.array(hdf.get('E lower'))
         E_up = np.array(hdf.get('E upper'))
         J_low = np.array(hdf.get('J lower'))
-        gamma_nat = np.power(10.0, np.array(hdf.get('Log gamma nat')))
-        gamma_vdw = np.power(10.0, np.array(hdf.get('Log gamma vdw')))
+        Gamma_nat = np.power(10.0, np.array(hdf.get('Log gamma nat')))
+        Gamma_vdw = np.power(10.0, np.array(hdf.get('Log gamma vdw')))
+        
+        # VALD stores log_gamma = 0.0 where there is no data. Since 10^(0.0) = 1.0, zero these entries
+        Gamma_nat[Gamma_nat == 1.0] = 0.0
+        Gamma_vdw[Gamma_vdw == 1.0] = 0.0
         
         if molecule in ['Li', 'Na', 'K', 'Rb', 'Cs']:
             alkali = True
@@ -276,14 +280,14 @@ def load_VALD(input_directory, molecule):
     E_low = E_low[order]
     E_up = E_up[order]
     J_low = J_low[order]
-    gamma_nat = gamma_nat[order]
-    gamma_vdw = gamma_vdw[order]
+    Gamma_nat = Gamma_nat[order]
+    Gamma_vdw = Gamma_vdw[order]
     
     if alkali:
         l_low = l_low[order]
         l_up = l_up[order]
     
-    return nu_0, gf, E_low, E_up, J_low, l_low, l_up, gamma_nat, gamma_vdw, alkali
+    return nu_0, gf, E_low, E_up, J_low, l_low, l_up, Gamma_nat, Gamma_vdw, alkali
         
     return
 
@@ -1080,7 +1084,7 @@ def create_cross_section(input_dir, database, molecule, log_pressure, temperatur
             if not os.path.exists(output_directory):
                 os.makedirs(output_directory)
     
-            nu, sigma = write_output_file(cluster_run, output_directory, molecule, T, log_P_arr[p], nu_out, sigma_out)
+            nu, sigma = write_output_file(cluster_run, output_directory, molecule, T, np.log10(P), nu_out, sigma_out)
     
     t_final = time.perf_counter()
     total_final = t_final-t_start
