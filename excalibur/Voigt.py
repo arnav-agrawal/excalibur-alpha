@@ -18,7 +18,7 @@ if version >= 0.49:
 else:
     from numba.decorators import jit
 
-from constants import c2
+from .constants import c2
 
 #@jit(nopython=True)
 def Voigt_width(gamma, alpha):

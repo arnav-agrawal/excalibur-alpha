@@ -8,7 +8,7 @@ Created on Mon Jun 22 18:07:01 2020
 TO DO: Map molecular names to isotopologue numbers (in HITEMP also)
 """
 
-from hapi import partitionSum, db_begin, fetch, abundance, moleculeName, isotopologueName
+from .hapi import partitionSum, db_begin, fetch, abundance, moleculeName, isotopologueName
 import os
 import numpy as np
 import h5py

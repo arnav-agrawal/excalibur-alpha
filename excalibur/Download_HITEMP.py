@@ -17,7 +17,7 @@ import h5py
 import re
 from tqdm import tqdm
 import zipfile
-from hapi import moleculeName, isotopologueName, abundance, partitionSum
+from .hapi import moleculeName, isotopologueName, abundance, partitionSum
 
 def HITEMP_table():
     """

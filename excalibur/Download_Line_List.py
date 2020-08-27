@@ -14,11 +14,11 @@ import sys
 import os
 import requests
 import re
-import Download_ExoMol
-import Download_HITRAN
-import Download_HITEMP
-import Download_VALD
-from hapi import partitionSum, moleculeName
+from . import Download_ExoMol
+from . import Download_HITRAN
+from . import Download_HITEMP
+from . import Download_VALD
+from .hapi import partitionSum, moleculeName
 
 def create_id_dict():
     mol_ID = []
@@ -154,7 +154,7 @@ def determine_parameters_VALD():
     while True:
         molecule = input("What atom would you like to download the line list for? \n")
         fname = molecule + '_I.h5'  # Check if at least the neutral version of this atom is supported (i.e. that we even provide the line list for this atom)
-        if fname in os.listdir('./VALD Line Lists'): 
+        if fname in os.listdir('../VALD Line Lists'): 
             break
         else:
             print("\n ----- The VALD line list for this atom does not exist. Please try again. -----")
@@ -172,7 +172,7 @@ def determine_parameters_VALD():
                 roman_num += 'I'
         
             fname = molecule + '_' + roman_num + '.h5'  # Check if at least the neutral version of this atom is supported (i.e. that we even provide the line list for this atom)
-            if fname in os.listdir('./VALD Line Lists'): 
+            if fname in os.listdir('../VALD Line Lists'): 
                 return molecule, ionization_state
             else:
                 print("\n ----- The VALD line list for this atom/ionization state combination does not exist. Please try again. -----")
@@ -319,7 +319,7 @@ def check_VALD(mol, ion):
     for i in range(ion):
             roman_num += 'I'
     fname = mol + '_' + roman_num + '.h5'
-    if fname not in os.listdir('./VALD Line Lists'): 
+    if fname not in os.listdir('../VALD Line Lists'): 
         print("\n ----- The VALD line list for this atom/isotope combination does not exist. Please try again. -----")
         sys.exit(0)
         
