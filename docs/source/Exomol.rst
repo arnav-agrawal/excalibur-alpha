@@ -1,5 +1,5 @@
-Exomol 
+Exomol
 ---------
 
-.. automodule:: Download_Exomol
+.. automodule:: Download_ExoMol
    :members:
