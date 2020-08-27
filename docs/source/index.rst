@@ -10,6 +10,8 @@ Welcome to Excalibur-alpha's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   Download_Exomol
+
 
 
 Indices and tables
