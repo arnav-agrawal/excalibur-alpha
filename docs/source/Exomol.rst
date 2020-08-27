@@ -1,4 +1,4 @@
-DownloadExomol
+Exomol 
 ---------
 
 .. automodule:: Download_Exomol

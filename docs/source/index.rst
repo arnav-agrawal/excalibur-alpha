@@ -8,9 +8,8 @@ Welcome to Excalibur-alpha's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-   Download_Exomol
+   Exomol
 
 
 
