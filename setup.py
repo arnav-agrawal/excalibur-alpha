@@ -12,14 +12,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="excalibur.exo", # Replace with your own username
-    version="0.0.1",
+    name="excalibur-alpha", # Replace with your own username
+    version="0.0.1-alpha",
     author="Arnav Agrawal",
     author_email="aa687@cornell.edu",
     description="A package to calculate atomic and molecular cross sections.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/arnav-agrawal/Cthulhu",
+    url="https://github.com/arnav-agrawal/excalibur-alpha",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
