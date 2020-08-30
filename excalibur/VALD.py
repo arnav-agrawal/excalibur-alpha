@@ -23,7 +23,7 @@ def check(mol, ion, VALD_data_dir):
     None.
 
     '''
-    print(VALD_data_dir)
+
     roman_num = ''
     for i in range(ion):
             roman_num += 'I'
