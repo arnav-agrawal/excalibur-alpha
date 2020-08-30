@@ -7,7 +7,7 @@ from matplotlib.ticker import MultipleLocator, AutoLocator, FormatStrFormatter, 
                               FuncFormatter, ScalarFormatter, NullFormatter
 
 
-def plot_sigma_wl(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = [], 
+def plot_sigma_wl(species, temperature, log_pressure, nu_arr = [], sigma_arr = [], 
                   file = '', database = '', **kwargs):
     """
     Generate a plot of a cross_section file, in both wavelength and wavenumber
@@ -70,7 +70,7 @@ def plot_sigma_wl(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = 
     
     pressure = np.power(10.0, log_pressure)
     
-    print("\nPlotting the cross-section of", molecule, "at", temperature, "K and", pressure, "bar")
+    print("\nPlotting the cross-section of", species, "at", temperature, "K and", pressure, "bar")
         
     #***** Make wavenumber plot *****#
   #  fig = plt.figure()
@@ -102,7 +102,7 @@ def plot_sigma_wl(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = 
     min_sigma = 1.0e-30
     max_sigma = 10.0**(np.max(np.ceil(np.log10(sigma_plt) / 2.0) * 2.0))
     
-    ax.loglog(wl_plt, sigma_plt, lw=0.3, alpha = 0.5, color= 'crimson', label = (molecule + r' Cross Section')) 
+    ax.loglog(wl_plt, sigma_plt, lw=0.3, alpha = 0.5, color= 'crimson', label = (species + r' Cross Section')) 
     
     ax.set_xticks([0.4, 0.6, 0.8, 1.0, 2.0, 4.0, 6.0, 8.0, 10.0])
     ax.set_xticklabels(['0.4', '0.6', '0.8', '1', '2', '4', '6', '8', '10'])
@@ -123,7 +123,7 @@ def plot_sigma_wl(molecule, temperature, log_pressure, nu_arr = [], sigma_arr = 
         
     plt.tight_layout()
 
-    plt.savefig('./plots/' + molecule + '_' + str(temperature) + 'K_' +
+    plt.savefig('./plots/' + species + '_' + str(temperature) + 'K_' +
                 str(pressure) + 'bar_' + database + '.pdf')
     
     print("\nPlotting complete.")

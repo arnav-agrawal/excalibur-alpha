@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="excalibur.exo",
-    version="0.0.2",
+    version="0.1.0",
     author="Ryan MacDonald, Arnav Agrawal",
     author_email="rmacdonald@astro.cornell.edu, aa687@cornell.edu",
     description="A python package to calculate atomic and molecular cross sections for exoplanet atmospheres.",

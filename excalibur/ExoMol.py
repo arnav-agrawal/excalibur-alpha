@@ -3,6 +3,8 @@ import os
 import requests
 import re
 import shutil
+import pandas as pd
+import numpy as np
 
 import excalibur.downloader as download
 
@@ -343,3 +345,35 @@ def summon_ExoMol(molecule, isotopologue, line_list, URL):
     
     process_files(line_list_folder)
     
+    
+def load_states(input_directory):
+    """
+    Read in the '.states' file downloaded from ExoMol
+
+    Parameters
+    ----------
+    input_directory : String
+        Directory that contains all the ExoMol downloaded files for the desired molecule/
+        isotopologue/line list.
+
+    Returns
+    -------
+    E : TYPE
+        DESCRIPTION.
+    g : TYPE
+        DESCRIPTION.
+    J : TYPE
+        DESCRIPTION.
+
+    """
+    
+    # Read in states file (EXOMOL only)
+    states_file_name = [filename for filename in os.listdir(input_directory) if filename.endswith('.states')]
+    states_file = pd.read_csv(input_directory + states_file_name[0], sep = '\s+', header=None, usecols=[0,1,2,3])
+    E = np.array(states_file[1])
+    g = np.array(states_file[2])
+    J = np.array(states_file[3]).astype(np.int64)
+    
+    del states_file  # Delete file to free up memory    
+    
+    return E, g, J

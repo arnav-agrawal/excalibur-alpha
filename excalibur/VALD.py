@@ -2,6 +2,7 @@ import sys
 import os
 import numpy as np
 import pandas as pd
+import h5py
 
 import excalibur.downloader as download
 
@@ -275,4 +276,49 @@ def summon_VALD(molecule, ionization_state):
                                                    database = 'VALD') 
     filter_pf(molecule, ionization_state, line_list_folder)
   
+    
+def load_line_list(input_directory, molecule):
+    
+    fname = [file for file in os.listdir(input_directory) if file.endswith('.h5')][0]  # The directory should only have one .h5 file containing the line list
+    
+    with h5py.File(input_directory + fname, 'r') as hdf:
+        nu_0 = np.array(hdf.get('nu'))
+        gf = np.power(10.0, np.array(hdf.get('Log gf')))
+        E_low = np.array(hdf.get('E lower'))
+        E_up = np.array(hdf.get('E upper'))
+        J_low = np.array(hdf.get('J lower'))
+        Gamma_nat = np.power(10.0, np.array(hdf.get('Log gamma nat')))
+        Gamma_vdw = np.power(10.0, np.array(hdf.get('Log gamma vdw')))
+        
+        # VALD stores log_gamma = 0.0 where there is no data. Since 10^(0.0) = 1.0, zero these entries
+        Gamma_nat[Gamma_nat == 1.0] = 0.0
+        Gamma_vdw[Gamma_vdw == 1.0] = 0.0
+        
+        if molecule in ['Li', 'Na', 'K', 'Rb', 'Cs']:
+            alkali = True
+            l_low = np.array(hdf.get('l lower'))
+            l_up = np.array(hdf.get('l upper'))
+            
+        else:
+            alkali = False
+            l_low = []
+            l_up = []
+        
+    # If transitions are not in increasing wavenumber order, rearrange
+    order = np.argsort(nu_0)  # Indices of nu_0 in increasing order
+    nu_0 = nu_0[order]
+    gf = gf[order]
+    E_low = E_low[order]
+    E_up = E_up[order]
+    J_low = J_low[order]
+    Gamma_nat = Gamma_nat[order]
+    Gamma_vdw = Gamma_vdw[order]
+    
+    if alkali:
+        l_low = l_low[order]
+        l_up = l_up[order]
+    
+    return nu_0, gf, E_low, E_up, J_low, l_low, l_up, Gamma_nat, Gamma_vdw, alkali
+        
+    return
     

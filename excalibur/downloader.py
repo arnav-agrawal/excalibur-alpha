@@ -4,6 +4,7 @@ import requests
 import re
 import os
 import bz2
+import sys
 from tqdm import tqdm
 import numpy as np
 import pandas as pd
@@ -14,6 +15,8 @@ import zipfile
 
 from .hapi import db_begin, fetch, abundance, moleculeName, isotopologueName
 
+import excalibur.ExoMol as ExoMol
+import excalibur.HITRAN as HITRAN
 
 def download_ExoMol_file(url, f, l_folder):
     """
@@ -627,5 +630,124 @@ def iterate_ExoMol_tags(tags, host, l_folder, line_list):
         
         # Download each line list
         download_ExoMol_file(url, filename, l_folder)
+   
         
+def find_input_dir(input_dir, database, molecule, isotope, ionization_state, linelist):
+    """
+    Find the directory on a user's machine that contains the data needed to create a cross-section
 
+    Parameters
+    ----------
+    input_dir : String
+        'Prefix' of the directory containing the line list files. If the files were downloaded
+        using our Download_Line_List.py script, input_dir will end in '/input'
+    database : String
+        Database the line list was downloaded from.
+    molecule : String
+        Molecule for which the cross-section is created.
+    isotope : String
+        Isotopologue of the molecule for which the cross-section was created.
+    linelist : String
+        Line list that is being used. HITRAN/HITEMP/VALD used as the line list name for these 
+        databases respectively. ExoMol has its own named line lists.
+
+    Returns
+    -------
+    input_directory : TYPE
+        DESCRIPTION.
+
+    """
+    
+    if isotope == 'default':
+        if database == 'exomol':
+            isotope = '(' + ExoMol.get_default_iso(molecule) + ')'
+        if database == 'hitran' or database == 'hitemp':
+            molecule_dict = HITRAN.create_id_dict()
+            mol_id = molecule_dict.get(molecule)
+            isotope = isotopologueName(mol_id, 1)
+            isotope = HITRAN.replace_iso_name(isotope)
+    
+    if database == 'vald':
+        isotope = ''
+        for i in range(ionization_state):  # Make it easier to code later in the function by just assigning ionization state to isotope even though they're not the same thing
+            isotope += 'I'
+        isotope = '(' + isotope + ')'
+    
+    if linelist == 'default':
+        if database == 'exomol':
+            temp_isotope = re.sub('[(]|[)]', '', isotope)
+            linelist = ExoMol.get_default_linelist(molecule, temp_isotope)
+        if database == 'hitran':
+            linelist = 'HITRAN'
+        if database == 'hitemp':
+            linelist = 'HITEMP'
+        if database == 'vald':
+            linelist = 'VALD'
+            
+    if (database == 'exomol'):
+        input_directory = (input_dir + molecule + '  ~  ' + isotope + '/' +
+                           'ExoMol' + '/' + linelist + '/')
+    else:
+        input_directory = (input_dir + molecule + '  ~  ' + isotope + '/' + 
+                           linelist + '/')
+
+    if os.path.exists(input_directory):
+        return input_directory
+    
+    else:
+        print("You don't seem to have a local folder with the parameters you entered.\n") 
+        
+        if not os.path.exists(input_dir + '/'):
+            print("----- You entered an invalid input directory into the cross_section() function. Please try again. -----")
+            sys.exit(0)
+        
+        elif not os.path.exists(input_dir + '/' + molecule + '  ~  ' + isotope + '/'):
+            print("----- There was an error with the molecule + isotope you entered. Here are the available options: -----\n")
+            for folder in os.listdir(input_dir + '/'):
+                if not folder.startswith('.'):
+                    print(folder)
+            sys.exit(0)
+        
+        else:
+            print("There was an error with the line list. These are the linelists available: \n")
+            for folder in os.listdir(input_dir + '/' + molecule + '  ~  ' + isotope + '/'):
+                if not folder.startswith('.'):
+                    print(folder)
+            sys.exit(0)
+
+
+def parse_directory(directory, database):
+    """
+    Determine which linelist and isotopologue this directory contains data for (assumes data was downloaded using our script)
+
+    Parameters
+    ----------
+    directory : String
+        Local directory containing the line list file[s], broadening data, and partition function
+
+    Returns
+    -------
+    molecule : String
+        Molecule which the cross-section is being calculated for.
+    linelist : String
+        Line list which the cross-section is being calculated for.
+
+    """
+    
+    directory_name = os.path.abspath(directory)
+    linelist = os.path.basename(directory_name)
+    
+    # For ExoMol, have to go up one more directory to reach molecule folder
+    if (database == 'exomol'):
+        directory_name = os.path.dirname(directory_name)
+        directory_name = os.path.dirname(directory_name)   
+    else:
+        directory_name = os.path.dirname(directory_name)
+
+    molecule = os.path.basename(directory_name)
+ #   same_molecule = copy.deepcopy(molecule)  # Make a copy of the string because we'll need it for the isotopologue
+ #   molecule = re.sub('[  ~].+', '', molecule)  # Keep molecule part of the folder name
+    isotopologue = re.sub('.+[  ~]', '', molecule) # Keep isotope part of the folder name
+    
+    return linelist, isotopologue
+    

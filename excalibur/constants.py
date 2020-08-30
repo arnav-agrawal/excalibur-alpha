@@ -1,13 +1,14 @@
+import numpy as np
 import scipy.constants as sc
 
 #***** Frequency grid *****#
 
-nu_refer = [1.0e2, 1.0e3, 1.0e4]   # Wavenumbers for reference Voigt widths
+nu_ref = np.array([1.0e2, 1.0e3, 1.0e4])   # Wavenumbers for reference Voigt widths
 
 # Pressure broadening settings *****#
 
-gamma_0 = 0.07    # If fixed broadening chosen, use this Lorentzian HWHM
-n_L = 0.50        # If fixed broadening chosen, use this temperature exponent
+gamma_0_fixed = 0.07    # If fixed broadening chosen, use this Lorentzian HWHM
+n_L_fixed = 0.50        # If fixed broadening chosen, use this temperature exponent
 
 T_ref = 296.0   # Reference temperature for broadening parameters
 P_ref = 1.0     # Reference temperature for EXOMOL broadening parameters (bar) - HITRAN conversion from atm already pre-handled
@@ -22,3 +23,4 @@ c2 = h*c/kb   # Second radiation constant (SI) = 0.0143877736 m K
 c2 *= 100.0   # Put in cm K for intensity formula
 u = sc.u      # Unified atomic mass unit (SI) = 1.66053904e-27 kg
 pi = sc.pi    # pi = 3.141592653589793
+Ryd = sc.Rydberg  # Rydberg constant
