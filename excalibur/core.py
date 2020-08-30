@@ -479,7 +479,7 @@ def create_nu_grid_molecule(m, T, gamma, Voigt_sub_spacing, dnu_out, cut_max,
             nu_fine_3_end, N_points_out, nu_min, nu_max, alpha_ref)
     
 
-def summon(database = '', species = '', isotope = 'default', 
+def summon(database = '', species = '', isotope = 'default', VALD_data_dir = '',
            linelist = 'default', ionization_state = 1, **kwargs):
     '''
     Makes calls to other downloader files to retrieve the data from the desired database
@@ -536,8 +536,8 @@ def summon(database = '', species = '', isotope = 'default',
             HITEMP.summon_HITEMP(mol, iso)
             
         if database == 'vald':
-            mol, ion = VALD.determine_linelist()
-            VALD.summon_VALD(mol, ion)
+            mol, ion = VALD.determine_linelist(VALD_data_dir)
+            VALD.summon_VALD(mol, ion, VALD_data_dir)
             
     # If the user calls summon with parameters directly passed in
     if not user_prompt: 
@@ -589,8 +589,8 @@ def summon(database = '', species = '', isotope = 'default',
             
         elif db == 'vald':
             
-            VALD.check(spe, ion)
-            VALD.summon_VALD(spe, ion)
+            VALD.check(spe, ion, VALD_data_dir)
+            VALD.summon_VALD(spe, ion, VALD_data_dir)
         
         else:
             print("\n ----- You have not passed in a valid database. Please try calling the summon() function again. ----- ")
@@ -600,10 +600,10 @@ def summon(database = '', species = '', isotope = 'default',
     
     
 def compute_cross_section(input_dir, database, species, log_pressure, temperature, isotope = 'default', 
-                          ionization_state = 1, linelist = 'default', cluster_run = False, nu_out_min = 200, 
-                          nu_out_max = 25000, dnu_out = 0.01, broad_type = 'default', X_H2 = 0.85, X_He = 0.15,
-                          Voigt_cutoff = 500, Voigt_sub_spacing = (1.0/6.0), N_alpha_samples = 500, 
-                          S_cut = 1.0e-100, cut_max = 30.0, **kwargs):
+                          ionization_state = 1, linelist = 'default', cluster_run = False, 
+                          nu_out_min = 200, nu_out_max = 25000, dnu_out = 0.01, broad_type = 'default', 
+                          X_H2 = 0.85, X_He = 0.15, Voigt_cutoff = 500, Voigt_sub_spacing = (1.0/6.0), 
+                          N_alpha_samples = 500, S_cut = 1.0e-100, cut_max = 30.0, **kwargs):
     '''
     Main function to calculate molecular and atomic cross sections
 

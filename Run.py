@@ -14,7 +14,7 @@ P = 1       # Pressure (bar)
 T = 1200    # Temperature (K)
 
 # Download line list
-summon(database=database, species = species)
+summon(database=database, species = species, VALD_data_dir = './VALD Line Lists/')
 
 # Create cross section
 nu, sigma = compute_cross_section(input_dir = './input/', database = database, 
@@ -23,5 +23,5 @@ nu, sigma = compute_cross_section(input_dir = './input/', database = database,
 
 # Plot cross section
 plot_sigma_wl(nu_arr = nu, sigma_arr = sigma, species = species, temperature = T, 
-              log_pressure = np.log10(P), database = database)
+              log_pressure = np.log10(P), database = database, plot_dir = './plots/')
     

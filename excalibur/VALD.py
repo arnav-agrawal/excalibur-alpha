@@ -7,7 +7,7 @@ import h5py
 import excalibur.downloader as download
 
 
-def check(mol, ion):
+def check(mol, ion, VALD_data_dir):
     '''
     
 
@@ -23,22 +23,22 @@ def check(mol, ion):
     None.
 
     '''
-    
+    print(VALD_data_dir)
     roman_num = ''
     for i in range(ion):
             roman_num += 'I'
     fname = mol + '_' + roman_num + '.h5'
-    if fname not in os.listdir('./VALD Line Lists'): 
+    if fname not in os.listdir(VALD_data_dir): 
         print("\n ----- The VALD line list for this atom/isotope combination does not exist. Please try again. -----")
         sys.exit(0)
         
         
-def determine_linelist():
+def determine_linelist(VALD_data_dir):
     
     while True:
         molecule = input("What atom would you like to download the line list for? \n")
         fname = molecule + '_I.h5'  # Check if at least the neutral version of this atom is supported (i.e. that we even provide the line list for this atom)
-        if fname in os.listdir('./VALD Line Lists'): 
+        if fname in os.listdir(VALD_data_dir): 
             break
         else:
             print("\n ----- The VALD line list for this atom does not exist. Please try again. -----")
@@ -56,13 +56,13 @@ def determine_linelist():
                 roman_num += 'I'
         
             fname = molecule + '_' + roman_num + '.h5'  # Check if at least the neutral version of this atom is supported (i.e. that we even provide the line list for this atom)
-            if fname in os.listdir('./VALD Line Lists'): 
+            if fname in os.listdir(VALD_data_dir): 
                 return molecule, ionization_state
             else:
                 print("\n ----- The VALD line list for this atom/ionization state combination does not exist. Please try again. -----")
 
 
-def create_pf_VALD():
+def create_pf_VALD(VALD_data_dir):
     """
     Used on developers' end to create the partition function file which is included in the GitHub package
     
@@ -73,7 +73,7 @@ def create_pf_VALD():
 
     """
     
-    fname = './Atom_partition_functions.txt'
+    fname = VALD_data_dir + 'Atom_partition_functions.txt'
     
     temperature = [1.00000e-05, 1.00000e-04, 1.00000e-03, 1.00000e-02, 1.00000e-01, 
                    1.50000e-01, 2.00000e-01, 3.00000e-01, 5.00000e-01, 7.00000e-01, 
@@ -87,16 +87,16 @@ def create_pf_VALD():
     
     pf = pd.read_csv(fname, sep = '|', header = 7, skiprows = [0-6, 8, 293], names = temperature)
     
-    pf.to_csv('./Atomic_partition_functions.pf')
+    pf.to_csv(VALD_data_dir + 'Atomic_partition_functions.pf')
     
     
-def filter_pf(molecule, ionization_state, line_list_folder):
+def filter_pf(molecule, ionization_state, line_list_folder, VALD_data_dir):
     ionization_state_roman = ''
     
     for i in range(ionization_state):
         ionization_state_roman += 'I'
         
-    all_pf = pd.read_csv('./VALD Line Lists/Atomic_partition_functions.pf', index_col = 0, )
+    all_pf = pd.read_csv(VALD_data_dir + 'Atomic_partition_functions.pf', index_col = 0, )
     all_pf = all_pf.rename(lambda x: x.strip())  # Remove the extra white space in the index names, eg: '  H_I' becomes 'H_I'
     
     pf = all_pf.loc[molecule + '_' + ionization_state_roman]  # Filter the partition functions by the specified atom and ionization state
@@ -122,7 +122,7 @@ def filter_pf(molecule, ionization_state, line_list_folder):
     f_out.close()
     
     
-def process_VALD_file(species, ionization_state):
+def process_VALD_file(species, ionization_state, VALD_data_dir):
     """
     Used on developers' end to get the necessary data from a VALD line list 
 
@@ -141,7 +141,7 @@ def process_VALD_file(species, ionization_state):
     for i in range(ionization_state):
         roman_ion += 'I'
         
-    directory = './VALD Line Lists/'
+    directory = VALD_data_dir
 
     trans_file = [filename for filename in os.listdir(directory) if filename == (species + '_' + roman_ion + '_VALD.trans')]
 
@@ -268,13 +268,13 @@ def process_VALD_file(species, ionization_state):
     download.convert_to_hdf(file = (directory + species + '_' + roman_ion + '.trans'), alkali = alkali)
     
     
-def summon_VALD(molecule, ionization_state):
+def summon_VALD(molecule, ionization_state, VALD_data_dir):
     
     print("\n ***** Processing requested data from VALD. You have chosen the following parameters: ***** ")
     print("\nAtom:", molecule, "\nIonization State:", ionization_state)
     line_list_folder = download.create_directories(molecule = molecule, ionization_state = ionization_state,
-                                                   database = 'VALD') 
-    filter_pf(molecule, ionization_state, line_list_folder)
+                                                   database = 'VALD', VALD_data_dir = VALD_data_dir) 
+    filter_pf(molecule, ionization_state, line_list_folder, VALD_data_dir)
   
     
 def load_line_list(input_directory, molecule):

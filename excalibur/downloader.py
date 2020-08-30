@@ -432,7 +432,8 @@ def convert_to_hdf(file = '', mol_ID = '', iso_ID = '', alkali = False,
     
 
 def create_directories(molecule = '', isotopologue = '', line_list = '', database = '',
-                       mol_ID = '', iso_ID = '', ionization_state = 1, **kwargs):
+                       mol_ID = '', iso_ID = '', ionization_state = 1, VALD_data_dir = '',
+                       **kwargs):
     '''
     Create new folders to store the relevant data
 
@@ -533,7 +534,7 @@ def create_directories(molecule = '', isotopologue = '', line_list = '', databas
                 os.mkdir(line_list_folder)
             
         # Copy the VALD line list file to the newly created folder
-        shutil.copy('./VALD Line Lists/' + fname, line_list_folder + '/') 
+        shutil.copy(VALD_data_dir + fname, line_list_folder + '/') 
 
     
     return line_list_folder

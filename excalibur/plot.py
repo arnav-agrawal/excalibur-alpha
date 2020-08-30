@@ -8,7 +8,7 @@ from matplotlib.ticker import MultipleLocator, AutoLocator, FormatStrFormatter, 
 
 
 def plot_sigma_wl(species, temperature, log_pressure, nu_arr = [], sigma_arr = [], 
-                  file = '', database = '', **kwargs):
+                  file = '', database = '', plot_dir = './plots/', **kwargs):
     """
     Generate a plot of a cross_section file, in both wavelength and wavenumber
 
@@ -70,7 +70,7 @@ def plot_sigma_wl(species, temperature, log_pressure, nu_arr = [], sigma_arr = [
     
     pressure = np.power(10.0, log_pressure)
     
-    print("\nPlotting the cross-section of", species, "at", temperature, "K and", pressure, "bar")
+    print("Plotting the cross-section of", species, "at", temperature, "K and", pressure, "bar")
         
     #***** Make wavenumber plot *****#
   #  fig = plt.figure()
@@ -123,7 +123,7 @@ def plot_sigma_wl(species, temperature, log_pressure, nu_arr = [], sigma_arr = [
         
     plt.tight_layout()
 
-    plt.savefig('./plots/' + species + '_' + str(temperature) + 'K_' +
+    plt.savefig(plot_dir + species + '_' + str(temperature) + 'K_' +
                 str(pressure) + 'bar_' + database + '.pdf')
     
     print("\nPlotting complete.")
