@@ -1,9 +1,9 @@
 import numpy as np
-import pandas as pd
 import numba
 import re
 
 # Determine and import the correct version of numba based on its local version
+#*****
 version = numba.__version__
 dots = re.finditer('[.]', version)
 positions = [match.start() for match in dots]
@@ -13,14 +13,13 @@ if version >= 0.49:
     from numba.core.decorators import jit
 else:
     from numba.decorators import jit
+#*****    
     
-    
-#from math import exp
 import time
 import h5py
 
-from .constants import kb, c, c2, m_e, pi, T_ref
-from .Voigt import Generate_Voigt_atoms
+from excalibur.constants import kb, c, c2, m_e, pi, T_ref, nu_ref
+import excalibur.Voigt as Voigt
    
 
 @jit(nopython=True)
@@ -130,7 +129,7 @@ def increment_sigma(sigma, nu_0, nu_grid_start, nu_grid_end, S_i, Voigt_0, dV_da
 
 @jit(nopython=True)
 def compute_cross_section_single_grid(sigma, nu_grid_start, nu_grid_end, 
-                                      N_grid, nu_0, nu_ref, N_V, S, 
+                                      N_grid, nu_0, N_V, S, 
                                       J_lower, alpha, alpha_sampled, 
                                       nu_sampled, log_nu_sampled,
                                       log_alpha, log_alpha_sampled,
@@ -194,18 +193,18 @@ def compute_cross_section_atom(sigma, N_grid, nu_0, nu_detune, nu_fine_start,
         idx = find_index(nu_0_i, nu_fine_start, nu_fine_end, N_grid)
             
         # Generate Voigt function array for this transition (also accounts for sub-Lorentzian resonance lines)
-        Voigt = Generate_Voigt_atoms(nu_0_i, nu_detune, gamma[i], alpha[i], T, cutoffs[i], N_V, species_ID)
+        profile = Voigt.Generate_Voigt_atoms(nu_0_i, nu_detune, gamma[i], alpha[i], T, cutoffs[i], N_V, species_ID)
         
         # If transition goes off left grid edge
         if ((nu_0_i-cutoffs[i]) < nu_min):
  
             # Central value
-            sigma[idx] += (S_i * Voigt[0])
+            sigma[idx] += (S_i * profile[0])
                 
             for k in range(1, N_V):
                     
                 # Voigt profile wings
-                opac_val = (S_i * Voigt[k])
+                opac_val = (S_i * profile[k])
                     
                 sigma[idx+k] += opac_val       # Forward direction
                 
@@ -216,12 +215,12 @@ def compute_cross_section_atom(sigma, N_grid, nu_0, nu_detune, nu_fine_start,
         elif ((nu_0_i+cutoffs[i]) > nu_max):
  
             # Central value
-            sigma[idx] += (S_i * Voigt[0])
+            sigma[idx] += (S_i * profile[0])
                 
             for k in range(1, N_V):
                     
                 # Voigt profile wings
-                opac_val = (S_i * Voigt[k])
+                opac_val = (S_i * profile[k])
                     
                 sigma[idx-k] += opac_val       # Backward direction
                 
@@ -231,12 +230,12 @@ def compute_cross_section_atom(sigma, N_grid, nu_0, nu_detune, nu_fine_start,
         else:
                 
             # Central value
-            sigma[idx] += (S_i * Voigt[0])
+            sigma[idx] += (S_i * profile[0])
                 
             for k in range(1, N_V):
                     
                 # Voigt profile wings
-                opac_val = (S_i * Voigt[k])
+                opac_val = (S_i * profile[k])
                     
                 sigma[idx+k] += opac_val    # Forward direction
                 sigma[idx-k] += opac_val    # Backward direction 
@@ -248,7 +247,7 @@ def compute_cross_section_multiple_grids(sigma_1, sigma_2, sigma_3,
                                          nu_fine_2_start, nu_fine_2_end,
                                          nu_fine_3_start, nu_fine_3_end,
                                          N_grid_1, N_grid_2, N_grid_3,
-                                         nu_0, nu_ref, N_V_1, N_V_2, N_V_3,
+                                         nu_0, N_V_1, N_V_2, N_V_3,
                                          S, J_lower, alpha, alpha_sampled,
                                          log_alpha, log_alpha_sampled,
                                          nu_sampled, log_nu_sampled, R_21, R_32,
@@ -262,7 +261,6 @@ def compute_cross_section_multiple_grids(sigma_1, sigma_2, sigma_3,
     idx_boundary_2 = prior_index(np.log10(nu_ref[2]), log_nu_sampled[0], log_nu_sampled[-1], N_alpha_samples)
         
     nu_ref_1_r = nu_sampled[idx_boundary_1+1]
-        
     nu_ref_2_r = nu_sampled[idx_boundary_2+1]
         
     for i in range(len(nu_0)):
@@ -616,7 +614,7 @@ def compute_cross_section_multiple_grids(sigma_1, sigma_2, sigma_3,
 
 #@jit
 def produce_total_cross_section_EXOMOL(linelist_files, input_directory, 
-                                       sigma_fine, nu_sampled, nu_ref, m, T, Q_T,
+                                       sigma_fine, nu_sampled, m, T, Q_T,
                                        N_grid_1, N_grid_2, N_grid_3, dnu_fine, 
                                        N_Voigt_points, cutoffs, g_arr, E_arr, J_arr, 
                                        J_max, alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
@@ -714,7 +712,7 @@ def produce_total_cross_section_EXOMOL(linelist_files, input_directory,
             if (((nu_0[0]-cutoffs[0]) > nu_min) and ((nu_0[-1]+cutoffs[0]) < nu_ref[1])): 
                 
                 compute_cross_section_single_grid(sigma_1, nu_fine_1_start, nu_fine_1_end,    # Check if the given range of nu0 +/- cutoffs lies entirely within one of the
-                                                  N_grid_1, nu_0, nu_ref, N_V_1, S,           # three pre-defined spectral ranges. If so, then can speed up cross section
+                                                  N_grid_1, nu_0, N_V_1, S,           # three pre-defined spectral ranges. If so, then can speed up cross section
                                                   J_lower, alpha, alpha_sampled,              # computation by not checking whether line wings cross grid boundaries
                                                   nu_sampled, log_nu_sampled,
                                                   log_alpha, log_alpha_sampled,
@@ -723,7 +721,7 @@ def produce_total_cross_section_EXOMOL(linelist_files, input_directory,
             elif (((nu_0[0]-cutoffs[1]) > nu_ref[1]) and ((nu_0[-1]+cutoffs[1]) < nu_ref[2])): 
                 
                 compute_cross_section_single_grid(sigma_2, nu_fine_2_start, nu_fine_2_end, 
-                                                  N_grid_2, nu_0, nu_ref, N_V_2, S,
+                                                  N_grid_2, nu_0, N_V_2, S,
                                                   J_lower, alpha, alpha_sampled,
                                                   nu_sampled, log_nu_sampled,
                                                   log_alpha, log_alpha_sampled,
@@ -732,7 +730,7 @@ def produce_total_cross_section_EXOMOL(linelist_files, input_directory,
             elif (((nu_0[0]-cutoffs[2]) > nu_ref[2]) and ((nu_0[-1]+cutoffs[2]) < nu_max)): 
                 
                 compute_cross_section_single_grid(sigma_3, nu_fine_3_start, nu_fine_3_end, 
-                                                  N_grid_3, nu_0, nu_ref, N_V_3, S,
+                                                  N_grid_3, nu_0, N_V_3, S,
                                                   J_lower, alpha, alpha_sampled,
                                                   nu_sampled, log_nu_sampled,
                                                   log_alpha, log_alpha_sampled,
@@ -745,7 +743,7 @@ def produce_total_cross_section_EXOMOL(linelist_files, input_directory,
                                                      nu_fine_2_start, nu_fine_2_end,
                                                      nu_fine_3_start, nu_fine_3_end,
                                                      N_grid_1, N_grid_2, N_grid_3,
-                                                     nu_0, nu_ref, N_V_1, N_V_2, N_V_3,
+                                                     nu_0, N_V_1, N_V_2, N_V_3,
                                                      S, J_lower, alpha, alpha_sampled,
                                                      log_alpha, log_alpha_sampled,
                                                      nu_sampled, log_nu_sampled, R_21, R_32,
@@ -772,7 +770,7 @@ def produce_total_cross_section_EXOMOL(linelist_files, input_directory,
 
 
 def produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fine, 
-                                       nu_sampled, nu_ref, m, T, Q_T, Q_ref,
+                                       nu_sampled, m, T, Q_T, Q_ref,
                                        N_grid_1, N_grid_2, N_grid_3, dnu_fine, 
                                        N_Voigt_points, cutoffs, J_max, alpha_sampled,
                                        Voigt_arr, dV_da_arr, dV_dnu_arr,
@@ -866,7 +864,7 @@ def produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fi
             if (((nu_0[0]-cutoffs[0]) > nu_min) and ((nu_0[-1]+cutoffs[0]) < nu_ref[1])): 
             
                 compute_cross_section_single_grid(sigma_1, nu_fine_1_start, nu_fine_1_end,    # Check if the given range of nu0 +/- cutoffs lies entirely within one of the
-                                                  N_grid_1, nu_0, nu_ref, N_V_1, S,           # three pre-defined spectral ranges. If so, then can speed up cross section
+                                                  N_grid_1, nu_0, N_V_1, S,           # three pre-defined spectral ranges. If so, then can speed up cross section
                                                   J_low, alpha, alpha_sampled,                # computation by not checking whether line wings cross grid boundaries
                                                   nu_sampled, log_nu_sampled,
                                                   log_alpha, log_alpha_sampled,
@@ -875,7 +873,7 @@ def produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fi
             elif (((nu_0[0]-cutoffs[1]) > nu_ref[1]) and ((nu_0[-1]+cutoffs[1]) < nu_ref[2])): 
             
                 compute_cross_section_single_grid(sigma_2, nu_fine_2_start, nu_fine_2_end, 
-                                                  N_grid_2, nu_0, nu_ref, N_V_2, S,
+                                                  N_grid_2, nu_0, N_V_2, S,
                                                   J_low, alpha, alpha_sampled,
                                                   nu_sampled, log_nu_sampled,
                                                   log_alpha, log_alpha_sampled,
@@ -884,7 +882,7 @@ def produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fi
             elif (((nu_0[0]-cutoffs[2]) > nu_ref[2]) and ((nu_0[-1]+cutoffs[2]) < nu_max)): 
             
                 compute_cross_section_single_grid(sigma_3, nu_fine_3_start, nu_fine_3_end, 
-                                                  N_grid_3, nu_0, nu_ref, N_V_3, S,
+                                                  N_grid_3, nu_0, N_V_3, S,
                                                   J_low, alpha, alpha_sampled,
                                                   nu_sampled, log_nu_sampled,
                                                   log_alpha, log_alpha_sampled,
@@ -897,7 +895,7 @@ def produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fi
                                                      nu_fine_2_start, nu_fine_2_end,
                                                      nu_fine_3_start, nu_fine_3_end,
                                                      N_grid_1, N_grid_2, N_grid_3,
-                                                     nu_0, nu_ref, N_V_1, N_V_2, N_V_3,
+                                                     nu_0, N_V_1, N_V_2, N_V_3,
                                                      S, J_low, alpha, alpha_sampled,
                                                      log_alpha, log_alpha_sampled,
                                                      nu_sampled, log_nu_sampled, R_21, R_32,
@@ -921,122 +919,6 @@ def produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fi
 
     print('Calculation complete!')
     print('Completed ' + str(nu_0_tot) + ' transitions in ' + str(total_calc) + ' s')
-    
-def produce_total_cross_section_VALD_molecule(sigma_fine, nu_sampled, nu_ref, nu_0_in,
-                                              E_low_in, J_low_in, gf_in, m, T, Q_T,
-                                              N_grid_1, N_grid_2, N_grid_3, dnu_fine, 
-                                              N_Voigt_points, cutoffs, J_max, alpha_sampled,
-                                              Voigt_arr, dV_da_arr, dV_dnu_arr,
-                                              nu_min, nu_max, S_cut, species):
-    
-    nu_fine_1_start = nu_min
-    nu_fine_1_end = (nu_ref[1] - dnu_fine[0])
-    nu_fine_2_start = nu_ref[1]
-    nu_fine_2_end = (nu_ref[2] - dnu_fine[1])
-    nu_fine_3_start = nu_ref[2]
-    nu_fine_3_end = nu_max
-    
-    nu_0_tot = 0
-    
-    log_alpha_sampled = np.log10(alpha_sampled)
-    log_nu_sampled = np.log10(nu_sampled)
-    
-    # Number of points on each pre-computed Voigt function
-    N_V_1 = N_Voigt_points[0]
-    N_V_2 = N_Voigt_points[1]
-    N_V_3 = N_Voigt_points[2]
-    
-    # Split sigma into components on each spectral grid        
-    sigma_1 = sigma_fine[0:N_grid_1]
-    sigma_2 = sigma_fine[N_grid_1:(N_grid_1+N_grid_2)]
-    sigma_3 = sigma_fine[(N_grid_1+N_grid_2):(N_grid_1+N_grid_2+N_grid_3)]
-        
-    # Wavenumber spacings on each spectral grid
-    dnu_1 = dnu_fine[0]
-    dnu_2 = dnu_fine[1]
-    dnu_3 = dnu_fine[2]
-        
-    # Ratios of wavenumber spacings between each grid
-    R_21 = dnu_2/dnu_1
-    R_32 = dnu_3/dnu_2
-    
-    t_begin_calc = time.clock()
-        
-    print('Computing transitions for ' + species)
-    
-    # Remove transitions outside computational grid
-    nu_0 = nu_0_in[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]  
-    gf = gf_in[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]
-    E_low = E_low_in[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]
-    J_low = J_low_in[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]
-    
-    del nu_0_in, gf_in, E_low_in, J_low_in
-            
-    # If a given J'' does not have known broadening parameters, treat transition with parameters of maximum J''
-    J_low[np.where(J_low > J_max)] = J_max
-        
-    if (len(nu_0)>0): nu_0_tot += len(nu_0)
-        
-    #***** Compute line broadening parameters *****#    
-    alpha = np.sqrt(2.0*kb*T*np.log(2)/m) * (nu_0/c)     # Doppler HWHM for each transition
-    log_alpha = np.log10(alpha)
-    
-    #***** Compute line intensities *****#        
-    S = compute_line_intensity_VALD(gf, E_low, nu_0, T, Q_T)
-               
-    #nu_0 = nu_0[np.where(S>S_cut)]
-    #S = S[np.where(S>S_cut)]
-        
-    if (len(nu_0)>0): # If any transitions in chunk exceed intensity cutoff
-        
-        # Read comment on RHS for an explanation of this ominous condition-->
-        if (((nu_0[0]-cutoffs[0]) > nu_min) and ((nu_0[-1]+cutoffs[0]) < nu_ref[1])): 
-                
-            compute_cross_section_single_grid(sigma_1, nu_fine_1_start, nu_fine_1_end,    # Check if the given range of nu0 +/- cutoffs lies entirely within one of the
-                                              N_grid_1, nu_0, nu_ref, N_V_1, S,           # three pre-defined spectral ranges. If so, then can speed up cross section
-                                              J_low, alpha, alpha_sampled,                # computation by not checking whether line wings cross grid boundaries
-                                              nu_sampled, log_nu_sampled,
-                                              log_alpha, log_alpha_sampled,
-                                              Voigt_arr, dV_da_arr, dV_dnu_arr)
-                
-        elif (((nu_0[0]-cutoffs[1]) > nu_ref[1]) and ((nu_0[-1]+cutoffs[1]) < nu_ref[2])): 
-                
-            compute_cross_section_single_grid(sigma_2, nu_fine_2_start, nu_fine_2_end, 
-                                              N_grid_2, nu_0, nu_ref, N_V_2, S,
-                                              J_low, alpha, alpha_sampled,
-                                              nu_sampled, log_nu_sampled,
-                                              log_alpha, log_alpha_sampled,
-                                              Voigt_arr, dV_da_arr, dV_dnu_arr)
-    
-        elif (((nu_0[0]-cutoffs[2]) > nu_ref[2]) and ((nu_0[-1]+cutoffs[2]) < nu_max)): 
-                
-            compute_cross_section_single_grid(sigma_3, nu_fine_3_start, nu_fine_3_end, 
-                                              N_grid_3, nu_0, nu_ref, N_V_3, S,
-                                              J_low, alpha, alpha_sampled,
-                                              nu_sampled, log_nu_sampled,
-                                              log_alpha, log_alpha_sampled,
-                                              Voigt_arr, dV_da_arr, dV_dnu_arr)
-    
-        else: 
-                
-            compute_cross_section_multiple_grids(sigma_1, sigma_2, sigma_3, 
-                                                 nu_fine_1_start, nu_fine_1_end,
-                                                 nu_fine_2_start, nu_fine_2_end,
-                                                 nu_fine_3_start, nu_fine_3_end,
-                                                 N_grid_1, N_grid_2, N_grid_3,
-                                                 nu_0, nu_ref, N_V_1, N_V_2, N_V_3,
-                                                 S, J_low, alpha, alpha_sampled,
-                                                 log_alpha, log_alpha_sampled,
-                                                 nu_sampled, log_nu_sampled, R_21, R_32,
-                                                 dnu_1, dnu_2, dnu_3, cutoffs,
-                                                 Voigt_arr, dV_da_arr, dV_dnu_arr,
-                                                 nu_min, nu_max)
-    
-    t_end_calc = time.clock()
-    total_calc = t_end_calc-t_begin_calc
-
-    print('Calculation complete!')
-    print('Completed ' + str(nu_0_tot) + ' transitions in ' + str(total_calc) + ' s')    
 
 
 def produce_total_cross_section_VALD_atom(sigma_fine, nu_0_in, nu_detune, 
@@ -1085,7 +967,7 @@ def produce_total_cross_section_VALD_atom(sigma_fine, nu_0_in, nu_detune,
     
 
 @jit(nopython=True)
-def bin_cross_section_molecule(sigma_fine, sigma_out, N_grid_1, N_grid_2, N_grid_3, nu_ref,
+def bin_cross_section_molecule(sigma_fine, sigma_out, N_grid_1, N_grid_2, N_grid_3,
                                nu_fine_1_start, nu_fine_1_end, nu_fine_2_start, nu_fine_2_end, 
                                nu_fine_3_start, nu_fine_3_end, nu_out, N_out, option,
                                nu_min, nu_max):
