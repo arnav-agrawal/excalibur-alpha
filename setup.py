@@ -9,6 +9,9 @@ setuptools.setup(
     author="Ryan MacDonald, Arnav Agrawal",
     author_email="rmacdonald@astro.cornell.edu, aa687@cornell.edu",
     description="A python package to calculate atomic and molecular cross sections for exoplanet atmospheres.",
+    #name="excalibur-alpha", # Replace with your own username
+    #version="0.0.1-alpha",
+
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/arnav-agrawal/excalibur-alpha",
