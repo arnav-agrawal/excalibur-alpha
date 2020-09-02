@@ -10,6 +10,7 @@ Welcome to Excalibur-alpha's documentation!
    :maxdepth: 2
 
    Exomol
+   installation
 
 
 
