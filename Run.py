@@ -14,7 +14,8 @@ P = 1       # Pressure (bar)
 T = 1200    # Temperature (K)
 
 # Download line list
-summon(database=database, species = species, VALD_data_dir = './VALD Line Lists/')
+summon(species = species, database = database)
+
 
 # Create cross section
 nu, sigma = compute_cross_section(input_dir = './input/', database = database, 
