@@ -30,7 +30,7 @@ You can use as many, or as few of these arguments as desired. The minimum requir
 
 Example 1: Downloading the H20 line list from HITRAN
 
-.. code:: ipython3
+.. code:: python
 
   from excalibur.core import summon
 
@@ -43,7 +43,7 @@ Example 1: Downloading the H20 line list from HITRAN
 Example 2: Downloading the BT2 line list for H2O from ExoMol
 The default line list for H2O is the Pokazatel line list, but say we want to download the BT2 line list for some reason.
 
-.. code:: ipython3
+.. code:: python
 
   from excalibur.core import summon
 
@@ -57,7 +57,7 @@ The default line list for H2O is the Pokazatel line list, but say we want to dow
 
 Example 3: Downloading the line list of the second ionization state of oxygen from VALD
 
-.. code:: ipython3
+.. code:: python
 
   from excalibur.core import summon
 
@@ -87,7 +87,7 @@ section.
 
 Let's look at the ``compute_cross_section`` function.
 
-.. code:: ipython3
+.. code:: python
 
   def compute_cross_section(input_dir, database, species, log_pressure, temperature, isotope = 'default',
                               ionization_state = 1, linelist = 'default', cluster_run = False,
@@ -108,7 +108,7 @@ those specifications (assuming the line list has already been downloaded)
 
 Example 1: Compute the cross-section for H2O (HITRAN line list) at 1 bar and 1200 Kelvin
 
-.. code:: ipython3
+.. code:: python
 
   species = 'H2O'
   database = 'HITRAN'
@@ -132,7 +132,7 @@ This section shows how to plot an outputted cross-section.
 
 Let's look at the  ``plot_sigma_wl`` function.
 
-.. code:: ipython3
+.. code:: python
 
   def plot_sigma_wl(species, temperature, log_pressure, nu_arr = [], sigma_arr = [],
                     file = '', database = '', plot_dir = './plots/', **kwargs):
@@ -152,7 +152,7 @@ Currently, we do not support passing in files to be plotted by this function, bu
 Here is an example of the ``plot_sigma_wl`` function and the plot it produces, using the nu and sigma arrays returned
 from Example 2.
 
-.. code:: ipython3
+.. code:: python
 
   species = 'H2O'
   database = 'HITRAN'
@@ -163,4 +163,4 @@ from Example 2.
   # Plot cross section
   plot_sigma_wl(nu_arr = nu, sigma_arr = sigma, species = species, temperature = T,
                 log_pressure = np.log10(P), database = database, plot_dir = './plots/')
-.. image:: H2O_1200K_1.0bar_HITRAN.pdf
+.. H2O_Cross_simage:: H2O_1200K_1.0bar_HITRAN.pdf
