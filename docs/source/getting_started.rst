@@ -18,6 +18,7 @@ Let's take a look at the ``summon`` function and the arguments it takes before s
          linelist = 'default', ionization_state = 1, **kwargs):
 
 We see that users can specify:
+
  * the database
  * species
  * isotope
@@ -54,7 +55,7 @@ The default line list for H2O is the Pokazatel line list, but say we want to dow
   summon(database=database, species = species, linelist = linelist)
 
 
-Example 3: Downloading the line list of the second ionization state of O from VALD
+Example 3: Downloading the line list of the second ionization state of oxygen from VALD
 
 .. code:: ipython3
 
@@ -62,10 +63,12 @@ Example 3: Downloading the line list of the second ionization state of O from VA
 
   species = 'O'
   database = 'VALD'
+  ionization_state = 2
   VALD_data_dir = './VALD Line Lists/'
 
+
   # Download line list
-  summon(database=database, species = species, VALD_data_dir = VALD_data_dir)
+  summon(database=database, species = species, ionization_state =  ionization_state, VALD_data_dir = VALD_data_dir)
 
 Keep in mind that a path needs to be specified to read in the VALD line lists we have provided.
 Assuming that the user hasn't moved this 'VALD Line Lists' folder anywhere, the path we use here
@@ -93,11 +96,12 @@ Let's look at the ``compute_cross_section`` function.
                               N_alpha_samples = 500, S_cut = 1.0e-100, cut_max = 30.0, **kwargs):
 
 Most of these arguments take on a default value. The ones the user has to worry about is:
-* input_dir (the prefix of the folder where the line list is stored, use the one we provided as a default)
-* database
-* species
-* log_pressure
-* temperature
+
+  - input_dir (the prefix of the folder where the line list is stored, use the one we provided as a default)
+  - database
+  - species
+  - log_pressure
+  - temperature
 
 Specify the database, species, log_pressure, and temperature to compute a cross-section for a species with
 those specifications (assuming the line list has already been downloaded)
@@ -124,7 +128,39 @@ to plot cross-section.
 3) The ``plot_sigma_wl`` function
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+This section shows how to plot an outputted cross-section.
+
+Let's look at the  ``plot_sigma_wl`` function.
+
 .. code:: ipython3
 
   def plot_sigma_wl(species, temperature, log_pressure, nu_arr = [], sigma_arr = [],
                     file = '', database = '', plot_dir = './plots/', **kwargs):
+
+Most of these arguments take on a default value. The ones the user has to worry about is:
+
+  - species
+  - temperature
+  - log_pressure
+  - nu_arr (nu array to plot)
+  - sigma_arr (sigma array to plot)
+  - plot_dir (where the plot will be stored, default is a folder called 'plots' one directory out)
+
+``species``, ``temperature``, and ``log_pressure`` are used to name the outputted file appropriately.
+Currently, we do not support passing in files to be plotted by this function, but that is in the works.
+
+Here is an example of the ``plot_sigma_wl`` function and the plot it produces, using the nu and sigma arrays returned
+from Example 2.
+
+.. code:: ipython3
+
+  species = 'H2O'
+  database = 'HITRAN'
+
+  P = 1       # Pressure (bar)
+  T = 1200    # Temperature (K)
+
+  # Plot cross section
+  plot_sigma_wl(nu_arr = nu, sigma_arr = sigma, species = species, temperature = T,
+                log_pressure = np.log10(P), database = database, plot_dir = './plots/')
+.. image:: H2O_1200K_1.0bar_HITRAN.pdf
