@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 
-.. image:: Excalibur_logo.png
+.. logo image:: Excalibur_logo.png
 
 Welcome to Excalibur-alpha's documentation!
 ===========================================
