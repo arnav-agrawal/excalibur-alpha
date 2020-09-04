@@ -163,4 +163,5 @@ from Example 2.
   # Plot cross section
   plot_sigma_wl(nu_arr = nu, sigma_arr = sigma, species = species, temperature = T,
                 log_pressure = np.log10(P), database = database, plot_dir = './plots/')
-.. image:: H2O_1200K_1.0bar_HITRAN.pdf
+
+.. image:: H2O_1200K_1.0bar_HITRAN.png
