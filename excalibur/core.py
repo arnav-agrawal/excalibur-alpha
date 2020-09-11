@@ -557,26 +557,26 @@ def summon(database = '', species = '', isotope = 'default', VALD_data_dir = '',
         
         if db == 'exomol':
             
-            spe = re.sub('[+]', '_p', mol)  # Handle ions
+            spe = re.sub('[+]', '_p', spe)  # Handle ions
             iso = re.sub('[+]', '_p', iso)  # Handle ions
             
             if isotope == 'default':
-                ExoMol.check(mol)
-                iso = ExoMol.get_default_iso(mol)
+                ExoMol.check(spe)
+                iso = ExoMol.get_default_iso(spe)
             if linelist == 'default':
-                ExoMol.check(mol, iso)
-                lin = ExoMol.get_default_linelist(mol, iso)
+                ExoMol.check(spe, iso)
+                lin = ExoMol.get_default_linelist(spe, iso)
 
-            ExoMol.check(mol, iso, lin)
-            URL = "http://exomol.com/data/molecules/" + mol + '/' + iso + '/' + lin + '/'
-            ExoMol.summon_ExoMol(mol, iso, lin, URL)
+            ExoMol.check(spe, iso, lin)
+            URL = "http://exomol.com/data/molecules/" + spe + '/' + iso + '/' + lin + '/'
+            ExoMol.summon_ExoMol(spe, iso, lin, URL)
             
         elif db == 'hitran':
             
             if isotope == 'default':
                 iso = 1
             
-            spe = HITRAN.check(species, iso)
+            spe = HITRAN.check(spe, iso)
             HITRAN.summon_HITRAN(spe, iso)
             
         elif db == 'hitemp':
@@ -584,7 +584,7 @@ def summon(database = '', species = '', isotope = 'default', VALD_data_dir = '',
             if isotope == 'default':
                 iso = 1
                 
-            spe = HITEMP.check(species, iso)
+            spe = HITEMP.check(spe, iso)
             HITEMP.summon_HITEMP(spe, iso)
             
         elif db == 'vald':
