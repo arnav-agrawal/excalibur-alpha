@@ -7,7 +7,7 @@ from excalibur.core import compute_cross_section
 from excalibur.plot import plot_sigma_wl
 
 # Parameters
-species = 'H2O'
+species = 'CO'
 database = 'HITRAN'
 
 P = 1       # Pressure (bar)

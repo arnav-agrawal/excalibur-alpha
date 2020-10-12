@@ -53,18 +53,19 @@ def Voigt_and_derivatives(nu, gamma, alpha, norm):
     #c1 = (y/np.sqrt(np.pi))
     #c2 = ((x*x - y*y) - 0.5)
     #c3 = (-2.0*x*y)
-    
-    for k in range(N):
         
-        z = complex(x[k], y)
-        W = Faddeeva(z)
-        K = W.real
-        L = W.imag
+    z = np.empty(len(x), dtype=np.complex128)
+    z.real = x
+    z.imag = y
         
-        Voigt[k] = (dim_V * K)/norm
-        dV_da[k] = const1 * (b1 + (b2[k]*K) + (b3[k]*L))/norm
-        dV_dv[k] = const2 * (y*L - x[k]*K)/norm                  # First derivative wrt nu is simpler
-        #d2V_dv2[k] = const3 * (c1 + (c2[k]*K) + (c3[k]*L))/norm                  
+    W = Faddeeva(z)
+    K = W.real
+    L = W.imag
+        
+    Voigt = (dim_V * K)/norm
+    dV_da = const1 * (b1 + (b2*K) + (b3*L))/norm
+    dV_dv = const2 * (y*L - x*K)/norm                  # First derivative wrt nu is simpler
+    #d2V_dv2[k] = const3 * (c1 + (c2[k]*K) + (c3[k]*L))/norm                  
     
     return Voigt, dV_da, dV_dv
 
@@ -74,7 +75,9 @@ def Voigt_function(nu, gamma, alpha):
     x = np.sqrt(np.log(2.0)) * (nu/alpha)
     y = np.sqrt(np.log(2.0)) * (gamma/alpha)
     
-    z = complex(x, y)
+    z = np.empty(1, dtype=np.complex128)
+    z.real = x
+    z.imag = y
     
     coeff = np.sqrt(np.log(2.0)/np.pi) * (1.0/alpha)
     
@@ -196,11 +199,13 @@ def Generate_Voigt_grid_molecules(Voigt_arr, dV_da_arr, dV_dnu_arr, gamma_arr, a
     for i in range(len(gamma_arr)):    # For each gamma
         
         for j in range(len(alpha_arr)):   # For each alpha
+        
+            norm = 0.998   # Approximation of area under Voigt profile (out to +/- 500 HWHM) for renormalisation
             
             if (alpha_arr[j] <= alpha_ref[1]):
             
                 # First calculate the integral of the Voigt profile out to the cutoff for normalisation purposes
-                norm = 2.0*quad(Voigt_function, 0, cutoffs[0], args=(gamma_arr[i],alpha_arr[j]))[0]
+      #          norm = 2.0*quad(Voigt_function, 0, cutoffs[0], args=(gamma_arr[i],alpha_arr[j]))[0]
             
                 # Now calculate the Voigt profile and 1st derivative wrt alpha for this gamma and alpha
                 Voigt_arr[i,j,0:N[0]], dV_da_arr[i,j,0:N[0]], dV_dnu_arr[i,j,0:N[0]] = Voigt_and_derivatives(nu1, gamma_arr[i], alpha_arr[j], norm)
@@ -208,7 +213,7 @@ def Generate_Voigt_grid_molecules(Voigt_arr, dV_da_arr, dV_dnu_arr, gamma_arr, a
             elif ((alpha_arr[j] > alpha_ref[1]) and (alpha_arr[j] <= alpha_ref[2])):
             
                 # First calculate the integral of the Voigt profile out to the cutoff for normalisation purposes
-                norm = 2.0*quad(Voigt_function, 0, cutoffs[1], args=(gamma_arr[i],alpha_arr[j]))[0]
+      #          norm = 2.0*quad(Voigt_function, 0, cutoffs[1], args=(gamma_arr[i],alpha_arr[j]))[0]
             
                 # Now calculate the Voigt profile and 1st derivative wrt alpha for this gamma and alpha
                 Voigt_arr[i,j,0:N[1]], dV_da_arr[i,j,0:N[1]], dV_dnu_arr[i,j,0:N[1]] = Voigt_and_derivatives(nu2, gamma_arr[i], alpha_arr[j], norm)
@@ -216,10 +221,11 @@ def Generate_Voigt_grid_molecules(Voigt_arr, dV_da_arr, dV_dnu_arr, gamma_arr, a
             elif (alpha_arr[j] > alpha_ref[2]):
             
                 # First calculate the integral of the Voigt profile out to the cutoff for normalisation purposes
-                norm = 2.0*quad(Voigt_function, 0, cutoffs[2], args=(gamma_arr[i],alpha_arr[j]))[0]
+      #          norm = 2.0*quad(Voigt_function, 0, cutoffs[2], args=(gamma_arr[i],alpha_arr[j]))[0]
             
                 # Now calculate the Voigt profile and 1st derivative wrt alpha for this gamma and alpha
                 Voigt_arr[i,j,0:N[2]], dV_da_arr[i,j,0:N[2]], dV_dnu_arr[i,j,0:N[2]] = Voigt_and_derivatives(nu3, gamma_arr[i], alpha_arr[j], norm)
+                
 
        
 def precompute(nu_max, N_alpha_samples, T, m, cutoffs, dnu_fine, gamma, alpha_ref):
