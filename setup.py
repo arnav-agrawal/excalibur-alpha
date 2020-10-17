@@ -21,7 +21,7 @@ setuptools.setup(
     ],
     python_requires='>=3.7.6',
     install_requires = [
-        "numpy", "scipy", "matplotlib", "numba", "requests", "bs4", "tqdm", "pandas", "h5py"
+        "numpy", "scipy", "matplotlib", "numba", "requests", "bs4", "tqdm", "pandas", "h5py", "lxml"
     ],
     zip_safe=False
 )
