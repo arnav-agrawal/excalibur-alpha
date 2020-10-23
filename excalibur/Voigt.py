@@ -1,5 +1,4 @@
 import numpy as np
-import scipy.constants as sc
 from scipy.special import wofz as Faddeeva
 from scipy.integrate import trapz, simps, quad
 import numba
@@ -19,12 +18,26 @@ else:
     from numba.decorators import jit
 #*****
 
-from excalibur.constants import kb, c, c2, nu_ref
+from excalibur.constants import kb, c, c2
 
 
-def HWHM(gamma, alpha):
+def HWHM(gamma_L, alpha_D):
+            
+    gamma_V = (0.5346 * gamma_L + np.sqrt(0.2166 * gamma_L**2 + alpha_D**2))
     
-    return 0.5346*gamma + np.sqrt(0.2166*gamma*gamma + alpha*alpha)
+    return gamma_V
+
+@jit(nopython = True)
+def Voigt_HWHM(gamma_L, alpha_D):
+    
+    gamma_V = np.zeros(shape=(len(gamma_L), len(alpha_D)))
+    
+    for i in range(len(gamma_L)):
+        for j in range(len(alpha_D)):
+            
+            gamma_V[i,j] = (0.5346 * gamma_L[i] + np.sqrt(0.2166 * gamma_L[i]**2 + alpha_D[j]**2))
+    
+    return gamma_V
     
 
 def Voigt_and_derivatives(nu, gamma, alpha, norm):
@@ -53,18 +66,19 @@ def Voigt_and_derivatives(nu, gamma, alpha, norm):
     #c1 = (y/np.sqrt(np.pi))
     #c2 = ((x*x - y*y) - 0.5)
     #c3 = (-2.0*x*y)
-    
-    for k in range(N):
         
-        z = complex(x[k], y)
-        W = Faddeeva(z)
-        K = W.real
-        L = W.imag
+    z = np.empty(len(x), dtype=np.complex128)
+    z.real = x
+    z.imag = y
         
-        Voigt[k] = (dim_V * K)/norm
-        dV_da[k] = const1 * (b1 + (b2[k]*K) + (b3[k]*L))/norm
-        dV_dv[k] = const2 * (y*L - x[k]*K)/norm                  # First derivative wrt nu is simpler
-        #d2V_dv2[k] = const3 * (c1 + (c2[k]*K) + (c3[k]*L))/norm                  
+    W = Faddeeva(z)
+    K = W.real
+    L = W.imag
+        
+    Voigt = (dim_V * K)/norm
+    dV_da = const1 * (b1 + (b2*K) + (b3*L))/norm
+    dV_dv = const2 * (y*L - x*K)/norm             # First derivative wrt nu is simpler
+    #d2V_dv2[k] = const3 * (c1 + (c2[k]*K) + (c3[k]*L))/norm                  
     
     return Voigt, dV_da, dV_dv
 
@@ -74,7 +88,9 @@ def Voigt_function(nu, gamma, alpha):
     x = np.sqrt(np.log(2.0)) * (nu/alpha)
     y = np.sqrt(np.log(2.0)) * (gamma/alpha)
     
-    z = complex(x, y)
+    z = np.empty(1, dtype=np.complex128)
+    z.real = x
+    z.imag = y
     
     coeff = np.sqrt(np.log(2.0)/np.pi) * (1.0/alpha)
     
@@ -90,7 +106,9 @@ def Voigt_function_sub_Lorentzian(nu, gamma, alpha, nu_detune, nu_F, T):
         x = np.sqrt(np.log(2.0)) * (nu/alpha)
         y = np.sqrt(np.log(2.0)) * (gamma/alpha)
         
-        z = complex(x, y)
+        z = np.empty(1, dtype=np.complex128)
+        z.real = x
+        z.imag = y
         
         V = (coeff * Faddeeva(z).real)
     
@@ -100,45 +118,14 @@ def Voigt_function_sub_Lorentzian(nu, gamma, alpha, nu_detune, nu_F, T):
         
         x_detune = np.sqrt(np.log(2.0)) * (nu_detune/alpha)
         y = np.sqrt(np.log(2.0)) * (gamma/alpha)
-    
-        z_detune = complex(x_detune, y)
+        
+        z_detune = np.empty(1, dtype=np.complex128)
+        z_detune.real = x_detune
+        z_detune.imag = y
     
         V_detune = (coeff * Faddeeva(z_detune).real)
         
         return V_detune * (nu_detune/nu)**(3.0/2.0) * np.exp((-1.0*c2*nu/T) * (nu/nu_F))
-
-
-def Generate_Voigt_grid_line_by_line(Voigt_arr, nu_0, nu_detune, gamma_arr, alpha_arr, T, cutoffs, N_Voigt_points, species):
-    
-    for i in range(len(nu_0)):   # For each transition
-    
-        # Initialise wavenumber grids up to cutoff
-        N = N_Voigt_points[i]
-        nu = np.linspace(0, cutoffs[i], N)
-        
-        # Special treatment of line wings for alkali resonant lines (see Baudino + 2015)
-        if (((species == 'Na') and (int(nu_0[i]) in [16978, 16960])) or
-            ((species == 'K') and (int(nu_0[i]) in [13046, 12988]))):
-            
-            if   (species == 'Na'): nu_F = 5000.0
-            elif (species == 'K'):  nu_F = 1600.0
-            
-            # Compute renormalising factor for truncated function
-            norm = 2.0*quad(Voigt_function_sub_Lorentzian, 0, cutoffs[i], args=(gamma_arr[i], alpha_arr[i], nu_detune, nu_F, T))[0]  # For renormalising truncated function
-                
-            for k in range(N):   # For each wavenumber
-                
-                Voigt_arr[i,k] = Voigt_function_sub_Lorentzian(nu[k], gamma_arr[i], alpha_arr[i], nu_detune, nu_F, T)/norm
-                
-        # For non-resonant lines, simply use a Voigt function up to the cutoff
-        else:
-            
-            # Compute renormalising factor for truncated function
-            norm = 2.0*quad(Voigt_function, 0, cutoffs[i], args=(gamma_arr[i], alpha_arr[i]))[0]  #
-            
-            for k in range(N):    # For each wavenumber
-                
-                Voigt_arr[i,k] = Voigt_function(nu[k], gamma_arr[i], alpha_arr[i])/norm
 
              
 def Generate_Voigt_atoms(nu_0, nu_detune, gamma, alpha, T, cutoff, N, species_ID):
@@ -186,64 +173,53 @@ def Generate_Voigt_atoms(nu_0, nu_detune, gamma, alpha, T, cutoff, N, species_ID
         return Voigt_arr
      
 
-def Generate_Voigt_grid_molecules(Voigt_arr, dV_da_arr, dV_dnu_arr, gamma_arr, alpha_arr, alpha_ref, cutoffs, N):
+def Generate_Voigt_grid_molecules(Voigt_arr, dV_da_arr, dV_dnu_arr, gamma_arr, 
+                                  alpha_arr, cutoffs, N_Voigt):
     
-    # Initialise wavenumber grids from line centre up to cutoff in each spectral region (dividers at nu_ref in config.py)
-    nu1 = np.linspace(0, cutoffs[0], N[0])
-    nu2 = np.linspace(0, cutoffs[1], N[1])
-    nu3 = np.linspace(0, cutoffs[2], N[2])
-    
-    for i in range(len(gamma_arr)):    # For each gamma
+    for i in range(len(gamma_arr)):       # For each Lorentzian width
+        for j in range(len(alpha_arr)):   # For each Doppler width
         
-        for j in range(len(alpha_arr)):   # For each alpha
+            # Approximate area putside cutoff for renormalisation
+            norm = 0.998  #  ~ 0.998 out to +/- 500 Voigt HWHM
             
-            if (alpha_arr[j] <= alpha_ref[1]):
+            # Calculate the integral of the Voigt profile out to the cutoff for normalisation (SLOW)
+   #         norm = 2.0*quad(Voigt_function, 0, cutoffs[i,j], args=(gamma_arr[i],alpha_arr[j]))[0]
             
-                # First calculate the integral of the Voigt profile out to the cutoff for normalisation purposes
-                norm = 2.0*quad(Voigt_function, 0, cutoffs[0], args=(gamma_arr[i],alpha_arr[j]))[0]
+            # Create wavenumber array for this template profile (line core to cutoff)
+            nu = np.linspace(0.0, cutoffs[i,j], N_Voigt[i,j])
             
-                # Now calculate the Voigt profile and 1st derivative wrt alpha for this gamma and alpha
-                Voigt_arr[i,j,0:N[0]], dV_da_arr[i,j,0:N[0]], dV_dnu_arr[i,j,0:N[0]] = Voigt_and_derivatives(nu1, gamma_arr[i], alpha_arr[j], norm)
-                
-            elif ((alpha_arr[j] > alpha_ref[1]) and (alpha_arr[j] <= alpha_ref[2])):
-            
-                # First calculate the integral of the Voigt profile out to the cutoff for normalisation purposes
-                norm = 2.0*quad(Voigt_function, 0, cutoffs[1], args=(gamma_arr[i],alpha_arr[j]))[0]
-            
-                # Now calculate the Voigt profile and 1st derivative wrt alpha for this gamma and alpha
-                Voigt_arr[i,j,0:N[1]], dV_da_arr[i,j,0:N[1]], dV_dnu_arr[i,j,0:N[1]] = Voigt_and_derivatives(nu2, gamma_arr[i], alpha_arr[j], norm)
-                
-            elif (alpha_arr[j] > alpha_ref[2]):
-            
-                # First calculate the integral of the Voigt profile out to the cutoff for normalisation purposes
-                norm = 2.0*quad(Voigt_function, 0, cutoffs[2], args=(gamma_arr[i],alpha_arr[j]))[0]
-            
-                # Now calculate the Voigt profile and 1st derivative wrt alpha for this gamma and alpha
-                Voigt_arr[i,j,0:N[2]], dV_da_arr[i,j,0:N[2]], dV_dnu_arr[i,j,0:N[2]] = Voigt_and_derivatives(nu3, gamma_arr[i], alpha_arr[j], norm)
+            # Now calculate the Voigt profile and 1st derivative wrt alpha for this gamma and alpha
+            (Voigt_arr[i,j,0:N_Voigt[i,j]], 
+            dV_da_arr[i,j,0:N_Voigt[i,j]], 
+            dV_dnu_arr[i,j,0:N_Voigt[i,j]]) = Voigt_and_derivatives(nu, gamma_arr[i], 
+                                                                    alpha_arr[j], norm)
 
-       
-def precompute(nu_max, N_alpha_samples, T, m, cutoffs, dnu_fine, gamma, alpha_ref):
+
+def precompute(nu_compute, dnu_out, m, T, Voigt_sub_spacing, Voigt_cutoff, 
+               N_alpha_samples, gamma_L, cut_max):
     '''
-    Pre-compute Voigt profiles and derivatives, for use in the Generalised 
-    Vectorised Voigt (GVV) method of molecular cross section computation.
+    Pre-compute Voigt profiles and derivatives, for use in the Perturbed 
+    Template Voigt (PTB) method of molecular cross section computation.
 
     Parameters
     ----------
-    nu_max : TYPE
+    nu_compute : TYPE
         DESCRIPTION.
-    N_alpha_samples : TYPE
-        DESCRIPTION.
-    T : TYPE
+    dnu_out : TYPE
         DESCRIPTION.
     m : TYPE
         DESCRIPTION.
-    cutoffs : TYPE
+    T : TYPE
         DESCRIPTION.
-    dnu_fine : TYPE
+    Voigt_sub_spacing : TYPE
         DESCRIPTION.
-    gamma : TYPE
+    Voigt_cutoff : TYPE
         DESCRIPTION.
-    alpha_ref : TYPE
+    N_alpha_samples : TYPE
+        DESCRIPTION.
+    gamma_L : TYPE
+        DESCRIPTION.
+    cut_max : TYPE
         DESCRIPTION.
 
     Returns
@@ -252,55 +228,55 @@ def precompute(nu_max, N_alpha_samples, T, m, cutoffs, dnu_fine, gamma, alpha_re
         DESCRIPTION.
     alpha_sampled : TYPE
         DESCRIPTION.
+    cutoffs : TYPE
+        DESCRIPTION.
+    N_Voigt : TYPE
+        DESCRIPTION.
     Voigt_arr : TYPE
         DESCRIPTION.
     dV_da_arr : TYPE
         DESCRIPTION.
     dV_dnu_arr : TYPE
         DESCRIPTION.
-    N_Voigt_points : TYPE
+    dnu_Voigt : TYPE
         DESCRIPTION.
 
     '''
-        
-    # First, create an array of values of alpha to approximate true values of alpha (N=500 log-spaced => max error of 0.5%)
-    nu_sampled = np.logspace(np.log10(nu_ref[0]), np.log10(nu_max), N_alpha_samples)
+    
+    # Create array of Doppler HWHM alpha to approximate true values of alpha (N=500 log-spaced => max error of 0.5%)
+    nu_sampled = np.logspace(np.log10(nu_compute[0]), np.log10(nu_compute[-1]), N_alpha_samples)
     alpha_sampled = np.sqrt(2.0*kb*T*np.log(2)/m) * (nu_sampled/c)
     
-    # Evaluate number of frequency points for each Voigt function in each spectral region - up to cutoff @ min(500 gamma_V, 30cm^-1)
-    N_Voigt_points = ((cutoffs/dnu_fine).astype(np.int64)) + 1  
-            
-    # Pre-compute and store Voigt functions and first derivatives wrt alpha 
-    Voigt_arr = np.zeros(shape=(len(gamma), len(alpha_sampled), np.max(N_Voigt_points)))    # For H2O: V(51,500,3001)
-    dV_da_arr = np.zeros(shape=(len(gamma), len(alpha_sampled), np.max(N_Voigt_points)))    # For H2O: V(51,500,3001)
-    dV_dnu_arr = np.zeros(shape=(len(gamma), len(alpha_sampled), np.max(N_Voigt_points)))   # For H2O: V(51,500,3001)
+    # Compute Voigt profile HWHM array for the template profiles
+    gamma_V = Voigt_HWHM(gamma_L, alpha_sampled)
     
-    Generate_Voigt_grid_molecules(Voigt_arr, dV_da_arr, dV_dnu_arr, gamma, 
-                                  alpha_sampled, alpha_ref, cutoffs, N_Voigt_points)
-
-    return nu_sampled, alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr, N_Voigt_points
-        
-                     
-
-
-#Voigt_approx = Voigt_arr[0,50,:] + (dV_da_arr[0,50,:])*(alpha_sampled[51]-alpha_sampled[50])
+    # Line cutoffs for each template profile at min(500 gamma_V, 30cm^-1)    
+    cutoffs = np.minimum((Voigt_cutoff * gamma_V), cut_max)
     
-#plt.semilogy(nu, Voigt_arr[0,50,:], lw=0.1, label='50')
-#plt.semilogy(nu, Voigt_arr[0,51,:], lw=0.1, label='51 true')
-#plt.semilogy(nu, Voigt_approx[:], lw=0.1, label='51 approx')
-#plt.xlim([0.0, 0.01])
-#plt.ylim([1.0e0, 1.0e3])
-
-#legend = plt.legend(loc='upper right', shadow=False, frameon=False, prop={'size':7})
-            
-#plt.savefig('Voigt_test.pdf')
-
-#plt.semilogy(nu, err)
-#plt.savefig('test_err.pdf')
-
+    # Wavenumber spacing for each template Voigt profile (smallest of gamma_V/6 or 0.01cm^-1)
+    dnu_Voigt = np.minimum((gamma_V * Voigt_sub_spacing), dnu_out)
     
+    # Find number of grid points for each template Voigt profile from line core to cutoff
+    N_Voigt = np.rint(cutoffs/dnu_Voigt).astype(np.int64) + 1  
     
+    # Adjust dnu_Voigt slightly to match an exact integer number of grid spaces
+    dnu_Voigt = cutoffs/(N_Voigt - 1)
+                
+    # Initialise template Voigt profiles and Voigt first derivative arrays 
+    # Zeros are left for any points beyond the cutoff (local N_Voigt_nu) to preserve regular array shape
+    Voigt_arr = np.zeros(shape=(len(gamma_L), len(alpha_sampled), np.max(N_Voigt)))    
+    dV_da_arr = np.zeros(shape=(len(gamma_L), len(alpha_sampled), np.max(N_Voigt))) 
+    dV_dnu_arr = np.zeros(shape=(len(gamma_L), len(alpha_sampled), np.max(N_Voigt)))  
     
+    # Precompute template Voigt profiles (zeros left for any )
+    Generate_Voigt_grid_molecules(Voigt_arr, dV_da_arr, dV_dnu_arr, gamma_L, 
+                                  alpha_sampled, cutoffs, N_Voigt)
+
+    return (nu_sampled, alpha_sampled, cutoffs, N_Voigt, 
+            Voigt_arr, dV_da_arr, dV_dnu_arr, dnu_Voigt)
+      
+
+
     
     
     

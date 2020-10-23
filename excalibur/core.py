@@ -5,15 +5,14 @@ import re
 import time
 import requests
 import sys
+import numba
 from bs4 import BeautifulSoup
 from scipy.interpolate import UnivariateSpline as Interp
 from .hapi import molecularMass, moleculeName, isotopologueName
 
-from .calculations import bin_cross_section_atom, bin_cross_section_molecule
-from .calculations import produce_total_cross_section_EXOMOL, produce_total_cross_section_HITRAN
-from .calculations import produce_total_cross_section_VALD_atom
+from .calculate import produce_total_cross_section_VALD_atom, bin_cross_section_atom
 
-from excalibur.constants import c, kb, u, nu_ref, P_ref, T_ref, \
+from excalibur.constants import c, kb, u, P_ref, T_ref, \
                                 gamma_0_fixed, n_L_fixed
 
 import excalibur.ExoMol as ExoMol
@@ -23,6 +22,7 @@ import excalibur.VALD as VALD
 import excalibur.downloader as download
 import excalibur.broadening as broadening
 import excalibur.Voigt as Voigt
+import excalibur.calculate as calculate
 
 from excalibur.misc import write_output, check_molecule
 
@@ -138,7 +138,7 @@ def mass(species, isotopologue, linelist):
 
 def load_pf(input_directory):
     '''
-    Read in a pre-downloaded partition function
+    Read in a pre-downloaded partition function.
 
     Parameters
     ----------
@@ -171,7 +171,7 @@ def load_pf(input_directory):
 
 def interpolate_pf(T_pf_raw, Q_raw, T, T_ref):
     '''
-    Interpolate partition function to the temperature of the cross section computation
+    Interpolate partition function to the temperature of the cross section computation.
 
     Parameters
     ----------
@@ -221,69 +221,15 @@ def create_nu_grid_atom(atom, T, m, gamma, nu_0, Voigt_sub_spacing,
     
     Note: for atoms a single grid is used over the entire wavenumber range.
 
-    Parameters
-    ----------
-    atom : TYPE
-        DESCRIPTION.
-    T : TYPE
-        DESCRIPTION.
-    m : TYPE
-        DESCRIPTION.
-    gamma : TYPE
-        DESCRIPTION.
-    nu_0 : TYPE
-        DESCRIPTION.
-    Voigt_sub_spacing : TYPE
-        DESCRIPTION.
-    dnu_out : TYPE
-        DESCRIPTION.
-    nu_out_min : TYPE
-        DESCRIPTION.
-    nu_out_max : TYPE
-        DESCRIPTION.
-    Voigt_cutoff : TYPE
-        DESCRIPTION.
-    cut_max : TYPE
-        DESCRIPTION.
-
-    Returns
-    -------
-    sigma_fine : TYPE
-        DESCRIPTION.
-    nu_detune : TYPE
-        DESCRIPTION.
-    N_points_fine : TYPE
-        DESCRIPTION.
-    N_Voigt_points : TYPE
-        DESCRIPTION.
-    alpha : TYPE
-        DESCRIPTION.
-    cutoffs : TYPE
-        DESCRIPTION.
-    nu_min : TYPE
-        DESCRIPTION.
-    nu_max : TYPE
-        DESCRIPTION.
-    nu_fine_start : TYPE
-        DESCRIPTION.
-    nu_fine_end : TYPE
-        DESCRIPTION.
-    nu_out : TYPE
-        DESCRIPTION.
-    sigma_out : TYPE
-        DESCRIPTION.
-    N_points_out : TYPE
-        DESCRIPTION.
-
     '''
     
-    #Define the minimum and maximum wavenumber on grid to go slightly beyond user's output limits
+    # Define the minimum and maximum wavenumber on grid to go slightly beyond user's output limits
     nu_min = 1
     nu_max = nu_out_max + 1000
     
     # First, we need to find values of gamma_V for reference wavenumber (1000 cm^-1)
-    alpha_ref = np.sqrt(2.0*kb*T*np.log(2)/m) * (np.array(nu_ref[2])/c) # Doppler HWHM at reference wavenumber
-    gamma_ref = np.min(gamma)                                             # Find minimum value of Lorentzian HWHM
+    alpha_ref = np.sqrt(2.0*kb*T*np.log(2)/m) * (np.array(1000.0)/c)  # Doppler HWHM at reference wavenumber
+    gamma_ref = np.min(gamma)                                            # Find minimum value of Lorentzian HWHM
     gamma_V_ref = Voigt.HWHM(gamma_ref, alpha_ref)                       # Reference Voigt width
     
     # Calculate Voigt width for each transition
@@ -343,140 +289,18 @@ def create_nu_grid_atom(atom, T, m, gamma, nu_0, Voigt_sub_spacing,
             cutoffs, nu_min, nu_max, nu_fine_start, nu_fine_end, nu_out, N_points_out)
 
 
-def create_nu_grid_molecule(m, T, gamma, Voigt_sub_spacing, dnu_out, cut_max, 
-                            Voigt_cutoff, nu_out_max, nu_out_min, N_alpha_samples):
-    '''
-    Create the computational (fine) and output (coarse) wavenumber grids for
-    the cross section calculation.
-    
-    Notes: three fine wavenumber arrays are used to cover different wavenumber
-           regions, with boundaries defined by nu_ref in constants.py.
-        
-           The fine wavenumber grid does not itself need to be initiated, only 
-           the start / end wavenumbers and wavenumber spacing in each of the
-           subgrids. Not creating the nu_fine array saves memory.
 
-    Parameters
-    ----------
-    m : TYPE
-        DESCRIPTION.
-    T : TYPE
-        DESCRIPTION.
-    gamma : TYPE
-        DESCRIPTION.
-    Voigt_sub_spacing : TYPE
-        DESCRIPTION.
-    dnu_out : TYPE
-        DESCRIPTION.
-    cut_max : TYPE
-        DESCRIPTION.
-    Voigt_cutoff : TYPE
-        DESCRIPTION.
-    nu_out_max : TYPE
-        DESCRIPTION.
-    nu_out_min : TYPE
-        DESCRIPTION.
-    N_alpha_samples : TYPE
-        DESCRIPTION.
-
-    Returns
-    -------
-    sigma_fine : TYPE
-        DESCRIPTION.
-    N_points_fine_1 : TYPE
-        DESCRIPTION.
-    N_points_fine_2 : TYPE
-        DESCRIPTION.
-    N_points_fine_3 : TYPE
-        DESCRIPTION.
-    dnu_fine : TYPE
-        DESCRIPTION.
-    cutoffs : TYPE
-        DESCRIPTION.
-    nu_out : TYPE
-        DESCRIPTION.
-    sigma_out : TYPE
-        DESCRIPTION.
-    nu_fine_1_start : TYPE
-        DESCRIPTION.
-    nu_fine_1_end : TYPE
-        DESCRIPTION.
-    nu_fine_2_start : TYPE
-        DESCRIPTION.
-    nu_fine_2_end : TYPE
-        DESCRIPTION.
-    nu_fine_3_start : TYPE
-        DESCRIPTION.
-    nu_fine_3_end : TYPE
-        DESCRIPTION.
-    N_points_out : TYPE
-        DESCRIPTION.
-    nu_min : TYPE
-        DESCRIPTION.
-    nu_max : TYPE
-        DESCRIPTION.
-    alpha_ref : TYPE
-        DESCRIPTION.
-
-    '''
+def create_nu_grid_molecule(nu_out_min, nu_out_max, dnu_out):
 
     # Define the minimum and maximum wavenumber on grid to go slightly beyond user's output limits
     nu_min = 1
     nu_max = nu_out_max + 1000
-
-    # First, we need to find values of gamma_V for reference wavenumbers (100, 1000, 10000 cm^-1)
-    alpha_ref = np.sqrt(2.0*kb*T*np.log(2)/m) * (nu_ref/c)    # Doppler HWHM at reference wavenumbers 
-    gamma_ref = np.min(gamma)                                 # Find minimum value of Lorentzian HWHM
-    gamma_V_ref = Voigt.HWHM(gamma_ref, alpha_ref)           # Reference Voigt widths
-    
-    # Now compute properties of computational (fine) and output (coarse) wavenumber grids
-            
-    # Wavenumber spacing of three regions of computational grid (smallest of gamma_V_ref/6 or 0.01cm^-1)
-    dnu_fine = np.minimum(gamma_V_ref*Voigt_sub_spacing, dnu_out*np.ones(3))
-    
-    # Number of points on fine grid (three regions, rounded)
-    N_points_fine_1 = int((nu_ref[1]-nu_min)/dnu_fine[0])
-    N_points_fine_2 = int((nu_ref[2]-nu_ref[1])/dnu_fine[1])
-    N_points_fine_3 = int((nu_max-nu_ref[2])/dnu_fine[2] + 1)
-    N_points_fine = N_points_fine_1 + N_points_fine_2 + N_points_fine_3
-    
-    # Adjust dnu_fine slightly to match an exact integer number of grid spaces
-    dnu_fine[0] = (nu_ref[1]-nu_min)/N_points_fine_1
-    dnu_fine[1] = (nu_ref[2]-nu_ref[1])/N_points_fine_2
-    dnu_fine[2] = (nu_max-nu_ref[2])/(N_points_fine_3 - 1)
-    cutoffs = np.zeros(len(dnu_fine))   # Line wing cutoffs in three regions
-    
-    # Line cutoffs at @ min(500 gamma_V, 30cm^-1)
-    for i in range(len(dnu_fine)):     
-        # If grid spacing below maximum dnu (0.01), set to 3000 dnu (~ 500 gamma_V)
-        if (dnu_fine[i] < dnu_out):
-            cutoffs[i] = Voigt_cutoff*(1.0/Voigt_sub_spacing)*dnu_fine[i] 
-            
-        # If at maximum dnu (0.01), set to min(500 gamma_V, 30cm^-1)
-        else:
-            cutoffs[i] = dnu_fine[i] * int(Voigt_cutoff*gamma_V_ref[i]/dnu_fine[i])
-            if (cutoffs[i] >= cut_max): cutoffs[i] = cut_max
-            
-    # Define start and end points of each fine grid
-    nu_fine_1_start = nu_min
-    nu_fine_1_end = (nu_ref[1] - dnu_fine[0])
-    nu_fine_2_start = nu_ref[1]
-    nu_fine_2_end = (nu_ref[2] - dnu_fine[1])
-    nu_fine_3_start = nu_ref[2]
-    nu_fine_3_end = nu_max
-    
-    # Initialise output grid
-    N_points_out = int((nu_out_max-nu_out_min)/dnu_out + 1)     # Number of points on coarse grid (uniform)
-    nu_out = np.linspace(nu_out_min, nu_out_max, N_points_out)  # Create coarse (output) grid
         
-    # Initialise cross section arrays on each grid
-    sigma_fine = np.zeros(N_points_fine)    # Computational (fine) grid
-    sigma_out = np.zeros(N_points_out)      # Coarse (output) grid
-    
-    return (sigma_fine, sigma_out, N_points_fine_1, N_points_fine_2, 
-            N_points_fine_3, dnu_fine, cutoffs, nu_out, nu_fine_1_start, 
-            nu_fine_1_end, nu_fine_2_start, nu_fine_2_end, nu_fine_3_start, 
-            nu_fine_3_end, N_points_out, nu_min, nu_max, alpha_ref)
+    # Initialise computational grid
+    N_compute = int((nu_max - nu_min)/dnu_out + 1)       # Number of points on computational grid (uniform)
+    nu_compute = np.linspace(nu_min, nu_max, N_compute)  # Create coarse (output) grid
+      
+    return nu_compute
     
 
 def summon(database = '', species = '', isotope = 'default', VALD_data_dir = '',
@@ -603,61 +427,9 @@ def compute_cross_section(input_dir, database, species, log_pressure, temperatur
                           ionization_state = 1, linelist = 'default', cluster_run = False, 
                           nu_out_min = 200, nu_out_max = 25000, dnu_out = 0.01, broad_type = 'default', 
                           X_H2 = 0.85, X_He = 0.15, Voigt_cutoff = 500, Voigt_sub_spacing = (1.0/6.0), 
-                          N_alpha_samples = 500, S_cut = 1.0e-100, cut_max = 30.0, **kwargs):
+                          N_alpha_samples = 500, S_cut = 1.0e-100, cut_max = 30.0, N_cores = 8, **kwargs):
     '''
-    Main function to calculate molecular and atomic cross sections
-
-    Parameters
-    ----------
-    input_dir : TYPE
-        DESCRIPTION.
-    database : TYPE
-        DESCRIPTION.
-    species : TYPE
-        DESCRIPTION.
-    log_pressure : TYPE
-        DESCRIPTION.
-    temperature : TYPE
-        DESCRIPTION.
-    isotope : TYPE, optional
-        DESCRIPTION. The default is 'default'.
-    ionization_state : TYPE, optional
-        DESCRIPTION. The default is 1.
-    linelist : TYPE, optional
-        DESCRIPTION. The default is 'default'.
-    cluster_run : TYPE, optional
-        DESCRIPTION. The default is False.
-    nu_out_min : TYPE, optional
-        DESCRIPTION. The default is 200.
-    nu_out_max : TYPE, optional
-        DESCRIPTION. The default is 25000.
-    dnu_out : TYPE, optional
-        DESCRIPTION. The default is 0.01.
-    broad_type : TYPE, optional
-        DESCRIPTION. The default is 'default'.
-    X_H2 : TYPE, optional
-        DESCRIPTION. The default is 0.85.
-    X_He : TYPE, optional
-        DESCRIPTION. The default is 0.15.
-    Voigt_cutoff : TYPE, optional
-        DESCRIPTION. The default is 500.
-    Voigt_sub_spacing : TYPE, optional
-        DESCRIPTION. The default is (1.0/6.0).
-    N_alpha_samples : TYPE, optional
-        DESCRIPTION. The default is 500.
-    S_cut : TYPE, optional
-        DESCRIPTION. The default is 1.0e-100.
-    cut_max : TYPE, optional
-        DESCRIPTION. The default is 30.0.
-    **kwargs : TYPE
-        DESCRIPTION.
-
-    Returns
-    -------
-    nu : TYPE
-        DESCRIPTION.
-    sigma : TYPE
-        DESCRIPTION.
+    Main function to calculate molecular and atomic cross sections.
 
     '''
     
@@ -665,6 +437,9 @@ def compute_cross_section(input_dir, database, species, log_pressure, temperatur
     
     # Start clock for timing program
     t_start = time.perf_counter()
+    
+    # Configure numba to paralelise with the user specified number of cores
+    numba.set_num_threads(N_cores)
     
     # Cast log_pressure and temperature to lists if they are not already
     if not isinstance(log_pressure, list) and not isinstance(log_pressure, np.ndarray):  
@@ -764,7 +539,7 @@ def compute_cross_section(input_dir, database, species, log_pressure, temperatur
         
         if broad_type != 'default' and broad_type != 'H2-He':
             print("You did not specify a valid choice of pressure broadening.\n" 
-                  "For atoms, the only supported option is 'H2-He', so we will continue by using that." )
+                  "For atoms the only supported option is 'H2-He', so we will continue by using that." )
         
         broad_type = 'H2-He'
         
@@ -830,32 +605,22 @@ def compute_cross_section(input_dir, database, species, log_pressure, temperatur
                     gamma = broadening.compute_H2_He(gamma_0_H2, T_ref, T, 
                                                      n_L_H2, P, P_ref, X_H2, 
                                                      gamma_0_He, n_L_He, X_He)
-                
                 elif broad_type == 'air':
                     gamma = broadening.compute_air(gamma_0_air, T_ref, T, 
                                                    n_L_air, P, P_ref)
-                    
                 elif broad_type == 'SB07':
                     gamma = broadening.compute_SB07(gamma_0_SB07, P, P_ref)
-                    
-                elif broad_type == 'custom':  # Computation step is the same as for air broadening
-                    gamma = broadening.compute_air(gamma_0_air, T_ref, T, 
+                elif broad_type == 'custom': 
+                    gamma = broadening.compute_air(gamma_0_air, T_ref, T,    # Computation step is the same as for air broadening
                                                    n_L_air, P, P_ref)
-                    
                 elif broad_type == 'fixed':
                     gamma = np.array([(gamma_0_fixed * np.power((T_ref/T), n_L_fixed) * (P/P_ref))])  # Fixed Lorentizian HWHM (1 element array)
                     
-                # Create wavenumber grid properties for cross section calculation
-                (sigma_fine, sigma_out, 
-                 N_points_fine_1, N_points_fine_2, 
-                 N_points_fine_3, dnu_fine, cutoffs, 
-                 nu_out, nu_fine_1_start, nu_fine_1_end, 
-                 nu_fine_2_start, nu_fine_2_end, 
-                 nu_fine_3_start, nu_fine_3_end, 
-                 N_points_out, nu_min, 
-                 nu_max, alpha_ref) = create_nu_grid_molecule(m, T, gamma, Voigt_sub_spacing, 
-                                                              dnu_out, cut_max, Voigt_cutoff, 
-                                                              nu_out_max, nu_out_min, N_alpha_samples)
+                # Create wavenumber grid for cross section compuation
+                nu_compute = create_nu_grid_molecule(nu_out_min, nu_out_max, dnu_out)
+                                                                                                                            
+                # Initialise cross section arrays for computations
+                sigma_compute = np.zeros(len(nu_compute))    # Computational grid
                 
                 #***** Pre-compute Voigt function array for molecules *****#
     
@@ -863,18 +628,19 @@ def compute_cross_section(input_dir, database, species, log_pressure, temperatur
     
                 t1 = time.perf_counter()    
                 
-                # Pre-computation step of the GVV method
-                (nu_sampled, alpha_sampled,
-                 Voigt_arr, dV_da_arr, 
-                 dV_dnu_arr, N_Voigt_points) = Voigt.precompute(nu_max, N_alpha_samples, T, m, 
-                                                                cutoffs, dnu_fine, gamma, alpha_ref)                                                                            
+                # Pre-compute template Voigt profiles
+                (nu_sampled, alpha_sampled, 
+                 cutoffs, N_Voigt, Voigt_arr, 
+                 dV_da_arr, dV_dnu_arr, dnu_Voigt) = Voigt.precompute(nu_compute, dnu_out, m, T, 
+                                                                      Voigt_sub_spacing, Voigt_cutoff, 
+                                                                      N_alpha_samples, gamma, cut_max)
                 
                 t2 = time.perf_counter()
                 time_precompute = t2-t1
             
                 print('Voigt profiles computed in ' + str(time_precompute) + ' s')  
                 
-            # Handle pressure broadening and wavenumber grid creation for molecules
+            # Handle pressure broadening and wavenumber grid creation for atoms
             elif is_molecule == False:  
                 
                 # Compute Lorentzian HWHM line-by-line for atoms
@@ -891,70 +657,56 @@ def compute_cross_section(input_dir, database, species, log_pressure, temperatur
                  N_Voigt_points, alpha, 
                  cutoffs, nu_min, nu_max, 
                  nu_fine_start, nu_fine_end, 
-                 nu_out, N_points_out) = create_nu_grid_atom(species, T, m, gamma, nu_0, Voigt_sub_spacing, 
-                                                             dnu_out, nu_out_min, nu_out_max, 
+                 nu_out, N_points_out) = create_nu_grid_atom(species, T, m, gamma, nu_0, 
+                                                             Voigt_sub_spacing, dnu_out, 
+                                                             nu_out_min, nu_out_max, 
                                                              Voigt_cutoff, cut_max)
                                                                                                                                         
             print("Pre-computation steps complete")
-                
             
             print('Generating cross section for ' + species + ' at P = ' + str(P) + ' bar, T = ' + str(T) + ' K')
             
             # Call relevant cross section computation function for given line list
-            if database == 'exomol':                
-                produce_total_cross_section_EXOMOL(linelist_files, input_directory, sigma_fine,
-                                                   nu_sampled, m, T, Q_T, N_points_fine_1,
-                                                   N_points_fine_2, N_points_fine_3, dnu_fine,
-                                                   N_Voigt_points, cutoffs, g, E, J, J_max, 
-                                                   alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
-                                                   nu_min, nu_max, S_cut)
+            if database == 'exomol':    
+                calculate.cross_section_EXOMOL(linelist_files, input_directory, 
+                                               nu_compute, sigma_compute, alpha_sampled, 
+                                               m, T, Q_T, g, E, J, J_max, N_Voigt, cutoffs,
+                                               Voigt_arr, dV_da_arr, dV_dnu_arr, dnu_Voigt, S_cut)
                 
-            elif database == 'hitran':
-                produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fine,
-                                                   nu_sampled, m, T, Q_T, Q_T_ref,
-                                                   N_points_fine_1, N_points_fine_2, N_points_fine_3,
-                                                   dnu_fine, N_Voigt_points, cutoffs, J_max, 
-                                                   alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
-                                                   nu_min, nu_max, S_cut)
-                
-            elif database == 'hitemp':
-                produce_total_cross_section_HITRAN(linelist_files, input_directory, sigma_fine,
-                                                   nu_sampled, m, T, Q_T, Q_T_ref,
-                                                   N_points_fine_1, N_points_fine_2, N_points_fine_3,
-                                                   dnu_fine, N_Voigt_points, cutoffs, J_max, 
-                                                   alpha_sampled, Voigt_arr, dV_da_arr, dV_dnu_arr,
-                                                   nu_min, nu_max, S_cut)
+            elif database in ['hitran', 'hitemp']:
+                calculate.cross_section_HITRAN(linelist_files, input_directory, 
+                                               nu_compute, sigma_compute, alpha_sampled, 
+                                               m, T, Q_T, Q_T_ref, J_max, N_Voigt, cutoffs,
+                                               Voigt_arr, dV_da_arr, dV_dnu_arr, dnu_Voigt, S_cut)
                 
             elif database == 'vald':
                 produce_total_cross_section_VALD_atom(sigma_fine, nu_0, nu_detune, E_low, gf, m, T, Q_T,
                                                       N_points_fine, N_Voigt_points, alpha, gamma, cutoffs,
                                                       nu_min, nu_max, S_cut, species)
                     
-            
-            # Now bin cross section to output grid    
-            print('Binning cross section to output grid...')
-        
             if is_molecule:
-                bin_cross_section_molecule(sigma_fine, sigma_out, N_points_fine_1, N_points_fine_2,
-                                           N_points_fine_3, nu_fine_1_start, nu_fine_1_end,
-                                           nu_fine_2_start, nu_fine_2_end, nu_fine_3_start, nu_fine_3_end,
-                                           nu_out, N_points_out, 0, nu_min, nu_max)
-            
+                
+                # Clip ends from computational grid to leave output wavenumber and cross section grids            
+                nu_out = nu_compute[(nu_compute >= nu_out_min) & (nu_compute <= nu_out_max)]
+                sigma_out = sigma_compute[(nu_compute >= nu_out_min) & (nu_compute <= nu_out_max)]
+        
             else:
                 bin_cross_section_atom(sigma_fine, sigma_out, nu_fine_start, 
                                        nu_fine_end, nu_out, N_points_fine, N_points_out, 0)
             
-            # Write cross section to file
+            # Create output directory (if not already present)
             output_directory = re.sub('/input/', '/output/', input_directory)
     
             if not os.path.exists(output_directory):
                 os.makedirs(output_directory)
     
-            nu, sigma = write_output(output_directory, species, T, np.log10(P), nu_out, sigma_out)
+            # Write cross section to file
+            write_output(output_directory, species, T, np.log10(P), nu_out, sigma_out)
     
+    # Print final runtime
     t_final = time.perf_counter()
     total_final = t_final-t_start
     
     print('Total runtime: ' + str(total_final) + ' s')
     
-    return nu, sigma
+    return nu_out, sigma_out

@@ -10,4 +10,4 @@
 # the environment variable SLURM_ARRAY_TASK_ID contains
 # the index corresponding to the current job step
 
-python User_cluster.py $SLURM_ARRAY_TASK_ID
+python Run_cluster.py $SLURM_ARRAY_TASK_ID

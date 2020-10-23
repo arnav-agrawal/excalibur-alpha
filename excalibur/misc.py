@@ -25,12 +25,23 @@ def check_molecule(molecule):
 
 def write_output(output_directory, molecule, T, log_P, nu_out, sigma_out):
             
-    f = open(output_directory + str(molecule) + '_T' + str(T) + 'K_log_P' + str(log_P) + '_sigma.txt','w')
+    f = open((output_directory + str(molecule) + '_T' + str(T) + 
+              'K_log_P' + str(log_P) + '_sigma.txt'),'w')
                     
     for i in range(len(nu_out)):
         f.write('%.8f %.8e \n' %(nu_out[i], sigma_out[i]))
                         
     f.close()
+
+def read_output(output_directory, molecule, T, log_P):
     
-    return nu_out, sigma_out
+    file_location = (output_directory + str(molecule) + '_T' + str(T) + 
+                     'K_log_P' + str(log_P) + '_sigma_TMP.txt')
+    
+    file = pd.read_csv(file_location, sep = '\s+', header=None)
+    
+    nu = np.array(file[0])
+    sigma = np.array(file[1])
+
+    return nu, sigma
 
