@@ -13,6 +13,8 @@ if version >= 0.49:
     from numba.core.decorators import jit
 else:
     from numba.decorators import jit
+    
+from numba import prange
 #*****    
     
 import time
@@ -127,7 +129,7 @@ def increment_sigma(sigma, nu_0, nu_grid_start, nu_grid_end, S_i, Voigt_0, dV_da
         sigma[idx+j] += opac_val    # Forward direction
         sigma[idx-j] += opac_val    # Backward direction
 
-@jit(nopython=True)
+@jit(nopython=True, parallel=True)
 def compute_cross_section_single_grid(sigma, nu_grid_start, nu_grid_end, 
                                       N_grid, nu_0, N_V, S, 
                                       J_lower, alpha, alpha_sampled, 
@@ -143,7 +145,7 @@ def compute_cross_section_single_grid(sigma, nu_grid_start, nu_grid_end,
     nu_ref_1_r = nu_sampled[idx_boundary_1+1]
     nu_ref_2_r = nu_sampled[idx_boundary_2+1]
     
-    for i in range(len(nu_0)):
+    for i in prange(len(nu_0)):
     
         nu_0_i = nu_0[i]
         S_i = S[i]
@@ -241,7 +243,7 @@ def compute_cross_section_atom(sigma, N_grid, nu_0, nu_detune, nu_fine_start,
                 sigma[idx-k] += opac_val    # Backward direction 
             
 #@jit
-@jit(nopython=True)
+@jit(nopython=True, parallel=True)
 def compute_cross_section_multiple_grids(sigma_1, sigma_2, sigma_3, 
                                          nu_fine_1_start, nu_fine_1_end,
                                          nu_fine_2_start, nu_fine_2_end,
@@ -263,7 +265,7 @@ def compute_cross_section_multiple_grids(sigma_1, sigma_2, sigma_3,
     nu_ref_1_r = nu_sampled[idx_boundary_1+1]
     nu_ref_2_r = nu_sampled[idx_boundary_2+1]
         
-    for i in range(len(nu_0)):
+    for i in prange(len(nu_0)):
     
         nu_0_i = nu_0[i]
         S_i = S[i]
@@ -655,7 +657,8 @@ def produce_total_cross_section_EXOMOL(linelist_files, input_directory,
     # Start timer for cross section computation
     t_begin_calc = time.perf_counter()
     
-    for n in range(len(linelist_files)):   # For each transition file
+ #   for n in range(len(linelist_files)):   # For each transition file
+    for n in [0,1,2,3,4,5]: 
       
         trans_file = h5py.File(input_directory + linelist_files[n], 'r')
     
@@ -978,6 +981,8 @@ def bin_cross_section_molecule(sigma_fine, sigma_out, N_grid_1, N_grid_2, N_grid
         
     for k in range(N_out):
         
+        nu_k = nu_out[k]
+        
         # Locate wavenumber values corresponding to left and right bin edges
         if (k!=0) and (k!=(N_out-1)):    
             nu_l = 0.5*(nu_out[k-1] + nu_out[k])
@@ -1002,8 +1007,15 @@ def bin_cross_section_molecule(sigma_fine, sigma_out, N_grid_1, N_grid_2, N_grid
         elif ((nu_ref[1] < nu_r) and (nu_r < nu_ref[2])): idx_r = N_grid_1 + find_index(nu_r, nu_fine_2_start, nu_fine_2_end, N_grid_2)
         elif ((nu_ref[2] < nu_r) and (nu_r < nu_max)):    idx_r = N_grid_1 + N_grid_2 + find_index(nu_r, nu_fine_3_start, nu_fine_3_end, N_grid_3)
         
+        if   ((nu_min < nu_k)    and (nu_k < nu_ref[1])): idx = find_index(nu_k, nu_fine_1_start, nu_fine_1_end, N_grid_1)
+        elif ((nu_ref[1] < nu_k) and (nu_k < nu_ref[2])): idx = N_grid_1 + find_index(nu_k, nu_fine_2_start, nu_fine_2_end, N_grid_2)
+        elif ((nu_ref[2] < nu_k) and (nu_k < nu_max)):    idx = N_grid_1 + N_grid_2 + find_index(nu_k, nu_fine_3_start, nu_fine_3_end, N_grid_3)
+  
+        
         # If averaging cross section within given bin
-        if (option==0): sigma_out[k] = np.mean(sigma_fine[idx_l:(idx_r+1)])
+        if (option==0): sigma_out[k] = sigma_fine[idx]
+        
+        #np.mean(sigma_fine[idx_l:(idx_r+1)])
         
         # If log-averaging cross section within given bin
         elif (option==1): sigma_out[k] = np.power(10.0, np.mean(np.log10(sigma_fine[idx_l:(idx_r+1)])))
@@ -1016,6 +1028,8 @@ def bin_cross_section_atom(sigma_fine, sigma_out, nu_fine_start, nu_fine_end, nu
     #log_sigma_fine = np.log10(sigma_fine)
     
     for k in range(N_out):
+        
+        nu_k = nu_out[k]
         
         # Locate wavenumber values corresponding to left and right bin edges
         if (k!=0) and (k!=(N_out-1)):    
@@ -1035,9 +1049,12 @@ def bin_cross_section_atom(sigma_fine, sigma_out, nu_fine_start, nu_fine_end, nu
         # Find nearest indicies on fine grid corresponding to bin edges
         idx_l = find_index(nu_l, nu_fine_start, nu_fine_end, N_fine)   
         idx_r = find_index(nu_r, nu_fine_start, nu_fine_end, N_fine)
+        idx = find_index(nu_k, nu_fine_start, nu_fine_end, N_fine)
         
         # If averaging cross section within given bin
-        if (option==0): sigma_out[k] = np.mean(sigma_fine[idx_l:(idx_r+1)])
+        if (option==0): sigma_out[k] = sigma_fine[idx]
+        
+        # np.mean(sigma_fine[idx_l:(idx_r+1)])
         
         # If log-averaging cross section within given bin
         elif (option==1): sigma_out[k] = np.power(10.0, np.mean(np.log10(sigma_fine[idx_l:(idx_r+1)])))
