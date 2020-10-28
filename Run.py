@@ -19,7 +19,7 @@ summon(species = species, database = database)
 # Create cross section
 nu, sigma = compute_cross_section(input_dir = './input/', database = database, 
                                   species = species, log_pressure = np.log10(P), 
-                                  temperature = T)
+                                  temperature = T, N_cores = 4)
 
 # Plot cross section
 plot_sigma_wl(nu_arr = nu, sigma_arr = sigma, species = species, temperature = T, 
