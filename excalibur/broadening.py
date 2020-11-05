@@ -80,6 +80,28 @@ def create_SB07(input_directory):
 
 
 def read_H2_He(input_directory):
+    '''
+    Read the H2 and He broadening files from the input directory
+
+    Parameters
+    ----------
+    input_directory : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    J_max : TYPE
+        DESCRIPTION.
+    gamma_0_H2 : TYPE
+        DESCRIPTION.
+    n_L_H2 : TYPE
+        DESCRIPTION.
+    gamma_0_He : TYPE
+        DESCRIPTION.
+    n_L_He : TYPE
+        DESCRIPTION.
+
+    '''
 
     # Read in H2 broadening file
     broad_file_H2 = pd.read_csv(input_directory + 'H2.broad',
@@ -117,6 +139,24 @@ def read_H2_He(input_directory):
 
 
 def read_air(input_directory):
+    '''
+    Read the air broadening file from the input directory
+
+    Parameters
+    ----------
+    input_directory : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    J_max : TYPE
+        DESCRIPTION.
+    gamma_0_air : TYPE
+        DESCRIPTION.
+    n_L_air : TYPE
+        DESCRIPTION.
+
+    '''
 
     # Read in air broadening file
     broad_file_air = pd.read_csv(input_directory + 'air.broad',
@@ -129,6 +169,22 @@ def read_air(input_directory):
 
 
 def read_SB07(input_directory):
+    '''
+    Read the Burrows broadening file from the input directory
+
+    Parameters
+    ----------
+    input_directory : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    J_max : TYPE
+        DESCRIPTION.
+    gamma_0_SB07 : TYPE
+        DESCRIPTION.
+
+    '''
 
     # Read in Sharp & Burrows (2007) broadening file
     broad_file_SB07 = pd.read_csv(input_directory + 'SB07.broad',
@@ -141,6 +197,24 @@ def read_SB07(input_directory):
 
 
 def read_custom(input_directory):
+    '''
+    Read a user-provided broadening file from the input directory
+
+    Parameters
+    ----------
+    input_directory : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    J_max : TYPE
+        DESCRIPTION.
+    gamma_0_air : TYPE
+        DESCRIPTION.
+    n_L_air : TYPE
+        DESCRIPTION.
+
+    '''
 
     # Read in custom broadening file
     broad_file_custom = pd.read_csv(input_directory + 'custom.broad',

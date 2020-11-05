@@ -9,7 +9,7 @@ import excalibur.downloader as download
 
 def check(mol, ion, VALD_data_dir):
     '''
-    
+    Check if VALD has a line list for the specified atom and ionization state
 
     Parameters
     ----------
@@ -34,6 +34,22 @@ def check(mol, ion, VALD_data_dir):
         
         
 def determine_linelist(VALD_data_dir):
+    '''
+    Use user prompts to determine which VALD line list to download
+
+    Parameters
+    ----------
+    VALD_data_dir : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    molecule : TYPE
+        DESCRIPTION.
+    ionization_state : TYPE
+        DESCRIPTION.
+
+    '''
     
     while True:
         molecule = input("What atom would you like to download the line list for? \n")
@@ -269,6 +285,23 @@ def process_VALD_file(species, ionization_state, VALD_data_dir):
     
     
 def summon_VALD(molecule, ionization_state, VALD_data_dir):
+    '''
+    Retrieve the desired line list from VALD
+
+    Parameters
+    ----------
+    molecule : TYPE
+        DESCRIPTION.
+    ionization_state : TYPE
+        DESCRIPTION.
+    VALD_data_dir : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    '''
     
     print("\n ***** Processing requested data from VALD. You have chosen the following parameters: ***** ")
     print("\nAtom:", molecule, "\nIonization State:", ionization_state)

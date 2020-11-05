@@ -435,7 +435,7 @@ def create_directories(molecule = '', isotopologue = '', line_list = '', databas
                        mol_ID = '', iso_ID = '', ionization_state = 1, VALD_data_dir = '',
                        **kwargs):
     '''
-    Create new folders to store the relevant data
+    Create new folders on local machine to store the relevant data
 
     Parameters
     ----------
