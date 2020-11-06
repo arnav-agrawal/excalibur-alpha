@@ -11,8 +11,8 @@ def det_broad(input_directory):
 
     Parameters
     ----------
-    input_directory : TYPE
-        DESCRIPTION.
+    input_directory : String
+        Local directory where the broadening file will be stored.
 
     Returns
     -------
@@ -48,8 +48,8 @@ def create_SB07(input_directory):
 
     Parameters
     ----------
-    input_directory : TYPE
-        DESCRIPTION.
+    input_directory : String
+         Local directory where the broadening file will be stored.
 
     Returns
     -------
@@ -144,8 +144,8 @@ def read_air(input_directory):
 
     Parameters
     ----------
-    input_directory : TYPE
-        DESCRIPTION.
+    input_directory : String
+         Local directory where the broadening file will be stored.
 
     Returns
     -------
