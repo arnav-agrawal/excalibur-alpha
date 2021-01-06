@@ -1,0 +1,367 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Broadening &mdash; Excalibur-alpha 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Getting Started" href="getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Excalibur-alpha
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Broadening</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Excalibur-alpha</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Broadening</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/broadening.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-broadening">
+<span id="broadening"></span><h1>Broadening<a class="headerlink" href="#module-broadening" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="broadening.create_SB07">
+<code class="sig-prename descclassname">broadening.</code><code class="sig-name descname">create_SB07</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#broadening.create_SB07" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a broadening file according to Eq. 15 of Sharp &amp; Burrows (2007),
+and add it to the input_directory.</p>
+<p>Note: S&amp;B (2007) state Eq. 15 gives the FWHM. Personal communication from
+Richard Freedman indicates the equation actually gives the HWHM.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>input_directory</strong> (<em>String</em>) – Local directory where the broadening file will be stored.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="broadening.det_broad">
+<code class="sig-prename descclassname">broadening.</code><code class="sig-name descname">det_broad</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#broadening.det_broad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine the type of broadening that should be used in the case that the user specifies
+‘default’ broadening. Order of preference is: 1) H2-He, 2) air, 3) SB07</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>input_directory</strong> (<em>String</em>) – Local directory where the broadening file will be stored.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>broadening</strong> – The type of broadening being used.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>String</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="broadening.gamma_L_VALD">
+<code class="sig-prename descclassname">broadening.</code><code class="sig-name descname">gamma_L_VALD</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gamma_vdw</span></em>, <em class="sig-param"><span class="n">m_s</span></em>, <em class="sig-param"><span class="n">broadener</span></em><span class="sig-paren">)</span><a class="headerlink" href="#broadening.gamma_L_VALD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes Lorentzian HWHM at 296K and 1 bar for a given broadener from a
+tabulated VALD van der Waals broadening constant.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gamma_vdw</strong> (<em>float</em>) – van der Waals parameter from VALD.</p></li>
+<li><p><strong>m_s</strong> (<em>float</em>) – mass of species whose spectral line is being broadened (u).</p></li>
+<li><p><strong>broadener</strong> (<em>str</em>) – identity of broadening species (H2 or He).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>gamma_L_0</strong> (<em>float</em>) – Lorentzian HWHM at reference T (296K) and P (1 bar).</p></li>
+<li><p><strong>n_L</strong> (<em>float</em>) – Temperature exponent (fixed to -0.7 for van der Waals theory).</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="broadening.gamma_L_impact">
+<code class="sig-prename descclassname">broadening.</code><code class="sig-name descname">gamma_L_impact</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">E_low</span></em>, <em class="sig-param"><span class="n">E_up</span></em>, <em class="sig-param"><span class="n">l_low</span></em>, <em class="sig-param"><span class="n">l_up</span></em>, <em class="sig-param"><span class="n">species</span></em>, <em class="sig-param"><span class="n">m_s</span></em>, <em class="sig-param"><span class="n">broadener</span></em><span class="sig-paren">)</span><a class="headerlink" href="#broadening.gamma_L_impact" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes Lorentzian HWHM at 296K and 1 bar for a given broadener using
+van der Waals impact theory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>E_low</strong> (<em>float</em>) – Lower level energy (cm^-1).</p></li>
+<li><p><strong>E_up</strong> (<em>float</em>) – Upper level energy (cm^-1).</p></li>
+<li><p><strong>l_low</strong> (<em>int</em>) – Lower level orbital angular momentum.</p></li>
+<li><p><strong>l_up</strong> (<em>int</em>) – Upper level orbital angular momentum.</p></li>
+<li><p><strong>species</strong> (<em>str</em>) – Identity of species whose spectral line is being broadened.</p></li>
+<li><p><strong>m_s</strong> (<em>float</em>) – Mass of species whose spectral line is being broadened (u).</p></li>
+<li><p><strong>broadener</strong> (<em>str</em>) – Identity of broadening species (H2 or He).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>gamma_L_0</strong> (<em>float</em>) – Lorentzian HWHM at reference T (296K) and P (1 bar).</p></li>
+<li><p><strong>n_L</strong> (<em>float</em>) – Temperature exponent (fixed to -0.7 for van der Waals theory).</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="broadening.read_H2_He">
+<code class="sig-prename descclassname">broadening.</code><code class="sig-name descname">read_H2_He</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#broadening.read_H2_He" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the H2 and He broadening files from the input directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>input_directory</strong> (<em>TYPE</em>) – DESCRIPTION.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>J_max</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>gamma_0_H2</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>n_L_H2</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>gamma_0_He</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>n_L_He</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="broadening.read_SB07">
+<code class="sig-prename descclassname">broadening.</code><code class="sig-name descname">read_SB07</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#broadening.read_SB07" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the Burrows broadening file from the input directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>input_directory</strong> (<em>TYPE</em>) – DESCRIPTION.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>J_max</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>gamma_0_SB07</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="broadening.read_air">
+<code class="sig-prename descclassname">broadening.</code><code class="sig-name descname">read_air</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#broadening.read_air" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the air broadening file from the input directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>input_directory</strong> (<em>String</em>) – Local directory where the broadening file will be stored.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>J_max</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>gamma_0_air</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>n_L_air</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="broadening.read_custom">
+<code class="sig-prename descclassname">broadening.</code><code class="sig-name descname">read_custom</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#broadening.read_custom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read a user-provided broadening file from the input directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>input_directory</strong> (<em>TYPE</em>) – DESCRIPTION.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>J_max</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>gamma_0_air</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>n_L_air</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="getting_started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Arnav Agrawal, Ryan MacDonald
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

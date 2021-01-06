@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+numba
+requests
+bs4
+tqdm
+pandas
+h5py
+lxml

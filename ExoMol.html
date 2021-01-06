@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ExoMol &mdash; Excalibur-alpha 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="HITEMP" href="HITEMP.html" />
+    <link rel="prev" title="downloader" href="downloader.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Excalibur-alpha
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="broadening.html">Broadening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate.html">Calculate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constants.html">Constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core.html">Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="downloader.html">downloader</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ExoMol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HITEMP.html">HITEMP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HITRAN.html">HITRAN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Miscellaneous</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plot.html">Plot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="VALD.html">VALD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Voigt.html">Voigt</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Excalibur-alpha</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>ExoMol</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/ExoMol.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-ExoMol">
+<span id="exomol"></span><h1>ExoMol<a class="headerlink" href="#module-ExoMol" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="ExoMol.check">
+<code class="sig-prename descclassname">ExoMol.</code><code class="sig-name descname">check</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">molecule</span></em>, <em class="sig-param"><span class="n">isotope</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">linelist</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ExoMol.check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the parameters passed into the summon() function by the user are valid to use with the ExoMol database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>molecule</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>isotope</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>linelist</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ExoMol.determine_parameters">
+<code class="sig-prename descclassname">ExoMol.</code><code class="sig-name descname">determine_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExoMol.determine_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the desired molecular line list from ExoMol from user input</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p><strong>molecule</strong> (<em>String</em>) – DESCRIPTION.</p></li>
+<li><p><strong>isotopologue</strong> (<em>String</em>) – DESCRIPTION.</p></li>
+<li><p><strong>linelist</strong> (<em>String</em>) – DESCRIPTION.</p></li>
+<li><p><strong>website</strong> (<em>String</em>) – DESCRIPTION.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ExoMol.get_default_iso">
+<code class="sig-prename descclassname">ExoMol.</code><code class="sig-name descname">get_default_iso</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">molecule</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ExoMol.get_default_iso" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the default (most abundant on Earth) isotopologue given a molecule</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>molecule</strong> (<em>String</em>) – DESCRIPTION.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>default_iso</strong> – DESCRIPTION.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>String</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ExoMol.get_default_linelist">
+<code class="sig-prename descclassname">ExoMol.</code><code class="sig-name descname">get_default_linelist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">molecule</span></em>, <em class="sig-param"><span class="n">isotopologue</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ExoMol.get_default_linelist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a default line list for a given ExoMol molecule and isotopologue
+These are sometimes changed as ExoMol releases better and more up-to-date line lists</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>molecule</strong> (<em>str</em>) – DESCRIPTION.</p></li>
+<li><p><strong>isotopologue</strong> (<em>str</em>) – DESCRIPTION.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>DESCRIPTION.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ExoMol.load_states">
+<code class="sig-prename descclassname">ExoMol.</code><code class="sig-name descname">load_states</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_directory</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ExoMol.load_states" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read in the ‘.states’ file downloaded from ExoMol</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>input_directory</strong> (<em>String</em>) – Directory that contains all the ExoMol downloaded files for the desired molecule/
+isotopologue/line list.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>E</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>g</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>J</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ExoMol.process_files">
+<code class="sig-prename descclassname">ExoMol.</code><code class="sig-name descname">process_files</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ExoMol.process_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Processes the .broad and .pf files downloaded from ExoMol into a format that Cthulhu.py can read to create cross-sections</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>input_dir</strong> (<em>TYPE</em>) – DESCRIPTION.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ExoMol.summon_ExoMol">
+<code class="sig-prename descclassname">ExoMol.</code><code class="sig-name descname">summon_ExoMol</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">molecule</span></em>, <em class="sig-param"><span class="n">isotopologue</span></em>, <em class="sig-param"><span class="n">line_list</span></em>, <em class="sig-param"><span class="n">URL</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ExoMol.summon_ExoMol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main function, uses calls to other functions to perform the download</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>molecule</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>isotopologue</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>line_list</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>URL</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="HITEMP.html" class="btn btn-neutral float-right" title="HITEMP" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="downloader.html" class="btn btn-neutral float-left" title="downloader" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Arnav Agrawal, Ryan MacDonald
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

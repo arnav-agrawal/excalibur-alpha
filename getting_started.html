@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting Started &mdash; Excalibur-alpha 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Broadening" href="broadening.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Excalibur-alpha
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-summon-function">1) The <code class="docutils literal notranslate"><span class="pre">summon</span></code> function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-compute-cross-section-function">2) The <code class="docutils literal notranslate"><span class="pre">compute_cross_section</span></code> function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-plot-sigma-wl-function">3) The <code class="docutils literal notranslate"><span class="pre">plot_sigma_wl</span></code> function</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="broadening.html">Broadening</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Excalibur-alpha</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Getting Started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/getting_started.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>The Run.py file is where the end-user will spend most of their time. The user can use the <code class="docutils literal notranslate"><span class="pre">summon</span></code> function
+to download line lists, the <code class="docutils literal notranslate"><span class="pre">compute_cross_section</span></code> function to compute cross-sections, and the <code class="docutils literal notranslate"><span class="pre">plot_sigma_wl</span></code>
+function to plot the results of the output cross-sections.</p>
+<p>We will work through each of these in turn to demonstrate how to use the Run.py file.</p>
+<div class="section" id="the-summon-function">
+<h2>1) The <code class="docutils literal notranslate"><span class="pre">summon</span></code> function<a class="headerlink" href="#the-summon-function" title="Permalink to this headline">¶</a></h2>
+<p>Let’s take a look at the <code class="docutils literal notranslate"><span class="pre">summon</span></code> function and the arguments it takes before seeing how to use it.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">summon</span><span class="p">(</span><span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">species</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">isotope</span> <span class="o">=</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">VALD_data_dir</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+       <span class="n">linelist</span> <span class="o">=</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">ionization_state</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>We see that users can specify:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>the database</p></li>
+<li><p>species</p></li>
+<li><p>isotope</p></li>
+<li><p>VALD_data_dir (the relative path to the folder we have provided containing VALD line lists)</p></li>
+<li><p>linelist (usually for ExoMol where there are multiple line lists for each molecule)</p></li>
+<li><p>ionization_state (for VALD atomic line lists)</p></li>
+</ul>
+</div></blockquote>
+<p>You can use as many, or as few of these arguments as desired. The minimum required is the database and species.</p>
+<p>Example 1: Downloading the H20 line list from HITRAN</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">excalibur.core</span> <span class="kn">import</span> <span class="n">summon</span>
+
+<span class="n">species</span> <span class="o">=</span> <span class="s1">&#39;H2O&#39;</span>
+<span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;HITRAN&#39;</span>
+
+<span class="c1"># Download line list</span>
+<span class="n">summon</span><span class="p">(</span><span class="n">database</span><span class="o">=</span><span class="n">database</span><span class="p">,</span> <span class="n">species</span> <span class="o">=</span> <span class="n">species</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Example 2: Downloading the BT2 line list for H2O from ExoMol
+The default line list for H2O is the Pokazatel line list, but say we want to download the BT2 line list for some reason.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">excalibur.core</span> <span class="kn">import</span> <span class="n">summon</span>
+
+<span class="n">species</span> <span class="o">=</span> <span class="s1">&#39;H2O&#39;</span>
+<span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;ExoMol&#39;</span>
+<span class="n">linelist</span> <span class="o">=</span> <span class="s1">&#39;BT2&#39;</span>
+
+<span class="c1"># Download line list</span>
+<span class="n">summon</span><span class="p">(</span><span class="n">database</span><span class="o">=</span><span class="n">database</span><span class="p">,</span> <span class="n">species</span> <span class="o">=</span> <span class="n">species</span><span class="p">,</span> <span class="n">linelist</span> <span class="o">=</span> <span class="n">linelist</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Example 3: Downloading the line list of the second ionization state of oxygen from VALD</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">excalibur.core</span> <span class="kn">import</span> <span class="n">summon</span>
+
+<span class="n">species</span> <span class="o">=</span> <span class="s1">&#39;O&#39;</span>
+<span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;VALD&#39;</span>
+<span class="n">ionization_state</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">VALD_data_dir</span> <span class="o">=</span> <span class="s1">&#39;./VALD Line Lists/&#39;</span>
+
+
+<span class="c1"># Download line list</span>
+<span class="n">summon</span><span class="p">(</span><span class="n">database</span><span class="o">=</span><span class="n">database</span><span class="p">,</span> <span class="n">species</span> <span class="o">=</span> <span class="n">species</span><span class="p">,</span> <span class="n">ionization_state</span> <span class="o">=</span>  <span class="n">ionization_state</span><span class="p">,</span> <span class="n">VALD_data_dir</span> <span class="o">=</span> <span class="n">VALD_data_dir</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Keep in mind that a path needs to be specified to read in the VALD line lists we have provided.
+Assuming that the user hasn’t moved this ‘VALD Line Lists’ folder anywhere, the path we use here
+will work as a default.</p>
+<p>The line lists will all be downloaded in an ‘input’ folder that is one directory above where the exclibur-alpha folder is
+stored on your local machine.</p>
+</div>
+<div class="section" id="the-compute-cross-section-function">
+<h2>2) The <code class="docutils literal notranslate"><span class="pre">compute_cross_section</span></code> function<a class="headerlink" href="#the-compute-cross-section-function" title="Permalink to this headline">¶</a></h2>
+<p>This section describes how to compute the cross-section of a species at a given temperature and presssure.
+For info on computing cross sections for a grid of temperatures and pressures on a cluster, please see the ‘Cluster Run’
+section.</p>
+<p>Let’s look at the <code class="docutils literal notranslate"><span class="pre">compute_cross_section</span></code> function.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">compute_cross_section</span><span class="p">(</span><span class="n">input_dir</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">species</span><span class="p">,</span> <span class="n">log_pressure</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">isotope</span> <span class="o">=</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span>
+                            <span class="n">ionization_state</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">linelist</span> <span class="o">=</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">cluster_run</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+                            <span class="n">nu_out_min</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span> <span class="n">nu_out_max</span> <span class="o">=</span> <span class="mi">25000</span><span class="p">,</span> <span class="n">dnu_out</span> <span class="o">=</span> <span class="mf">0.01</span><span class="p">,</span> <span class="n">broad_type</span> <span class="o">=</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span>
+                            <span class="n">X_H2</span> <span class="o">=</span> <span class="mf">0.85</span><span class="p">,</span> <span class="n">X_He</span> <span class="o">=</span> <span class="mf">0.15</span><span class="p">,</span> <span class="n">Voigt_cutoff</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span> <span class="n">Voigt_sub_spacing</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.0</span><span class="o">/</span><span class="mf">6.0</span><span class="p">),</span>
+                            <span class="n">N_alpha_samples</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span> <span class="n">S_cut</span> <span class="o">=</span> <span class="mf">1.0e-100</span><span class="p">,</span> <span class="n">cut_max</span> <span class="o">=</span> <span class="mf">30.0</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>Most of these arguments take on a default value. The ones the user has to worry about is:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>input_dir (the prefix of the folder where the line list is stored, use the one we provided as a default)</p></li>
+<li><p>database</p></li>
+<li><p>species</p></li>
+<li><p>log_pressure</p></li>
+<li><p>temperature</p></li>
+</ul>
+</div></blockquote>
+<p>Specify the database, species, log_pressure, and temperature to compute a cross-section for a species with
+those specifications (assuming the line list has already been downloaded)</p>
+<p>Example 1: Compute the cross-section for H2O (HITRAN line list) at 1 bar and 1200 Kelvin</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">species</span> <span class="o">=</span> <span class="s1">&#39;H2O&#39;</span>
+<span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;HITRAN&#39;</span>
+
+<span class="n">P</span> <span class="o">=</span> <span class="mi">1</span>       <span class="c1"># Pressure (bar)</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">1200</span>    <span class="c1"># Temperature (K)</span>
+
+<span class="n">nu</span><span class="p">,</span> <span class="n">sigma</span> <span class="o">=</span> <span class="n">compute_cross_section</span><span class="p">(</span><span class="n">input_dir</span> <span class="o">=</span> <span class="s1">&#39;./input/&#39;</span><span class="p">,</span> <span class="n">database</span> <span class="o">=</span> <span class="n">database</span><span class="p">,</span>
+                                  <span class="n">species</span> <span class="o">=</span> <span class="n">species</span><span class="p">,</span> <span class="n">log_pressure</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">P</span><span class="p">),</span>
+                                  <span class="n">temperature</span> <span class="o">=</span> <span class="n">T</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The results of this are stored in .txt files with wavenumber in the left column and sigma in the right column.
+Note that <code class="docutils literal notranslate"><span class="pre">nu</span></code> and <code class="docutils literal notranslate"><span class="pre">sigma</span></code> are returned by the <code class="docutils literal notranslate"><span class="pre">compute_cross_section</span></code> function. These are used, as shown in the next section,
+to plot cross-section.</p>
+</div>
+<div class="section" id="the-plot-sigma-wl-function">
+<h2>3) The <code class="docutils literal notranslate"><span class="pre">plot_sigma_wl</span></code> function<a class="headerlink" href="#the-plot-sigma-wl-function" title="Permalink to this headline">¶</a></h2>
+<p>This section shows how to plot an outputted cross-section.</p>
+<p>Let’s look at the  <code class="docutils literal notranslate"><span class="pre">plot_sigma_wl</span></code> function.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_sigma_wl</span><span class="p">(</span><span class="n">species</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">log_pressure</span><span class="p">,</span> <span class="n">nu_arr</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">sigma_arr</span> <span class="o">=</span> <span class="p">[],</span>
+                  <span class="n">file</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">plot_dir</span> <span class="o">=</span> <span class="s1">&#39;./plots/&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>Most of these arguments take on a default value. The ones the user has to worry about is:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>species</p></li>
+<li><p>temperature</p></li>
+<li><p>log_pressure</p></li>
+<li><p>nu_arr (nu array to plot)</p></li>
+<li><p>sigma_arr (sigma array to plot)</p></li>
+<li><p>plot_dir (where the plot will be stored, default is a folder called ‘plots’ one directory out)</p></li>
+</ul>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">species</span></code>, <code class="docutils literal notranslate"><span class="pre">temperature</span></code>, and <code class="docutils literal notranslate"><span class="pre">log_pressure</span></code> are used to name the outputted file appropriately.
+Currently, we do not support passing in files to be plotted by this function, but that is in the works.</p>
+<p>Here is an example of the <code class="docutils literal notranslate"><span class="pre">plot_sigma_wl</span></code> function and the plot it produces, using the nu and sigma arrays returned
+from Example 2.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">species</span> <span class="o">=</span> <span class="s1">&#39;H2O&#39;</span>
+<span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;HITRAN&#39;</span>
+
+<span class="n">P</span> <span class="o">=</span> <span class="mi">1</span>       <span class="c1"># Pressure (bar)</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">1200</span>    <span class="c1"># Temperature (K)</span>
+
+<span class="c1"># Plot cross section</span>
+<span class="n">plot_sigma_wl</span><span class="p">(</span><span class="n">nu_arr</span> <span class="o">=</span> <span class="n">nu</span><span class="p">,</span> <span class="n">sigma_arr</span> <span class="o">=</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">species</span> <span class="o">=</span> <span class="n">species</span><span class="p">,</span> <span class="n">temperature</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span>
+              <span class="n">log_pressure</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">P</span><span class="p">),</span> <span class="n">database</span> <span class="o">=</span> <span class="n">database</span><span class="p">,</span> <span class="n">plot_dir</span> <span class="o">=</span> <span class="s1">&#39;./plots/&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/H2O_1200K_1.0bar_HITRAN.png" src="_images/H2O_1200K_1.0bar_HITRAN.png" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="broadening.html" class="btn btn-neutral float-right" title="Broadening" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Arnav Agrawal, Ryan MacDonald
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

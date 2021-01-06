@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Miscellaneous &mdash; Excalibur-alpha 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Plot" href="plot.html" />
+    <link rel="prev" title="HITRAN" href="HITRAN.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Excalibur-alpha
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="broadening.html">Broadening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate.html">Calculate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constants.html">Constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core.html">Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="downloader.html">downloader</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ExoMol.html">ExoMol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HITEMP.html">HITEMP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HITRAN.html">HITRAN</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Miscellaneous</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plot.html">Plot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="VALD.html">VALD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Voigt.html">Voigt</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Excalibur-alpha</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Miscellaneous</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/misc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-misc">
+<span id="miscellaneous"></span><h1>Miscellaneous<a class="headerlink" href="#module-misc" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="misc.check_molecule">
+<code class="sig-prename descclassname">misc.</code><code class="sig-name descname">check_molecule</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">molecule</span></em><span class="sig-paren">)</span><a class="headerlink" href="#misc.check_molecule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the given string is a molecule</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>molecule</strong> (<em>String</em>) – Molecular formula.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>True if the given string is a molecule, false otherwise (if it is an atom)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="misc.read_output">
+<code class="sig-prename descclassname">misc.</code><code class="sig-name descname">read_output</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">output_directory</span></em>, <em class="sig-param"><span class="n">molecule</span></em>, <em class="sig-param"><span class="n">T</span></em>, <em class="sig-param"><span class="n">log_P</span></em><span class="sig-paren">)</span><a class="headerlink" href="#misc.read_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read in wavenumber and cross-section from  file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_directory</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>molecule</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>T</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>log_P</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>nu</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>sigma</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="misc.write_output">
+<code class="sig-prename descclassname">misc.</code><code class="sig-name descname">write_output</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">output_directory</span></em>, <em class="sig-param"><span class="n">molecule</span></em>, <em class="sig-param"><span class="n">T</span></em>, <em class="sig-param"><span class="n">log_P</span></em>, <em class="sig-param"><span class="n">nu_out</span></em>, <em class="sig-param"><span class="n">sigma_out</span></em><span class="sig-paren">)</span><a class="headerlink" href="#misc.write_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write wavenumber and cross-section to output file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_directory</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>molecule</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>T</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>log_P</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>nu_out</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>sigma_out</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="plot.html" class="btn btn-neutral float-right" title="Plot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="HITRAN.html" class="btn btn-neutral float-left" title="HITRAN" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Arnav Agrawal, Ryan MacDonald
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

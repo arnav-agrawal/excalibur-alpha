@@ -1,0 +1,248 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Voigt &mdash; Excalibur-alpha 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="VALD" href="VALD.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Excalibur-alpha
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="broadening.html">Broadening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate.html">Calculate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constants.html">Constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core.html">Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="downloader.html">downloader</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ExoMol.html">ExoMol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HITEMP.html">HITEMP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HITRAN.html">HITRAN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Miscellaneous</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plot.html">Plot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="VALD.html">VALD</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Voigt</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Excalibur-alpha</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Voigt</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Voigt.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-Voigt">
+<span id="voigt"></span><h1>Voigt<a class="headerlink" href="#module-Voigt" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="Voigt.precompute">
+<code class="sig-prename descclassname">Voigt.</code><code class="sig-name descname">precompute</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nu_compute</span></em>, <em class="sig-param"><span class="n">dnu_out</span></em>, <em class="sig-param"><span class="n">m</span></em>, <em class="sig-param"><span class="n">T</span></em>, <em class="sig-param"><span class="n">Voigt_sub_spacing</span></em>, <em class="sig-param"><span class="n">Voigt_cutoff</span></em>, <em class="sig-param"><span class="n">N_alpha_samples</span></em>, <em class="sig-param"><span class="n">gamma_L</span></em>, <em class="sig-param"><span class="n">cut_max</span></em><span class="sig-paren">)</span><a class="headerlink" href="#Voigt.precompute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pre-compute Voigt profiles and derivatives, for use in the Perturbed
+Template Voigt (PTB) method of molecular cross section computation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nu_compute</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>dnu_out</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>m</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>T</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>Voigt_sub_spacing</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>Voigt_cutoff</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>N_alpha_samples</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>gamma_L</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>cut_max</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>nu_sampled</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>alpha_sampled</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>cutoffs</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>N_Voigt</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>Voigt_arr</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>dV_da_arr</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>dV_dnu_arr</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+<li><p><strong>dnu_Voigt</strong> (<em>TYPE</em>) – DESCRIPTION.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="VALD.html" class="btn btn-neutral float-left" title="VALD" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Arnav Agrawal, Ryan MacDonald
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
