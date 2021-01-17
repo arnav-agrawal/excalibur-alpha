@@ -13,7 +13,7 @@
 
 import os
 import sys
-import mock
+#import mock
 
 #MOCK_MODULES = ['numpy', 'scipy', 'matplotlib', 'matplotlib.pyplot', 'scipy.interpolate']
 #for mod_name in MOCK_MODULES:
@@ -60,4 +60,7 @@ html_theme = 'sphinx_rtd_theme'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+
+#html_static_path = ['_static']
+html_static_path = []   # Changed to this from above line to get rid of
+#'WARNING: html_static_path entry '_static' does not exist'

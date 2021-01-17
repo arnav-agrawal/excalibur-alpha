@@ -8,7 +8,7 @@ from excalibur.plot import plot_sigma_wl
 
 # Parameters
 species = 'H2O'
-database = 'HITRAN'
+database = 'ExoMol'
 
 P = 1       # Pressure (bar)
 T = 1000    # Temperature (K)
@@ -17,10 +17,10 @@ T = 1000    # Temperature (K)
 summon(species = species, database = database)
 
 # Create cross section
-nu, sigma = compute_cross_section(input_dir = './input/', database = database, 
+"""nu, sigma = compute_cross_section(input_dir = './input/', database = database, 
                                   species = species, log_pressure = np.log10(P), 
-                                  temperature = T, N_cores = 4)
+                                  temperature = T, N_cores = 4)"""
 
 # Plot cross section
-plot_sigma_wl(nu_arr = nu, sigma_arr = sigma, species = species, temperature = T, 
-              log_pressure = np.log10(P), database = database, plot_dir = './plots/')
+"""plot_sigma_wl(nu_arr = nu, sigma_arr = sigma, species = species, temperature = T, 
+              log_pressure = np.log10(P), database = database, plot_dir = './plots/')"""

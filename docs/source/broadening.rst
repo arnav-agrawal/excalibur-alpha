@@ -1,5 +1,0 @@
-Broadening
-----------
-
-.. automodule:: broadening
-   :members:

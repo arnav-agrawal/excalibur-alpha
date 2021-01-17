@@ -12,9 +12,12 @@ Welcome to Excalibur-alpha's documentation!
 .. toctree::
    :maxdepth: 2
 
-   introduction
-   installation
-   getting_started
+   introduction.rst
+   installation.rst
+   getting_started.rst
+   code.rst
+
+
 
 
 
