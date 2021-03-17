@@ -237,13 +237,41 @@ def compute_cross_section(sigma, nu_grid, nu_0, cutoffs, S, J_lower, alpha,
             # 1st order Taylor expansion in alpha and Delta_nu
             sigma[k] += S_i * (Voigt_0[k_ref] + (dV_da_0[k_ref] * d_alpha) +
                                                 (dV_dnu_0[k_ref] * d_Delta_nu))
-
             
 
+@jit(nopython=True, parallel=True)
+def compute_cross_section_atom(sigma, nu_grid, nu_0, S, cutoffs, N_Voigt, Voigt_arr):
+    
+    # Store variables that are constant acros all lines to save lookup time
+    N_grid = len(nu_grid)
+    nu_grid_min = nu_grid[0]
+    nu_grid_max = nu_grid[-1]    
+    
+    for i in prange(len(nu_0)):
+    
+        # Store commonly used quantities as variabls to save lookup time
+        N_V = N_Voigt[i]
+        nu_0_i = nu_0[i]
+        S_i = S[i]
+        
+        # Store wing cutoff for this transition
+        cutoff = cutoffs[i]
+    
+        # Load pre-computed Voigt array for this line
+        profile = Voigt_arr[i,:]
+            
+        # Find index range on computational grid within line wing cutoff          
+        idx_left = prior_index((nu_0_i - cutoff), nu_grid_min, nu_grid_max, N_grid) + 1
+        idx_right = prior_index((nu_0_i + cutoff), nu_grid_min, nu_grid_max, N_grid)
+            
+        # Add contribution of this line to the cross section        
+        sigma[idx_left:idx_right+1] += S_i * profile[0:N_V]
+    
+
 # TBD: optimise atomic calculation time
-def compute_cross_section_atom(sigma, N_grid, nu_0, nu_detune, nu_fine_start,
-                               nu_fine_end, S, T, alpha, gamma, cutoffs, 
-                               N_Voigt_points, species_ID, nu_min, nu_max):
+def compute_cross_section_atom_OLD(sigma, N_grid, nu_0, nu_detune, nu_fine_start,
+                                   nu_fine_end, S, T, alpha, gamma, cutoffs, 
+                                   N_Voigt_points, species_ID, nu_min, nu_max):
     
     for i in range(len(nu_0)):
     
@@ -301,6 +329,7 @@ def compute_cross_section_atom(sigma, N_grid, nu_0, nu_detune, nu_fine_start,
                     
                 sigma[idx+k] += opac_val    # Forward direction
                 sigma[idx-k] += opac_val    # Backward direction 
+            
             
 
     
@@ -412,7 +441,6 @@ def cross_section_HITRAN(linelist_files, input_directory, nu_grid, sigma,
                          alpha_sampled, m, T, Q_T, Q_ref, J_max, N_Voigt, 
                          cutoffs, Voigt_arr, dV_da_arr, dV_dnu_arr, dnu_Voigt, S_cut):
     
-    
     # Initialise counters for number of completed transitions
     nu_0_tot = 0
     nu_0_completed = 0
@@ -505,49 +533,43 @@ def cross_section_HITRAN(linelist_files, input_directory, nu_grid, sigma,
     print('Calculation complete!')
     print('Completed ' + str(nu_0_tot) + ' transitions in ' + str(total_calc) + ' s')
 
-
-
-
-def produce_total_cross_section_VALD_atom(sigma_fine, nu_0_in, nu_detune, 
-                                          E_low, gf, m, T, Q_T, N_points_fine,
-                                          N_Voigt_points, alpha, gamma, cutoffs,
-                                          nu_min, nu_max, S_cut, species):
+def produce_total_cross_section_VALD_atom(nu_grid, sigma, nu_0_in, 
+                                          E_low, gf, m, T, Q_T, N_Voigt, cutoffs,
+                                          Voigt_arr, S_cut):
     
-    if   (species == 'Na'): species_ID = 0  # Flag for sub-Lorentizan treatment
-    elif (species == 'K'):  species_ID = 1  # Flag for sub-Lorentizan treatment
-    else: species_ID = -1    # Else, just treat as Voigt profile
-    
-    nu_fine_start = nu_min
-    nu_fine_end = nu_max
-    
+    # Initialise counters for number of completed transitions
     nu_0_tot = 0
-        
-    t_begin_calc = time.clock()
-        
-    print('Computing transitions for ' + species)
     
+    # Store variables to be used in future loops
+    nu_min = nu_grid[0]   # Minimum wavenumner on computational grid
+    nu_max = nu_grid[-1]  # Maximum wavenumber on computational grid
+    
+    # Start timer for cross section computation
+    t_begin_calc = time.perf_counter()
+        
     # Remove transitions outside computational grid
     nu_0 = nu_0_in[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]  
     gf = gf[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]
     E_low = E_low[np.where((nu_0_in >= nu_min) & (nu_0_in <= nu_max))]
+    
+    # Increment running counter for number of transitions
+    nu_0_tot += len(nu_0)
         
-    if (len(nu_0)>0): nu_0_tot += len(nu_0)
-        
-    #***** Compute line intensities *****#        
+    # Compute line intensities     
     S = compute_line_intensity_VALD(gf, E_low, nu_0, T, Q_T)
             
-    #nu_0 = nu_0[np.where(S>S_cut)]
-    #S = S[np.where(S>S_cut)]
+    # Apply intensity cutoff (disabled for atoms)
+ #   nu_0 = nu_0[np.where(S>S_cut)]
+ #   S = S[np.where(S>S_cut)]
         
     if (len(nu_0)>0): # If any transitions in chunk exceed intensity cutoff
         
-        compute_cross_section_atom(sigma_fine, N_points_fine, nu_0, nu_detune, 
-                                   nu_fine_start, nu_fine_end, S, T, alpha, 
-                                   gamma, cutoffs, N_Voigt_points, species_ID,
-                                   nu_min, nu_max)
-    
-    t_end_calc = time.clock()
-    total_calc = t_end_calc-t_begin_calc
+        compute_cross_section_atom(sigma, nu_grid, nu_0, S, 
+                                   cutoffs, N_Voigt, Voigt_arr)        
+
+    # Print total computation time for entire line list
+    t_end_calc = time.perf_counter()
+    total_calc = t_end_calc - t_begin_calc
 
     print('Calculation complete!')
     print('Completed ' + str(nu_0_tot) + ' transitions in ' + str(total_calc) + ' s')

@@ -23,9 +23,13 @@ def check_molecule(molecule):
     else: return True        # We did not get a match, therefore must have a molecule
 
 
-def write_output(output_directory, molecule, T, log_P, nu_out, sigma_out):
-            
-    f = open((output_directory + str(molecule) + '_T' + str(T) + 
+def write_output(output_directory, species, roman_num, T, log_P, nu_out, sigma_out):
+       
+    # Add ionisation state for atoms     
+    if (roman_num != ''):
+        species = species + '_' + roman_num
+        
+    f = open((output_directory + species + '_T' + str(T) + 
               'K_log_P' + str(log_P) + '_sigma.txt'),'w')
                     
     for i in range(len(nu_out)):

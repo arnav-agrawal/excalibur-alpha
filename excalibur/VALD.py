@@ -265,7 +265,8 @@ def process_VALD_file(species, ionization_state, VALD_data_dir):
                                                                   log_gamma_vdw[i]))
     f_out.close()
     
-    download.convert_to_hdf(file = (directory + species + '_' + roman_ion + '.trans'), alkali = alkali)
+    download.convert_to_hdf(file = (directory + species + '_' + roman_ion + '.trans'), 
+                            alkali = alkali, database = 'VALD')
     
     
 def summon_VALD(molecule, ionization_state, VALD_data_dir):

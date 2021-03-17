@@ -20,15 +20,28 @@ else:
 
 from excalibur.constants import kb, c, c2
 
+@jit(nopython=True)
+def prior_index(val, grid_start, grid_end, N_grid):
+    
+    if (val < grid_start): 
+        return 0
+    
+    elif (val > grid_end):
+        return N_grid-1
+    
+    else:
+        i = (N_grid-1) * ((val - grid_start) / (grid_end - grid_start))
+        return int(i)
 
-def HWHM(gamma_L, alpha_D):
+@jit(nopython = True)
+def Voigt_HWHM(gamma_L, alpha_D):
             
     gamma_V = (0.5346 * gamma_L + np.sqrt(0.2166 * gamma_L**2 + alpha_D**2))
     
     return gamma_V
 
 @jit(nopython = True)
-def Voigt_HWHM(gamma_L, alpha_D):
+def Voigt_HWHM_arr(gamma_L, alpha_D):
     
     gamma_V = np.zeros(shape=(len(gamma_L), len(alpha_D)))
     
@@ -96,6 +109,18 @@ def Voigt_function(nu, gamma, alpha):
     
     return (coeff * Faddeeva(z).real)
 
+def Voigt_function_vector(nu, gamma, alpha):
+    
+    x = np.sqrt(np.log(2.0)) * (nu/alpha)
+    y = np.sqrt(np.log(2.0)) * (gamma/alpha)
+    
+    z = np.empty(len(x), dtype=np.complex128)
+    z.real = x
+    z.imag = y
+    
+    coeff = np.sqrt(np.log(2.0)/np.pi) * (1.0/alpha)
+    
+    return (coeff * Faddeeva(z).real)
 
 def Voigt_function_sub_Lorentzian(nu, gamma, alpha, nu_detune, nu_F, T):
     
@@ -127,7 +152,43 @@ def Voigt_function_sub_Lorentzian(nu, gamma, alpha, nu_detune, nu_F, T):
         
         return V_detune * (nu_detune/nu)**(3.0/2.0) * np.exp((-1.0*c2*nu/T) * (nu/nu_F))
 
-             
+def Voigt_function_sub_Lorentzian_vector(nu, gamma, alpha, nu_detune, nu_F, T):
+    
+    coeff = np.sqrt(np.log(2.0)/np.pi) * (1.0/alpha)
+
+    profile = np.zeros_like(nu)
+    
+    # Deal with wavenumbers less than the detuning frequency
+    nu_1 = nu[abs(nu) < nu_detune]
+
+    x_1 = np.sqrt(np.log(2.0)) * (nu_1/alpha)
+    y_1 = np.sqrt(np.log(2.0)) * (gamma/alpha)
+    
+    z_1 = np.empty(len(x_1), dtype=np.complex128)
+    z_1.real = x_1
+    z_1.imag = y_1
+    
+    V = (coeff * Faddeeva(z_1).real)
+    
+    profile[abs(nu) < nu_detune] = V
+        
+    # Deal with wavenumbers exceeding the detuning frequency
+    nu_2 = nu[abs(nu) >= nu_detune]
+
+    x_2 = np.sqrt(np.log(2.0)) * (nu_detune/alpha)
+    y_2 = np.sqrt(np.log(2.0)) * (gamma/alpha)
+        
+    z_2 = np.empty(1, dtype=np.complex128)
+    z_2.real = x_2
+    z_2.imag = y_2
+    
+    V_detune = (coeff * Faddeeva(z_2).real) * (nu_detune/abs(nu_2))**(3.0/2.0) * np.exp((-1.0*c2*abs(nu_2)/T) * (abs(nu_2)/nu_F))
+        
+    profile[abs(nu) >= nu_detune] = V_detune
+
+    return profile 
+    
+          
 def Generate_Voigt_atoms(nu_0, nu_detune, gamma, alpha, T, cutoff, N, species_ID):
     
     # Initialise wavenumber grid up to cutoff
@@ -160,18 +221,58 @@ def Generate_Voigt_atoms(nu_0, nu_detune, gamma, alpha, T, cutoff, N, species_ID
                 
     # For non-resonant lines, simply use a Voigt function up to the cutoff
     else:
+        
+        # Approximate area outside cutoff for renormalisation
+        norm = 0.998  #  ~ 0.998 out to +/- 500 Voigt HWHM
             
         # Compute renormalising factor for truncated function
-        norm = 2.0*quad(Voigt_function, 0, cutoff, args=(gamma, alpha))[0]  # For renormalising truncated function
+  #      norm = 2.0*quad(Voigt_function, 0, cutoff, args=(gamma, alpha))[0]  # For renormalising truncated function
         
-        if (norm < 0.90): norm = 1.0  # Integration failures tend to result in values close to zero
+   #     if (norm < 0.90): norm = 1.0  # Integration failures tend to result in values close to zero
         
-        for k in range(N):    # For each wavenumber
+   #     for k in range(N):    # For each wavenumber
                 
-            Voigt_arr[k] = Voigt_function(nu[k], gamma, alpha)/norm
+        Voigt_arr = Voigt_function_vector(nu, gamma, alpha)/norm
             
         return Voigt_arr
-     
+    
+    
+def Generate_Voigt_grid_atoms(Voigt_arr, atom, nu_compute, nu_0, nu_detune, nu_F, 
+                              T, gamma, alpha, idx_left, idx_right, N_Voigt):
+    
+    
+    for i in range(len(nu_0)):       # For each transition
+        
+        # Create wavenumber array for this line's profile (distance from line core)
+        nu = nu_compute[idx_left[i]:idx_right[i]+1] - nu_0[i]
+ 
+        # Use sub-Lorentzian wings for Na and K
+        if (((atom == 'Na') and (int(nu_0[i]) in [16978, 16960])) or
+            ((atom == 'K') and (int(nu_0[i]) in [13046, 12988]))): 
+
+            # Approximate area outside cutoff for renormalisation
+            norm = 0.998  #  ~ 0.998 out to +/- 500 Voigt HWHM
+         
+            # Compute renormalising factor for truncated function
+        #    norm = 2.0*quad(Voigt_function_sub_Lorentzian, 0, cutoff, args=(gamma, alpha, nu_detune, nu_F, T))[0]  # For renormalising truncated function
+        
+        #    if (norm < 0.90): norm = 1.0  # Integration failures tend to result in values close to zero
+                
+            Voigt_arr[i,0:N_Voigt[i]] = Voigt_function_sub_Lorentzian_vector(nu, gamma[i], alpha[i], nu_detune, nu_F, T)/norm   
+
+        # For non-resonant lines, simply use a Voigt function
+        else:
+            
+            # Approximate area outside cutoff for renormalisation
+            norm = 0.998  #  ~ 0.998 out to +/- 500 Voigt HWHM
+             
+             # Calculate the integral of the Voigt profile out to the cutoff for normalisation (SLOW)
+    #         norm = 2.0*quad(Voigt_function, 0, cutoffs[i,j], args=(gamma_arr[i],alpha_arr[j]))[0]
+             
+    #        if (norm < 0.90): norm = 1.0  # Integration failures tend to result in values close to zero
+    
+            Voigt_arr[i,0:N_Voigt[i]] = Voigt_function_vector(nu, gamma[i], alpha[i])/norm
+                 
 
 def Generate_Voigt_grid_molecules(Voigt_arr, dV_da_arr, dV_dnu_arr, gamma_arr, 
                                   alpha_arr, cutoffs, N_Voigt):
@@ -179,7 +280,7 @@ def Generate_Voigt_grid_molecules(Voigt_arr, dV_da_arr, dV_dnu_arr, gamma_arr,
     for i in range(len(gamma_arr)):       # For each Lorentzian width
         for j in range(len(alpha_arr)):   # For each Doppler width
         
-            # Approximate area putside cutoff for renormalisation
+            # Approximate area outside cutoff for renormalisation
             norm = 0.998  #  ~ 0.998 out to +/- 500 Voigt HWHM
             
             # Calculate the integral of the Voigt profile out to the cutoff for normalisation (SLOW)
@@ -194,9 +295,59 @@ def Generate_Voigt_grid_molecules(Voigt_arr, dV_da_arr, dV_dnu_arr, gamma_arr,
             dV_dnu_arr[i,j,0:N_Voigt[i,j]]) = Voigt_and_derivatives(nu, gamma_arr[i], 
                                                                     alpha_arr[j], norm)
 
+                                                                    
+def precompute_atoms(atom, nu_compute, m, T, gamma, nu_0, Voigt_cutoff, cut_max):
+    
+    # Calculate Voigt width for each transition
+    alpha = np.sqrt(2.0*kb*T*np.log(2)/m) * (np.array(nu_0)/c)   # Doppler HWHM for each transition
+    gamma_V = Voigt_HWHM(gamma, alpha)   # Voigt HWHM
+    
+    # Line cutoffs for each template profile at min(500 gamma_V, 30 cm^-1)    
+    cutoffs = np.minimum((Voigt_cutoff * gamma_V), cut_max)
+    
+    # Special treatment of line wings for alkali resonant lines (see Baudino + 2015)
+    if (atom == 'Na'):
+        cutoffs[np.where(nu_0.astype(np.int64) == 16978)[0][0]] = 9000.0  # Cutoff at 9000 cm^-1
+        cutoffs[np.where(nu_0.astype(np.int64) == 16960)[0][0]] = 9000.0  # Cutoff at 9000 cm^-1
+        nu_detune = 30.0 * np.power((T/500.0), 0.6)   # Detuning requency
+        nu_F = 5000.0                                 # Fit parameter
+    elif (atom == 'K'):
+        cutoffs[np.where(nu_0.astype(np.int64) == 13046)[0][0]] = 9000.0  # Cutoff at 9000 cm^-1
+        cutoffs[np.where(nu_0.astype(np.int64) == 12988)[0][0]] = 9000.0  # Cutoff at 9000 cm^-1
+        nu_detune = 20.0 * np.power((T/500.0), 0.6)   # Detuning frequency
+        nu_F = 1600.0                                 # Fit parameter
+    else:
+        nu_detune = cut_max    # Not used for ordinary lines
+        nu_F = 0.0             # Not used for ordinary lines
+          
+    # Initialise arrays containing computational grid indices within cutoffs
+    idx_left = np.zeros(shape=len(nu_0), dtype=np.int64)
+    idx_right = np.zeros(shape=len(nu_0), dtype=np.int64)
 
-def precompute(nu_compute, dnu_out, m, T, Voigt_sub_spacing, Voigt_cutoff, 
-               N_alpha_samples, gamma_L, cut_max):
+    for i in range(len(nu_0)):
+        
+        # Find index range on computational grid within line wing cutoff          
+        idx_left[i] = prior_index((nu_0[i] - cutoffs[i]), nu_compute[0], nu_compute[-1], len(nu_compute)) + 1
+        idx_right[i] = prior_index((nu_0[i] + cutoffs[i]), nu_compute[0], nu_compute[-1], len(nu_compute))
+    
+    # Find number of computational grid points lying within cutoffs for each line
+    N_Voigt = (idx_right + 1) - idx_left
+
+    # Initialise Voigt profiles array for all lines
+    # Zeros are left for any points beyond the cutoff (local N_Voigt_nu) to preserve regular array shape
+    Voigt_arr = np.empty(shape=(len(nu_0), np.max(N_Voigt)))  # dtype = np.float32
+
+    # TBD: more efficient mememroy usage for alkali resonance lines    
+ 
+    # Precompute Voigt profiles for each line on computational grid
+    Generate_Voigt_grid_atoms(Voigt_arr, atom, nu_compute, nu_0, nu_detune, nu_F, 
+                              T, gamma, alpha, idx_left, idx_right, N_Voigt)
+
+    return cutoffs, N_Voigt, Voigt_arr
+
+
+def precompute_molecules(nu_compute, dnu_out, m, T, Voigt_sub_spacing, Voigt_cutoff, 
+                         N_alpha_samples, gamma_L, cut_max):
     '''
     Pre-compute Voigt profiles and derivatives, for use in the Perturbed 
     Template Voigt (PTB) method of molecular cross section computation.
@@ -248,7 +399,7 @@ def precompute(nu_compute, dnu_out, m, T, Voigt_sub_spacing, Voigt_cutoff,
     alpha_sampled = np.sqrt(2.0*kb*T*np.log(2)/m) * (nu_sampled/c)
     
     # Compute Voigt profile HWHM array for the template profiles
-    gamma_V = Voigt_HWHM(gamma_L, alpha_sampled)
+    gamma_V = Voigt_HWHM_arr(gamma_L, alpha_sampled)
     
     # Line cutoffs for each template profile at min(500 gamma_V, 30cm^-1)    
     cutoffs = np.minimum((Voigt_cutoff * gamma_V), cut_max)
@@ -268,7 +419,7 @@ def precompute(nu_compute, dnu_out, m, T, Voigt_sub_spacing, Voigt_cutoff,
     dV_da_arr = np.zeros(shape=(len(gamma_L), len(alpha_sampled), np.max(N_Voigt))) 
     dV_dnu_arr = np.zeros(shape=(len(gamma_L), len(alpha_sampled), np.max(N_Voigt)))  
     
-    # Precompute template Voigt profiles (zeros left for any )
+    # Precompute template Voigt profiles (zeros left for any elements beyond cutoffs)
     Generate_Voigt_grid_molecules(Voigt_arr, dV_da_arr, dV_dnu_arr, gamma_L, 
                                   alpha_sampled, cutoffs, N_Voigt)
 
