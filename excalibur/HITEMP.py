@@ -8,6 +8,15 @@ import excalibur.downloader as download
 
 
 def create_id_dict():
+    '''
+    Recreate the table of molecular names and IDs that HITRAN uses for identification
+
+    Returns
+    -------
+    molecule_dict : TYPE
+        DESCRIPTION.
+
+    '''
     mol_ID = []
     mol_name = []
     for i in range(1, 50):

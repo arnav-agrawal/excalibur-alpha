@@ -19,13 +19,23 @@ import excalibur.ExoMol as ExoMol
 import excalibur.HITRAN as HITRAN
 
 def download_ExoMol_file(url, f, l_folder):
-    """
+    '''
     Download a file from ExoMol and decompress it if needed. 
-    
-    Parameters:
-        url (string): The URL of a given ExoMol file
-        f (string): The filename of the resulting downloaded file
-    """
+
+    Parameters
+    ----------
+    url : String
+        The URL of a given ExoMol file.
+    f : String
+        The filename of the resulting downloaded file.
+    l_folder : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    '''
     
     if f.endswith('bz2') == True: # If the file ends in .bz2 we need to read and decompress it
         
@@ -100,6 +110,7 @@ def download_HITRAN_line_list(mol_ID, iso_ID, folder, nu_min = 1, nu_max = 10000
     None.
 
     """
+    
     db_begin(folder)
     fetch(moleculeName(mol_ID), mol_ID, iso_ID, nu_min, nu_max)
    
@@ -435,7 +446,7 @@ def create_directories(molecule = '', isotopologue = '', line_list = '', databas
                        mol_ID = '', iso_ID = '', ionization_state = 1, VALD_data_dir = '',
                        **kwargs):
     '''
-    Create new folders to store the relevant data
+    Create new folders on local machine to store the relevant data
 
     Parameters
     ----------

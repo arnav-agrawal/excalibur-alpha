@@ -1,0 +1,5 @@
+Calculate
+---------
+
+.. automodule:: calculate
+   :members:
