@@ -142,7 +142,7 @@ def load_pf(input_directory):
 
     Parameters
     ----------
-    input_directory : TYPE
+    input_directory : String
         DESCRIPTION.
 
     Returns

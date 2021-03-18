@@ -24,6 +24,29 @@ def check_molecule(molecule):
 
 
 def write_output(output_directory, molecule, T, log_P, nu_out, sigma_out):
+    '''
+    Write wavenumber and cross-section to output file
+
+    Parameters
+    ----------
+    output_directory : TYPE
+        DESCRIPTION.
+    molecule : TYPE
+        DESCRIPTION.
+    T : TYPE
+        DESCRIPTION.
+    log_P : TYPE
+        DESCRIPTION.
+    nu_out : TYPE
+        DESCRIPTION.
+    sigma_out : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    None.
+
+    '''
             
     f = open((output_directory + str(molecule) + '_T' + str(T) + 
               'K_log_P' + str(log_P) + '_sigma.txt'),'w')
@@ -34,6 +57,28 @@ def write_output(output_directory, molecule, T, log_P, nu_out, sigma_out):
     f.close()
 
 def read_output(output_directory, molecule, T, log_P):
+    '''
+    Read in wavenumber and cross-section from  file
+
+    Parameters
+    ----------
+    output_directory : TYPE
+        DESCRIPTION.
+    molecule : TYPE
+        DESCRIPTION.
+    T : TYPE
+        DESCRIPTION.
+    log_P : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    nu : TYPE
+        DESCRIPTION.
+    sigma : TYPE
+        DESCRIPTION.
+
+    '''
     
     file_location = (output_directory + str(molecule) + '_T' + str(T) + 
                      'K_log_P' + str(log_P) + '_sigma_TMP.txt')

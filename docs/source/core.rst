@@ -1,0 +1,5 @@
+Core
+----
+
+.. automodule:: core
+   :members:
