@@ -7,14 +7,16 @@ from excalibur.core import compute_cross_section
 from excalibur.plot import plot_sigma_wl
 
 # Parameters
-species = 'H2O'
-database = 'ExoMol'
+
+species = 'H'
+database = 'VALD'
+VALD_data_dir = './VALD Line Lists/'
 
 P = 1       # Pressure (bar)
 T = 1000    # Temperature (K)
 
 # Download line list
-summon(species = species, database = database)
+summon(species = species, database = database, VALD_data_dir=VALD_data_dir)
 
 # Create cross section
 """nu, sigma = compute_cross_section(input_dir = './input/', database = database, 

@@ -51,7 +51,7 @@ def mass(species, isotopologue, linelist):
     # For HITRAN or HITEMP line lists
     if linelist == 'hitran' or linelist == 'hitemp':
         mol_ID = 1
-        while moleculeName(mol_ID) != species:
+        while moleculeName(mol_ID) != species:   # increment mol_ID until it is correct for our molecule's name
             mol_ID += 1
             
         iso_ID = 1
@@ -142,14 +142,14 @@ def load_pf(input_directory):
 
     Parameters
     ----------
-    input_directory : TYPE
-        DESCRIPTION.
+    input_directory : str
+        Local directory containing the partition function.
 
     Returns
     -------
-    T_pf_raw : TYPE
+    T_pf_raw : float array
         DESCRIPTION.
-    Q_raw : TYPE
+    Q_raw : float array
         DESCRIPTION.
 
     '''
@@ -175,20 +175,20 @@ def interpolate_pf(T_pf_raw, Q_raw, T, T_ref):
 
     Parameters
     ----------
-    T_pf_raw : TYPE
+    T_pf_raw : float array
         DESCRIPTION.
-    Q_raw : TYPE
+    Q_raw : float array
         DESCRIPTION.
-    T : TYPE
+    T : int
         DESCRIPTION.
     T_ref : TYPE
         DESCRIPTION.
 
     Returns
     -------
-    Q_T : TYPE
+    Q_T : float
         DESCRIPTION.
-    Q_T_ref : TYPE
+    Q_T_ref : float
         DESCRIPTION.
 
     '''
@@ -220,6 +220,60 @@ def create_nu_grid_atom(atom, T, m, gamma, nu_0, Voigt_sub_spacing,
     an atomic cross section calculation.
     
     Note: for atoms a single grid is used over the entire wavenumber range.
+
+    Parameters
+    ----------
+    atom : TYPE
+        DESCRIPTION.
+    T : TYPE
+        DESCRIPTION.
+    m : TYPE
+        DESCRIPTION.
+    gamma : TYPE
+        DESCRIPTION.
+    nu_0 : TYPE
+        DESCRIPTION.
+    Voigt_sub_spacing : TYPE
+        DESCRIPTION.
+    dnu_out : TYPE
+        DESCRIPTION.
+    nu_out_min : TYPE
+        DESCRIPTION.
+    nu_out_max : TYPE
+        DESCRIPTION.
+    Voigt_cutoff : TYPE
+        DESCRIPTION.
+    cut_max : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    sigma_fine : TYPE
+        DESCRIPTION.
+    sigma_out : TYPE
+        DESCRIPTION.
+    nu_detune : TYPE
+        DESCRIPTION.
+    N_points_fine : TYPE
+        DESCRIPTION.
+    N_Voigt_points : TYPE
+        DESCRIPTION.
+    alpha : TYPE
+        DESCRIPTION.
+    cutoffs : TYPE
+        DESCRIPTION.
+    nu_min : TYPE
+        DESCRIPTION.
+    nu_max : TYPE
+        DESCRIPTION.
+    nu_fine_start : TYPE
+        DESCRIPTION.
+    nu_fine_end : TYPE
+        DESCRIPTION.
+    nu_out : TYPE
+        DESCRIPTION.
+    N_points_out : TYPE
+        DESCRIPTION.
 
     '''
     
@@ -291,6 +345,24 @@ def create_nu_grid_atom(atom, T, m, gamma, nu_0, Voigt_sub_spacing,
 
 
 def create_nu_grid_molecule(nu_out_min, nu_out_max, dnu_out):
+    '''
+    
+
+    Parameters
+    ----------
+    nu_out_min : TYPE
+        DESCRIPTION.
+    nu_out_max : TYPE
+        DESCRIPTION.
+    dnu_out : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    nu_compute : TYPE
+        DESCRIPTION.
+
+    '''
 
     # Define the minimum and maximum wavenumber on grid to go slightly beyond user's output limits
     nu_min = 1
@@ -306,21 +378,25 @@ def create_nu_grid_molecule(nu_out_min, nu_out_max, dnu_out):
 def summon(database = '', species = '', isotope = 'default', VALD_data_dir = '',
            linelist = 'default', ionization_state = 1, **kwargs):
     '''
-    Makes calls to other downloader files to retrieve the data from the desired database
+    Makes calls to other downloader files to retrieve the data from the desired database.
+    This is the function the user would call in Run.py.
 
 
     Parameters
     ----------
-    database : TYPE, optional
-        DESCRIPTION. The default is ''.
-    species : TYPE, optional
-        DESCRIPTION. The default is ''.
-    isotope : TYPE, optional
-        DESCRIPTION. The default is 'default'.
-    linelist : TYPE, optional
-        DESCRIPTION. The default is 'default'.
-    ionization_state : TYPE, optional
-        DESCRIPTION. The default is 1.
+    database : str, optional
+        Database from which the line list is requested (ExoMol, HITRAN, HITEMP, or VALD). The default is ''.
+    species : str, optional
+        Molecule or atom for which the line list is requested. The default is ''.
+    isotope : str, optional
+        Isotopologue of molecule, if a molecular line list is desired. The default is 'default'.
+    VALD_data_dir : str, optional
+        The file path to where the 'VALD Line Lists' folder is on the local machine. 
+        This is the folder that was included in the GitHub download. The default is ''.
+    linelist : str, optional
+        Specific line list that the user would like. Only relevant for ExoMol species' where multiple line lists exist. The default is 'default'.
+    ionization_state : int, optional
+        Ionization state of the atom for which the line list is desired. Only relevant for VALD atomic line lists. The default is 1.
     **kwargs : TYPE
         DESCRIPTION.
 
@@ -330,7 +406,7 @@ def summon(database = '', species = '', isotope = 'default', VALD_data_dir = '',
 
     '''
     
-    # Check if the user has specified a chemical species and line list database
+    # Check if the user has specified a line list database and chemical species
     if database != '' and species != '': 
         user_prompt = False
     else: 
@@ -348,7 +424,7 @@ def summon(database = '', species = '', isotope = 'default', VALD_data_dir = '',
                 print("\n ----- This is not a supported database, please try again ----- ")
         
         if database == 'exomol': 
-            mol, iso, lin, URL = ExoMol.determine_linelist()
+            mol, iso, lin, URL = ExoMol.determine_parameters()
             ExoMol.summon_ExoMol(mol, iso, lin, URL)
             
         if database == 'hitran':
@@ -391,7 +467,7 @@ def summon(database = '', species = '', isotope = 'default', VALD_data_dir = '',
                 ExoMol.check(spe, iso)
                 lin = ExoMol.get_default_linelist(spe, iso)
 
-            ExoMol.check(spe, iso, lin)
+            ExoMol.check(spe, iso, lin)  # Checking to confirm that this species, isotope, line list combo exists on ExoMol
             URL = "http://exomol.com/data/molecules/" + spe + '/' + iso + '/' + lin + '/'
             ExoMol.summon_ExoMol(spe, iso, lin, URL)
             
@@ -431,6 +507,60 @@ def compute_cross_section(input_dir, database, species, log_pressure, temperatur
     '''
     Main function to calculate molecular and atomic cross sections.
 
+    Parameters
+    ----------
+    input_dir : str
+        Local directory where the line list files are located.
+    database : str
+        Database containing the specified line list.
+    species : str
+        Molecule or atom for which the cross section is being computed.
+    log_pressure : float
+        Log of the pressure at which the cross section is to be computed (in bars).
+    temperature : float
+        Temperature at which the cross section is to be computed (Kelvin).
+    isotope : str, optional
+        Isotope of specified molecule (if applicable). The default is 'default'.
+    ionization_state : int, optional
+        Ionization state of specified atom (if applicable). The default is 1.
+    linelist : str, optional
+        If using ExoMol as a database, this is the line list being used for the specified molecule. The default is 'default'.
+    cluster_run : bool, optional
+        Option to run grid of various temperatures and pressures on a cluster. The default is False.
+    nu_out_min : int, optional
+        Minimum wavenumber calculated for cross section. The default is 200.
+    nu_out_max : int, optional
+        Maximum wavenumber calculated for cross section. The default is 25000.
+    dnu_out : float, optional
+        DESCRIPTION. The default is 0.01.
+    broad_type : str, optional
+        Type of broadening used in the computation. The default is 'default'.
+    X_H2 : float, optional
+        DESCRIPTION. The default is 0.85.
+    X_He : float, optional
+        DESCRIPTION. The default is 0.15.
+    Voigt_cutoff : int, optional
+        DESCRIPTION. The default is 500.
+    Voigt_sub_spacing : float, optional
+        DESCRIPTION. The default is (1.0/6.0).
+    N_alpha_samples : int, optional
+        DESCRIPTION. The default is 500.
+    S_cut : float, optional
+        DESCRIPTION. The default is 1.0e-100.
+    cut_max : float, optional
+        DESCRIPTION. The default is 30.0.
+    N_cores : int, optional
+        DESCRIPTION. The default is 1.
+    **kwargs : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    nu_out : float array
+        DESCRIPTION.
+    sigma_out : float array
+        DESCRIPTION.
+
     '''
     
     print("Beginning cross-section computations...")
@@ -438,7 +568,7 @@ def compute_cross_section(input_dir, database, species, log_pressure, temperatur
     # Start clock for timing program
     t_start = time.perf_counter()
     
-    # Configure numba to paralelise with the user specified number of cores
+    # Configure numba to parallelize with the user specified number of cores
     numba.set_num_threads(N_cores)
     
     # Cast log_pressure and temperature to lists if they are not already
@@ -491,7 +621,7 @@ def compute_cross_section(input_dir, database, species, log_pressure, temperatur
     T_pf_raw, Q_raw = load_pf(input_directory)
     
     # Find mass of the species
-    m = mass(species, isotopologue, linelist) * u
+    m = mass(species, isotopologue, linelist) * u  # Multiplication by 'u' is to convert to SI
 
     # Check if we have a molecule or an atom
     is_molecule = check_molecule(species)
@@ -531,7 +661,7 @@ def compute_cross_section(input_dir, database, species, log_pressure, temperatur
             J_max = 0
         
         else:
-            print("\nYou did not enter a valid type of pressure broadening. Please try again.")
+            print("\nYou did not enter a valid type of pressure broadening. Perhaps confirm that the broadening files you need exist in the input directory. Please try again.")
             sys.exit(0)
             
     # For atoms, only H2-He pressure broadening is currently supported

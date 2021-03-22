@@ -11,29 +11,29 @@ import excalibur.downloader as download
 
 
 def check(molecule, isotope = '', linelist = ''):
-    """
+    '''
     Checks if the parameters passed into the summon() function by the user are valid to use with the ExoMol database.
 
     Parameters
     ----------
-    molecule : TYPE
-        DESCRIPTION.
-    isotope : TYPE
-        DESCRIPTION.
-    linelist : TYPE
-        DESCRIPTION.
+    molecule : str
+        Molecule name.
+    isotope : str
+        Isotopologue name.
+    linelist : str
+        Specific line list name.
 
     Returns
     -------
     None.
 
-    """
+    '''
     
     website = "http://exomol.com/data/molecules/" + molecule + '/' + isotope + '/' + linelist + '/'
     
     try:
         response = requests.get(website)
-        response.raise_for_status() # Raises HTTPError if a bad request is made (server or client error)
+        response.raise_for_status() # Raises HTTPError if a bad request (server or client error) is made
         
     except requests.HTTPError:
         print("\n ----- These are not valid ExoMol parameters. Please try calling the summon() function again. -----")
@@ -41,20 +41,20 @@ def check(molecule, isotope = '', linelist = ''):
         
         
 def get_default_iso(molecule):
-    """
+    '''
     Returns the default (most abundant on Earth) isotopologue given a molecule
 
     Parameters
     ----------
-    molecule : String
-        DESCRIPTION.
+    molecule : str
+        Molecule name.
 
     Returns
     -------
-    default_iso : String
-        DESCRIPTION.
+    default_iso : str
+        Most abundant naturally-occurring isotopologue (on Earth) of given molecule.
 
-    """
+    '''
     
     if molecule == 'H2_p':  # Handle H2+ on ExoMol
         default_iso = '1H-2H_p'
@@ -94,23 +94,23 @@ def get_default_iso(molecule):
 
 
 def get_default_linelist(molecule, isotopologue):
-    """
-    Returns a default line list for a given ExoMol molecule and isotopologue
-    These are sometimes changed as ExoMol releases better and more up-to-date line lists
+    '''
+    Returns a default line list for a given ExoMol molecule and isotopologue.
+    These are sometimes changed as ExoMol releases better and more up-to-date line lists.
 
     Parameters
     ----------
     molecule : str
-        DESCRIPTION.
+        Molecule name.
     isotopologue : str
-        DESCRIPTION.
+        Isotopologue name.
 
     Returns
     -------
-    str
-        DESCRIPTION.
+    linelist : str
+        The default line list.
 
-    """
+    '''
     
     structure = molecule + '(' + isotopologue + ')'
     
@@ -152,25 +152,25 @@ def get_default_linelist(molecule, isotopologue):
 
 
 def determine_parameters():
-    """
-    Determines the desired molecular line list from ExoMol from user input
+    '''
+    Determines the molecular line list to be obtained from ExoMol using user input
 
     Returns
     -------
-    molecule : String
-        DESCRIPTION.
-    isotopologue : String
-        DESCRIPTION.
-    linelist : String
-        DESCRIPTION.
-    website : String
-        DESCRIPTION.
+    molecule : str
+        Desired molecule.
+    isotopologue : str
+        Desired isotopologue of molecule.
+    linelist : str
+        Desired line list.
+    website : str
+        ExoMol webpage containing line list data.
 
-    """
+    '''
     
     website = "http://exomol.com/data/molecules/"
     
-    while True:
+    while True:  # Determine molecule
         try:
             molecule = input('What molecule would you like to download the line list for (This is case-sensitive)?\n')
             molecule = re.sub('[+]', '_p', molecule)
@@ -185,7 +185,7 @@ def determine_parameters():
             break
         
         
-    while True:
+    while True: # Determine isotopologue
         try:
             isotopologue = input("What isotopologue of this molecule would you like to use (type 'default' to use the default isotopologue)?\n")
             if isotopologue.lower() == 'default':
@@ -203,7 +203,7 @@ def determine_parameters():
             website += isotopologue + '/'
             break
     
-    while True:
+    while True: # Determine line list
         try: 
             linelist = input("Which line list of this isotopologue would you like to use (type 'default' to use the default line list)?\n")
             
@@ -225,19 +225,19 @@ def determine_parameters():
         
         
 def process_files(input_dir):
-    """
-    Processes the .broad and .pf files downloaded from ExoMol into a format that Cthulhu.py can read to create cross-sections
+    '''
+    Processes the .broad and .pf files downloaded from ExoMol into a format that we can later read to create cross-sections
 
     Parameters
     ----------
-    input_dir : TYPE
-        DESCRIPTION.
+    input_dir : str
+        Local directory containing the .broad and .pf files.
 
     Returns
     -------
     None.
 
-    """
+    '''
     
     for file in os.listdir(input_dir):
         if file.endswith('.broad'):
@@ -309,25 +309,25 @@ def process_files(input_dir):
           
 
 def summon_ExoMol(molecule, isotopologue, line_list, URL):
-    """
+    '''
     Main function, uses calls to other functions to perform the download
 
     Parameters
     ----------
-    molecule : TYPE
-        DESCRIPTION.
-    isotopologue : TYPE
-        DESCRIPTION.
-    line_list : TYPE
-        DESCRIPTION.
-    URL : TYPE
-        DESCRIPTION.
+    molecule : str
+        Molecule name.
+    isotopologue : str
+        Isotopologue name.
+    line_list : str
+        Line list name.
+    URL : str
+        URL of webpage containing line list data for given species.
 
     Returns
     -------
     None.
 
-    """
+    '''
     
     line_list_folder = download.create_directories(molecule = molecule, isotopologue = isotopologue, 
                                                    line_list = line_list, database = 'ExoMol')
@@ -347,25 +347,24 @@ def summon_ExoMol(molecule, isotopologue, line_list, URL):
     
     
 def load_states(input_directory):
-    """
+    '''
     Read in the '.states' file downloaded from ExoMol
 
     Parameters
     ----------
-    input_directory : String
-        Directory that contains all the ExoMol downloaded files for the desired molecule/
-        isotopologue/line list.
+    input_directory : str
+        Local directory containing downloaded files for the desired species.
 
     Returns
     -------
-    E : TYPE
+    E : float array
         DESCRIPTION.
-    g : TYPE
+    g : float array
         DESCRIPTION.
-    J : TYPE
+    J : int array
         DESCRIPTION.
 
-    """
+    '''
     
     # Read in states file (EXOMOL only)
     states_file_name = [filename for filename in os.listdir(input_directory) if filename.endswith('.states')]

@@ -11,8 +11,8 @@ def det_broad(input_directory):
 
     Parameters
     ----------
-    input_directory : TYPE
-        DESCRIPTION.
+    input_directory : str
+        Local directory containing the broadening file.
 
     Returns
     -------
@@ -25,7 +25,7 @@ def det_broad(input_directory):
     if 'H2.broad' in os.listdir(input_directory) and 'He.broad' in os.listdir(input_directory):
         broadening = 'H2-He'
 
-    # If no H2 + He boradening files, search for an air boradening file
+    # If no H2 + He broadening files, search for an air boradening file
     elif 'air.broad' in os.listdir(input_directory):
         broadening = 'air'
 
@@ -48,8 +48,8 @@ def create_SB07(input_directory):
 
     Parameters
     ----------
-    input_directory : TYPE
-        DESCRIPTION.
+    input_directory : str
+        Local directory containing the broadening file.
 
     Returns
     -------
@@ -80,6 +80,28 @@ def create_SB07(input_directory):
 
 
 def read_H2_He(input_directory):
+    '''
+    Read relevant information from H2-He broadening file
+
+    Parameters
+    ----------
+    input_directory : str
+        Local directory containing the broadening file.
+
+    Returns
+    -------
+    J_max : int array
+        DESCRIPTION.
+    gamma_0_H2 : int array
+        DESCRIPTION.
+    n_L_H2 : int array
+        DESCRIPTION.
+    gamma_0_He : int array
+        DESCRIPTION.
+    n_L_He : int array
+        DESCRIPTION.
+
+    '''
 
     # Read in H2 broadening file
     broad_file_H2 = pd.read_csv(input_directory + 'H2.broad',
@@ -117,6 +139,24 @@ def read_H2_He(input_directory):
 
 
 def read_air(input_directory):
+    '''
+    Read relevant information from air broadening file
+
+    Parameters
+    ----------
+    input_directory : str
+        Local directory containing the broadening file.
+
+    Returns
+    -------
+    J_max : int array
+        DESCRIPTION.
+    gamma_0_air : int array
+        DESCRIPTION.
+    n_L_air : int array
+        DESCRIPTION.
+
+    '''
 
     # Read in air broadening file
     broad_file_air = pd.read_csv(input_directory + 'air.broad',
@@ -129,6 +169,22 @@ def read_air(input_directory):
 
 
 def read_SB07(input_directory):
+    '''
+    Read relevant information from SB07 broadening file
+
+    Parameters
+    ----------
+    input_directory : str
+        Local directory containing the broadening file.
+
+    Returns
+    -------
+    J_max : int array
+        DESCRIPTION.
+    gamma_0_SB07 : int array
+        DESCRIPTION.
+
+    '''
 
     # Read in Sharp & Burrows (2007) broadening file
     broad_file_SB07 = pd.read_csv(input_directory + 'SB07.broad',
@@ -141,6 +197,24 @@ def read_SB07(input_directory):
 
 
 def read_custom(input_directory):
+    '''
+    Read relevant information from custom broadening file, if provided by user
+
+    Parameters
+    ----------
+    input_directory : str
+        Local directory containing the broadening file..
+
+    Returns
+    -------
+    J_max : int array
+        DESCRIPTION.
+    gamma_0_air : int array
+        DESCRIPTION.
+    n_L_air : int array
+        DESCRIPTION.
+
+    '''
 
     # Read in custom broadening file
     broad_file_custom = pd.read_csv(input_directory + 'custom.broad',
@@ -272,6 +346,48 @@ def gamma_L_impact(E_low, E_up, l_low, l_up, species, m_s, broadener):
 
 def read_atom(species, nu_0, gf, E_low, E_up, J_low, l_low, l_up,
               gamma_nat, gamma_vdw, alkali, m):
+    '''
+    DESCRIPTION
+
+    Parameters
+    ----------
+    species : TYPE
+        DESCRIPTION.
+    nu_0 : TYPE
+        DESCRIPTION.
+    gf : TYPE
+        DESCRIPTION.
+    E_low : TYPE
+        DESCRIPTION.
+    E_up : TYPE
+        DESCRIPTION.
+    J_low : TYPE
+        DESCRIPTION.
+    l_low : TYPE
+        DESCRIPTION.
+    l_up : TYPE
+        DESCRIPTION.
+    gamma_nat : TYPE
+        DESCRIPTION.
+    gamma_vdw : TYPE
+        DESCRIPTION.
+    alkali : TYPE
+        DESCRIPTION.
+    m : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    gamma_0_H2 : TYPE
+        DESCRIPTION.
+    n_L_H2 : TYPE
+        DESCRIPTION.
+    gamma_0_He : TYPE
+        DESCRIPTION.
+    n_L_He : TYPE
+        DESCRIPTION.
+
+    '''
 
     if alkali:  # Special treatments for alkali Van der Waals widths
 
@@ -301,17 +417,92 @@ def read_atom(species, nu_0, gf, E_low, E_up, J_low, l_low, l_up,
 
 
 def compute_H2_He(gamma_0_H2, T_ref, T, n_L_H2, P, P_ref, X_H2, gamma_0_He, n_L_He, X_He):
+    '''
+    DESCRIPTION
+
+    Parameters
+    ----------
+    gamma_0_H2 : TYPE
+        DESCRIPTION.
+    T_ref : TYPE
+        DESCRIPTION.
+    T : TYPE
+        DESCRIPTION.
+    n_L_H2 : TYPE
+        DESCRIPTION.
+    P : TYPE
+        DESCRIPTION.
+    P_ref : TYPE
+        DESCRIPTION.
+    X_H2 : TYPE
+        DESCRIPTION.
+    gamma_0_He : TYPE
+        DESCRIPTION.
+    n_L_He : TYPE
+        DESCRIPTION.
+    X_He : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    gamma : TYPE
+        DESCRIPTION.
+
+    '''
+    
     gamma = (gamma_0_H2 * np.power((T_ref/T), n_L_H2) * (P/P_ref) * X_H2 +   # H2+He Lorentzian HWHM for given T, P, and J (ang. mom.)
              gamma_0_He * np.power((T_ref/T), n_L_He) * (P/P_ref) * X_He)    # Note that these are only a function of J''
 
     return gamma
 
 def compute_air(gamma_0_air, T_ref, T, n_L_air, P, P_ref):
+    '''
+    DESCRIPTION
+
+    Parameters
+    ----------
+    gamma_0_air : TYPE
+        DESCRIPTION.
+    T_ref : TYPE
+        DESCRIPTION.
+    T : TYPE
+        DESCRIPTION.
+    n_L_air : TYPE
+        DESCRIPTION.
+    P : TYPE
+        DESCRIPTION.
+    P_ref : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    gamma : TYPE
+        DESCRIPTION.
+
+    '''
     gamma = (gamma_0_air * np.power((T_ref/T), n_L_air) * (P/P_ref))      # Air-broadened Lorentzian HWHM for given T, P, and J (ang. mom.)
 
     return gamma
 
 def compute_SB07(gamma_0_SB07, P, P_ref):
+    '''
+    DESCRIPTION
+
+    Parameters
+    ----------
+    gamma_0_SB07 : TYPE
+        DESCRIPTION.
+    P : TYPE
+        DESCRIPTION.
+    P_ref : TYPE
+        DESCRIPTION.
+
+    Returns
+    -------
+    gamma : TYPE
+        DESCRIPTION.
+
+    '''
     gamma = (gamma_0_SB07 * (P/P_ref))      # Equation (15) in Sharp & Burrows (2007)
 
     return gamma

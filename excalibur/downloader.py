@@ -19,13 +19,23 @@ import excalibur.ExoMol as ExoMol
 import excalibur.HITRAN as HITRAN
 
 def download_ExoMol_file(url, f, l_folder):
-    """
+    '''
     Download a file from ExoMol and decompress it if needed. 
-    
-    Parameters:
-        url (string): The URL of a given ExoMol file
-        f (string): The filename of the resulting downloaded file
-    """
+
+    Parameters
+    ----------
+    url : str
+        The URL of a given ExoMol file.
+    f : str
+        The filename of the resulting downloaded file.
+    l_folder : str
+        The local directory where the line list will be stored.
+
+    Returns
+    -------
+    None.
+
+    '''
     
     if f.endswith('bz2') == True: # If the file ends in .bz2 we need to read and decompress it
         
@@ -80,26 +90,27 @@ def download_ExoMol_file(url, f, l_folder):
     
 def download_HITRAN_line_list(mol_ID, iso_ID, folder, nu_min = 1, nu_max = 100000):
     """
-    Download line list using the fetch() function already in HITRAN
+    Download line list using the db_begin() and fetch() function already in HITRAN
 
     Parameters
     ----------
-    mol_ID : TYPE
-        DESCRIPTION.
-    iso_ID : TYPE
-        DESCRIPTION.
-    folder : TYPE
-        DESCRIPTION.
-    nu_min : TYPE, optional
+    mol_ID : int
+        HITRAN molecule ID for given species.
+    iso_ID : int
+        HITRAN isotopologue ID for given species.
+    folder : str
+        Local directory where line list is to be stored.
+    nu_min : int, optional
         DESCRIPTION. The default is 200.
-    nu_max : TYPE, optional
-        DESCRIPTION. The default is 25000.
+    nu_max : int, optional
+        DESCRIPTION. The default is 100,000.
 
     Returns
     -------
     None.
 
     """
+    
     db_begin(folder)
     fetch(moleculeName(mol_ID), mol_ID, iso_ID, nu_min, nu_max)
    
@@ -119,7 +130,9 @@ def HITEMP_table():
 
     web_content = requests.get(url).text
     
+    # Create parser object
     soup = BeautifulSoup(web_content, "lxml")
+    
     table = soup.find('table')
 
     n_rows = 0
@@ -162,11 +175,11 @@ def HITEMP_table():
     hitemp = hitemp[:-1] # Get rid of last row
     hitemp.rename(columns = {'Iso counta':'Iso Count'}, inplace = True) # Rename a column header
     hitemp.loc[len(hitemp)] = ['4', 'N2O', 'Nitrous Oxide', '5', '3626425', '0', '12899', '2019', ''] # Manually add N2O molecule to table
-    hitemp.loc[:, 'ID'] = pd.to_numeric(hitemp['ID'])  # This line and the next convert all values in 'ID' and 'Iso Count' column to floats
+    hitemp.loc[:, 'ID'] = pd.to_numeric(hitemp['ID'])  # This line and the next convert all values in 'ID' and 'Iso Count' columns to floats
     hitemp.loc[:, 'Iso Count'] = pd.to_numeric(hitemp['Iso Count'])
 
 
-    hitemp.sort_values(by = 'ID', inplace = True)
+    hitemp.sort_values(by = 'ID', inplace = True) # Sort in ascending molecule ID order
     hitemp.reset_index(drop = True, inplace = True)
 
 
@@ -180,16 +193,16 @@ def HITEMP_table():
 
 def download_HITEMP_line_list(mol_ID, iso_ID, out_folder):
     """
-    Download a line list(s) from the HITEMP database
+    Download line list(s) from the HITEMP database
 
     Parameters
     ----------
-    mol_ID : TYPE
-        DESCRIPTION.
-    iso_ID : TYPE
-        DESCRIPTION.
-    out_folder : TYPE
-        DESCRIPTION.
+    mol_ID : int
+        HITEMP molecule ID for given species.
+    iso_ID : int
+        HITEMP isotopologue ID for given species.
+    out_folder : str
+        Local directory where line list will be stored.
 
     Returns
     -------
@@ -280,19 +293,29 @@ def download_HITEMP_line_list(mol_ID, iso_ID, out_folder):
     
 def convert_to_hdf(file = '', mol_ID = '', iso_ID = '', alkali = False, 
                    database = '', **kwargs):
-    """
+    '''
     Convert a given file to HDF5 format
 
     Parameters
     ----------
-    file : TYPE
+    file : str, optional
+        File to convert. The default is ''.
+    mol_ID : int, optional
+        HITRAN/HITEMP molecule ID for given species, necessary if using HITRAN/HITEMP for database arg. The default is ''.
+    iso_ID : int, optional
+        HITRAN/HITEMP isotopologue ID for given species, necessary if using HITRAN/HITEMP for database arg.. The default is ''.
+    alkali : bool, optional
+        True if specified atom is an alkali metal. The default is False.
+    database : str, optional
+        Database from which the line list is being downloaded. The default is ''.
+    **kwargs : TYPE
         DESCRIPTION.
 
     Returns
     -------
     None.
 
-    """
+    '''
     
     start_time = time.time()
     
@@ -307,9 +330,9 @@ def convert_to_hdf(file = '', mol_ID = '', iso_ID = '', alkali = False,
         hdf_file_path = os.path.splitext(file)[0] + '.h5'
         
         with h5py.File(hdf_file_path, 'w') as hdf:
-            hdf.create_dataset('Upper State', data = upper_state, dtype = 'u4') #store as 32-bit unsigned int
-            hdf.create_dataset('Lower State', data = lower_state, dtype = 'u4') #store as 32-bit unsigned int
-            hdf.create_dataset('Log Einstein A', data = log_Einstein_A, dtype = 'f4') #store as 32-bit float
+            hdf.create_dataset('Upper State', data = upper_state, dtype = 'u4') # 'dtype' arg instructs to store as 32-bit unsigned int
+            hdf.create_dataset('Lower State', data = lower_state, dtype = 'u4')
+            hdf.create_dataset('Log Einstein A', data = log_Einstein_A, dtype = 'f4') # 'dtype' arg instructs to store as 32-bit float
             
         os.remove(file)
         
@@ -380,7 +403,7 @@ def convert_to_hdf(file = '', mol_ID = '', iso_ID = '', alkali = False,
         
         # Write the data to our HDF5 file
         with h5py.File(hdf_file_path, 'w') as hdf:
-            hdf.create_dataset('Transition Wavenumber', data = nu_0, dtype = 'f4') #store as 32-bit unsigned float
+            hdf.create_dataset('Transition Wavenumber', data = nu_0, dtype = 'f4') # 'dtype' arg instructs to store as 32-bit float
             hdf.create_dataset('Log Line Intensity', data = log_S_ref, dtype = 'f4') 
             hdf.create_dataset('Lower State E', data = E_lower, dtype = 'f4') 
             hdf.create_dataset('Lower State J', data = J_lower, dtype = 'f4') 
@@ -414,18 +437,18 @@ def convert_to_hdf(file = '', mol_ID = '', iso_ID = '', alkali = False,
         hdf_file_path = os.path.splitext(file)[0] + '.h5'
         
         with h5py.File(hdf_file_path, 'w') as hdf:
-            hdf.create_dataset('nu', data = nu_0, dtype = 'f8') #store as 32-bit unsigned int
-            hdf.create_dataset('Log gf', data = log_gf, dtype = 'f8') #store as 32-bit unsigned int
-            hdf.create_dataset('E lower', data = E_low, dtype = 'f8') #store as 32-bit float
-            hdf.create_dataset('E upper', data = E_up, dtype = 'f8') #store as 32-bit unsigned int
-            hdf.create_dataset('J lower', data = J_low, dtype = 'f8') #store as 32-bit unsigned int
-            hdf.create_dataset('J upper', data = J_up, dtype = 'f8') #store as 32-bit float
-            hdf.create_dataset('Log gamma nat', data = log_gamma_nat, dtype = 'f8') #store as 32-bit float
-            hdf.create_dataset('Log gamma vdw', data = log_gamma_vdw, dtype = 'f8') #store as 32-bit float
+            hdf.create_dataset('nu', data = nu_0, dtype = 'f8') # 'dtype' arg instructs to store as 64-bit float
+            hdf.create_dataset('Log gf', data = log_gf, dtype = 'f8') 
+            hdf.create_dataset('E lower', data = E_low, dtype = 'f8') 
+            hdf.create_dataset('E upper', data = E_up, dtype = 'f8') 
+            hdf.create_dataset('J lower', data = J_low, dtype = 'f8') 
+            hdf.create_dataset('J upper', data = J_up, dtype = 'f8') 
+            hdf.create_dataset('Log gamma nat', data = log_gamma_nat, dtype = 'f8') 
+            hdf.create_dataset('Log gamma vdw', data = log_gamma_vdw, dtype = 'f8') 
             
             if (alkali == True):
-                hdf.create_dataset('l lower', data = l_low, dtype = 'f8') #store as 32-bit unsigned int
-                hdf.create_dataset('l upper', data = l_up, dtype = 'f8') #store as 32-bit float
+                hdf.create_dataset('l lower', data = l_low, dtype = 'f8') 
+                hdf.create_dataset('l upper', data = l_up, dtype = 'f8') 
 
     
     print("This .trans file took", round(time.time() - start_time, 1), "seconds to reformat to HDF.")
@@ -439,25 +462,25 @@ def create_directories(molecule = '', isotopologue = '', line_list = '', databas
 
     Parameters
     ----------
-    molecule : TYPE, optional
-        DESCRIPTION. The default is ''.
-    isotope : TYPE, optional
-        DESCRIPTION. The default is ''.
-    line_list : TYPE, optional
-        DESCRIPTION. The default is ''.
-    mol_ID : TYPE, optional
-        DESCRIPTION. The default is ''.
-    iso_ID : TYPE, optional
-        DESCRIPTION. The default is ''.
-    ionization_state : TYPE, optional
-        DESCRIPTION. The default is 1.
+    molecule : str, optional
+        Molecule name. The default is ''.
+    isotope : str, optional
+        Isotopologue name. The default is ''.
+    line_list : str, optional
+        Line list being used, only relevant for ExoMol molecules which often have various line lists. The default is ''.
+    mol_ID : str, optional
+        HITRAN/HITEMP molecule ID for given species, already type cast as a String. The default is ''.
+    iso_ID : str, optional
+        HITRAN/HITEMP isotopologue ID for given species, already type cast as a String. The default is ''.
+    ionization_state : int, optional
+        Ionization state for given atom. The default is 1.
     **kwargs : TYPE
         DESCRIPTION.
 
     Returns
     -------
-    line_list_folder : TYPE
-        DESCRIPTION.
+    line_list_folder : str
+        Local directory where the line list is stored.
 
     '''
     
@@ -466,6 +489,7 @@ def create_directories(molecule = '', isotopologue = '', line_list = '', databas
     if os.path.exists(input_folder) == False:
         os.mkdir(input_folder)
     
+    # Create transparent directory structure for ExoMol downloads using identifiers such as molecule name
     if (database == 'ExoMol'):
         
         molecule_folder = input_folder + '/' + molecule + '  ~  (' + isotopologue + ')'
@@ -480,7 +504,8 @@ def create_directories(molecule = '', isotopologue = '', line_list = '', databas
             
         if os.path.exists(line_list_folder) == False:
             os.mkdir(line_list_folder)
-        
+           
+    # Create transparent directory structure for HITRAN/HITEMP downloads 
     elif (database in ['HITRAN', 'HITEMP']):
     
         molecule_folder = input_folder + '/' + moleculeName(mol_ID) + '  ~  '
@@ -515,7 +540,8 @@ def create_directories(molecule = '', isotopologue = '', line_list = '', databas
         else:
             if os.path.exists(line_list_folder) == False:
                 os.mkdir(line_list_folder)
-        
+    
+    # Create transparent directory structure for VALD downloads     
     elif (database == 'VALD'):
         
         roman_num = ''
@@ -541,20 +567,20 @@ def create_directories(molecule = '', isotopologue = '', line_list = '', databas
      
 
 def calc_num_ExoMol_trans(html_tags):
-    """
+    '''
     Calculate the number of .trans files in the line list
 
     Parameters
     ----------
-    html_tags : TYPE
-        DESCRIPTION.
+    html_tags : int
+        List of all HTML tags from an ExoMol URL.
 
     Returns
     -------
-    counter : TYPE
-        DESCRIPTION.
+    counter : int
+        Number of .trans files in the line list.
 
-    """
+    '''
     
     counter = 0
     for tag in html_tags:
@@ -564,12 +590,22 @@ def calc_num_ExoMol_trans(html_tags):
 
 
 def create_ExoMol_tag_array(url, broad_URL):
-    """
+    '''
     Create a list of html tags that contain the URLs from which we will later download files
-    
-    Parameters:
-        url (string): The ExoMol URL for the webpage that contains download links to all the files
-    """
+
+    Parameters
+    ----------
+    url : str
+        The ExoMol URL for the webpage that contains download links to the line list, partition function, and .states files.
+    broad_URL : str
+        ExoMol URL for the broadening files.
+
+    Returns
+    -------
+    combined_tags : list
+        All HTML tags from webpage that contain download links to .broad, .states, .pf, or .trans files.
+
+    '''
     
     # Get webpage content as text
     web_content = requests.get(url).text
@@ -591,18 +627,18 @@ def create_ExoMol_tag_array(url, broad_URL):
 
 def iterate_ExoMol_tags(tags, host, l_folder, line_list):
     """
-    Iterate through every html tag and download the file contained by the URL in the href
+    Iterate through every html tag and download the file contained by the URL in the href arg within the tag
 
     Parameters
     ----------
-    tags : TYPE
-        DESCRIPTION.
-    host : TYPE
-        DESCRIPTION.
-    l_folder : TYPE
-        DESCRIPTION.
-    line_list : TYPE
-        DESCRIPTION.
+    tags : list
+        All tags in the webpage with relevant URL links.
+    host : str
+        ExoMol home page URL.
+    l_folder : str
+        Local directory where the line list is to be stored.
+    line_list : str
+        Name of specific line list being downloaded.
 
     Returns
     -------
@@ -654,8 +690,8 @@ def find_input_dir(input_dir, database, molecule, isotope, ionization_state, lin
 
     Returns
     -------
-    input_directory : TYPE
-        DESCRIPTION.
+    input_directory : str
+        The name of the local directory containing the line list, partition function, etc. for the given species.
 
     """
     
@@ -670,7 +706,7 @@ def find_input_dir(input_dir, database, molecule, isotope, ionization_state, lin
     
     if database == 'vald':
         isotope = ''
-        for i in range(ionization_state):  # Make it easier to code later in the function by just assigning ionization state to isotope even though they're not the same thing
+        for i in range(ionization_state):  # Makes it easier to code later in the function by just assigning ionization state to isotope even though they're not the same
             isotope += 'I'
         isotope = '(' + isotope + ')'
     
@@ -699,7 +735,7 @@ def find_input_dir(input_dir, database, molecule, isotope, ionization_state, lin
         print("You don't seem to have a local folder with the parameters you entered.\n") 
         
         if not os.path.exists(input_dir + '/'):
-            print("----- You entered an invalid input directory into the cross_section() function. Please try again. -----")
+            print("----- You entered an invalid 'input_dir' into the cross_section() function. Please try again. -----")
             sys.exit(0)
         
         elif not os.path.exists(input_dir + '/' + molecule + '  ~  ' + isotope + '/'):
@@ -710,7 +746,7 @@ def find_input_dir(input_dir, database, molecule, isotope, ionization_state, lin
             sys.exit(0)
         
         else:
-            print("There was an error with the line list. These are the linelists available: \n")
+            print("There was an error with the line list. Here are the linelists available: \n")
             for folder in os.listdir(input_dir + '/' + molecule + '  ~  ' + isotope + '/'):
                 if not folder.startswith('.'):
                     print(folder)
@@ -723,14 +759,14 @@ def parse_directory(directory, database):
 
     Parameters
     ----------
-    directory : String
+    directory : str
         Local directory containing the line list file[s], broadening data, and partition function
 
     Returns
     -------
-    molecule : String
+    molecule : str
         Molecule which the cross-section is being calculated for.
-    linelist : String
+    linelist : str
         Line list which the cross-section is being calculated for.
 
     """
