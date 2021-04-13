@@ -8,7 +8,7 @@ from matplotlib.ticker import MultipleLocator, AutoLocator, FormatStrFormatter, 
 
 
 def plot_sigma_wl(species, temperature, log_pressure, nu_arr = [], sigma_arr = [], 
-                  file = '', database = '', plot_dir = './plots/', **kwargs):
+                  file = '', database = '', plot_dir = './plots/', ionization = 1, **kwargs):
     """
     Generate a plot of a cross_section file, in both wavelength and wavenumber
 
@@ -70,7 +70,12 @@ def plot_sigma_wl(species, temperature, log_pressure, nu_arr = [], sigma_arr = [
     
     pressure = np.power(10.0, log_pressure)
     
-    print("Plotting the cross-section of", species, "at", temperature, "K and", pressure, "bar")
+    if (ionization == 2):
+        ion = '+'
+    else:
+        ion = ''
+    
+    print("Plotting the cross-section of", species, ion, "at", temperature, "K and", pressure, "bar")
         
     #***** Make wavenumber plot *****#
   #  fig = plt.figure()
@@ -102,19 +107,19 @@ def plot_sigma_wl(species, temperature, log_pressure, nu_arr = [], sigma_arr = [
     min_sigma = 1.0e-30
     max_sigma = 10.0**(np.max(np.ceil(np.log10(sigma_plt) / 2.0) * 2.0))
     
-    ax.loglog(wl_plt, sigma_plt, lw=0.3, alpha = 0.5, color= 'crimson', label = (species + r' Cross Section')) 
+    ax.loglog(wl_plt, sigma_plt, lw=0.3, alpha = 0.5, color= 'crimson', label = (species + ion + r' Cross Section')) 
     
-    ax.set_xticks([0.4, 0.6, 0.8, 1.0, 2.0, 4.0, 6.0, 8.0, 10.0])
-    ax.set_xticklabels(['0.4', '0.6', '0.8', '1', '2', '4', '6', '8', '10'])
+    ax.set_xticks([0.2, 0.4, 0.6, 0.8, 1.0, 2.0, 4.0, 6.0, 8.0, 10.0])
+    ax.set_xticklabels(['0.2', '0.4', '0.6', '0.8', '1', '2', '4', '6', '8', '10'])
     
     ax.set_ylim([min_sigma, max_sigma])
  #   ax.set_ylim([1.0e-30, round(np.log10(np.max(sigma)) + 2.0)])
-    ax.set_xlim([0.4, 10.0])
+    ax.set_xlim([0.2, 10.0])
     
     ax.set_ylabel(r'Cross Section (cm$^2$)', size = 14)
     ax.set_xlabel(r'Wavelength (μm)', size = 14)
     
-    ax.text(0.45, 10**(np.log10(max_sigma) - 1.0), (r'T = ' + str(temperature) + r' K, P = ' + str(pressure) + r' bar'), fontsize = 10)
+    ax.text(0.22, 10**(np.log10(max_sigma) - 1.0), (r'T = ' + str(temperature) + r' K, P = ' + str(pressure) + r' bar'), fontsize = 10)
     
     legend = plt.legend(loc='upper right', shadow=False, frameon=False, prop={'size':10})
     
@@ -123,7 +128,7 @@ def plot_sigma_wl(species, temperature, log_pressure, nu_arr = [], sigma_arr = [
         
     plt.tight_layout()
 
-    plt.savefig(plot_dir + species + '_' + str(temperature) + 'K_' +
+    plt.savefig(plot_dir + species + ion + '_' + str(temperature) + 'K_' +
                 str(pressure) + 'bar_' + database + '.pdf')
     
     print("\nPlotting complete.")

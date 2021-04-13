@@ -672,18 +672,17 @@ def find_input_dir(input_dir, database, molecule, isotope, ionization_state, lin
     
     if isotope == 'default':
         if database == 'exomol':
-            isotope = '(' + ExoMol.get_default_iso(molecule) + ')'
-        if database == 'hitran' or database == 'hitemp':
+            isotope = ExoMol.get_default_iso(molecule)
+        if database in ['hitran', 'hitemp']:
             molecule_dict = HITRAN.create_id_dict()
             mol_id = molecule_dict.get(molecule)
             isotope = isotopologueName(mol_id, 1)
             isotope = HITRAN.replace_iso_name(isotope)
     
     if database == 'vald':
-        isotope = ''
-        for i in range(ionization_state):  # Make it easier to code later in the function by just assigning ionization state to isotope even though they're not the same thing
-            isotope += 'I'
-        isotope = '(' + isotope + ')'
+        ion_roman = ''
+        for i in range(ionization_state):
+            ion_roman += 'I'
     
     if linelist == 'default':
         if database == 'exomol':
@@ -696,11 +695,16 @@ def find_input_dir(input_dir, database, molecule, isotope, ionization_state, lin
         if database == 'vald':
             linelist = 'VALD'
             
+    if database == 'vald':
+        tag = ion_roman
+    else:
+        tag = isotope
+            
     if (database == 'exomol'):
-        input_directory = (input_dir + molecule + '  ~  ' + isotope + '/' +
+        input_directory = (input_dir + molecule + '  ~  (' + tag + ')/' +
                            'ExoMol' + '/' + linelist + '/')
     else:
-        input_directory = (input_dir + molecule + '  ~  ' + isotope + '/' + 
+        input_directory = (input_dir + molecule + '  ~  (' + tag + ')/' + 
                            linelist + '/')
 
     if os.path.exists(input_directory):
@@ -713,7 +717,7 @@ def find_input_dir(input_dir, database, molecule, isotope, ionization_state, lin
             print("----- You entered an invalid input directory into the cross_section() function. Please try again. -----")
             sys.exit(0)
         
-        elif not os.path.exists(input_dir + '/' + molecule + '  ~  ' + isotope + '/'):
+        elif not os.path.exists(input_dir + '/' + molecule + '  ~  (' + tag + ')/'):
             print("----- There was an error with the molecule + isotope you entered. Here are the available options: -----\n")
             for folder in os.listdir(input_dir + '/'):
                 if not folder.startswith('.'):
@@ -722,7 +726,7 @@ def find_input_dir(input_dir, database, molecule, isotope, ionization_state, lin
         
         else:
             print("There was an error with the line list. These are the linelists available: \n")
-            for folder in os.listdir(input_dir + '/' + molecule + '  ~  ' + isotope + '/'):
+            for folder in os.listdir(input_dir + '/' + molecule + '  ~  (' + tag + ')/'):
                 if not folder.startswith('.'):
                     print(folder)
             sys.exit(0)

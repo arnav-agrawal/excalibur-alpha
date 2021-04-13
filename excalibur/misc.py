@@ -22,16 +22,16 @@ def check_molecule(molecule):
     if match: return False   # If our 'molecule' matches the pattern, it is really an atom
     else: return True        # We did not get a match, therefore must have a molecule
 
-
-def write_output(output_directory, molecule, T, log_P, nu_out, sigma_out):
-    '''
-    Write wavenumber and cross-section to output file
-
+    
+def write_output(output_directory, species, roman_num, T, log_P, nu_out, sigma_out):
+    """
     Parameters
     ----------
     output_directory : TYPE
         DESCRIPTION.
-    molecule : TYPE
+    species : TYPE
+        DESCRIPTION.
+    roman_num : TYPE
         DESCRIPTION.
     T : TYPE
         DESCRIPTION.
@@ -46,9 +46,13 @@ def write_output(output_directory, molecule, T, log_P, nu_out, sigma_out):
     -------
     None.
 
-    '''
-            
-    f = open((output_directory + str(molecule) + '_T' + str(T) + 
+    """
+       
+    # Add ionisation state for atoms     
+    if (roman_num != ''):
+        species = species + '_' + roman_num
+        
+    f = open((output_directory + species + '_T' + str(T) + 
               'K_log_P' + str(log_P) + '_sigma.txt'),'w')
                     
     for i in range(len(nu_out)):
@@ -56,6 +60,7 @@ def write_output(output_directory, molecule, T, log_P, nu_out, sigma_out):
                         
     f.close()
 
+    
 def read_output(output_directory, molecule, T, log_P):
     '''
     Read in wavenumber and cross-section from  file
